@@ -16,7 +16,10 @@ body {
   font-size: var(--fs-base);
   line-height: var(--lh-body);
   color: var(--text);
-  background: var(--bg);
+  background-color: var(--bg);
+  background-image: var(--bg-image);
+  background-size: var(--bg-image-size);
+  background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
 }
@@ -99,7 +102,7 @@ h5 { font-size: var(--fs-md); }
 .brand__mark {
   width: 34px; height: 34px; flex: none;
   border-radius: var(--r-md);
-  background: linear-gradient(140deg, var(--brand-crimson), #7d1b1f);
+  background: linear-gradient(140deg, var(--ivri-blue), var(--ivri-blue-dark));
   display: grid; place-items: center;
   color: #fff; font-weight: 800; font-size: var(--fs-sm);
   font-family: var(--font-mono);

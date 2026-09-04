@@ -80,6 +80,14 @@ var app = (function () {
 
   function pct(done, total) { return total ? Math.round(done / total * 100) : 0; }
 
+  function normHl(h) {
+    if (!h) return { text: "", color: "yellow" };
+    if (typeof h === "string") return { text: h, color: "yellow" };
+    var valid = (store.VALID_HL_COLORS || ["yellow", "green", "blue", "pink", "orange", "purple"]);
+    var col = (h.color && valid.indexOf(h.color) !== -1) ? h.color : "yellow";
+    return { text: h.text || "", color: col };
+  }
+
   /* How many topics in a unit are marked read */
   function unitProgress(unit) {
     var readMap = store.getRead();
@@ -158,7 +166,8 @@ var app = (function () {
     state.route = location.hash || "#/";
     state.params = { a: p[1] || null, b: p[2] || null };
 
-    stopSpeech();   // never let a lesson keep reading after you leave it
+    stopSpeech();              // never let a lesson keep reading after you leave it
+    teardownHighlightPopup();  // remove floating selection toolbar if active
 
     var map = {
       home: "home", theory: "theory", practical: "practical",
@@ -291,6 +300,38 @@ var app = (function () {
       accuracy = pct(cor, tot);
     }
 
+    /* Choose what to prioritize in the welcome / resume banner:
+       1. Questions needing review (incorrect queue)
+       2. Last active studied topic
+       3. Daily study streak
+       4. Start Unit 1 */
+    var resumeIcon = "theory";
+    var resumeTitle = "Ready to start studying?";
+    var resumeSubtitle = "Begin with Unit 1: General Veterinary Pathology.";
+    var resumeBtnText = "Start Unit 1";
+    var resumeHref = "#/unit/unit-1";
+
+    if (q.incorrect && q.incorrect.length > 0) {
+      resumeIcon = "target";
+      resumeTitle = q.incorrect.length + (q.incorrect.length > 1 ? " Questions" : " Question") + " Need Review";
+      resumeSubtitle = "Reinforce weak spots and master tricky pathology questions.";
+      resumeBtnText = "Review Questions";
+      resumeHref = "#/quiz";
+    } else if (lastT) {
+      var uLast = syllabus.unitById[lastT.unitId] || {};
+      resumeIcon = "book";
+      resumeTitle = "Resume studying: " + esc(shorten(lastT.title, 40));
+      resumeSubtitle = (uLast.short ? "Unit " + uLast.no + " · " + esc(uLast.short) + " — " : "") + "Pick up right where you left off.";
+      resumeBtnText = "Resume Lesson";
+      resumeHref = "#/topic/" + lastT.id;
+    } else if (streak.current > 0) {
+      resumeIcon = "flame";
+      resumeTitle = streak.current + "-Day Study Streak!";
+      resumeSubtitle = "Keep your daily momentum alive. Read a lesson or test yourself with a quiz.";
+      resumeBtnText = "Practice Now";
+      resumeHref = "#/quiz";
+    }
+
     view.innerHTML =
       '<section class="hero">' +
         '<div class="hero__inner">' +
@@ -304,6 +345,49 @@ var app = (function () {
               : '<a class="btn btn--primary btn--lg" href="#/theory">Start with Unit 1</a>') +
             '<a class="btn btn--lg" href="#/quiz">Take a quiz</a>' +
           '</div>' +
+
+          /* Hero Statistics Strip (Mirrored from Anatomy) */
+          '<div class="hero-stats-strip">' +
+            '<div class="stat-item">' +
+              '<span class="stat-number">' + (totalQ + totalQa).toLocaleString() + '+</span>' +
+              '<span class="stat-label">Questions Ready</span>' +
+            '</div>' +
+            '<div class="stat-item-divider" aria-hidden="true"></div>' +
+            '<div class="stat-item">' +
+              '<span class="stat-number">6</span>' +
+              '<span class="stat-label">Theory Units</span>' +
+            '</div>' +
+            '<div class="stat-item-divider" aria-hidden="true"></div>' +
+            '<div class="stat-item">' +
+              '<span class="stat-number">6</span>' +
+              '<span class="stat-label">Practical Units</span>' +
+            '</div>' +
+            '<div class="stat-item-divider" aria-hidden="true"></div>' +
+            '<div class="stat-item">' +
+              '<span class="stat-number">' + allTopics + '</span>' +
+              '<span class="stat-label">Syllabus Topics</span>' +
+            '</div>' +
+            '<div class="stat-item-divider" aria-hidden="true"></div>' +
+            '<div class="stat-item">' +
+              '<span class="stat-number">100%</span>' +
+              '<span class="stat-label">Offline PWA</span>' +
+            '</div>' +
+          '</div>' +
+
+          /* Dynamic Welcome / Resume Studied Banner */
+          '<div class="dynamic-resume-panel">' +
+            '<div class="resume-card">' +
+              '<div class="resume-card-body">' +
+                '<div class="resume-icon">' + icon(resumeIcon) + '</div>' +
+                '<div>' +
+                  '<div class="resume-text-title">' + resumeTitle + '</div>' +
+                  '<div class="resume-text-subtitle">' + resumeSubtitle + '</div>' +
+                '</div>' +
+              '</div>' +
+              '<a class="resume-btn" href="' + resumeHref + '">' + resumeBtnText + ' →</a>' +
+            '</div>' +
+          '</div>' +
+
         '</div>' +
       '</section>' +
 
@@ -329,6 +413,76 @@ var app = (function () {
       '<div class="grid grid--2 mt-4">' +
         paperCard(syllabus.meta.papers[0]) +
         paperCard(syllabus.meta.papers[1]) +
+      '</div>' +
+
+      /* Institutional Credits & Platform Links */
+      '<div class="footer-credits-wrap">' +
+        '<div class="footer-credits">' +
+          '<div class="credit-col">' +
+            '<div class="credit-heading">' +
+              icon("theory") + ' APP DEVELOPMENT TEAM · ICAR-IVRI' +
+            '</div>' +
+            '<ul class="credit-list">' +
+              '<li>' +
+                '<b>Dr. Abhinov Verma</b>' +
+                '<span class="credit-role">Senior Scientist · ICAR-IVRI</span>' +
+                '<a class="credit-contact" href="mailto:abhinovverma281283@gmail.com">' +
+                  icon("share") + ' abhinovverma281283@gmail.com' +
+                '</a>' +
+              '</li>' +
+              '<li>' +
+                '<b>Dr. Dangeti V.V.N. Durga Prasad</b>' +
+                '<span class="credit-role">Scientist · ICAR-IVRI</span>' +
+                '<a class="credit-contact" href="mailto:dpnag123@gmail.com">' +
+                  icon("share") + ' dpnag123@gmail.com' +
+                '</a>' +
+              '</li>' +
+              '<li>' +
+                '<b>Dr. Elizabeth V.L. Hmangaihzuali</b>' +
+                '<span class="credit-role">Scientist · ICAR-IVRI</span>' +
+                '<a class="credit-contact" href="mailto:vlvl2323.er@gmail.com">' +
+                  icon("share") + ' vlvl2323.er@gmail.com' +
+                '</a>' +
+              '</li>' +
+              '<li>' +
+                '<b>Dr. Samikshya Sarangi</b>' +
+                '<span class="credit-role">Scientist · ICAR-IVRI</span>' +
+                '<a class="credit-contact" href="mailto:samikshya.sarangi7@gmail.com">' +
+                  icon("share") + ' samikshya.sarangi7@gmail.com' +
+                '</a>' +
+              '</li>' +
+              '<li>' +
+                '<b>Mr. Fazal Zama</b>' +
+                '<span class="credit-role">Developer · B.V.Sc &amp; A.H. UG · Roll No. B0-350-2025</span>' +
+                '<a class="credit-contact" href="mailto:vet.fazalzama@gmail.com">' +
+                  icon("share") + ' vet.fazalzama@gmail.com' +
+                '</a>' +
+              '</li>' +
+            '</ul>' +
+          '</div>' +
+        '</div>' +
+
+        '<div class="footer-nav">' +
+          '<div class="footer-nav__head">Browse Veterinary Pathology</div>' +
+          '<div class="footer-nav__links">' +
+            '<a href="#/theory">Theory Units 1–6</a>' +
+            '<a href="#/practical">Practical Units 1–6</a>' +
+            '<a href="#/qa">Written Exam Q&amp;A</a>' +
+            '<a href="#/quiz">Interactive Quizzes</a>' +
+            '<a href="#/why">WHY Mechanisms</a>' +
+            '<a href="#/dashboard">Progress Dashboard</a>' +
+            '<a href="#/library">My Library</a>' +
+          '</div>' +
+        '</div>' +
+
+        '<div class="footer-tools">' +
+          '<button class="footer-tool-btn" onclick="app.openAbout()">' +
+            icon("target") + ' About the Platform' +
+          '</button>' +
+          '<button class="footer-tool-btn" onclick="app.resetCache()" title="Clear cache and reload latest files">' +
+            icon("clock") + ' Reset App Cache' +
+          '</button>' +
+        '</div>' +
       '</div>';
   }
 
@@ -489,6 +643,7 @@ var app = (function () {
     var isRead = store.isRead(t.id);
     var isBm = store.isBookmarked(t.id);
     var note = store.getNote(t.id);
+    var currHlColor = store.getHighlightColor();
 
     // Previous / next within the unit
     var i = u.topics.indexOf(t);
@@ -532,8 +687,14 @@ var app = (function () {
         (c.tables || []).map(function (tb) {
           return block(tb.title || "Table", renderTable(tb, true), "table");
         }).join("") +
-        (c.img ? '<figure class="lesson__fig"><img src="' + esc(c.img) + '" alt="' + esc(t.title) + '" loading="lazy"></figure>' : "") +
-        (c.clinical ? block("Clinical note", c.clinical, "clinical") : "");
+        (c.img
+          ? '<figure class="lesson__fig"><img src="' + esc(c.img) + '" alt="' + esc(t.title) + '" loading="lazy"></figure>'
+          : '<div class="pathology-image-placeholder"><div class="pathology-placeholder-body">' +
+              icon("search") +
+              '<div class="pathology-placeholder-title">High-Quality Pathology Visuals in Development</div>' +
+              '<div class="pathology-placeholder-sub">Carefully curated gross and histopathology reference images for this topic are being compiled at ICAR-IVRI.</div>' +
+            '</div></div>') +
+        (c.clinical ? block("Clinical correlation", c.clinical, "clinical") : "");
     } else {
       body =
         '<div class="slot">' +
@@ -581,7 +742,24 @@ var app = (function () {
                 '<span>' + (isRead ? "Read" : "Mark read") + '</span></button>' +
               '<button class="toolbtn' + (isBm ? ' is-on' : '') + '" data-act="bookmark">' + icon("star") +
                 '<span>' + (isBm ? "Saved" : "Save") + '</span></button>' +
-              '<button class="toolbtn" data-act="highlight">' + icon("pen") + '<span>Highlight</span></button>' +
+              '<div class="hlpicker-wrap">' +
+                '<button class="toolbtn" id="hlbtn" data-act="highlight-toggle" title="Highlight selected text (choose color)">' +
+                  icon("pen") + '<span>Highlight</span>' +
+                  '<span class="hl-btn-dot hl-btn-dot--' + currHlColor + '"></span>' +
+                '</button>' +
+                '<div class="hlpicker" id="hlpicker" hidden>' +
+                  '<div class="hlpicker__head">' +
+                    '<span class="hlpicker__label">Highlight color</span>' +
+                  '</div>' +
+                  '<div class="hlpicker__grid">' +
+                    store.VALID_HL_COLORS.map(function (col) {
+                      return '<button class="hlpicker__colorbtn hlpicker__colorbtn--' + col +
+                        (currHlColor === col ? ' is-active' : '') + '" data-hl-pick="' + col + '" title="' + col + '" aria-label="' + col + '"></button>';
+                    }).join("") +
+                  '</div>' +
+                  '<p class="hlpicker__hint">Tap a color to highlight selected text or set active color.</p>' +
+                '</div>' +
+              '</div>' +
               '<button class="toolbtn' + (note ? ' is-on' : '') + '" data-act="note">' + icon("note") +
                 '<span>Note</span></button>' +
               '<button class="toolbtn" data-act="share">' + icon("share") + '<span>Share</span></button>' +
@@ -601,7 +779,7 @@ var app = (function () {
               '<span class="small faint" id="notestatus"></span></div>' +
             '</div>' +
 
-            renderHighlights(t.id) +
+            '<div id="topic-highlights-container">' + renderHighlights(t.id) + '</div>' +
 
             body +
 
@@ -624,13 +802,18 @@ var app = (function () {
   /* bare = true when the caller already shows the title (lesson blocks) */
   function renderTable(tb, bare) {
     if (!tb || !tb.headers) return "";
+    var isComp = (tb.headers[0] && /species|organ|feature|condition|parameter|criterion/i.test(tb.headers[0]));
+    var tblClass = isComp ? "tbl comp-table" : "tbl";
     return '<div class="' + (bare ? "" : "mt-8") + '">' +
       (tb.title && !bare ? '<h3 class="mb-4">' + esc(tb.title) + '</h3>' : '') +
-      '<div class="tablewrap"><table class="tbl"><thead><tr>' +
+      '<div class="tablewrap"><table class="' + tblClass + '"><thead><tr>' +
       tb.headers.map(function (h) { return '<th>' + h + '</th>'; }).join("") +
       '</tr></thead><tbody>' +
       (tb.rows || []).map(function (r) {
-        return '<tr>' + r.map(function (cell) { return '<td>' + cell + '</td>'; }).join("") + '</tr>';
+        return '<tr>' + r.map(function (cell, ci) {
+          var cls = (isComp && ci === 0) ? ' class="species-label"' : '';
+          return '<td' + cls + '>' + cell + '</td>';
+        }).join("") + '</tr>';
       }).join("") +
       '</tbody></table></div></div>';
   }
@@ -639,12 +822,137 @@ var app = (function () {
   function renderHighlights(topicId) {
     var list = store.getHighlights()[topicId] || [];
     if (!list.length) return "";
-    return '<section class="block block--hl"><span class="block__label">My highlights</span>' +
+    return '<section class="block block--hl"><span class="block__label">My highlights (' + list.length + ')</span>' +
       '<div class="block__body"><ul class="hllist">' +
-      list.map(function (h) {
-        return '<li><span>' + esc(h) + '</span>' +
-          '<button class="hllist__x" data-unhl="' + esc(h) + '" aria-label="Remove highlight">&times;</button></li>';
+      list.map(function (raw) {
+        var h = normHl(raw);
+        return '<li class="hl-item--' + esc(h.color) + '">' +
+          '<span class="hl-chip hl-chip--' + esc(h.color) + '">' + esc(h.color) + '</span>' +
+          '<span class="hllist__text">' + esc(h.text) + '</span>' +
+          '<button class="hllist__x" data-unhl="' + esc(h.text) + '" aria-label="Remove highlight" title="Remove highlight">&times;</button></li>';
       }).join("") + '</ul></div></section>';
+  }
+
+  /* Inline highlights in the lesson text.
+     Run against the whole lesson at once (not block by block) so that
+     "first occurrence" means first in the lesson, not first in each block. */
+  function applyDomHighlights(container, list) {
+    if (!container || !list || !list.length) return;
+    var items = list.map(normHl).filter(function (h) {
+      return h.text && h.text.trim().length >= 2;
+    }).sort(function (a, b) {
+      return b.text.length - a.text.length;   // longest first, so it wins any overlap
+    });
+    if (!items.length) return;
+
+    items.forEach(function (item) {
+      highlightInElement(container, item.text, item.color);
+    });
+  }
+
+  /* ------------------------------------------------------------
+     Inline highlighting across element boundaries.
+
+     A student's selection routinely crosses <b> and <i> tags, wraps
+     over several lines, and may start or end in the middle of a word.
+     Searching inside one text node at a time therefore fails silently
+     on exactly the selections people actually make. Instead we flatten
+     the whole block into one string, find the phrase there, then wrap
+     each text node the match passes through in its own <mark>.
+     ------------------------------------------------------------ */
+
+  /* Text nodes we are allowed to highlight — never inside an existing mark,
+     and never inside the "My highlights" summary list at the top. */
+  function collectTextNodes(root) {
+    var out = [];
+    var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+      acceptNode: function (n) {
+        if (!n.nodeValue || !n.nodeValue.length) return NodeFilter.FILTER_REJECT;
+        var p = n.parentElement;
+        if (!p) return NodeFilter.FILTER_REJECT;
+        if (p.closest("mark.hl-inline")) return NodeFilter.FILTER_REJECT;
+        if (p.closest(".block--hl")) return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    while (walker.nextNode()) out.push(walker.currentNode);
+    return out;
+  }
+
+  /* Find and wrap the first occurrence. Returns true if one was wrapped. */
+  function wrapFirstMatch(root, re, color, key) {
+    var nodes = collectTextNodes(root);
+    if (!nodes.length) return false;
+
+    // Flatten to a single string, remembering where each node sits in it.
+    var full = "";
+    var bounds = [];
+    for (var i = 0; i < nodes.length; i++) {
+      var v = nodes[i].nodeValue;
+      bounds.push({ start: full.length, end: full.length + v.length, i: i });
+      full += v;
+    }
+
+    re.lastIndex = 0;
+    var m = re.exec(full);
+    if (!m || !m[0].length) return false;
+
+    function locate(pos) {
+      for (var b = 0; b < bounds.length; b++) {
+        if (pos >= bounds[b].start && pos < bounds[b].end) {
+          return { n: bounds[b].i, o: pos - bounds[b].start };
+        }
+      }
+      return null;
+    }
+
+    var from = locate(m.index);
+    var to = locate(m.index + m[0].length - 1);
+    if (!from || !to) return false;
+
+    // Wrap from the LAST node backwards, so offsets in earlier nodes stay valid.
+    for (var k = to.n; k >= from.n; k--) {
+      var node = nodes[k];
+      if (!node || !node.parentNode) continue;
+
+      var s = (k === from.n) ? from.o : 0;
+      var e = (k === to.n) ? to.o + 1 : node.nodeValue.length;
+      if (e <= s) continue;
+
+      var mid = node;
+      if (e < mid.nodeValue.length) mid.splitText(e);   // trim the tail off
+      if (s > 0) mid = mid.splitText(s);                // trim the head off
+
+      var mark = document.createElement("mark");
+      mark.className = "hl-inline hl-inline--" + color;
+      mark.setAttribute("data-hl-color", color);
+      mark.setAttribute("data-hl-text", key);
+      mark.title = "Highlighted in " + color + " — click to remove";
+      mid.parentNode.replaceChild(mark, mid);
+      mark.appendChild(mid);
+    }
+    return true;
+  }
+
+  function highlightInElement(root, searchText, color) {
+    if (!root || !searchText) return;
+    var needle = String(searchText).trim();
+    if (needle.length < 2) return;
+
+    // Whitespace in the saved text will not match the DOM exactly once the
+    // text has been re-flowed, so treat any run of whitespace as equivalent.
+    var pattern = needle
+      .split(/\s+/)
+      .map(function (w) { return w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); })
+      .join("\\s+");
+
+    var re;
+    try { re = new RegExp(pattern, "i"); } catch (e) { return; }
+
+    // Only the FIRST occurrence is marked. One saved highlight should show as
+    // one passage on the page, exactly as the student selected it — marking
+    // every repetition of the phrase would splatter colour across the lesson.
+    wrapFirstMatch(root, re, color, needle);
   }
 
   /* Strip tags so the text-to-speech engine reads words, not markup */
@@ -694,33 +1002,317 @@ var app = (function () {
     if (b) { b.classList.add("is-on"); b.innerHTML = icon("stop"); }
   }
 
+  /* ============================================================
+     FLOATING HIGHLIGHT SELECTION TOOLBAR
+     ============================================================ */
+  function teardownHighlightPopup() {
+    var old = document.getElementById("hl-popup");
+    if (old) {
+      if (old._selListener) document.removeEventListener("selectionchange", old._selListener);
+      if (old._posListener) {
+        window.removeEventListener("scroll", old._posListener, true);
+        window.removeEventListener("resize", old._posListener);
+      }
+      old.remove();
+    }
+  }
+
+  function attachHighlightSelectionUI(panel, topicId) {
+    teardownHighlightPopup();
+    if (!panel) return;
+
+    var popup = document.createElement("div");
+    popup.id = "hl-popup";
+    popup.className = "hl-popup hl-popup-selection";
+    popup.style.display = "none";
+    popup.innerHTML =
+      '<span class="hl-popup-label">' + icon("pen") + ' Mark:</span>' +
+      store.VALID_HL_COLORS.map(function (c) {
+        return '<button class="hl-popup-btn hl-' + c + '" data-color="' + c + '" title="Highlight ' + c + '"></button>';
+      }).join("") +
+      '<span class="hl-popup-sep"></span>' +
+      '<button class="hl-popup-action hl-note-action" title="Add note with selected text">' +
+        icon("note") + ' Note' +
+      '</button>' +
+      '<button class="hl-popup-action hl-close-action" title="Close" aria-label="Close">&times;</button>';
+
+    document.body.appendChild(popup);
+
+    function hide() {
+      popup.style.display = "none";
+      popup.dataset.text = "";
+    }
+
+    function positionPopup(range) {
+      if (!range || popup.style.display === "none") return;
+      var rects = Array.from(range.getClientRects()).filter(function (r) { return r.width || r.height; });
+      var anchor = rects[rects.length - 1] || range.getBoundingClientRect();
+      if (!anchor || (!anchor.width && !anchor.height)) return;
+
+      popup.style.visibility = "hidden";
+      var w = popup.offsetWidth;
+      var h = popup.offsetHeight;
+      var edge = 12;
+      var gap = 10;
+
+      var minX = edge + (w / 2);
+      var maxX = window.innerWidth - edge - (w / 2);
+      var wantedX = anchor.left + (anchor.width / 2);
+      var centerX = Math.max(minX, Math.min(maxX, wantedX));
+
+      var top = anchor.bottom + gap;
+      if (top + h > window.innerHeight - edge) {
+        top = anchor.top - h - gap;
+      }
+      top = Math.max(edge, Math.min(window.innerHeight - h - edge, top));
+
+      popup.style.left = centerX + "px";
+      popup.style.top = top + "px";
+      popup.style.visibility = "visible";
+    }
+
+    function onSelectionChange() {
+      var sel = window.getSelection();
+      if (!sel || sel.isCollapsed) { hide(); return; }
+      var text = sel.toString().trim();
+      if (text.length < 3 || text.length > 400) { hide(); return; }
+
+      try {
+        var range = sel.getRangeAt(0);
+        if (!panel.contains(range.commonAncestorContainer)) { hide(); return; }
+        popup.style.display = "flex";
+        popup.dataset.text = text;
+        popup._range = range.cloneRange();
+        requestAnimationFrame(function () { positionPopup(popup._range); });
+      } catch (e) {
+        hide();
+      }
+    }
+
+    document.addEventListener("selectionchange", onSelectionChange);
+    popup._selListener = onSelectionChange;
+
+    function onReposition() {
+      if (popup.style.display !== "none" && popup._range) {
+        requestAnimationFrame(function () { positionPopup(popup._range); });
+      }
+    }
+    window.addEventListener("scroll", onReposition, true);
+    window.addEventListener("resize", onReposition);
+    popup._posListener = onReposition;
+
+    // Color buttons -> save and highlight inline immediately
+    popup.querySelectorAll(".hl-popup-btn").forEach(function (btn) {
+      btn.addEventListener("mousedown", function (e) { e.preventDefault(); });
+      btn.addEventListener("click", function (e) {
+        e.preventDefault();
+        var color = btn.getAttribute("data-color");
+        var text = popup.dataset.text;
+        if (!text) return;
+
+        store.addHighlight(topicId, text, color);
+        store.setHighlightColor(color);
+        highlightInElement(panel, text, color);
+
+        // re-wire click to remove on marks
+        wireInlineMarks(topicId);
+
+        // update the highlights summary card at top
+        var hlc = el("#topic-highlights-container");
+        if (hlc) {
+          hlc.innerHTML = renderHighlights(topicId);
+          wireUnhlButtons(topicId);
+        }
+
+        // update toolbar highlight button active indicator dot
+        var dot = el(".hl-btn-dot");
+        if (dot) dot.className = "hl-btn-dot hl-btn-dot--" + color;
+
+        toast("Highlighted in " + color + " — saved to Library");
+        var sel = window.getSelection();
+        if (sel) sel.removeAllRanges();
+        hide();
+      });
+    });
+
+    // "Note" action -> open notebox and attach quote
+    var noteBtn = popup.querySelector(".hl-note-action");
+    if (noteBtn) {
+      noteBtn.addEventListener("mousedown", function (e) { e.preventDefault(); });
+      noteBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        var text = popup.dataset.text;
+        hide();
+        var sel = window.getSelection();
+        if (sel) sel.removeAllRanges();
+
+        var box = el("#notebox");
+        var inp = el("#noteinput");
+        if (box && inp) {
+          box.removeAttribute("hidden");
+          var quote = '“' + text + '”\n\n';
+          if (inp.value.indexOf(text) === -1) {
+            inp.value = quote + (inp.value || '');
+          }
+          box.scrollIntoView({ behavior: "smooth", block: "center" });
+          setTimeout(function () { inp.focus(); }, 200);
+        }
+      });
+    }
+
+    // Close button
+    var closeBtn = popup.querySelector(".hl-close-action");
+    if (closeBtn) {
+      closeBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        var sel = window.getSelection();
+        if (sel) sel.removeAllRanges();
+        hide();
+      });
+    }
+  }
+
+  function wireUnhlButtons(topicId) {
+    els("[data-unhl]").forEach(function (b) {
+      b.onclick = function () {
+        store.removeHighlight(topicId, b.getAttribute("data-unhl"));
+        renderTopic();
+      };
+    });
+  }
+
+  function wireInlineMarks(topicId) {
+    els(".hl-inline").forEach(function (m) {
+      m.onclick = function (e) {
+        e.stopPropagation();
+        var txt = m.getAttribute("data-hl-text");
+        var col = m.getAttribute("data-hl-color") || "highlight";
+        store.removeHighlight(topicId, txt);
+        toast("Removed " + col + " highlight");
+        renderTopic();
+      };
+    });
+  }
+
+  function openAbout() {
+    var m = el("#aboutmodal");
+    if (m) m.style.display = "flex";
+  }
+
+  function closeAbout() {
+    var m = el("#aboutmodal");
+    if (m) m.style.display = "none";
+  }
+
+  function resetCache() {
+    if ("caches" in window) {
+      caches.keys().then(function (names) {
+        return Promise.all(names.map(function (n) { return caches.delete(n); }));
+      }).then(function () {
+        toast("App cache cleared — reloading latest files");
+        setTimeout(function () { location.reload(true); }, 800);
+      }).catch(function () {
+        location.reload(true);
+      });
+    } else {
+      location.reload(true);
+    }
+  }
+
   function wireTopicActions(t) {
     var c = topicContent(t.id) || {};
 
     var sb = el("#speakbtn");
     if (sb) sb.addEventListener("click", function () { speakTopic(t, c); });
 
-    els("[data-unhl]").forEach(function (b) {
-      b.addEventListener("click", function () {
-        store.removeHighlight(t.id, b.getAttribute("data-unhl"));
-        renderTopic();
+    wireUnhlButtons(t.id);
+
+    var lessonMain = el(".lesson__main");
+    applyDomHighlights(lessonMain, store.getHighlights()[t.id]);
+    wireInlineMarks(t.id);
+
+    // Attach floating selection toolbar directly to the lesson container
+    attachHighlightSelectionUI(lessonMain, t.id);
+
+    // Track text selection so clicking the picker doesn't lose it
+    var savedSelection = "";
+    function getLessonSel() {
+      var s = (window.getSelection() || "").toString().trim();
+      return s || savedSelection;
+    }
+
+    var lessonMain = el(".lesson__main");
+    if (lessonMain) {
+      lessonMain.addEventListener("mouseup", function () {
+        var s = (window.getSelection() || "").toString().trim();
+        if (s && s.length <= 400) savedSelection = s;
       });
-    });
+      lessonMain.addEventListener("touchend", function () {
+        var s = (window.getSelection() || "").toString().trim();
+        if (s && s.length <= 400) savedSelection = s;
+      });
+    }
+
+    var hlBtn = el("#hlbtn");
+    var hlPicker = el("#hlpicker");
+
+    if (hlBtn && hlPicker) {
+      hlBtn.addEventListener("mousedown", function () {
+        var s = (window.getSelection() || "").toString().trim();
+        if (s && s.length <= 400) savedSelection = s;
+      });
+
+      hlBtn.addEventListener("click", function (e) {
+        e.stopPropagation();
+        var isHidden = hlPicker.hasAttribute("hidden");
+        if (isHidden) {
+          hlPicker.removeAttribute("hidden");
+        } else {
+          hlPicker.setAttribute("hidden", "");
+        }
+      });
+
+      hlPicker.addEventListener("mousedown", function (e) {
+        e.preventDefault();
+      });
+
+      els("[data-hl-pick]").forEach(function (btn) {
+        btn.addEventListener("click", function (e) {
+          e.stopPropagation();
+          var col = btn.getAttribute("data-hl-pick");
+          store.setHighlightColor(col);
+
+          var sel = getLessonSel();
+          if (sel) {
+            if (sel.length > 400) {
+              toast("That selection is too long — choose a shorter passage");
+              return;
+            }
+            store.addHighlight(t.id, sel, col);
+            if (window.getSelection()) window.getSelection().removeAllRanges();
+            savedSelection = "";
+            hlPicker.setAttribute("hidden", "");
+            toast("Highlighted in " + col + " — saved to Library");
+            renderTopic();
+          } else {
+            hlPicker.setAttribute("hidden", "");
+            toast("Highlighter set to " + col + " — select text in lesson to highlight");
+            renderTopic();
+          }
+        });
+      });
+
+      document.addEventListener("click", function (e) {
+        if (!hlPicker.contains(e.target) && e.target !== hlBtn && !hlBtn.contains(e.target)) {
+          hlPicker.setAttribute("hidden", "");
+        }
+      });
+    }
 
     els(".toolbtn").forEach(function (b) {
       b.addEventListener("click", function () {
         var act = b.getAttribute("data-act");
-
-        if (act === "highlight") {
-          var sel = (window.getSelection() || "").toString().trim();
-          if (!sel) { toast("Select some text in the lesson first, then tap Highlight"); return; }
-          if (sel.length > 400) { toast("That selection is too long — choose a shorter passage"); return; }
-          store.addHighlight(t.id, sel);
-          window.getSelection().removeAllRanges();
-          toast("Highlighted — saved to your Library");
-          renderTopic();
-          return;
-        }
+        if (act === "highlight-toggle") return; // Handled above
 
         if (act === "share") {
           var url = location.href;
@@ -973,10 +1565,30 @@ var app = (function () {
       body.innerHTML = hkeys.length
         ? hkeys.map(function (id) {
             var t = syllabus.topicById[id];
-            return '<div class="card mb-4"><div class="stat__label">' + (t ? esc(t.title) : id) + '</div><ul class="mt-2">' +
-              hl[id].map(function (h) { return '<li>' + esc(h) + '</li>'; }).join("") + '</ul></div>';
+            var items = hl[id] || [];
+            return '<div class="card mb-4">' +
+              '<div class="stat__label"><a href="#/topic/' + id + '" style="color:inherit;text-decoration:none;">' + (t ? esc(t.title) : id) + '</a></div>' +
+              '<ul class="hllist mt-2">' +
+              items.map(function (raw) {
+                var h = normHl(raw);
+                return '<li class="hl-item--' + esc(h.color) + '">' +
+                  '<span class="hl-chip hl-chip--' + esc(h.color) + '">' + esc(h.color) + '</span>' +
+                  '<span class="hllist__text">' + esc(h.text) + '</span>' +
+                  '<button class="hllist__x" data-unhl-lib="' + esc(id) + '" data-unhl-text="' + esc(h.text) + '" aria-label="Remove highlight" title="Remove highlight">&times;</button>' +
+                '</li>';
+              }).join("") +
+              '</ul></div>';
           }).join("")
         : emptyState("🖍️", "No highlights yet", "Select any text inside a lesson and choose Highlight to keep it here.");
+
+      els("[data-unhl-lib]").forEach(function (b) {
+        b.addEventListener("click", function () {
+          var id = b.getAttribute("data-unhl-lib");
+          var txt = b.getAttribute("data-unhl-text");
+          store.removeHighlight(id, txt);
+          renderLibrary();
+        });
+      });
     }
   }
 
@@ -1004,9 +1616,9 @@ var app = (function () {
 
       '<div class="card mb-4">' +
         '<h3>Appearance</h3>' +
-        '<p class="muted mt-2">Dark is easier at night; Light reads better in a bright lab.</p>' +
+        '<p class="muted mt-2">Light is the standard IVRI study theme. Dark is available for night reading.</p>' +
         '<div class="seg mt-4" role="group">' +
-          ['system', 'light', 'dark'].map(function (t) {
+          ['light', 'dark'].map(function (t) {
             return '<button class="seg__btn' + (theme === t ? " is-on" : "") + '" data-theme="' + t + '">' +
               t.charAt(0).toUpperCase() + t.slice(1) + '</button>';
           }).join("") +
@@ -1098,8 +1710,7 @@ var app = (function () {
   function refreshThemeButton() {
     var b = el("#themebtn");
     if (!b) return;
-    var isDark = document.documentElement.getAttribute("data-theme") === "dark" ||
-      (store.getTheme() === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+    var isDark = store.getTheme() === "dark";
     b.innerHTML = icon(isDark ? "sun" : "moon");
     b.setAttribute("aria-label", isDark ? "Switch to light theme" : "Switch to dark theme");
   }
@@ -1226,10 +1837,7 @@ var app = (function () {
     });
 
     el("#themebtn").addEventListener("click", function () {
-      var cur = store.getTheme();
-      var isDark = document.documentElement.getAttribute("data-theme") === "dark" ||
-        (cur === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
-      store.setTheme(isDark ? "light" : "dark");
+      store.setTheme(store.getTheme() === "dark" ? "light" : "dark");
       refreshThemeButton();
       if (state.section === "me") renderMe();
     });
@@ -1249,13 +1857,13 @@ var app = (function () {
 
     document.addEventListener("keydown", function (e) {
       if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") { e.preventDefault(); openSearch(); }
-      else if (e.key === "Escape" && !el("#searchmodal").hidden) closeSearch();
+      else if (e.key === "Escape") {
+        if (!el("#searchmodal").hidden) closeSearch();
+        closeAbout();
+      }
       else if (e.key === "/" && document.activeElement.tagName !== "INPUT" &&
                document.activeElement.tagName !== "TEXTAREA") { e.preventDefault(); openSearch(); }
     });
-
-    window.matchMedia("(prefers-color-scheme: dark)")
-      .addEventListener("change", refreshThemeButton);
 
     route();
   }
@@ -1266,7 +1874,10 @@ var app = (function () {
     ringHtml: ringHtml, statCard: statCard, renderTable: renderTable,
     unitProgress: unitProgress, questionCount: questionCount,
     hasContent: hasContent, topicContent: topicContent, pct: pct,
-    emptyState: emptyState, state: state
+    emptyState: emptyState, state: state,
+    openAbout: openAbout, closeAbout: closeAbout, resetCache: resetCache,
+    teardownHighlightPopup: teardownHighlightPopup,
+    attachHighlightSelectionUI: attachHighlightSelectionUI
   };
 })();
 

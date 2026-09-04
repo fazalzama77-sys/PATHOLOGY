@@ -13,12 +13,13 @@ var store = (function () {
   var PREFIX = "vpath-";
 
   var KEYS = {
-    theme:      PREFIX + "theme",       // "light" | "dark" | "system"
+    theme:      PREFIX + "theme",       // "light" (default) | "dark"
     detail:     PREFIX + "detail",      // "standard" | "deep"
     read:       PREFIX + "read",        // { topicId: timestamp }
     bookmarks:  PREFIX + "bookmarks",   // [ "topicId", ... ]
     notes:      PREFIX + "notes",       // { topicId: "note text" }
-    highlights: PREFIX + "highlights",  // { topicId: ["quoted text", ...] }
+    highlights: PREFIX + "highlights",  // { topicId: [ {text, color}, ... ] }
+    hlColor:    PREFIX + "hl-color",    // "yellow" | "green" | "blue" | "pink" | "orange" | "purple"
     quiz:       PREFIX + "quiz",        // { attempts: [], byUnit: {} }
     srs:        PREFIX + "srs",         // { questionKey: {box, due, wrong} }
     activity:   PREFIX + "activity",    // { "YYYY-MM-DD": actionCount }
@@ -51,15 +52,16 @@ var store = (function () {
   }
 
   /* ---------- theme ---------- */
-  function getTheme() { return read(KEYS.theme, "system"); }
+  function getTheme() { return read(KEYS.theme, "light"); }
   function setTheme(v) {
     write(KEYS.theme, v);
     applyTheme();
   }
   function applyTheme() {
+    // Light is the canonical IVRI Study Studio theme and the default.
+    // Dark is a night-reading option the student must choose.
     var t = getTheme();
-    if (t === "system") document.documentElement.removeAttribute("data-theme");
-    else document.documentElement.setAttribute("data-theme", t);
+    document.documentElement.setAttribute("data-theme", t === "dark" ? "dark" : "light");
   }
 
   /* ---------- detail level (Standard vs Deep) ---------- */
@@ -99,17 +101,44 @@ var store = (function () {
   }
 
   /* ---------- highlights ---------- */
+  var VALID_HL_COLORS = ["yellow", "green", "blue", "pink", "orange", "purple"];
+  function getHighlightColor() {
+    var c = read(KEYS.hlColor, "yellow");
+    return VALID_HL_COLORS.indexOf(c) !== -1 ? c : "yellow";
+  }
+  function setHighlightColor(color) {
+    if (VALID_HL_COLORS.indexOf(color) === -1) color = "yellow";
+    write(KEYS.hlColor, color);
+    return color;
+  }
   function getHighlights() { return read(KEYS.highlights, {}); }
-  function addHighlight(id, text) {
+  function addHighlight(id, text, color) {
+    color = (color && VALID_HL_COLORS.indexOf(color) !== -1) ? color : getHighlightColor();
     var m = getHighlights();
     if (!m[id]) m[id] = [];
-    if (m[id].indexOf(text) === -1) m[id].push(text);
+    var found = false;
+    for (var i = 0; i < m[id].length; i++) {
+      var item = m[id][i];
+      var itemText = typeof item === "string" ? item : (item ? item.text : "");
+      if (itemText === text) {
+        m[id][i] = { text: text, color: color };
+        found = true;
+        break;
+      }
+    }
+    if (!found) {
+      m[id].push({ text: text, color: color });
+    }
     write(KEYS.highlights, m);
+    logActivity();
   }
   function removeHighlight(id, text) {
     var m = getHighlights();
     if (!m[id]) return;
-    m[id] = m[id].filter(function (t) { return t !== text; });
+    m[id] = m[id].filter(function (t) {
+      var itemText = typeof t === "string" ? t : (t ? t.text : "");
+      return itemText !== text;
+    });
     if (!m[id].length) delete m[id];
     write(KEYS.highlights, m);
   }
@@ -270,6 +299,7 @@ var store = (function () {
     getBookmarks: getBookmarks, isBookmarked: isBookmarked, toggleBookmark: toggleBookmark,
     getNotes: getNotes, getNote: getNote, setNote: setNote,
     getHighlights: getHighlights, addHighlight: addHighlight, removeHighlight: removeHighlight,
+    getHighlightColor: getHighlightColor, setHighlightColor: setHighlightColor, VALID_HL_COLORS: VALID_HL_COLORS,
     getQuiz: getQuiz, saveAttempt: saveAttempt,
     getSrs: getSrs, gradeSrs: gradeSrs, dueSrs: dueSrs,
     getActivity: getActivity, logActivity: logActivity, computeStreak: computeStreak,

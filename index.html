@@ -5,17 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Veterinary Pathology Studio — Notes, Q&amp;A and Quizzes | ICAR-IVRI</title>
 <meta name="description" content="A complete study companion for B.V.Sc second-year Veterinary Pathology: six theory units, six practical units, question bank, quizzes and progress dashboard. Works offline.">
-<meta name="theme-color" content="#0c0f14">
+<meta name="theme-color" content="#1565c0">
 
 <link rel="manifest" href="manifest.json">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23b3282d'/><text x='16' y='22' font-size='16' font-family='monospace' font-weight='bold' fill='white' text-anchor='middle'>VP</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%231565c0'/><text x='16' y='22' font-size='16' font-family='monospace' font-weight='bold' fill='white' text-anchor='middle'>VP</text></svg>">
 
 <!-- Theme must be applied before first paint to avoid a white flash -->
 <script>
   (function () {
     try {
-      var t = JSON.parse(localStorage.getItem("vpath-theme") || '"system"');
-      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+      var t = JSON.parse(localStorage.getItem("vpath-theme") || '"light"');
+      document.documentElement.setAttribute("data-theme", t === "dark" ? "dark" : "light");
     } catch (e) {}
   })();
 </script>
@@ -151,6 +151,43 @@
     <div class="palette__results" id="searchresults"></div>
     <div class="palette__hint">
       <span>↑ ↓ to move</span><span>Enter to open</span><span>Esc to close</span>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== ABOUT MODAL ==================== -->
+<div class="about-modal" id="aboutmodal" style="display:none;" onclick="if(event.target===this) app.closeAbout()">
+  <div class="about-card" role="dialog" aria-modal="true" aria-label="About Veterinary Pathology Studio">
+    <button class="about-close" onclick="app.closeAbout()" aria-label="Close">&times;</button>
+    <div class="about-hero">
+      <h2 class="about-hero-title">Veterinary Pathology Studio</h2>
+      <div class="about-hero-tag">ICAR-INDIAN VETERINARY RESEARCH INSTITUTE</div>
+    </div>
+
+    <div class="about-section">
+      <div class="about-section-head">Overview</div>
+      <p>A comprehensive, interactive curriculum companion for B.V.Sc. &amp; A.H. Second Year Veterinary Pathology (VCI MSVE 2016 Syllabus). Developed at ICAR–Indian Veterinary Research Institute (Izatnagar, Bareilly), it integrates 6 theory units, 6 practical units, comparative gross &amp; histopathology notes, clinical correlations, question banks, quizzes and an offline-first revision dashboard.</p>
+    </div>
+
+    <div class="about-section">
+      <div class="about-section-head">Vision &amp; Mission</div>
+      <ul class="about-list">
+        <li><b>Complete VCI Syllabus:</b> Full coverage of General Pathology, Systemic Pathology, Infectious Diseases, Avian Pathology, Oncology, and Clinical Necropsy.</li>
+        <li><b>Diagnostic Logic:</b> Pair every lesion with gross morphology, microscopic features, and clinical relevance.</li>
+        <li><b>Active Recall:</b> Unit-wise quizzes, paper-wise practice, spaced repetition review, and written exam Q&amp;A banks.</li>
+        <li><b>Accessible &amp; Offline:</b> 100% free, fast, responsive PWA that runs offline on any phone or laptop.</li>
+      </ul>
+    </div>
+
+    <div class="about-section">
+      <div class="about-section-head">App Development Team</div>
+      <ul class="about-list">
+        <li><b>Dr. Abhinov Verma</b> &middot; Senior Scientist &middot; <a class="credit-contact" href="mailto:abhinovverma281283@gmail.com">abhinovverma281283@gmail.com</a></li>
+        <li><b>Dr. Dangeti V.V.N. Durga Prasad</b> &middot; Scientist &middot; <a class="credit-contact" href="mailto:dpnag123@gmail.com">dpnag123@gmail.com</a></li>
+        <li><b>Dr. Elizabeth V.L. Hmangaihzuali</b> &middot; Scientist &middot; <a class="credit-contact" href="mailto:vlvl2323.er@gmail.com">vlvl2323.er@gmail.com</a></li>
+        <li><b>Dr. Samikshya Sarangi</b> &middot; Scientist &middot; <a class="credit-contact" href="mailto:samikshya.sarangi7@gmail.com">samikshya.sarangi7@gmail.com</a></li>
+        <li><b>Mr. Fazal Zama</b> &middot; Developer &middot; B.V.Sc &amp; A.H. UG &middot; Roll No. B0-350-2025 &middot; <a class="credit-contact" href="mailto:vet.fazalzama@gmail.com">vet.fazalzama@gmail.com</a></li>
+      </ul>
     </div>
   </div>
 </div>
