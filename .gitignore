@@ -1,15 +1,16 @@
-# OS generated files
+# System & OS
 .DS_Store
 Thumbs.db
 Desktop.ini
 
-# Editor & System directories
+# Editor & System
 .claude/
 .vscode/
 .idea/
 *.tmp
 *.bak
 *.swp
-
-# Logs and local overrides
 *.log
+
+# Staging/temporary folders
+repo/
