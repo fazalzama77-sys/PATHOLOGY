@@ -1,0 +1,15 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor & System directories
+.claude/
+.vscode/
+.idea/
+*.tmp
+*.bak
+*.swp
+
+# Logs and local overrides
+*.log
