@@ -11,7 +11,7 @@
    PRECACHE, otherwise students keep seeing the old version.
    ============================================================ */
 
-var CACHE_VERSION = "vpath-v11";
+var CACHE_VERSION = "vpath-v12";
 var SHELL_CACHE = CACHE_VERSION + "-shell";
 var IMG_CACHE = CACHE_VERSION + "-img";
 
