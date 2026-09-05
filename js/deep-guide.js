@@ -1,6 +1,6 @@
 /*
  * Contextual Deep View & Topic Orientation Guide
- * ICAR-IVRI Veterinary Pathology Studio
+ * Veterinary Pathology Studio
  * Isolated from app.js so guide events can never affect lesson rendering.
  */
 (() => {

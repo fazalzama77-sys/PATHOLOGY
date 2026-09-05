@@ -580,7 +580,7 @@ var app = (function () {
       var yawDeg = Math.round(((smoothY % (Math.PI * 2)) * 180) / Math.PI);
       if (width > 600) {
         ctx.fillText("ROT_YAW: " + yawDeg + "\u00B0 // REF: VCI_MSVE_2016", width - 240, txtY);
-        ctx.fillText("ICAR_IVRI_PATHOLOGY // UNITS_1_6_ONLINE", width - 240, txtY + 13);
+        ctx.fillText("VET_PATHOLOGY_STUDIO // UNITS_1_6_ONLINE", width - 240, txtY + 13);
       }
 
       requestAnimationFrame(renderLoop);
@@ -654,7 +654,7 @@ var app = (function () {
           '<span class="eyebrow">' + icon("sparkle") + ' B.V.Sc &amp; A.H. · Second Year · VCI Syllabus</span>' +
           '<h1 class="hero__title">Veterinary Pathology<br><span class="hero__title-accent">Studio</span></h1>' +
           '<p class="lede hero__lede">Six theory units, six practical units, a question bank and a quiz engine — ' +
-          'built for students at ICAR-IVRI, Izatnagar. Works offline once loaded.</p>' +
+          'built for B.V.Sc &amp; A.H. second-year students. Works offline once loaded.</p>' +
           '<div class="hero__cta">' +
             (lastT
               ? '<a class="btn btn--primary btn--lg" href="#/topic/' + lastT.id + '">' + icon("book") + ' Resume: ' + esc(shorten(lastT.title, 34)) + '</a>'
@@ -714,9 +714,9 @@ var app = (function () {
         statCard("Questions ready", totalQ, totalQa + " written Q&A", "quiz") +
       '</div>' +
 
-      '<h2 class="mt-12">Study areas</h2>' +
-      '<div class="grid grid--3 mt-4">' +
-        areaCard("theory", "Theory", "Six units, " + countTopics("theory") + " topics", "The complete VCI theory syllabus from general pathology to wildlife disease.", "#/theory") +
+      '<h2 class="mt-8">Explore Pathology</h2>' +
+      '<div class="grid grid--2 mt-4">' +
+        areaCard("theory", "Theory", "Six units, " + countTopics("theory") + " topics", "General pathology, systemic lesions, avian diseases and oncology.", "#/theory") +
         areaCard("practical", "Practical", "Six units, " + countTopics("practical") + " topics", "Gross specimens, histopathology technique, haematology and necropsy.", "#/practical") +
         areaCard("quiz", "Quiz", totalQ + " questions", "Unit-wise, paper-wise, grand test, timed exam mode and smart review.", "#/quiz") +
         areaCard("qa", "Question &amp; Answer", totalQa + " questions", "Short notes, long answers and differentiate-between tables for the written exam.", "#/qa") +
@@ -731,42 +731,14 @@ var app = (function () {
         paperCard(syllabus.meta.papers[1]) +
       '</div>' +
 
-      /* Institutional Credits & Platform Links */
+      /* Platform Credits & Links */
       '<div class="footer-credits-wrap">' +
         '<div class="footer-credits">' +
           '<div class="credit-col">' +
             '<div class="credit-heading">' +
-              icon("theory") + ' APP DEVELOPMENT TEAM · ICAR-IVRI' +
+              icon("me") + ' PLATFORM DEVELOPER' +
             '</div>' +
             '<ul class="credit-list">' +
-              '<li>' +
-                '<b>Dr. Abhinov Verma</b>' +
-                '<span class="credit-role">Senior Scientist · ICAR-IVRI</span>' +
-                '<a class="credit-contact" href="mailto:abhinovverma281283@gmail.com">' +
-                  icon("share") + ' abhinovverma281283@gmail.com' +
-                '</a>' +
-              '</li>' +
-              '<li>' +
-                '<b>Dr. Dangeti V.V.N. Durga Prasad</b>' +
-                '<span class="credit-role">Scientist · ICAR-IVRI</span>' +
-                '<a class="credit-contact" href="mailto:dpnag123@gmail.com">' +
-                  icon("share") + ' dpnag123@gmail.com' +
-                '</a>' +
-              '</li>' +
-              '<li>' +
-                '<b>Dr. Elizabeth V.L. Hmangaihzuali</b>' +
-                '<span class="credit-role">Scientist · ICAR-IVRI</span>' +
-                '<a class="credit-contact" href="mailto:vlvl2323.er@gmail.com">' +
-                  icon("share") + ' vlvl2323.er@gmail.com' +
-                '</a>' +
-              '</li>' +
-              '<li>' +
-                '<b>Dr. Samikshya Sarangi</b>' +
-                '<span class="credit-role">Scientist · ICAR-IVRI</span>' +
-                '<a class="credit-contact" href="mailto:samikshya.sarangi7@gmail.com">' +
-                  icon("share") + ' samikshya.sarangi7@gmail.com' +
-                '</a>' +
-              '</li>' +
               '<li>' +
                 '<b>Mr. Fazal Zama</b>' +
                 '<span class="credit-role">Developer · B.V.Sc &amp; A.H. UG · Roll No. B0-350-2025</span>' +
@@ -1020,7 +992,7 @@ var app = (function () {
           : '<div class="pathology-image-placeholder"><div class="pathology-placeholder-body">' +
               icon("search") +
               '<div class="pathology-placeholder-title">High-Quality Pathology Visuals in Development</div>' +
-              '<div class="pathology-placeholder-sub">Carefully curated gross and histopathology reference images for this topic are being compiled at ICAR-IVRI.</div>' +
+              '<div class="pathology-placeholder-sub">Carefully curated gross and histopathology reference images for this topic are in compilation.</div>' +
             '</div></div>') +
         (c.clinical ? block("Clinical correlation & Pathogenesis", c.clinical, "clinical", "shield") : "");
     } else {
@@ -1610,7 +1582,7 @@ var app = (function () {
     {
       kicker: "WELCOME TO THE PLATFORM",
       title: "Veterinary Pathology Studio",
-      body: "Built specifically for 2nd-year B.V.Sc &amp; A.H. students at <b>ICAR-IVRI</b>. Covers all 6 VCI Theory Units, 6 Practical Units, diagnostic necropsy, gross lesions, and histopathology.",
+      body: "Built specifically for 2nd-year B.V.Sc &amp; A.H. students. Covers all 6 VCI Theory Units, 6 Practical Units, diagnostic necropsy, gross lesions, and histopathology.",
       icon: "book"
     },
     {
@@ -2071,10 +2043,10 @@ var app = (function () {
 
       var heroHtml =
         '<div class="qa-hub-hero">' +
-          '<div class="qa-hub-hero__badge">' + icon("sparkle") + ' ICAR-IVRI Written Examination Studio</div>' +
+          '<div class="qa-hub-hero__badge">' + icon("sparkle") + ' Written Examination Studio</div>' +
           '<h1>' + icon("qa") + ' Question &amp; Answer Master Bank</h1>' +
           '<p>150 High-Yield Exam Questions across Theory Units 1 to 6 with gold-standard model answers, ' +
-          'examiner marking criteria, and past university questions (IVRI, TANUVAS, GADVASU, RAJUVAS, WBUAFS).</p>' +
+          'examiner marking criteria, and past university questions (TANUVAS, GADVASU, RAJUVAS, WBUAFS, State Universities).</p>' +
           '<div class="qa-stats-grid">' +
             '<div class="qa-stat-card">' +
               '<div class="qa-stat-card__icon is-blue">' + icon("quiz") + '</div>' +
@@ -2295,7 +2267,7 @@ var app = (function () {
           '</span>' +
         '</summary>' +
         '<div class="qa__body">' +
-          '<div class="qa-model-banner">' + icon("feather") + ' ICAR-IVRI Gold-Standard Model Answer</div>' +
+          '<div class="qa-model-banner">' + icon("feather") + ' Gold-Standard Model Answer</div>' +
           (q.answer ? '<div class="qa-answer-prose">' + q.answer + '</div>' : '<p class="faint">Model answer not written yet.</p>') +
           (q.keyPoints && q.keyPoints.length
             ? '<div class="qa-scoring-callout">' +
@@ -3089,7 +3061,7 @@ var app = (function () {
 
       '<div class="card mb-4">' +
         '<h3>' + icon("sun") + ' Appearance</h3>' +
-        '<p class="muted mt-2">Light is the standard IVRI study theme. Dark is available for night reading.</p>' +
+        '<p class="muted mt-2">Light is the standard study theme. Dark is available for night reading.</p>' +
         '<div class="seg mt-4" role="group">' +
           ['light', 'dark'].map(function (t) {
             return '<button class="seg__btn' + (theme === t ? " is-on" : "") + '" data-theme="' + t + '">' +

@@ -2491,7 +2491,7 @@ practicalData["prac-unit-5"] = {
           [
             "Laboratory Dispatch",
             "Specimens, preservative, requested confirmatory tests",
-            "5 fresh bursae on ice packs to IVRI Bareilly for RT-PCR and antigen ELISA"
+            "5 fresh bursae on ice packs to disease diagnostic laboratory for RT-PCR and antigen ELISA"
           ],
           [
             "Recommendations",

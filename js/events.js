@@ -63,11 +63,11 @@
         }) : [];
         return {
             enabled: source.sectionEnabled !== false,
-            title: safeText(source.sectionTitle, 'IVRI Pathology Announcements'),
+            title: safeText(source.sectionTitle, 'Pathology Announcements'),
             subtitle: safeText(source.sectionSubtitle),
             emptyMessage: safeText(source.emptyMessage, 'No upcoming events right now.'),
             youtubeUrl: safeUrl(source.youtubeChannelUrl),
-            youtubeLabel: safeText(source.youtubeChannelLabel, 'Visit IVRI YouTube channel'),
+            youtubeLabel: safeText(source.youtubeChannelLabel, 'Visit YouTube channel'),
             events
         };
     };

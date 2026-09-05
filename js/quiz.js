@@ -1,5 +1,5 @@
 /* ============================================================
-   quiz.js  —  The ICAR-IVRI Veterinary Pathology Quiz Engine
+   quiz.js  —  The Veterinary Pathology Quiz Engine
    ------------------------------------------------------------
    Features:
      - 1,080 Curriculum-standard Questions across Units 1 to 6

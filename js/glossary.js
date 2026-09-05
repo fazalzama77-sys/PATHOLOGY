@@ -1,6 +1,6 @@
 // =========================================================
 // GLOSSARY — B.V.Sc UG-Level Tooltip Term Dictionary
-// ICAR-IVRI Veterinary Pathology Studio
+// Veterinary Pathology Studio
 // =========================================================
 // Usage: glossary.decorate(rootElement) scans rendered HTML
 // inside rootElement and wraps known terms with a hover-tooltip.

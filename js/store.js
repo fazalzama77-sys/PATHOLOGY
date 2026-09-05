@@ -66,7 +66,7 @@ var store = (function () {
     applyTheme();
   }
   function applyTheme() {
-    // Light is the canonical IVRI Study Studio theme and the default.
+    // Light is the canonical Study Studio theme and the default.
     // Dark is a night-reading option the student must choose.
     var t = getTheme();
     document.documentElement.setAttribute("data-theme", t === "dark" ? "dark" : "light");

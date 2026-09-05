@@ -1,7 +1,7 @@
 // =========================================================
 // GLOBAL SEARCH ENGINE — Site-wide Veterinary Pathology Search
 // Indexes Theory, Practical, WHY, Q&A and Quiz banks
-// ICAR-IVRI Veterinary Pathology Studio
+// Veterinary Pathology Studio
 // =========================================================
 
 const searchEngine = {

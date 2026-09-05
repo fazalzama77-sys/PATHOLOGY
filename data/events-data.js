@@ -1,5 +1,5 @@
 /* ================================================================
- * ICAR-IVRI VETERINARY PATHOLOGY — DEPARTMENT EVENTS DATA
+ * VETERINARY PATHOLOGY — DEPARTMENT EVENTS DATA
  * ================================================================
  * THIS IS THE ONLY EVENTS FILE THAT DEPARTMENT STAFF SHOULD EDIT.
  *
@@ -17,13 +17,13 @@
 window.IVRI_PATHOLOGY_EVENTS_CONFIG = {
     // STAFF TOGGLE: true = show the section; false = hide it completely.
     sectionEnabled: true,
-    sectionTitle: 'IVRI Pathology Announcements & Seminars',
+    sectionTitle: 'Pathology Announcements & Seminars',
     sectionSubtitle: 'Upcoming academic programmes, expert lectures, diagnostic slide workshops, and official updates.',
     emptyMessage: 'No upcoming events right now.',
 
-    // Official IVRI YouTube / Video channel link:
+    // Official YouTube / Video channel link:
     youtubeChannelUrl: '',
-    youtubeChannelLabel: 'Visit IVRI YouTube Channel',
+    youtubeChannelLabel: 'Visit YouTube Channel',
 
     // Add event blocks here when a programme is announced. Template:
     // {
