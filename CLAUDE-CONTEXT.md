@@ -143,22 +143,32 @@ and `--ivri-purple` are the readable text/accent versions.
 ## 🗂️ FILE STRUCTURE
 
 ```
-D:/PATHOLOGY APPLICATION/
+├── 1-CLICK-PUSH-TO-GITHUB.bat 🌟 Double-click → syncs repo, stages, commits, and pushes to GitHub!
+├── SYNC-TO-REPO.bat         Double-click → mirrors all files into repo/ sequentially
+├── REPO.md                  Student repository & GitHub guide
 ├── index.html               Single-page app shell. All sections live here.
 ├── manifest.json            PWA manifest
 ├── service-worker.js        Offline cache — BUMP CACHE_VERSION ON EVERY RELEASE
 ├── README.md                Non-coder guide to adding content
 ├── CLAUDE-CONTEXT.md        THIS FILE
 │
+├── repo/                    ← 📦 PRISTINE MIRROR FOLDER FOR DRAG-AND-DROP UPLOADS
+│   ├── assets/              Identical sequential copy of assets/
+│   ├── data/                Identical sequential copy of data/
+│   ├── images/              Identical sequential copy of images/
+│   ├── js/                  Identical sequential copy of js/
+│   ├── tools/               Identical sequential copy of tools/
+│   └── (all root files)     index.html, manifest, README, REPO.md, etc.
+│
 ├── data/                    ← ALL CONTENT LIVES HERE
 │   ├── data-syllabus.JS         Master index: units, topic titles, exam papers
 │   ├── data-theory-unit1.JS     ✅ Unit 1 — 21 topics COMPLETE
 │   ├── data-theory-unit2.JS     ✅ Unit 2 — 12 topics COMPLETE
 │   ├── data-theory-unit3.JS     ✅ Unit 3 — 20 topics COMPLETE
-│   ├── data-theory-unit4.JS     ⏳ Unit 4 — 37 topics EMPTY
+│   ├── data-theory-unit4.JS     ⏳ Unit 4 — Systemic Pathology (partially written)
 │   ├── data-theory-unit5.JS     ⏳ Unit 5 — 21 topics EMPTY
 │   ├── data-theory-unit6.JS     ⏳ Unit 6 — 9 topics EMPTY
-│   ├── data-practical.JS        ⏳ All 6 practical units — 25 topics EMPTY
+│   ├── data-practical.JS        ✅ All 6 practical units — 25 topics COMPLETE
 │   ├── data-why.JS              ⏳ WHY entries — template only
 │   ├── data-qa.JS               ⏳ Q&A bank — template only
 │   ├── data-quiz.JS             ⏳ quizBank[unitId][mcq|tf|fib] — template only
@@ -186,7 +196,8 @@ D:/PATHOLOGY APPLICATION/
 └── tools/
     ├── start-server.bat     Double-click → http://localhost:5177
     ├── make-data-files.bat  Double-click → scaffolds new topic blocks
-    └── make-data-files.py
+    ├── make-data-files.py
+    └── sync-repo.bat        Double-click → refreshes repo/ folder
 ```
 
 ### Data shapes
