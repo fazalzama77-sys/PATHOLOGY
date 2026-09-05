@@ -1693,150 +1693,1419 @@ practicalData["prac-unit-3"] = {
 
 practicalData["prac-unit-4"] = {
   "p4-t01": {
-    /* Post-mortem Examination and Its Interpretation */
-    summary:   "",
-    desc:      "",
-    eliteDesc: "",
-    keyPoints: [],
-    clinical:  "",
-    tables:    [],
-    img:       "",
-    tags:      []
+    "summary": "Infectious disease necropsy interpretation systematically distinguishes septicaemic, toxaemic, and granulomatous lesion patterns while enforcing biosafety, hall disinfection, and targeted organ sampling for microbiological confirmation.",
+    "desc": "<b>OBJECTIVE AND CLINICAL IMPORTANCE IN OUTBREAK INVESTIGATION</b><br>Post-mortem examination of infectious and non-infectious animal diseases is not a mere descriptive exercise; it is an active epidemiological and diagnostic investigation. The prosector must identify pathognomonic lesion constellations, determine the biological mechanism of death (e.g. endotoxic shock, asphyxia, massive haemolysis), and collect the exact morbid samples needed for laboratory confirmation without contaminating the premises.<br><br><b>1. THREE CARDINAL PATHOLOGICAL PATTERNS OF INFECTIOUS DISEASE</b><br>When examining an animal that died of an infectious process, the lesions generally fall into one of three major pathophysiological patterns:<br><ul><li><b>Pattern A: Septicaemia (Systemic Dissemination of Pathogens):</b><br>• <i>Definition:</i> Active multiplication of pathogenic bacteria and their toxins in circulating blood.<br>• <i>Gross Lesions:</i> Widespread petechiae and ecchymoses on serous and mucous membranes (endocardium, epicardium, pleura, peritoneum, renal cortex). Markedly <b>enlarged, dark red, soft, congested, pulpy spleen (splenitis / acute splenic tumour)</b>. Parenchymatous organs (liver, kidney, heart) show cloudy swelling or acute degeneration. Lymph nodes are swollen, juicy, and haemorrhagic. Blood is dark and poorly coagulated. Seen in: Anthrax, Acute Pasteurellosis (Haemorrhagic Septicaemia), Classical Swine Fever, Acute Salmonellosis.</li><br><li><b>Pattern B: Toxaemia (Absorption of Bacterial Exotoxins):</b><br>• <i>Definition:</i> Severe systemic clinical effects produced by bacterial toxins circulating in blood, while the bacteria themselves remain localized at the primary infection site.<br>• <i>Gross Lesions:</i> Spleen is characteristically <b>NORMAL in size</b> (distinguishes toxaemia from septicaemia!). Severe focal necrosis or gangrene at the primary bacterial site (e.g. abomasum in Braxy, intestine in Enterotoxaemia, muscle in Blackleg). Widespread degenerative changes in adrenal glands, kidneys, and liver. Hydropericardium and subendocardial haemorrhages. Seen in: Tetanus, Botulism, Clostridial Enterotoxaemia (*Cl. perfringens* Type D), Braxy.</li><br><li><b>Pattern C: Chronic Granulomatous Diseases:</b><br>• <i>Definition:</i> Host cell-mediated immune response attempting to wall off persistent, intracellular microorganisms.<br>• <i>Gross Lesions:</i> Discrete, firm nodules (tubercles, granulomas) containing central caseous necrosis and calcification (Tuberculosis), honeycombed rarefying osteomyelitis with sulfur granules (Actinomycosis), diffuse corrugated thickening of mucous membranes (Johne's disease), or fibrous nodules with draining sinuses (Glanders).</li></ul><br><b>2. BIOSAFETY AND DISINFECTION IN THE POST-MORTEM HALL</b><br><ul><li><b>Personal Protective Equipment (PPE):</b> Heavy rubber necropsy boots, rubber apron, waterproof gown, double latex gloves, face mask, and eye goggles. Cut-resistant chainmail glove worn on non-knife hand.</li><li><b>Disinfection of Post-Mortem Hall & Tables:</b><br>• <i>Sodium Hypochlorite (Bleach, 2–5% available chlorine):</i> Highly effective against viruses and vegetative bacteria.<br>• <i>Sodium Hydroxide (Caustic Soda, 2% solution):</i> Gold standard for disinfecting premises contaminated with Foot and Mouth Disease (FMD) virus and Anthrax spores.<br>• <i>Formalin Fumigation:</i> Potassium permanganate (35 ml 40% formalin + 17.5 g KMnO4 per 100 cubic feet) for sealing and sterilizing post-mortem isolation rooms after anthrax or zoonotic autopsies.</li><li><b>Carcass Disposal:</b> Deep burial in a 6-foot pit covered with a 1-foot layer of unslaked quicklime (calcium oxide, CaO), or complete high-temperature incineration.</li></ul><br><b>3. INTERPRETATION OF LESIONS FOR CAUSE OF DEATH</b><br>Every finding must be integrated with the clinical history:<br>• Sudden death with unclotted orifice bleeding in cattle -> Rule out Anthrax before cutting.<br>• Oedema of throat/brisket with petechiae and marbled pneumonia -> Haemorrhagic Septicaemia (*Pasteurella multocida* B:2).<br>• Rapidly fatal bloat with subcutaneous gas and crepitation -> Blackleg (*Clostridium chauvoei*).<br>• Severe dehydration with zebra-striped rectum -> Rinderpest / PPR.",
+    "eliteDesc": "<b>PATHOPHYSIOLOGY OF SEPTICAEMIC SHOCK VS TOXAEMIA.</b><br>In Gram-negative septicaemia (e.g. *E. coli*, *Salmonella*), lysis of bacterial cell walls releases <b>Lipopolysaccharide (LPS / Endotoxin)</b>. Lipid A binds to TLR-4 on macrophages, stimulating massive release of TNF-alpha, IL-1, and IL-6. This triggers: (1) Systemic endothelial cell activation and injury, (2) Widespread tissue factor expression triggering <b>Disseminated Intravascular Coagulation (DIC)</b>, and (3) Inducible nitric oxide synthase (iNOS) activation producing massive peripheral vasodilation and vascular collapse (Septicaemic Shock). This sequence directly explains why necropsies of septicaemic animals reveal microvascular microthrombi, petechiae, cortical renal necrosis, and acute pulmonary oedema.",
+    "keyPoints": [
+      "Infectious necropsy interpretation categorises lesions into septicaemia, toxaemia, or granulomatous disease.",
+      "Septicaemia shows widespread petechiae, acute degenerative changes, and markedly enlarged, soft, pulpy spleen.",
+      "In toxaemia, the spleen is characteristically normal in size; primary lesions are localized (e.g. enterotoxaemia).",
+      "Caustic soda (2% NaOH) is the disinfectant of choice for FMD virus and anthrax contamination.",
+      "Personal protective equipment (PPE) with double gloving and chainmail gloves is mandatory for infectious autopsies.",
+      "Anthrax must be excluded by peripheral blood smear before making any incision in a bloated, bleeding carcass.",
+      "Formalin fumigation (formalin + KMnO4) sterilises sealed post-mortem halls after hazardous zoonotic necropsies.",
+      "Endotoxin (LPS) release triggers DIC, widespread petechial haemorrhages, and septicaemic shock.",
+      "Carcass disposal requires high-temperature incineration or 6-foot deep burial layered with quicklime.",
+      "Throat swelling, submandibular oedema, and petechial haemorrhages indicate Haemorrhagic Septicaemia in cattle.",
+      "Zebra striping of the rectum indicates Morbillivirus infection (Rinderpest or PPR).",
+      "Blackleg produces porous dry muscle with gas crepitation and rancid butter odour."
+    ],
+    "clinical": "<b>Safety Protocol for Suspected Rabies Necropsy.</b><br>When a dog or cow dies after showing aggressive or paralytic neurological signs: <b>DO NOT open the body cavities</b>. Decapitate the head at the atlanto-occipital joint using a bone saw and heavy cleaver while wearing eye protection, face shield, and chainmail gloves. Place the severed head in double leakproof plastic bags inside a sealed container on ice packs. Dispatch immediately to an authorized veterinary diagnostic laboratory for fluorescent antibody testing (FAT) on hippocampal impressions. Never freeze whole brain if FAT is needed within 24 hours.",
+    "tables": [
+      {
+        "title": "Pathological Differentiation: Septicaemia vs Toxaemia",
+        "headers": [
+          "Pathological Parameter",
+          "Septicaemia",
+          "Toxaemia"
+        ],
+        "rows": [
+          [
+            "Definition",
+            "Bacteria actively multiply in circulating blood",
+            "Bacterial toxins circulate in blood; bacteria localized"
+          ],
+          [
+            "Spleen Size & Consistency",
+            "Markedly enlarged, swollen, dark, soft, pulpy (Acute Splenic Tumour)",
+            "NORMALLY sized; firm; no acute splenomegaly"
+          ],
+          [
+            "Serosal Haemorrhages",
+            "Widespread, profuse petechiae and ecchymoses on all organs",
+            "Mild to moderate; mainly subendocardial and adrenal"
+          ],
+          [
+            "Parenchymatous Degeneration",
+            "Severe, acute cloudy swelling and necrosis in liver, kidney, heart",
+            "Marked toxic fatty change and necrosis in liver and kidneys"
+          ],
+          [
+            "Bacterial Culture from Blood",
+            "Heart blood yields pure, heavy growth of causative organism",
+            "Heart blood is completely sterile; bacteria absent"
+          ],
+          [
+            "Classic Veterinary Examples",
+            "Haemorrhagic Septicaemia, Anthrax, Swine Erysipelas",
+            "Tetanus, Botulism, Clostridial Enterotoxaemia (Pulpy Kidney)"
+          ]
+        ]
+      },
+      {
+        "title": "Disinfectants Used in Veterinary Post-Mortem Halls",
+        "headers": [
+          "Disinfectant Chemical",
+          "Standard Working Concentration",
+          "Mode of Action",
+          "Primary Pathogens Targeted"
+        ],
+        "rows": [
+          [
+            "Sodium Hydroxide (Caustic Soda)",
+            "2% solution in warm water",
+            "Saponifies lipids; denatures proteins; high pH",
+            "FMD virus, Anthrax spores, Mycobacteria"
+          ],
+          [
+            "Sodium Hypochlorite (Bleach)",
+            "2% to 5% available chlorine",
+            "Strong oxidation; releases nascent oxygen",
+            "Vegetative bacteria, Parvovirus, Canine Distemper"
+          ],
+          [
+            "Formalin Fumigation",
+            "35 ml 40% formalin + 17.5 g KMnO4 / 100 cu ft",
+            "Alkylates amino and sulfhydryl groups of proteins",
+            "Terminal terminal air & surface sterilization"
+          ],
+          [
+            "Quicklime (Calcium Oxide, CaO)",
+            "Dry powder / slurry layered in burial pit",
+            "Exothermic hydration reaction (generates heat + alkali)",
+            "Anthrax carcass burial; ground sterilization"
+          ]
+        ]
+      }
+    ],
+    "img": "",
+    "tags": [
+      "infectious necropsy",
+      "septicaemia",
+      "toxaemia",
+      "biosafety",
+      "disinfection",
+      "caustic soda",
+      "post-mortem interpretation"
+    ]
   },
-
   "p4-t02": {
-    /* Gross Specimens — Infectious and Non-infectious Diseases */
-    summary:   "",
-    desc:      "",
-    eliteDesc: "",
-    keyPoints: [],
-    clinical:  "",
-    tables:    [],
-    img:       "",
-    tags:      []
+    "summary": "Infectious disease gross spotting links museum organs with definitive diagnoses: anthrax blackberry-jam spleen, TB pearl disease, actinomycosis lumpy jaw, classical swine fever turkey-egg kidney, and pipe-stem fasciolosis liver.",
+    "desc": "<b>OBJECTIVE AND SPOTTING PROTOCOL</b><br>At this practical spotting station, students examine museum jars displaying organs from domestic animals affected by major infectious and toxic diseases. In 2 minutes, you must identify: (1) Organ and species, (2) Cardinal gross lesion, (3) Exact disease name and causative agent, and (4) The principal diagnostic viva point.<br><br><b>1. BACTERIAL DISEASE GROSS SPECIMENS</b><br><ul><li><b>1. Anthrax — Spleen (*Bacillus anthracis*):</b><br>• <i>Gross Features:</i> Massive splenomegaly (spleen enlarged 3 to 5 times normal size). Capsule is tense, cyanotic, and dark purplish-blue. On incision, the splenic pulp is liquefied, semi-fluid, oozing a dark, tarry, reddish-black mass resembling <b>blackberry jam</b>. Normal splenic trabeculae and Malpighian corpuscles are completely obliterated.</li><br><li><b>2. Tuberculosis — Lung & Pleura (\"Pearl Disease\" / Perlsucht — *Mycobacterium bovis*):</b><br>• <i>Gross Features:</i> On parietal and visceral pleura, multiple clustered, firm, glistening, greyish-white to yellowish nodular masses resembling <b>strings of pearls</b> (Pearl Disease). In lungs and bronchial lymph nodes: circumscribed granulomatous nodules containing a central core of dry, cheesy, yellowish <b>caseous necrosis</b> with gritty, sand-like calcification that grates when sliced with a knife.</li><br><li><b>3. Actinomycosis (\"Lumpy Jaw\") — Bovine Mandible (*Actinomyces bovis*):</b><br>• <i>Gross Features:</i> Rarefying osteomyelitis of the lower jaw. The mandible is immensely enlarged, porous, honeycombed, and sponge-like. Cut section shows numerous suppurative pockets and fistulous tracts discharging thick, yellow pus containing tiny, gritty, pinhead-sized yellow particles called <b>\"Sulfur Granules\"</b>.</li><br><li><b>4. Actinobacillosis (\"Wooden Tongue\") — Bovine Tongue (*Actinobacillus lignieresii*):</b><br>• <i>Gross Features:</i> The tongue is severely swollen, hard, rigid, and unyielding (like a piece of wood), protruding from the mouth. The dorsum of the tongue exhibits a deep transverse ulceration (anterior to the lingual fossa) with multiple small, firm, yellowish-white granulomatous nodules embedded in the submucosa.</li><br><li><b>5. Glanders — Equine Lung & Nasal Septum (*Burkholderia mallei*):</b><br>• <i>Gross Features:</i> Nasal mucosa shows crater-like ulcers that heal with characteristic <b>stellate (star-shaped) scars</b>. Lungs contain shot-like, firm, grey-white nodules with a red hyperaemic halo resembling miliary tubercles. Cutaneous form (Farcy) shows corded, beaded lymphatics and ulcerated nodules ('Farcy buds').</li><br><li><b>6. Swine Erysipelas — Pig Skin (*Erysipelothrix rhusiopathiae*):</b><br>• <i>Gross Features:</i> <b>Diamond Skin Disease:</b> Multiple sharply circumscribed, elevated, rhomboid or diamond-shaped, firm, reddish-purple cutaneous plaques on the back, flank, and ears, caused by acute immune-complex vasculitis and thrombosis.</li></ul><br><b>2. VIRAL DISEASE GROSS SPECIMENS</b><br><ul><li><b>1. Classical Swine Fever (Hog Cholera) — Pig Kidney & Spleen (Pestivirus):</b><br>• <i>Kidney:</i> <b>\"Turkey-Egg Kidney\"</b> — cortical surface is studded with hundreds of pinpoint to pinhead-sized petechial haemorrhages.<br>• <i>Spleen:</i> Multiple, distinct, dark-red to blackish, elevated, wedge-shaped <b>marginal infarcts</b> along the borders of the spleen.<br>• <i>Large Intestine:</i> <b>Button ulcers</b> (concentric necrotic ulcers) around the ileocaecal valve.</li><br><li><b>2. Foot and Mouth Disease (FMD) — Bovine Tongue & Heart (Aphthovirus):</b><br>• <i>Tongue:</i> Ruptured vesicles leaving large, irregular, raw, red, shallow erosions with ragged epithelial tags.<br>• <i>Calf Heart:</i> <b>\"Tiger Heart\"</b> — myocardium shows irregular, pale greyish-yellow streaks and patches of necrosis alternating with normal red muscle fibres, especially in the left ventricle and interventricular septum.</li><br><li><b>3. Canine Parvovirus — Dog Intestine (CPV-2):</b><br>• <i>Gross Features:</i> Segmental haemorrhagic enteritis (jejunum and ileum). Intestinal wall is thickened, edematous, turgid, with dark purplish-red serosa; lumen filled with dark red, foul, watery bloody fluid; mesenteric lymph nodes are enlarged and haemorrhagic.</li></ul><br><b>3. PARASITIC AND TOXIC SPECIMENS</b><br><ul><li><b>1. Fasciolosis — Bovine Liver (*Fasciola hepatica* / *gigantica*):</b><br>• <i>Gross Features:</i> <b>\"Pipe-Stem Liver\"</b> — massive thickening, fibrosis, and calcification of major bile ducts, which project prominently above the visceral surface of the liver like thick white clay-pipe stems. Slicing the ducts reveals adult leaf-like flukes, thickened walls, and dark greenish-brown bile mixed with fluke eggs and gritty calcareous matter.</li><br><li><b>2. Hydatidosis — Bovine Liver / Lung (*Echinococcus granulosus* larva):</b><br>• <i>Gross Features:</i> Large, fluctuating, unilocular fluid-filled cysts (5 to 15 cm). Slicing shows: (1) outer host fibrous capsule, (2) milky-white laminated chitinous membrane that curls inward when cut, and (3) inner thin germinal layer containing clear hydatid fluid and gritty <b>hydatid sand</b> (brood capsules and protoscolices).</li><br><li><b>3. Haemonchosis — Sheep Abomasum (*Haemonchus contortus*):</b><br>• <i>Gross Features:</i> Abomasal mucosa is congested, swollen, covered with thousands of small (2–3 cm) thread-like nematodes showing the classic <b>\"Barber's Pole\" pattern</b> (red blood-filled intestine spiralling around the white egg-filled uterus in female worms). Carcass displays severe generalized anaemia, watery blood, and gelatinous submandibular oedema (<b>\"Bottle Jaw\"</b>).</li><br><li><b>4. Spirocercosis — Canine Oesophagus (*Spirocerca lupi*):</b><br>• <i>Gross Features:</i> Large, firm, nodular, fibrous granulomas (2 to 5 cm) protruding into the lumen of the distal thoracic oesophagus. Cut section reveals small fistulous openings discharging eggs, with tangled masses of bright red, coiled adult *S. lupi* worms embedded within the fibrous core. Frequently accompanied by aortic aneurysm and thoracic spondylitis.</li></ul>",
+    "eliteDesc": "<b>PATHOGENESIS OF VASCULAR AND INFARCT LESIONS IN CLASSICAL SWINE FEVER.</b><br>Why does Classical Swine Fever produce marginal splenic infarcts and a turkey-egg kidney? The Pestivirus has an exquisite tropism for vascular endothelial cells. Viral replication within endothelial cells triggers widespread endothelial necrosis, platelet aggregation, and hyaline microthrombosis. In the spleen, where arterioles lack an extensive collateral circulation along the peripheral margins, microthrombi cause coagulative necrosis of wedge-shaped peripheral zones (marginal infarcts). In the kidney, immune-complex glomerulitis and capillary breakdown lead to multiple microvascular petechiae on the pale cortex ('turkey egg').",
+    "keyPoints": [
+      "Anthrax spleen: enlarged 3-5x, tense capsule, liquefied 'blackberry jam' pulpy red-black pulp.",
+      "Tuberculosis: 'Pearl disease' nodules on pleura/peritoneum; caseo-calcareous nodules with gritty calcification.",
+      "Actinomycosis ('Lumpy jaw'): rarefying osteomyelitis of bovine mandible with honeycombed bone and sulfur granules.",
+      "Actinobacillosis ('Wooden tongue'): tongue is hard, woody, swollen, with dorsal transverse ulcer and granulomas.",
+      "Glanders: nasal ulcers healing as stellate (star-shaped) scars, shot-like lung nodules, and farcy buds.",
+      "Swine Erysipelas: pathognomonic diamond-shaped rhomboid purple skin plaques from vasculitis.",
+      "Classical Swine Fever triad: 'turkey-egg kidney' petechiae, marginal splenic infarcts, and button ulcers.",
+      "FMD hallmark: vesicles and raw erosions on tongue/coronary band; 'tiger heart' in young calves.",
+      "Canine Parvovirus: dark red segmental haemorrhagic enteritis with foul bloody contents and thymic atrophy.",
+      "Fasciolosis liver: 'pipe-stem liver' with prominently thickened, fibrotic, calcified bile ducts.",
+      "Hydatid cyst (*E. granulosus*): unilocular fluid cyst with laminated cuticular membrane and hydatid sand.",
+      "Haemonchosis: 'barber's pole' worms in sheep abomasum causing profound anaemia and submandibular bottle jaw.",
+      "Spirocercosis: nodular fibrous granulomas in dog oesophagus with red coiled worms and aortic aneurysms."
+    ],
+    "clinical": "<b>Field Spotting Alert: Anthrax Spleen vs Babesiosis Spleen.</b><br>In bovine post-mortems with sudden death, students often confuse an Anthrax spleen with a Babesiosis spleen: Both produce massive splenomegaly. However, in <b>Anthrax</b>, the splenic pulp is completely liquefied, semi-fluid, oozing like dark blackberry jam, and blood is tarry and unclotted. In <b>Babesiosis</b>, the spleen is enlarged and congested ('raspberry jam') but the tissue is <b>firm</b> and does not ooze as a liquefied soup; the bladder is packed with dark red-brown urine (haemoglobinuria) and jaundice is prominent.",
+    "tables": [
+      {
+        "title": "Master Spotting Key: Infectious Disease Gross Museum Specimens",
+        "headers": [
+          "Specimen / Organ",
+          "Cardinal Pathognomonic Gross Lesion",
+          "Disease Name",
+          "Aetiology / Cause"
+        ],
+        "rows": [
+          [
+            "Bovine Spleen",
+            "Massive enlargement; liquefied semi-fluid 'blackberry jam' pulp",
+            "Anthrax",
+            "*Bacillus anthracis*"
+          ],
+          [
+            "Bovine Pleura & Node",
+            "'Pearl disease' clusters; caseo-calcareous nodules with grit",
+            "Bovine Tuberculosis",
+            "*Mycobacterium bovis*"
+          ],
+          [
+            "Bovine Mandible",
+            "Rarefying osteomyelitis; honeycombed bone; sulfur granules in pus",
+            "Actinomycosis (Lumpy Jaw)",
+            "*Actinomyces bovis*"
+          ],
+          [
+            "Bovine Tongue",
+            "Hard, woody, swollen; dorsal transverse ulcer; firm nodules",
+            "Actinobacillosis (Wooden Tongue)",
+            "*Actinobacillus lignieresii*"
+          ],
+          [
+            "Equine Nasal Septum",
+            "Crater-like ulcers healing with stellate (star-shaped) scars",
+            "Glanders",
+            "*Burkholderia mallei*"
+          ],
+          [
+            "Pig Skin",
+            "Rhomboid, diamond-shaped, elevated purple skin plaques",
+            "Swine Erysipelas (Diamond Skin)",
+            "*Erysipelothrix rhusiopathiae*"
+          ],
+          [
+            "Pig Kidney & Spleen",
+            "'Turkey-egg kidney' petechiae + wedge-shaped marginal splenic infarcts",
+            "Classical Swine Fever (Hog Cholera)",
+            "Pestivirus (Flaviviridae)"
+          ],
+          [
+            "Bovine Tongue & Heart",
+            "Ruptured vesicles/erosions on tongue + 'tiger heart' in calf",
+            "Foot and Mouth Disease (FMD)",
+            "Aphthovirus (Picornaviridae)"
+          ],
+          [
+            "Bovine Liver",
+            "'Pipe-stem liver' with fibrotic, calcified, protruding bile ducts",
+            "Fasciolosis (Liver Fluke)",
+            "*Fasciola gigantica* / *hepatica*"
+          ],
+          [
+            "Canine Oesophagus",
+            "Nodular fibrous granulomas containing red coiled worms",
+            "Spirocercosis",
+            "*Spirocerca lupi*"
+          ]
+        ]
+      },
+      {
+        "title": "Pathognomonic Gross Lesion Pairs in Infectious Pathology",
+        "headers": [
+          "Signature Term",
+          "Characteristic Gross Lesion",
+          "Associated Disease Condition"
+        ],
+        "rows": [
+          [
+            "Blackberry Jam Pulp",
+            "Completely liquefied, semi-fluid dark red-black splenic pulp",
+            "Anthrax in cattle and sheep"
+          ],
+          [
+            "Pearl Disease (Perlsucht)",
+            "Multiple glistening, pearly, calcified nodules on serous pleura",
+            "Tuberculosis in cattle (*M. bovis*)"
+          ],
+          [
+            "Sulfur Granules",
+            "Gritty, pinhead-sized yellow colonies of branching bacteria in pus",
+            "Actinomycosis (*Actinomyces bovis*)"
+          ],
+          [
+            "Turkey-Egg Kidney",
+            "Widespread cortical petechial haemorrhages",
+            "Classical Swine Fever in pigs"
+          ],
+          [
+            "Tiger Heart",
+            "Grey-yellow necrotic streaks alternating with red myocardium",
+            "FMD in young suckling calves and piglets"
+          ],
+          [
+            "Pipe-Stem Liver",
+            "Heavily thickened, fibrotic, calcified bile ducts on liver cut section",
+            "Chronic Fasciolosis in cattle and buffalo"
+          ],
+          [
+            "Barber's Pole Worm",
+            "Red blood-filled intestine spiralling around white uterus in nematode",
+            "*Haemonchus contortus* in sheep abomasum"
+          ],
+          [
+            "Bottle Jaw",
+            "Severe dependent submandibular gelatinous subcutaneous oedema",
+            "Hypoproteinaemia from severe Haemonchosis / Fasciolosis"
+          ]
+        ]
+      }
+    ],
+    "img": "",
+    "tags": [
+      "infectious specimens",
+      "anthrax",
+      "tuberculosis",
+      "lumpy jaw",
+      "wooden tongue",
+      "swine fever",
+      "tiger heart",
+      "fasciolosis"
+    ]
   },
-
   "p4-t03": {
-    /* Histopathology Slides — Infectious and Non-infectious Diseases */
-    summary:   "",
-    desc:      "",
-    eliteDesc: "",
-    keyPoints: [],
-    clinical:  "",
-    tables:    [],
-    img:       "",
-    tags:      []
+    "summary": "Infectious histopathology spotting focuses on diagnostic micro-pathology: Splendore-Hoeppli phenomenon in Actinomycosis, caseo-calcareous tubercles with Langhans cells, and characteristic viral inclusion bodies (ICH Cowdry A, Rabies Negri).",
+    "desc": "<b>PRACTICAL SLIDE SPOTTING METHODOLOGY</b><br>In the infectious disease histopathology practical, slides are diagnosed by finding the organism itself, its associated reaction pattern (granulomatous, suppurative, eosinophilic), or pathognomonic cellular footprints such as **viral inclusion bodies** and **Splendore-Hoeppli phenomenon**.<br><br><b>1. ACTINOMYCOSIS (\"LUMPY JAW\") — BONE / SOFT TISSUE</b><br><ul><li><b>Low Power (10x):</b> Suppurative granuloma with extensive bone resorption. Multiple micro-abscesses surrounded by granulation tissue and dense fibrous wall.</li><li><b>High Power (40x):</b> In the centre of each micro-abscess sits a characteristic bacterial colony (<b>\"Ray Fungus\"</b>).<br>• <i>Core:</i> Tangled, felted mass of basophilic branching filamentous bacteria (*Actinomyces bovis*).<br>• <i>Periphery:</i> <b>Splendore-Hoeppli Phenomenon:</b> Radiating, club-shaped, bright eosinophilic projections forming a corona around the bacterial clump (composed of antigen-antibody complexes and host protein deposits).<br>• <i>Cellular Zone:</i> Dense zone of viable and degenerated neutrophils (pus cells) immediately surrounding the colony, enclosed by epithelioid cells, multinucleated giant cells, plasma cells, and an outer fibrous capsule.</li></ul><br><b>2. ACTINOBACILLOSIS (\"WOODEN TONGUE\")</b><br><ul><li><b>High Power (40x):</b> Displays the same radiating eosinophilic club-like <b>Splendore-Hoeppli phenomenon</b> as actinomycosis. <b>Crucial Distinction:</b> The central bacterial core consists of tiny, Gram-negative <b>coccobacilli</b> (*Actinobacillus lignieresii*), NOT branching filamentous mycelia! Tissue response occurs in the soft tissue of the tongue, without primary bone lysis.</li></ul><br><b>3. BOVINE TUBERCULOSIS (TB) — LYMPH NODE / LUNG</b><br><ul><li><b>Microscopic Architecture (The Classical Tubercle):</b><br>1. <b>Central Caseous Necrosis:</b> Structureless, granular, eosinophilic amorphous debris containing dark basophilic specks of necrotic nuclear dust.<br>2. <b>Dystrophic Calcification:</b> Chunky, dark purple-blue basophilic mineral deposits scattered within the caseous core.<br>3. <b>Epithelioid Cells:</b> Pale, elongated, slipper-shaped macrophages with vesicular nuclei surrounding the necrotic centre.<br>4. <b>Langhans Giant Cells:</b> Large multinucleated cells with nuclei arranged in a distinctive <b>peripheral horseshoe or ring</b>.<br>5. <b>Lymphocytes & Fibrous Capsule:</b> Outer rim of small mature lymphocytes and encircling collagen fibres.<br>• <i>Special Stain:</i> Ziehl-Neelsen (ZN) stain demonstrates acid-fast, slender, bright magenta-red bacilli (*Mycobacterium bovis*).</li></ul><br><b>4. CANINE PARVOVIRUS ENTERITIS (CPV-2) — SMALL INTESTINE</b><br><ul><li><b>Low Power (10x):</b> Severe blunting, fusion, and atrophy of intestinal villi. Widespread collapse and necrosis of the crypts of Lieberkühn.</li><li><b>High Power (40x):</b> <b>Crypt Necrosis:</b> Intestinal crypts are dilated, lined by attenuated or degenerated epithelial cells, and choked with necrotic cellular debris. Surviving crypt epithelial cells are swollen and may exhibit <b>large, basophilic, intranuclear inclusion bodies</b> in early stages. Marked lymphoid depletion in Peyer's patches.</li></ul><br><b>5. INFECTIOUS CANINE HEPATITIS (ICH / RUBARTH'S DISEASE) — LIVER</b><br><ul><li><b>Low Power (10x):</b> Centrilobular to diffuse necrosis of hepatocytes with sinusoidal congestion and haemorrhage.</li><li><b>High Power (40x):</b> <b>Cowdry Type A Intranuclear Inclusion Bodies:</b> Found in surviving hepatocytes and Kupffer cells / vascular endothelial cells. Large, round to oval, sharply defined, central **amphophilic to basophilic intranuclear inclusion bodies** surrounded by a prominent clear halo (chromatin cleared against the nuclear membrane). Highly diagnostic!</li></ul><br><b>6. CANINE DISTEMPER (CDV) — BLADDER / LUNG / BRAIN</b><br><ul><li><b>Diagnostic Hallmark:</b> Canine distemper virus is unique because it forms <b>BOTH intracytoplasmic AND intranuclear inclusion bodies</b> simultaneously!<br>• Seen as round or oval, smooth, homogeneous, bright eosinophilic inclusion bodies within the cytoplasm and nucleus of transitional epithelial cells of the urinary bladder, bronchial epithelial cells, and cerebral astrocytes. Brain shows demyelinating encephalomyelitis.</li></ul><br><b>7. FASCIOLOSIS — CHRONIC LIVER LESIONS</b><br><ul><li><b>High Power (40x):</b> Cross-sections of hyperplastic, thickened bile ducts lined by folded, papillary epithelium; massive concentric periductal fibrous connective tissue cuffs. The surrounding portal and interstitial stroma is heavily infiltrated by <b>dense sheets of EOSINOPHILS</b>, lymphocytes, and macrophages.</li></ul>",
+    "eliteDesc": "<b>THE IMMUNOPATHOLOGY OF THE SPLENDORE-HOEPPLI PHENOMENON.</b><br>The striking radiating 'clubs' seen in actinomycosis and actinobacillosis are not parts of the bacteria. They represent an in-vivo precipitation of host immunoglobulins (chiefly IgG) complexed with secreted bacterial antigens, embedded in a matrix of host-derived cationic major basic protein and albumin. This dense protein shell protects the central bacterial colony from neutrophil lysosomal digestion and antibiotic penetration, explaining why medical therapy requires high-dose, prolonged treatment (e.g. Sodium iodide IV + long-acting penicillin).",
+    "keyPoints": [
+      "Actinomycosis exhibits central basophilic filamentous colonies with radiating eosinophilic clubs (Splendore-Hoeppli).",
+      "Actinobacillosis has similar Splendore-Hoeppli clubs, but the central bacteria are tiny Gram-negative coccobacilli.",
+      "Tuberculosis tubercle: central caseation + calcification + epithelioid cells + Langhans horseshoe giant cells.",
+      "Langhans giant cells have peripheral nuclei arranged in a horseshoe shape.",
+      "Ziehl-Neelsen stain demonstrates bright pink acid-fast bacilli in tuberculous granulomas.",
+      "Canine parvovirus causes severe crypt necrosis, crypt collapse, villous atrophy, and Peyer's patch depletion.",
+      "ICH (Infectious Canine Hepatitis) shows pathognomonic Cowdry Type A intranuclear inclusion bodies in hepatocytes.",
+      "Canine Distemper is unique in producing BOTH intranuclear and intracytoplasmic eosinophilic inclusions.",
+      "Distemper inclusions are most easily found in the transitional epithelium of the urinary bladder.",
+      "Chronic Fasciolosis histology features periductal fibrosis, bile duct hyperplasia, and intense eosinophilic infiltration.",
+      "Splendore-Hoeppli phenomenon consists of antigen-antibody complexes forming radiating eosinophilic clubs."
+    ],
+    "clinical": "<b>Rapid Bladder Scrape Cytology for Distemper.</b><br>In a dog with suspected canine distemper showing respiratory or nervous signs: at necropsy, make a gentle scrape of the <b>urinary bladder mucosa</b> using a scalpel blade. Smear onto a clean glass slide, air-dry, fix in methanol, and stain with Leishman's or H&E. Examine under 100x oil immersion: round, bright pink intracytoplasmic and intranuclear inclusion bodies within epithelial cells provide an immediate, definitive diagnosis within 15 minutes.",
+    "tables": [
+      {
+        "title": "Master Spotting Key for Infectious Disease Histopathology Slides",
+        "headers": [
+          "Slide Name",
+          "Organ",
+          "10x Low Power Architectural Change",
+          "40x High Power Pathognomonic Hallmark"
+        ],
+        "rows": [
+          [
+            "Actinomycosis",
+            "Bovine Mandible",
+            "Micro-abscesses with bone resorption",
+            "Basophilic filamentous colonies with radiating eosinophilic clubs (Ray fungus)"
+          ],
+          [
+            "Actinobacillosis",
+            "Bovine Tongue",
+            "Granulomas in lingual musculature",
+            "Gram-negative coccobacilli with Splendore-Hoeppli eosinophilic clubs"
+          ],
+          [
+            "Bovine Tuberculosis",
+            "Lymph Node / Lung",
+            "Circumscribed granuloma with necrotic core",
+            "Caseous necrosis + calcification + Langhans giant cells + epithelioid cells"
+          ],
+          [
+            "Parvoviral Enteritis",
+            "Small Intestine",
+            "Villous blunting; complete crypt collapse",
+            "Crypt necrosis, dilated crypts with debris; lymphoid depletion"
+          ],
+          [
+            "Infectious Canine Hepatitis",
+            "Liver",
+            "Centrilobular hepatic necrosis & haemorrhage",
+            "Large basophilic Cowdry Type A intranuclear inclusion bodies in hepatocytes"
+          ],
+          [
+            "Canine Distemper",
+            "Urinary Bladder / Lung",
+            "Epithelial swelling; syncytia formation",
+            "BOTH intracytoplasmic AND intranuclear eosinophilic inclusion bodies"
+          ],
+          [
+            "Fasciolosis",
+            "Liver",
+            "Periductal fibrosis around thickened bile ducts",
+            "Bile duct hyperplasia with massive periductal EOSINOPHIL infiltration"
+          ]
+        ]
+      },
+      {
+        "title": "Diagnostic Classification of Viral Inclusion Bodies in Veterinary Pathology",
+        "headers": [
+          "Inclusion Body Location",
+          "Staining Reaction",
+          "Pathognomonic Viral Disease",
+          "Target Tissues / Cells"
+        ],
+        "rows": [
+          [
+            "Intracytoplasmic Only",
+            "Eosinophilic (Cherry Red)",
+            "Rabies (Negri Bodies)",
+            "Pyramidal neurons of hippocampus, Purkinje cells"
+          ],
+          [
+            "Intracytoplasmic Only",
+            "Eosinophilic (Large, lipid-rich)",
+            "Fowl Pox (Bollinger Bodies)",
+            "Stratified squamous epithelial cells of skin/comb"
+          ],
+          [
+            "Intranuclear Only",
+            "Basophilic / Amphophilic (Cowdry A)",
+            "Infectious Canine Hepatitis (ICH)",
+            "Hepatocytes, endothelial cells, Kupffer cells"
+          ],
+          [
+            "Intranuclear Only",
+            "Eosinophilic with clear halo",
+            "Infectious Bovine Rhinotracheitis (IBR)",
+            "Nasal and tracheal respiratory epithelial cells"
+          ],
+          [
+            "BOTH Intracytoplasmic & Intranuclear",
+            "Bright Eosinophilic",
+            "Canine Distemper (CDV)",
+            "Bladder transitional epithelium, astrocytes, bronchioles"
+          ]
+        ]
+      }
+    ],
+    "img": "",
+    "tags": [
+      "infectious slides",
+      "Splendore-Hoeppli",
+      "tuberculosis",
+      "Langhans cells",
+      "Cowdry A",
+      "Negri body",
+      "distemper inclusions"
+    ]
   },
-
   "p4-t04": {
-    /* Demonstration of Causative Agents by Special Staining */
-    summary:   "",
-    desc:      "",
-    eliteDesc: "",
-    keyPoints: [],
-    clinical:  "",
-    tables:    [],
-    img:       "",
-    tags:      []
+    "summary": "Special staining demonstrates pathogens in tissue sections: Ziehl-Neelsen for acid-fast mycobacteria, Gram Brown-Brenn for bacteria, McFadyean's for anthrax capsules, PAS/GMS for fungal walls, and Giemsa for blood protozoa.",
+    "desc": "<b>PRINCIPLES OF SPECIAL HISTOPATHOLOGICAL STAINING</b><br>Routine H&E staining reveals host cellular reactions but often fails to identify the exact infectious agent. Special staining techniques exploit specific chemical properties of microbial structures (mycolic acids, peptidoglycans, capsular poly-D-glutamic acid, fungal chitin) to selectively stain the organism in contrasting colours against the tissue background.<br><br><b>1. ZIEHL-NEELSEN (ZN) STAIN FOR ACID-FAST BACILLI (AFB)</b><br><ul><li><b>Principle:</b> Mycobacteria (*Mycobacterium bovis*, *M. tuberculosis*, *M. avium* subsp. *paratuberculosis*) possess dense waxy cell walls rich in <b>mycolic acids</b>. Once stained with phenolic primary stain (Carbol Fuchsin) under heat, the dye penetrates the waxy wall and resists decolorization by strong mineral acids and alcohol — a property known as <b>Acid-Fastness</b>. Non-acid-fast tissue components decolorize and take the blue counterstain.</li><li><b>Procedure:</b><br>1. Deparaffinize tissue section in xylene and rehydrate through graded alcohols to distilled water.<br>2. Flood slide with <b>Strong Carbol Fuchsin</b>; heat gently from underneath with a spirit flame until steam rises (<b>do not boil!</b>) for 5 minutes. Replenish stain if it evaporates.<br>3. Wash thoroughly with tap water.<br>4. Decolorize with <b>20% Sulphuric Acid (H2SO4)</b> for *M. bovis* / *tuberculosis* (or <b>5% H2SO4 for *M. a. paratuberculosis* in Johne's disease</b>, because paratuberculosis bacilli are less acid-fast!) for 1 to 2 minutes until the section is pale pink.<br>5. Wash in running water for 2 minutes.<br>6. Counterstain with <b>0.5% Loeffler's Methylene Blue</b> for 30 to 60 seconds.<br>7. Wash, dehydrate rapidly, clear in xylene, and mount in DPX.</li><li><b>Results:</b> Acid-Fast Bacilli stain <b>bright magenta-red / pink rods</b> (isolated or in dense clumps); background tissues, nuclei, and other bacteria stain <b>pale blue</b>.</li></ul><br><b>2. MCFADYEAN'S POLYCHROME METHYLENE BLUE STAIN (FOR ANTHRAX)</b><br><ul><li><b>Principle:</b> *Bacillus anthracis* produces a unique antiphagocytic polypeptide capsule composed of <b>poly-D-glutamic acid</b>. Polychrome methylene blue contains oxidative breakdown products (azures) that react metachromatically with this capsular peptide.</li><li><b>Procedure:</b> Prepare a thin blood smear from an ear vein. Air-dry and fix with gentle heat (pass 3 times through flame). Flood with <b>Polychrome Methylene Blue</b> for 1 to 2 minutes. Wash with water, blot dry, and examine under 100x oil immersion.</li><li><b>Results (McFadyean's Reaction):</b> The vegetative bacilli stain <b>deep blue</b>, occurring in short chains of 2 to 4 with square, truncated ends ('bamboo sticks'). They are surrounded by an unmistakable, irregular, amorphous <b>pinkish-purple / reddish-violet capsular halo</b>. This colour contrast is pathognomonic for Anthrax.</li></ul><br><b>3. PERIODIC ACID-SCHIFF (PAS) STAIN FOR FUNGI</b><br><ul><li><b>Principle:</b> Fungal cell walls are composed of complex polysaccharides (chitin, glucan, and mannan). Periodic acid (0.5%) cleaves 1,2-glycol linkages, oxidising them into dialdehydes. <b>Schiff's Reagent</b> (colourless leucofuchsin) reacts with these free aldehydes to produce a stable, brilliant <b>magenta / purplish-red</b> dye complex.</li><li><b>Diagnostic Use:</b> Demonstrating fungal hyphae (*Aspergillus*, *Mucor*), yeast forms (*Candida*, *Blastomyces*, *Cryptococcus*), and glycogen. Fungal elements stain deep magenta; tissue background is pale green or blue.</li></ul><br><b>4. GOMORI'S METHENAMINE SILVER (GMS / GROCOTT'S) STAIN</b><br><ul><li><b>Principle:</b> The gold-standard fungal stain. Chromic acid oxidizes fungal cell wall polysaccharides into aldehydes. An alkaline solution of silver-methenamine is reduced by these aldehydes to precipitate <b>jet-black metallic silver</b> onto the fungal cell wall. Counterstained with light green.</li><li><b>Results:</b> Fungal cell walls, hyphae, and budding yeasts stain <b>intense jet-black</b> with crisp internal detail, against a light pale-green background.</li></ul><br><b>5. GIEMSA STAIN FOR BLOOD PROTOZOA AND RICKETTSIAL AGENTS</b><br><ul><li><b>Protocol:</b> Methanol-fixed thin blood smear stained with 1:10 diluted Giemsa solution buffered at pH 7.2 for 30–45 minutes.</li><li><b>Results:</b> Parasite nuclei stain dark red/magenta; parasite cytoplasm stains sky blue; host RBCs stain pink-grey. Demonstrates *Babesia*, *Theileria*, *Anaplasma marginale* (dark red spherical bodies at the extreme margin of RBCs), and *Ehrlichia canis* (morulae in monocytes).</li></ul>",
+    "eliteDesc": "<b>CHEMISTRY OF SCHIFF'S REAGENT AND LEUCOFUCHSIN.</b><br>Basic fuchsin is a triphenylmethane dye (rosaniline). When treated with sulphurous acid (prepared by combining sodium metabisulphite and HCl), sulphur dioxide (SO2) attacks the central carbon atom, disrupting the quinoid chromophore and converting it into colourless <b>leucosulphonic acid (Schiff's reagent)</b>. When exposed to tissue aldehydes produced by periodic acid, two aldehyde molecules bind to the reagent, restoring the conjugated quinoid resonance structure as an alkylsulphonic acid complex, emitting an intense, light-stable quinoid magenta-purple dye.",
+    "keyPoints": [
+      "Special stains exploit specific chemical affinities of microbial cell walls and capsules.",
+      "Ziehl-Neelsen (ZN) demonstrates acid-fast mycobacteria using carbol fuchsin and acid decolorization.",
+      "Acid-fast bacilli stain bright magenta-red rods against a blue background.",
+      "For Johne's disease (*M. a. paratuberculosis*), use 5% H2SO4 decolorizer (less acid-fast than *M. bovis*).",
+      "McFadyean's reaction is pathognomonic for Anthrax (*Bacillus anthracis*).",
+      "In McFadyean's stain, anthrax bacilli are blue with square ends, surrounded by a pink-purple capsular halo.",
+      "PAS stain oxidizes fungal polysaccharides into aldehydes that turn brilliant magenta with Schiff's reagent.",
+      "Gomori's Methenamine Silver (GMS) deposits black metallic silver on fungal walls against a green background.",
+      "Giemsa stain at pH 7.2 demonstrates blood parasites (*Babesia*, *Theileria*, *Anaplasma*) and *Ehrlichia*.",
+      "Anaplasma marginale appears as dark red dense spherical dots at the extreme margin of bovine RBCs."
+    ],
+    "clinical": "<b>Field Antemortem Diagnosis of Bovine Anthrax.</b><br>In suspected sudden deaths, never perform a full post-mortem. A tiny drop of blood from the ear vein, smeared onto a slide, heat-fixed, and stained with McFadyean's polychrome methylene blue gives a definitive diagnosis in <b>3 minutes</b>. Seeing square-ended blue rods with pink capsules confirms Anthrax on the spot: stop all dissection immediately, notify veterinary authorities, and order deep burial in quicklime.",
+    "tables": [
+      {
+        "title": "Master Table: Special Staining Techniques in Veterinary Pathology",
+        "headers": [
+          "Staining Method",
+          "Target Microorganism / Substance",
+          "Key Reagents Used",
+          "Microscopic Result / Colour Reaction"
+        ],
+        "rows": [
+          [
+            "Ziehl-Neelsen (ZN)",
+            "Acid-Fast Bacilli (*M. bovis*, *M. a. paratuberculosis*)",
+            "Carbol fuchsin + heat + 20% or 5% H2SO4 + Methylene blue",
+            "Bright magenta-red rods against blue background"
+          ],
+          [
+            "McFadyean's Reaction",
+            "Anthrax capsule (*Bacillus anthracis*)",
+            "Polychrome Methylene Blue (aged)",
+            "Blue square-ended bacilli with pink-purple capsular halo"
+          ],
+          [
+            "Periodic Acid-Schiff (PAS)",
+            "Fungi (*Aspergillus*, *Candida*), Glycogen",
+            "0.5% Periodic acid + Schiff's reagent (leucofuchsin)",
+            "Fungal hyphae and yeasts stain intense bright magenta"
+          ],
+          [
+            "Gomori Silver (GMS)",
+            "Fungal cell walls (chitin / glucan)",
+            "Chromic acid + Silver methenamine + Light green counterstain",
+            "Fungi stain intense crisp jet-black on pale green background"
+          ],
+          [
+            "Giemsa Stain",
+            "Blood protozoa (*Babesia*, *Theileria*), Rickettsiae",
+            "Giemsa stain stock (Azure II + Eosin) in buffered water (pH 7.2)",
+            "Protozoan cytoplasm blue, nucleus red-violet inside pink RBCs"
+          ],
+          [
+            "Gram (Brown-Brenn)",
+            "Gram-positive and Gram-negative bacteria in tissue",
+            "Crystal violet + Gram's iodine + Acetone + Basic fuchsin",
+            "Gram-positive bacteria dark blue; Gram-negative bacteria red"
+          ]
+        ]
+      },
+      {
+        "title": "Practical Diagnostic Applications of Special Stains",
+        "headers": [
+          "Suspected Veterinary Disease",
+          "Target Organ / Specimen",
+          "Stain of Choice",
+          "What to Look For Under 100x Oil Immersion"
+        ],
+        "rows": [
+          [
+            "Bovine Tuberculosis",
+            "Mediastinal lymph node granuloma",
+            "Ziehl-Neelsen (ZN)",
+            "Bright red slender rods inside Langhans giant cells and caseous debris"
+          ],
+          [
+            "Johne's Disease",
+            "Ileal mucosal scraping or section",
+            "ZN (with 5% H2SO4)",
+            "Huge intracellular clusters ('clumps') of pink acid-fast bacilli in macrophages"
+          ],
+          [
+            "Anthrax",
+            "Peripheral ear-vein blood smear",
+            "McFadyean's Polychrome",
+            "Truncated blue rods with pink-purple poly-D-glutamic acid capsules"
+          ],
+          [
+            "Systemic Aspergillosis",
+            "Lung granuloma / abomasal ulcer",
+            "GMS or PAS",
+            "Dichotomously branching (45° angle) septate hyphae stained jet-black / magenta"
+          ],
+          [
+            "Bovine Anaplasmosis",
+            "Peripheral blood smear",
+            "Giemsa Stain",
+            "Deep dark-red spherical inclusion bodies at the periphery of RBCs"
+          ]
+        ]
+      }
+    ],
+    "img": "",
+    "tags": [
+      "special stains",
+      "Ziehl-Neelsen",
+      "McFadyean",
+      "PAS",
+      "GMS",
+      "Giemsa",
+      "acid-fast",
+      "anthrax capsule"
+    ]
   },
-
   "p4-t05": {
-    /* Rapid Diagnostic Tests */
-    summary:   "",
-    desc:      "",
-    eliteDesc: "",
-    keyPoints: [],
-    clinical:  "",
-    tables:    [],
-    img:       "",
-    tags:      []
+    "summary": "Rapid diagnostic tests provide pen-side and bench-level screening: lateral flow antigen strips (CPV/CDV), Rose Bengal Plate Test (RBPT) for brucellosis, and Single Intradermal (SID) tuberculin testing.",
+    "desc": "<b>OBJECTIVE AND CLINICAL RELEVANCE OF RAPID DIAGNOSTIC TESTS</b><br>Rapid diagnostic tests (RDTs) enable the veterinary pathologist and field clinician to detect specific antigens or antibodies within minutes without expensive laboratory machinery. In the practical examination, students must demonstrate bench-level execution, explain test principles, interpret positive/negative/invalid results, and discuss limitations.<br><br><b>1. LATERAL FLOW IMMUNOCHROMATOGRAPHIC ASSAY (RAPID STRIP TESTS)</b><br>Widely used for Canine Parvovirus (CPV-2), Canine Distemper Virus (CDV), and Feline Panleukopenia (FPV):<br><ul><li><b>Principle (Sandwich Immunochromatography):</b><br>The test cassette contains a nitrocellulose membrane strip with three functional zones:<br>1. <i>Sample Pad & Conjugate Pad:</i> Contains colloidal gold-conjugated monoclonal antibodies directed against the target viral antigen.<br>2. <i>Test Line (T):</i> Coated with immobilized capture antibodies against the target viral antigen.<br>3. <i>Control Line (C):</i> Coated with secondary antibodies that bind the gold conjugate regardless of antigen presence.<br>When liquid sample (faecal swab extract or serum) is placed in the sample well, capillary action draws it along the strip. If antigen is present, it binds the gold-antibody conjugate; this complex is captured at the T-line, aggregating colloidal gold into a visible <b>red-purple band</b>. Unbound conjugate continues to the C-line, producing a second band confirming valid fluid migration.</li><li><b>Interpretation:</b><br>• <b>Positive:</b> Two distinct coloured bands appear (Both C-line and T-line visible).<br>• <b>Negative:</b> Only one band appears at the Control (C) line.<br>• <b>Invalid:</b> No band at the Control (C) line (even if a T-line appears). The test must be discarded and repeated!</li></ul><br><b>2. ROSE BENGAL PLATE TEST (RBPT) FOR BOVINE BRUCELLOSIS</b><br>The official international spot agglutination test for herd screening of brucellosis (*Brucella abortus*):<br><ul><li><b>Principle:</b> Antigen consists of a suspension of killed *Brucella abortus* strain 99 stained with Rose Bengal dye and <b>buffered at an acid pH of 3.65</b>. The low pH selectively inhibits non-specific agglutinins and IgM, ensuring that visible agglutination is driven primarily by specific IgG1 antibodies.</li><li><b>Procedure:</b><br>1. Bring serum and RBPT antigen to room temperature (22°C–25°C).<br>2. Dispense exactly <b>30 µL of test serum</b> onto a clean, dry white ceramic tile or glass plate.<br>3. Add <b>30 µL of well-shaken RBPT antigen</b> adjacent to the serum drop.<br>4. Mix thoroughly with a clean applicator stick over a circular area about 2 cm in diameter.<br>5. Rock the plate gently by hand for <b>exactly 4 minutes</b>.<br>6. Read under good indirect light.</li><li><b>Interpretation:</b><br>• <i>Positive:</i> Any visible agglutination or clumping of pink antigen particles within 4 minutes (indicates *Brucella* infection).<br>• <i>Negative:</i> Homogeneous pink suspension with zero agglutination after 4 minutes.</li></ul><br><b>3. SINGLE INTRADERMAL TUBERCULIN TEST (SID TEST)</b><br>The statutory field test for diagnosing tuberculosis in cattle and buffalo:<br><ul><li><b>Principle:</b> Type IV (Delayed-Type / Cell-Mediated) Hypersensitivity reaction. Sensitized T-lymphocytes react with injected mycobacterial protein antigens (Bovine PPD), releasing cytokines that produce localized induration, oedema, and swelling peaking at 72 hours.</li><li><b>Procedure:</b><br>1. Site: Middle third of the cervical neck in cattle. Clip hair over a 5 cm area.<br>2. Measure initial skin-fold thickness with a <b>Vernier caliper</b> and record in millimetres.<br>3. Inject exactly <b>0.1 ml of Bovine Purified Protein Derivative (PPD)</b> (containing 2,000–3,000 IU) strictly <b>intradermally</b> using a McLintock syringe with a short bevelled needle. A distinct, pea-sized intradermal bleb must be palpable.<br>4. Re-measure the skin-fold thickness at the injection site at <b>72 hours</b>.</li><li><b>Interpretation:</b><br>• <b>Positive (+):</b> Increase in skin thickness of <b>≥4.0 mm</b>, or presence of inflammatory signs (oedema, diffuse swelling, pain, necrosis).<br>• <b>Inconclusive (Suspicious):</b> Increase in thickness between <b>2.0 mm and 3.9 mm</b> with no oedema (re-test after 60 days).<br>• <b>Negative (-):</b> Increase in thickness of <b><2.0 mm</b> with no swelling.</li><li><b>Comparative Cervical Tuberculin Test (CCT):</b> Uses two injection sites (Bovine PPD and Avian PPD, 12 cm apart) to differentiate true *M. bovis* infection from non-specific sensitization by environmental mycobacteria or *M. avium*.</li></ul><br><b>4. CALIFORNIA MASTITIS TEST (CMT)</b><br>A rapid, cow-side screening test for subclinical mastitis in dairy cattle:<br><ul><li><b>Reagent:</b> 3% Sodium Lauryl Sulphate (detergent) + Bromocresol Purple indicator (pH indicator).</li><li><b>Principle:</b> The detergent ruptures somatic cell membranes (leukocytes / neutrophils) in milk, releasing cellular DNA. DNA strands aggregate to form a thick, viscous slime or gel. Viscosity is directly proportional to somatic cell count (SCC).</li><li><b>Interpretation:</b> Negative (fluid remains watery), Trace, 1 (mild thickening), 2 (immediate gel formation), 3 (thick jelly-like central peak); colour change from normal greyish-purple to deep purple indicates alkaline pH of mastitic milk.</li></ul>",
+    "eliteDesc": "<b>THE DIVA PRINCIPLE (DIFFERENTIATING INFECTED FROM VACCINATED ANIMALS).</b><br>A favourite concept of veterinary external examiners. In disease eradication programs (e.g. Foot and Mouth Disease):<br>• Conventional whole-virus vaccines contain only purified, inactivated <b>structural viral proteins (SP)</b> (capsid proteins VP1, VP2, VP3, VP4).<br>• When an animal is actively infected by live replicating virus in the field, the virus replicates and synthesizes both structural AND <b>non-structural proteins (NSP)</b> (e.g. 2C, 3A, 3B, 3ABC enzymes).<br>• The <b>3ABC NSP ELISA</b> detects antibodies directed against non-structural proteins. Vaccinated uninfected animals have antibodies ONLY against SP (NSP negative). Naturally infected animals (even if previously vaccinated) produce antibodies against NSP (NSP positive). This allows proof of national disease freedom without slaughtering vaccinated stock.",
+    "keyPoints": [
+      "Lateral flow immunochromatography (rapid strips) detects viral antigens (CPV, CDV) within 10 minutes.",
+      "A valid lateral flow test MUST show a line at the Control (C) band; no C-line = invalid test.",
+      "Rose Bengal Plate Test (RBPT) is the international screening agglutination test for bovine brucellosis.",
+      "RBPT uses antigen buffered at pH 3.65 to eliminate non-specific IgM agglutination.",
+      "RBPT procedure: 30 µL serum + 30 µL antigen mixed on plate; read visible clumping within 4 minutes.",
+      "Single Intradermal Tuberculin (SID) test is a Type IV delayed hypersensitivity test evaluated at 72 hours.",
+      "Bovine PPD (0.1 ml) injected intradermally in the neck; calipers measure skin-fold increase.",
+      "Tuberculin test positive: skin-fold increase of ≥4 mm, or presence of inflammatory oedema.",
+      "Comparative cervical test uses Bovine and Avian PPD to rule out environmental mycobacterial cross-reactions.",
+      "California Mastitis Test (CMT) detergent lyses milk leukocytes to form a DNA gel proportional to SCC.",
+      "DIVA principle differentiates infected from vaccinated animals (e.g. 3ABC NSP ELISA in FMD)."
+    ],
+    "clinical": "<b>Rapid Field Assessment of Canine Parvovirus.</b><br>In puppies presenting with sudden vomiting, depression, and foul-smelling bloody diarrhoea: perform a faecal CPV-2 rapid antigen test immediately. Collect faeces with a swab, dilute in the assay buffer bottle, and apply 3 drops to the cassette. Results within 5 to 10 minutes allow immediate isolation of the pup in the infectious isolation ward, starting aggressive IV fluid therapy (crystalloids + potassium chloride + maropitant) before secondary septicaemia and shock become irreversible.",
+    "tables": [
+      {
+        "title": "Master Summary: Rapid Diagnostic Tests in Veterinary Medicine",
+        "headers": [
+          "Diagnostic Test",
+          "Target Disease",
+          "Sample Required",
+          "Assay Principle",
+          "Positive Reading / Diagnostic Criteria"
+        ],
+        "rows": [
+          [
+            "Lateral Flow Strip Test",
+            "Canine Parvovirus (CPV-2)",
+            "Faecal swab suspension",
+            "Colloidal gold sandwich immunochromatography",
+            "Two visible bands appear (both C-line and T-line positive)"
+          ],
+          [
+            "Rose Bengal Plate Test (RBPT)",
+            "Bovine Brucellosis (*B. abortus*)",
+            "Serum (30 µL)",
+            "Rapid plate agglutination at acidic pH (3.65)",
+            "Visible clumping / agglutination of pink particles within 4 min"
+          ],
+          [
+            "Single Intradermal Test (SID)",
+            "Bovine Tuberculosis (*M. bovis*)",
+            "0.1 ml Bovine PPD intradermal",
+            "Type IV cell-mediated delayed hypersensitivity",
+            "Skin thickness increase ≥4.0 mm or inflammatory oedema at 72 hrs"
+          ],
+          [
+            "California Mastitis Test (CMT)",
+            "Subclinical Mastitis in dairy cows",
+            "Fresh quarter milk (2 ml)",
+            "Detergent lyses leukocytes; released DNA gels",
+            "Formation of viscous jelly-like slime; purple pH colour shift"
+          ],
+          [
+            "3ABC NSP ELISA (DIVA)",
+            "Foot and Mouth Disease (FMD)",
+            "Serum (50 µL)",
+            "Enzyme-linked immunosorbent assay (anti-NSP)",
+            "Antibody to non-structural proteins (proves live infection vs vaccine)"
+          ]
+        ]
+      },
+      {
+        "title": "Tuberculin Skin Test Interpretation Criteria (Bovine Cervical Test)",
+        "headers": [
+          "Skin-Fold Increase at 72 Hours",
+          "Presence of Clinical Signs",
+          "Official Interpretation",
+          "Statutory Action Required"
+        ],
+        "rows": [
+          [
+            "Increase ≥ 4.0 mm",
+            "Or presence of oedema, heat, pain, necrosis",
+            "POSITIVE (+)",
+            "Animal declared reactor; segregated / slaughtered under VCI rules"
+          ],
+          [
+            "Increase 2.0 mm to 3.9 mm",
+            "No oedema, swelling, or pain",
+            "INCONCLUSIVE / SUSPICIOUS",
+            "Animal isolated; re-tested by Comparative Cervical Test after 60 days"
+          ],
+          [
+            "Increase < 2.0 mm",
+            "No swelling or oedema whatsoever",
+            "NEGATIVE (-)",
+            "Animal declared free of tuberculosis"
+          ]
+        ]
+      }
+    ],
+    "img": "",
+    "tags": [
+      "rapid diagnostic tests",
+      "lateral flow",
+      "RBPT",
+      "brucellosis",
+      "tuberculin test",
+      "PPD",
+      "CMT",
+      "DIVA"
+    ]
   }
 };
 
 practicalData["prac-unit-5"] = {
   "p5-t01": {
-    /* Post-mortem Examination of Poultry */
-    summary:   "",
-    desc:      "",
-    eliteDesc: "",
-    keyPoints: [],
-    clinical:  "",
-    tables:    [],
-    img:       "",
-    tags:      []
+    "summary": "Poultry post-mortem follows a standardized 8-step protocol: feather wetting in disinfectant, dorsal recumbency, hip joint disarticulation, keel plate removal, in-situ air sac inspection, bursa and caecal tonsil evaluation, and bilateral sciatic nerve comparison.",
+    "desc": "<b>OBJECTIVE AND PRE-NECROPSY PREPARATION</b><br>Post-mortem examination of poultry is the most frequent and economically critical diagnostic procedure in commercial veterinary practice. In poultry medicine, individual treatment is rarely practiced; the post-mortem of a representative sample of 5 to 10 dead or moribund birds establishes the flock diagnosis and directs immediate mass treatment, vaccination, or management interventions.<br><br><b>STEP-BY-STEP SYSTEMATIC POULTRY DISSECTION TECHNIQUE</b><br>Follow this rigid sequence in practical exams:<br><ul><li><b>Step 1: External Examination:</b> Observe nutritional condition, comb and wattles (cyanotic in Avian Influenza / Ranikhet; pale in anaemia / lymphoid leukosis; scabs in Fowl Pox), eyes and nostrils (swollen infraorbital sinuses with cheesy plugs in Infectious Coryza and Mycoplasmosis), vents (soiled with green-white diarrhoea in Ranikhet; pasted with white urates in Gumboro), and footpads (bumble foot).</li><li><b>Step 2: Feather Wetting and Immersion:</b> Completely submerge the carcass in a bucket of warm water containing <b>1% to 2% Lysol or Cetrimide disinfectant</b>. <i>Exam reason:</i> Wetting prevents feathers, dander, and infectious dust from flying around the room, which protects personnel from zoonotic pathogens (*Chlamydia psittaci*, Avian Influenza) and prevents contamination of tissue samples.</li><li><b>Step 3: Positioning and Hip Disarticulation:</b> Place carcass in <b>dorsal recumbency</b> (breast facing upwards) on the dissecting tray. Disarticulate both hip joints by grasping each thigh and pushing outwards and downwards until the femoral heads pop out of the acetabula. This allows the carcass to lie completely flat and stable on the tray.</li><li><b>Step 4: Skin Reflection:</b> Make a longitudinal incision in the loose skin between the thigh and abdomen on both sides. Peel the skin craniad over the breast and neck with fingers, exposing the pectoral muscles, keel bone, and crop.</li><li><b>Step 5: Opening Thoraco-Abdominal Cavity (Removal of Breast Plate):</b> Make a small transverse cut in the thin abdominal muscles just below the caudal tip of the sternum (keel bone). Insert heavy bone shears or dissecting scissors into this opening and cut anteriorly through the ribs, coracoid, and clavicle bones on both sides along the costochondral junctions. Lift the entire sternum, pectoral muscles, and keel bone off ('breast plate') to expose the thoracic and abdominal viscera in situ.</li><li><b>Step 6: In-Situ Inspection of Air Sacs and Organs:</b> Before touching or displacing any organ, inspect the <b>abdominal and thoracic air sacs</b>. Normal air sacs are crystal-clear, thin, and transparent as cellophane. Cloudiness, thickening, or yellow foamy/cheesy exudate indicates airsacculitis (Mycoplasmosis, Colibacillosis). Inspect pericardial sac (clear fluid in Hydropericardium Syndrome) and liver.</li><li><b>Step 7: Systematic Evisceration:</b><br>• <i>Respiratory Pluck:</i> Split the beak at the rictus; expose the pharynx, larynx, trachea, and syrinx. Slit the trachea longitudinally to inspect for haemorrhagic exudate (ILT) or catarrhal plug.<br>• <i>Upper Alimentary:</i> Slit the oesophagus and crop (check for sour crop, candidiasis thrush, foreign matter). Slit the proventriculus: inspect the <b>papillae for pinpoint petechiae (hallmark of Ranikhet disease)</b>. Slit the gizzard and peel back the koilin lining to check for erosions.<br>• <i>Intestines & Caecal Tonsils:</i> Unravel the intestinal loop. Inspect the duodenal loop (containing the pale ribbon of pancreas) for haemorrhages or necrotic enteritis. Slit open the paired blind caeca: inspect the <b>caecal tonsils</b> (lymphoid patches at the junction of caecum and ileum, severely haemorrhagic in Ranikhet) and check for bloody contents or cheesy cores (caecal coccidiosis).<br>• <i>Bursa of Fabricius:</i> Locate on the dorsal wall of the cloaca. Carefully dissect free, record size, colour, plications, and cut open: check for edematous swelling, gelatinous exudate, or haemorrhage (IBD / Gumboro).<br>• <i>Kidneys & Ureters:</i> Embedded in the dorsal synsacral depressions. Check for swelling, pallor, and distension with chalky white urates (visceral gout, infectious bronchitis).</li><li><b>Step 8: Examination of Peripheral Nerves:</b> Push aside abdominal viscera and reflect the medial thigh muscles to expose the <b>sciatic nerve plexuses</b> running parallel to the femur. Always compare left and right nerves side-by-side: a unilateral enlargement with loss of cross-striations is pathognomonic for <b>Marek's Disease</b>! Expose the brachial plexus and vagus nerves similarly.</li></ul>",
+    "eliteDesc": "<b>ANATOMICAL PECULIARITIES OF AVIA-SPECIFIC PATHOLOGY.</b><br>1. <b>Why is Airsacculitis so Common in Birds?</b> Birds possess nine interconnected air sacs (cervical, clavicular, cranial/caudal thoracic, abdominal) that communicate directly with the pneumatic bones (humerus, femur) and bronchial tree. Air sacs have virtually no protective ciliated epithelium and extremely poor blood supply; inhaled bacteria (*E. coli*, *Aspergillus*) easily colonize them, resulting in fibrinous, cheesy, intractable airsacculitis.<br><br>2. <b>The Bursa of Fabricius as a Diagnostic Barometer:</b> The Bursa of Fabricius is the primary site of B-lymphocyte maturation in young chickens, reaching peak size at 4 to 8 weeks and naturally involuting by 14 to 16 weeks. Infectious Bursal Disease Virus (IBDV) specifically attacks dividing IgM-bearing B-lymphocytes in the bursal follicles. In acute IBD (Day 3–4), the bursa doubles in size and weight due to severe inflammatory oedema and gelatinous transudation. By Day 8, rapid follicular necrosis and apoptosis lead to severe permanent bursal atrophy (less than 1/3 normal size), leaving the bird immunocompromised for life.",
+    "keyPoints": [
+      "Poultry post-mortem requires examining a sample of 5 to 10 birds to establish a representative flock diagnosis.",
+      "Wet feathers in 1-2% disinfectant (Lysol/Cetrimide) to prevent aerosol spread of feathers and zoonotic dust.",
+      "Position bird in dorsal recumbency and disarticulate hip joints to stabilize carcass on the board.",
+      "Remove the keel bone ('breast plate') by cutting costochondral junctions to expose viscera in situ.",
+      "Inspect air sacs before displacing organs; normal air sacs are thin, transparent, and crystal-clear.",
+      "Proventriculus: pinpoint petechial haemorrhages on mucosal papillae are pathognomonic for Ranikhet disease.",
+      "Caecal tonsils: severe dark red congestion and haemorrhage occur in Ranikhet disease and Velogenic NDV.",
+      "Bursa of Fabricius: located on dorsal wall of cloaca; swollen/haemorrhagic in early IBD, atrophied in late IBD.",
+      "Bilateral comparison of sciatic nerves under the thigh is mandatory to diagnose Marek's disease.",
+      "In Marek's disease, the affected sciatic nerve is enlarged 2-3 times normal and loses its transverse striations.",
+      "Urate distension of renal tubules and chalky white deposits on pericardium indicate visceral gout.",
+      "Infraorbital sinus swelling with cheesy plugs indicates Infectious Coryza (*Avibacterium paragallinarum*)."
+    ],
+    "clinical": "<b>Rapid Differentiation: Ranikhet Disease vs Highly Pathogenic Avian Influenza (HPAI).</b><br>Both viral diseases cause sudden massive mortality and petechiae in poultry. At necropsy: in <b>Ranikhet Disease (Newcastle Disease)</b>, petechiae are characteristically concentrated on the **tips of proventricular gland papillae**, caecal tonsils are swollen and haemorrhagic, and button ulcers occur in the intestine. In <b>HPAI (Bird Flu)</b>, haemorrhages are much more widespread: diffuse petechiae across epicardium, visceral fat, proventriculus, severe cyanosis and subcutaneous oedema of the comb and wattles, and diffuse red petechial splash on the unfeathered shanks (legs).",
+    "tables": [
+      {
+        "title": "Systematic Step-by-Step Poultry Necropsy Protocol",
+        "headers": [
+          "Step #",
+          "Dissection Stage",
+          "Anatomical Target",
+          "Key Pathological Changes to Rule Out"
+        ],
+        "rows": [
+          [
+            "Step 1",
+            "External Inspection",
+            "Comb, wattles, eyes, vent, feathers",
+            "Pox scabs, coryza sinus swelling, pasted vent, dehydration"
+          ],
+          [
+            "Step 2",
+            "Disinfection & Wetting",
+            "Whole carcass immersion",
+            "Wetting with 1% Lysol prevents aerosol spread of zoonotic pathogens"
+          ],
+          [
+            "Step 3 & 4",
+            "Disarticulation & Skin",
+            "Hip joints, breast and neck skin",
+            "Pop femoral heads; reflect skin to check pectoral muscle haemorrhages (IBD)"
+          ],
+          [
+            "Step 5 & 6",
+            "Breastplate Removal",
+            "Keel bone, air sacs, pericardium",
+            "Check air sac transparency (airsacculitis), pericardial fluid (HPS)"
+          ],
+          [
+            "Step 7",
+            "Alimentary & Lymphoid",
+            "Proventriculus, intestines, bursa",
+            "Proventricular papillae petechiae (RD), caecal cores, bursal oedema"
+          ],
+          [
+            "Step 8",
+            "Nerve Examination",
+            "Sciatic, brachial, and vagus nerves",
+            "Bilateral nerve comparison for Marek's disease enlargement"
+          ]
+        ]
+      },
+      {
+        "title": "Differential Diagnosis of Key Anatomical Lesions in Poultry",
+        "headers": [
+          "Anatomical Site",
+          "Characteristic Gross Lesion",
+          "Primary Suspected Disease",
+          "Causative Organism / Agent"
+        ],
+        "rows": [
+          [
+            "Proventriculus",
+            "Pinpoint petechiae on glandular papillae",
+            "Ranikhet (Newcastle) Disease",
+            "Avian Paramyxovirus-1 (APMV-1)"
+          ],
+          [
+            "Bursa of Fabricius",
+            "Swollen, edematous, haemorrhagic bursa",
+            "Infectious Bursal Disease (Gumboro)",
+            "Avian Birnavirus (IBDV)"
+          ],
+          [
+            "Sciatic Nerve",
+            "Unilateral thickening, loss of cross-striations",
+            "Marek's Disease (Neurolymphomatosis)",
+            "Gallid Alphaherpesvirus 2 (MDV)"
+          ],
+          [
+            "Pericardial Sac",
+            "5 to 10 ml clear, straw-coloured gelatinous fluid",
+            "Hydropericardium Syndrome (Leechi)",
+            "Fowl Adenovirus Serotype 4 (FAdV-4)"
+          ],
+          [
+            "Trachea & Larynx",
+            "Cheesy, haemorrhagic, diphtheritic cast occluding lumen",
+            "Infectious Laryngotracheitis (ILT)",
+            "Gallid Alphaherpesvirus 1 (ILTV)"
+          ],
+          [
+            "Caeca",
+            "Bloody contents or cheesy dry necrotic cores",
+            "Caecal Coccidiosis",
+            "*Eimeria tenella*"
+          ]
+        ]
+      }
+    ],
+    "img": "",
+    "tags": [
+      "poultry necropsy",
+      "avian post-mortem",
+      "Ranikhet",
+      "IBD",
+      "bursa",
+      "Marek's disease",
+      "sciatic nerve",
+      "airsacculitis"
+    ]
   },
-
   "p5-t02": {
-    /* Writing the Poultry Post-mortem Report */
-    summary:   "",
-    desc:      "",
-    eliteDesc: "",
-    keyPoints: [],
-    clinical:  "",
-    tables:    [],
-    img:       "",
-    tags:      []
+    "summary": "The poultry post-mortem report documents flock demographics, mortality patterns, organ-by-organ lesion records, tentative flock diagnosis, and actionable farm interventions (emergency vaccination, biosecurity, sanitation).",
+    "desc": "<b>OBJECTIVE OF POULTRY POST-MORTEM REPORTING</b><br>Unlike mammalian reports written for single animals, a poultry necropsy report serves as an epidemiological flock document. It communicates findings to commercial farm managers, pharmaceutical advisors, and diagnostic laboratories. In your practical examination, students are given a necropsy case scenario and required to draft a complete, structured post-mortem report.<br><br><b>THE STANDARD 6-PART POULTRY POST-MORTEM REPORT STRUCTURE</b><br><ul><li><b>Part 1: Flock Demographics and Farm History:</b><br>• Name and address of farm; flock strength (total number of birds in the shed).<br>• Breed / Strain: Commercial Broiler (e.g. Cobb-500, Ross-308), Commercial Layer (e.g. BV-300, Hy-Line), or Breeder flock.<br>• Age: Age in days (broilers) or weeks (layers).<br>• Mortality Data: Daily mortality curve for the past 7 days; cumulative mortality percentage.<br>• Clinical History: Sudden drop in feed intake, respiratory distress (snicking, gasping), diarrhoea (white, greenish, bloody), drop in egg production (%).<br>• Vaccination Status: Exact dates and strains of vaccines administered (Marek's at hatchery, RD F/Lasota, IBD Georgia/Intermediate, IB).</li><br><li><b>Part 2: External Examination Findings:</b><br>• Number of birds necropsied (e.g. 5 representative fresh carcasses).<br>• State of plumage (dirty, ruffled); dehydration (shrunken shanks); comb, wattles, vent condition.</li><br><li><b>Part 3: Internal Examination by Anatomical Systems:</b><br>• <i>Respiratory:</i> Trachea (congestion, mucus, blood clots); lungs (consolidation, pneumonia); air sacs (clear vs cloudy/thickened/cheesy).<br>• <i>Cardiovascular:</i> Hydropericardium (volume and colour of fluid); epicardial petechiae; myocardium (pale streaks, tumours).<br>• <i>Digestive:</i> Crop, proventriculus (glandular papillae petechiae), gizzard erosion, intestines (ballooning, mucosal sloughing, coccidial petechiae), caeca (blood/cores), caecal tonsils (congestion/haemorrhage).<br>• <i>Immune / Lymphoid:</i> Bursa of Fabricius (size relative to normal age, gelatinous transudate, striations, haemorrhages, atrophy); thymus (atrophy, petechiae); spleen (splenomegaly, mottling, tumours).<br>• <i>Urinary & Reproductive:</i> Kidneys (swelling, urate distension); ureters (white chalky lines); ovary (active vs regressed; ruptured ova / egg peritonitis).<br>• <i>Nervous & Musculoskeletal:</i> Sciatic and brachial nerves (thickening, asymmetry); breast and thigh muscles (paintbrush haemorrhages); bones (rickets, rib beading).</li><br><li><b>Part 4: Laboratory Samples Collected and Dispatched:</b><br>• Specific tissues collected, transport medium (VTM, formalin, sterile broth), and requested tests (RT-PCR, HI test, bacteriological culture, histopathology).</li><br><li><b>Part 5: Diagnosis:</b><br>• <b>Tentative Flock Diagnosis:</b> Based on pathognomonic lesion constellation (e.g. \"Suspected Infectious Bursal Disease (Acute Stage)\").<br>• <b>Differential Diagnoses:</b> Secondary conditions to rule out (e.g. Chicken Infectious Anaemia, Sulphonamide toxicity).</li><br><li><b>Part 6: Immediate Advisory & Control Recommendations to Farmer:</b><br>• Emergency management: Water sanitation (bleaching powder / chlorine at 2–3 ppm), multivitamin therapy (Vitamin E + Selenium + Vitamin C for immune support), electrolyte administration in water to counter dehydration, strict biosecurity, foot baths, safe disposal of dead birds.</li></ul>",
+    "eliteDesc": "<b>EPIDEMIOLOGICAL CURVE ANALYSIS IN POULTRY REPORTS.</b><br>In commercial poultry medicine, the mortality trajectory recorded in Part 1 is as diagnostic as the necropsy lesions:<br>• <i>Spike / Bell-Shaped Curve:</i> Sudden dramatic rise peaking in 3–5 days and rapidly returning to baseline over 7–8 days. Characteristic of <b>Infectious Bursal Disease (IBD)</b> in 3 to 6-week-old broilers.<br>• <i>Exponential / Unchecked Steep Rise:</i> Mortality escalates from 2% to 20% to 80% within 48 to 72 hours. Pathognomonic for <b>Velogenic Viscerotropic Newcastle Disease (VVND)</b> or <b>Highly Pathogenic Avian Influenza (HPAI)</b>.<br>• <i>Low-Grade Persistent Daily Attrition:</i> 0.5% to 1.0% mortality continuing week after week. Characteristic of <b>Marek's disease</b> (tumour phase), <b>Lymphoid Leukosis</b>, or chronic respiratory disease (CRD complex).",
+    "keyPoints": [
+      "Poultry necropsy reports are epidemiological documents designed for population health management.",
+      "Flock data must include flock strength, breed, age in days/weeks, daily mortality, and vaccination record.",
+      "Internal lesions must be recorded systematically across respiratory, digestive, lymphoid, and nervous systems.",
+      "Proventricular petechiae and caecal tonsil haemorrhage suggest Ranikhet disease (Newcastle disease).",
+      "Paintbrush thigh muscle haemorrhages and swollen gelatinous bursa indicate acute Infectious Bursal Disease (IBD).",
+      "Sciatic nerve asymmetry and visceral tumours indicate Marek's disease.",
+      "Pericardial sac filled with straw-coloured fluid indicates Hydropericardium Syndrome (Leechi disease).",
+      "Tentative diagnosis must be paired with appropriate laboratory samples for confirmation.",
+      "Immediate farmer recommendations include water acidification/chlorination, electrolytes, and biosecurity.",
+      "Carcass disposal protocol (incineration or deep burial with quicklime) must be explicitly stated in the report.",
+      "The report must conclude with the date, time, registration number, and signature of the veterinary pathologist."
+    ],
+    "clinical": "<b>Practical Farmer Communication in IBD Outbreak.</b><br>When diagnosing an acute IBD (Gumboro) outbreak at necropsy, your report's advisory section must advise the farmer: <b>DO NOT administer emergency IBD live vaccine</b> during an active clinical flare-up (it destroys the remaining functional bursa and increases mortality). Instead: (1) Add electrolytes and 5% glucose to drinking water to prevent dehydration, (2) Administer immune-supportive Vitamin E and Selenium, (3) Lower dietary protein slightly to reduce renal stress from uric acid accumulation, and (4) Disinfect sheds thoroughly between batches using formaldehyde or glutaraldehyde.",
+    "tables": [
+      {
+        "title": "Standard Template: Poultry Post-Mortem Report",
+        "headers": [
+          "Report Section",
+          "Required Documentation Details",
+          "Example Practical Entry"
+        ],
+        "rows": [
+          [
+            "Farm & Flock Data",
+            "Owner name, location, bird breed, age, flock size, mortality",
+            "Green Agro Farm, Broilers (Cobb-400), 28 days, 10,000 birds, 350 dead in 2 days"
+          ],
+          [
+            "Vaccination Record",
+            "Vaccine types, dates administered, batch numbers",
+            "Marek's at D0; RD Lasota at D5; IBD Intermediate Plus at D14 via drinking water"
+          ],
+          [
+            "External Findings",
+            "Comb, wattles, eyes, feathers, shanks, vent",
+            "Depressed, ruffled feathers, shrunken shanks, white chalky diarrhoea pasting vent"
+          ],
+          [
+            "Internal Findings",
+            "Lesions recorded by organ systems",
+            "Bursa swollen 2x, edematous, yellow gelatinous; paintbrush haemorrhages in thigh"
+          ],
+          [
+            "Tentative Diagnosis",
+            "Disease named from pathognomonic lesion profile",
+            "Acute Infectious Bursal Disease (Gumboro Disease)"
+          ],
+          [
+            "Laboratory Dispatch",
+            "Specimens, preservative, requested confirmatory tests",
+            "5 fresh bursae on ice packs to IVRI Bareilly for RT-PCR and antigen ELISA"
+          ],
+          [
+            "Recommendations",
+            "Immediate flock treatment and management advice",
+            "Electrolytes in water, Vitamin E + Se, chlorine water sanitation (3 ppm), strict isolation"
+          ]
+        ]
+      },
+      {
+        "title": "Post-Mortem Report Profiles of Common Avian Epidemics",
+        "headers": [
+          "Disease Name",
+          "Typical Flock Age",
+          "Cardinal Post-Mortem Lesions",
+          "Sample to Collect for Confirmation"
+        ],
+        "rows": [
+          [
+            "Ranikhet Disease (ND)",
+            "Any age (broiler / layer)",
+            "Proventricular papillae petechiae, haemorrhagic caecal tonsils, tracheitis",
+            "Trachea, lung, brain, spleen in VTM (RT-PCR / HI test)"
+          ],
+          [
+            "Infectious Bursal Disease (IBD)",
+            "3 to 6 weeks (young birds)",
+            "Swollen edematous bursa, paintbrush thigh muscle haemorrhages",
+            "Bursa of Fabricius in ice (RT-PCR) and 10% NBF (histology)"
+          ],
+          [
+            "Marek's Disease (MD)",
+            "8 to 24 weeks (growers/layers)",
+            "Unilateral sciatic nerve enlargement (2-3x), visceral lymphoid tumours",
+            "Sciatic nerve & tumour tissue in 10% NBF for histopathology"
+          ],
+          [
+            "Hydropericardium Syndrome (HPS)",
+            "3 to 5 weeks (broilers)",
+            "Straw-coloured hydropericardium ('leechi heart'), swollen friable liver",
+            "Liver tissue on ice for PCR; formalin for intranuclear inclusions"
+          ]
+        ]
+      }
+    ],
+    "img": "",
+    "tags": [
+      "poultry PM report",
+      "report writing",
+      "flock diagnosis",
+      "IBD",
+      "Ranikhet",
+      "Marek's",
+      "advisory"
+    ]
   },
-
   "p5-t03": {
-    /* Collection, Preservation and Dispatch of Poultry Morbid Material */
-    summary:   "",
-    desc:      "",
-    eliteDesc: "",
-    keyPoints: [],
-    clinical:  "",
-    tables:    [],
-    img:       "",
-    tags:      []
+    "summary": "Poultry diagnostic dispatch enforces triple packaging: tissues in VTM with antibiotics on ice for virology, heart blood/liver swabs for bacteriology, 10% NBF (10:1 ratio) for histopathology, and 2.5% potassium dichromate for coccidia.",
+    "desc": "<b>OBJECTIVE AND DIAGNOSTIC INTEGRITY</b><br>A clinical or post-mortem diagnosis in poultry remains tentative until confirmed by laboratory isolation, serology, histopathology, or molecular testing (PCR). Collecting the wrong organ, using the wrong preservative, or failing to maintain the cold chain results in autolysis, bacterial overgrowth, and diagnostic failure. This practical topic evaluates the student's mastery of specimen selection, preservative choice, and shipping regulations.<br><br><b>1. PRESERVATION MEDIA AND TARGET PATHOGENS</b><br><ul><li><b>A. Virology Specimens (Ranikhet Disease, Avian Influenza, IBD, Marek's):</b><br>• <i>Target Organs:</i> Trachea, lungs, brain, spleen, cloacal/tracheal swabs, bursa of Fabricius.<br>• <i>Preservative Medium:</i> <b>Viral Transport Medium (VTM)</b> or sterile Phosphate Buffered Saline (PBS, pH 7.2) containing high concentrations of antibiotics (Penicillin 10,000 IU/ml, Streptomycin 10 mg/ml, Gentamicin 250 µg/ml, and Amphotericin B 20 µg/ml to inhibit bacterial and fungal contamination).<br>• <i>Alternative Preservative:</i> <b>50% Glycerol-Saline (pH 7.2 to 7.4)</b>: preserves virus viability at room temperature during transport without freezing.<br>• <i>Temperature:</i> Shipped on wet ice (0°C to 4°C for <24 hrs) or dry ice / liquid nitrogen (for >24 hrs). <b>Never allow virological tissues to thaw and refreeze repeatedly!</b></li><br><li><b>B. Bacteriology Specimens (Fowl Cholera, Colibacillosis, Salmonella, Coryza):</b><br>• <i>Target Organs:</i> Heart blood (collected with sterile syringe from right atrium), liver, spleen, unruptured yolk sac, sinus exudate.<br>• <i>Preservative:</i> Sterile transport swabs in Stuart's or Amies transport medium, or intact small parenchymatous organs placed in sterile vials <b>WITHOUT ANY CHEMICAL PRESERVATIVE</b>.<br>• <i>Temperature:</i> Shipped chilled on ice packs (never frozen, as freezing lyses fastidious bacteria like *Avibacterium* and *Pasteurella*).</li><br><li><b>C. Histopathology Specimens:</b><br>• <i>Target Organs:</i> Bursa of Fabricius, thymus, sciatic nerve, proventriculus, trachea, lung, liver, spleen.<br>• <i>Preservative:</i> <b>10% Neutral Buffered Formalin (10% NBF)</b>. <i>Ratio:</i> Strictly <b>10 parts fixative to 1 part tissue by volume</b>. Slices must be <b>3 to 5 mm thick</b> to ensure complete penetration. Never freeze formalinized tissues!</li><br><li><b>D. Parasitology Specimens (Coccidiosis):</b><br>• <i>Target:</i> Intestinal scrapings, caecal cores.<br>• <i>Preservative:</i> <b>2.5% Potassium Dichromate (K2Cr2O7) solution</b>. <i>Exam Reason:</i> Potassium dichromate inhibits bacterial putrefaction while supplying oxygen to allow coccidial oocysts to <b>sporulate</b>, enabling morphological species identification (*E. tenella*, *E. necatrix*, *E. acervulina*).</li><br><li><b>E. Toxicology (Aflatoxins, Pesticides):</b><br>• <i>Target:</i> 1 to 2 kg representative poultry feed samples collected from top, middle, and bottom of multiple bags. Shipped in clean, dry, sealed cloth/polythene bags. Crop and gizzard contents collected in clean glass jars <b>without preservative</b>.</li></ul><br><b>2. THE TRIPLE-PACKAGING SYSTEM FOR DANGEROUS PATHOGENS (ZOONOSES / AVIAN FLU)</b><br>International biological shipping regulations (IATA / WHO) mandate a 3-layer containment system:<br>1. <b>Primary Receptacle:</b> Watertight, leakproof primary container (screw-cap plastic vial sealed with Parafilm) containing the morbid specimen.<br>2. <b>Secondary Packaging:</b> Enclosing the primary receptacle; a durable, watertight, leakproof container with sufficient <b>absorbent material</b> (cotton wool, cellulose pads) packed between primary and secondary layers to absorb the entire liquid contents in case of breakage.<br>3. <b>Rigid Outer Packaging:</b> Insulated thermocol/Styrofoam ice chest enclosed in a sturdy corrugated cardboard box containing frozen gel ice packs or dry ice. Labeled with: Consignor and Consignee addresses, Emergency Contact, and official <b>Biohazard Warning Symbol (UN 3373 / Biological Substance Category B)</b>.<br><br><b>3. SPECIMEN DISPATCH LETTER / INVOICE</b><br>Must accompany every diagnostic package in a waterproof envelope taped to the outside of the secondary box: includes farm history, tentative diagnosis, list of specimens sent, preservatives used, and specific laboratory tests requested.",
+    "eliteDesc": "<b>CHEMISTRY OF VIRAL TRANSPORT MEDIA (VTM) AND COLD CHAIN.</b><br>Why is VTM necessary? Naked virus particles (like Newcastle Disease Paramyxovirus or Avian Influenza Orthomyxovirus) are enveloped by a delicate lipid bilayer membrane studded with haemagglutinin and neuraminidase spikes. Dehydration, osmotic shifts, or pH changes (<6.5 or >8.0) disrupt this viral envelope, rendering the virus non-infectious and undetectable in egg inoculation. VTM contains <b>bovine serum albumin (BSA) or gelatin (0.5%)</b> to stabilize viral envelope proteins, a balanced physiological salt buffer to maintain isotonicity, and broad-spectrum antibiotics to neutralize contaminating gut and respiratory bacteria during shipping.",
+    "keyPoints": [
+      "Diagnostic confirmation requires matching the exact organ to the correct preservative medium.",
+      "Virology samples are collected in Viral Transport Medium (VTM) or 50% glycerol-saline on ice.",
+      "Bacteriology samples (heart blood, liver) are shipped fresh in sterile containers on ice (NEVER frozen).",
+      "Histopathology tissues require 10% Neutral Buffered Formalin at a 10:1 fixative-to-tissue volume ratio.",
+      "Histopathology tissue slices must be 3 to 5 mm thick to ensure rapid, uniform formalin penetration.",
+      "Coccidiosis scrapings are preserved in 2.5% Potassium Dichromate to permit oocyst sporulation.",
+      "Poultry feed samples (1-2 kg) are collected dry in plastic bags for aflatoxin mycotoxin assay.",
+      "International shipping mandates the Triple-Packaging System (primary, secondary absorbent, rigid outer).",
+      "Ice packs maintain 0°C to 4°C; dry ice is used for long-distance transit requiring frozen state.",
+      "Every parcel must bear a UN 3373 Biohazard label and an external waterproof invoice document."
+    ],
+    "clinical": "<b>Field Submission for Suspected Avian Influenza (Bird Flu).</b><br>If sudden high mortality with severe cyanosis of comb/wattles suggests Avian Influenza (H5N1 / H9N2): <b>DO NOT transport whole dead birds on public transport</b>. Collect combined tracheal and cloacal swabs using synthetic Dacron or polyester swabs (never calcium alginate or wooden-shafted swabs, which inhibit PCR enzymes!). Place swabs into screw-capped vials containing 2 ml VTM, seal with Parafilm, pack in triple packaging on ice packs, and notify state veterinary authorities immediately for biosecure courier transport.",
+    "tables": [
+      {
+        "title": "Master Guide: Poultry Specimen Collection and Preservation",
+        "headers": [
+          "Suspected Disease Outbreak",
+          "Optimal Organ / Tissue to Collect",
+          "Preservative / Transport Medium",
+          "Storage Temperature & Shipping"
+        ],
+        "rows": [
+          [
+            "Ranikhet Disease (ND)",
+            "Trachea, lung, spleen, brain, cloacal swabs",
+            "Viral Transport Medium (VTM) with antibiotics",
+            "Chilled on ice packs (0°C to 4°C); do not freeze"
+          ],
+          [
+            "Infectious Bursal Disease",
+            "Bursa of Fabricius, spleen, thymus",
+            "VTM (for PCR) + 10% NBF (for histology)",
+            "VTM on ice; formalin jar at room temperature"
+          ],
+          [
+            "Avian Colibacillosis / Fowl Cholera",
+            "Heart blood, liver, spleen, bone marrow",
+            "Sterile transport swab / sterile screw-cap vial",
+            "Chilled on ice packs (never freeze bacteriology)"
+          ],
+          [
+            "Avian Aspergillosis (Brooder Pneumonia)",
+            "Nodular lung, air sac plaques",
+            "10% NBF (histology) + sterile vial (culture)",
+            "Formalin at room temperature; culture vial on ice"
+          ],
+          [
+            "Coccidiosis (*Eimeria* spp.)",
+            "Intestinal mucosal scrapings, caecal cores",
+            "2.5% Potassium Dichromate (K2Cr2O7) solution",
+            "Room temperature (allows oocyst sporulation)"
+          ],
+          [
+            "Aflatoxicosis",
+            "Feed from feeders and storage bags (1-2 kg)",
+            "Clean, dry, moisture-proof plastic bags",
+            "Dry, room temperature (prevent fungal growth en route)"
+          ]
+        ]
+      },
+      {
+        "title": "The Triple-Packaging System for Biological Veterinary Specimens",
+        "headers": [
+          "Packaging Layer",
+          "Component Description",
+          "Primary Function in Biosecurity"
+        ],
+        "rows": [
+          [
+            "1. Primary Receptacle",
+            "Watertight, leakproof plastic vial with screw cap and rubber O-ring",
+            "Directly holds the morbid specimen; sealed with Parafilm"
+          ],
+          [
+            "2. Secondary Packaging",
+            "Watertight, impact-resistant metal or rigid plastic container",
+            "Encloses primary vial; packed with absorbent cotton to absorb all liquid"
+          ],
+          [
+            "3. Outer Packaging",
+            "Rigid insulated Styrofoam box inside corrugated fibreboard box",
+            "Protects against physical impact; holds ice packs; displays Biohazard UN 3373"
+          ]
+        ]
+      }
+    ],
+    "img": "",
+    "tags": [
+      "specimen collection",
+      "poultry morbid material",
+      "VTM",
+      "preservation",
+      "triple packaging",
+      "potassium dichromate",
+      "avian influenza"
+    ]
   },
-
   "p5-t04": {
-    /* Gross Specimens and Slides — Poultry Diseases */
-    summary:   "",
-    desc:      "",
-    eliteDesc: "",
-    keyPoints: [],
-    clinical:  "",
-    tables:    [],
-    img:       "",
-    tags:      []
+    "summary": "Avian pathology spotting links museum specimens (RD proventricular petechiae, IBD bursa, HPS leechi heart, visceral gout urate frosting) and histopathology slides (Fowl Pox Bollinger bodies, ILT syncytial intranuclear inclusions).",
+    "desc": "<b>PRACTICAL SPOTTING METHODOLOGY IN AVIAN PATHOLOGY</b><br>Avian spotting stations in B.V.Sc practical exams evaluate both macroscopic organ jars and microscopic slides. You have 2 minutes to: (1) Identify the specimen or organ, (2) Describe the diagnostic pathological hallmark, (3) Name the disease and aetiological agent, and (4) State the key pathognomonic diagnostic feature.<br><br><b>1. HIGH-YIELD AVIAN GROSS MUSEUM SPECIMENS</b><br><ul><li><b>1. Ranikhet Disease (Newcastle Disease / ND) — Proventriculus & Caecal Tonsils:</b><br>• <i>Proventriculus:</i> Sliced open to reveal pinpoint to pinhead-sized <b>petechial haemorrhages strictly concentrated on the tips of the mucosal gland papillae</b>.<br>• <i>Caecal Tonsils:</i> Markedly enlarged, swollen, dark purplish-red with severe haemorrhage and necrosis.<br>• <i>Intestine:</i> Raised, button-like necrotic ulcers covered with greenish-yellow diphtheritic membranes.</li><br><li><b>2. Infectious Bursal Disease (IBD / Gumboro Disease) — Bursa of Fabricius:</b><br>• <i>Acute Stage (Day 3–4):</i> Bursa is enlarged to twice normal size, edematous, hyperaemic, and surrounded by a yellowish gelatinous transudate.<br>• <i>Severe Stage (Day 5):</i> Severe intra-follicular haemorrhage, giving the bursa the appearance of a dark purple <b>\"blackcurrant\"</b>.<br>• <i>Late Stage (Day 8 onwards):</i> Severe follicular atrophy; bursa is shrunken to a small, pale, fibrotic pea (<1/3 normal size).<br>• <i>Musculature:</i> Paintbrush-like ecchymotic haemorrhages on breast and thigh muscles.</li><br><li><b>3. Hydropericardium Syndrome (HPS / \"Leechi Disease\") — Broiler Heart:</b><br>• <i>Gross Features:</i> Pericardial sac is enormously distended with <b>5 to 15 ml of clear, straw-coloured gelatinous fluid</b>. The conical heart floats inside the fluid, imparting the unmistakable appearance of a <b>peeled leechi (litchi) fruit</b>. Liver is swollen, yellow-brown, and friable with focal necrotic areas. Caused by Fowl Adenovirus-4 (FAdV-4).</li><br><li><b>4. Marek's Disease (MD) — Sciatic Nerve & Visceral Organs:</b><br>• <i>Sciatic Nerve:</i> Unilateral or bilateral enlargement; nerve trunk is thickened 2 to 3 times normal size, edematous, yellowish-grey, and has lost its normal silky cross-striations.<br>• <i>Viscera:</i> Diffuse, smooth, greyish-white lymphoid tumour masses in liver, spleen, kidneys, and ovary.</li><br><li><b>5. Fowl Pox — Head & Trachea:</b><br>• <i>Cutaneous (Dry) Form:</i> Wart-like, proliferative, nodular scabs on unfeathered skin of comb, wattles, eyelids, and corners of mouth.<br>• <i>Diphtheritic (Wet) Form:</i> Yellowish-white, elevated, cheesy pseudomembranes on mucosal surfaces of mouth, pharynx, and larynx that leave bleeding erosions when peeled.</li><br><li><b>6. Infectious Laryngotracheitis (ILT) — Trachea:</b><br>• <i>Gross Features:</i> Larynx and upper trachea plugged with a thick, cheesy, <b>haemorrhagic-diphtheritic exudate mixed with dark blood clots</b>, causing acute asphyxiation and pump-handle gasping.</li><br><li><b>7. Visceral Gout — Visceral Organs:</b><br>• <i>Gross Features:</i> Visceral serosa (epicardium, pericardial sac, liver capsule, mesentery, peritoneum) completely coated with chalky-white, powdery, porcelain-like deposits of <b>monosodium urate crystals</b>, resembling a dusting of white chalk or <b>\"white frost\"</b>. Kidneys are enlarged, pale, with tubules distended with white urates.</li></ul><br><b>2. HIGH-YIELD AVIAN HISTOPATHOLOGY SLIDES</b><br><ul><li><b>1. Fowl Pox — Skin / Scab Section:</b><br>• <i>Low Power (10x):</i> Marked epithelial hyperplasia and hyperkeratosis; stratum spinosum cells swollen into ballooning cells.<br>• <i>High Power (40x):</i> <b>Bollinger Bodies:</b> Large, round to oval, distinct, <b>eosinophilic intracytoplasmic inclusion bodies</b> inside swollen epithelial cells. They are rich in lipids (stained by Sudan IV) and contain hundreds of elementary viral particles (Borrel bodies).</li><br><li><b>2. Marek's Disease — Peripheral Nerve Section:</b><br>• <i>High Power (40x):</i> Massive, diffuse infiltration of the nerve parenchyma by a <b>pleomorphic population of lymphoid cells</b>: lymphoblasts, small lymphocytes, plasma cells, and 'Marek's disease tumour cells'. Demyelination, axonal degeneration, and loss of neurolemma architecture.</li><br><li><b>3. Infectious Laryngotracheitis (ILT) — Tracheal Mucosa:</b><br>• <i>High Power (40x):</i> Tracheal epithelial cells coalesce to form multinucleated syncytial giant cells containing pathognomonic <b>intranuclear eosinophilic inclusion bodies</b> with a clear surrounding halo.</li><br><li><b>4. Avian Coccidiosis — Intestinal Section (*Eimeria tenella* / *necatrix*):</b><br>• <i>High Power (40x):</i> Massive sloughing and haemorrhage of mucosal villi. Epithelial cells and lamina propria are packed with round and oval developmental stages: large multinucleated <b>schizonts</b> containing clusters of banana-shaped merozoites, macrogametocytes, and thick-walled oocysts.</li><br><li><b>5. Visceral Gout — Tophus in Tissue:</b><br>• <i>High Power (40x):</i> Central radiating, needle-like crystals of urates (dissolved during routine aqueous processing, leaving radiating clefts), surrounded by an intense foreign-body reaction consisting of macrophages, foreign-body multinucleated giant cells, and fibrous tissue. Special stain: <b>de Galantha silver stain</b> stains urates jet-black.</li></ul>",
+    "eliteDesc": "<b>PATHOLOGY OF SYNCYTIA FORMATION IN ILT.</b><br>Why does ILT form syncytia with intranuclear inclusions while Fowl Pox forms intracytoplasmic inclusions? Gallid Alphaherpesvirus 1 (ILTV) encodes glycoprotein B (gB) and gH/gL complexes that induce cell-to-cell fusion of neighbouring tracheal epithelial cell membranes, producing massive multinucleated syncytial giant cells. Because herpesviruses replicate within the host cell nucleus, newly assembled viral nucleocapsids aggregate in the nucleoplasm, displacing host heterochromatin to the nuclear envelope and forming classic eosinophilic Cowdry Type A intranuclear inclusion bodies. Poxviruses, conversely, replicate exclusively in the cytoplasm, forming massive intracytoplasmic Bollinger bodies.",
+    "keyPoints": [
+      "Ranikhet disease gross hallmark: pinpoint petechiae on proventricular papillae and haemorrhagic caecal tonsils.",
+      "IBD bursa progression: swollen/gelatinous (D3) -> 'blackcurrant' haemorrhagic (D5) -> atrophied (D8).",
+      "Hydropericardium Syndrome (Leechi disease) shows 5-15 ml straw-coloured fluid in pericardium around floating heart.",
+      "Marek's disease: unilateral sciatic nerve enlargement (2-3x normal) with loss of cross-striations.",
+      "Fowl Pox exhibits cutaneous nodular scabs and diphtheritic mucosal pseudomembranes in mouth/larynx.",
+      "Fowl Pox histology: pathognomonic large eosinophilic intracytoplasmic Bollinger bodies in epithelial cells.",
+      "Infectious Laryngotracheitis (ILT) causes haemorrhagic tracheitis with syncytial intranuclear inclusion bodies.",
+      "Visceral gout coats visceral serosa (heart, liver) with chalky-white powdery monosodium urates ('white frost').",
+      "Marek's disease nerve histology features pleomorphic lymphoid infiltration and demyelination.",
+      "Avian coccidiosis sections show schizonts, merozoites, and oocysts packed inside mucosal epithelial cells."
+    ],
+    "clinical": "<b>Rapid Field Spotting: Marek's Disease vs Lymphoid Leukosis.</b><br>Commercial poultry examiners frequently ask how to differentiate Marek's Disease (MD) from Lymphoid Leukosis (LL) at necropsy: (1) <b>Nerve Involvement:</b> MD causes prominent sciatic/brachial nerve enlargement; LL NEVER affects nerves! (2) <b>Bursa of Fabricius:</b> LL characteristically produces nodular, intrafollicular tumours in the bursa; MD causes diffuse bursal atrophy or diffuse enlargement without discrete nodules. (3) <b>Age:</b> MD affects young birds (6 to 14 weeks); LL affects adult layers (>16 to 24 weeks).",
+    "tables": [
+      {
+        "title": "Master Spotting Key: Avian Gross Museum Specimens",
+        "headers": [
+          "Specimen / Organ",
+          "Cardinal Gross Pathological Hallmark",
+          "Avian Disease Name",
+          "Aetiological Pathogen"
+        ],
+        "rows": [
+          [
+            "Chicken Proventriculus",
+            "Pinpoint petechial haemorrhages on glandular papillae tips",
+            "Ranikhet Disease (Newcastle Disease)",
+            "Avian Paramyxovirus-1 (APMV-1)"
+          ],
+          [
+            "Bursa of Fabricius",
+            "Swollen gelatinous (acute) or 'blackcurrant' haemorrhagic bursa",
+            "Infectious Bursal Disease (IBD)",
+            "Avian Birnavirus (IBDV)"
+          ],
+          [
+            "Broiler Heart & Liver",
+            "Pericardial sac distended with 10 ml clear fluid ('leechi heart')",
+            "Hydropericardium Syndrome (HPS)",
+            "Fowl Adenovirus Serotype 4 (FAdV-4)"
+          ],
+          [
+            "Sciatic Nerve & Thigh",
+            "Unilateral thickening of nerve trunk (2-3x); lost striations",
+            "Marek's Disease (Neurolymphomatosis)",
+            "Gallid Alphaherpesvirus 2 (MDV)"
+          ],
+          [
+            "Head & Comb",
+            "Wart-like, nodular proliferative scabs on comb and eyelids",
+            "Fowl Pox (Cutaneous Form)",
+            "Avipoxvirus (Poxviridae)"
+          ],
+          [
+            "Chicken Trachea",
+            "Lumen occluded by cheesy, haemorrhagic, diphtheritic blood cast",
+            "Infectious Laryngotracheitis (ILT)",
+            "Gallid Alphaherpesvirus 1 (ILTV)"
+          ],
+          [
+            "Pericardium & Liver",
+            "Chalky-white powdery coating of urate crystals ('white frost')",
+            "Visceral Gout",
+            "Dehydration / excess protein / nephritis"
+          ]
+        ]
+      },
+      {
+        "title": "Master Spotting Key: Avian Histopathology Slides",
+        "headers": [
+          "Slide Name",
+          "Target Tissue",
+          "Low Power (10x) Architecture",
+          "40x High Power Pathognomonic Hallmark"
+        ],
+        "rows": [
+          [
+            "Fowl Pox",
+            "Skin / Comb Scab",
+            "Marked epithelial hyperplasia & ballooning",
+            "Large eosinophilic intracytoplasmic Bollinger bodies"
+          ],
+          [
+            "Marek's Disease",
+            "Sciatic Nerve",
+            "Nerve fascicles separated and swollen",
+            "Massive infiltration of pleomorphic lymphocytes & lymphoblasts"
+          ],
+          [
+            "Infectious Laryngotracheitis",
+            "Tracheal Mucosa",
+            "Epithelial syncytia formation; necrosis",
+            "Multinucleated syncytia with eosinophilic intranuclear inclusions"
+          ],
+          [
+            "Avian Coccidiosis",
+            "Caecum / Intestine",
+            "Villi denuded; massive haemorrhage",
+            "Epithelial cells packed with schizonts, merozoites & oocysts"
+          ],
+          [
+            "Visceral Gout",
+            "Heart / Kidney Tophus",
+            "Radiating clefts in necrotic tissue",
+            "Radiating needle-like urate crystals with foreign-body giant cells"
+          ]
+        ]
+      }
+    ],
+    "img": "",
+    "tags": [
+      "avian spotting",
+      "Ranikhet",
+      "IBD",
+      "leechi disease",
+      "Marek's nerve",
+      "Bollinger bodies",
+      "ILT",
+      "visceral gout"
+    ]
   }
 };
 
 practicalData["prac-unit-6"] = {
   "p6-t01": {
-    /* Post-mortem Examination of Laboratory Animals */
-    summary:   "",
-    desc:      "",
-    eliteDesc: "",
-    keyPoints: [],
-    clinical:  "",
-    tables:    [],
-    img:       "",
-    tags:      []
+    "summary": "Laboratory animal post-mortem covers humane euthanasia (CO2 / cervical dislocation), pinned dissection of rodents, and species-specific inspection: guinea pig scurvy and rabbit hepatic coccidiosis along bile ducts.",
+    "desc": "<b>OBJECTIVE AND ETHICAL REGULATION (CPCSEA / CCSEA GUIDELINES)</b><br>Post-mortem examination of laboratory animals (mice, rats, guinea pigs, rabbits) is performed for disease surveillance, quality assurance in experimental animal facilities, and toxicological bioassays. In India, all handling, euthanasia, and necropsy must strictly conform to CCSEA (Committee for the Purpose of Control and Supervision of Experiments on Animals) statutory guidelines.<br><br><b>1. HUMANE EUTHANASIA METHODS IN LABORATORY ANIMALS</b><br>Must be performed painlessly, rapidly, and without creating tissue artifacts:<br><ul><li><b>Carbon Dioxide (CO2) Inhalation:</b> The most common humane method for mice, rats, and guinea pigs. Animals are placed in an uncrowded euthanasia chamber into which 100% CO2 is displaced at a gradual, regulated flow rate of <b>30% to 70% of chamber volume per minute</b>. Causes rapid loss of consciousness from cerebral hypoxia within 1 to 2 minutes, followed by respiratory arrest. <i>Caution:</i> Death must be confirmed by verifying cardiac arrest or secondary cervical dislocation before beginning necropsy!</li><li><b>Cervical Dislocation:</b> Permissible only for small rodents (mice <200 g, young rats). Performed by placing a metal rod or thumb firmly behind the base of the skull while pulling the base of the tail smoothly and firmly backwards, instantly severing the spinal cord at the atlanto-occipital joint.</li><li><b>Overdose of Barbiturate Anaesthetic:</b> <b>Sodium Pentobarbitone</b> administered intraperitoneally (IP) or intravenously (IV) at <b>150 to 200 mg/kg</b> (3 times the surgical anaesthetic dose). Gold standard for rabbits and guinea pigs.</li></ul><br><b>2. SYSTEMATIC RODENT DISSECTION TECHNIQUE (MICE AND RATS)</b><br><ul><li><b>1. Preparation:</b> Spray the entire carcass with <b>70% ethyl alcohol</b>. <i>Exam reason:</i> Disinfects the skin, prevents loose hair from entering the body cavities, and wets down the fur.</li><li><b>2. Securing:</b> Pin the animal in <b>dorsal recumbency</b> on a cork dissecting board or paraffin-wax tray by placing pins through the four paws.</li><li><b>3. Incision & Flaying:</b> Using fine scissors and toothed forceps, make a small tent of skin over the lower abdomen; incise and extend midline cut from the chin to the pubis. Reflect skin laterally with blunt dissection to expose salivary glands, cervical lymph nodes, mammary chains, and abdominal wall.</li><li><b>4. Opening Cavities:</b> Incise the linea alba; open the abdominal cavity with lateral cuts along the costal margins. Cut ribs on both sides of sternum to lift off the rib cage, exposing the heart, thymus, and lungs.</li><li><b>5. Organ Evisceration:</b> Remove the thoracic pluck (heart and lungs). Examine the digestive tract (stomach, duodenum, small intestine, caecum, colon). Inspect liver, spleen, adrenals (cranial to kidneys), kidneys, and reproductive tract.</li><li><b>6. Brain Removal:</b> Reflect skin over skull; make lateral cuts through the thin calvarium with fine iris scissors from foramen magnum anteriorly; gently peel back the cranial roof and lift brain out with a curved spatula into 10% NBF.</li></ul><br><b>3. ANATOMICAL PECULIARITIES & PATHOLOGICAL CHECKS</b><br><ul><li><b>Guinea Pigs:</b><br>• <i>Enormous Caecum:</i> Occupies nearly half the abdominal cavity. Sensitive to dysbiosis: <b>NEVER administer penicillins, ampicillin, or erythromycin</b> (destroys Gram-positive microflora, causing lethal overgrowth of *Clostridium difficile* enterotoxaemia).<br>• <i>Scurvy (Hypovitaminosis C):</i> Guinea pigs lack L-gulonolactone oxidase and cannot synthesise Vitamin C. Check for: subperiosteal haemorrhages around stifle joints, loose teeth, and swelling/beading of costochondral junctions ('scorbutic rosary').</li><li><b>Rabbits:</b><br>• <i>Sacculus Rotundus & Vermiform Appendix:</i> Prominent lymphoid organs at the ileocaecal junction and tip of caecum.<br>• <i>Liver Inspection for Hepatic Coccidiosis:</i> Always inspect the liver surface for irregular, branching, yellowish-white nodules along the course of bile ducts (*Eimeria stiedae*).<br>• <i>Ear Canals:</i> Check for thick brown crusts and scales caused by the rabbit ear mite (*Psoroptes cuniculi*).</li></ul>",
+    "eliteDesc": "<b>TOXICOLOGICAL PATHOLOGY PROTOCOLS FOR LABORATORY ANIMALS.</b><br>In statutory preclinical toxicity trials in rodents (OECD guidelines):<br>1. <b>Organ Weight Ratios:</b> Major parenchymatous organs (liver, kidneys, spleen, heart, brain, adrenals, testes) must be dissected completely clean of surrounding adipose tissue and weighed immediately on a precision analytical balance to 0.001 g before fixation. The <b>relative organ weight (Organ weight / Body weight × 100)</b> is the most sensitive metric of early chemical hepatotoxicity, nephrotoxicity, and testicular atrophy.<br><br>2. <b>Fixation of Delicate Organs:</b> Testes and eyes must NEVER be fixed in routine 10% NBF (causes massive tubular shrinkage and retinal detachment). They must be fixed in <b>Bouin's Fluid</b> (picric acid + formalin + acetic acid) or Davidson's fixative for 24 hours.",
+    "keyPoints": [
+      "Laboratory animal handling and necropsy in India is regulated by CCSEA / CPCSEA rules.",
+      "Humane euthanasia methods: regulated CO2 chamber (30-70% volume/min), cervical dislocation (mice <200g), barbiturate overdose.",
+      "Spray rodent carcass with 70% alcohol to lay down fur and prevent hair contamination.",
+      "Rodents are pinned in dorsal recumbency on cork/wax boards for dissection.",
+      "Guinea pigs have an immense caecum; fatal enterotoxaemia occurs with beta-lactam antibiotics.",
+      "Guinea pigs lack L-gulonolactone oxidase; deficiency causes scurvy with joint haemorrhages.",
+      "Rabbits have two unique lymphoid structures: sacculus rotundus and vermiform appendix.",
+      "Rabbit liver must be examined for white branching bile duct nodules of *Eimeria stiedae*.",
+      "Rabbit ear canals must be checked for crusty exudate of *Psoroptes cuniculi* mites.",
+      "Relative organ weight (Organ wt / Body wt × 100) is a primary marker in toxicological pathology.",
+      "Testes and eyes require Bouin's or Davidson's fixative, never routine 10% NBF."
+    ],
+    "clinical": "<b>Preventing Scurvy Diagnostic Confusion in Guinea Pigs.</b><br>When a pet or laboratory guinea pig presents with sudden hindlimb lameness, swollen joints, and vocalization on handling: novice clinicians often suspect joint trauma or arthritis. At post-mortem: finding subperiosteal haemorrhages around the knee and ankle joints with loose incisors is diagnostic for <b>Scurvy (Hypovitaminosis C)</b>. In commercial and laboratory housing, guinea pig pellets lose 50% of their added Vitamin C within 90 days of manufacture; always supplement fresh green vegetables (coriander, cabbage) or ascorbic acid in drinking water daily.",
+    "tables": [
+      {
+        "title": "Standard Euthanasia Methods for Common Laboratory Animals",
+        "headers": [
+          "Species",
+          "Primary Acceptable Euthanasia Method",
+          "Dose / Flow Rate",
+          "Verification of Death"
+        ],
+        "rows": [
+          [
+            "Mouse (<200 g)",
+            "CO2 Inhalation or Cervical Dislocation",
+            "CO2 flow at 30–70% chamber vol/min",
+            "Cessation of heartbeat; bilateral pneumothorax"
+          ],
+          [
+            "Rat (>200 g)",
+            "CO2 Inhalation or Sodium Pentobarbitone IP",
+            "Pentobarbitone 150 mg/kg IP",
+            "Absence of corneal reflex; pupil dilation"
+          ],
+          [
+            "Guinea Pig",
+            "Sodium Pentobarbitone IP or CO2 inhalation",
+            "Pentobarbitone 150–200 mg/kg IP",
+            "Cardiac arrest confirmed by thoracic palpation"
+          ],
+          [
+            "Rabbit",
+            "Overdose of Sodium Pentobarbitone IV",
+            "150 mg/kg IV into marginal ear vein",
+            "Auscultation of cardiac arrest; eye unresponsiveness"
+          ]
+        ]
+      },
+      {
+        "title": "Anatomical Peculiarities and Common Diseases of Laboratory Animals",
+        "headers": [
+          "Laboratory Animal",
+          "Unique Anatomical Feature",
+          "High-Yield Disease Condition",
+          "Characteristic Diagnostic Lesion"
+        ],
+        "rows": [
+          [
+            "Mouse (*Mus musculus*)",
+            "Prominent salivary glands; thin calvarium",
+            "Infectious Ectromelia (Mousepox)",
+            "Dry gangrene/amputation of limbs; splenic necrosis"
+          ],
+          [
+            "Rat (*Rattus norvegicus*)",
+            "Lacks a Gallbladder; diffuse pancreas",
+            "Murine Respiratory Mycoplasmosis",
+            "Cobblestone lung; bronchiectasis (*M. pulmonis*)"
+          ],
+          [
+            "Guinea Pig (*Cavia porcellus*)",
+            "Massive thin caecum; dietary Vitamin C need",
+            "Scurvy (Hypovitaminosis C)",
+            "Subperiosteal joint haemorrhages; costochondral beading"
+          ],
+          [
+            "Rabbit (*Oryctolagus cuniculus*)",
+            "Sacculus rotundus; large caecum & appendix",
+            "Hepatic Coccidiosis (*Eimeria stiedae*)",
+            "White branching cord-like nodules along biliary tree"
+          ]
+        ]
+      }
+    ],
+    "img": "",
+    "tags": [
+      "laboratory animals",
+      "rodent necropsy",
+      "euthanasia",
+      "CCSEA",
+      "guinea pig scurvy",
+      "rabbit coccidiosis",
+      "relative organ weight"
+    ]
   },
-
   "p6-t02": {
-    /* Post-mortem Examination of Wild Animals */
-    summary:   "",
-    desc:      "",
-    eliteDesc: "",
-    keyPoints: [],
-    clinical:  "",
-    tables:    [],
-    img:       "",
-    tags:      []
+    "summary": "Wildlife necropsy demands strict zoonotic biosafety, forensic documentation (metal detector for pellets/traps, chain of custody), species-specific dissection, and targeted toxicological organ sampling in rectified spirit.",
+    "desc": "<b>OBJECTIVE AND LEGAL FRAMEWORK (WILD LIFE PROTECTION ACT, 1972)</b><br>Wildlife post-mortem examination is governed by statutory laws under the **Wild Life (Protection) Act, 1972** (amended 2022). Every death of a scheduled wild animal (Tiger, Leopard, Elephant, Rhinoceros, Deer) is a potential veterolegal and forensic case involving poaching, poisoning, snare trapping, gunshot, electrocution, or territorial conflict. The veterinary officer must conduct a rigorous forensic necropsy in the presence of designated Forest Department officials, police, and witnesses, maintaining an unbroken **Chain of Custody**.<br><br><b>1. ZOONOTIC BIOSAFETY AND PERSONAL PROTECTION</b><br>Free-ranging wildlife carcasses carry dangerous zoonoses that can cause lethal infections in personnel:<br>• <i>Deadly Zoonotic Pathogens:</i> Rabies, Anthrax, Tuberculosis, Kyasanur Forest Disease (KFD / Monkey Fever), Glanders, Brucellosis, and Highly Pathogenic Avian Influenza.<br>• <i>Mandatory PPE:</i> Biosafety respirators (N95 or FFP3 masks), heavy water-resistant protective suits, rubber gumboots, cut-resistant chainmail gloves under surgical gloves, and eye protection goggles. Necropsies must be conducted outdoors in well-ventilated natural sunlight or inside high-containment post-mortem suites.<br><br><b>2. FORENSIC AND EXTERNAL EXAMINATION PROTOCOL</b><br>Before making any knife cut, perform a comprehensive forensic audit:<br><ul><li><b>1. Photographic & Spatial Documentation:</b> Photograph the undisturbed carcass in situ from 4 angles with a forensic scale bar. Note GPS coordinates, ambient temperature, ground signs (struggle marks, blood trails, snare drag marks).</li><li><b>2. Metal Detector & Radiographic Screening:</b> Pass a hand-held forensic metal detector over the entire carcass (head, neck, chest, limbs) to detect hidden <b>gunshot pellets, lead slugs, arrowheads, or wire snares</b> embedded beneath the skin before cutting.</li><li><b>3. Inspection for Electrocuting Burn Marks:</b> Inspect the trunk, mouth, limbs, and footpads for linear electrical burn tracks, singed hair, or blistered skin (indicates intentional electrocution by poachers using hooked overhead agricultural power lines).</li><li><b>4. Dentition and Claws:</b> Inspect teeth (broken canines, worn molars indicate senility, starvational vulnerability, and risk of livestock predation) and ensure all claws, whiskers, and skins are intact and accounted for (poaching indicator).</li><li><b>5. Exclusion of Anthrax in Wild Herbivores:</b> In elephants, wild buffalo, and deer found dead with orifice bleeding: <b>prepare an ear-tip smear to exclude Anthrax</b> (McFadyean's reaction) before opening!</li></ul><br><b>3. INTERNAL DISSECTION BY SPECIES GROUP</b><br><ul><li><b>Wild Carnivores (Tigers, Leopards, Lions, Wolves):</b><br>• Position in dorsal or left lateral recumbency. Make ventral midline skin incision.<br>• <i>Stomach Examination (Crucial for Poisoning):</i> Ligate the stomach at cardia and pylorus. Open inside a clean porcelain tray. Inspect contents: presence of bait meat, strange powders (carbamates / organophosphates), hairballs, porcupine quills piercing stomach wall (common cause of peritonitis in leopards).<br>• <i>Thoracic Cavity:</i> Inspect lungs and pleura for granulomatous nodules (Bovine Tuberculosis is endemic in wild ungulates and carnivores).</li><li><b>Wild Herbivores (Deer, Blackbuck, Nilgai, Wild Pig):</b><br>• Left lateral recumbency (keeps rumen down). Examine for <b>Capture Myopathy (Exertional Rhabdomyolysis)</b>: heavy thigh and back muscles appear pale, dry, friable, cooked-meat in appearance (caused by prolonged chase, poaching nets, or translocation stress).</li><li><b>Elephants:</b><br>• Lateral recumbency. Massive skin thickness (2–3 cm) requires heavy cleavers, skinning knives, and block-and-tackle winches. Examine trunk, footpads, intestinal tract for enteritis, and mesenteric vessels for *Indofilaria* nematodes.</li></ul><br><b>4. PRESERVATION OF MORBID SAMPLES IN WILDLIFE FORENSICS</b><br>• <i>For Toxicological Analysis:</i> Stomach contents (1 kg), liver (500 g), both kidneys, and loop of intestine preserved in <b>Rectified Spirit</b> or <b>Saturated Sodium Chloride Solution</b> (NEVER formalin!). Placed in glass jars, sealed with official wax seal, signed across the tape by the veterinary officer and forest ranger.<br>• <i>For DNA Profiling & Species Identification:</i> Fresh skeletal muscle (20 g) or blood preserved in <b>95% Ethanol or EDTA</b> sent to forensic institutes (WII Dehradun or CCMB Hyderabad).",
+    "eliteDesc": "<b>PATHOLOGY OF CAPTURE MYOPATHY IN WILD HERBIVORES.</b><br>When wild ungulates (blackbuck, chital, spotted deer) are chased by poachers, capture nets, or improper capture chemical immobilization, extreme exertion triggers massive sympathetic release of catecholamines and cortisol. Excessive anaerobic glycolysis in skeletal muscle produces severe metabolic lactic acidosis. Intracellular ATP depletion impairs the calcium-ATPase pump in the sarcoplasmic reticulum; calcium floods the sarcoplasm, causing sustained, irreversible myofibrillar contraction and hyper-contraction necrosis (<b>Zenker's Degeneration</b>). Grossly, the thigh and back muscles appear pale, soft, dry, and white like boiled fish flesh. Massive myoglobin is released into the circulation, producing acute renal tubular necrosis and fatal renal shutdown (myoglobinuric nephrosis).",
+    "keyPoints": [
+      "Wildlife necropsies are governed by the Wild Life (Protection) Act, 1972, with strict chain of custody.",
+      "Extreme zoonotic caution is mandatory against rabies, anthrax, tuberculosis, and Kyasanur Forest Disease.",
+      "Metal detectors must screen the intact carcass for hidden gunshot pellets, slugs, and snares.",
+      "Linear singed burn tracks on footpads and trunk indicate intentional poaching by electrocution.",
+      "In wild ruminants and elephants, anthrax must be ruled out by ear smear before carcass incision.",
+      "Stomach must be ligated and inspected for poison baits (carbamates, organophosphates) and porcupine quills.",
+      "Capture myopathy in wild ungulates produces pale, cooked-meat necrosis of thigh muscles from lactic acidosis.",
+      "Toxicological specimens are preserved in rectified spirit or saturated saline, strictly NEVER formalin.",
+      "DNA profiling samples (muscle tissue) are preserved in 95% ethanol for forensic wildlife DNA registries.",
+      "Official wax sealing of sample jars in the presence of forest officers is legally mandatory."
+    ],
+    "clinical": "<b>Investigating Suspected Tiger / Leopard Poisoning.</b><br>In wild carnivores found dead near livestock kills: poachers frequently lace cattle carcasses with agricultural insecticides (Phorate, Furadan / Carbofuran). Diagnostic post-mortem clues: (1) Absence of struggle marks (rapid death), (2) Massive pulmonary congestion, frothy discharge at nostrils, and pinpoint pupils, (3) Blue-coloured or pink granules of pesticide visible in stomach contents, (4) Absence of normal stomach digestion. Collect stomach contents, liver, and brain on ice and in rectified spirit for gas chromatography-mass spectrometry (GC-MS).",
+    "tables": [
+      {
+        "title": "Forensic Investigation Protocol for Wildlife Post-Mortem",
+        "headers": [
+          "Investigation Step",
+          "Action to Perform",
+          "Diagnostic / Forensic Significance"
+        ],
+        "rows": [
+          [
+            "1. Crime Scene & In-Situ",
+            "Photograph with scale; GPS logging; struggle marks",
+            "Establishes spatial location, time of death, and foul play"
+          ],
+          [
+            "2. Metal Detector Scan",
+            "Sweep electronic metal detector over whole body",
+            "Detects metallic gunshot pellets, wire snares, and broken traps"
+          ],
+          [
+            "3. External Surface Scan",
+            "Inspect mouth, trunk, feet for linear burns & missing claws",
+            "Identifies electrocution, snaring, and poaching of claws/skin"
+          ],
+          [
+            "4. Anthrax Ear Smear",
+            "Examine ear-vein smear with McFadyean's stain",
+            "Mandatory biosafety check before opening wild herbivores"
+          ],
+          [
+            "5. Stomach Ligation",
+            "Double-ligate cardia/pylorus; inspect contents in tray",
+            "Identifies poison baits (Carbofuran), porcupine quills, hairballs"
+          ],
+          [
+            "6. Muscle Examination",
+            "Inspect major thigh and back muscle groups",
+            "Detects pale 'cooked-meat' necrosis of Capture Myopathy"
+          ],
+          [
+            "7. Evidence Sealing",
+            "Pack organs in rectified spirit; official wax seal",
+            "Preserves chemical alkaloids; maintains legal Chain of Custody"
+          ]
+        ]
+      },
+      {
+        "title": "Classic Post-Mortem Findings and Suspected Causes of Death in Wildlife",
+        "headers": [
+          "Wild Animal Group",
+          "Cardinal Post-Mortem Lesions",
+          "Primary Suspected Cause of Death"
+        ],
+        "rows": [
+          [
+            "Tiger / Leopard",
+            "Cyanosis, frothy nostrils, coloured granules in stomach",
+            "Pesticide poisoning (Carbofuran / Phorate bait)"
+          ],
+          [
+            "Wild Herbivore (Deer)",
+            "Pale, dry, white, 'fish-flesh' thigh muscles; dark red urine",
+            "Capture Myopathy (Exertional Rhabdomyolysis)"
+          ],
+          [
+            "Elephant",
+            "Linear burn scars across trunk/foot; massive pulmonary congestion",
+            "Electrocution by illegal farm power fences"
+          ],
+          [
+            "Spotted Deer / Sambar",
+            "Deep laceration circling leg; localized gangrene and fracture",
+            "Wire snare poaching trap"
+          ],
+          [
+            "Non-Human Primate",
+            "Multi-organ petechiae, pulmonary haemorrhage, splenomegaly",
+            "Kyasanur Forest Disease (KFD / Monkey Fever)"
+          ]
+        ]
+      }
+    ],
+    "img": "",
+    "tags": [
+      "wildlife pathology",
+      "wildlife forensics",
+      "chain of custody",
+      "poaching",
+      "capture myopathy",
+      "electrocution",
+      "tiger poisoning"
+    ]
   },
-
   "p6-t03": {
-    /* Gross Specimens and Slides — Laboratory and Wild Animal Diseases */
-    summary:   "",
-    desc:      "",
-    eliteDesc: "",
-    keyPoints: [],
-    clinical:  "",
-    tables:    [],
-    img:       "",
-    tags:      []
+    "summary": "Lab and wild animal spotting identifies rabbit hepatic coccidiosis bile duct nodules, Tyzzer's disease sheaves-of-wheat silver stains, mousepox Marchal bodies, and capture myopathy Zenker's muscle necrosis.",
+    "desc": "<b>OBJECTIVE AND SPOTTING PROTOCOL</b><br>This practical spotting topic tests your ability to identify pathological specimens and histopathological slides specific to laboratory rodents, lagomorphs, and wildlife. In your practical examination, you have 2 minutes to identify: (1) Animal species and organ, (2) Characteristic macroscopic or microscopic hallmark, (3) Disease name and causative organism, and (4) The key diagnostic viva distinction.<br><br><b>1. LABORATORY ANIMAL GROSS SPECIMENS & SLIDES</b><br><ul><li><b>1. Hepatic Coccidiosis in Rabbit (*Eimeria stiedae*) — Gross & Slide:</b><br>• <i>Gross Specimen (Liver):</i> The liver is enlarged. Both diaphragmatic and visceral surfaces are studded with multiple, irregular, raised, yellowish-white circumscribed nodules and <b>branching cord-like lesions following the anatomical arborization of the bile ducts</b>. When incised, creamy yellowish-white fluid containing thousands of coccidial oocysts oozes out.<br>• <i>Histopathology Slide:</i> Spectacular <b>papillary hyperplasia of the bile duct epithelium</b>. Bile ducts are enormously dilated, with extensive, branching, tree-like papillary fronds projecting into the lumen. The hyperplastic epithelial cells contain various developmental stages of *Eimeria stiedae* (macrogametocytes, microgametocytes, developing schizonts, and ovoid unsporulated oocysts with a distinct micropyle). Surrounded by dense periductal fibrous connective tissue.</li><br><li><b>2. Tyzzer's Disease in Rodents (*Clostridium piliforme* / *Bacillus piliformis*):</b><br>• <i>Gross Specimen (Liver):</i> Multiple pinpoint to 2-mm, pale grey-white or yellowish, sharply circumscribed necrotic foci scattered uniformly throughout all liver lobes. Accompanied by severe necrotising typhlocolitis.<br>• <i>Histopathology Slide:</i> Areas of focal coagulative hepatic necrosis with loss of hepatocyte nuclei. <b>Silver Stain (Warthin-Starry or Levaditi) / Giemsa:</b> Surviving hepatocytes at the margin of the necrotic zone are packed with long, slender, parallel intracellular filamentous bacilli arranged in characteristic <b>\"bundles\" or \"sheaves of wheat\"</b>. (Unseen on routine H&E!).</li><br><li><b>3. Infectious Ectromelia (Mousepox) in Mice:</b><br>• <i>Gross Specimen:</i> Cutaneous form shows severe dry gangrene, necrosis, and <b>amputation of digits, foot, or tail</b> (hence 'ectromelia'). Visceral form shows severe multifocal white necrosis in liver and spleen.<br>• <i>Histopathology Slide:</i> Skin and intestinal epithelial cells show large, round to oval, distinct, <b>eosinophilic intracytoplasmic inclusion bodies (Marchal Bodies)</b> that displace the cell nucleus.</li><br><li><b>4. Rabbit Ear Mite Infestation (*Psoroptes cuniculi*):</b><br>• <i>Gross Specimen:</i> Inner surface of external ear pinna and canal packed with thick, foul-smelling, laminated, brown crusts and scales resembling dried cornflakes. Deep ulceration beneath crusts. Direct microscopic examination of crust in 10% KOH reveals numerous oval mites with jointed pedicels and bell-shaped suckers.</li></ul><br><b>2. WILD ANIMAL GROSS SPECIMENS & SLIDES</b><br><ul><li><b>1. Capture Myopathy (Exertional Rhabdomyolysis) in Wild Ungulates (Deer / Blackbuck):</b><br>• <i>Gross Specimen:</i> Heavy skeletal muscles (thigh, back) show extensive, bilateral, asymmetrical patches of pale grey-white to yellowish, dry, friable tissue resembling <b>cooked chicken meat or fish flesh</b>. Heart may show subendocardial haemorrhage and myocardial pallor.<br>• <i>Histopathology Slide:</i> Acute <b>Zenker's Degeneration and Coagulative Necrosis</b> of skeletal muscle fibres. Myofibres are swollen, fragmented, hyper-eosinophilic, and have lost their cross-striations. Sarcoplasm shows discoid degeneration and clumps of granular proteinaceous debris. Kidney sections display toxic tubular nephrosis with dense brown <b>myoglobin casts</b> plugging distal tubules.</li><br><li><b>2. Kyasanur Forest Disease (KFD / Monkey Fever) in Langurs (*Semnopithecus entellus*):</b><br>• <i>Gross Specimen:</i> Multiple petechiae and massive ecchymotic haemorrhages on visceral pleura, epicardium, and gastrointestinal mucosa. Spleen is enlarged, soft, congested, with prominent subcapsular haemorrhagic hematomas.<br>• <i>Histopathology Slide:</i> Generalized reticuloendothelial proliferation with erythrophagocytosis in spleen and lymph nodes; acute tubular necrosis in kidneys and focal hepatic necrosis.</li><br><li><b>3. Tuberculosis in Free-Ranging Wild Ruminants & Primates:</b><br>• <i>Gross Specimen:</i> Extensive, multifocal, firm, caseous and calcified nodules ('tubercles') scattered throughout the lungs, liver, and spleen.<br>• <i>Histopathology Slide:</i> Classical caseocalcareous granuloma: central caseation, concentric mineralisation, epithelioid macrophages, Langhans giant cells with peripheral horseshoe nuclei, and outer fibrous capsule. ZN stain positive for acid-fast bacilli (*M. bovis*).</li></ul>",
+    "eliteDesc": "<b>WARTHIN-STARRY SILVER STAINING MECHANISM IN TYZZER'S DISEASE.</b><br>*Clostridium piliforme* is an obligate intracellular, Gram-negative, spore-forming bacterium that does not stain well with Gram or routine H&E. The <b>Warthin-Starry silver impregnation method</b> uses an acidic silver nitrate solution (pH 3.2). Bacterial cell walls selectively adsorb silver ions from solution; a hydroquinone developer reduces the adsorbed silver into metallic silver nanoparticles, depositing a permanent, brilliant jet-black coat over the bacterial filaments, clearly revealing the diagnostic 'sheaves of wheat' bundles inside hepatocyte cytoplasm.",
+    "keyPoints": [
+      "Rabbit hepatic coccidiosis (*Eimeria stiedae*) forms branching white cord-like nodules along the bile ducts.",
+      "Rabbit coccidiosis histology: massive papillary hyperplasia of bile duct epithelium containing oocysts.",
+      "Tyzzer's disease (*C. piliforme*) produces multiple white necrotic foci in rodent liver and typhlocolitis.",
+      "Tyzzer's bacilli are demonstrated by silver or Giemsa stains as intracellular 'sheaves of wheat' bundles.",
+      "Infectious ectromelia (Mousepox) causes gangrenous amputation of digits/tail and Marchal inclusion bodies.",
+      "Marchal bodies are large, eosinophilic intracytoplasmic inclusion bodies in mouse epithelial cells.",
+      "Rabbit ear mite (*Psoroptes cuniculi*) causes thick brown laminated crusts inside the external ear canal.",
+      "Capture myopathy in wild ungulates causes pale, cooked-meat necrosis in thigh muscles from lactic acidosis.",
+      "Capture myopathy histology exhibits Zenker's degeneration, muscle fragmentation, and myoglobin casts in kidney.",
+      "Kyasanur Forest Disease (KFD) in monkeys presents with widespread multi-organ haemorrhages and splenomegaly.",
+      "Wild animal tuberculosis produces caseocalcareous tubercles with ZN-positive acid-fast bacilli."
+    ],
+    "clinical": "<b>Diagnostic Warning: Rabbit Hepatic Coccidiosis vs Tuberculosis.</b><br>In laboratory and domestic rabbit necropsies, white nodules on the liver surface are frequently misdiagnosed as tuberculosis. Look at the anatomical pattern: In <b>Hepatic Coccidiosis (*Eimeria stiedae*)</b>, the white nodules follow the <b>branching arborization of the bile ducts</b>, and squeezing releases yellowish-white fluid packed with oocysts. In <b>Tuberculosis</b>, lesions are discrete spherical granulomas with dry cheesy caseation and calcification that grate on a knife, distributed randomly in liver and spleen.",
+    "tables": [
+      {
+        "title": "Master Spotting Key: Laboratory and Wild Animal Gross Specimens",
+        "headers": [
+          "Specimen / Organ",
+          "Cardinal Gross Pathological Hallmark",
+          "Disease Name",
+          "Causative Agent / Condition"
+        ],
+        "rows": [
+          [
+            "Rabbit Liver",
+            "Branching yellowish-white cord-like nodules along bile ducts",
+            "Hepatic Coccidiosis",
+            "*Eimeria stiedae* (Protozoa)"
+          ],
+          [
+            "Rodent Liver (Mouse/Rat)",
+            "Multiple 1 to 2 mm pale white discrete necrotic foci",
+            "Tyzzer's Disease",
+            "*Clostridium piliforme* (Bacterium)"
+          ],
+          [
+            "Mouse Foot / Tail",
+            "Dry gangrene, necrosis, and amputation of foot or tail",
+            "Infectious Ectromelia (Mousepox)",
+            "Ectromelia Virus (Poxviridae)"
+          ],
+          [
+            "Rabbit Ear Pinna",
+            "Thick brown laminated crusts and scales in ear canal",
+            "Psoroptic Mange (Ear Canker)",
+            "*Psoroptes cuniculi* (Mite)"
+          ],
+          [
+            "Wild Deer Thigh Muscle",
+            "Extensive pale, dry, 'fish-flesh' / cooked-meat muscle necrosis",
+            "Capture Myopathy",
+            "Exertional Rhabdomyolysis & Lactic Acidosis"
+          ],
+          [
+            "Monkey Viscera (Langur)",
+            "Widespread petechiae, ecchymoses, and subcapsular splenic hematoma",
+            "Kyasanur Forest Disease (KFD)",
+            "Flavivirus (Tick-borne Arbovirus)"
+          ]
+        ]
+      },
+      {
+        "title": "Master Spotting Key: Laboratory and Wild Animal Histopathology Slides",
+        "headers": [
+          "Slide Name",
+          "Target Tissue",
+          "Low Power (10x) Architecture",
+          "40x High Power Pathognomonic Hallmark"
+        ],
+        "rows": [
+          [
+            "Hepatic Coccidiosis",
+            "Rabbit Liver",
+            "Greatly dilated bile ducts with papillary projections",
+            "Papillary epithelial hyperplasia packed with oocysts & gametocytes"
+          ],
+          [
+            "Tyzzer's Disease",
+            "Mouse Liver",
+            "Focal coagulative hepatic necrosis",
+            "Warthin-Starry silver stain: intracellular 'sheaves of wheat' bacilli"
+          ],
+          [
+            "Mousepox (Ectromelia)",
+            "Mouse Skin / Tail",
+            "Epithelial hyperplasia with necrosis",
+            "Large eosinophilic intracytoplasmic Marchal inclusion bodies"
+          ],
+          [
+            "Capture Myopathy",
+            "Deer Skeletal Muscle",
+            "Myofibre swelling and loss of striations",
+            "Zenker's degeneration, sarcoplasmic fragmentation & myoglobin casts"
+          ],
+          [
+            "Wildlife Tuberculosis",
+            "Deer / Primate Lung",
+            "Caseous granuloma with calcification",
+            "Epithelioid cells + Langhans giant cells + ZN-positive red AFB"
+          ]
+        ]
+      }
+    ],
+    "img": "",
+    "tags": [
+      "lab animal pathology",
+      "wild animal pathology",
+      "rabbit coccidiosis",
+      "Tyzzer's disease",
+      "Marchal bodies",
+      "capture myopathy",
+      "KFD"
+    ]
   }
 };
+

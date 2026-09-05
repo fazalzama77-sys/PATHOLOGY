@@ -108,11 +108,10 @@ and `--ivri-purple` are the readable text/accent versions.
 | Theory Unit 4 — Infectious & Non-infectious Diseases | 37 | ⏳ **EMPTY** | — | — |
 | Theory Unit 5 — Avian Pathology | 21 | ⏳ **EMPTY** | — | — |
 | Theory Unit 6 — Lab & Wild Animals | 9 | ⏳ **EMPTY** | — | — |
-| Practical Units 1–3 (General, Systemic, Oncology/Clin Path/PM) | 13 | ✅ **COMPLETE** | 159 | 26 |
-| Practical Units 4–6 (Infectious, Avian, Lab/Wild) | 12 | ⏳ **EMPTY** | — | — |
+| Practical Units 1–6 (All 6 units) | 25 | ✅ **COMPLETE** | 291 | 50 |
 
-**Total so far: 66 of 145 topics (53 theory + 13 practical), >720,000 characters (~480 printed pages),
-959 key points, 161 tables. Every written topic has a clinical note.**
+**Total so far: 78 of 145 topics (53 theory + 25 practical), >850,000 characters (~570 printed pages),
+1,091 key points, 185 tables. Every written topic has a clinical note.**
 
 ### Also still empty
 - `data-why.JS` — WHY entries (template block only)
