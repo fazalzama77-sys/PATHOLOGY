@@ -407,16 +407,45 @@ then eval it and count filled topics. A syntax error in one data file blanks the
 
 ---
 
-## 🛠️ MY WORKFLOW
+## 🛠️ DEPLOYMENT & GITHUB WORKFLOW (FOR FAZAL & AI ASSISTANTS)
 
-1. Edit files in `D:/PATHOLOGY APPLICATION/`.
-2. Double-click `tools/start-server.bat`, open `http://localhost:5177`, check the change.
-3. GitHub Desktop → review changes → commit message → Commit → Push origin.
-4. Cloudflare Pages rebuilds within about a minute.
+Fazal is a veterinary student and **does not use command-line Git or terminal DevOps**. To keep publishing dead-simple and foolproof, two 1-click automation batch files and a clean mirror folder are maintained in `D:/PATHOLOGY APPLICATION/`:
 
-**Before every push:** bump `CACHE_VERSION` in `service-worker.js`
-(currently **`vpath-v7`** → next release `vpath-v8`). Otherwise returning students keep
-the cached old version.
+### 🌟 Script 1: `1-CLICK-PUSH-TO-GITHUB.bat` (Recommended Daily Workflow)
+Whenever any AI assistant (Claude, Antigravity, ChatGPT) or Fazal finishes adding content or modifying code:
+1. Double-click `1-CLICK-PUSH-TO-GITHUB.bat` in `D:/PATHOLOGY APPLICATION/` (or its desktop shortcut).
+2. It executes 3 sequential steps automatically in under 5 seconds:
+   - **Step 1/3 (Auto-Sync):** Runs robocopy to ensure the `repo/` mirror folder has all latest files organized in their clean subdirectories (`assets/`, `data/`, `images/`, `js/`, `tools/`).
+   - **Step 2/3 (Package & Commit):** Detects modified files and records an automatic timestamped commit (e.g. `Update Pathology Studio content (05-09-2026 10:33)`).
+   - **Step 3/3 (Push to GitHub):** Securely pushes all changes directly to remote `origin main` at `https://github.com/fazalzama77-sys/PATHOLOGY`.
+3. Displays a green `[SUCCESS] ALL CHANGES UPLOADED TO GITHUB!` banner.
+4. Cloudflare / GitHub Pages automatically rebuilds and deploys the live site within 1–2 minutes.
+
+### 📁 Script 2: `SYNC-TO-REPO.bat` (Local Clean Mirror Tool)
+- **What it does:** Mirrors all application files from `D:/PATHOLOGY APPLICATION/` into `D:/PATHOLOGY APPLICATION/repo/`, maintaining strict directory nesting (`assets/css/`, `data/`, `images/`, `js/`, `tools/`) and cleaning out stale/orphan files.
+- **Offline only:** Does NOT connect to the internet or push to GitHub.
+- **Do you need to run it if you use `1-CLICK-PUSH-TO-GITHUB.bat`?** **NO.** `1-CLICK-PUSH-TO-GITHUB.bat` already runs this sync as Step 1 automatically!
+- **When to use `SYNC-TO-REPO.bat`:**
+  1. *Manual Web Upload:* If dragging and dropping files through the github.com web browser interface.
+  2. *USB Pen Drive / Sharing:* To copy the pure, clean website files onto a USB drive for friends/professors without internal `.git` or `.claude` system metadata.
+  3. *Offline Work:* When updating local files without an active internet connection.
+
+### 📦 Strict Rules for AI Assistants
+1. **Always edit in `D:/PATHOLOGY APPLICATION/`** (e.g. `data/data-theory-unit4.JS`, `js/app.js`).
+2. **Never drop flat, unorganized files into `repo/`**. The `repo/` folder must remain an exact mirror of the root structure.
+3. After completing any major content or feature update, remind Fazal to double-click `1-CLICK-PUSH-TO-GITHUB.bat` or run it for him if requested.
+4. **Before every release:** bump `CACHE_VERSION` in `service-worker.js` (currently **`vpath-v7`** → next release `vpath-v8`). Otherwise returning students keep the cached old version.
+
+---
+
+### 📊 Quick Workflow Comparison
+
+| Action | `1-CLICK-PUSH-TO-GITHUB.bat` | `SYNC-TO-REPO.bat` | GitHub Desktop |
+|---|:---:|:---:|:---:|
+| **Syncs `repo/` folder** | ✅ Yes (Step 1) | ✅ Yes | ❌ No |
+| **Needs Internet** | ✅ Yes | ❌ No (Offline) | ✅ Yes |
+| **Uploads to GitHub** | ✅ Yes (Automatic) | ❌ No | ✅ Yes (Manual click) |
+| **Best used for** | **Everyday 1-click publishing** | USB sharing & manual web drag | Visual review of line diffs |
 
 ---
 
