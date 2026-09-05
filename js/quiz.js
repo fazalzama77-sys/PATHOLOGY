@@ -129,24 +129,24 @@ var quizApp = (function () {
     host.innerHTML =
       '<div class="pagehead">' +
         '<span class="eyebrow">' + totalAll + ' questions in the bank</span>' +
-        '<h1>Quiz</h1>' +
+        '<h1>' + app.icon("quiz") + ' Quiz</h1>' +
         '<p class="lede">Test one unit, a whole paper, or the entire syllabus. ' +
         'Every wrong answer is queued for spaced repetition automatically.</p>' +
       '</div>' +
 
       (totalAll === 0
-        ? '<div class="empty"><div class="empty__icon">🧪</div><h3>The question bank is empty</h3>' +
+        ? '<div class="empty"><div class="empty__icon">' + app.icon("quiz") + '</div><h3>The question bank is empty</h3>' +
           '<p>Add questions in <b>data/data-quiz.JS</b>. The file already contains a template for each ' +
           'format — MCQ, True/False and Fill-in-the-blank. As soon as you add one, this page lights up.</p></div>'
         : '') +
 
       '<h2 class="mt-8">Full tests</h2>' +
       '<div class="grid grid--3 mt-4">' +
-        modeCard("Paper I", "Units 1, 2 and 3", countAvailable(scopeUnits("paper", "paper-1")), "#/quiz/paper/paper-1") +
-        modeCard("Paper II", "Units 4, 5 and 6", countAvailable(scopeUnits("paper", "paper-2")), "#/quiz/paper/paper-2") +
-        modeCard("Grand test", "All six theory units", countAvailable(theoryIds), "#/quiz/grand") +
-        modeCard("Practical", "All practical units", countAvailable(pracIds), "#/quiz/practical") +
-        modeCard("Smart Review", due + " question" + (due === 1 ? "" : "s") + " due today", due, "#/quiz/review", true) +
+        modeCard("Paper I", "Units 1, 2 and 3", countAvailable(scopeUnits("paper", "paper-1")), "#/quiz/paper/paper-1", false, "theory") +
+        modeCard("Paper II", "Units 4, 5 and 6", countAvailable(scopeUnits("paper", "paper-2")), "#/quiz/paper/paper-2", false, "theory") +
+        modeCard("Grand test", "All six theory units", countAvailable(theoryIds), "#/quiz/grand", false, "trophy") +
+        modeCard("Practical", "All practical units", countAvailable(pracIds), "#/quiz/practical", false, "practical") +
+        modeCard("Smart Review", due + " question" + (due === 1 ? "" : "s") + " due today", due, "#/quiz/review", true, "repeat") +
       '</div>' +
 
       '<h2 class="mt-12">Theory units</h2>' +
@@ -156,11 +156,12 @@ var quizApp = (function () {
       '<div class="tlist mt-4">' + pracRows + '</div>';
   }
 
-  function modeCard(title, sub, n, href, isReview) {
+  function modeCard(title, sub, n, href, isReview, ico) {
     var disabled = !n;
+    var iconHtml = ico ? app.icon(ico) : (isReview ? app.icon("repeat") : app.icon("quiz"));
     return '<a class="card card--link modecard' + (disabled ? ' is-disabled' : '') + '" href="' +
       (disabled ? '#/quiz' : href) + '">' +
-      '<div class="row"><span class="card__title">' + title + '</span>' +
+      '<div class="row"><span class="card__title" style="display:flex;align-items:center;gap:6px;">' + iconHtml + ' ' + title + '</span>' +
       '<span class="chip push' + (n ? ' chip--accent' : '') + '">' + n + '</span></div>' +
       '<p class="card__desc">' + sub + '</p>' +
       (disabled ? '<p class="small faint mt-2">' +
@@ -466,7 +467,18 @@ var quizApp = (function () {
     if (check) check.addEventListener("click", function () {
       if (run.answers[run.i] === null || run.answers[run.i] === "") { app.toast("Choose an answer first"); return; }
       run.revealed = true;
-      store.gradeSrs(q.key, isCorrect(q, run.answers[run.i]));
+      var ok = isCorrect(q, run.answers[run.i]);
+      store.gradeSrs(q.key, ok);
+      if (ok) {
+        run.streak = (run.streak || 0) + 1;
+        if (app.burstConfetti) app.burstConfetti(check);
+        if (run.streak === 3 && app.popMilestone) app.popMilestone("🔥 3 in a row!");
+        else if (run.streak === 5 && app.popMilestone) app.popMilestone("🚀 5 streak — on fire!");
+        else if (run.streak === 7 && app.popMilestone) app.popMilestone("⚡ 7 straight — unstoppable!");
+        else if (run.streak === 10 && app.popMilestone) app.popMilestone("👑 10 streak — Master Pathologist!");
+      } else {
+        run.streak = 0;
+      }
       paintRun();
     });
 
@@ -567,6 +579,14 @@ var quizApp = (function () {
           (wrongList.length ? '<a class="btn" href="#/quiz/review">Review these later</a>' : '') +
         '</div>' +
       '</div>';
+
+    if (percent >= 80 && app.burstConfetti) {
+      setTimeout(function () {
+        var ring = document.querySelector('.result__ring');
+        if (ring) app.burstConfetti(ring);
+        if (app.popMilestone) app.popMilestone("🏆 " + verdict + ": " + percent + "%!");
+      }, 250);
+    }
 
     resetRun();
   }

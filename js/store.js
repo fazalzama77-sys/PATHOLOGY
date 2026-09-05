@@ -13,19 +13,28 @@ var store = (function () {
   var PREFIX = "vpath-";
 
   var KEYS = {
-    theme:      PREFIX + "theme",       // "light" | "dark" | "system"
+    theme:      PREFIX + "theme",       // "light" (default) | "dark"
     detail:     PREFIX + "detail",      // "standard" | "deep"
     read:       PREFIX + "read",        // { topicId: timestamp }
     bookmarks:  PREFIX + "bookmarks",   // [ "topicId", ... ]
     notes:      PREFIX + "notes",       // { topicId: "note text" }
-    highlights: PREFIX + "highlights",  // { topicId: ["quoted text", ...] }
+    highlights: PREFIX + "highlights",  // { topicId: [ {text, color}, ... ] }
+    hlColor:    PREFIX + "hl-color",    // "yellow" | "green" | "blue" | "pink" | "orange" | "purple"
     quiz:       PREFIX + "quiz",        // { attempts: [], byUnit: {} }
     srs:        PREFIX + "srs",         // { questionKey: {box, due, wrong} }
     activity:   PREFIX + "activity",    // { "YYYY-MM-DD": actionCount }
     visits:     PREFIX + "visits",      // number
     onboarded:  PREFIX + "onboarded",   // "1"
     lastTopic:  PREFIX + "last-topic",  // topicId — powers "Resume studying"
-    qaDone:     PREFIX + "qa-done"      // [ "qaId", ... ]
+    qaDone:     PREFIX + "qa-done",     // [ "qaId", ... ]
+    notifySrs:  PREFIX + "notify-srs",  // boolean: whether daily SRS notification is enabled
+    notifyTime: PREFIX + "notify-time", // preferred reminder time "HH:MM"
+    navPos:     PREFIX + "nav-pos",     // "bottom" | "top" | "left" | "right"
+    deepGuideSeen: PREFIX + "deep-guide-seen",
+    topicGuideSeen: PREFIX + "topic-guide-seen",
+    eventSeen:  PREFIX + "event-announcements-seen",
+    installDismissed: PREFIX + "install-dismissed",
+    sidebarCollapsed: PREFIX + "sidebar-collapsed"
   };
 
   /* ---------- low level ---------- */
@@ -51,15 +60,16 @@ var store = (function () {
   }
 
   /* ---------- theme ---------- */
-  function getTheme() { return read(KEYS.theme, "system"); }
+  function getTheme() { return read(KEYS.theme, "light"); }
   function setTheme(v) {
     write(KEYS.theme, v);
     applyTheme();
   }
   function applyTheme() {
+    // Light is the canonical IVRI Study Studio theme and the default.
+    // Dark is a night-reading option the student must choose.
     var t = getTheme();
-    if (t === "system") document.documentElement.removeAttribute("data-theme");
-    else document.documentElement.setAttribute("data-theme", t);
+    document.documentElement.setAttribute("data-theme", t === "dark" ? "dark" : "light");
   }
 
   /* ---------- detail level (Standard vs Deep) ---------- */
@@ -99,17 +109,44 @@ var store = (function () {
   }
 
   /* ---------- highlights ---------- */
+  var VALID_HL_COLORS = ["yellow", "green", "blue", "pink", "orange", "purple"];
+  function getHighlightColor() {
+    var c = read(KEYS.hlColor, "yellow");
+    return VALID_HL_COLORS.indexOf(c) !== -1 ? c : "yellow";
+  }
+  function setHighlightColor(color) {
+    if (VALID_HL_COLORS.indexOf(color) === -1) color = "yellow";
+    write(KEYS.hlColor, color);
+    return color;
+  }
   function getHighlights() { return read(KEYS.highlights, {}); }
-  function addHighlight(id, text) {
+  function addHighlight(id, text, color) {
+    color = (color && VALID_HL_COLORS.indexOf(color) !== -1) ? color : getHighlightColor();
     var m = getHighlights();
     if (!m[id]) m[id] = [];
-    if (m[id].indexOf(text) === -1) m[id].push(text);
+    var found = false;
+    for (var i = 0; i < m[id].length; i++) {
+      var item = m[id][i];
+      var itemText = typeof item === "string" ? item : (item ? item.text : "");
+      if (itemText === text) {
+        m[id][i] = { text: text, color: color };
+        found = true;
+        break;
+      }
+    }
+    if (!found) {
+      m[id].push({ text: text, color: color });
+    }
     write(KEYS.highlights, m);
+    logActivity();
   }
   function removeHighlight(id, text) {
     var m = getHighlights();
     if (!m[id]) return;
-    m[id] = m[id].filter(function (t) { return t !== text; });
+    m[id] = m[id].filter(function (t) {
+      var itemText = typeof t === "string" ? t : (t ? t.text : "");
+      return itemText !== text;
+    });
     if (!m[id].length) delete m[id];
     write(KEYS.highlights, m);
   }
@@ -205,8 +242,16 @@ var store = (function () {
     write(KEYS.visits, n);
     return n;
   }
+  function getVisits() { return read(KEYS.visits, 0) || 0; }
   function getLastTopic() { return read(KEYS.lastTopic, null); }
   function setLastTopic(id) { write(KEYS.lastTopic, id); }
+
+  /* ---------- onboarding ---------- */
+  function isOnboarded() { return !!read(KEYS.onboarded, false); }
+  function setOnboarded() { write(KEYS.onboarded, 1); }
+  function resetOnboarding() {
+    try { localStorage.removeItem(KEYS.onboarded); } catch (e) {}
+  }
 
   function getQaDone() { return read(KEYS.qaDone, []); }
   function toggleQaDone(id) {
@@ -216,6 +261,43 @@ var store = (function () {
     logActivity();
     return i === -1;
   }
+
+  /* ---------- nav position (Desktop) ---------- */
+  function getNavPos() { return read(KEYS.navPos, "left"); }
+  function setNavPos(pos) {
+    write(KEYS.navPos, pos);
+    applyNavPos();
+  }
+  function applyNavPos() {
+    var pos = getNavPos();
+    document.documentElement.setAttribute("data-nav-pos", pos);
+  }
+
+  /* ---------- sidebar collapsed state (Desktop) ---------- */
+  function isSidebarCollapsed() { return !!read(KEYS.sidebarCollapsed, false); }
+  function setSidebarCollapsed(val) {
+    write(KEYS.sidebarCollapsed, !!val);
+    applySidebarState();
+  }
+  function toggleSidebarCollapsed() {
+    var next = !isSidebarCollapsed();
+    setSidebarCollapsed(next);
+    return next;
+  }
+  function applySidebarState() {
+    try {
+      if (document.body) {
+        if (isSidebarCollapsed()) document.body.classList.add("sidebar-collapsed");
+        else document.body.classList.remove("sidebar-collapsed");
+      }
+    } catch (e) {}
+  }
+
+  /* ---------- daily SRS notifications ---------- */
+  function getSrsNotify() { return read(KEYS.notifySrs, false); }
+  function setSrsNotify(bool) { write(KEYS.notifySrs, !!bool); }
+  function getSrsNotifyTime() { return read(KEYS.notifyTime, "19:00"); }
+  function setSrsNotifyTime(t) { write(KEYS.notifyTime, t || "19:00"); }
 
   /* ---------- backup / restore ---------- */
   function backupKeys() {
@@ -270,17 +352,26 @@ var store = (function () {
     getBookmarks: getBookmarks, isBookmarked: isBookmarked, toggleBookmark: toggleBookmark,
     getNotes: getNotes, getNote: getNote, setNote: setNote,
     getHighlights: getHighlights, addHighlight: addHighlight, removeHighlight: removeHighlight,
+    getHighlightColor: getHighlightColor, setHighlightColor: setHighlightColor, VALID_HL_COLORS: VALID_HL_COLORS,
     getQuiz: getQuiz, saveAttempt: saveAttempt,
     getSrs: getSrs, gradeSrs: gradeSrs, dueSrs: dueSrs,
     getActivity: getActivity, logActivity: logActivity, computeStreak: computeStreak,
-    bumpVisits: bumpVisits,
+    bumpVisits: bumpVisits, getVisits: getVisits,
     getLastTopic: getLastTopic, setLastTopic: setLastTopic,
+    isOnboarded: isOnboarded, setOnboarded: setOnboarded, resetOnboarding: resetOnboarding,
     getQaDone: getQaDone, toggleQaDone: toggleQaDone,
+    getNavPos: getNavPos, setNavPos: setNavPos, applyNavPos: applyNavPos,
+    isSidebarCollapsed: isSidebarCollapsed, setSidebarCollapsed: setSidebarCollapsed,
+    toggleSidebarCollapsed: toggleSidebarCollapsed, applySidebarState: applySidebarState,
+    getSrsNotify: getSrsNotify, setSrsNotify: setSrsNotify,
+    getSrsNotifyTime: getSrsNotifyTime, setSrsNotifyTime: setSrsNotifyTime,
     backupKeys: backupKeys, exportBackup: exportBackup, importBackup: importBackup,
     resetAll: resetAll,
     today: today
   };
 })();
 
-/* Apply the saved theme immediately, before first paint. */
+/* Apply the saved theme, navigation dock position, and sidebar visibility immediately. */
 store.applyTheme();
+store.applyNavPos();
+store.applySidebarState();
