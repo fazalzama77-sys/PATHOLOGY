@@ -109,12 +109,12 @@ and `--ivri-purple` are the readable text/accent versions.
 | Theory Unit 5 — Avian Pathology | 21 | ⏳ **EMPTY** | — | — |
 | Theory Unit 6 — Lab & Wild Animals | 9 | ⏳ **EMPTY** | — | — |
 | Practical Units 1–6 (All 6 units) | 25 | ✅ **COMPLETE** | 291 | 50 |
+| WHY Section (Comparative Species) | 100 entries | ✅ **COMPLETE** | 100 mechanisms | 100 clinical notes |
 
-**Total so far: 78 of 145 topics (53 theory + 25 practical), >850,000 characters (~570 printed pages),
-1,091 key points, 185 tables. Every written topic has a clinical note.**
+**Total so far: 78 of 145 topics (53 theory + 25 practical) + 100 WHY entries, >950,000 characters,
+1,191 key points/mechanisms, 185 tables. Every written topic and WHY entry has a clinical note.**
 
 ### Also still empty
-- `data-why.JS` — WHY entries (template block only)
 - `data-qa.JS` — Q&A bank (template block only)
 - `data-quiz.JS` — quiz bank (template blocks only)
 - App icons: `images/icon-192.png`, `-512.png`, `-maskable-512.png`

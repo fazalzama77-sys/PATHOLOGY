@@ -1973,10 +1973,11 @@ var app = (function () {
         .filter(function (w) { return cat === "all" || w.category === cat; })
         .map(function (w) {
           var catIco = catIcons[w.category] || "pulse";
-          return '<article class="card whycard">' +
+          return '<article class="card whycard" id="why-' + w.id + '">' +
             '<div class="row row--wrap">' +
               '<span class="chip chip--accent">' + icon(catIco) + ' ' + esc(w.category || "mechanism") + '</span>' +
               (w.comparison ? '<span class="chip">' + icon("target") + ' ' + esc(w.comparison) + '</span>' : '') +
+              (w.unit ? '<span class="chip chip--muted">' + esc(w.unit.toUpperCase().replace('-', ' ')) + '</span>' : '') +
             '</div>' +
             '<h3 class="card__title mt-3">' + esc(w.title) + '</h3>' +
             '<div class="card__desc">' + (w.why || "") + '</div>' +
@@ -1989,6 +1990,16 @@ var app = (function () {
     }
 
     paint("all");
+    if (state.params.a) {
+      setTimeout(function () {
+        var targetCard = el("#why-" + state.params.a);
+        if (targetCard) {
+          targetCard.scrollIntoView({ behavior: "smooth", block: "center" });
+          targetCard.style.outline = "2px solid var(--color-accent)";
+          targetCard.style.outlineOffset = "4px";
+        }
+      }, 80);
+    }
     els("[data-cat]").forEach(function (b) {
       b.addEventListener("click", function () {
         els("[data-cat]").forEach(function (x) { x.classList.remove("is-active"); });
@@ -2937,7 +2948,7 @@ var app = (function () {
     });
 
     (window.whyData || []).forEach(function (w) {
-      if (w.title) searchIndex.push({ title: w.title, sub: "WHY · " + (w.category || ""), kind: "Why", href: "#/why" });
+      if (w.title) searchIndex.push({ title: w.title, sub: "WHY · " + (w.category || ""), kind: "Why", href: "#/why/" + w.id });
     });
 
     Object.keys(window.qaBank || {}).forEach(function (uid) {
