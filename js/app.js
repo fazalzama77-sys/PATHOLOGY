@@ -593,12 +593,175 @@ var app = (function () {
   }
 
   /* ============================================================
-     HOME
+     SPOTTERS OF THE DAY (High-Yield Clinical Case Spotlight)
+     ============================================================ */
+  var SPOTTERS_OF_THE_DAY = [
+    {
+      name: "Nutmeg Liver (Chronic Passive Venous Congestion)",
+      organ: "Bovine / Canine Liver",
+      etiology: "Right-sided congestive heart failure, traumatic reticulopericarditis (TRP), or thoracic caudal vena cava compression.",
+      gross: "Alternating dark red-brown centrilobular congested foci and pale yellow periportal fatty zones, vividly mimicking the cut surface of a nutmeg seed. Organ is enlarged, heavy, with rounded margins and a tense capsule.",
+      micro: "Severe congestion and dilatation of central veins and adjacent sinusoids; atrophy and necrosis of centrilobular hepatocytes; periportal hepatocytes display marked vacuolar lipid accumulation (steatosis).",
+      viva: "Combines backward right-sided ventricular failure with secondary hypoxia. Slices of severely fatty liver float when placed in water or formalin.",
+      unitId: "unit-1",
+      topicId: "topic-u1-14",
+      badge: "Circulatory Pathology"
+    },
+    {
+      name: "Traumatic Reticuloperitonitis & 'Bread-and-Butter' Pericarditis",
+      organ: "Bovine Reticulum & Pericardium",
+      etiology: "Ingested sharp metallic foreign body (nail, wire) penetrating reticular wall and diaphragm into pericardial sac.",
+      gross: "Pericardial cavity distended with foul purulent exudate; visceral and parietal pericardium coated with thick, shaggy, honeycombed yellow-grey sheets of fibrinous exudate resembling two slices of buttered bread pulled apart.",
+      micro: "Dense anastomosing network of eosinophilic fibrin strands containing degenerate neutrophils, erythrocytes, and active capillary proliferation on the epicardium.",
+      viva: "Non-discriminating feeding habits of cattle; heavy metallic foreign objects settle in the reticular anteroventral floor and are propelled anteriorly during normal biphasic reticular contractions.",
+      unitId: "unit-2",
+      topicId: "topic-u2-01",
+      badge: "Fibrinous Inflammation"
+    },
+    {
+      name: "Johne's Disease Corrugated Terminal Ileum",
+      organ: "Bovine Terminal Ileum & Caecum",
+      etiology: "Mycobacterium avium subsp. paratuberculosis (MAP).",
+      gross: "Severe, rigid, uniform thickening (3 to 5x) of the ileal mucosa thrown into permanent, thick longitudinal and transverse corrugations resembling cerebral convolutions (brain-like folds). Crucial test: corrugations do NOT flatten on stretching.",
+      micro: "Diffuse, massive transmural infiltration of lamina propria and submucosa by epithelioid macrophages and Langhans giant cells packed with clumps of acid-fast bacilli (ZN stain positive).",
+      viva: "Characterised clinically by chronic progressive intractable diarrhoea, pipestem faeces, severe emaciation despite normal appetite, and submandibular oedema ('bottle jaw').",
+      unitId: "unit-4",
+      topicId: "topic-u4-04",
+      badge: "Granulomatous Enteritis"
+    },
+    {
+      name: "Classical Swine Fever: 'Turkey-Egg' Kidney & Splenic Infarcts",
+      organ: "Porcine Kidney & Spleen",
+      etiology: "Classical Swine Fever Virus (Pestivirus / Flaviviridae).",
+      gross: "Cortical surface of kidney is pale grey and studded with hundreds of pinpoint to pinhead petechial haemorrhages ('turkey-egg kidney'); splenic borders display dark red, elevated, wedge-shaped marginal infarcts.",
+      micro: "Acute viral endothelial tropism causing hydropic degeneration of vascular endothelia, hyaline microthrombi in glomeruli, and necrosis of arteriolar tunica media in spleen and kidney.",
+      viva: "Marginal splenic infarcts are virtually pathognomonic for Classical Swine Fever. Intestinal mucosa displays characteristic concentric necrotic 'button ulcers' near the ileocaecal valve.",
+      unitId: "unit-4",
+      topicId: "topic-u4-07",
+      badge: "Viral Vasculitis"
+    },
+    {
+      name: "Croupous Lobar Pneumonia ('Marbled Lung')",
+      organ: "Bovine Lung (Diaphragmatic Lobe)",
+      etiology: "Mycoplasma mycoides subsp. mycoides (CBPP) / Pasteurella multocida.",
+      gross: "Complete consolidation with a spectacular marbled cut surface: wide, distended interlobular septa filled with gelatinous yellow fibrin lymph separate lung lobules in alternating stages of red and grey hepatization.",
+      micro: "Alveoli completely plugged with dense fibrinocellular exudate and erythrocytes in red hepatization, replaced by degenerate neutrophils and fibrin in grey hepatization; marked thrombosis of interlobular lymphatics.",
+      viva: "The spectacular marbling is unique to cattle due to their complete anatomical pulmonary lobulation and rich interlobular lymphatics.",
+      unitId: "unit-2",
+      topicId: "topic-u2-06",
+      badge: "Respiratory Pathology"
+    },
+    {
+      name: "Hydropericardium Syndrome ('Leechi Disease')",
+      organ: "Avian Broiler Heart & Pericardium",
+      etiology: "Fowl Adenovirus Serotype 4 (FAdV-4).",
+      gross: "Pericardial sac is enormously distended with 5 to 15 ml of clear, straw-coloured gelatinous fluid; the conical heart floats inside, resembling a peeled litchi fruit. Liver is enlarged, yellowish-brown, and friable.",
+      micro: "Myocardial interstitial oedema with myofibre fragmentation; hepatocytes exhibit diagnostic large, basophilic intranuclear inclusion bodies.",
+      viva: "Primarily affects 3 to 5 week old fast-growing commercial broilers; high sudden mortality up to 70-80%; often triggered by immunosuppression (IBDV).",
+      unitId: "unit-5",
+      topicId: "topic-u5-08",
+      badge: "Avian Pathology"
+    },
+    {
+      name: "Capture Myopathy & Zenker's Muscle Degeneration",
+      organ: "Wild Ungulate (Deer / Blackbuck) Skeletal Muscle",
+      etiology: "Exertional rhabdomyolysis following capture, chasing, or chemical immobilization.",
+      gross: "Bilateral, asymmetrical patches of pale, soft, dry, white-to-yellow muscle in thigh and lumbar regions, closely resembling boiled fish flesh or cooked chicken meat.",
+      micro: "Severe hyaline coagulative necrosis (Zenker's degeneration); myofibres are swollen, fragmented, hyper-eosinophilic, and devoid of cross-striations; renal tubules plugged with dark brown myoglobin casts.",
+      viva: "Severe sympathetic activation triggers excessive anaerobic glycolysis, metabolic lactic acidosis, and ATP depletion. Intracellular Ca2+ influx causes irreversible hyper-contraction and fatal renal shutdown.",
+      unitId: "unit-1",
+      topicId: "topic-u1-05",
+      badge: "Comparative Wildlife"
+    }
+  ];
+
+  function toggleSpotterDetails() {
+    var elDrawer = document.getElementById("spotter-details-drawer");
+    var elBtn = document.getElementById("spotter-toggle-btn");
+    if (!elDrawer) return;
+    var isExpanded = elDrawer.classList.toggle("is-open");
+    if (elBtn) {
+      elBtn.innerHTML = isExpanded 
+        ? icon("check") + " Hide Pathogenesis Details" 
+        : icon("sparkle") + " Reveal Diagnostic Hallmarks & Viva Key";
+    }
+  }
+
+  function _renderWhyInner(w) {
+    if (!w) return '<p class="muted">No mechanism available.</p>';
+    return '<div class="home-why-q">' +
+      '<div class="row row--wrap mb-2">' +
+        '<span class="badge badge--purple">' + icon("why") + ' Comparative Mechanism #' + w.id + '</span>' +
+        (w.comparison ? '<span class="chip chip--accent push">' + esc(w.comparison) + '</span>' : '') +
+      '</div>' +
+      '<h3 class="home-why-title">' + esc(w.title) + '</h3>' +
+      '<div class="home-why-body mt-3">' + w.why + '</div>' +
+      (w.clinical ? '<div class="home-why-clinical mt-3"><b>' + icon("check") + ' Clinical Rule of Thumb:</b> ' + esc(w.clinical) + '</div>' : '') +
+      '<div class="row mt-4">' +
+        '<a class="btn btn--sm btn--soft" href="#/why">' + icon("why") + ' Browse 100 WHY Mechanisms →</a>' +
+        '<button class="btn btn--sm btn--subtle push" onclick="app.shuffleWhyMechanism()">' + icon("sparkle") + ' Shuffle Mechanism</button>' +
+      '</div>' +
+    '</div>';
+  }
+
+  function shuffleWhyMechanism() {
+    var whyList = (window.whyData || []).filter(function (w) { return w && w.title; });
+    if (!whyList.length) return;
+    var rand = Math.floor(Math.random() * whyList.length);
+    var item = whyList[rand];
+    var container = document.getElementById("home-why-content");
+    if (!container) return;
+    container.innerHTML = _renderWhyInner(item);
+    toast("Loaded Mechanism #" + item.id + ": " + esc(shorten(item.title, 34)));
+  }
+
+  function _renderGlossaryInner(term, def) {
+    var cat = "General Pathology";
+    if (window.glossary && glossary.categories) {
+      for (var c in glossary.categories) {
+        if (glossary.categories[c].indexOf(term.toLowerCase()) !== -1) {
+          cat = c;
+          break;
+        }
+      }
+    }
+    var safeTerm = esc(term).replace(/'/g, "\\'");
+    return '<div class="home-glossary-card-inner">' +
+      '<div class="row row--wrap mb-2">' +
+        '<span class="badge badge--teal">' + icon("book") + ' ' + esc(cat) + '</span>' +
+        '<button class="btn btn--sm btn--subtle push" onclick="app.speak(\'' + safeTerm + '\')" title="Listen to pronunciation">' +
+          icon("speaker") + ' Pronounce' +
+        '</button>' +
+      '</div>' +
+      '<h3 class="home-term-title">' + esc(term) + '</h3>' +
+      '<p class="home-term-def mt-2">' + esc(def) + '</p>' +
+      '<div class="row mt-4">' +
+        '<a class="btn btn--sm btn--soft" href="#/library">' + icon("book") + ' Browse 316-Term Glossary →</a>' +
+        '<button class="btn btn--sm btn--subtle push" onclick="app.shuffleGlossaryTerm()">' + icon("sparkle") + ' Next Term</button>' +
+      '</div>' +
+    '</div>';
+  }
+
+  function shuffleGlossaryTerm() {
+    var termKeys = Object.keys((window.glossary && glossary.terms) || {});
+    if (!termKeys.length) return;
+    var rand = Math.floor(Math.random() * termKeys.length);
+    var term = termKeys[rand];
+    var def = glossary.terms[term];
+    var container = document.getElementById("home-glossary-content");
+    if (!container) return;
+    container.innerHTML = _renderGlossaryInner(term, def);
+    toast("High-Yield Term: " + esc(term));
+  }
+
+  /* ============================================================
+     HOME — Next-Gen Clinical Academic Workstation
      ============================================================ */
   function renderHome() {
     var readMap = store.getRead();
     var allTopics = syllabus.allUnits.reduce(function (n, u) { return n + u.topics.length; }, 0);
     var readCount = Object.keys(readMap).length;
+    var readPct = allTopics ? Math.round((readCount / allTopics) * 100) : 0;
     var streak = store.computeStreak();
     var q = store.getQuiz();
     var last = store.getLastTopic();
@@ -612,14 +775,68 @@ var app = (function () {
     if (q.attempts.length) {
       var tot = 0, cor = 0;
       q.attempts.forEach(function (a) { tot += a.total; cor += a.correct; });
-      accuracy = pct(cor, tot);
+      accuracy = tot ? Math.round((cor / tot) * 100) : 0;
     }
 
-    /* Choose what to prioritize in the welcome / resume banner:
-       1. Questions needing review (incorrect queue)
-       2. Last active studied topic
-       3. Daily study streak
-       4. Start Unit 1 */
+    var dueSrsList = store.dueSrs();
+    var dueSrsCount = dueSrsList.length;
+
+    // Dual-Paper breakdown
+    var p1Units = [1, 2, 3];
+    var p2Units = [4, 5, 6];
+    var p1Topics = 0, p1Read = 0;
+    var p2Topics = 0, p2Read = 0;
+
+    syllabus.theory.forEach(function (u) {
+      if (p1Units.indexOf(u.no) !== -1) {
+        p1Topics += u.topics.length;
+        p1Read += u.topics.filter(function (t) { return readMap[t.id]; }).length;
+      } else if (p2Units.indexOf(u.no) !== -1) {
+        p2Topics += u.topics.length;
+        p2Read += u.topics.filter(function (t) { return readMap[t.id]; }).length;
+      }
+    });
+    var p1Pct = p1Topics ? Math.round((p1Read / p1Topics) * 100) : 0;
+    var p2Pct = p2Topics ? Math.round((p2Read / p2Topics) * 100) : 0;
+
+    // Mastery XP Calculation (matching Dashboard system)
+    var srsMap = store.getSrs();
+    var masteredSrsCount = 0;
+    for (var sk in srsMap) {
+      if (srsMap[sk].box >= 4) masteredSrsCount++;
+    }
+    var xpRead = Math.round(readPct * 4.0);
+    var xpQuiz = Math.round(accuracy * 3.0);
+    var xpStreak = Math.min(150, streak.current * 15);
+    var xpSrs = Math.min(150, masteredSrsCount * 5);
+    var masteryXp = Math.min(1000, xpRead + xpQuiz + xpStreak + xpSrs);
+
+    var rankTitle = "Pathology Apprentice";
+    if (masteryXp >= 800) rankTitle = "Master Pathologist";
+    else if (masteryXp >= 550) rankTitle = "Senior Resident";
+    else if (masteryXp >= 300) rankTitle = "Junior Diagnostician";
+
+    // Dynamic greeting based on time of day
+    var hour = new Date().getHours();
+    var greeting = "Good evening";
+    if (hour < 12) greeting = "Good morning";
+    else if (hour < 17) greeting = "Good afternoon";
+
+    // Spotter of the Day selection
+    var now = new Date();
+    var dayOfYear = Math.floor((now - new Date(now.getFullYear(), 0, 0)) / 86400000);
+    var spotter = SPOTTERS_OF_THE_DAY[dayOfYear % SPOTTERS_OF_THE_DAY.length];
+
+    // WHY mechanism of the Day
+    var whyList = (window.whyData || []).filter(function (w) { return w && w.title; });
+    var dailyWhy = whyList.length ? whyList[dayOfYear % whyList.length] : null;
+
+    // Glossary Term of the Day
+    var termKeys = Object.keys((window.glossary && glossary.terms) || {});
+    var dailyTermKey = termKeys.length ? termKeys[dayOfYear % termKeys.length] : "coagulative necrosis";
+    var dailyTermDef = (window.glossary && glossary.terms[dailyTermKey]) || "Premature, irreversible cell death in living tissue.";
+
+    // Prioritize resume card message
     var resumeIcon = "theory";
     var resumeTitle = "Ready to start studying?";
     var resumeSubtitle = "Begin with Unit 1: General Veterinary Pathology.";
@@ -648,6 +865,39 @@ var app = (function () {
     }
 
     view.innerHTML =
+      /* 1. Scholar Command Bar */
+      '<div class="home-scholar-bar">' +
+        '<div class="home-scholar-greeting">' +
+          '<span class="home-greeting-badge">' + icon("sparkle") + ' VCI MSVE 2016</span>' +
+          '<h2 class="home-greeting-title">' + greeting + ', Scholar</h2>' +
+          '<p class="home-greeting-sub">Veterinary Pathology Companion · B.V.Sc &amp; A.H. Year 2</p>' +
+        '</div>' +
+        '<div class="home-scholar-badges">' +
+          '<a class="scholar-badge-pill" href="#/dashboard" title="View Clinical Analytics &amp; Mastery">' +
+            '<span class="badge-icon badge-icon--xp">' + icon("trophy") + '</span>' +
+            '<span class="badge-content">' +
+              '<span class="badge-val">' + masteryXp + ' XP</span>' +
+              '<span class="badge-lbl">' + rankTitle + '</span>' +
+            '</span>' +
+          '</a>' +
+          '<div class="scholar-badge-pill ' + (streak.current > 0 ? 'is-active' : '') + '" title="Daily Study Streak">' +
+            '<span class="badge-icon badge-icon--streak">' + icon("flame") + '</span>' +
+            '<span class="badge-content">' +
+              '<span class="badge-val">' + streak.current + ' Days</span>' +
+              '<span class="badge-lbl">Daily Streak</span>' +
+            '</span>' +
+          '</div>' +
+          '<a class="scholar-badge-pill ' + (dueSrsCount > 0 ? 'is-alert' : '') + '" href="#/quiz/review" title="Review Due Spaced Memory Flashcards">' +
+            '<span class="badge-icon badge-icon--srs">' + icon("repeat") + '</span>' +
+            '<span class="badge-content">' +
+              '<span class="badge-val">' + dueSrsCount + ' Cards</span>' +
+              '<span class="badge-lbl">' + (dueSrsCount > 0 ? 'Due Today' : 'Queue Clean') + '</span>' +
+            '</span>' +
+          '</a>' +
+        '</div>' +
+      '</div>' +
+
+      /* 2. Hero Section */
       '<section class="hero">' +
         '<canvas id="landing-canvas" class="landing-canvas" aria-hidden="true"></canvas>' +
         '<div class="hero__inner">' +
@@ -659,10 +909,10 @@ var app = (function () {
             (lastT
               ? '<a class="btn btn--primary btn--lg" href="#/topic/' + lastT.id + '">' + icon("book") + ' Resume: ' + esc(shorten(lastT.title, 34)) + '</a>'
               : '<a class="btn btn--primary btn--lg" href="#/theory">' + icon("theory") + ' Start with Unit 1</a>') +
-            '<a class="btn btn--lg" href="#/quiz">' + icon("quiz") + ' Take a quiz</a>' +
+            '<a class="btn btn--lg" href="#/quiz/grand">' + icon("quiz") + ' Grand Mock Test</a>' +
           '</div>' +
 
-          /* Hero Statistics Strip (Mirrored from Anatomy) */
+          /* Hero Statistics Strip */
           '<div class="hero-stats-strip">' +
             '<div class="stat-item">' +
               '<span class="stat-number">' + (totalQ + totalQa).toLocaleString() + '+</span>' +
@@ -690,7 +940,7 @@ var app = (function () {
             '</div>' +
           '</div>' +
 
-          /* Dynamic Welcome / Resume Studied Banner */
+          /* Dynamic Resume Card */
           '<div class="dynamic-resume-panel">' +
             '<div class="resume-card">' +
               '<div class="resume-card-body">' +
@@ -707,31 +957,129 @@ var app = (function () {
         '</div>' +
       '</section>' +
 
-      '<div class="grid grid--4 mt-8">' +
-        statCard("Topics read", readCount + " / " + allTopics, pct(readCount, allTopics) + "% of the syllabus", "check") +
-        statCard("Day streak", streak.current, streak.longest + " day best", "flame") +
-        statCard("Quiz accuracy", q.attempts.length ? accuracy + "%" : "—", q.attempts.length + " attempts", "target") +
-        statCard("Questions ready", totalQ, totalQa + " written Q&A", "quiz") +
+      /* 3. High-Yield Action Launchpad (4-Tile Power Strip) */
+      '<div class="home-actions-grid">' +
+        '<a class="home-action-tile" href="#/quiz/grand">' +
+          '<div class="action-tile-top">' +
+            '<div class="action-tile-ico ico--amber">' + icon("quiz") + '</div>' +
+            '<span class="action-tile-tag">Sprint</span>' +
+          '</div>' +
+          '<h3 class="action-tile-title">5-Min Rapid Drill</h3>' +
+          '<p class="action-tile-desc">Instant randomized 10-question pathology sprint with real-time scoring.</p>' +
+          '<span class="action-tile-arrow">Start Sprint →</span>' +
+        '</a>' +
+
+        '<a class="home-action-tile" href="#/quiz/review">' +
+          '<div class="action-tile-top">' +
+            '<div class="action-tile-ico ico--blue">' + icon("repeat") + '</div>' +
+            '<span class="action-tile-tag">' + dueSrsCount + ' Due</span>' +
+          '</div>' +
+          '<h3 class="action-tile-title">Spaced Memory Review</h3>' +
+          '<p class="action-tile-desc">Leitner 5-box spaced repetition engine to counteract forgetting curves.</p>' +
+          '<span class="action-tile-arrow">Review Cards →</span>' +
+        '</a>' +
+
+        '<a class="home-action-tile" href="#/practical">' +
+          '<div class="action-tile-top">' +
+            '<div class="action-tile-ico ico--teal">' + icon("microscope") + '</div>' +
+            '<span class="action-tile-tag">Labs</span>' +
+          '</div>' +
+          '<h3 class="action-tile-title">Clinical Spotter Hub</h3>' +
+          '<p class="action-tile-desc">High-yield gross specimens, Kaiserling techniques &amp; diagnostic slides.</p>' +
+          '<span class="action-tile-arrow">Explore Labs →</span>' +
+        '</a>' +
+
+        '<a class="home-action-tile" href="#/qa">' +
+          '<div class="action-tile-top">' +
+            '<div class="action-tile-ico ico--purple">' + icon("qa") + '</div>' +
+            '<span class="action-tile-tag">Model Q&amp;A</span>' +
+          '</div>' +
+          '<h3 class="action-tile-title">Written Exam Studio</h3>' +
+          '<p class="action-tile-desc">138+ Solved VCI Board past questions with gold-standard model answers.</p>' +
+          '<span class="action-tile-arrow">Study Q&amp;A →</span>' +
+        '</a>' +
       '</div>' +
 
-      '<h2 class="mt-8">Explore Pathology</h2>' +
-      '<div class="grid grid--2 mt-4">' +
-        areaCard("theory", "Theory", "Six units, " + countTopics("theory") + " topics", "General pathology, systemic lesions, avian diseases and oncology.", "#/theory") +
-        areaCard("practical", "Practical", "Six units, " + countTopics("practical") + " topics", "Gross specimens, histopathology technique, haematology and necropsy.", "#/practical") +
-        areaCard("quiz", "Quiz", totalQ + " questions", "Unit-wise, paper-wise, grand test, timed exam mode and smart review.", "#/quiz") +
-        areaCard("qa", "Question &amp; Answer", totalQa + " questions", "Short notes, long answers and differentiate-between tables for the written exam.", "#/qa") +
-        areaCard("why", "WHY", totalWhy + " explanations", "Mechanism first. Why the lesion looks the way it does, not just what it is.", "#/why") +
-        areaCard("dashboard", "Dashboard", "Progress &amp; analytics", "Unit heatmap, accuracy trend, weak areas and your spaced-repetition queue.", "#/dashboard") +
+      /* 4. Pathology Spotter of the Day (Clinical Case Spotlight) */
+      '<div class="home-spotter-card">' +
+        '<div class="spotter-header">' +
+          '<div>' +
+            '<span class="spotter-eyebrow">' + icon("sparkle") + ' PATHOLOGY SPOTTER OF THE DAY · ' + esc(spotter.badge) + '</span>' +
+            '<h3 class="spotter-title">' + esc(spotter.name) + '</h3>' +
+          '</div>' +
+          '<span class="spotter-organ-badge">' + icon("lab") + ' ' + esc(spotter.organ) + '</span>' +
+        '</div>' +
+
+        '<div class="spotter-gross-box">' +
+          '<h4>' + icon("eye") + ' Cardinal Macroscopic / Gross Lesion Hallmark</h4>' +
+          '<p>' + esc(spotter.gross) + '</p>' +
+        '</div>' +
+
+        '<div id="spotter-details-drawer" class="spotter-details-drawer">' +
+          '<div class="spotter-details-grid">' +
+            '<div class="spotter-detail-item">' +
+              '<h5>' + icon("pulse") + ' Primary Etiology &amp; Pathogenesis</h5>' +
+              '<p>' + esc(spotter.etiology) + '</p>' +
+            '</div>' +
+            '<div class="spotter-detail-item">' +
+              '<h5>' + icon("microscope") + ' Histopathology Microscopic Hallmark</h5>' +
+              '<p>' + esc(spotter.micro) + '</p>' +
+            '</div>' +
+            '<div class="spotter-detail-item" style="grid-column: 1 / -1;">' +
+              '<h5>' + icon("target") + ' Practical Exam Viva Distinction &amp; Diagnostic Clue</h5>' +
+              '<p>' + esc(spotter.viva) + '</p>' +
+            '</div>' +
+          '</div>' +
+        '</div>' +
+
+        '<div class="spotter-actions">' +
+          '<button id="spotter-toggle-btn" class="btn btn--soft btn--sm" onclick="app.toggleSpotterDetails()">' +
+            icon("sparkle") + ' Reveal Diagnostic Hallmarks &amp; Viva Key' +
+          '</button>' +
+          '<a class="btn btn--primary btn--sm" href="#/unit/' + spotter.unitId + '">' +
+            icon("book") + ' Read Unit Details →' +
+          '</a>' +
+          '<a class="btn btn--subtle btn--sm push" href="#/quiz/unit/' + spotter.unitId + '">' +
+            icon("quiz") + ' Practice This Unit' +
+          '</a>' +
+        '</div>' +
       '</div>' +
 
-      '<h2 class="mt-12">Exam structure</h2>' +
-      '<p class="muted mt-2">Your annual examination splits the six units across two papers.</p>' +
-      '<div class="grid grid--2 mt-4">' +
-        paperCard(syllabus.meta.papers[0]) +
-        paperCard(syllabus.meta.papers[1]) +
+      /* 5. Core Learning Domains Grid */
+      '<h2 class="mt-10">Explore Pathology Domains</h2>' +
+      '<p class="muted mt-1">Structured comprehensive curriculum following VCI MSVE 2016 guidelines.</p>' +
+      '<div class="home-domains-grid">' +
+        homeDomainCard("theory", "Theory Curriculum", "Six units · 54 topics", "General pathology, systemic lesions, avian diseases and oncology.", readPct, readCount + " / " + allTopics + " read", "#/theory", "ico--blue") +
+        homeDomainCard("practical", "Practical Diagnostics", "Six units · 40+ labs", "Gross museum specimens, Kaiserling solutions, slide staining and necropsy.", null, "6 Practical Units", "#/practical", "ico--teal") +
+        homeDomainCard("quiz", "Diagnostic Quiz Studio", totalQ + " questions ready", "Unit-wise, paper-wise, grand mock test, timed exam mode and smart review.", accuracy, (q.attempts.length ? accuracy + "% accuracy" : "Untested"), "#/quiz", "ico--amber") +
+        homeDomainCard("qa", "Written Exam Studio", totalQa + " written model answers", "Short notes, long answers and differentiate-between tables for university exams.", null, totalQa + " Solved Q&A", "#/qa", "ico--purple") +
+        homeDomainCard("why", "WHY Mechanisms", totalWhy + " comparative explanations", "Comparative species pathophysiology. Why lesions look the way they do.", null, totalWhy + " Mechanisms", "#/why", "ico--purple") +
+        homeDomainCard("dashboard", "Clinical Dashboard", "Analytics &amp; SRS pipeline", "Pathology mastery gauge, 84-day heatmap, weak spots and Leitner memory queue.", Math.round(masteryXp / 10), masteryXp + " / 1000 XP", "#/dashboard", "ico--blue") +
       '</div>' +
 
-      /* Platform Credits & Links */
+      /* 6. Dual VCI Board Examination Structure */
+      '<h2 class="mt-12">VCI Annual Board Examination Structure</h2>' +
+      '<p class="muted mt-2">The Veterinary Council of India examination divides the six theory units across two papers (50 Marks Theory + 50 Marks Practical each).</p>' +
+      '<div class="home-exam-grid">' +
+        homePaperCard("Paper I", "General &amp; Systemic Pathology", [1, 2, 3], p1Read, p1Topics, p1Pct, "paper-1", "paper-badge--p1", "fill--blue") +
+        homePaperCard("Paper II", "Special, Avian, Oncology &amp; Toxicopathology", [4, 5, 6], p2Read, p2Topics, p2Pct, "paper-2", "paper-badge--p2", "fill--purple") +
+      '</div>' +
+
+      /* 7. Interactive WHY & Glossary Split */
+      '<div class="home-intel-grid">' +
+        '<div class="home-intel-card">' +
+          '<div id="home-why-content">' +
+            _renderWhyInner(dailyWhy) +
+          '</div>' +
+        '</div>' +
+        '<div class="home-intel-card">' +
+          '<div id="home-glossary-content">' +
+            _renderGlossaryInner(dailyTermKey, dailyTermDef) +
+          '</div>' +
+        '</div>' +
+      '</div>' +
+
+      /* 8. Platform Developer Credits & Quick Tools */
       '<div class="footer-credits-wrap">' +
         '<div class="footer-credits">' +
           '<div class="credit-col">' +
@@ -775,6 +1123,7 @@ var app = (function () {
           '</button>' +
         '</div>' +
       '</div>';
+
     _initLandingCanvas();
   }
 
@@ -801,6 +1150,54 @@ var app = (function () {
       '<div class="chip chip--accent mt-2">' + meta + '</div>' +
       '<p class="card__desc">' + desc + '</p>' +
       '</a>';
+  }
+
+  function homeDomainCard(sec, title, meta, desc, progressPct, statText, href, icoClass) {
+    return '<a class="home-domain-card" href="' + href + '">' +
+      '<div class="domain-card-head">' +
+        '<div class="domain-card-ico ' + icoClass + '">' + icon(sec) + '</div>' +
+        '<span class="chip chip--accent">' + esc(meta) + '</span>' +
+      '</div>' +
+      '<h3 class="domain-card-title mt-2">' + esc(title) + '</h3>' +
+      '<p class="domain-card-desc">' + esc(desc) + '</p>' +
+      (progressPct !== null
+        ? '<div class="bar mt-2 mb-2"><div class="bar__fill" style="width:' + progressPct + '%"></div></div>'
+        : '') +
+      '<div class="domain-card-foot">' +
+        '<span>' + icon("check") + ' ' + esc(statText) + '</span>' +
+        '<span>Explore →</span>' +
+      '</div>' +
+    '</a>';
+  }
+
+  function homePaperCard(paperName, subtitle, unitNums, readDone, readTotal, pctVal, paperId, badgeClass, fillClass) {
+    var unitsHtml = unitNums.map(function (n) {
+      var u = syllabus.theory[n - 1] || {};
+      return '<li>' + icon("check") + ' Unit ' + n + ' — ' + esc(u.short || u.title || '') + '</li>';
+    }).join("");
+
+    return '<div class="home-paper-card">' +
+      '<div class="paper-card-top">' +
+        '<span class="paper-badge ' + badgeClass + '">' + paperName + '</span>' +
+        '<span class="chip">Weightage 50 Marks</span>' +
+      '</div>' +
+      '<h3 class="paper-card-title">' + subtitle + '</h3>' +
+      '<ul class="paper-card-units">' + unitsHtml + '</ul>' +
+      '<div class="paper-progress-wrap">' +
+        '<div class="paper-progress-labels">' +
+          '<span>Syllabus Coverage</span>' +
+          '<span>' + readDone + ' / ' + readTotal + ' Topics (' + pctVal + '%)</span>' +
+        '</div>' +
+        '<div class="paper-progress-bar">' +
+          '<div class="paper-progress-bar-fill ' + fillClass + '" style="width:' + pctVal + '%"></div>' +
+        '</div>' +
+        '<div class="row">' +
+          '<a class="btn btn--soft btn--sm" href="#/quiz/paper/' + paperId + '">' +
+            icon("quiz") + ' Simulate ' + paperName + ' Exam →' +
+          '</a>' +
+        '</div>' +
+      '</div>' +
+    '</div>';
   }
 
   function paperCard(p) {
@@ -3553,7 +3950,10 @@ var app = (function () {
     speak: speak, speakTopic: speakTopic, stopSpeech: stopSpeech,
     burstConfetti: burstConfetti, popMilestone: popMilestone,
     setNavPosition: setNavPosition, toggleSrsNotifications: toggleSrsNotifications,
-    setSrsNotificationTime: setSrsNotificationTime
+    setSrsNotificationTime: setSrsNotificationTime,
+    toggleSpotterDetails: toggleSpotterDetails,
+    shuffleWhyMechanism: shuffleWhyMechanism,
+    shuffleGlossaryTerm: shuffleGlossaryTerm
   };
 })();
 
