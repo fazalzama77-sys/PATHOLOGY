@@ -1795,6 +1795,1346 @@ theoryData["unit-5"] = {
 
     img: "",
     tags: ["necrotic enteritis", "Clostridium perfringens", "NetB toxin", "Turkish towel", "coccidiosis", "cholangiohepatitis", "gangrenous dermatitis", "blue wing disease", "ulcerative enteritis", "quail disease", "botulism", "limberneck", "pullorum disease", "pasted vent", "caecal cores", "fowl typhoid", "bronze liver", "pedunculated ovary", "Salmonella Enteritidis", "egg safety"]
+  },
+
+  "u5-t13": {
+    /* Fowl Cholera, Avian Tuberculosis and Spirochaetosis */
+    summary: "Fowl cholera is an acute Pasteurella septicaemia with a petechiated heart and a liver studded with white pinpoint foci; avian tuberculosis is a chronic wasting disease with grey-yellow granulomas in liver, spleen and intestine; spirochaetosis is a tick-borne Borrelia septicaemia with a huge mottled spleen.",
+
+    desc:
+      "<b>A. FOWL CHOLERA (AVIAN PASTEURELLOSIS, AVIAN HAEMORRHAGIC SEPTICAEMIA)</b><br><br>" +
+      "<b>Cause.</b> <b><i>Pasteurella multocida</i></b>, chiefly serotypes <b>A:1, A:3 and A:4</b> — a small, <b>Gram-negative, non-motile, non-sporing coccobacillus</b> which shows the characteristic <b>BIPOLAR (\"SAFETY-PIN\") STAINING</b> with Leishman, Giemsa or methylene blue, the ends of the organism staining more deeply than the centre. Virulent strains possess a <b>capsule</b> and <b>endotoxin (lipopolysaccharide)</b>.<br><br>" +
+      "<b>Species.</b> <b>Chickens, turkeys (highly susceptible), ducks, geese and game birds.</b> Turkeys are notably more susceptible than chickens.<br><br>" +
+      "<b>Epidemiology.</b> The organism is carried in the <b>upper respiratory tract and tonsils of apparently healthy carrier birds</b>, and in <b>rodents, wild birds, cats and dogs</b>. Outbreaks are precipitated by <b>stress — overcrowding, transport, sudden weather change, concurrent disease, poor nutrition and the onset of lay</b>. <b>Rats and free-flying wild birds are important sources in Indian units.</b> Spread is by nasal and oral discharges contaminating feed and water, and by carcasses of dead birds being eaten.<br><br>" +
+      "<b>Two clinical forms — and they look like different diseases.</b><br><br>" +
+      "<b>1. ACUTE (SEPTICAEMIC) FORM</b><br>" +
+      "<b>Sudden onset of high mortality</b>, often with birds found dead in good condition with no premonitory signs — a farmer may find dead birds around the feeder. Where signs are seen: high fever, marked depression, ruffled feathers, <b>cyanosis of the comb and wattles</b>, <b>mucoid discharge from the mouth and nostrils</b>, <b>greenish-yellow diarrhoea</b>, and rapid death. <b>Mortality may reach 50 per cent or more.</b><br><br>" +
+      "<b>Gross pathology of the acute form — the lesions of a septicaemia.</b><br>" +
+      "<ul>" +
+      "<li><b>WIDESPREAD PETECHIAL AND ECCHYMOTIC HAEMORRHAGES, particularly PROMINENT ON THE EPICARDIUM (the heart appearing 'painted' with pinpoint haemorrhages), in the CORONARY AND ABDOMINAL FAT, on serosal surfaces, in the proventricular mucosa, gizzard and intestine.</b> The petechiated heart is a classic finding.</li>" +
+      "<li><b>THE LIVER IS ENLARGED, CONGESTED AND STUDDED WITH INNUMERABLE PINPOINT TO PINHEAD GREY-WHITE FOCI OF NECROSIS</b> — the single most characteristic lesion of acute fowl cholera, and one that should be looked for deliberately.</li>" +
+      "<li>Enlarged, congested spleen; severe congestion of lungs, and in turkeys a <b>marked fibrinous pneumonia with consolidation</b>.</li>" +
+      "<li><b>Increased pericardial fluid</b>; catarrhal to haemorrhagic enteritis, particularly of the duodenum.</li>" +
+      "<li>In layers: regressing, flaccid, haemorrhagic ovarian follicles with rupture and <b>egg-yolk peritonitis</b>.</li>" +
+      "</ul>" +
+      "<b>2. CHRONIC (LOCALISED) FORM</b><br>" +
+      "Follows the acute outbreak or arises from a low-virulence strain. Infection localises in particular sites:<br>" +
+      "<ul>" +
+      "<li><b>SWOLLEN WATTLES containing thick yellow caseous material</b> — the classic and most recognisable chronic lesion, giving birds grossly enlarged, firm, pendulous wattles.</li>" +
+      "<li><b>Swelling of the infraorbital sinus, joints (arthritis), foot pads, sternal bursa, and the middle ear (causing TORTICOLLIS)</b>.</li>" +
+      "<li>Chronic caseous pneumonia, conjunctivitis, and oophoritis.</li>" +
+      "<li>Mortality is low; the loss is from culling and reduced production.</li>" +
+      "</ul>" +
+      "<b>Microscopically:</b> <b>multifocal coagulative necrosis of hepatocytes with heterophil and macrophage infiltration and large numbers of bacteria</b>; fibrin thrombi in capillaries; vascular damage with haemorrhage and oedema; and in chronic lesions, caseous necrosis surrounded by macrophages, giant cells and fibrous tissue.<br><br>" +
+      "<b>Diagnosis:</b> the gross picture is strongly suggestive. Confirm by <b>impression smears of liver, spleen or heart blood stained by Leishman or Giemsa showing BIPOLAR ORGANISMS</b>, and by <b>culture from liver, spleen, heart blood and bone marrow</b>. Control is by rodent control, biosecurity, removal of carriers, all-in all-out management, and <b>inactivated bacterins</b> in endemic units.<br><br>" +
+
+      "<b>B. AVIAN TUBERCULOSIS</b><br><br>" +
+      "<b>Cause.</b> <b><i>Mycobacterium avium</i> subspecies <i>avium</i></b> — an <b>ACID-FAST, slender, non-motile, non-sporing rod</b>, demonstrated by the <b>ZIEHL-NEELSEN stain</b>, in which it appears as a <b>bright red rod against a blue background</b>. It has a waxy, mycolic-acid-rich cell wall.<br><br>" +
+      "<b>Key epidemiological features:</b><br>" +
+      "<ul>" +
+      "<li>It is <b>extraordinarily resistant in the environment, surviving in soil and litter for YEARS</b>, and resistant to most disinfectants.</li>" +
+      "<li>It is a <b>disease of OLDER BIRDS</b> — backyard flocks, breeders, zoo and pet birds, and long-lived layers — and is <b>rare in modern short-cycle broilers</b>, which are slaughtered long before the disease develops.</li>" +
+      "<li>Transmission is by <b>ingestion of contaminated litter, soil and faeces</b>, so old, permanently occupied premises are the reservoir.</li>" +
+      "<li><b>It is ZOONOTIC, particularly for immunosuppressed people</b>, and it also infects pigs (causing lymph node granulomas and abattoir condemnation) and, importantly, <b>sensitises cattle so that they give false-positive reactions to the tuberculin test</b>.</li>" +
+      "</ul>" +
+      "<b>Clinical signs.</b> A <b>chronic, insidious, progressive disease</b>. The bird shows <b>marked progressive emaciation with a prominent, sharp keel bone (\"knife-edge\" or \"razor\" breast\") despite a good appetite</b>, pale shrunken comb and wattles, dullness, and sometimes lameness or a unilateral limp from bone or joint involvement. Diarrhoea occurs late. <b>Mortality is sporadic and continuous rather than explosive.</b><br><br>" +
+      "<b>Gross pathology.</b><br>" +
+      "<ul>" +
+      "<li><b>IRREGULAR, FIRM, GREY-YELLOW TO WHITE NODULES (TUBERCLES) of varying size, from pinhead to several centimetres, in the LIVER, SPLEEN AND INTESTINE — and especially in the WALL OF THE INTESTINE AND CAECA, where they may ulcerate into the lumen.</b></li>" +
+      "<li>The <b>liver and spleen are greatly enlarged and studded with these nodules</b>, giving a mottled appearance.</li>" +
+      "<li>On section the nodule has a <b>dry, firm, greyish-yellow caseous centre</b> surrounded by a <b>fibrous capsule</b>. <b>MINERALISATION (CALCIFICATION) IS CHARACTERISTICALLY ABSENT OR MINIMAL IN BIRDS — a decisive difference from mammalian tuberculosis, where calcification is prominent.</b></li>" +
+      "<li>Nodules also occur in <b>bone marrow, joints, lung and mesentery</b>.</li>" +
+      "<li>The carcass is markedly emaciated with serous atrophy of fat.</li>" +
+      "</ul>" +
+      "<b>Microscopically:</b> a <b>GRANULOMA with a central zone of caseous necrosis surrounded by EPITHELIOID CELLS and numerous MULTINUCLEATED LANGHANS GIANT CELLS, with a peripheral lymphocyte cuff and fibrous capsule</b>. <b>Ziehl-Neelsen staining reveals ENORMOUS NUMBERS of acid-fast bacilli, characteristically packed inside the macrophages and giant cells and in the necrotic centre</b> — far more numerous than in mammalian tuberculosis.<br><br>" +
+      "<b>The essential differential is COLIGRANULOMA (Hjarre disease) and tumours.</b> Coligranuloma produces similar nodules in liver, caeca and mesentery but the organisms are <b>Gram-negative rods and NOT acid-fast</b>. <b>The Ziehl-Neelsen stain is therefore the decisive test.</b><br><br>" +
+      "<b>Control</b> is by <b>depopulation and culling of the whole flock, thorough cleaning, and moving to fresh ground</b>, since the organism persists in soil and litter for years and treatment is not practical.<br><br>" +
+
+      "<b>C. AVIAN SPIROCHAETOSIS (BORRELIOSIS)</b><br><br>" +
+      "<b>Cause.</b> <b><i>Borrelia anserina</i></b> — a large, <b>loosely coiled, actively motile SPIROCHAETE</b>, best seen in a fresh blood film by <b>dark-field microscopy</b> or in a Giemsa-stained thin blood smear, where it appears as a slender spiral organism <b>lying free between the red cells</b>.<br><br>" +
+      "<b>Vector — the essential fact.</b> Transmission is by the <b>FOWL TICK, <i>Argas persicus</i></b> (the soft tick, also called the blue bug or tampan), which is common in India in the cracks and crevices of poultry houses. The tick feeds at night and hides by day. <b>Transmission within the tick is both TRANSSTADIAL and TRANSOVARIAL, so an infected tick population perpetuates the infection indefinitely.</b> Spread also occurs mechanically by mites, mosquitoes and by ingestion of infected ticks or faeces.<br><br>" +
+      "<b>Clinical signs.</b> After an incubation of 3-8 days: <b>high fever, marked depression with birds standing hunched with closed eyes and ruffled feathers, intense thirst, and a characteristic BRIGHT GREEN DIARRHOEA containing much bile and urates</b>. There is progressive weakness, <b>anaemia with a pale, cyanotic comb</b>, and paralysis in some birds. <b>Mortality ranges from 10 to 100 per cent.</b><br><br>" +
+      "<b>Gross pathology.</b><br>" +
+      "<ul>" +
+      "<li><b>THE SPLEEN IS THE KEY ORGAN — GREATLY ENLARGED (often two to four times normal), soft, and MOTTLED WITH GREY-WHITE FOCI ON A DARK RED BACKGROUND, giving a characteristic mottled or speckled appearance.</b> Splenomegaly of this degree in a bird should always raise spirochaetosis.</li>" +
+      "<li>The <b>liver is enlarged, congested and mottled with grey-white necrotic foci and petechial haemorrhages</b>.</li>" +
+      "<li><b>The kidneys are swollen and pale with urate deposition.</b></li>" +
+      "<li>Marked <b>anaemia and thin watery blood</b>; a green, mucoid, bile-stained intestinal content; pericarditis; and in chronic cases emaciation.</li>" +
+      "</ul>" +
+      "<b>Microscopically:</b> <b>necrosis and marked hyperplasia of the reticuloendothelial and lymphoid tissue of spleen and liver, with erythrophagocytosis, haemosiderosis, and multifocal hepatic necrosis</b>. Spirochaetes may be demonstrated in tissue by <b>silver impregnation (Levaditi or Warthin-Starry) stains</b>.<br><br>" +
+      "<b>Diagnosis:</b> <b>demonstration of motile spirochaetes in a fresh wet blood film by dark-field microscopy, or in a Giemsa-stained smear, DURING THE FEBRILE PHASE</b> — the organism disappears from the blood as antibody develops, so timing is critical. Also PCR and serology. <b>Control depends on eliminating <i>Argas persicus</i> from the house — filling cracks and crevices, treating the structure rather than only the birds — together with vaccination in endemic areas.</b>",
+
+    eliteDesc:
+      "<b>THE THREE DISEASES DIFFER MOST USEFULLY IN THEIR TEMPO, AND TEMPO IS THE FIRST DIAGNOSTIC CLUE.</b> <b>Fowl cholera is explosive</b> — a septicaemia killing birds within hours to a day, with the lesions of acute vascular damage. <b>Avian tuberculosis is glacial</b> — a chronic granulomatous disease taking months, producing wasting in old birds with sporadic continuous mortality. <b>Spirochaetosis is intermediate</b> — an acute febrile septicaemia over several days with marked splenic and hepatic reaction. Asking the farmer how quickly the birds died and over what period, before opening a single carcass, therefore narrows the diagnosis substantially and is worth doing routinely.<br><br>" +
+      "<b>WHY THE FOWL CHOLERA LIVER IS STUDDED WITH WHITE PINPOINTS.</b> <i>Pasteurella multocida</i> reaches the liver in enormous numbers by the portal and hepatic arterial circulation, and the bacteria lodge in the hepatic sinusoids, where they are trapped by the reticuloendothelial system. Each focus of trapped organisms produces a small area of <b>coagulative necrosis with heterophil infiltration</b>, and because seeding is uniform and simultaneous, the necrotic foci are <b>innumerable, uniform in size and evenly distributed throughout the parenchyma</b>. This is the visual signature of an acute bacteraemia in any species, and it should be distinguished carefully from the <b>larger, irregular, encapsulated granulomas of tuberculosis</b> and from the <b>soft grey tumour nodules of lymphoid leukosis</b>, which occur in the same organ but have entirely different implications.<br><br>" +
+      "<b>ENDOTOXIN EXPLAINS THE PETECHIAE.</b> The haemorrhages of acute fowl cholera — on the epicardium, in coronary and abdominal fat and on serosal surfaces — are the visible expression of <b>endotoxin-driven endothelial damage and a disseminated intravascular coagulation-like process</b>, with fibrin thrombi in small vessels and consumption of platelets and clotting factors. The predilection for <b>epicardium and fat</b> reflects the fact that these are richly vascularised tissues with delicate capillaries and little supporting stroma, so leakage is immediately visible. The same reasoning explains the identical distribution of petechiae in other avian septicaemias, and is why the pattern alone is not specific — it is the <b>combination of petechiae plus the pinpoint hepatic necrosis plus bipolar organisms</b> that makes the diagnosis.<br><br>" +
+      "<b>THE CHRONIC FORM IS THE SAME ORGANISM BEHAVING DIFFERENTLY, AND THE HETEROPHIL EXPLAINS THE WATTLE.</b> When the bird survives the septicaemic phase, or meets a strain of lower virulence, infection localises in sites of low blood flow and poor drainage — <b>wattles, infraorbital sinuses, joints, foot pads, sternal bursa and middle ear</b>. Because the avian heterophil lacks myeloperoxidase and cannot liquefy tissue, the localised infection produces not a fluctuant abscess but a <b>firm mass of dry, laminated, yellow caseous material</b> that must be dissected out. The grossly swollen, firm wattle full of cheesy material is therefore not a peculiarity of fowl cholera but a direct application of the general principle of avian inflammation, and it is one of the most recognisable lesions in poultry practice.<br><br>" +
+      "<b>WHY AVIAN TUBERCLES DO NOT CALCIFY, AND WHY THAT MATTERS.</b> In mammalian tuberculosis, <b>dystrophic mineralisation of the caseous centre is prominent</b>, and a gritty, calcified node is a familiar finding that grates under the knife. <b>In birds, mineralisation is characteristically absent or minimal</b>, so the avian tubercle is firm and dry but cuts cleanly. The difference is attributed to differences in calcium and phosphorus handling and in the character of the necrotic material, and it is a reliable and frequently examined distinction. It has a practical corollary at the post-mortem table: <b>a firm, dry, non-gritty grey-yellow nodule in the liver or intestinal wall of an old bird should prompt a Ziehl-Neelsen stain, not a conclusion that the absence of calcification excludes tuberculosis.</b><br><br>" +
+      "<b>THE BACTERIAL LOAD IN AVIAN TUBERCULOSIS IS ENORMOUS, AND THIS HAS TWO CONSEQUENCES.</b> Unlike mammalian tuberculosis, where acid-fast bacilli can be sparse and difficult to find, <b><i>M. avium</i> lesions in birds contain vast numbers of organisms packed within macrophages and giant cells and free in the necrotic centre</b>. This makes the Ziehl-Neelsen stain highly rewarding and the diagnosis straightforward. It also means that <b>affected birds shed enormous numbers of organisms in faeces</b>, contaminating soil and litter with an agent that survives for years. That single fact determines the control policy: <b>because the environment cannot be cleaned reliably and treatment is impractical, the answer is depopulation and a change of ground rather than any attempt at therapy</b>.<br><br>" +
+      "<b>THE CATTLE CONNECTION IS WORTH REMEMBERING.</b> <i>M. avium</i> infection sensitises cattle to avian and, to a degree, bovine tuberculin, producing <b>false-positive or inconclusive reactions in the tuberculin test</b>. In mixed Indian smallholdings where poultry and cattle share ground, an unexplained pattern of tuberculin reactors should raise the possibility of environmental <i>M. avium</i> exposure rather than bovine tuberculosis, and this is precisely the situation the <b>comparative (avian versus bovine) tuberculin test</b> was designed to resolve. Being able to make this connection is a genuinely useful piece of integrated reasoning.<br><br>" +
+      "<b>THE ARGAS TICK IS THE WHOLE OF SPIROCHAETOSIS CONTROL.</b> <i>Borrelia anserina</i> is transmitted by <i>Argas persicus</i>, a soft tick that <b>feeds rapidly at night and then leaves the bird to hide in cracks, crevices, under loose plaster, in woodwork and beneath perches during the day</b>. Because the tick spends most of its life off the host, <b>treating the birds achieves very little while the building remains infested</b>. Moreover, transmission within the tick is both <b>transstadial and transovarial</b>, so the tick population is a self-sustaining reservoir requiring no further input from birds. The control advice therefore follows inescapably: <b>treat the structure — fill and seal cracks, remove and replace loose woodwork, spray the walls, perches and crevices rather than only the birds — and remember that ticks can survive for many months without feeding</b>, so a long empty period alone will not clear an infested house.<br><br>" +
+      "<b>THE TIMING OF THE BLOOD SMEAR DECIDES THE DIAGNOSIS.</b> Spirochaetes are present in the blood only <b>during the febrile phase</b>, and disappear rapidly once antibody develops. A smear taken from a bird that has been ill for several days, or from a bird found dead, will frequently be negative even in a confirmed outbreak. The instruction that follows is precise: <b>select febrile, acutely affected birds, take blood immediately, and examine a fresh wet film by dark-field microscopy for the actively motile organisms as well as making a Giemsa-stained smear.</b> A negative smear from the wrong bird at the wrong time is not evidence of absence.",
+
+    keyPoints: [
+      "FOWL CHOLERA = PASTEURELLA MULTOCIDA (serotypes A:1, A:3, A:4) — a Gram-negative coccobacillus showing BIPOLAR ('SAFETY-PIN') STAINING with Leishman or Giemsa.",
+      "TURKEYS ARE MORE SUSCEPTIBLE THAN CHICKENS. Carriers harbour the organism in the UPPER RESPIRATORY TRACT AND TONSILS; RATS AND WILD BIRDS are important sources.",
+      "Outbreaks are precipitated by STRESS — overcrowding, transport, weather change, concurrent disease and the onset of lay.",
+      "THE CLASSIC ACUTE LESION: THE LIVER STUDDED WITH INNUMERABLE UNIFORM PINPOINT GREY-WHITE NECROTIC FOCI — the signature of an acute bacteraemia seeding the hepatic sinusoids.",
+      "Also in acute fowl cholera: WIDESPREAD PETECHIAE, especially PROMINENT ON THE EPICARDIUM and in CORONARY AND ABDOMINAL FAT, from ENDOTOXIN-driven endothelial damage and a DIC-like process.",
+      "In TURKEYS the acute form characteristically includes a marked FIBRINOUS PNEUMONIA with consolidation.",
+      "THE CHRONIC FORM'S CLASSIC LESION IS SWOLLEN WATTLES PACKED WITH THICK YELLOW CASEOUS MATERIAL — because the avian heterophil lacks myeloperoxidase and cannot liquefy tissue into pus.",
+      "Chronic fowl cholera also localises in the INFRAORBITAL SINUS, JOINTS, FOOT PADS, STERNAL BURSA and MIDDLE EAR (causing TORTICOLLIS).",
+      "Diagnose fowl cholera by IMPRESSION SMEARS of liver, spleen or heart blood showing BIPOLAR ORGANISMS, plus culture from liver, spleen, heart blood and marrow.",
+      "AVIAN TUBERCULOSIS = MYCOBACTERIUM AVIUM subsp. AVIUM — ACID-FAST on ZIEHL-NEELSEN, appearing as a BRIGHT RED ROD against a blue background.",
+      "It SURVIVES IN SOIL AND LITTER FOR YEARS and resists most disinfectants — so old, permanently occupied premises are the reservoir.",
+      "IT IS A DISEASE OF OLDER BIRDS — backyard flocks, breeders, zoo and pet birds — and is RARE IN MODERN BROILERS, which are slaughtered long before it develops.",
+      "Clinical picture: CHRONIC PROGRESSIVE EMACIATION WITH A SHARP PROMINENT KEEL ('KNIFE-EDGE BREAST') DESPITE A GOOD APPETITE, with sporadic continuous mortality.",
+      "Lesions: IRREGULAR FIRM GREY-YELLOW NODULES in LIVER, SPLEEN and especially the WALL OF THE INTESTINE AND CAECA, where they may ulcerate into the lumen.",
+      "MINERALISATION IS CHARACTERISTICALLY ABSENT OR MINIMAL IN AVIAN TUBERCULOSIS — a decisive contrast with mammalian tuberculosis, where calcification is prominent. Absence of grittiness does NOT exclude the diagnosis.",
+      "Histology: GRANULOMA with caseous centre, EPITHELIOID CELLS and numerous LANGHANS GIANT CELLS. Ziehl-Neelsen shows ENORMOUS NUMBERS of acid-fast bacilli packed in macrophages and giant cells — far more than in mammalian TB.",
+      "THE KEY DIFFERENTIAL IS COLIGRANULOMA (HJARRE DISEASE), which looks similar but whose organisms are GRAM-NEGATIVE AND NOT ACID-FAST. THE ZIEHL-NEELSEN STAIN IS DECISIVE.",
+      "M. avium is ZOONOTIC (especially for immunosuppressed people), infects pigs, and SENSITISES CATTLE TO GIVE FALSE-POSITIVE TUBERCULIN REACTIONS — the reason for the COMPARATIVE tuberculin test.",
+      "Control of avian tuberculosis is DEPOPULATION, CULLING AND A CHANGE OF GROUND — treatment is impractical and the environment cannot be reliably cleaned.",
+      "AVIAN SPIROCHAETOSIS = BORRELIA ANSERINA, a large loosely coiled MOTILE SPIROCHAETE seen FREE BETWEEN THE RED CELLS on dark-field or Giemsa examination.",
+      "THE VECTOR IS THE FOWL TICK ARGAS PERSICUS (soft tick), which FEEDS AT NIGHT AND HIDES IN CRACKS AND CREVICES BY DAY. Transmission in the tick is both TRANSSTADIAL AND TRANSOVARIAL, so the tick population is a self-sustaining reservoir.",
+      "Signs: high fever, hunched depressed birds, intense thirst, and a characteristic BRIGHT GREEN DIARRHOEA, with anaemia and paralysis. Mortality 10-100 per cent.",
+      "THE KEY LESION IS THE SPLEEN — GREATLY ENLARGED (2-4 times), soft, and MOTTLED WITH GREY-WHITE FOCI ON A DARK RED BACKGROUND.",
+      "SPIROCHAETES ARE PRESENT IN BLOOD ONLY DURING THE FEBRILE PHASE — sample ACUTELY FEBRILE birds; a negative smear from a bird ill for days or found dead means nothing.",
+      "CONTROL SPIROCHAETOSIS BY TREATING THE BUILDING, NOT THE BIRDS — fill and seal cracks, replace loose woodwork, spray walls, perches and crevices. Ticks survive many months without feeding."
+    ],
+
+    clinical:
+      "<b>Why this matters in Indian practice.</b><br>" +
+      "<b>Ask how fast the birds died before you open anything.</b> Tempo separates these three diseases more efficiently than any lesion. <b>Sudden deaths over one or two days in birds found in good condition suggests fowl cholera; a febrile illness over several days with green droppings suggests spirochaetosis; and steady wasting of old birds over weeks to months suggests tuberculosis.</b> This one question shapes the whole investigation.<br><br>" +
+      "<b>Look at the liver surface against the light in any sudden-death outbreak.</b> The <b>innumerable uniform pinpoint white foci</b> of acute fowl cholera are easily missed if the liver is only glanced at. Hold it up, look across the capsular surface, and cut it. Combined with pinpoint haemorrhages studding the epicardium and coronary fat, this is close to diagnostic. Make an <b>impression smear of liver or heart blood and stain it with Leishman or Giemsa</b> — seeing bipolar safety-pin organisms confirms the diagnosis the same day with no specialised facility.<br><br>" +
+      "<b>Hunt the rats.</b> In Indian poultry units, rodents are a persistently underestimated reservoir of <i>Pasteurella multocida</i> as well as of <i>Salmonella</i>. When investigating recurrent fowl cholera, walk the perimeter and look for burrows, droppings and runs, check whether feed is stored in rodent-proof containers, and look at whether dead birds are being removed promptly or left where rats and other birds can feed on them. Advise <b>prompt disposal of carcasses, rodent-proof feed storage, an active rodent control programme, and preventing access by wild birds</b>. Vaccination with an inactivated bacterin is worthwhile in units with a repeated problem, but it will not overcome a rat infestation.<br><br>" +
+      "<b>Recognise the caseous wattle.</b> A bird with grossly swollen, firm, pendulous wattles that on incision are packed with thick yellow cheesy material has chronic fowl cholera. This is a common finding in backyard and small commercial flocks in India and is often mistaken for injury or for oedema. Such birds are chronic carriers and should be culled rather than kept.<br><br>" +
+      "<b>In a wasting old bird, feel the keel and then ask for a Ziehl-Neelsen stain.</b> A backyard hen, breeder or pet bird that is steadily losing condition with a sharp, prominent keel bone despite eating well is a candidate for avian tuberculosis. At post-mortem, look for <b>firm grey-yellow nodules in the liver, spleen and especially in the wall of the intestine and caeca</b>. Do not be dissuaded because the nodules are not gritty — <b>avian tubercles characteristically do not calcify</b>. Send tissue in formalin and <b>specifically request a Ziehl-Neelsen stain</b>, because the crucial distinction from coligranuloma depends on it.<br><br>" +
+      "<b>Give honest advice about tuberculosis, because it is unwelcome.</b> There is no practical treatment, the organism survives in soil and litter for years, and affected birds shed enormous numbers of bacilli. The correct advice — <b>cull the flock, clean thoroughly, and restock on fresh ground rather than in the same run</b> — is expensive and owners resist it, so explain the reasoning: the ground itself is now the source. Add two further points that matter in Indian smallholdings. First, <b><i>M. avium</i> is zoonotic, particularly for anyone immunosuppressed in the household.</b> Second, <b>if cattle share the same ground, exposure can produce false-positive tuberculin reactions</b>, which can cause a great deal of unnecessary trouble; this is exactly the situation the comparative tuberculin test resolves.<br><br>" +
+      "<b>For spirochaetosis, examine the shed at night and treat the building.</b> <i>Argas persicus</i> feeds after dark and hides during the day, so a daytime inspection of the birds may reveal nothing while the house is heavily infested. Look with a torch <b>in cracks in the walls, under loose plaster, in the joints of wooden perches, beneath ledges and in crevices of the nest boxes</b>, where the ticks and their eggs will be found. Explain to the owner that <b>spraying the birds achieves little because the tick spends most of its life off the bird</b>, and that the answer is to <b>fill and seal cracks, replace or treat loose woodwork, and spray the structure itself</b>. Warn that ticks survive many months without feeding, so simply leaving the house empty for a few weeks will not clear it.<br><br>" +
+      "<b>Time the blood smear correctly.</b> If you suspect spirochaetosis, select birds that are <b>currently febrile and acutely ill</b>, not birds that have been sick for a week or found dead. Take blood immediately and examine both a <b>fresh wet film under dark-field</b>, where the actively motile spirochaetes are unmistakable, and a Giemsa-stained smear. A negative result from a chronically ill bird is meaningless and should not be allowed to exclude the diagnosis.",
+
+    tables: [
+      {
+        title: "Fowl cholera versus avian tuberculosis versus spirochaetosis",
+        headers: ["Feature", "FOWL CHOLERA", "AVIAN TUBERCULOSIS", "SPIROCHAETOSIS"],
+        rows: [
+          ["Organism", "Pasteurella multocida (BIPOLAR)", "Mycobacterium avium (ACID-FAST)", "Borrelia anserina (SPIROCHAETE)"],
+          ["TEMPO", "EXPLOSIVE — hours to a day", "GLACIAL — weeks to months", "Acute febrile — several days"],
+          ["Age", "Any, often adults", "OLDER birds; rare in broilers", "Any"],
+          ["Transmission", "Contact, carriers, RATS, wild birds", "Ingestion of contaminated soil and litter", "ARGAS PERSICUS soft tick"],
+          ["LIVER", "INNUMERABLE UNIFORM PINPOINT WHITE FOCI", "Irregular grey-yellow NODULES", "Enlarged, mottled with necrotic foci"],
+          ["SPLEEN", "Enlarged, congested", "Enlarged with nodules", "GREATLY ENLARGED and MOTTLED — the key lesion"],
+          ["Haemorrhage", "MARKED — epicardium, coronary fat", "Absent", "Petechiae in liver"],
+          ["Characteristic sign", "Sudden death; CASEOUS WATTLES (chronic)", "KNIFE-EDGE KEEL, wasting with good appetite", "BRIGHT GREEN DIARRHOEA"],
+          ["Calcification of lesions", "Not applicable", "ABSENT or minimal (unlike mammals)", "Not applicable"],
+          ["Decisive test", "Bipolar organisms on impression smear", "ZIEHL-NEELSEN stain", "Motile spirochaetes in FEBRILE-phase blood"],
+          ["Control", "Rodent control, biosecurity, bacterin", "DEPOPULATE and change ground", "TREAT THE BUILDING for ticks"]
+        ]
+      },
+      {
+        title: "White or pale nodules in the avian liver — the differential",
+        headers: ["Cause", "Character of the nodule", "Decisive feature"],
+        rows: [
+          ["FOWL CHOLERA", "INNUMERABLE, uniform, PINPOINT, not encapsulated", "Bipolar organisms; acute septicaemic picture"],
+          ["AVIAN TUBERCULOSIS", "Irregular, firm, grey-yellow, ENCAPSULATED, variable size", "ACID-FAST bacilli in giant cells; NOT calcified"],
+          ["COLIGRANULOMA (Hjarre)", "Nodular granulomas in liver, caeca, mesentery", "Gram-negative rods; NOT acid-fast"],
+          ["LYMPHOID LEUKOSIS", "Soft, greyish-white, diffuse or nodular; huge liver", "MONOMORPHIC lymphoblasts; NODULAR BURSA"],
+          ["MAREK DISEASE", "Grey-white tumour nodules", "PLEOMORPHIC cells; ENLARGED ASYMMETRICAL NERVES"],
+          ["Pullorum disease (chicks)", "Grey-white foci, also in HEART MUSCLE", "Retained yolk sac; caecal cores; chick under 3 weeks"],
+          ["Aspergillosis", "Yellow-white nodules, also in lung and air sacs", "SEPTATE 45-degree branching hyphae on GMS/PAS"]
+        ]
+      },
+      {
+        title: "Why Argas persicus control must target the building",
+        headers: ["Fact about the tick", "Consequence for control"],
+        rows: [
+          ["Feeds rapidly AT NIGHT then leaves the bird", "Daytime inspection of birds may reveal nothing"],
+          ["Hides by day in CRACKS, CREVICES, WOODWORK, under perches", "The BUILDING is the reservoir, not the flock"],
+          ["Spends most of its life OFF the host", "Spraying the birds alone achieves very little"],
+          ["Transmission is TRANSSTADIAL and TRANSOVARIAL", "The tick population sustains infection indefinitely"],
+          ["Survives MANY MONTHS without feeding", "A short empty period will NOT clear the house"],
+          ["Practical action", "FILL AND SEAL CRACKS, replace loose woodwork, SPRAY THE STRUCTURE"]
+        ]
+      }
+    ],
+
+    img: "",
+    tags: ["fowl cholera", "Pasteurella multocida", "bipolar staining", "pinpoint hepatic necrosis", "caseous wattle", "endotoxin", "avian tuberculosis", "Mycobacterium avium", "Ziehl-Neelsen", "Langhans giant cell", "no calcification", "knife-edge keel", "coligranuloma", "comparative tuberculin test", "spirochaetosis", "Borrelia anserina", "Argas persicus", "mottled spleen", "green diarrhoea"]
+  },
+
+  "u5-t14": {
+    /* Avian Mycoplasmosis and Chlamydiosis */
+    summary: "Mycoplasma gallisepticum causes chronic respiratory disease with airsacculitis and the colisepticaemia triad, and M. synoviae causes swollen hocks and foot pads; chlamydiosis is psittacosis, a fibrinous serositis of birds that causes severe atypical pneumonia in people.",
+
+    desc:
+      "<b>A. AVIAN MYCOPLASMOSIS — THE GENERAL PRINCIPLES</b><br><br>" +
+      "Mycoplasmas are the <b>smallest free-living organisms and have NO CELL WALL</b>. From that single fact follow the four properties that govern the disease: they are <b>pleomorphic</b>, they <b>cannot be seen on Gram stain</b>, they are <b>completely resistant to penicillins and cephalosporins</b> (only tetracyclines, macrolides such as tylosin, and fluoroquinolones are effective), and they are <b>fragile outside the host</b>, so transmission requires close contact. On agar they form the tiny <b>\"FRIED EGG\" COLONY</b>.<br><br>" +
+
+      "<b>B. CHRONIC RESPIRATORY DISEASE — <i>MYCOPLASMA GALLISEPTICUM</i> (MG)</b><br><br>" +
+      "<b>The most important mycoplasma of poultry.</b> It affects <b>chickens and turkeys</b>; in turkeys the disease is called <b>INFECTIOUS SINUSITIS</b> and is characterised by gross swelling of the infraorbital sinus.<br><br>" +
+      "<b>Transmission — the vertical route is why it is so difficult to eliminate.</b><br>" +
+      "<ul>" +
+      "<li><b>VERTICAL (TRANSOVARIAN) TRANSMISSION THROUGH THE EGG</b> from infected breeders — the critical route, and the reason control must be applied at the breeder level.</li>" +
+      "<li><b>HORIZONTAL</b> spread by direct contact, aerosol, and contaminated equipment and personnel.</li>" +
+      "<li><b>Infected birds remain CARRIERS FOR LIFE</b>, shedding intermittently, particularly under stress.</li>" +
+      "</ul>" +
+      "<b>Pathogenesis.</b> The organism adheres to the <b>ciliated respiratory epithelium</b> by specialised adhesins, causing <b>ciliostasis and loss of cilia</b>. <b>Destruction of the mucociliary escalator is the central event</b>, and it is why the disease is defined by what follows it rather than by its own severity.<br><br>" +
+      "<b>THE GOVERNING CLINICAL PRINCIPLE: MYCOPLASMA GALLISEPTICUM ALONE CAUSES MILD DISEASE. THE SEVERE DISEASE SEEN IN THE FIELD IS ALWAYS A COMPLEX</b> — MG combined with <b><i>E. coli</i>, infectious bronchitis virus, Newcastle disease virus, poor ventilation, high ammonia and dust</b>. The term <b>\"chronic respiratory disease\" (CRD)</b> denotes this complex, and <b>\"complicated CRD\" or \"air sac disease\"</b> denotes the severe form with <i>E. coli</i> septicaemia.<br><br>" +
+      "<b>Clinical signs.</b> <b>Slow onset and a chronic, prolonged course</b> — the tempo itself is diagnostically useful. Nasal discharge, sneezing, <b>tracheal rales best heard when the shed is quiet at night</b>, coughing, conjunctivitis, and in turkeys <b>marked swelling of the infraorbital sinus</b>. There is <b>poor growth, poor feed conversion, unevenness, reduced egg production and reduced hatchability</b>, with <b>low mortality but high culling and condemnation</b>.<br><br>" +
+      "<b>Gross pathology.</b><br>" +
+      "<ul>" +
+      "<li><b>Catarrhal exudate in the nasal passages, sinuses and trachea</b>; the tracheal mucosa is thickened and congested.</li>" +
+      "<li><b>AIRSACCULITIS — the most consistent and characteristic lesion. The air sacs are thickened, cloudy and opaque, and contain YELLOW CASEOUS PLAQUES AND SHEETS</b> ranging from a slight cloudiness to thick cheesy masses filling the sac.</li>" +
+      "<li>In complicated cases, the full <b>colisepticaemia triad — FIBRINOUS PERIHEPATITIS, PERICARDITIS AND AIRSACCULITIS</b>.</li>" +
+      "<li>In turkeys, the <b>infraorbital sinus is distended with mucoid then caseous material</b>.</li>" +
+      "<li>Salpingitis and regressing ovarian follicles in layers.</li>" +
+      "</ul>" +
+      "<b>Microscopically:</b> <b>loss of cilia; marked THICKENING OF THE MUCOSA BY LYMPHOID HYPERPLASIA, with prominent LYMPHOID FOLLICLE (GERM INAL CENTRE) FORMATION in the lamina propria of trachea, sinus and air sac</b> — this dense lymphoid response is the histological hallmark of mycoplasmosis; plus mucous gland hyperplasia and heterophil infiltration.<br><br>" +
+
+      "<b>C. INFECTIOUS SYNOVITIS — <i>MYCOPLASMA SYNOVIAE</i> (MS)</b><br><br>" +
+      "This organism produces <b>two quite different pictures</b>:<br>" +
+      "<ul>" +
+      "<li><b>A subclinical or mild UPPER RESPIRATORY infection</b>, which is the commoner form and which becomes significant when combined with respiratory viruses.</li>" +
+      "<li><b>INFECTIOUS SYNOVITIS — an acute to chronic infection of the SYNOVIAL MEMBRANES of joints and tendon sheaths.</b></li>" +
+      "</ul>" +
+      "<b>Clinical signs of synovitis.</b> Lameness, reluctance to move, birds sitting on their hocks, pale comb, retarded growth and a <b>characteristic swelling of the HOCK JOINTS AND FOOT PADS</b>, and of the <b>STERNAL (KEEL) BURSA</b>, which becomes distended and fluctuant. Birds develop <b>breast blisters</b>.<br><br>" +
+      "<b>Gross pathology.</b> <b>The joints, tendon sheaths, foot pads and sternal bursa contain a viscous, creamy to grey, VISCID (thick and sticky) exudate, which later becomes caseous.</b> The synovial membranes are thickened, oedematous and hyperaemic. The liver may be enlarged and green-tinged, and the spleen and kidneys enlarged.<br><br>" +
+      "<b>Microscopically:</b> <b>hyperplasia and villous proliferation of the synovial membrane with heavy infiltration by lymphocytes, plasma cells and macrophages, and LYMPHOID FOLLICLE FORMATION</b> — again the mycoplasmal signature — with fibrin and heterophils in the joint cavity.<br><br>" +
+      "<b>Two other avian mycoplasmas:</b> <b><i>M. meleagridis</i></b> — of turkeys, transmitted venereally and through the egg, causing airsacculitis in poults and skeletal abnormalities; and <b><i>M. iowae</i></b> — causing reduced hatchability and embryo mortality in turkeys.<br><br>" +
+
+      "<b>D. AVIAN CHLAMYDIOSIS (PSITTACOSIS, ORNITHOSIS)</b><br><br>" +
+      "<b>Cause.</b> <b><i>Chlamydia psittaci</i></b> — an <b>OBLIGATE INTRACELLULAR bacterium</b> which possesses a cell wall and both DNA and RNA (distinguishing it from viruses) but <b>cannot make its own ATP, and is therefore an \"ENERGY PARASITE\"</b>.<br><br>" +
+      "<b>The two-form developmental cycle — a certain examination question.</b><br>" +
+      "<ol>" +
+      "<li>The <b>ELEMENTARY BODY</b> — small, rigid, metabolically inert and <b>EXTRACELLULAR. This is the INFECTIOUS form</b>, and it is taken into the cell by endocytosis.</li>" +
+      "<li>Inside a membrane-bound vacuole it reorganises into the <b>RETICULATE BODY</b> — larger, fragile, metabolically active and <b>the REPLICATING form</b>, dividing by binary fission.</li>" +
+      "<li>The vacuole packed with organisms is the <b>INCLUSION BODY (LEVINTHAL-COLES-LILLIE or LCL BODY)</b>, seen as an intracytoplasmic mass.</li>" +
+      "<li>Reticulate bodies condense back into elementary bodies and the cell ruptures.</li>" +
+      "</ol>" +
+      "<b>Remember: ELEMENTARY = EXTRACELLULAR AND INFECTIOUS; RETICULATE = REPLICATING INSIDE THE CELL.</b><br><br>" +
+      "<b>Species.</b> <b>Psittacine birds (parrots, parakeets, budgerigars, cockatiels) — hence \"psittacosis\" — and pigeons, ducks, turkeys and many wild birds; the term \"ornithosis\" is used for non-psittacine birds.</b> Ducks and turkeys are commercially important hosts.<br><br>" +
+      "<b>Transmission.</b> By <b>INHALATION OF DRIED FAECES, NASAL DISCHARGE AND FEATHER DUST</b>, and by ingestion. <b>Stress — capture, transport, crowding, breeding, poor nutrition — precipitates shedding from latently infected carrier birds</b>, which is why newly purchased or recently transported birds are the classic source.<br><br>" +
+      "<b>Clinical signs in birds.</b> Very variable, from <b>inapparent carriage to fatal systemic disease</b>. Affected birds show <b>lethargy, ruffled feathers, anorexia and weight loss, a serous to mucopurulent OCULONASAL DISCHARGE and conjunctivitis, dyspnoea, and characteristically GREENISH TO YELLOW-GREEN, LOOSE, BILE-STAINED DROPPINGS</b> reflecting liver involvement.<br><br>" +
+      "<b>Gross pathology.</b><br>" +
+      "<ul>" +
+      "<li><b>FIBRINOUS SEROSITIS — the characteristic picture: AIRSACCULITIS with thickened cloudy air sacs, FIBRINOUS PERICARDITIS, PERIHEPATITIS and PERITONITIS</b>, with yellow fibrinous exudate on serosal surfaces.</li>" +
+      "<li><b>THE SPLEEN IS MARKEDLY ENLARGED, dark and friable — SPLENOMEGALY IS PROMINENT AND IS A USEFUL POINTER</b>, since it is more marked than in most other avian serositides.</li>" +
+      "<li><b>The LIVER IS ENLARGED, congested, and mottled with grey-white NECROTIC FOCI</b>; it may be greenish from bile.</li>" +
+      "<li>Congested lungs; enteritis; and emaciation in chronic cases.</li>" +
+      "</ul>" +
+      "<b>Microscopically:</b> <b>multifocal necrosis of liver and spleen with mononuclear infiltration; fibrinoheterophilic exudate on serosal surfaces; and INTRACYTOPLASMIC INCLUSION BODIES (LCL bodies) containing masses of elementary bodies in macrophages and epithelial cells.</b> These are demonstrated by <b>modified Ziehl-Neelsen (Stamp stain), Giemsa, Macchiavello or Gimenez stains</b>, in which the elementary bodies appear as clusters of tiny coccoid organisms.<br><br>" +
+      "<b>Diagnosis:</b> impression smears of spleen, liver and air sac stained by the above methods; <b>antigen ELISA, immunofluorescence, and PCR (the method of choice)</b>; and serology.<br><br>" +
+      "<b>ZOONOSIS — THE MOST IMPORTANT POINT.</b> <b><i>Chlamydia psittaci</i> causes PSITTACOSIS in man: a severe ATYPICAL PNEUMONIA with high fever, severe headache, dry cough, myalgia and sometimes hepatitis, encephalitis and endocarditis, which can be fatal if untreated.</b> Infection is acquired by <b>inhaling dried faeces and feather dust</b> — so cleaning a cage or shed, or handling and defeathering infected birds, is the classic exposure. <b>Bird sellers, pet bird owners, pigeon fanciers, zoo keepers, duck and turkey processing workers and veterinarians are the recognised risk groups.</b> It is a reportable zoonosis in many countries.",
+
+    eliteDesc:
+      "<b>THE MISSING CELL WALL AND THE ANTIBIOTIC ERROR.</b> The single most useful clinical fact about mycoplasmas is that they have <b>no cell wall</b>, and therefore <b>no target for penicillins, cephalosporins or bacitracin</b>. A great deal of money is spent in Indian poultry practice on beta-lactam antibiotics given to chronically coughing flocks whose disease is mycoplasmal, and the failure is not a matter of resistance but of pharmacological impossibility. Drugs that act on <b>protein or nucleic acid synthesis — tetracyclines, tylosin and other macrolides, and fluoroquinolones</b> — are the effective ones, and they must be given for longer than usual because these are slow-growing organisms sitting on the epithelial surface where drug penetration is modest. Equally important is the honest caveat: <b>antibiotics suppress signs and reduce shedding but rarely eliminate the organism from a flock</b>, so medication is a management tool, not a cure.<br><br>" +
+      "<b>WHY MYCOPLASMOSIS IS DEFINED BY WHAT FOLLOWS IT.</b> <i>Mycoplasma gallisepticum</i> on its own is a comparatively mild pathogen. Its importance lies in <b>ciliostasis and deciliation</b>: it binds cilia, stops their beating within hours and destroys them over days, converting the airway from a self-clearing organ into a passive collecting vessel. The bird then cannot clear inhaled bacteria, dust or ammonia, and the diseases that follow — <b>colisepticaemia with its perihepatitis, pericarditis and airsacculitis</b> — are what kill it and what the farmer sees. This is why the field term is <b>\"chronic respiratory disease complex\"</b> rather than \"mycoplasmosis\", and why an investigation that identifies MG and stops there has answered only half the question. <b>The productive approach is to ask what else is loading the airway</b>: infectious bronchitis and Newcastle vaccination reactions, ammonia, dust, stocking density and ventilation.<br><br>" +
+      "<b>AMMONIA IS A MYCOPLASMA CO-FACTOR, AND YOU CAN MEASURE IT WITH YOUR OWN EYES.</b> Ammonia above roughly 25 parts per million paralyses cilia directly, independently of any infection. In a flock already deciliated by MG, this is additive and decisive. The practical field test needs no equipment: <b>crouch to bird level, and if the ammonia stings your eyes, the birds' cilia have already stopped working</b>. Correcting ventilation, wet litter and stocking density is therefore a genuinely therapeutic intervention in chronic respiratory disease, and often achieves more than the medication that accompanies it.<br><br>" +
+      "<b>THE VERTICAL ROUTE DICTATES THAT CONTROL IS A BREEDER PROBLEM.</b> <i>M. gallisepticum</i> and <i>M. synoviae</i> pass <b>through the egg</b>, and infected birds remain <b>carriers for life</b>. Consequently the organism cannot be eliminated from a production flock by medication or hygiene, and repeated outbreaks in successive batches from one source point upstream. The commercial answer has been the establishment of <b>mycoplasma-free breeding pyramids</b>, maintained by serological monitoring (rapid serum plate agglutination for screening, confirmed by haemagglutination-inhibition or ELISA) and by removal of positive flocks, supported where necessary by <b>egg dipping or heat treatment of hatching eggs</b>. This is the same breeder-level logic that governs pullorum disease, lymphoid leukosis, chicken infectious anaemia and avian encephalomyelitis — one recurring structure rather than five separate stories.<br><br>" +
+      "<b>THE LYMPHOID FOLLICLE IS THE MYCOPLASMAL SIGNATURE, AND IT EXPLAINS A PARADOX.</b> Mycoplasmas are potent polyclonal stimulators of lymphocytes, and the histological hallmark of both MG and MS infection is <b>dense lymphoid hyperplasia with germinal centre formation in the mucosa of trachea, sinus, air sac and synovium</b>. Much of the tissue damage is therefore <b>immune-mediated rather than directly toxic</b>. This explains a finding that surprises students: <b>lesions can persist, and lung and air sac scores at slaughter remain poor, even after the organism has been substantially reduced by treatment</b>, because what is being seen is the accumulated immune reaction rather than active infection. It also explains why a strong antibody response is not straightforwardly protective and why vaccines improve performance without eliminating carriage.<br><br>" +
+      "<b>THE TWO FACES OF <i>M. SYNOVIAE</i>.</b> The same organism can behave as a mild upper respiratory pathogen or as a cause of florid infectious synovitis, and the determinants include strain, concurrent infection and immune status. The clinical importance is that <b>lameness in a broiler or broiler breeder flock has several possible causes that must be separated</b>: <i>M. synoviae</i> synovitis gives a <b>viscid creamy exudate in hocks, foot pads and the sternal bursa</b>; reoviral tenosynovitis gives <b>swelling of the gastrocnemius tendon with rupture and a green-black hock</b>; staphylococcal arthritis gives a more purulent joint; and bacterial chondronecrosis and femoral head necrosis give lameness with no joint exudate at all. Opening the joint and describing the exudate is what separates them, and the <b>sternal bursa and foot pad</b> should be examined as well as the hock, since involvement of those sites points strongly towards <i>M. synoviae</i>.<br><br>" +
+      "<b>WHY CHLAMYDIA NEEDS TWO BODIES.</b> The elementary and reticulate bodies solve two incompatible requirements with one organism. Transmission between hosts demands a form that is <b>tough, small, metabolically inert and able to survive outside a cell</b>, hence the rigid, disulphide-cross-linked elementary body, which behaves almost like a spore and survives in dried faeces and feather dust. Multiplication demands a form that is <b>metabolically active and permeable</b>, able to import ATP from the host cytoplasm, hence the fragile reticulate body, which could not survive a moment outside the cell. Two consequences follow: <b>only the elementary body is infectious</b>, and because the organism cannot make its own ATP, <b>chlamydiae cannot be cultured on cell-free media</b>, which is why routine bacteriology reports nothing and diagnosis rests on stained smears, antigen detection and PCR.<br><br>" +
+      "<b>THE ZOONOTIC RISK IS REAL AND IS CREATED BY DUST.</b> Human psittacosis is acquired almost entirely by <b>inhaling aerosolised dried droppings and feather dust</b>, and the highest-risk activity is therefore <b>cleaning a cage, shed or loft, or defeathering birds</b> — precisely the moment when dust is generated. This is why the sensible protective measures are counter-intuitive to most bird keepers: <b>dampen droppings before removing them rather than sweeping dry material, wear a properly fitting mask, and ventilate</b>. Because the organism is shed intermittently by latently infected carriers under stress, <b>a newly purchased, recently transported or recently bred bird is the classic source</b>, and a bird that appears healthy is not evidence of safety. When a bird owner or worker develops an unexplained severe pneumonia, the veterinarian may be the only person in a position to make the connection, and mentioning the bird contact to their physician can be decisive, since psittacosis responds well to appropriate antibiotic treatment but is easily missed.",
+
+    keyPoints: [
+      "Mycoplasmas have NO CELL WALL — so they are PLEOMORPHIC, INVISIBLE ON GRAM STAIN, COMPLETELY RESISTANT TO PENICILLINS AND CEPHALOSPORINS, and fragile outside the host. They form 'FRIED EGG' colonies.",
+      "Effective drugs are those acting on protein or nucleic acid synthesis — TETRACYCLINES, TYLOSIN and other MACROLIDES, and FLUOROQUINOLONES. They suppress signs but RARELY ELIMINATE the organism.",
+      "MYCOPLASMA GALLISEPTICUM causes CHRONIC RESPIRATORY DISEASE in chickens and INFECTIOUS SINUSITIS in turkeys.",
+      "IT IS TRANSMITTED VERTICALLY THROUGH THE EGG and infected birds are CARRIERS FOR LIFE — so control must be applied at the BREEDER level, not the production flock.",
+      "MG adheres to CILIATED EPITHELIUM causing CILIOSTASIS AND DECILIATION — destruction of the MUCOCILIARY ESCALATOR is the central event.",
+      "MG ALONE CAUSES MILD DISEASE. The severe field disease is always a COMPLEX with E. COLI, INFECTIOUS BRONCHITIS, NEWCASTLE DISEASE, AMMONIA and DUST — hence 'chronic respiratory disease complex' and 'complicated CRD / air sac disease'.",
+      "AMMONIA ABOVE ABOUT 25 PPM PARALYSES CILIA INDEPENDENTLY — if it stings your eyes at bird level, the birds' defences have already failed. Ventilation is a THERAPEUTIC intervention.",
+      "MG tempo is SLOW AND CHRONIC — useful diagnostically. Signs: nasal discharge, sneezing, TRACHEAL RALES heard at night, poor growth, poor feed conversion, LOW MORTALITY but HIGH CULLING AND CONDEMNATION.",
+      "THE MOST CONSISTENT LESION IS AIRSACCULITIS — thickened, cloudy, opaque air sacs with YELLOW CASEOUS PLAQUES; in complicated cases the full COLISEPTICAEMIA TRIAD of perihepatitis, pericarditis and airsacculitis.",
+      "THE HISTOLOGICAL HALLMARK OF MYCOPLASMOSIS IS DENSE LYMPHOID HYPERPLASIA WITH GERMINAL CENTRE FORMATION in the mucosa — much of the damage is IMMUNE-MEDIATED.",
+      "This explains why LESIONS AND SLAUGHTER SCORES PERSIST even after treatment has reduced the organism — what is seen is accumulated immune reaction, not active infection.",
+      "MYCOPLASMA SYNOVIAE has TWO FACES — a mild or subclinical UPPER RESPIRATORY infection (commoner), and INFECTIOUS SYNOVITIS of joints and tendon sheaths.",
+      "Infectious synovitis: swelling of the HOCK JOINTS, FOOT PADS and STERNAL (KEEL) BURSA, with BREAST BLISTERS, containing a VISCID CREAMY TO GREY EXUDATE that later becomes caseous.",
+      "M. MELEAGRIDIS affects turkeys (venereal and egg transmission, airsacculitis in poults, skeletal abnormalities); M. IOWAE reduces hatchability in turkeys.",
+      "Control of avian mycoplasmosis is by MYCOPLASMA-FREE BREEDING PYRAMIDS — serological monitoring (rapid serum plate agglutination, then HI or ELISA), removal of positive flocks, and egg dipping or heat treatment.",
+      "AVIAN CHLAMYDIOSIS = CHLAMYDIA PSITTACI, an OBLIGATE INTRACELLULAR bacterium that CANNOT MAKE ITS OWN ATP — an 'ENERGY PARASITE'. It has a cell wall and both DNA and RNA, unlike viruses.",
+      "ELEMENTARY BODY = small, rigid, inert, EXTRACELLULAR and INFECTIOUS. RETICULATE BODY = large, fragile, active, INTRACELLULAR and REPLICATING. The inclusion is the LEVINTHAL-COLES-LILLIE (LCL) BODY.",
+      "CHLAMYDIAE CANNOT BE GROWN ON CELL-FREE MEDIA — routine bacteriology reports nothing. Diagnose by stained smears, antigen ELISA, immunofluorescence and PCR (the method of choice).",
+      "PSITTACOSIS refers to disease in psittacine birds (parrots, budgerigars); ORNITHOSIS to non-psittacine birds (pigeons, ducks, turkeys).",
+      "Transmission is by INHALATION OF DRIED FAECES, NASAL DISCHARGE AND FEATHER DUST. STRESS precipitates shedding from latent carriers — so newly purchased or recently transported birds are the classic source.",
+      "Lesions: FIBRINOUS SEROSITIS (airsacculitis, pericarditis, perihepatitis, peritonitis), a MARKEDLY ENLARGED DARK FRIABLE SPLEEN — splenomegaly is a useful pointer — and an enlarged liver with grey-white necrotic foci.",
+      "Birds pass characteristically GREENISH TO YELLOW-GREEN LOOSE BILE-STAINED DROPPINGS, reflecting liver involvement.",
+      "Demonstrate the organism with MODIFIED ZIEHL-NEELSEN (STAMP), GIEMSA, MACCHIAVELLO or GIMENEZ stains, showing clusters of tiny coccoid ELEMENTARY BODIES in intracytoplasmic inclusions.",
+      "PSITTACOSIS IN MAN IS A SEVERE ATYPICAL PNEUMONIA with high fever, severe headache and dry cough, sometimes with hepatitis, encephalitis or endocarditis, and can be FATAL if untreated.",
+      "THE HIGHEST-RISK HUMAN ACTIVITY IS CLEANING A CAGE OR SHED, OR DEFEATHERING BIRDS — because that is when DUST IS GENERATED. DAMPEN DROPPINGS BEFORE REMOVING THEM and wear a mask.",
+      "Risk groups: bird sellers, pet bird owners, PIGEON FANCIERS, zoo keepers, duck and turkey processing workers, and VETERINARIANS."
+    ],
+
+    clinical:
+      "<b>Why this matters in Indian practice.</b><br>" +
+      "<b>Never give penicillin or ampicillin to a coughing flock you suspect of mycoplasmosis.</b> There is no cell wall for these drugs to attack, and the failure is guaranteed rather than probable. Use a <b>tetracycline, tylosin or a fluoroquinolone</b>, treat for longer than usual, and tell the owner honestly that medication will improve performance and reduce shedding but will not clear the organism from the flock. A great deal of money is wasted in Indian poultry units on beta-lactams given for exactly this condition.<br><br>" +
+      "<b>Listen to the shed at night.</b> Tracheal rales in chronic respiratory disease are often inaudible in a noisy shed during the day and become obvious when the birds settle. Standing quietly in a darkened shed and listening is a genuinely useful clinical technique, and it detects the problem earlier than waiting for mortality.<br><br>" +
+      "<b>Judge the air before you judge the flock.</b> Crouch to bird level and breathe. <b>If the ammonia stings your eyes, the birds' cilia have already stopped working</b>, and no antibiotic will compensate for that. In practice, improving ventilation, removing wet caked litter, fixing leaking drinkers and reducing stocking density will do more for a chronic respiratory disease problem than the medication that usually accompanies it, and it costs the farmer nothing in drugs.<br><br>" +
+      "<b>Open the air sacs at every poultry post-mortem.</b> They are transparent and easily overlooked. Reflect the sternum carefully and inspect them against the light for <b>cloudiness, thickening and yellow caseous plaques</b>. Airsacculitis is the most consistent lesion of mycoplasmosis and the most informative single finding about the quality of the air the flock is breathing.<br><br>" +
+      "<b>When a flock keeps breaking down, look upstream to the breeder.</b> Because <i>M. gallisepticum</i> and <i>M. synoviae</i> pass through the egg and infected birds carry for life, repeated chronic respiratory disease in successive batches from one hatchery is a breeder problem, not a shed problem. Advise the producer to raise it with the chick supplier, and explain that commercial control depends on <b>mycoplasma-free breeding stock maintained by serological monitoring and removal of positive flocks</b>. For the producer&rsquo;s own site, the useful measures are all-in all-out batching, single-age stocking, and not mixing birds from different sources.<br><br>" +
+      "<b>In a lame flock, open the joint and describe the exudate.</b> This separates the common causes of lameness in Indian broilers and breeders. <b><i>M. synoviae</i> gives a viscid creamy to grey exudate in the hocks, foot pads and sternal bursa; reovirus gives swelling of the gastrocnemius tendon, sometimes with rupture and a green-black hock; staphylococcal arthritis gives frank purulent material; and femoral head necrosis gives lameness with no joint exudate at all.</b> Remember to examine the <b>foot pads and the keel bursa</b>, not just the hock, since involvement of those sites points strongly to <i>M. synoviae</i>, and breast blisters in a flock should prompt you to look for it.<br><br>" +
+      "<b>Take psittacosis seriously, and protect the people before the birds.</b> When you are called to a pet bird shop, a pigeon loft, a duck or turkey unit, or a household with a sick imported parrot, remember that <b><i>Chlamydia psittaci</i> causes a severe and occasionally fatal pneumonia in people, acquired by breathing dried droppings and feather dust</b>. Wear a mask, and give the owner advice that is specific rather than general: <b>dampen the droppings before removing them rather than sweeping or brushing dry material, ventilate the room, wear a mask while cleaning, and do not shake out cage papers indoors</b>. Warn that a newly purchased or recently transported bird is the classic source and that an apparently healthy bird may still be shedding under stress.<br><br>" +
+      "<b>Make the connection when a bird keeper falls ill.</b> If an owner, worker or family member develops a severe pneumonia with high fever and headache after contact with birds, you may be the only person who can link the two. <b>Advise them to tell their doctor about the bird contact</b>, because psittacosis is easily missed as an ordinary pneumonia and responds well to appropriate treatment when recognised. This is one of the clearest examples in the syllabus of veterinary work being public health work.<br><br>" +
+      "<b>At post-mortem of a suspected chlamydiosis case, note the spleen.</b> A <b>markedly enlarged, dark, friable spleen together with fibrinous pericarditis, perihepatitis and airsacculitis, and greenish bile-stained droppings</b>, is a more specific picture than serositis alone. Make impression smears of spleen and liver and ask for a <b>modified Ziehl-Neelsen (Stamp) or Gimenez stain</b> alongside PCR — and tell the laboratory that chlamydiosis is suspected, both so that the right stains are used and so that their staff can protect themselves.",
+
+    tables: [
+      {
+        title: "The two important avian mycoplasmas",
+        headers: ["Feature", "MYCOPLASMA GALLISEPTICUM", "MYCOPLASMA SYNOVIAE"],
+        rows: [
+          ["Principal disease", "CHRONIC RESPIRATORY DISEASE; infectious sinusitis in turkeys", "INFECTIOUS SYNOVITIS; also mild respiratory disease"],
+          ["Main target", "Ciliated RESPIRATORY epithelium", "SYNOVIAL membranes (and respiratory tract)"],
+          ["Key lesion", "AIRSACCULITIS with yellow caseous plaques", "VISCID exudate in HOCKS, FOOT PADS, STERNAL BURSA"],
+          ["Characteristic sign", "Tracheal rales at night; sinus swelling in turkeys", "Lameness; BREAST BLISTERS; swollen hocks"],
+          ["Histology", "LYMPHOID FOLLICLES in mucosa", "LYMPHOID FOLLICLES in synovium; villous hyperplasia"],
+          ["Egg transmission", "YES", "YES"],
+          ["Lifelong carrier", "YES", "YES"],
+          ["Main economic loss", "Feed conversion, condemnation, egg drop", "Lameness, culling, downgrading"],
+          ["Control", "Mycoplasma-free breeders; serology; ventilation", "Same breeder-level approach"]
+        ]
+      },
+      {
+        title: "The Chlamydia developmental cycle",
+        headers: ["Feature", "ELEMENTARY BODY", "RETICULATE BODY"],
+        rows: [
+          ["Size", "SMALL (0.2-0.4 micrometre)", "LARGE (0.6-1.5 micrometre)"],
+          ["Location", "EXTRACELLULAR", "INTRACELLULAR, in a vacuole"],
+          ["Metabolic activity", "INERT", "ACTIVE"],
+          ["Cell wall", "Rigid, disulphide cross-linked", "Fragile"],
+          ["INFECTIOUS?", "YES — the infectious form", "NO"],
+          ["Replicates?", "NO", "YES, by binary fission"],
+          ["Role", "Survival and TRANSMISSION (survives in dried dust)", "MULTIPLICATION inside the cell"],
+          ["Consequence", "Only this form transmits infection", "Cannot be cultured on cell-free media"]
+        ]
+      },
+      {
+        title: "Lameness with swollen joints in poultry — separating the causes at the joint",
+        headers: ["Cause", "Site", "Character of exudate", "Distinguishing feature"],
+        rows: [
+          ["MYCOPLASMA SYNOVIAE", "Hock, FOOT PADS, STERNAL BURSA", "VISCID creamy to grey, later caseous", "Breast blisters; multiple sites"],
+          ["Avian REOVIRUS", "Hock and GASTROCNEMIUS TENDON", "Straw-coloured then caseous", "TENDON RUPTURE with GREEN-BLACK hock"],
+          ["Staphylococcus aureus", "Hock, stifle", "Purulent to caseous", "Often single joint; osteomyelitis"],
+          ["E. coli", "Hock, stifle", "Fibrinous", "Accompanied by colisepticaemia triad"],
+          ["Femoral head necrosis", "Hip (femoral head)", "NONE", "Femoral head separates on disarticulation"],
+          ["ARTICULAR GOUT", "Toe and hock joints", "White pasty URATE", "Chalky deposits; urate tophi; check kidneys"],
+          ["Viral arthritis + M. synoviae together", "Multiple", "Mixed", "Common in practice — look for both"]
+        ]
+      }
+    ],
+
+    img: "",
+    tags: ["mycoplasma", "no cell wall", "Mycoplasma gallisepticum", "chronic respiratory disease", "airsacculitis", "ciliostasis", "ammonia", "lymphoid follicles", "Mycoplasma synoviae", "infectious synovitis", "breast blister", "sternal bursa", "chlamydiosis", "psittacosis", "ornithosis", "elementary body", "reticulate body", "LCL body", "splenomegaly", "zoonosis"]
+  },
+
+  "u5-t15": {
+    /* Avian Mycoses — Aspergillosis, Thrush, Favus */
+    summary: "Aspergillosis is brooder pneumonia — hard yellow-white nodules studding the lung and air sacs of chicks from mouldy litter; thrush is a white curd-like turkish-towel lining of the crop after prolonged antibiotics; favus is a scaly white comb caused by a dermatophyte.",
+
+    desc:
+      "<b>A. AVIAN ASPERGILLOSIS (BROODER PNEUMONIA, PNEUMOMYCOSIS)</b><br><br>" +
+      "<b>Cause.</b> <b><i>Aspergillus fumigatus</i></b> principally, also <i>A. flavus</i> and <i>A. niger</i>. These are <b>ubiquitous saprophytic moulds</b> of <b>damp litter, mouldy straw and paddy husk, mouldy grain and feed, and dirty hatchery equipment</b>, producing enormous numbers of small, light, readily airborne <b>conidia (spores)</b>.<br><br>" +
+      "<b>THE ESSENTIAL POINT: THIS IS AN INHALATION DISEASE OF DOSE, NOT OF CONTAGION.</b> Aspergillosis is <b>NOT transmitted from bird to bird</b>. Every case arises from <b>inhalation of a heavy spore load from the environment</b>. Therefore an outbreak is always a statement about the litter, the feed or the hatchery, and the investigation must go there.<br><br>" +
+      "<b>Two clinical forms, defined by the dose and the age.</b><br><br>" +
+      "<b>1. ACUTE (BROODER PNEUMONIA) — the important form.</b><br>" +
+      "Affects <b>chicks and poults in the first two weeks of life</b>, following massive spore exposure in the <b>hatchery (contaminated incubator, hatcher or egg trays) or from mouldy brooder litter</b>. Outbreaks are often traceable to a single hatch. <b>Signs:</b> gasping and dyspnoea with the neck extended and rapid, silent open-mouth breathing (<b>note: there is no rattle or moist rale, because the airways are not filled with fluid</b>), somnolence, inappetence, emaciation and thirst. <b>Mortality may reach 50 per cent or more.</b><br><br>" +
+      "<b>2. CHRONIC.</b> Sporadic cases in older and adult birds, often after immunosuppression or prolonged corticosteroid or antibiotic treatment, with progressive dyspnoea and wasting.<br><br>" +
+      "<b>Gross pathology — the classic lesion.</b><br>" +
+      "<ul>" +
+      "<li><b>MULTIPLE, DISCRETE, FIRM, YELLOW-WHITE TO GREYISH NODULES (GRANULOMAS), 1 mm to several mm across, STUDDING THE LUNG AND THE AIR SACS.</b> The lung feels gritty and hard, as though shot with buckshot, and the nodules are <b>caseous and rubbery on section</b>, sometimes with a soft necrotic centre.</li>" +
+      "<li><b>Thickening of the air sacs with yellow-white plaques and, characteristically, GREEN OR BLUE-GREEN FURRY, VELVETY FUNGAL COLONIES growing on the air sac membranes and in the air passages</b> — the fungus fruits in these air-filled spaces, and the visible greenish mould growth is virtually diagnostic when present.</li>" +
+      "<li>Nodules may also occur in the <b>trachea, syrinx, bronchi, and less commonly in liver, kidney, brain and eye</b>.</li>" +
+      "<li><b>OCULAR ASPERGILLOSIS</b> — a yellow caseous plaque under the nictitating membrane with a cloudy, opaque cornea.</li>" +
+      "<li>Emaciation and dehydration in chronic cases.</li>" +
+      "</ul>" +
+      "<b>Microscopic pathology.</b><br>" +
+      "<ul>" +
+      "<li>A <b>GRANULOMA with a central zone of caseous necrosis containing fungal hyphae, surrounded by macrophages, epithelioid cells and numerous MULTINUCLEATED GIANT CELLS, with a peripheral heterophil and lymphocyte zone and a fibrous capsule</b>.</li>" +
+      "<li><b>The hyphae are SEPTATE, of uniform width (3-6 micrometres), and branch DICHOTOMOUSLY AT AN ACUTE ANGLE OF ABOUT 45 DEGREES, characteristically RADIATING OUTWARD from the centre of the lesion.</b> This morphology is the diagnosis.</li>" +
+      "<li><b>In air-filled spaces such as the air sac and bronchus, the fungus produces its FRUITING HEAD — a conidiophore with a swollen vesicle bearing sterigmata and chains of conidia — which is DIAGNOSTIC when seen.</b></li>" +
+      "<li><b><i>Aspergillus</i> is ANGIOINVASIVE</b> — hyphae penetrate vessel walls causing thrombosis and infarction, so lesions may be infarctive with a haemorrhagic rim.</li>" +
+      "<li><b>Demonstrate the fungus with PERIODIC ACID-SCHIFF (PAS) or GOMORI METHENAMINE SILVER (GMS)</b> — hyphae are easily missed on routine haematoxylin and eosin.</li>" +
+      "</ul>" +
+      "<b>Diagnosis:</b> the gross picture is highly suggestive; confirm by <b>direct microscopy of a crushed nodule in 10-20 per cent KOH showing septate branching hyphae, culture on Sabouraud dextrose agar, and histopathology with PAS or GMS</b>.<br><br>" +
+
+      "<b>B. AVIAN CANDIDIASIS (THRUSH, MONILIASIS, SOUR CROP, MYCOTIC CROP)</b><br><br>" +
+      "<b>Cause.</b> <b><i>Candida albicans</i></b> — a yeast that is a <b>NORMAL COMMENSAL of the avian alimentary tract</b>. It is therefore the classic <b>OPPORTUNIST</b>, and disease occurs only when the normal balance is disturbed.<br><br>" +
+      "<b>Predisposing causes are the whole of the practical topic, and most are iatrogenic or managemental:</b><br>" +
+      "<ul>" +
+      "<li><b>PROLONGED BROAD-SPECTRUM ANTIBIOTIC THERAPY, especially given in the drinking water</b> — this removes the competing bacterial flora and is by far the commonest cause.</li>" +
+      "<li>Corticosteroid or immunosuppressive treatment; immunosuppression from IBD, CIA or Marek disease.</li>" +
+      "<li><b>VITAMIN A DEFICIENCY</b>, which causes squamous metaplasia and impairs mucosal defence.</li>" +
+      "<li>Poor hygiene, dirty and wet drinkers and feeders, mouldy feed, overcrowding and debility.</li>" +
+      "</ul>" +
+      "<b>Clinical signs.</b> Often none in mild cases. Where present: <b>listlessness, ruffled feathers, inappetence, poor growth and unevenness, and a distended, doughy, pendulous CROP that is slow to empty and may have a sour, fermenting smell — hence \"sour crop\"</b>. There may be regurgitation and white plaques visible in the mouth.<br><br>" +
+      "<b>Gross pathology — the classic lesion.</b><br>" +
+      "<ul>" +
+      "<li><b>THE CROP IS THE PRINCIPAL SITE. Its mucosa is thickened and covered by RAISED, WHITE TO GREY-WHITE, SOFT, CURD-LIKE OR VELVETY PLAQUES AND A THICKENED PSEUDOMEMBRANE, classically described as a \"TURKISH TOWEL\" APPEARANCE</b> because of its rough, shaggy, towel-like texture. <b>The plaques are loosely adherent and can be scraped off to leave a red, raw, eroded surface.</b></li>" +
+      "<li>Similar lesions occur in the <b>oesophagus, mouth, tongue and PROVENTRICULUS</b>, where the mucosa becomes thickened, swollen and covered by necrotic material.</li>" +
+      "<li>The <b>proventriculus may be swollen and haemorrhagic</b>, and the gizzard lining may show erosions.</li>" +
+      "<li>Occasionally the intestine and, in immunosuppressed birds, the lungs and internal organs are involved.</li>" +
+      "</ul>" +
+      "<b>Microscopically:</b> the pseudomembrane consists of <b>necrotic epithelium, fibrin, heterophils and masses of organisms</b>. The diagnostic finding is <b>OVAL BUDDING YEASTS (blastoconidia) TOGETHER WITH PSEUDOHYPHAE — chains of elongated yeast cells constricted at the junctions like a STRING OF SAUSAGES — and true septate hyphae</b>. <b>The presence of pseudohyphae indicates tissue invasion rather than mere surface colonisation.</b> Invasion is usually confined to the superficial epithelium, with epithelial hyperplasia (acanthosis) and hyperkeratosis beneath. <b>PAS or GMS</b> demonstrates the organisms clearly.<br><br>" +
+
+      "<b>C. FAVUS (AVIAN DERMATOPHYTOSIS, WHITE COMB)</b><br><br>" +
+      "<b>Cause.</b> <b><i>Microsporum gallinae</i></b> (formerly <i>Trichophyton gallinae</i>) — a <b>dermatophyte</b>, a fungus that colonises <b>KERATIN ONLY</b> and cannot invade living tissue. It affects <b>chickens, turkeys and other birds</b>.<br><br>" +
+      "<b>Lesions.</b> A <b>chronic, slowly progressive, superficial mycosis of the unfeathered skin of the head</b>.<br>" +
+      "<ul>" +
+      "<li>Small <b>white, powdery or scaly patches appear on the COMB AND WATTLES</b>, which enlarge and coalesce until the comb is covered with a <b>thick, white, chalky, wrinkled crust — hence the name \"WHITE COMB\"</b>.</li>" +
+      "<li>The characteristic lesion is the <b>SCUTULUM — a CUP-SHAPED, SAUCER-LIKE, YELLOWISH-WHITE CRUST centred on a feather follicle</b>, with a depressed centre and raised edges. Scutula are the defining feature of favus in any species.</li>" +
+      "<li>There is a characteristic <b>mousy odour</b>.</li>" +
+      "<li>In advanced cases the infection extends to the <b>feathered skin of the head and neck, causing feather loss</b>, and rarely becomes generalised with emaciation and death.</li>" +
+      "</ul>" +
+      "<b>Microscopically:</b> <b>marked HYPERKERATOSIS and acanthosis of the epidermis, with fungal HYPHAE AND ARTHROSPORES CONFINED TO THE STRATUM CORNEUM AND THE FEATHER FOLLICLE — never in the dermis</b>. There is a mild perifollicular inflammatory infiltrate, and folliculitis where follicles are involved. Demonstrate with <b>KOH mount of scrapings, PAS or GMS staining, and culture on Sabouraud dextrose agar</b>.<br><br>" +
+      "<b>Note the contrast with the deep mycoses:</b> favus is a <b>SUPERFICIAL mycosis confined to keratin</b>, self-limiting and non-fatal, whereas aspergillosis is a <b>DEEP mycosis invading living tissue</b> and forming granulomas. Candidiasis lies between the two — invading the superficial epithelium of a mucosal surface but rarely going deeper in an immunocompetent bird.",
+
+    eliteDesc:
+      "<b>ASPERGILLOSIS IS A DISEASE OF DOSE, AND THAT SINGLE IDEA GOVERNS THE WHOLE TOPIC.</b> <i>Aspergillus fumigatus</i> is everywhere — in litter, feed, dust and air — and healthy birds inhale its spores constantly without harm. Disease requires either <b>an overwhelming spore dose</b> or <b>a compromised host</b>. Because the fungus does not spread from bird to bird, <b>every outbreak is an environmental statement</b>, and the correct response is to find the source rather than to isolate the affected birds. In young chicks the source is nearly always the <b>hatchery or the brooder litter</b>; in older birds it is <b>mouldy feed or damp litter</b>, often combined with immunosuppression. This makes aspergillosis unusual among infectious diseases in that <b>isolation and disinfection of birds achieve nothing while the source remains</b>.<br><br>" +
+      "<b>WHY THE AVIAN LUNG AND AIR SAC ARE SO VULNERABLE.</b> Three anatomical features conspire. Air flows <b>unidirectionally through the parabronchi</b>, delivering inhaled particles efficiently and deeply rather than allowing them to settle in a blind-ended alveolus. The <b>air sacs are large, thin-walled, poorly vascularised, almost devoid of cilia and populated by few defensive cells</b>, so they are effectively unguarded culture vessels continuously ventilated with unfiltered air. And the <b>spores of <i>A. fumigatus</i> are 2-3 micrometres across</b> — precisely the size that penetrates to the deepest air spaces. The consequence is that a bird placed in a spore-laden brooder receives a large inoculum directly into a compartment that cannot defend itself, which is why <b>brooder pneumonia is a disease of the first two weeks and why mortality can be so high</b>.<br><br>" +
+      "<b>THE FUNGUS FRUITS ONLY WHERE THERE IS AIR, AND THIS IS DIAGNOSTICALLY USEFUL.</b> <i>Aspergillus</i> reproduces asexually by forming a <b>conidiophore bearing a swollen vesicle with sterigmata and chains of conidia</b>, but this requires exposure to air. In solid tissue the fungus grows only as hyphae; in an <b>air sac, bronchus or trachea</b> it can complete its cycle and produce fruiting heads, and the greenish colour of the sporing colony becomes visible to the naked eye. Two practical consequences follow: the <b>green-blue furry growth on an air sac membrane is effectively diagnostic in the field</b>, and on histology the <b>presence of fruiting heads confirms both the identity of the fungus and that the lesion communicates with an air space</b>.<br><br>" +
+      "<b>ANGIOINVASION EXPLAINS WHY SOME LESIONS ARE INFARCTS.</b> <i>Aspergillus</i> hyphae penetrate the walls of arteries and veins and grow along the lumen, causing <b>thrombosis and downstream infarction</b>. This is why aspergillosis lesions are sometimes not tidy granulomas but wedge-shaped areas of coagulative necrosis with haemorrhagic borders, and why dissemination to brain, kidney and eye occurs once a vessel is breached. The general rule worth carrying is that <b>an area of necrosis with haemorrhage in a debilitated or heavily exposed animal should prompt a request for a silver stain before it is attributed to a purely vascular cause</b>.<br><br>" +
+      "<b>THE MORPHOLOGY IS THE DIAGNOSIS, AND FOUR QUESTIONS SETTLE IT.</b> In fungal pathology the pathologist identifies the organism by looking at it, and the discipline of description matters. <b>Is it a yeast or a hypha? If a hypha, is it septate or non-septate, narrow or broad, and at what angle does it branch?</b> <i>Aspergillus</i> is <b>septate, narrow, uniform and branches dichotomously at 45 degrees</b>; the zygomycetes are <b>non-septate, broad, ribbon-like and branch irregularly at about 90 degrees</b>. <i>Candida</i> shows <b>budding yeasts plus pseudohyphae</b>. Because all of these may be nearly invisible on routine haematoxylin and eosin, <b>PAS or GMS should be requested whenever fungal infection is suspected and the routine section looks unconvincing</b> — reporting \"granulomatous inflammation, cause not identified\" when a silver stain would have shown branching hyphae is a common and avoidable failure.<br><br>" +
+      "<b>CANDIDIASIS IS A DISEASE WE FREQUENTLY CAUSE OURSELVES.</b> <i>Candida albicans</i> is a normal commensal held in check by the competing bacterial flora and an intact epithelium. <b>Prolonged broad-spectrum antibiotic administration in the drinking water removes the competition</b>, and the yeast overgrows. This is iatrogenic disease in the most literal sense, and it should be read as a clinical warning: crop thrush appearing in a flock is often evidence that an antibiotic course was too long, unnecessary, or given without a diagnosis. The accompanying morphological point is worth noting — the shift from harmless commensal to invasive pathogen is marked by the <b>formation of pseudohyphae and true hyphae</b>, so <b>seeing pseudohyphae in a section is evidence of invasion rather than of mere surface carriage</b>.<br><br>" +
+      "<b>THE VITAMIN A CONNECTION IS REAL AND OFTEN MISSED.</b> Vitamin A maintains the differentiation of mucosal epithelium. Deficiency causes <b>squamous metaplasia of the normally columnar and glandular epithelium of the alimentary and respiratory tract</b>, destroying local defences and providing a keratinised surface that <i>Candida</i> colonises readily. Consequently, <b>an outbreak of crop thrush should prompt a review of vitamin A status and of feed quality as well as of the antibiotic history</b>, and the two problems frequently coexist in poorly managed Indian units where stored feed has lost vitamin activity.<br><br>" +
+      "<b>FAVUS ILLUSTRATES THE KERATIN RESTRICTION.</b> Dermatophytes possess keratinases and can exploit a nutrient source almost no other organism can use, but they are <b>incapable of invading living tissue</b> in an immunocompetent host, partly because they cannot grow at core body temperature and partly because serum transferrin sequesters the iron they need. Every feature follows: the lesion stays <b>superficial and confined to the stratum corneum and feather follicle</b>, it is <b>chronic and slowly progressive rather than acute</b>, it is <b>self-limiting and rarely fatal</b>, and it <b>heals without scarring</b> unless deep folliculitis has occurred. The <b>scutulum</b> — the cup-shaped crust centred on a follicle — is the characteristic architecture, formed as the fungus grows radially outward within the keratin around a follicular opening, and its presence in any species indicates favus.<br><br>" +
+      "<b>A NOTE ON ZOONOTIC AND OCCUPATIONAL RISK.</b> Cleaning out a poultry shed, handling mouldy litter or emptying a hatcher generates dense clouds of <i>Aspergillus</i> conidia, and heavy inhalation can cause allergic and, in immunocompromised people, invasive disease. <b><i>Microsporum gallinae</i> is also transmissible to man</b>, producing an inflamed ringworm lesion on the hands and forearms of handlers. The practical protections are the same in both cases — <b>dampen litter before removing it, wear a properly fitting mask, ventilate, and wear gloves when handling birds with skin lesions</b> — and they are worth stating explicitly to workers who regard dust as an unavoidable part of the job.",
+
+    keyPoints: [
+      "AVIAN ASPERGILLOSIS (BROODER PNEUMONIA) = ASPERGILLUS FUMIGATUS chiefly, from DAMP LITTER, MOULDY STRAW AND PADDY HUSK, MOULDY FEED and CONTAMINATED HATCHERY EQUIPMENT.",
+      "IT IS NOT TRANSMITTED FROM BIRD TO BIRD — it is an INHALATION DISEASE OF DOSE. Every outbreak is a statement about the LITTER, FEED or HATCHERY, and the investigation must go there.",
+      "The ACUTE form affects CHICKS AND POULTS IN THE FIRST TWO WEEKS, often traceable to a single hatch, with mortality up to 50 per cent or more.",
+      "Signs are GASPING AND OPEN-MOUTH BREATHING WITH NO RATTLE OR MOIST RALE — because the airways are not filled with fluid. This silent dyspnoea is diagnostically useful.",
+      "THE CLASSIC LESION: MULTIPLE DISCRETE FIRM YELLOW-WHITE NODULES (GRANULOMAS) STUDDING THE LUNG AND AIR SACS — the lung feels gritty, as if shot with buckshot.",
+      "GREEN OR BLUE-GREEN FURRY VELVETY FUNGAL COLONIES growing on the air sac membranes are VIRTUALLY DIAGNOSTIC — the fungus can only FRUIT where there is AIR.",
+      "OCULAR ASPERGILLOSIS gives a yellow caseous plaque under the nictitating membrane with a cloudy cornea.",
+      "ASPERGILLUS IN TISSUE: SEPTATE, NARROW (3-6 micrometre), UNIFORM hyphae branching DICHOTOMOUSLY AT ABOUT 45 DEGREES, RADIATING outward from the lesion centre.",
+      "In air-filled spaces the FRUITING HEAD (conidiophore with vesicle, sterigmata and chains of conidia) may be seen and is DIAGNOSTIC.",
+      "ASPERGILLUS IS ANGIOINVASIVE — hyphae penetrate vessels causing THROMBOSIS AND INFARCTION, so lesions may be infarcts with a haemorrhagic rim.",
+      "The histological lesion is a GRANULOMA with caseous centre, macrophages, epithelioid cells and MULTINUCLEATED GIANT CELLS. USE PAS OR GMS — hyphae are easily missed on routine H and E.",
+      "The avian lung and air sac are vulnerable because airflow is UNIDIRECTIONAL, air sacs have POOR BLOOD SUPPLY, ALMOST NO CILIA and FEW DEFENSIVE CELLS, and A. fumigatus spores are 2-3 micrometres — exactly the size that reaches the deepest air spaces.",
+      "AVIAN CANDIDIASIS (THRUSH, SOUR CROP) = CANDIDA ALBICANS, a NORMAL COMMENSAL and therefore the classic OPPORTUNIST.",
+      "THE COMMONEST CAUSE IS PROLONGED BROAD-SPECTRUM ANTIBIOTIC THERAPY IN THE DRINKING WATER, which removes the competing bacterial flora. This is IATROGENIC DISEASE.",
+      "VITAMIN A DEFICIENCY also predisposes, by causing SQUAMOUS METAPLASIA of mucosal epithelium — review vitamin A and feed quality as well as the antibiotic history.",
+      "THE CLASSIC LESION: THE CROP mucosa thickened and covered by RAISED WHITE CURD-LIKE PLAQUES AND A PSEUDOMEMBRANE with a 'TURKISH TOWEL' APPEARANCE, LOOSELY ADHERENT and scraping off to leave a RED RAW ERODED SURFACE.",
+      "Similar lesions occur in the OESOPHAGUS, MOUTH and PROVENTRICULUS. The crop is doughy, pendulous, slow to empty and smells sour.",
+      "CANDIDA IN TISSUE: OVAL BUDDING YEASTS (blastoconidia) PLUS PSEUDOHYPHAE — chains of elongated cells constricted at the junctions like a STRING OF SAUSAGES.",
+      "THE PRESENCE OF PSEUDOHYPHAE INDICATES TISSUE INVASION rather than mere surface colonisation.",
+      "FAVUS (WHITE COMB) = MICROSPORUM GALLINAE, a DERMATOPHYTE colonising KERATIN ONLY and unable to invade living tissue.",
+      "Favus produces white powdery scaly patches on the COMB AND WATTLES that coalesce into a THICK WHITE CHALKY WRINKLED CRUST, with a characteristic MOUSY ODOUR.",
+      "THE DEFINING LESION IS THE SCUTULUM — a CUP-SHAPED, SAUCER-LIKE YELLOWISH-WHITE CRUST CENTRED ON A FEATHER FOLLICLE with a depressed centre and raised edges.",
+      "Favus histology: HYPERKERATOSIS and acanthosis with hyphae and arthrospores CONFINED TO THE STRATUM CORNEUM AND FEATHER FOLLICLE — NEVER in the dermis.",
+      "SUPERFICIAL versus DEEP: FAVUS is confined to KERATIN (self-limiting, non-fatal); ASPERGILLOSIS invades LIVING TISSUE and forms GRANULOMAS; CANDIDIASIS invades only SUPERFICIAL EPITHELIUM of a mucosal surface.",
+      "OCCUPATIONAL RISK: emptying a hatcher or handling mouldy litter generates dense clouds of Aspergillus conidia — DAMPEN LITTER BEFORE REMOVING IT AND WEAR A MASK. M. gallinae also infects man."
+    ],
+
+    clinical:
+      "<b>Why this matters in Indian practice.</b><br>" +
+      "<b>Gasping chicks in the first fortnight with no rattle should send you to the brooder litter, not to the antibiotic cupboard.</b> The silent, open-mouthed dyspnoea of brooder pneumonia is quite different from the moist rales of a bacterial or mycoplasmal infection, and recognising it early is what allows the source to be corrected before the whole batch is lost. Aspergillosis does not respond to antibiotics, and giving them wastes both money and time.<br><br>" +
+      "<b>At post-mortem, feel the lung before you cut it.</b> A lung studded with hard, gritty, yellow-white nodules is the classic finding, and running a finger over the cut surface detects it immediately. Then <b>open the air sacs and look for greenish, furry, velvety growth on the membranes</b> — when present this is effectively diagnostic in the field, because the fungus can only fruit and produce its green spores where there is air. Confirm quickly by <b>crushing a nodule in 10-20 per cent KOH and looking for septate, 45-degree branching hyphae</b>, which needs nothing more than a slide and a microscope.<br><br>" +
+      "<b>Find the source, because the birds did not catch it from each other.</b> When aspergillosis is confirmed, go and look at the litter — <b>damp, caked paddy husk or straw is the commonest source in Indian units, particularly during and after the monsoon</b>. If the affected birds are day-olds or from a single hatch, the source is more likely the <b>hatchery: contaminated setters, hatchers, egg trays or a dirty hatcher room</b>, and this should be raised with the supplier. Also inspect stored feed for mould. Advise <b>dry, fresh, properly stored litter, good ventilation to reduce humidity, avoidance of mouldy paddy husk, and thorough cleaning and fumigation of hatchery equipment</b>.<br><br>" +
+      "<b>Treat crop thrush as a warning about your own prescribing.</b> When you find a crop lined with white, curd-like, towel-textured plaques that scrape off to leave a raw surface, ask what antibiotics the flock has been receiving and for how long. <b>Prolonged broad-spectrum antibiotic in the drinking water is the commonest cause</b>, and the correct response is to <b>stop the antibiotic rather than to add another one</b>, and to review whether the original course was justified. At the same time check the ration for vitamin A adequacy and the feed store for damp and mould, since deficiency and mycotoxins both predispose.<br><br>" +
+      "<b>Attend to the drinkers.</b> Dirty, slimy, wet drinker lines and troughs, and wet spilled feed around them, are a continuing source of <i>Candida</i> and of the moisture that supports it. Advise cleaning and flushing of the water lines, particularly after any course of in-water medication, and correcting leaks that keep the litter wet.<br><br>" +
+      "<b>Recognise white comb and reassure the owner appropriately.</b> A backyard or breeder bird with a comb progressively covered by white, chalky, wrinkled crusts, with cup-shaped scutula around the feather follicles and a mousy smell, has favus. Explain that it is a <b>superficial fungal infection confined to the keratin, that it is slow and chronic but not fatal, and that it will not invade the bird&rsquo;s organs</b>. Because dermatophyte lesions spread by contact, affected birds should be separated, and — importantly — <b>the owner should be told that <i>Microsporum gallinae</i> can infect people</b>, so gloves should be worn when handling and treating affected birds.<br><br>" +
+      "<b>Protect yourself in the dusty jobs.</b> Cleaning out a poultry shed, turning mouldy litter or emptying a hatcher releases enormous numbers of fungal spores. Heavy inhalation causes allergic respiratory disease, and in anyone immunosuppressed it can cause serious invasive infection. <b>Dampen litter before removing it rather than sweeping it dry, wear a properly fitting mask, ventilate the building, and do not stand in the dust cloud.</b> This advice is routinely ignored on Indian farms and is worth giving explicitly to the workers as well as to the owner.<br><br>" +
+      "<b>Finally, ask for the right stain.</b> If you submit tissue for histopathology and suspect a fungal cause, <b>say so, and specifically request PAS or Gomori methenamine silver</b>. Fungal hyphae are frequently almost invisible on routine haematoxylin and eosin, and a report of \"chronic granulomatous inflammation, cause not identified\" when a silver stain would have shown branching hyphae is a common and entirely avoidable outcome.",
+
+    tables: [
+      {
+        title: "The three avian mycoses compared",
+        headers: ["Feature", "ASPERGILLOSIS", "CANDIDIASIS (thrush)", "FAVUS"],
+        rows: [
+          ["Organism", "Aspergillus fumigatus (mould)", "Candida albicans (yeast)", "Microsporum gallinae (dermatophyte)"],
+          ["Depth of invasion", "DEEP — invades living tissue", "SUPERFICIAL mucosal epithelium", "KERATIN ONLY — never living tissue"],
+          ["Main site", "LUNG and AIR SACS", "CROP, oesophagus, proventriculus", "COMB and WATTLES"],
+          ["Key lesion", "Hard YELLOW-WHITE NODULES; GREEN furry air sac growth", "WHITE CURD-LIKE 'TURKISH TOWEL' plaques", "White chalky crusts; CUP-SHAPED SCUTULA"],
+          ["Age", "Chicks, first 2 weeks (acute form)", "Any; often after antibiotics", "Adults, chronic"],
+          ["Morphology in tissue", "SEPTATE hyphae, 45-degree DICHOTOMOUS branching", "BUDDING YEASTS + PSEUDOHYPHAE", "Hyphae and arthrospores in stratum corneum"],
+          ["Tissue reaction", "GRANULOMA with GIANT CELLS", "Pseudomembrane; epithelial hyperplasia", "Hyperkeratosis, mild folliculitis"],
+          ["Mortality", "Up to 50 per cent in chicks", "Low", "Very low"],
+          ["Main predisposing cause", "HEAVY SPORE DOSE from litter/hatchery", "PROLONGED ANTIBIOTICS; vitamin A deficiency", "Contact; poor condition"],
+          ["Bird-to-bird spread", "NO", "Commensal overgrowth", "YES, by contact"],
+          ["Zoonotic", "Occupational (dust inhalation)", "Rarely", "YES — ringworm in handlers"]
+        ]
+      },
+      {
+        title: "Nodules in the avian lung — the differential",
+        headers: ["Cause", "Character of nodule", "Decisive feature"],
+        rows: [
+          ["ASPERGILLOSIS", "Firm, gritty, YELLOW-WHITE, discrete; GREEN growth in air sacs", "SEPTATE 45-degree branching hyphae on GMS/PAS"],
+          ["AVIAN TUBERCULOSIS", "Irregular grey-yellow, encapsulated, NOT calcified", "ACID-FAST bacilli on ZIEHL-NEELSEN"],
+          ["Coligranuloma (Hjarre)", "Nodular granulomas, also liver and caeca", "Gram-negative rods, NOT acid-fast"],
+          ["Marek disease", "Soft grey-white tumour nodules", "PLEOMORPHIC lymphoid cells; ENLARGED NERVES"],
+          ["Lymphoid leukosis", "Soft grey-white tumour", "MONOMORPHIC lymphoblasts; NODULAR BURSA"],
+          ["Fowl cholera", "Pinpoint necrotic foci (mainly liver)", "BIPOLAR organisms; acute septicaemia"]
+        ]
+      },
+      {
+        title: "Investigating an aspergillosis outbreak — where to look",
+        headers: ["If affected birds are...", "Look at...", "Corrective action"],
+        rows: [
+          ["Day-old to a few days, from one hatch", "HATCHERY — setters, hatchers, egg trays, hatcher room", "Clean and fumigate hatchery; raise with supplier"],
+          ["First two weeks in the brooder", "BROODER LITTER — damp, caked paddy husk or straw", "Fresh dry litter; reduce humidity; ventilate"],
+          ["Older growing birds", "FEED STORE — mouldy grain and cake", "Reject mouldy feed; improve storage"],
+          ["Adults, sporadic", "IMMUNOSUPPRESSION and prolonged medication", "Address IBD/CIA/mycotoxins; review drug use"],
+          ["After a wet spell or monsoon", "Roof leaks, wet walls, condensation", "Repair leaks; improve drainage and airflow"],
+          ["Any — for the workers", "Dust generated during cleaning", "DAMPEN litter before removal; MASKS"]
+        ]
+      }
+    ],
+
+    img: "",
+    tags: ["aspergillosis", "brooder pneumonia", "Aspergillus fumigatus", "air sac", "fruiting head", "conidiophore", "septate hyphae", "45 degree branching", "angioinvasive", "granuloma", "GMS", "PAS", "candidiasis", "thrush", "sour crop", "turkish towel", "pseudohyphae", "favus", "white comb", "Microsporum gallinae", "scutulum"]
+  },
+
+  "u5-t16": {
+    /* Avian Mycotoxicoses — Aflatoxicosis, Ochratoxicosis, Trichothecosis */
+    summary: "Fungal poisons in stored feed: aflatoxin destroys the liver and the immune system so vaccines fail; ochratoxin destroys the kidney and causes visceral gout; and trichothecenes burn the mouth and beak and wipe out the bone marrow.",
+
+    desc:
+      "<b>A. GENERAL PRINCIPLES OF MYCOTOXICOSIS IN POULTRY</b><br><br>" +
+      "A <b>mycotoxicosis is a POISONING, not an infection</b>. The bird eats feed on which a fungus has grown and produced a toxic secondary metabolite; <b>the fungus itself need not be alive or present at the time of feeding</b>. Four features follow and should be stated in any answer:<br>" +
+      "<ul>" +
+      "<li><b>Not transmissible</b> from bird to bird.</li>" +
+      "<li><b>Not febrile</b>, and <b>does not respond to antibiotics</b> — repeated failure of antibiotic treatment in a flock is itself a clue.</li>" +
+      "<li><b>Affects the whole group sharing one FEED BATCH</b>, with severity related to intake; birds on a different batch are unaffected.</li>" +
+      "<li>Most mycotoxins are <b>HEAT-STABLE</b> and survive pelleting, cooking and ordinary processing.</li>" +
+      "</ul>" +
+      "<b>Conditions favouring toxin production:</b> moisture above about 14 per cent, warmth, poor ventilation, broken or damaged grain and prolonged storage — precisely the conditions of monsoon feed storage in India. <b>Mixed contamination with more than one mycotoxin is the rule rather than the exception</b>, and the effects are additive.<br><br>" +
+      "<b>THE SINGLE MOST IMPORTANT PRACTICAL POINT IN POULTRY: the commonest field presentation of mycotoxicosis is NOT a dramatic poisoning but a flock that GROWS POORLY, CONVERTS FEED BADLY, FAILS TO RESPOND TO VACCINATION AND KEEPS BREAKING WITH SECONDARY INFECTIONS.</b><br><br>" +
+
+      "<b>B. AFLATOXICOSIS — THE MOST IMPORTANT MYCOTOXICOSIS OF INDIAN POULTRY</b><br><br>" +
+      "<b>Toxin and source.</b> <b>AFLATOXINS B1, B2, G1 and G2</b>, produced by <b><i>Aspergillus flavus</i> and <i>A. parasiticus</i></b>. <b>AFLATOXIN B1 is the most potent and is the most potent naturally occurring hepatocarcinogen known.</b><br>" +
+      "<b>The classic Indian sources are GROUNDNUT (peanut) CAKE and MAIZE</b>, and also cottonseed cake, rice bran and sorghum, stored damp through the monsoon.<br><br>" +
+      "<b>Species susceptibility — and note the poultry order.</b> <b>DUCKLINGS are the MOST SENSITIVE of all species</b> and are the basis of the classical duckling bioassay; then <b>turkey poults</b>, then <b>broiler chicks</b>, with <b>layers and adult birds relatively more resistant</b>. <b>Young birds are far more susceptible than adults.</b><br><br>" +
+      "<b>Mechanism.</b> Aflatoxin B1 is itself inactive. It is <b>bioactivated in the liver by cytochrome P450 to AFLATOXIN B1-8,9-EPOXIDE</b>, a highly reactive electrophile which:<br>" +
+      "<ul>" +
+      "<li><b>Binds DNA</b>, causing mutation and, on chronic exposure, <b>hepatocellular carcinoma</b>.</li>" +
+      "<li><b>Binds RNA and inhibits RNA POLYMERASE, blocking PROTEIN SYNTHESIS.</b> This is the key to the whole clinical picture in poultry.</li>" +
+      "</ul>" +
+      "<b>Blocked protein synthesis explains everything that matters commercially:</b><br>" +
+      "<ul>" +
+      "<li><b>IMMUNOSUPPRESSION</b> — reduced immunoglobulin and complement synthesis, atrophy of the <b>BURSA OF FABRICIUS AND THYMUS</b>, impaired macrophage function, and consequently <b>FAILURE TO RESPOND TO VACCINATION</b> against Ranikhet disease, infectious bursal disease and everything else, with increased susceptibility to colibacillosis, coccidiosis, salmonellosis and inclusion body hepatitis.</li>" +
+      "<li><b>Reduced albumin and clotting factors</b> — giving oedema, ascites, and a <b>marked haemorrhagic tendency with bruising of the carcass and haemorrhage at injection and processing sites</b>.</li>" +
+      "<li><b>Poor growth, poor feed conversion, reduced pigmentation of shanks and skin, drop in egg production and hatchability.</b></li>" +
+      "</ul>" +
+      "<b>Gross pathology.</b><br>" +
+      "<ul>" +
+      "<li><b>Acute: the LIVER IS ENLARGED, PALE, YELLOW-TAN AND FATTY, FRIABLE, with an accentuated lobular pattern and SUBCAPSULAR HAEMORRHAGES</b>; the gall bladder is distended.</li>" +
+      "<li><b>Chronic (the common field form): the LIVER IS SMALL, HARD, PALE, FIRM AND FIBROTIC, sometimes NODULAR (CIRRHOSIS)</b>.</li>" +
+      "<li><b>ATROPHY OF THE BURSA OF FABRICIUS AND THYMUS</b> — a critical and easily checked finding.</li>" +
+      "<li><b>Widespread haemorrhages in muscle, subcutis and viscera</b>; pale carcass; enlarged pale kidneys; ascites and hydropericardium in severe cases.</li>" +
+      "<li>Pale, poorly pigmented shanks and beak.</li>" +
+      "</ul>" +
+      "<b>Microscopic pathology — the diagnostic triad of chronic aflatoxicosis:</b><br>" +
+      "<ol>" +
+      "<li><b>BILE DUCT PROLIFERATION</b> — striking and highly characteristic.</li>" +
+      "<li><b>FIBROSIS</b>, chiefly periportal, progressing to cirrhosis.</li>" +
+      "<li><b>MEGALOCYTOSIS</b> — greatly enlarged hepatocytes and nuclei, because the toxin blocks mitosis while the cell continues to grow and replicate DNA.</li>" +
+      "</ol>" +
+      "with fatty change and hepatocellular necrosis in addition, and <b>lymphoid depletion of bursa, thymus and spleen</b>.<br><br>" +
+      "<b>Residues:</b> <b>aflatoxin M1 is excreted in eggs and is present in liver and muscle</b>, which is a genuine food-safety concern.<br><br>" +
+
+      "<b>C. OCHRATOXICOSIS</b><br><br>" +
+      "<b>Toxin and source.</b> <b>OCHRATOXIN A</b>, produced by <b><i>Aspergillus ochraceus</i> and <i>Penicillium verrucosum</i></b> on stored maize, wheat, barley, sorghum and groundnut.<br><br>" +
+      "<b>THE ONE-LINE RULE: AFLATOXIN IS A LIVER TOXIN; OCHRATOXIN IS A KIDNEY TOXIN.</b> Ochratoxin is in fact <b>considerably more nephrotoxic to poultry than aflatoxin, and is one of the most potent nephrotoxins affecting birds.</b><br><br>" +
+      "<b>Mechanism.</b> Ochratoxin A competes with phenylalanine and <b>inhibits PHENYLALANINE-tRNA SYNTHETASE, blocking protein synthesis</b>; it is concentrated in and damages the <b>PROXIMAL CONVOLUTED TUBULE</b>.<br><br>" +
+      "<b>Clinical signs.</b> Poor growth and feed conversion, <b>marked WET DROPPINGS AND WET LITTER</b> from polyuria, increased water intake, reduced egg production with <b>poor shell quality and pale yolks</b>, and <b>immunosuppression</b>.<br><br>" +
+      "<b>Gross pathology.</b><br>" +
+      "<ul>" +
+      "<li><b>THE KIDNEYS ARE MARKEDLY SWOLLEN AND PALE, later becoming SHRUNKEN, FIRM AND FIBROSED with a granular, pitted surface.</b></li>" +
+      "<li><b>VISCERAL GOUT — chalky white urate deposits on the PERICARDIUM, LIVER CAPSULE, AIR SACS AND PERITONEUM — and ARTICULAR GOUT</b>, because birds are <b>uricotelic and excrete poorly soluble uric acid largely by tubular secretion</b>, so tubular damage rapidly causes urate retention.</li>" +
+      "<li>Ureters distended with urates.</li>" +
+      "<li>Pale, enlarged, fatty liver (ochratoxin is mildly hepatotoxic too), and <b>atrophy of bursa and thymus</b>.</li>" +
+      "</ul>" +
+      "<b>Microscopically:</b> <b>degeneration and necrosis of proximal tubular epithelium, thickened tubular basement membranes, interstitial oedema, lymphocyte and heterophil infiltration, and later tubular atrophy with interstitial FIBROSIS — a chronic interstitial nephritis</b>, with urate tophi and giant cells. <b>Fix a duplicate piece of kidney in ABSOLUTE ALCOHOL, since urate crystals dissolve in formalin.</b><br><br>" +
+
+      "<b>D. TRICHOTHECENE TOXICOSIS (TRICHOTHECOSIS)</b><br><br>" +
+      "<b>Toxins and source.</b> <b>T-2 TOXIN, DIACETOXYSCIRPENOL (DAS), DEOXYNIVALENOL (DON, \"vomitoxin\")</b> and others, produced by <b><i>Fusarium</i></b> species (and <i>Stachybotrys</i>) on stored maize, wheat, barley and other grains.<br><br>" +
+      "<b>Mechanism.</b> Trichothecenes are potent <b>inhibitors of PROTEIN SYNTHESIS AT THE RIBOSOME (the peptidyl transferase site)</b>, and are additionally <b>directly CAUSTIC (vesicant) on contact with mucosa and skin</b>. They therefore strike hardest at tissues that divide and synthesise most rapidly, and at any surface the toxin physically touches.<br><br>" +
+      "<b>Gross pathology — TWO targets, and this is the structure of the answer.</b><br>" +
+      "<ol>" +
+      "<li><b>ORAL AND ALIMENTARY LESIONS FROM DIRECT CONTACT — the characteristic and most useful finding in poultry. RAISED, YELLOW-WHITE, CASEOUS, NECROTIC PLAQUES AND ULCERS ON THE MARGINS OF THE BEAK, THE ANGLES OF THE MOUTH, THE HARD PALATE, THE TONGUE AND THE MUCOSA OF THE MOUTH</b>, extending to the <b>oesophagus, crop, proventriculus and GIZZARD, where the koilin lining becomes eroded and ulcerated</b>. There is marked <b>FEED REFUSAL</b> and reduced intake.</li>" +
+      "<li><b>BONE MARROW AND LYMPHOID DESTRUCTION</b> — the rapidly dividing haematopoietic tissue is destroyed, giving <b>LEUKOPENIA, THROMBOCYTOPENIA WITH WIDESPREAD HAEMORRHAGE, ANAEMIA, LYMPHOID DEPLETION, and ATROPHY OF THE THYMUS AND BURSA with profound IMMUNOSUPPRESSION</b>. The bone marrow becomes pale and fatty.</li>" +
+      "</ol>" +
+      "Also: <b>dermal necrosis at points of contact (vent, feet), poor growth, reduced egg production and thin shells, and abnormal feathering</b>.<br><br>" +
+      "<b>Note also ZEARALENONE</b>, another <i>Fusarium</i> toxin, which is <b>oestrogenic</b> and causes reproductive abnormality, and <b>FUMONISIN</b>, which causes poor growth and hepatic and renal damage.<br><br>" +
+
+      "<b>E. DIAGNOSIS AND CONTROL IN POULTRY</b><br><br>" +
+      "<b>Diagnosis</b> rests on <b>the flock pattern (a group on one feed batch, afebrile, unresponsive to antibiotics), the lesions, and estimation of the toxin in a properly collected FEED SAMPLE</b>. Sampling is critical: <b>mycotoxin contamination is patchy, so take many small subsamples from different points and depths of the batch, mix them, and submit a representative composite</b> — a handful from the top of one sack is worthless.<br><br>" +
+      "<b>Control:</b> reject caked, musty, discoloured or warm feed; buy in quantities that will be used quickly rather than stored through the rains; keep feed on pallets off the floor and away from damp walls; ventilate the store; and use <b>toxin binders (hydrated sodium calcium aluminosilicate, esterified glucomannan) in the ration</b> where contamination is suspected. <b>Boiling, cooking, pelleting and sun-drying DO NOT destroy aflatoxin</b> — a widespread and dangerous misconception.",
+
+    eliteDesc:
+      "<b>THE LIVER POISONS ITSELF, AND THAT EXPLAINS THE SPECIES AND AGE DIFFERENCES.</b> Aflatoxin B1 as eaten is chemically unremarkable. It becomes lethal only after <b>hepatic cytochrome P450 oxidises it to the 8,9-epoxide</b>, a strained, highly electrophilic ring that attacks any nucleophile it meets — guanine in DNA, ribose in RNA, and lysine residues in protein. Three conclusions follow. First, the organ with the greatest capacity to metabolise foreign compounds <b>generates the toxin within itself</b>, which is why the liver is damaged so selectively while the gut through which the toxin passed is spared. Second, <b>species and age differences reflect the balance between activation by P450 and detoxification by glutathione S-transferase</b>: ducklings activate efficiently and conjugate poorly, hence their extreme sensitivity and their use in the classical bioassay. Third, <b>young birds suffer far more than adults</b> because immature conjugating capacity leaves more epoxide free to bind macromolecules.<br><br>" +
+      "<b>THE RNA EFFECT MATTERS MORE THAN THE DNA EFFECT IN COMMERCIAL POULTRY.</b> Binding DNA and mutating tumour suppressor genes is a slow, cumulative process whose endpoint is <b>hepatocellular carcinoma years later</b> — largely irrelevant in a broiler slaughtered at six weeks. Binding RNA and blocking transcription is <b>immediate and dose-dependent</b>, and its endpoint is failure of hepatic protein synthesis. That is why the practical face of aflatoxicosis in a poultry unit is not liver cancer but <b>low albumin with ascites, low clotting factors with carcass bruising, and above all profound immunosuppression with vaccination failure</b>. A farmer who reports that his Ranikhet vaccine \"did not work\" may be describing an aflatoxin problem, and checking the feed store is often more informative than checking the cold chain.<br><br>" +
+      "<b>MEGALOCYTOSIS IS A MECHANISM MADE VISIBLE, AND IT HAS A SHORT DIFFERENTIAL.</b> When a toxin blocks mitosis but not cell growth or DNA synthesis, the hepatocyte continues to enlarge and to replicate its DNA without ever dividing, producing a cell and nucleus several times normal size. The same principle produces the <b>bile duct proliferation</b>: biliary epithelium arises from bipotential progenitor cells that proliferate along the biliary line when hepatocyte division is blocked but the liver is under continuing demand to regenerate. The <b>triad of megalocytosis, bile duct proliferation and periportal fibrosis</b> is therefore not a list of three findings but one coherent story of blocked mitosis, and its differential is essentially <b>aflatoxin versus pyrrolizidine alkaloid</b> — distinguished by the feeding history rather than by the section.<br><br>" +
+      "<b>WHY BIRDS ARE UNIQUELY VULNERABLE TO OCHRATOXIN.</b> Birds are <b>uricotelic</b>: they excrete nitrogen as poorly soluble <b>uric acid</b> rather than urea, they have <b>no urinary bladder</b> in which to dilute and store urine, and they rely heavily on <b>active tubular secretion</b> rather than filtration alone to clear urate. The margin between the normal plasma urate concentration and its saturation point is therefore narrow. Ochratoxin concentrates in and destroys the <b>proximal convoluted tubule</b>, precisely the segment responsible for that secretion. The consequence is that a degree of tubular damage a mammal would tolerate without incident pushes a bird past urate saturation within days, and <b>crystals precipitate in tissue as visceral and articular gout</b>. This is why ochratoxin is described as one of the most potent nephrotoxins affecting poultry and why gout is such a characteristic finding.<br><br>" +
+      "<b>GOUT IS A SIGN, NOT A DIAGNOSIS.</b> Finding chalky urate over the heart and liver is easy; deciding why it is there is the useful work. The list to exclude in an Indian unit is <b>water deprivation (a power cut, a blocked drinker line, inadequate drinker space in summer heat), excess dietary calcium (layer ration fed to growers), excess protein, vitamin A deficiency, nephropathogenic infectious bronchitis, avian nephritis virus, and ochratoxin</b>. Most of these are management faults correctable the same day, and they are far commoner than the toxin. The diagnostic habit worth acquiring is to <b>work through that list before attributing gout to any single cause</b>. One technical point is easily lost: <b>urate crystals dissolve in formalin</b>, so a kidney submitted only in formalin may come back with the very evidence sought having been washed away — always fix a duplicate piece in absolute alcohol.<br><br>" +
+      "<b>PROTEIN SYNTHESIS INHIBITION IS THE COMMON THREAD, AND IT EXPLAINS THE ADDITIVE EFFECT.</b> All three of these mycotoxins block protein synthesis, but at different points: <b>aflatoxin at transcription (RNA polymerase), ochratoxin at aminoacyl-tRNA charging (phenylalanine-tRNA synthetase), and trichothecenes at translation (peptidyl transferase on the ribosome)</b>. Because they share an endpoint, they share consequences — <b>all three are immunosuppressive, all three damage rapidly dividing tissue, and all three impair growth</b> — and because field samples are usually contaminated with more than one, the effects are additive or worse. This is the mechanistic reason why <b>a feed containing several mycotoxins each below its individual \"safe\" level can still produce clinical disease</b>, and why interpreting a laboratory report by comparing single toxins against single thresholds can be misleading.<br><br>" +
+      "<b>THE TRICHOTHECENE MOUTH LESION IS A CONTACT BURN, NOT A SYSTEMIC EFFECT.</b> Trichothecenes are directly vesicant, so the lesions appear <b>wherever the toxin physically touches tissue</b> — the beak margins, the angles of the mouth, the palate and tongue, and onward through oesophagus, crop and gizzard. This distinguishes them from the other mycotoxins, whose lesions are in organs remote from the point of contact. The distribution is therefore diagnostically informative: <b>caseous necrotic plaques concentrated at the beak commissures and palate in a flock refusing feed point specifically at <i>Fusarium</i> toxins</b>. The accompanying marrow destruction is the systemic half of the same protein-synthesis block, and the combination of <b>oral ulceration plus unexplained bruising and pallor</b> is close to characteristic.<br><br>" +
+      "<b>SAMPLING IS WHERE MOST MYCOTOXIN INVESTIGATIONS FAIL.</b> Fungal growth and toxin production in a feed batch are extremely <b>patchy</b>, concentrated in pockets of higher moisture — near a wall, at the bottom of a bin, around a leak. A single handful taken from the top of one convenient sack has a high probability of missing the contaminated pocket entirely, and a negative laboratory report obtained that way is meaningless. The correct method is to take <b>many small subsamples from different points and depths across the batch, combine and mix them thoroughly, and submit a representative composite</b>. Telling the farmer why this matters usually secures better cooperation than simply asking for \"a sample of the feed\".",
+
+    keyPoints: [
+      "A MYCOTOXICOSIS IS A POISONING, NOT AN INFECTION — not transmissible, NOT FEBRILE, DOES NOT RESPOND TO ANTIBIOTICS, affects a group sharing one FEED BATCH, and most mycotoxins are HEAT-STABLE.",
+      "THE COMMONEST FIELD PRESENTATION IN POULTRY IS NOT DRAMATIC POISONING BUT POOR GROWTH, POOR FEED CONVERSION, VACCINATION FAILURE AND REPEATED SECONDARY INFECTIONS.",
+      "AFLATOXINS B1, B2, G1, G2 come from ASPERGILLUS FLAVUS and A. PARASITICUS. B1 is the most potent and is the MOST POTENT NATURAL HEPATOCARCINOGEN KNOWN.",
+      "The classic Indian sources are GROUNDNUT (PEANUT) CAKE and MAIZE stored damp through the monsoon.",
+      "SUSCEPTIBILITY ORDER IN BIRDS: DUCKLINGS (most sensitive — the classical bioassay) > TURKEY POULTS > BROILER CHICKS > layers and adults. YOUNG birds are far more susceptible.",
+      "Aflatoxin B1 is INACTIVE until bioactivated by hepatic CYTOCHROME P450 to the 8,9-EPOXIDE — so THE LIVER POISONS ITSELF.",
+      "The epoxide binds DNA (mutation, hepatocellular carcinoma) and binds RNA, INHIBITING RNA POLYMERASE AND BLOCKING PROTEIN SYNTHESIS. In commercial poultry the RNA effect is what matters.",
+      "Blocked protein synthesis causes IMMUNOSUPPRESSION with BURSAL AND THYMIC ATROPHY and VACCINATION FAILURE; low albumin (ascites); LOW CLOTTING FACTORS (carcass bruising and haemorrhage); and poor growth and pigmentation.",
+      "ACUTE aflatoxicosis: liver ENLARGED, PALE YELLOW-TAN, FATTY and FRIABLE with subcapsular haemorrhages. CHRONIC: liver SMALL, HARD, PALE, FIBROTIC and nodular (CIRRHOSIS).",
+      "THE DIAGNOSTIC MICROSCOPIC TRIAD OF CHRONIC AFLATOXICOSIS: BILE DUCT PROLIFERATION + FIBROSIS + MEGALOCYTOSIS.",
+      "MEGALOCYTOSIS occurs because the toxin BLOCKS MITOSIS while the cell keeps growing and replicating DNA. The differential for this triad is essentially AFLATOXIN versus PYRROLIZIDINE ALKALOID.",
+      "AFLATOXIN M1 IS EXCRETED IN EGGS and present in liver and muscle — a genuine food-safety concern.",
+      "THE ONE-LINE RULE: AFLATOXIN = LIVER TOXIN. OCHRATOXIN = KIDNEY TOXIN. Ochratoxin is MORE NEPHROTOXIC TO POULTRY THAN AFLATOXIN.",
+      "OCHRATOXIN A (Aspergillus ochraceus, Penicillium verrucosum) inhibits PHENYLALANINE-tRNA SYNTHETASE and destroys the PROXIMAL CONVOLUTED TUBULE.",
+      "Ochratoxicosis: kidneys markedly SWOLLEN AND PALE, later SHRUNKEN, FIRM AND FIBROSED with a granular pitted surface; ureters distended with urates; VISCERAL AND ARTICULAR GOUT.",
+      "BIRDS ARE UNIQUELY VULNERABLE because they are URICOTELIC, excrete poorly soluble URIC ACID largely by TUBULAR SECRETION, and have NO URINARY BLADDER — so tubular damage rapidly causes urate saturation.",
+      "GOUT IS A SIGN, NOT A DIAGNOSIS — exclude WATER DEPRIVATION, excess CALCIUM (layer feed to growers), excess PROTEIN, VITAMIN A DEFICIENCY, nephropathogenic IB and avian nephritis virus before blaming ochratoxin.",
+      "URATE CRYSTALS DISSOLVE IN FORMALIN — always fix a duplicate piece of kidney in ABSOLUTE ALCOHOL.",
+      "TRICHOTHECENES (T-2 TOXIN, DIACETOXYSCIRPENOL, DEOXYNIVALENOL) from FUSARIUM inhibit PROTEIN SYNTHESIS AT THE RIBOSOME and are directly CAUSTIC (VESICANT).",
+      "TRICHOTHECENE TARGET 1 — CONTACT BURN: raised YELLOW-WHITE CASEOUS NECROTIC PLAQUES AND ULCERS ON THE BEAK MARGINS, ANGLES OF THE MOUTH, HARD PALATE AND TONGUE, extending to oesophagus, crop and GIZZARD, with marked FEED REFUSAL.",
+      "TRICHOTHECENE TARGET 2 — BONE MARROW AND LYMPHOID DESTRUCTION: leukopenia, THROMBOCYTOPENIA WITH HAEMORRHAGE, anaemia, thymic and bursal atrophy, and profound IMMUNOSUPPRESSION.",
+      "The oral lesions are a CONTACT BURN wherever the toxin touches tissue — which is why their distribution at the beak commissures and palate points specifically at FUSARIUM toxins.",
+      "ALL THREE TOXINS BLOCK PROTEIN SYNTHESIS AT DIFFERENT POINTS — aflatoxin at TRANSCRIPTION, ochratoxin at tRNA CHARGING, trichothecenes at TRANSLATION — so their effects are ADDITIVE and mixed contamination is the rule.",
+      "This is why a feed containing several mycotoxins EACH BELOW its individual safe level can still cause clinical disease.",
+      "SAMPLING IS WHERE MOST INVESTIGATIONS FAIL — contamination is PATCHY, so take MANY SMALL SUBSAMPLES from different points and depths, mix, and submit a COMPOSITE. A handful from the top of one sack is worthless.",
+      "BOILING, COOKING, PELLETING AND SUN-DRYING DO NOT DESTROY AFLATOXIN — a widespread and dangerous misconception."
+    ],
+
+    clinical:
+      "<b>Why this matters in Indian practice.</b><br>" +
+      "<b>Go and look at the feed store yourself.</b> This is the single most useful action in any suspected mycotoxicosis, and it is the step most often skipped. When a flock is unthrifty, growing poorly, dropping in production and failing to respond to antibiotics — while birds on a different ration are fine — walk to the store and examine the groundnut cake and maize. <b>Smell it, break open the cake, look for caking, warmth, discolouration and visible mould, and check whether sacks are stacked against a damp wall or on the floor.</b> A group problem tied to one feed batch, with no fever and no antibiotic response, is a mycotoxicosis until proved otherwise.<br><br>" +
+      "<b>Sample the feed properly or do not bother.</b> Mycotoxin contamination sits in pockets, so a handful from the top of one convenient sack will usually miss it and produce a falsely reassuring report. Take <b>many small subsamples from different sacks, from different depths, and from near walls and the floor where moisture accumulates</b>, mix them thoroughly and submit a representative composite. Explaining this to the farmer usually secures better cooperation than simply asking for \"some feed\".<br><br>" +
+      "<b>Recognise aflatoxicosis as the reason the vaccines are failing.</b> This is the presentation you will actually meet. A producer complains that despite a full Ranikhet and Gumboro programme his birds keep breaking down, or that they grow slowly and convert feed badly. Before questioning the vaccine or the cold chain, <b>post-mortem several birds and examine the bursa of Fabricius, the thymus and the liver</b>. An atrophic bursa and thymus with a pale, firm or fatty liver in a flock on groundnut-cake-based feed points firmly at aflatoxin. Explain in plain terms that the birds&rsquo; antibody factory has been damaged and that vaccinating them again will not help until the feed is changed.<br><br>" +
+      "<b>Correct the dangerous misconception about heat.</b> Many farmers believe that cooking, boiling or drying feed in the sun makes it safe. <b>Aflatoxin is heat-stable and survives all of these, including pelleting.</b> The only reliable action is not to feed the contaminated batch. Advise buying cake and grain in quantities that will be used quickly rather than storing sacks through the monsoon, keeping feed on pallets away from damp walls, ventilating the store, and rejecting any consignment that is caked, musty, warm or discoloured.<br><br>" +
+      "<b>Tell layer producers about the egg.</b> Aflatoxin residues pass into eggs as aflatoxin M1 and are present in liver and muscle. This makes a contaminated batch a family and consumer health issue as well as a production one, and it is a point that often carries more weight with a smallholder than the production argument alone.<br><br>" +
+      "<b>When you find gout, check the water before you blame the toxin.</b> Chalky white deposits over the heart, liver and peritoneum with swollen urate-filled kidneys are easy to recognise, but ochratoxin is only one of several causes. Ask directly: <b>has the water supply been interrupted by a power cut; is any drinker line blocked; are there enough drinkers at the right height for the stocking density in summer heat; is the flock being fed a layer ration while still growing; is the ration excessively high in protein?</b> In Indian conditions, interrupted water in hot weather is a very common and entirely preventable cause, and finding it is worth far more to the farmer than a toxin report. If you want the laboratory to confirm urate crystals, <b>send a duplicate piece of kidney in absolute alcohol</b>, because formalin dissolves them.<br><br>" +
+      "<b>Look in the mouth when birds refuse feed.</b> A flock that is eating poorly with no obvious respiratory or enteric disease should have its beaks and mouths examined. <b>Yellow-white caseous plaques and ulcers at the beak margins, the angles of the mouth and on the palate and tongue</b> point specifically at <i>Fusarium</i> trichothecenes, because these toxins burn wherever they touch. Combine that finding with unexplained bruising and pallor from marrow damage, and the picture is close to characteristic. As with all mycotoxins, <b>the treatment is to change the feed</b> — supportive nutrition, good management and a toxin binder in the ration help, but nothing works while the contaminated batch continues to be fed.<br><br>" +
+      "<b>Interpret laboratory reports with the additive effect in mind.</b> Field feed samples usually contain more than one mycotoxin, and because all of them block protein synthesis at different points, their effects add together. <b>A report showing several toxins each below its individual threshold does not exonerate the feed</b>, and saying so prevents a farmer from concluding wrongly that the feed has been cleared.",
+
+    tables: [
+      {
+        title: "The three major poultry mycotoxicoses",
+        headers: ["Feature", "AFLATOXICOSIS", "OCHRATOXICOSIS", "TRICHOTHECOSIS"],
+        rows: [
+          ["Toxin", "Aflatoxin B1", "Ochratoxin A", "T-2, DAS, deoxynivalenol"],
+          ["Fungus", "Aspergillus flavus, A. parasiticus", "A. ochraceus, Penicillium verrucosum", "FUSARIUM"],
+          ["TARGET ORGAN", "LIVER", "KIDNEY", "MOUTH (contact) + BONE MARROW"],
+          ["Point of protein-synthesis block", "TRANSCRIPTION (RNA polymerase)", "tRNA CHARGING (phenylalanine-tRNA synthetase)", "TRANSLATION (peptidyl transferase)"],
+          ["Key gross lesion", "Pale fatty then hard fibrotic liver", "Swollen pale then shrunken pitted kidney; VISCERAL GOUT", "CASEOUS PLAQUES on beak margins and palate"],
+          ["Key microscopic lesion", "BILE DUCT PROLIFERATION + FIBROSIS + MEGALOCYTOSIS", "Proximal tubular necrosis; interstitial nephritis; urate tophi", "Marrow aplasia; lymphoid depletion"],
+          ["Most sensitive bird", "DUCKLINGS", "Broiler chicks", "All young birds"],
+          ["Immunosuppression", "MARKED", "Present", "PROFOUND"],
+          ["Characteristic field sign", "Vaccination failure; carcass bruising", "WET LITTER and wet droppings; gout", "FEED REFUSAL with mouth ulcers"],
+          ["Residue concern", "AFLATOXIN M1 IN EGGS", "Kidney and liver", "Less significant"]
+        ]
+      },
+      {
+        title: "Investigating a poorly performing flock — the mycotoxin checklist",
+        headers: ["What to examine", "Looking for", "Points to"],
+        rows: [
+          ["BURSA and THYMUS", "Atrophy", "Aflatoxin, trichothecene, or IBD/CIA"],
+          ["LIVER", "Pale fatty, or small hard fibrotic", "AFLATOXICOSIS"],
+          ["KIDNEYS and ureters", "Swollen, pale, urate-distended; visceral gout", "OCHRATOXICOSIS (after excluding water and diet)"],
+          ["BEAK, mouth, palate, gizzard", "Yellow caseous plaques and ulcers", "TRICHOTHECENES (Fusarium)"],
+          ["Bone marrow (split femur)", "Pale, fatty, aplastic", "Trichothecene, or chicken infectious anaemia"],
+          ["Carcass and muscle", "Unexplained bruising and haemorrhage", "Aflatoxin (low clotting factors) or trichothecene"],
+          ["FEED STORE", "Caked, musty, warm, discoloured; damp walls; floor stacking", "The source — sample properly"],
+          ["Vaccination records and titres", "Poor titres despite a full programme", "Confirms functional immunosuppression"]
+        ]
+      },
+      {
+        title: "Visceral gout in poultry — work through this before blaming ochratoxin",
+        headers: ["Cause", "How to check", "Correctable?"],
+        rows: [
+          ["WATER DEPRIVATION (power cut, blocked line, too few drinkers)", "Ask directly; inspect and run the drinker lines", "YES — immediately"],
+          ["Excess dietary CALCIUM (layer feed to growers)", "Check which ration goes to which age group", "YES"],
+          ["Excess dietary PROTEIN", "Review ration formulation", "YES"],
+          ["VITAMIN A deficiency", "Review ration; look for squamous metaplasia", "YES"],
+          ["OCHRATOXIN", "Inspect and sample feed properly", "YES — change the batch"],
+          ["Nephropathogenic INFECTIOUS BRONCHITIS", "Respiratory history; PCR", "Partly — vaccination"],
+          ["AVIAN NEPHRITIS VIRUS", "Histology; PCR; runting-stunting", "NO specific treatment"]
+        ]
+      }
+    ],
+
+    img: "",
+    tags: ["mycotoxicosis", "aflatoxin", "Aspergillus flavus", "groundnut cake", "megalocytosis", "bile duct proliferation", "immunosuppression", "vaccination failure", "aflatoxin M1", "ochratoxin", "nephrotoxin", "visceral gout", "uricotelic", "trichothecene", "T-2 toxin", "Fusarium", "beak lesions", "feed refusal", "bone marrow aplasia", "feed sampling", "toxin binder"]
+  },
+
+  "u5-t17": {
+    /* Avian Helminthic Diseases — Flukes, Cestodes, Nematodes */
+    summary: "Poultry worms worth recognising: Ascaridia in the small intestine, Heterakis in the caeca carrying Histomonas, Capillaria causing thickened enteritis, Syngamus as red Y-shaped gapeworms in the trachea, Raillietina tapeworms with nodules, and Prosthogonimus in the oviduct.",
+
+    desc:
+      "<b>A. NEMATODES (ROUNDWORMS) — the most important group</b><br><br>" +
+      "<b>1. <i>ASCARIDIA GALLI</i> — the large roundworm.</b> The <b>largest and commonest nematode of poultry</b>, a stout white worm up to 12 cm long lying free in the <b>small intestine, chiefly the duodenum and jejunum</b>. The life cycle is <b>DIRECT</b> — embryonated eggs are swallowed from contaminated litter and soil; earthworms may act as transport hosts.<br>" +
+      "<b>Pathology:</b> young migrating larvae burrow into the mucosa causing <b>haemorrhagic enteritis with petechiae, thickening and a catarrhal exudate</b> — this larval phase is more damaging than the adult. Heavy adult burdens cause <b>unthriftiness, pale combs, poor growth, drop in egg production and, in severe cases, INTESTINAL OBSTRUCTION by a mass of worms</b>. Worms occasionally migrate up the oviduct and <b>become enclosed within an egg</b>, a curiosity that alarms consumers. Young birds under three months are most affected.<br><br>" +
+      "<b>2. <i>HETERAKIS GALLINARUM</i> — the caecal worm.</b> A small white worm, 1-1.5 cm, in the <b>CAECA</b>. Life cycle direct.<br>" +
+      "<b>Its own pathogenicity is SLIGHT</b> — mild caecal thickening, typhlitis and nodule formation. <b>ITS ENTIRE IMPORTANCE IS THAT IT IS THE VECTOR OF <i>HISTOMONAS MELEAGRIDIS</i>, the cause of blackhead.</b> The protozoon is carried inside the <i>Heterakis</i> egg, which protects it in the soil for years, and <b>earthworms act as paratenic (transport) hosts</b>. <b>Control of blackhead is therefore control of <i>Heterakis</i>.</b><br><br>" +
+      "<b>3. <i>CAPILLARIA</i> species — the hair worms (thread worms).</b> Very fine, <b>hair-like worms, barely visible</b>, embedded in the mucosa of the <b>crop and oesophagus (<i>C. contorta</i>, <i>C. annulata</i>) or the small intestine (<i>C. obsignata</i>)</b>.<br>" +
+      "<b>Pathology:</b> despite their small size these are <b>highly pathogenic</b> because they burrow into the mucosa. They cause <b>marked thickening, oedema, catarrhal to haemorrhagic inflammation and sloughing of the crop or intestinal mucosa</b>, with severe unthriftiness, diarrhoea, anaemia and drop in production. <b>Because the worms are almost invisible, diagnosis requires a MUCOSAL SCRAPING examined under the microscope, and the characteristic BIPOLAR-PLUGGED (barrel-shaped, lemon-shaped) EGGS in the faeces.</b><br><br>" +
+      "<b>4. <i>SYNGAMUS TRACHEA</i> — the GAPEWORM.</b> Lives in the <b>TRACHEA</b>, where the male and female are <b>permanently joined in copulation forming a characteristic RED, Y-SHAPED (\"forked\") worm</b> attached to the tracheal mucosa. Chiefly affects <b>young chickens, turkeys, pheasants and game birds</b>; earthworms, snails and slugs are transport hosts.<br>" +
+      "<b>Pathology and signs:</b> the worms cause <b>tracheitis with mucus, and mechanical obstruction of the airway</b>. Birds show the characteristic <b>\"GAPING\" — repeated open-mouth gasping with the neck extended, head shaking and coughing as they attempt to dislodge the worms</b> — and may die of asphyxia. <b>Opening the trachea and seeing the red Y-shaped worms is the diagnosis, and needs nothing more.</b><br><br>" +
+      "<b>5. Other nematodes:</b> <b><i>Cheilospirura</i> and <i>Tetrameres</i></b> in the gizzard and proventriculus (<i>Tetrameres</i> females are <b>blood-red globular worms embedded in the proventricular glands, visible through the serosa as red spots</b>); <b><i>Subulura</i></b> in the caeca.<br><br>" +
+
+      "<b>B. CESTODES (TAPEWORMS)</b><br><br>" +
+      "<b>All poultry tapeworms require an INTERMEDIATE HOST — an invertebrate</b>: <b>beetles, ants, houseflies, snails, slugs and earthworms</b>. <b>This is the key control point: birds on deep litter or in confinement with good insect control get few tapeworms, while free-range and backyard birds that forage for insects are heavily infected.</b><br><br>" +
+      "<ul>" +
+      "<li><b><i>RAILLIETINA</i> species (<i>R. echinobothrida</i>, <i>R. tetragona</i>, <i>R. cesticillus</i>)</b> — the most important poultry tapeworms. Intermediate hosts are <b>ants and beetles</b>. <b><i>R. echinobothrida</i> is the most pathogenic and causes \"NODULAR TAPEWORM DISEASE\" — the scolex embeds deeply in the intestinal wall provoking distinct, firm, caseous NODULES in the mucosa and submucosa that resemble tubercles</b> and must be distinguished from avian tuberculosis.</li>" +
+      "<li><b><i>Davainea proglottina</i></b> — a very small tapeworm of the duodenum with <b>slugs and snails</b> as intermediate hosts; <b>disproportionately pathogenic for its size</b>, burrowing between the villi and causing haemorrhagic enteritis.</li>" +
+      "<li><b><i>Hymenolepis</i> and <i>Amoebotaenia</i></b> — smaller, less pathogenic species.</li>" +
+      "</ul>" +
+      "<b>General pathology:</b> catarrhal to haemorrhagic enteritis, mucosal thickening, nodules at attachment sites, unthriftiness, poor growth, anaemia and reduced egg production. Heavy infections in young birds cause emaciation and death.<br><br>" +
+
+      "<b>C. TREMATODES (FLUKES)</b><br><br>" +
+      "Flukes are of <b>limited importance in intensively reared poultry</b>, since they all require <b>aquatic intermediate hosts (snails, and often a second host such as a dragonfly)</b>. They matter chiefly in <b>free-range, backyard and waterfowl flocks with access to ponds and wet ground</b>.<br>" +
+      "<ul>" +
+      "<li><b><i>PROSTHOGONIMUS</i> — the OVIDUCT FLUKE, the one that matters most.</b> Adults live in the <b>OVIDUCT, bursa of Fabricius and cloaca</b>. Intermediate hosts are a <b>snail and then a DRAGONFLY nymph or adult</b>, which the bird eats. It causes <b>salpingitis — inflammation and thickening of the oviduct with exudate — leading to the production of SOFT-SHELLED AND SHELL-LESS EGGS, eggs containing pus or blood, and eventually complete cessation of lay, egg-yolk PERITONITIS and death</b>. It is an important cause of egg abnormality in free-range flocks near water.</li>" +
+      "<li><b><i>Echinostoma</i> and <i>Echinoparyphium</i></b> — intestinal flukes of ducks and free-range poultry, causing enteritis, unthriftiness and diarrhoea.</li>" +
+      "<li><b><i>Notocotylus</i></b> — caecal and rectal flukes of waterfowl.</li>" +
+      "</ul>" +
+
+      "<b>D. THE GENERAL PICTURE AND DIAGNOSIS</b><br><br>" +
+      "<b>Common features of helminthiasis in poultry:</b> <b>unthriftiness and poor growth despite adequate feed, pale combs and wattles (anaemia), poor feed conversion, unevenness of the flock, reduced egg production and hatchability, diarrhoea, and increased susceptibility to other diseases.</b> <b>Mortality is usually low; the loss is in production.</b><br><br>" +
+      "<b>Diagnosis:</b><br>" +
+      "<ul>" +
+      "<li><b>Post-mortem examination is the most reliable method</b> — open the whole tract, including <b>trachea, crop, small intestine and caeca</b>, and examine the mucosa.</li>" +
+      "<li><b>Faecal examination</b> by flotation for nematode and cestode eggs, and sedimentation for fluke eggs. Note the <b>bipolar-plugged eggs of <i>Capillaria</i></b>.</li>" +
+      "<li><b>MUCOSAL SCRAPINGS are essential for <i>Capillaria</i></b>, whose worms are too fine to see with the naked eye.</li>" +
+      "</ul>" +
+      "<b>Control</b> rests on <b>breaking the life cycle</b>: for direct-cycle nematodes, <b>litter and floor hygiene, all-in all-out management, prompt removal of wet litter and adequate downtime</b>; for cestodes and flukes, <b>control of the invertebrate intermediate hosts — beetles, ants, flies, snails, slugs and earthworms — and preventing access to wet ground and ponds</b>. Strategic anthelmintic treatment is used, but <b>reinfection is inevitable if the litter and the intermediate hosts are not addressed.</b>",
+
+    eliteDesc:
+      "<b>THE MOST IMPORTANT WORM IN POULTRY IS PATHOGENICALLY THE LEAST IMPORTANT.</b> <i>Heterakis gallinarum</i> causes very little disease by itself — mild typhlitis and some caecal thickening. Its significance is entirely as the <b>vector of <i>Histomonas meleagridis</i></b>, and understanding the mechanism explains one of the most puzzling features of blackhead. <i>Histomonas</i> is a fragile, non-cyst-forming protozoon that would perish rapidly in the environment. By being carried <b>inside the <i>Heterakis</i> egg</b>, it acquires the tough, chitinous, environmentally resistant shell of the nematode, and can survive in soil and litter for <b>up to three or four years</b>. <b>Earthworms then act as paratenic hosts</b>, ingesting the <i>Heterakis</i> eggs and concentrating them, so a bird pecking earthworms on old ground receives a large dose.<br><br>" +
+      "Three practical conclusions follow. <b>Control of blackhead is control of <i>Heterakis</i></b> and of the ground, not of the protozoon. <b>Old, permanently used runs remain infective for years</b>, which is why turkeys must not be reared on ground that has carried chickens. And <b>chickens act as tolerant reservoirs</b>: they carry <i>Heterakis</i> and shed infected eggs with little illness, while turkeys exposed to the same ground die. This is the reason for the single most important rule in turkey rearing — <b>never keep turkeys and chickens together or on the same ground.</b><br><br>" +
+      "<b>WORM SIZE IS A POOR GUIDE TO PATHOGENICITY, AND <i>CAPILLARIA</i> PROVES IT.</b> <i>Ascaridia galli</i> is 12 cm long and conspicuous; <i>Capillaria</i> is a hair-fine worm that a careless prosector will not see at all. Yet <i>Capillaria</i> is often the more damaging, because <b>it burrows into and lives within the mucosa rather than lying free in the lumen</b>, provoking marked thickening, oedema, haemorrhage and sloughing of the crop or intestinal lining. The clinical consequence is a real diagnostic trap: <b>a bird with severe unthriftiness, diarrhoea and a thickened, inflamed intestine may be reported as having \"no worms\" because none were visible</b>. The correct technique is to <b>scrape the mucosa, place the scraping on a slide with saline and examine it under the microscope</b>, and to look for the characteristic <b>barrel-shaped, bipolar-plugged eggs</b> in faeces. Similarly, the larval migratory phase of <i>Ascaridia</i> is more damaging than the adult worms, so the visible burden underestimates the injury.<br><br>" +
+      "<b>THE INTERMEDIATE HOST DETERMINES WHICH BIRDS GET WHICH WORMS.</b> This single principle organises the whole topic and predicts the epidemiology without memorisation. <b>Nematodes of poultry mostly have DIRECT life cycles</b>, so they thrive wherever birds are concentrated on contaminated litter or soil — including intensive units — and control depends on <b>litter management, all-in all-out batching and downtime</b>. <b>Cestodes and trematodes all require invertebrate intermediate hosts</b> — beetles, ants, flies, snails, slugs, earthworms and dragonflies — so they are <b>diseases of birds that forage</b>. A caged or well-managed deep-litter flock with good insect control acquires few tapeworms; a backyard or free-range flock scratching for insects acquires many. Consequently, when a <b>backyard bird in an Indian village</b> is presented as unthrifty and pale, tapeworms and flukes belong high on the list, whereas in a commercial broiler house they belong low on it, and the reasoning is entirely about the invertebrate rather than the worm.<br><br>" +
+      "<b>THE DRAGONFLY AND THE SOFT-SHELLED EGG.</b> <i>Prosthogonimus</i> deserves attention beyond its frequency because it produces an egg abnormality that mimics important viral diseases. Its cycle passes through a snail and then a <b>dragonfly</b>, which free-range birds near ponds catch and eat readily. The adult fluke lives in the <b>oviduct</b>, causing salpingitis with thickening and exudate, and the hen consequently lays <b>soft-shelled and shell-less eggs, eggs containing pus or blood, and finally no eggs at all</b>. In a free-range flock near water, this is a genuine differential for <b>egg drop syndrome and infectious bronchitis</b>, and the distinction is made by opening the oviduct and finding the flukes rather than by serology. It is a good example of why a post-mortem should always include the reproductive tract when the complaint is about eggs.<br><br>" +
+      "<b>THE NODULAR TAPEWORM AND THE TUBERCULOSIS TRAP.</b> <i>Raillietina echinobothrida</i> attaches by embedding its armed scolex deeply into the intestinal wall, provoking a granulomatous reaction that produces <b>firm, discrete, caseous nodules in the mucosa and submucosa</b>. These closely resemble the <b>intestinal tubercles of avian tuberculosis</b>, and in an older backyard bird — exactly the population in which both conditions occur — the confusion is easy to make. The distinction matters greatly, because tuberculosis requires depopulation and a change of ground while tapeworm infection requires only anthelmintic treatment and insect control. <b>The resolution is to open the nodule, look for the scolex, and to request a Ziehl-Neelsen stain</b>, which will be negative in tapeworm nodules and will show enormous numbers of acid-fast bacilli in tuberculosis.<br><br>" +
+      "<b>WHY WORMS MATTER MORE THAN THEIR MORTALITY SUGGESTS.</b> Helminthiasis in poultry rarely kills, and farmers therefore discount it. The losses are in <b>feed conversion, growth rate, flock uniformity, egg production and hatchability</b>, accumulated quietly across a whole flock, and they routinely exceed the cost of the deaths from more dramatic diseases. There is also an interaction that is easily missed: <b>worm burdens impair growth and immune competence, contributing to poor vaccine response and to secondary bacterial disease</b>, so a chronic parasitism problem can present as a vaccination failure. Making the economic argument explicitly, in terms of days to market and eggs per bird rather than in terms of deaths, is usually what persuades a producer to act.",
+
+    keyPoints: [
+      "ASCARIDIA GALLI is the LARGEST and COMMONEST poultry nematode — a stout white worm up to 12 cm in the SMALL INTESTINE, with a DIRECT life cycle; earthworms are transport hosts.",
+      "THE MIGRATING LARVAE ARE MORE DAMAGING THAN THE ADULTS, causing haemorrhagic enteritis; heavy burdens cause unthriftiness and occasionally INTESTINAL OBSTRUCTION. Worms may be enclosed within an egg.",
+      "HETERAKIS GALLINARUM lives in the CAECA and is of SLIGHT pathogenicity itself — ITS ENTIRE IMPORTANCE IS AS THE VECTOR OF HISTOMONAS MELEAGRIDIS (blackhead).",
+      "Histomonas is carried INSIDE THE HETERAKIS EGG, which gives the fragile protozoon a tough shell allowing survival in soil for 3-4 YEARS; EARTHWORMS act as paratenic hosts.",
+      "THEREFORE CONTROL OF BLACKHEAD IS CONTROL OF HETERAKIS AND OF THE GROUND. Chickens are tolerant reservoirs — NEVER KEEP TURKEYS AND CHICKENS TOGETHER OR ON THE SAME GROUND.",
+      "CAPILLARIA (hair worms) are almost INVISIBLE but HIGHLY PATHOGENIC because they BURROW INTO THE MUCOSA of crop, oesophagus or intestine, causing marked thickening, haemorrhage and sloughing.",
+      "DIAGNOSE CAPILLARIA BY MUCOSAL SCRAPING under the microscope and by the characteristic BARREL-SHAPED, BIPOLAR-PLUGGED EGGS — a bird may be wrongly reported as having 'no worms'.",
+      "SYNGAMUS TRACHEA (GAPEWORM) lives in the TRACHEA with male and female permanently joined as a RED Y-SHAPED WORM, causing 'GAPING' — open-mouth gasping with neck extended — and death by asphyxia.",
+      "Opening the trachea and seeing the red Y-shaped worms is the whole diagnosis. Earthworms, snails and slugs are transport hosts.",
+      "TETRAMERES females are BLOOD-RED GLOBULAR WORMS embedded in the PROVENTRICULAR GLANDS, visible through the serosa as red spots.",
+      "ALL POULTRY TAPEWORMS REQUIRE AN INVERTEBRATE INTERMEDIATE HOST — beetles, ants, houseflies, snails, slugs, earthworms. So they are diseases of FORAGING, FREE-RANGE AND BACKYARD birds.",
+      "RAILLIETINA ECHINOBOTHRIDA causes 'NODULAR TAPEWORM DISEASE' — the scolex embeds deeply, provoking firm caseous NODULES that RESEMBLE AVIAN TUBERCULOSIS. Distinguish by finding the scolex and by a NEGATIVE ZIEHL-NEELSEN.",
+      "DAVAINEA PROGLOTTINA is very small but DISPROPORTIONATELY PATHOGENIC, burrowing between duodenal villi; intermediate hosts are SLUGS AND SNAILS.",
+      "PROSTHOGONIMUS is the OVIDUCT FLUKE — intermediate hosts a SNAIL then a DRAGONFLY. It causes SALPINGITIS with SOFT-SHELLED AND SHELL-LESS EGGS, eggs containing pus or blood, and egg-yolk peritonitis.",
+      "PROSTHOGONIMUS IS A REAL DIFFERENTIAL FOR EGG DROP SYNDROME AND INFECTIOUS BRONCHITIS in free-range flocks near water — diagnosed by OPENING THE OVIDUCT, not by serology.",
+      "WORM SIZE IS A POOR GUIDE TO PATHOGENICITY — tiny Capillaria and Davainea are often more damaging than the large conspicuous Ascaridia.",
+      "THE INTERMEDIATE HOST PREDICTS THE EPIDEMIOLOGY: DIRECT-CYCLE NEMATODES thrive in intensive units on contaminated litter; CESTODES AND FLUKES need invertebrates and so affect FORAGING birds.",
+      "General picture of poultry helminthiasis: unthriftiness, pale combs, poor feed conversion, flock unevenness, reduced egg production — with LOW MORTALITY. THE LOSS IS IN PRODUCTION, NOT DEATHS.",
+      "Worm burdens also impair growth and immune competence, so chronic parasitism can present as POOR VACCINE RESPONSE and secondary bacterial disease.",
+      "Control is by BREAKING THE LIFE CYCLE — litter hygiene, all-in all-out and downtime for nematodes; control of BEETLES, ANTS, FLIES, SNAILS, SLUGS AND EARTHWORMS and avoiding wet ground for cestodes and flukes."
+    ],
+
+    clinical:
+      "<b>Why this matters in Indian practice.</b><br>" +
+      "<b>Open the whole tract, not just the intestine.</b> A poultry post-mortem for suspected parasitism must include the <b>trachea, crop and oesophagus, the small intestine and the caeca</b>. Red Y-shaped worms in the trachea settle a case of gaping in seconds; a thickened crop lining needs a scraping for <i>Capillaria</i>; and the caeca must be opened both for <i>Heterakis</i> and for the caecal lesions of blackhead and coccidiosis.<br><br>" +
+      "<b>Do not report \"no worms seen\" without scraping the mucosa.</b> <i>Capillaria</i> is hair-fine and effectively invisible to the naked eye, yet it is among the more damaging poultry worms because it lives inside the mucosa. In any bird with unexplained unthriftiness, diarrhoea and a thickened, inflamed crop or intestine, <b>scrape the mucosa, mount the scraping in saline and look at it under the microscope</b>, and ask the laboratory to look for the characteristic barrel-shaped bipolar-plugged eggs in faeces.<br><br>" +
+      "<b>The single most important piece of advice you can give a turkey keeper is to keep turkeys away from chickens.</b> Chickens carry <i>Heterakis</i> and shed <i>Histomonas</i>-containing eggs with little illness, while turkeys on the same ground die of blackhead. Explain that the infective eggs survive in soil for <b>three to four years</b>, so it is not enough to remove the chickens now — <b>turkeys must be reared on ground that has not carried chickens</b>, and preferably on wire or fresh ground. Earthworms concentrate the eggs, so wet, worm-rich ground is particularly dangerous.<br><br>" +
+      "<b>Recognise gapeworm before treating a gasping bird as a respiratory infection.</b> In young chickens, turkeys and game birds kept on the ground, repeated open-mouth gasping with the neck extended and head shaking, in birds that are otherwise alert, should prompt you to <b>slit the trachea and look</b>. Finding the red forked worms avoids a fruitless course of antibiotics and gives the owner an immediate answer.<br><br>" +
+      "<b>Match the parasite list to the husbandry system.</b> In a <b>caged or well-managed deep-litter commercial flock</b>, expect direct-cycle nematodes and address litter management, batching and downtime. In a <b>backyard or free-range village flock in India</b>, expect tapeworms and, near ponds and paddy fields, flukes, because these birds forage for the beetles, ants, snails, slugs and dragonflies that carry them. Advising a backyard owner to control beetles and to keep birds away from wet ground is more useful than repeated deworming alone, since reinfection is otherwise immediate.<br><br>" +
+      "<b>When the complaint is about eggs, open the oviduct.</b> In a free-range flock near water producing soft-shelled or shell-less eggs, or eggs containing blood or pus, <b><i>Prosthogonimus</i> in the oviduct is a genuine possibility</b> and is easily missed if the investigation stops at serology for egg drop syndrome and infectious bronchitis. Opening the oviduct and finding the flukes is quick, cheap and conclusive.<br><br>" +
+      "<b>Do not mistake nodular tapeworm disease for tuberculosis.</b> Firm caseous nodules in the intestinal wall of an older backyard bird occur in both conditions, and the consequences of confusing them are serious — tuberculosis requires culling the flock and changing the ground, tapeworm requires only treatment and insect control. <b>Open the nodule and look for the embedded scolex, and request a Ziehl-Neelsen stain</b>, which will be negative in tapeworm nodules and strongly positive in tuberculosis.<br><br>" +
+      "<b>Make the economic case, because worms rarely kill.</b> Farmers discount parasitism because mortality is low. Frame the loss in the terms they measure: <b>extra days to market weight, poorer feed conversion, an uneven flock at sale, and fewer eggs per bird</b>. Add that heavy worm burdens impair immune responses, so a persistent parasite problem can be part of the reason a flock responds badly to vaccination — which often carries more weight than the parasitology.",
+
+    tables: [
+      {
+        title: "The important poultry helminths — site, cycle and lesion",
+        headers: ["Parasite", "SITE", "Life cycle", "Key lesion or sign"],
+        rows: [
+          ["ASCARIDIA GALLI", "Small intestine", "DIRECT (earthworm transport)", "Larval haemorrhagic enteritis; obstruction if heavy"],
+          ["HETERAKIS GALLINARUM", "CAECA", "DIRECT (earthworm paratenic)", "Mild typhlitis — but VECTOR OF HISTOMONAS"],
+          ["CAPILLARIA", "Crop, oesophagus, intestine", "Direct or via earthworm", "INVISIBLE worms; marked mucosal thickening; BIPOLAR-PLUGGED EGGS"],
+          ["SYNGAMUS TRACHEA", "TRACHEA", "Direct; earthworm/snail transport", "RED Y-SHAPED worms; 'GAPING'; asphyxia"],
+          ["TETRAMERES", "Proventricular glands", "Insect intermediate host", "BLOOD-RED GLOBULAR worms; red spots through serosa"],
+          ["RAILLIETINA echinobothrida", "Small intestine", "ANTS and BEETLES", "NODULAR TAPEWORM DISEASE — mimics tuberculosis"],
+          ["DAVAINEA proglottina", "Duodenum", "SLUGS and SNAILS", "Very small but severely haemorrhagic enteritis"],
+          ["PROSTHOGONIMUS", "OVIDUCT, bursa, cloaca", "Snail then DRAGONFLY", "SALPINGITIS; SOFT-SHELLED and SHELL-LESS EGGS; peritonitis"]
+        ]
+      },
+      {
+        title: "Why the life cycle predicts which flock is affected",
+        headers: ["Cycle type", "Parasites", "Flocks affected", "Control focus"],
+        rows: [
+          ["DIRECT (no intermediate host)", "Ascaridia, Heterakis, Capillaria, Syngamus", "ANY, including intensive units on litter", "LITTER hygiene, all-in all-out, DOWNTIME"],
+          ["Requires INSECT (beetle, ant, fly)", "Raillietina, Hymenolepis, Tetrameres", "FREE-RANGE and BACKYARD foragers", "Insect and beetle control; darkling beetle control in litter"],
+          ["Requires SNAIL or SLUG", "Davainea", "Free-range on damp ground", "Avoid wet ground; snail control"],
+          ["Requires SNAIL + DRAGONFLY", "Prosthogonimus", "Free-range near PONDS and paddy", "Keep birds away from water margins"],
+          ["Practical rule", "—", "Caged/deep-litter = nematodes; foraging = cestodes and flukes", "Match the advice to the husbandry system"]
+        ]
+      }
+    ],
+
+    img: "",
+    tags: ["Ascaridia galli", "Heterakis gallinarum", "Histomonas vector", "Capillaria", "bipolar plugged eggs", "mucosal scraping", "Syngamus trachea", "gapeworm", "gaping", "Tetrameres", "Raillietina", "nodular tapeworm disease", "Davainea", "Prosthogonimus", "oviduct fluke", "intermediate host"]
+  },
+
+  "u5-t18": {
+    /* Avian Coccidiosis and Histomoniasis */
+    summary: "Coccidiosis is the most costly parasitic disease of poultry — each Eimeria species damages one defined segment, so the site of the lesion names the species; histomoniasis is blackhead, giving circular target ulcers in the caeca and bull's-eye necrotic foci in the liver.",
+
+    desc:
+      "<b>A. AVIAN COCCIDIOSIS</b><br><br>" +
+      "<b>Cause.</b> <b><i>Eimeria</i></b> species — <b>obligate intracellular protozoa of the intestinal epithelium</b>. Two rules govern them and explain everything:<br>" +
+      "<ul>" +
+      "<li><b>STRICT HOST SPECIFICITY</b> — the <i>Eimeria</i> of the chicken will not infect the turkey or any other species.</li>" +
+      "<li><b>STRICT SITE SPECIFICITY</b> — each species invades a defined segment of gut and a defined depth of the mucosa. <b>Therefore THE SITE OF THE LESION IDENTIFIES THE SPECIES, and this is the basis of practical diagnosis.</b></li>" +
+      "</ul>" +
+      "<b>Life cycle in outline.</b> A <b>sporulated oocyst</b> is swallowed → sporozoites invade epithelial cells → repeated cycles of asexual multiplication (<b>SCHIZOGONY</b>, producing schizonts and merozoites), which is the destructive phase → <b>GAMETOGONY</b> (sexual stage) → a zygote forms the <b>OOCYST</b>, which is shed <b>UNSPORULATED</b> in the faeces and <b>SPORULATES IN THE LITTER in 1-2 days given WARMTH, MOISTURE AND OXYGEN</b> to become infective. <b>Wet litter is therefore the whole of coccidiosis epidemiology.</b><br><br>" +
+      "<b>The important species of the chicken — learn these by site:</b><br>" +
+      "<ul>" +
+      "<li><b><i>EIMERIA TENELLA</i> — the CAECA. The most dramatic and best-known.</b> Causes <b>CAECAL COCCIDIOSIS</b>: the caeca are <b>greatly distended, thickened, and filled with FRANK BLOOD and later with a firm, laminated, cheesy CAECAL CORE</b>. Birds pass <b>frank blood in the droppings</b> and die suddenly. Chiefly in birds of 3-6 weeks; mortality can be high.</li>" +
+      "<li><b><i>EIMERIA NECATRIX</i> — the MID-GUT (mid small intestine). The most PATHOGENIC species.</b> Schizogony occurs deep in the mucosa, causing severe damage. The mid-intestine becomes <b>markedly BALLOONED, thickened and haemorrhagic, with the classic \"SALT AND PEPPER\" APPEARANCE — white foci (schizonts) and red petechiae seen through the SEROSAL surface from the outside</b>. Contents are blood-stained. Note the peculiarity that <b>schizogony occurs in the mid-gut but gametogony occurs in the CAECA</b>, so oocysts are found in the caeca while lesions are in the small intestine.</li>" +
+      "<li><b><i>EIMERIA MAXIMA</i> — the MID-GUT.</b> Produces the <b>LARGEST oocysts</b>. The intestine is thickened, dilated and flaccid with a <b>thick, orange to pinkish mucoid exudate and petechiae</b>; blood is less prominent. It causes severe <b>malabsorption and poor pigmentation</b>, and importantly it is a <b>major predisposing cause of NECROTIC ENTERITIS</b>.</li>" +
+      "<li><b><i>EIMERIA ACERVULINA</i> — the DUODENUM. The commonest species.</b> Produces <b>numerous small, white, TRANSVERSELY ARRANGED, LADDER-LIKE PLAQUES OR STREAKS in the duodenal loop, best seen from the serosal surface</b>. Causes malabsorption, poor growth and poor pigmentation rather than mortality.</li>" +
+      "<li><b><i>Eimeria brunetti</i></b> — the lower intestine, rectum and cloaca, with a fibrinonecrotic membrane.</li>" +
+      "<li><b><i>Eimeria mitis</i> and <i>E. praecox</i></b> — mild, causing malabsorption without gross lesions.</li>" +
+      "</ul>" +
+      "<b>Pathogenesis and effects.</b> Schizogony is <b>geometrically amplifying</b> — one oocyst destroys an enormous number of enterocytes — and the damage all appears at once when the final generation ruptures. This causes <b>loss of absorptive surface, exudation of plasma protein, haemorrhage, and loss of the mucosal barrier</b>, giving <b>bloody or mucoid diarrhoea, dehydration, huddling, ruffled feathers, pale combs, severe loss of weight and feed conversion, and drop in egg production</b>. <b>Because the cycle is FINITE, coccidiosis is SELF-LIMITING and survivors develop strong, SPECIES-SPECIFIC immunity.</b><br><br>" +
+      "<b>Diagnosis:</b> <b>the site and appearance of the gross lesion, together with a MUCOSAL SCRAPING from that site examined under the microscope for schizonts, merozoites, gametocytes and oocysts.</b> Faecal oocyst counts alone are unreliable, because heavy lesions may precede oocyst shedding and because oocysts are present in normal birds.<br><br>" +
+
+      "<b>B. HISTOMONIASIS (BLACKHEAD, INFECTIOUS ENTEROHEPATITIS)</b><br><br>" +
+      "<b>Cause.</b> <b><i>Histomonas meleagridis</i></b> — a <b>flagellate protozoon</b> which in tissue appears as a <b>round to amoeboid body without a flagellum</b>. It is fragile and <b>forms no cyst</b>.<br><br>" +
+      "<b>Transmission — the whole epidemiology in one sentence.</b> Because the protozoon is fragile, it survives in the environment <b>only by being carried inside the EGG OF THE CAECAL WORM <i>HETERAKIS GALLINARUM</i></b>, whose tough shell protects it in the soil for <b>THREE TO FOUR YEARS</b>. <b>EARTHWORMS act as paratenic hosts</b>, ingesting and concentrating the <i>Heterakis</i> eggs. Direct cloacal (\"cloacal drinking\") transmission also occurs between birds in close contact.<br><br>" +
+      "<b>Species — the critical difference.</b> <b>TURKEYS are highly susceptible, with mortality up to 80-100 per cent. CHICKENS are relatively resistant and act as TOLERANT RESERVOIRS</b>, carrying <i>Heterakis</i> and shedding infected eggs with little or no illness. <b>This is why turkeys and chickens must never be reared together or on the same ground.</b><br><br>" +
+      "<b>Clinical signs.</b> Depression, ruffled feathers, drooping wings, listlessness, and a characteristic <b>SULPHUR-YELLOW DIARRHOEA</b>. The name <b>\"BLACKHEAD\" refers to a dark bluish or blackish discolouration of the head and skin</b> which occurs in some birds terminally — <b>it is neither constant nor essential to the diagnosis</b>, a point examiners like.<br><br>" +
+      "<b>Gross pathology — the two classic lesions.</b><br>" +
+      "<ol>" +
+      "<li><b>CAECA: the caeca are greatly enlarged, thickened and inflamed, and contain a FIRM, DRY, LAMINATED, YELLOW-GREY CASEOUS CORE.</b> The wall may ulcerate and perforate, causing peritonitis. Ulcers may be circular with raised edges.</li>" +
+      "<li><b>LIVER — the diagnostic lesion: MULTIPLE CIRCULAR, DEPRESSED, YELLOW-GREY TO GREENISH NECROTIC FOCI up to 1-2 cm across, with a raised rim and a depressed centre, giving the characteristic \"TARGET\" or \"BULL'S-EYE\" APPEARANCE.</b> These are highly characteristic and, together with the caecal cores, are effectively diagnostic.</li>" +
+      "</ol>" +
+      "<b>Microscopically:</b> <b>coagulative necrosis of caecal mucosa and liver with a granulomatous inflammatory reaction containing lymphocytes, macrophages and GIANT CELLS, and PLEOMORPHIC ROUND HISTOMONADS lying singly and in clusters at the ADVANCING EDGE of the necrotic lesion</b>, best demonstrated with PAS or iron haematoxylin.<br><br>" +
+      "<b>Control</b> is by <b>controlling <i>Heterakis</i> and the ground</b>: never rear turkeys with or after chickens, avoid old contaminated runs, rear turkeys on wire or fresh ground, control earthworms and wet ground, and use regular anthelmintic treatment against <i>Heterakis</i>. <b>Because the ground remains infective for years, moving the birds is more effective than treating them.</b>",
+
+    eliteDesc:
+      "<b>SITE SPECIFICITY MAKES COCCIDIOSIS DIAGNOSABLE BY EYE, AND THIS IS ITS MOST USEFUL FEATURE.</b> Each <i>Eimeria</i> species invades a defined region of gut at a defined depth in the mucosa, so the <b>anatomical location and appearance of the lesion identify the species without any laboratory</b>. <b>Frank blood in a distended caecum is <i>E. tenella</i>; a ballooned, thickened mid-gut with white and red \"salt and pepper\" speckling through the serosa is <i>E. necatrix</i>; a thickened mid-gut with thick orange mucus is <i>E. maxima</i>; and transverse white ladder-like streaks in the duodenal loop are <i>E. acervulina</i>.</b> This is the basis of the <b>lesion-scoring systems</b> used commercially to monitor anticoccidial programmes, and it means that a competent post-mortem examination is a more informative tool than a faecal oocyst count.<br><br>" +
+      "<b>WHY OOCYST COUNTS MISLEAD.</b> Faecal oocyst counts are unreliable for two opposing reasons. Severe clinical disease occurs during <b>schizogony, which precedes oocyst production</b>, so the sickest birds may be shedding few or no oocysts; conversely, <b>every normal bird on litter sheds oocysts</b>, so a positive count proves nothing about causation. The reliable approach is <b>gross lesion scoring plus a mucosal scraping from the affected site</b>, examined directly for schizonts, merozoites and gametocytes. Explaining this prevents both false reassurance and false alarm.<br><br>" +
+      "<b>THE SELF-LIMITING CYCLE EXPLAINS BOTH IMMUNITY AND THE SHAPE OF AN OUTBREAK.</b> <i>Eimeria</i> undergoes a <b>fixed, finite number of schizogonous generations</b> before it must proceed to the sexual stage and leave the host. It cannot multiply indefinitely. Consequently a single exposure produces a self-limiting disease, and survivors develop <b>strong, long-lasting but strictly species-specific immunity</b> — immunity to <i>E. tenella</i> gives no protection against <i>E. maxima</i>. Two conclusions follow. First, coccidiosis is fundamentally a disease of <b>dose</b>: light continuous exposure immunises, while a heavy dose from wet, contaminated litter kills. Second, the whole logic of <b>live coccidiosis vaccination</b> depends on this — controlled exposure to small numbers of oocysts of each relevant species produces immunity, which is why such vaccines must contain <b>all the species the flock will meet</b>.<br><br>" +
+      "<b>WET LITTER IS THE ENTIRE EPIDEMIOLOGY.</b> The oocyst is shed unsporulated and non-infective, and requires <b>warmth, moisture and oxygen</b> to sporulate over one to two days. It follows that <b>dry litter breaks the cycle and wet litter completes it</b>, and that the practical determinants of coccidiosis are <b>leaking drinkers, poor ventilation, high stocking density, caked litter and inadequate drainage</b> rather than anything to do with the parasite itself. The oocyst is also remarkably resistant once formed, surviving many months and resisting most disinfectants, which is why <b>physical removal of litter and thorough drying matter more than the choice of disinfectant</b>. This makes coccidiosis control a housing problem with a pharmaceutical adjunct, rather than the reverse.<br><br>" +
+      "<b>CRYPT INVOLVEMENT EXPLAINS WHY COCCIDIAL LESIONS ARE SO SEVERE.</b> A recurring theme in enteric pathology is which mucosal compartment is damaged. Rotavirus and <i>Cryptosporidium</i> destroy the <b>mature enterocytes at the villus tip</b>, leaving the crypt stem cells intact, so repair is rapid. Parvovirus destroys the <b>crypt</b> exclusively. <i>Eimeria</i>, particularly <i>E. necatrix</i>, frequently parasitises cells <b>deep in the mucosa including the crypts</b>, destroying part of the regenerative compartment as well as the absorptive surface — which is why coccidial lesions are more haemorrhagic, more destructive and slower to heal than most other enteric infections. <b>Reading which compartment is damaged predicts both severity and speed of recovery.</b><br><br>" +
+      "<b>THE COCCIDIOSIS-NECROTIC ENTERITIS AXIS IS THE MOST IMPORTANT PRACTICAL INTERACTION IN POULTRY MEDICINE.</b> <i>Eimeria</i>, and especially <i>E. maxima</i>, damages the mucosa, causes <b>leakage of plasma protein into the lumen — an excellent growth substrate for a proteolytic anaerobe — and slows gut transit</b>. These are precisely the three conditions <i>Clostridium perfringens</i> requires to multiply and produce NetB toxin. Consequently <b>the most effective way to control necrotic enteritis is to control coccidiosis</b>, and a flock with recurrent necrotic enteritis should prompt a review of the anticoccidial programme rather than an escalating series of antibiotic courses.<br><br>" +
+      "<b>WHY <i>HISTOMONAS</i> NEEDS A WORM, AND WHY THAT MAKES BLACKHEAD A DISEASE OF THE GROUND.</b> <i>Histomonas meleagridis</i> is a fragile flagellate that <b>forms no cyst</b> and would perish within hours in the environment. Its survival strategy is to be carried <b>inside the egg of <i>Heterakis gallinarum</i></b>, thereby borrowing the tough, chitinous, environmentally resistant shell of a nematode and persisting in soil for <b>three to four years</b>. <b>Earthworms then ingest and concentrate these eggs</b>, so a turkey pecking earthworms on old ground receives a large dose. Three consequences follow, and they constitute the whole of blackhead control: <b>control of blackhead is control of <i>Heterakis</i>; old runs remain dangerous for years so the ground itself is the reservoir; and moving birds to clean ground achieves more than any treatment.</b><br><br>" +
+      "<b>THE TOLERANT RESERVOIR EXPLAINS THE CARDINAL RULE OF TURKEY REARING.</b> Chickens are relatively resistant to <i>Histomonas</i> but readily carry <i>Heterakis</i> and shed infected eggs, remaining well while contaminating the ground. Turkeys exposed to that same ground suffer mortality approaching 80-100 per cent. This asymmetry — <b>one species healthy and shedding, the other dying</b> — is the reason for the single most important rule in turkey husbandry: <b>never keep turkeys with chickens, and never place turkeys on ground that has carried chickens.</b> It is also a clean illustration of a general epidemiological principle: the dangerous animal is often the healthy one.<br><br>" +
+      "<b>THE NAME OF THE DISEASE IS MISLEADING, WHICH IS WHY IT IS EXAMINED.</b> \"Blackhead\" refers to a dark bluish discolouration of the head seen terminally in some birds, and it is <b>neither constant nor necessary for diagnosis</b> — many birds die of histomoniasis without it, and cyanosis of the head occurs in several other conditions. The reliable diagnosis rests on the <b>combination of firm laminated caecal cores and circular depressed \"target\" or \"bull's-eye\" necrotic foci in the liver</b>, which together are effectively pathognomonic. Relying on the name rather than the lesions is a classic error.",
+
+    keyPoints: [
+      "EIMERIA are obligate intracellular protozoa of the intestinal epithelium, with STRICT HOST SPECIFICITY and STRICT SITE SPECIFICITY.",
+      "BECAUSE EACH SPECIES INVADES A DEFINED SEGMENT, THE SITE OF THE LESION IDENTIFIES THE SPECIES — this is the basis of practical diagnosis and of commercial LESION SCORING.",
+      "Life cycle: sporulated oocyst → sporozoites → repeated SCHIZOGONY (the destructive, amplifying phase) → GAMETOGONY → oocyst shed UNSPORULATED, sporulating in litter in 1-2 days given WARMTH, MOISTURE AND OXYGEN.",
+      "WET LITTER IS THE WHOLE OF COCCIDIOSIS EPIDEMIOLOGY — dry litter breaks the cycle. Leaking drinkers, poor ventilation, high density and caked litter are the real determinants.",
+      "EIMERIA TENELLA — the CAECA. Caeca distended and filled with FRANK BLOOD, later a firm laminated CAECAL CORE. Birds pass BLOOD in droppings; high mortality at 3-6 weeks.",
+      "EIMERIA NECATRIX — the MID-GUT; the MOST PATHOGENIC species. Mid-intestine BALLOONED and haemorrhagic with the classic 'SALT AND PEPPER' APPEARANCE (white schizonts and red petechiae) seen through the SEROSA.",
+      "In E. NECATRIX, SCHIZOGONY occurs in the MID-GUT but GAMETOGONY occurs in the CAECA — so oocysts are found in the caeca while lesions are in the small intestine.",
+      "EIMERIA MAXIMA — the MID-GUT, with the LARGEST OOCYSTS; thickened flaccid intestine with THICK ORANGE-PINK MUCOID EXUDATE. A MAJOR PREDISPOSING CAUSE OF NECROTIC ENTERITIS.",
+      "EIMERIA ACERVULINA — the DUODENUM; the COMMONEST species. Numerous small white TRANSVERSE LADDER-LIKE PLAQUES in the duodenal loop, best seen from the serosa. Causes malabsorption, not mortality.",
+      "OOCYST COUNTS MISLEAD — severe disease occurs during SCHIZOGONY, BEFORE oocysts are shed, and every normal bird on litter sheds oocysts. Use LESION SCORING plus a MUCOSAL SCRAPING.",
+      "The cycle is FINITE, so coccidiosis is SELF-LIMITING and survivors develop strong but STRICTLY SPECIES-SPECIFIC immunity — which is why live vaccines must contain ALL relevant species.",
+      "EIMERIA often parasitises CRYPT cells as well as villus cells, destroying part of the REGENERATIVE compartment — which is why coccidial lesions are more haemorrhagic and slower to heal than tip-only infections.",
+      "THE COCCIDIOSIS-NECROTIC ENTERITIS AXIS: Eimeria damages mucosa, leaks PLASMA PROTEIN (a growth substrate) and slows transit — the three conditions Clostridium perfringens needs. CONTROLLING COCCIDIOSIS IS THE BEST WAY TO CONTROL NECROTIC ENTERITIS.",
+      "HISTOMONIASIS (BLACKHEAD) = HISTOMONAS MELEAGRIDIS, a fragile FLAGELLATE that FORMS NO CYST and appears in tissue as a round amoeboid body.",
+      "IT SURVIVES ONLY BY BEING CARRIED INSIDE THE EGG OF HETERAKIS GALLINARUM, whose tough shell preserves it in soil for THREE TO FOUR YEARS. EARTHWORMS act as paratenic hosts.",
+      "TURKEYS are highly susceptible (mortality 80-100 per cent); CHICKENS are relatively resistant and act as TOLERANT RESERVOIRS, shedding infected Heterakis eggs while remaining well.",
+      "THEREFORE NEVER REAR TURKEYS WITH CHICKENS OR ON GROUND THAT HAS CARRIED CHICKENS — the dangerous animal is the healthy one.",
+      "Signs: depression, drooping wings and a characteristic SULPHUR-YELLOW DIARRHOEA.",
+      "'BLACKHEAD' (dark discolouration of the head) is NEITHER CONSTANT NOR NECESSARY FOR DIAGNOSIS — relying on the name rather than the lesions is a classic error.",
+      "THE TWO CLASSIC LESIONS: (1) CAECA enlarged and thickened with a FIRM DRY LAMINATED YELLOW-GREY CASEOUS CORE; (2) LIVER with CIRCULAR DEPRESSED YELLOW-GREY NECROTIC FOCI having a raised rim — the 'TARGET' or 'BULL'S-EYE' appearance.",
+      "Histology: coagulative necrosis with a granulomatous reaction and GIANT CELLS, with PLEOMORPHIC HISTOMONADS at the ADVANCING EDGE of the lesion (PAS or iron haematoxylin).",
+      "CONTROL OF BLACKHEAD IS CONTROL OF HETERAKIS AND OF THE GROUND — moving birds to clean ground achieves more than treating them."
+    ],
+
+    clinical:
+      "<b>Why this matters in Indian practice.</b><br>" +
+      "<b>Open the gut along its whole length and read the lesion by its position.</b> This is the single most valuable skill in poultry parasitology and needs no laboratory. <b>Blood in a swollen caecum is <i>E. tenella</i>; a ballooned mid-gut speckled white and red through the serosa is <i>E. necatrix</i>; thick orange mucus in a thickened mid-gut is <i>E. maxima</i>; and small white transverse ladder-like streaks in the duodenal loop are <i>E. acervulina</i>.</b> Look at the serosal surface before you cut, because the salt-and-pepper and ladder patterns are clearest from outside.<br><br>" +
+      "<b>Take a mucosal scraping rather than relying on a faecal count.</b> Scrape the affected segment, mount the scraping in a drop of saline under a coverslip, and look for schizonts, merozoites and oocysts. This confirms the diagnosis on the spot. Explain to the farmer why a faecal oocyst count can mislead: <b>the sickest birds may not yet be shedding, and every healthy bird on litter sheds some oocysts.</b><br><br>" +
+      "<b>Treat coccidiosis as a litter problem with a drug adjunct, not the reverse.</b> The oocyst needs warmth, moisture and oxygen to become infective, so <b>wet litter is what turns a harmless exposure into an outbreak</b>. Walk the shed and look for the real causes: <b>leaking or overflowing drinkers, drinkers at the wrong height, poor ventilation, condensation, high stocking density, caked litter and poor drainage</b>. Fixing these does more than any change of anticoccidial. Remind the owner that oocysts survive months and resist most disinfectants, so between batches the answer is <b>physical removal of litter, cleaning and thorough drying</b>, not simply spraying over it.<br><br>" +
+      "<b>When a flock has recurrent necrotic enteritis, review the coccidiosis programme.</b> This is one of the most useful interventions in Indian broiler practice. <i>Eimeria</i> damage, particularly from <i>E. maxima</i>, supplies exactly the conditions <i>Clostridium perfringens</i> needs. <b>Repeated antibiotic courses for necrotic enteritis without addressing coccidiosis simply postpone the next outbreak.</b> Check whether the anticoccidial is being rotated, whether the dose is correct, and whether the litter is wet.<br><br>" +
+      "<b>Give the single most important piece of turkey advice plainly: keep turkeys away from chickens.</b> Chickens carry <i>Heterakis</i> and shed <i>Histomonas</i>-containing eggs while remaining perfectly healthy; turkeys on that ground die in large numbers. Explain that the infective eggs persist in soil for <b>three to four years</b>, so removing the chickens now is not sufficient — <b>turkeys must go onto ground that has never carried chickens, or be reared on wire.</b> Add that earthworms concentrate the eggs, so wet, worm-rich ground is especially dangerous, and that regular deworming against <i>Heterakis</i> is part of blackhead control.<br><br>" +
+      "<b>Diagnose blackhead from the caeca and the liver, not from the head.</b> Farmers and students both expect a black head, and many affected birds never show one. At post-mortem, <b>open the caeca and look for a firm, dry, laminated yellow-grey core, then examine the liver for circular depressed necrotic foci with raised edges — the target or bull&rsquo;s-eye lesions.</b> That combination is effectively diagnostic and is easy to demonstrate to an owner. A sulphur-yellow diarrhoea in a turkey flock should prompt this examination immediately.<br><br>" +
+      "<b>Frame coccidiosis losses in the farmer&rsquo;s own terms.</b> <i>E. tenella</i> kills conspicuously and gets attention, but <b><i>E. acervulina</i> and <i>E. maxima</i> quietly cost more</b> through malabsorption, poor feed conversion, uneven flocks and pale, poorly pigmented birds that grade down at sale. Pointing to the extra days to market weight and the poorer uniformity usually persuades a producer to invest in litter management more effectively than describing the parasite.",
+
+    tables: [
+      {
+        title: "The Eimeria species of the chicken — the site names the species",
+        headers: ["Species", "SITE", "Gross lesion", "Main effect"],
+        rows: [
+          ["E. TENELLA", "CAECA", "Distended caeca with FRANK BLOOD, then laminated CAECAL CORE", "HIGH MORTALITY; blood in droppings"],
+          ["E. NECATRIX", "MID-GUT (schizogony); caeca (gametogony)", "BALLOONED haemorrhagic mid-gut; 'SALT AND PEPPER' through serosa", "MOST PATHOGENIC; high mortality"],
+          ["E. MAXIMA", "MID-GUT", "Thickened flaccid gut with THICK ORANGE-PINK MUCUS; largest oocysts", "Malabsorption; PREDISPOSES TO NECROTIC ENTERITIS"],
+          ["E. ACERVULINA", "DUODENUM", "White TRANSVERSE LADDER-LIKE plaques, best seen from serosa", "COMMONEST; malabsorption, poor pigmentation"],
+          ["E. brunetti", "Lower intestine, rectum, cloaca", "Fibrinonecrotic membrane", "Moderate; enteritis"],
+          ["E. mitis, E. praecox", "Small intestine", "No gross lesion", "Malabsorption, poor growth"]
+        ]
+      },
+      {
+        title: "Coccidiosis versus histomoniasis — both damage the caeca",
+        headers: ["Feature", "CAECAL COCCIDIOSIS (E. tenella)", "HISTOMONIASIS (blackhead)"],
+        rows: [
+          ["Organism", "Eimeria tenella (coccidian)", "Histomonas meleagridis (flagellate)"],
+          ["Species affected", "CHICKENS chiefly", "TURKEYS severely; chickens resistant CARRIERS"],
+          ["Transmission", "Sporulated OOCYST from wet litter", "Inside the HETERAKIS EGG; earthworm paratenic host"],
+          ["Environmental survival", "Months (oocyst)", "3-4 YEARS (inside Heterakis egg)"],
+          ["CAECAL contents", "FRANK BLOOD, then laminated core", "FIRM DRY LAMINATED YELLOW-GREY CORE"],
+          ["LIVER", "NORMAL", "CIRCULAR DEPRESSED 'TARGET' / BULL'S-EYE NECROTIC FOCI"],
+          ["Droppings", "BLOOD-STAINED", "SULPHUR-YELLOW"],
+          ["Diagnosis", "Lesion site + mucosal scraping for schizonts", "Caecal core + TARGET LIVER LESIONS"],
+          ["Control", "DRY LITTER; anticoccidials; live vaccine", "Control HETERAKIS and the GROUND; separate from chickens"]
+        ]
+      }
+    ],
+
+    img: "",
+    tags: ["coccidiosis", "Eimeria", "site specificity", "schizogony", "Eimeria tenella", "caecal core", "Eimeria necatrix", "salt and pepper", "Eimeria maxima", "Eimeria acervulina", "ladder lesions", "wet litter", "lesion scoring", "necrotic enteritis", "histomoniasis", "blackhead", "Histomonas meleagridis", "Heterakis", "target liver lesion", "bull's-eye"]
+  },
+
+  "u5-t19": {
+    /* Ectoparasites of Poultry */
+    summary: "Poultry ectoparasites cause anaemia, irritation and production loss: the red mite feeds at night and hides in cracks, the northern fowl mite lives on the bird, scaly leg mite burrows under the leg scales, lice chew feathers, and the fowl tick transmits spirochaetosis.",
+
+    desc:
+      "<b>A. MITES</b><br><br>" +
+      "<b>1. THE RED MITE (POULTRY RED MITE) — <i>Dermanyssus gallinae</i>.</b> The most important ectoparasite of layers worldwide.<br>" +
+      "<ul>" +
+      "<li><b>THE KEY BEHAVIOURAL FACT: it is a NOCTURNAL, INTERMITTENT feeder. It lives OFF THE BIRD, hiding by day in CRACKS AND CREVICES of the house — in woodwork, under perch ends, in nest boxes, behind loose plaster and in the joints of cages — and crawls onto the birds at NIGHT to feed on blood.</b></li>" +
+      "<li>It is <b>grey-white when unfed and BRIGHT RED when engorged</b>.</li>" +
+      "<li><b>Consequences of this behaviour:</b> a daytime inspection of the birds may reveal nothing while the house is heavily infested; <b>examination must be at night, or by searching the cracks, perch ends and nest boxes with a torch by day</b>; and <b>treating the birds alone is largely futile because the mite spends most of its life off the host — the BUILDING must be treated</b>.</li>" +
+      "<li><b>It can survive for MANY MONTHS (up to 8-9 months) without feeding</b>, so leaving a house empty for a few weeks will not clear it.</li>" +
+      "<li><b>Effects:</b> restlessness and poor sleep, feather pecking and cannibalism, <b>severe ANAEMIA with pale combs and wattles</b>, weight loss, a <b>marked drop in egg production</b>, blood spots on eggs, reluctance of hens to enter infested nest boxes, and death of chicks and heavily infested birds. It also <b>bites the attendants, causing an itchy papular dermatitis</b>, and can act as a mechanical vector of several pathogens.</li>" +
+      "</ul>" +
+      "<b>2. THE NORTHERN FOWL MITE — <i>Ornithonyssus sylviarum</i>.</b> The important contrast with the red mite: <b>it spends its ENTIRE LIFE CYCLE ON THE BIRD</b> and does not hide in the house.<br>" +
+      "<ul>" +
+      "<li>Found in largest numbers around the <b>VENT, tail base and breast</b>, where it produces <b>blackened, matted, greasy, dirty-looking feathers</b> from mite faeces, eggs and dried blood — <b>a blackened vent area in a hen is highly suggestive.</b></li>" +
+      "<li>Causes anaemia, irritation, reduced production, and dermatitis in handlers.</li>" +
+      "<li><b>Because it lives on the bird, treatment of the BIRD is effective — the opposite of red mite control.</b></li>" +
+      "</ul>" +
+      "<b>3. THE SCALY LEG MITE — <i>Knemidocoptes mutans</i>.</b> A <b>burrowing mite</b> that tunnels <b>beneath the scales of the shanks and feet</b>.<br>" +
+      "<ul>" +
+      "<li>Causes <b>chronic, slowly progressive hyperkeratosis: the leg scales are raised, lifted, thickened and separated by masses of grey-white crusty debris, giving a rough, encrusted, deformed \"SCALY LEG\"</b> with obvious swelling.</li>" +
+      "<li>Severe cases cause lameness, deformity and even loss of toes. It is a common and disfiguring condition of <b>backyard and older birds in India</b>.</li>" +
+      "<li><b><i>Knemidocoptes gallinae</i></b> causes <b>\"DEPLUMING ITCH\"</b>, burrowing at the base of the feather shaft on the back, wings and body, causing intense irritation and <b>feather pulling and loss</b>.</li>" +
+      "</ul>" +
+
+      "<b>B. LICE</b><br><br>" +
+      "<b>All poultry lice are CHEWING (MALLOPHAGA) lice — there are NO sucking lice of poultry.</b> They feed on <b>feather debris, scales and skin scurf</b>, not on blood, although heavy infestation may cause some skin abrasion and bleeding. <b>The entire life cycle is spent ON THE BIRD</b>, and transmission is by direct contact.<br>" +
+      "<ul>" +
+      "<li><b><i>Menopon gallinae</i> — the SHAFT LOUSE</b>, found on the shafts of body feathers.</li>" +
+      "<li><b><i>Menacanthus stramineus</i> — the CHICKEN BODY LOUSE</b>, the most damaging species, found on the skin of the <b>breast, thigh and around the vent</b>.</li>" +
+      "<li><b><i>Lipeurus caponis</i> — the WING LOUSE</b>; <b><i>Cuclotogaster heterographus</i> — the HEAD LOUSE</b>, important in chicks.</li>" +
+      "</ul>" +
+      "<b>Diagnosis</b> is by parting the feathers, especially <b>around the vent, under the wings and on the breast</b>, and finding the moving lice and their <b>NITS — clusters of whitish egg masses cemented to the base of the feather shafts</b>. Effects are <b>irritation, restlessness, feather damage and loss, reduced feeding and sleeping, poor growth, drop in egg production and increased feather pecking</b>. <b>Because lice do not suck blood, anaemia is NOT a feature — this distinguishes lice from mites and ticks.</b><br><br>" +
+
+      "<b>C. THE FOWL TICK — <i>Argas persicus</i></b><br><br>" +
+      "A <b>SOFT TICK</b> (also called the blue bug or tampan), common in poultry houses in India.<br>" +
+      "<ul>" +
+      "<li>Like the red mite, it is a <b>NOCTURNAL, INTERMITTENT feeder that hides by day in cracks and crevices</b> of the house and feeds rapidly at night.</li>" +
+      "<li><b>Effects: severe ANAEMIA from blood loss, irritation and restlessness, loss of condition, drop in egg production, and \"TICK PARALYSIS\" from a salivary neurotoxin, causing an ascending flaccid paralysis.</b></li>" +
+      "<li><b>MOST IMPORTANTLY, IT IS THE VECTOR OF <i>BORRELIA ANSERINA</i>, the cause of AVIAN SPIROCHAETOSIS</b>, and transmission within the tick is both <b>transstadial and transovarial</b>, so the tick population is a self-sustaining reservoir.</li>" +
+      "<li><b>It survives many months without feeding, and control requires treating the BUILDING — filling and sealing cracks, replacing loose woodwork and spraying the structure — not merely the birds.</b></li>" +
+      "</ul>" +
+
+      "<b>D. FLEAS AND FLIES</b><br><br>" +
+      "<ul>" +
+      "<li><b><i>Echidnophaga gallinacea</i> — the STICKTIGHT FLEA.</b> Unlike other fleas it <b>attaches firmly and remains embedded in one place for days to weeks</b>, forming characteristic <b>dark brown to black clusters firmly attached around the EYES, COMB, WATTLES AND FACE</b>, with local ulceration and irritation. Heavy infestation causes anaemia and death in chicks.</li>" +
+      "<li><b>Darkling beetles (<i>Alphitobius diaperinus</i>, the lesser mealworm)</b> — not parasites themselves, but they breed in litter, damage insulation, and <b>act as reservoirs and vectors of many poultry pathogens including <i>Salmonella</i>, <i>E. coli</i>, infectious bursal disease virus and Marek disease virus, and as intermediate hosts of tapeworms.</b> Their control is an underrated part of poultry hygiene.</li>" +
+      "<li><b>Houseflies</b> — mechanical vectors of many pathogens and intermediate hosts of tapeworms.</li>" +
+      "</ul>" +
+
+      "<b>E. THE COMMON THREAD</b><br><br>" +
+      "<b>Ectoparasites rarely kill, but they cause substantial loss through anaemia, irritation, sleeplessness, feather damage, cannibalism, reduced feed intake, poor growth and reduced egg production.</b> Several also <b>bite the stockmen</b>, and several are <b>vectors of infectious disease</b>. <b>The decisive practical question for each parasite is: DOES IT LIVE ON THE BIRD OR IN THE BUILDING? — because that single fact determines whether you treat the bird or the house.</b>",
+
+    eliteDesc:
+      "<b>THE ORGANISING QUESTION IS WHERE THE PARASITE LIVES, AND IT DETERMINES THE ENTIRE CONTROL STRATEGY.</b> Poultry ectoparasites divide cleanly into two groups, and confusing them causes repeated treatment failure. <b>Parasites that spend their whole life on the bird — lice, the northern fowl mite, and the burrowing <i>Knemidocoptes</i> mites — are controlled by treating the bird.</b> <b>Parasites that live in the building and visit the bird only to feed — the red mite <i>Dermanyssus gallinae</i> and the fowl tick <i>Argas persicus</i> — cannot be controlled by treating the bird at all, because the parasite is not on it for most of its life.</b> A farmer who repeatedly dusts his hens for red mite and sees no improvement is not using the wrong product; he is treating the wrong location.<br><br>" +
+      "<b>THE NOCTURNAL HABIT CREATES A DIAGNOSTIC TRAP.</b> Both the red mite and the fowl tick feed at night and retreat by day into cracks, perch ends, nest box joints and loose woodwork. Consequently a <b>daytime examination of the birds can be entirely negative in a house that is heavily infested</b>, and an inexperienced practitioner will conclude that ectoparasites are not the problem. The correct techniques are to <b>examine the birds at night, or by day to search the structure with a torch — running a knife blade or a piece of paper into perch-end joints and nest box crevices, where the mites appear as grey or red moving specks and their accumulated debris as a characteristic grey-white powdery deposit.</b> Placing corrugated card traps in the house overnight is a simple monitoring method.<br><br>" +
+      "<b>THE ABILITY TO SURVIVE STARVATION IS WHY DOWNTIME FAILS.</b> <i>Dermanyssus gallinae</i> can survive <b>eight to nine months without a blood meal</b>, and <i>Argas persicus</i> survives comparably long. This defeats the intuitive control measure of simply emptying the house for a few weeks between batches. It means that <b>a house once infested remains infested across batches unless the structure itself is treated</b>, and it explains the characteristic history of a unit where every successive flock becomes anaemic and drops in production a few weeks after placement. The practical measures that work are physical as much as chemical: <b>filling and sealing cracks, replacing or removing loose woodwork, treating perch ends and nest box joints specifically, and using products with residual activity on the structure rather than dusting the birds.</b><br><br>" +
+      "<b>ANAEMIA VERSUS IRRITATION SEPARATES THE TWO FEEDING STRATEGIES.</b> A useful clinical discriminator follows from what the parasite eats. <b>Blood feeders — red mite, northern fowl mite, fowl tick, sticktight flea — cause anaemia with pale combs and wattles, weakness and, in heavy infestations, death.</b> <b>Chewing lice, which feed on feather debris and skin scurf and do not suck blood, cause irritation, restlessness and feather damage but NOT anaemia.</b> This is worth stating explicitly because students frequently assume all ectoparasites cause anaemia. Consequently, <b>a pale, weak hen with a dropped production points to mites or ticks; a restless, ragged, feather-damaged hen with a normal comb colour points to lice.</b> There are no sucking lice of poultry, which is the anatomical basis of this distinction.<br><br>" +
+      "<b>THE BEHAVIOURAL AND WELFARE CONSEQUENCES OFTEN EXCEED THE DIRECT ONES.</b> Ectoparasite burdens rarely kill adult birds, and producers therefore under-rate them. The real cost accumulates through <b>sleeplessness and constant irritation, which reduce feeding time and increase energy expenditure; feather pecking and cannibalism, which the irritation initiates and which then persist as a learned vice long after the parasite is gone; hens refusing to enter infested nest boxes and laying on the floor; blood spots on eggs downgrading them; and a substantial fall in egg production.</b> The point about <b>cannibalism becoming self-sustaining</b> is important and often missed: eliminating the mites does not necessarily stop the pecking, because the behaviour has become established, which is why early intervention matters more than eventual treatment.<br><br>" +
+      "<b>ECTOPARASITES ARE VECTORS AS WELL AS PARASITES, AND THIS IS THE UNDER-RECOGNISED HALF OF THE TOPIC.</b> <i>Argas persicus</i> transmits <b><i>Borrelia anserina</i></b> transstadially and transovarially, making the tick population a permanent self-sustaining reservoir of avian spirochaetosis that requires no further input from birds. <i>Dermanyssus</i> acts as a mechanical vector for several bacterial and viral agents. And the <b>darkling beetle</b>, though not a parasite at all, is a genuine reservoir and vector of <b><i>Salmonella</i>, <i>E. coli</i>, infectious bursal disease virus and Marek disease virus</b>, and an intermediate host for poultry tapeworms; it survives cleaning and disinfection by retreating into insulation and cracks, and it migrates to the next batch. Beetle control is therefore a disease-control measure rather than a cosmetic one, and it is routinely neglected.<br><br>" +
+      "<b>THE BURROWING MITES ILLUSTRATE WHY TREATMENT MUST OUTLAST THE LESION.</b> <i>Knemidocoptes mutans</i> tunnels beneath the leg scales, and the visible lesion is the <b>hyperkeratotic host response to that tunnelling</b> rather than the mite itself. Two consequences follow. First, <b>the thick crusts physically shield the mites from topical treatment</b>, which is why softening and removing the crusts, and repeating treatment at intervals covering the life cycle, is necessary rather than a single application. Second, <b>the deformity persists after the mites are dead</b>, because the damaged scale-forming tissue takes months to regrow normally — so an owner who expects the legs to look normal within a fortnight will conclude that treatment failed. Explaining this in advance prevents that misunderstanding.<br><br>" +
+      "<b>THE OCCUPATIONAL DIMENSION IS REAL.</b> <i>Dermanyssus gallinae</i> and <i>Ornithonyssus sylviarum</i> readily bite people, producing an intensely itchy papular dermatitis on the arms, neck and trunk of stockmen, egg collectors and veterinarians, and the cause is frequently misdiagnosed as an allergy or scabies because the mites are not found on the person. <b>When a poultry worker presents with unexplained itchy papules, asking about the mite status of the house is the useful question</b>, and it is one that only someone familiar with the birds is likely to ask.",
+
+    keyPoints: [
+      "THE ORGANISING QUESTION FOR EVERY POULTRY ECTOPARASITE: DOES IT LIVE ON THE BIRD OR IN THE BUILDING? That single fact decides whether you treat the bird or the house.",
+      "RED MITE (DERMANYSSUS GALLINAE) is a NOCTURNAL INTERMITTENT feeder that LIVES OFF THE BIRD, hiding by day in CRACKS, PERCH ENDS, NEST BOXES and loose woodwork, and feeding at night.",
+      "It is GREY-WHITE when unfed and BRIGHT RED when engorged. TREATING THE BIRDS ALONE IS FUTILE — THE BUILDING MUST BE TREATED.",
+      "A DAYTIME EXAMINATION OF THE BIRDS MAY BE COMPLETELY NEGATIVE IN A HEAVILY INFESTED HOUSE — examine at night, or search cracks and perch ends with a torch by day.",
+      "RED MITE SURVIVES 8-9 MONTHS WITHOUT FEEDING, so a short empty period between batches will NOT clear an infested house.",
+      "Red mite effects: severe ANAEMIA with pale combs, restlessness, feather pecking and CANNIBALISM, marked EGG DROP, BLOOD SPOTS ON EGGS, hens refusing infested nest boxes, and BITING OF THE STOCKMEN.",
+      "NORTHERN FOWL MITE (ORNITHONYSSUS SYLVIARUM) spends its ENTIRE LIFE CYCLE ON THE BIRD — so TREATING THE BIRD IS EFFECTIVE, the opposite of red mite.",
+      "It concentrates around the VENT, tail base and breast, producing BLACKENED, MATTED, GREASY FEATHERS from mite faeces and dried blood — a blackened vent area is highly suggestive.",
+      "SCALY LEG MITE (KNEMIDOCOPTES MUTANS) BURROWS BENEATH THE LEG SCALES, causing chronic HYPERKERATOSIS with raised, lifted, thickened scales separated by grey-white crusty debris — 'SCALY LEG'.",
+      "The CRUSTS PHYSICALLY SHIELD THE MITES from topical treatment, and the DEFORMITY PERSISTS FOR MONTHS after the mites are dead — warn the owner in advance or treatment will be judged a failure.",
+      "KNEMIDOCOPTES GALLINAE causes 'DEPLUMING ITCH', burrowing at the feather shaft base and causing intense irritation and feather pulling.",
+      "ALL POULTRY LICE ARE CHEWING (MALLOPHAGA) LICE — THERE ARE NO SUCKING LICE OF POULTRY. They feed on feather debris and skin scurf, NOT blood.",
+      "THEREFORE LICE DO NOT CAUSE ANAEMIA — this is the key discriminator. Pale weak bird = MITES or TICKS; restless ragged bird with normal comb colour = LICE.",
+      "Important lice: MENOPON GALLINAE (shaft louse), MENACANTHUS STRAMINEUS (chicken body louse — the most damaging), Lipeurus caponis (wing louse), Cuclotogaster heterographus (head louse of chicks).",
+      "Diagnose lice by parting feathers around the VENT, under the WINGS and on the BREAST, finding moving lice and NITS — whitish egg masses cemented to the base of feather shafts.",
+      "ARGAS PERSICUS (FOWL TICK, soft tick) is also a NOCTURNAL feeder hiding in cracks by day — treat the BUILDING, not the birds. It survives many months without feeding.",
+      "The fowl tick causes severe ANAEMIA and 'TICK PARALYSIS' from a salivary neurotoxin, and IS THE VECTOR OF BORRELIA ANSERINA (avian spirochaetosis), transmitting TRANSSTADIALLY AND TRANSOVARIALLY.",
+      "STICKTIGHT FLEA (ECHIDNOPHAGA GALLINACEA) attaches firmly and remains EMBEDDED IN ONE PLACE, forming dark clusters around the EYES, COMB, WATTLES AND FACE.",
+      "DARKLING BEETLES (Alphitobius diaperinus) are not parasites but are RESERVOIRS AND VECTORS of SALMONELLA, E. COLI, INFECTIOUS BURSAL DISEASE VIRUS and MAREK DISEASE VIRUS, and INTERMEDIATE HOSTS of tapeworms. Beetle control is a disease-control measure.",
+      "Ectoparasites rarely kill but cause major loss through anaemia, sleeplessness, feather damage, cannibalism, reduced intake and EGG DROP.",
+      "CANNIBALISM INITIATED BY MITE IRRITATION BECOMES A SELF-SUSTAINING LEARNED VICE that persists after the parasite is eliminated — which is why early intervention matters.",
+      "RED MITE AND NORTHERN FOWL MITE BITE PEOPLE, causing an itchy papular dermatitis in stockmen and veterinarians that is often misdiagnosed as allergy or scabies."
+    ],
+
+    clinical:
+      "<b>Why this matters in Indian practice.</b><br>" +
+      "<b>Ask one question first: does this parasite live on the bird or in the building?</b> It settles the treatment. <b>Lice, northern fowl mite and scaly leg mite live on the bird, so treat the bird. Red mite and the fowl tick live in the house, so treat the house.</b> A farmer who has dusted his hens repeatedly for red mite without improvement has been treating the wrong location, and explaining this is usually the most useful thing you do on the visit.<br><br>" +
+      "<b>Inspect the house at night, or inspect the cracks by day.</b> Red mite and <i>Argas</i> are invisible on the birds during the day. Go into the shed after dark with a torch and look at the birds on the perches, or by day run a knife blade or strip of paper into <b>perch-end joints, nest box corners, cracks in walls and plaster, and cage joints</b>, where the mites appear as moving grey or red specks with a characteristic grey-white powdery deposit of accumulated debris and cast skins. Leaving corrugated card traps overnight is a simple way to monitor a house.<br><br>" +
+      "<b>Warn that emptying the shed is not enough.</b> Red mite survives eight to nine months without feeding and the fowl tick comparably long, so the common belief that a few weeks of downtime will clear an infestation is wrong. Advise the measures that actually work between batches: <b>fill and seal cracks, replace or remove loose woodwork, treat perch ends and nest box joints specifically, and apply a residual acaricide to the structure rather than dusting the birds.</b><br><br>" +
+      "<b>Use comb colour to separate mites from lice at the bird.</b> <b>A pale, weak hen with a dropped production has a blood-feeding parasite — mites or ticks. A restless, ragged, feather-damaged hen with a normal red comb has lice</b>, because poultry lice chew feather debris and do not suck blood. Confirm by parting the feathers around the vent, under the wings and on the breast and looking for moving lice and the cemented white nit masses at the feather shaft bases.<br><br>" +
+      "<b>Look at the vent of a hen with dirty, blackened feathers.</b> Matted, greasy, blackened feathering around the vent and tail base is characteristic of northern fowl mite, and because this mite lives permanently on the bird, treating the birds themselves resolves it — a genuinely satisfying result to demonstrate to an owner.<br><br>" +
+      "<b>Manage scaly leg realistically and set expectations.</b> Scaly leg is common in Indian backyard and older birds and is disfiguring. Explain two things before starting treatment: the <b>thick crusts shield the mites, so the crusts must be softened and treatment repeated over the life cycle rather than applied once</b>; and the <b>legs will remain deformed for months after the mites are dead</b>, because the scale-forming tissue takes a long time to recover. Owners who are not told this conclude that the treatment failed and abandon it.<br><br>" +
+      "<b>Take darkling beetles seriously, because they are a disease problem and not merely a nuisance.</b> In deep-litter houses across India, the lesser mealworm breeds in the litter, tunnels into insulation and survives cleaning between batches. It carries <b><i>Salmonella</i>, <i>E. coli</i>, infectious bursal disease virus and Marek disease virus</b>, and it is an intermediate host of tapeworms, so it transfers infection from one batch to the next. Advise litter removal, treatment of the floor and wall bases at turnaround, and repair of damaged insulation where beetles harbour.<br><br>" +
+      "<b>Remember the people.</b> When a stockman, egg collector or family member complains of an intensely itchy papular rash on the arms, neck or trunk, and the house has red mite or northern fowl mite, the two are almost certainly connected. This is frequently misdiagnosed as an allergy or as scabies because no mites are found on the person. <b>Telling the worker to mention the poultry contact to their doctor, and clearing the mites from the house, resolves it</b> — and you may be the only person in a position to make the link.<br><br>" +
+      "<b>Intervene early on cannibalism.</b> Feather pecking that begins because birds are irritated by mites <b>becomes a learned habit that persists after the parasites are gone</b>. Advise prompt treatment of the infestation, together with the usual measures for pecking — reducing light intensity, providing adequate feeder and drinker space, avoiding overcrowding and providing enrichment — rather than assuming the behaviour will stop when the mites do.",
+
+    tables: [
+      {
+        title: "The decisive question — where does the parasite live?",
+        headers: ["Parasite", "Lives ON the bird or IN the building?", "Treat what?", "Key diagnostic point"],
+        rows: [
+          ["RED MITE (Dermanyssus gallinae)", "IN THE BUILDING — feeds at night only", "THE HOUSE — cracks, perch ends, nest boxes", "Birds may look clean by day; search crevices with a torch"],
+          ["FOWL TICK (Argas persicus)", "IN THE BUILDING — feeds at night", "THE HOUSE — seal cracks, spray structure", "Vector of BORRELIA ANSERINA"],
+          ["NORTHERN FOWL MITE (Ornithonyssus)", "ON THE BIRD — entire life cycle", "THE BIRD", "BLACKENED, MATTED VENT feathers"],
+          ["LICE (Menopon, Menacanthus)", "ON THE BIRD — entire life cycle", "THE BIRD", "NITS cemented to feather shaft bases; NO anaemia"],
+          ["SCALY LEG MITE (Knemidocoptes)", "ON THE BIRD — burrows under leg scales", "THE BIRD, repeatedly", "Raised, crusted, deformed leg scales"],
+          ["STICKTIGHT FLEA (Echidnophaga)", "ON THE BIRD — embedded in one place", "THE BIRD", "Dark clusters around EYES, COMB and WATTLES"],
+          ["DARKLING BEETLE (Alphitobius)", "IN THE LITTER and insulation", "THE HOUSE at turnaround", "Vector of Salmonella, IBDV, Marek; tapeworm host"]
+        ]
+      },
+      {
+        title: "Anaemia or irritation? — what the parasite eats decides the signs",
+        headers: ["Feeding type", "Parasites", "Comb colour", "Main effects"],
+        rows: [
+          ["BLOOD FEEDERS", "Red mite, northern fowl mite, fowl tick, sticktight flea", "PALE — ANAEMIA", "Weakness, egg drop, blood spots on eggs, death if heavy"],
+          ["CHEWING (feather debris and scurf)", "ALL poultry LICE — there are no sucking lice of poultry", "NORMAL RED", "Irritation, restlessness, feather damage, pecking"],
+          ["BURROWING", "Knemidocoptes species", "Normal", "Hyperkeratosis, scaly leg, depluming itch, lameness"],
+          ["Non-parasitic vector", "Darkling beetle, houseflies", "Normal", "Disease TRANSMISSION between batches"],
+          ["Practical discriminator", "—", "PALE = mite/tick; RED = lice", "Check comb colour before parting feathers"]
+        ]
+      }
+    ],
+
+    img: "",
+    tags: ["red mite", "Dermanyssus gallinae", "nocturnal feeder", "treat the building", "northern fowl mite", "Ornithonyssus sylviarum", "blackened vent", "scaly leg mite", "Knemidocoptes", "depluming itch", "chewing lice", "Mallophaga", "nits", "no anaemia", "Argas persicus", "tick paralysis", "sticktight flea", "darkling beetle", "cannibalism", "occupational dermatitis"]
+  },
+
+  "u5-t20": {
+    /* Avian Nutritional Deficiencies */
+    summary: "Learn each avian deficiency by the one sign that names it: vitamin A by squamous metaplasia and pustules in the oesophagus, vitamin E by crazy chick disease, vitamin D and calcium by rickets and cage layer fatigue, riboflavin by curled toe paralysis, thiamine by star-gazing, and manganese by perosis.",
+
+    desc:
+      "<b>A. WHY BIRDS ARE PARTICULARLY VULNERABLE</b><br><br>" +
+      "Three features make poultry unusually sensitive to dietary imbalance:<br>" +
+      "<ul>" +
+      "<li><b>Almost all nutrients must come from the ration.</b> Intensively reared birds have no access to soil, insects, green material or sunlight, so a formulation error is not buffered by anything.</li>" +
+      "<li><b>Extremely rapid growth</b> in broilers, and <b>enormous mineral demand</b> in layers, which mobilise calcium daily for shell formation.</li>" +
+      "<li><b>Birds have limited intestinal microbial synthesis</b> of B vitamins compared with ruminants, so B-vitamin deficiencies are readily produced.</li>" +
+      "</ul>" +
+      "<b>General principle:</b> deficiency affects the <b>whole group sharing one feed batch</b>, is <b>afebrile</b>, and <b>does not respond to antibiotics</b> — the same triad as mycotoxicosis, and the two frequently coexist because <b>mouldy feed loses vitamin activity as well as gaining toxin</b>.<br><br>" +
+
+      "<b>B. FAT-SOLUBLE VITAMINS</b><br><br>" +
+      "<b>1. VITAMIN A — the most important vitamin deficiency of poultry.</b><br>" +
+      "Vitamin A maintains <b>epithelial differentiation</b> and forms <b>rhodopsin</b> for vision. Deficiency causes <b>SQUAMOUS METAPLASIA of glandular and columnar epithelium throughout the body</b>, and this single change explains all the lesions.<br>" +
+      "<ul>" +
+      "<li><b>THE CLASSIC LESION: small, white, raised PUSTULE-LIKE NODULES IN THE MUCOSA OF THE OESOPHAGUS AND PHARYNX</b> — these are mucous glands whose ducts have become blocked by keratinised, metaplastic epithelium, so the gland distends with inspissated secretion. They resemble the lesions of fowl pox and of trichothecene toxicosis and must be distinguished from both.</li>" +
+      "<li><b>Nasal and ocular discharge, swollen infraorbital sinuses filled with caseous material, and XEROPHTHALMIA with a dry, keratinised conjunctiva and adhesion of the eyelids by caseous exudate</b>.</li>" +
+      "<li><b>Loss of the mucociliary escalator → greatly increased susceptibility to respiratory infection</b>, and metaplasia of the renal tubules and ureters → <b>urate accumulation and VISCERAL GOUT</b>.</li>" +
+      "<li>Poor growth, ruffled feathers, pale shanks and comb (loss of carotenoid pigmentation), reduced egg production and hatchability, and ataxia in chicks.</li>" +
+      "</ul>" +
+      "<b>2. VITAMIN D3 (and CALCIUM and PHOSPHORUS).</b> Note that <b>birds can use only vitamin D3 (cholecalciferol) — vitamin D2 is almost inactive in poultry</b>, which is an examinable peculiarity.<br>" +
+      "<ul>" +
+      "<li><b>RICKETS in growing birds:</b> failure of mineralisation of osteoid and cartilage. <b>Soft, rubbery, easily bent bones and beak; enlarged, soft costochondral junctions producing the \"RACHITIC ROSARY\" — a row of beads along the ribs at the junction with the sternum; inward bending of the ribs; a soft, deformed keel; lameness, splayed legs and reluctance to walk.</b></li>" +
+      "<li><b>OSTEOMALACIA / CAGE LAYER FATIGUE in adult layers:</b> chronic drain of calcium for shell formation exceeds intake. Hens become <b>paralysed and lie on their sides in the cage, unable to stand, with soft, easily fractured long bones and ribs and a soft beak</b>, and produce <b>thin-shelled and shell-less eggs</b>. Birds removed to the floor often recover, which is diagnostically useful.</li>" +
+      "<li>Deficiency also causes a marked <b>drop in egg production, thin shells, and reduced hatchability with embryos dying late in incubation</b>.</li>" +
+      "</ul>" +
+      "<b>3. VITAMIN E and SELENIUM</b> — acting together as the antioxidant system (<b>vitamin E as a membrane antioxidant, selenium as the active centre of GLUTATHIONE PEROXIDASE</b>). Deficiency permits <b>lipid peroxidation of membranes</b>, and produces <b>three distinct classic syndromes</b>:<br>" +
+      "<ul>" +
+      "<li><b>ENCEPHALOMALACIA (\"CRAZY CHICK DISEASE\")</b> — chiefly vitamin E deficiency. Chicks of 2-6 weeks show <b>ataxia, incoordination, backward or sideways falling, RETRACTION OF THE HEAD (opisthotonus), rapid contractions of the legs and prostration</b>. <b>The lesion is in the CEREBELLUM, which is swollen, soft and OEDEMATOUS with HAEMORRHAGE AND GREEN-YELLOW NECROTIC (ISCHAEMIC) FOCI in the folia</b>, from capillary damage and thrombosis.</li>" +
+      "<li><b>EXUDATIVE DIATHESIS</b> — vitamin E and <b>SELENIUM</b> deficiency. <b>Capillary damage causes leakage of greenish-blue, gelatinous, oedematous fluid into the SUBCUTIS, most obvious over the BREAST, ABDOMEN AND INNER THIGHS</b>, giving a striking blue-green discolouration under the skin.</li>" +
+      "<li><b>NUTRITIONAL MUSCULAR DYSTROPHY (WHITE MUSCLE DISEASE)</b> — vitamin E and <b>sulphur amino acid (cystine)</b> deficiency. <b>Bilaterally symmetrical chalky white streaks of degeneration and necrosis in the BREAST (pectoral) and thigh muscles, and in the gizzard and heart</b>, with hyaline degeneration and mineralisation.</li>" +
+      "</ul>" +
+      "<b>4. VITAMIN K</b> — required for clotting factors II, VII, IX and X. Deficiency, or antagonism by <b>sulphonamides or coumarin-contaminated feed</b>, causes <b>widespread subcutaneous, intramuscular and visceral HAEMORRHAGE, prolonged bleeding from injuries and injection sites, and increased embryo mortality</b>. It is worsened by <b>coccidiosis</b>, which damages the gut and impairs absorption.<br><br>" +
+
+      "<b>C. WATER-SOLUBLE (B-GROUP) VITAMINS</b><br><br>" +
+      "<ul>" +
+      "<li><b>RIBOFLAVIN (B2) — the classic avian B deficiency. \"CURLED TOE PARALYSIS\": chicks walk on their hocks with the TOES CURLED INWARD AND DOWNWARD</b>, the wings drooping and the legs weak. <b>The lesion is a peripheral neuropathy — marked swelling, demyelination and degeneration of the SCIATIC AND BRACHIAL NERVES, which become 4-6 times normal thickness and soft</b>. (Note that Marek disease also enlarges nerves, but does so asymmetrically and in older birds.) In breeders, deficiency causes <b>embryo mortality with \"CLUBBED DOWN\" — down feathers that fail to break through their sheaths and remain coiled.</b></li>" +
+      "<li><b>THIAMINE (B1)</b> — <b>\"STAR-GAZING\" or opisthotonus: the bird retracts its head sharply backward over the body</b>, with polyneuritis, leg paralysis, anorexia and emaciation. <b>Response to thiamine is dramatic and rapid, which is itself diagnostic.</b> May follow feeding of raw fish or bracken (thiaminases) or prolonged coccidiostat use.</li>" +
+      "<li><b>NIACIN</b> — <b>\"BLACK TONGUE\", inflammation of the mouth and tongue, poor feathering, and ENLARGED HOCKS with bowing of the legs resembling perosis, but WITHOUT slipping of the tendon.</b></li>" +
+      "<li><b>PANTOTHENIC ACID</b> — <b>severe DERMATITIS with crusts and fissures at the ANGLES OF THE BEAK, the EYELIDS (which become granular and stuck together) and the FEET</b>, with poor feathering. Closely resembles biotin deficiency.</li>" +
+      "<li><b>BIOTIN</b> — <b>FOOT PAD DERMATITIS with cracking and crusting of the feet, dermatitis around the beak and eyes, PEROSIS, and in breeders \"FATTY LIVER AND KIDNEY SYNDROME\"</b> in broilers.</li>" +
+      "<li><b>FOLIC ACID</b> — <b>macrocytic anaemia, poor growth, poor feathering and DEPIGMENTATION of coloured feathers</b>, and perosis.</li>" +
+      "<li><b>VITAMIN B12</b> — anaemia, poor growth, and <b>high embryo mortality</b>. <b>CHOLINE</b> — <b>PEROSIS and FATTY LIVER</b>.</li>" +
+      "<li><b>VITAMIN C</b> is <b>synthesised by birds and is not a dietary requirement</b>, although supplementation helps in heat stress.</li>" +
+      "</ul>" +
+
+      "<b>D. MINERALS</b><br><br>" +
+      "<ul>" +
+      "<li><b>MANGANESE — the classic cause of PEROSIS (\"SLIPPED TENDON\").</b> Manganese is required for the synthesis of the mucopolysaccharide matrix of cartilage. Deficiency causes <b>shortening and thickening of the long bones, enlargement and deformity of the HOCK JOINT, and TWISTING AND BENDING OF THE DISTAL TIBIOTARSUS AND PROXIMAL TARSOMETATARSUS so that the GASTROCNEMIUS TENDON SLIPS OFF THE CONDYLES to one side</b>, after which the bird cannot stand. Also causes <b>\"CHONDRODYSTROPHY\" and, in breeders, high embryo mortality with parrot beak, short thick legs and oedema.</b> <b>Choline, biotin, niacin, folic acid and zinc deficiency also contribute to perosis.</b></li>" +
+      "<li><b>CALCIUM and PHOSPHORUS</b> — rickets, cage layer fatigue, thin shells (see above). <b>The Ca:P ratio matters as much as the absolute amounts</b>, and excess calcium fed to growers causes <b>visceral gout</b>.</li>" +
+      "<li><b>ZINC</b> — poor growth, <b>parakeratosis with thickened scaly skin of the feet</b>, poor feathering, and skeletal abnormality.</li>" +
+      "<li><b>IODINE</b> — <b>GOITRE</b>, with enlargement of the thyroid glands in the neck, and reduced hatchability.</li>" +
+      "<li><b>IRON and COPPER</b> — <b>hypochromic anaemia</b>, and copper deficiency additionally causes <b>aortic rupture from failure of elastin cross-linking by lysyl oxidase</b>, and <b>depigmentation of feathers</b>.</li>" +
+      "<li><b>SODIUM (SALT) deficiency</b> — poor growth, <b>CANNIBALISM and feather pecking, and reduced egg production</b>. <b>Salt EXCESS causes intense thirst, wet litter, ascites and oedema, and is a common accidental cause of mortality in chicks.</b></li>" +
+      "</ul>" +
+
+      "<b>E. PROTEIN AND ENERGY</b><br><br>" +
+      "<b>Protein or amino acid deficiency</b> (especially of <b>methionine and lysine</b>) causes <b>poor growth, poor feathering with retarded feather development, reduced egg size and production, and FEATHER PECKING AND CANNIBALISM</b>, since birds deprived of sulphur amino acids eat feathers. <b>Energy deficiency</b> causes poor growth and, in layers, reduced production; <b>energy excess</b> in layers causes <b>fatty liver haemorrhagic syndrome</b>.",
+
+    eliteDesc:
+      "<b>THE ORGANISING QUESTION IS ALWAYS: WHAT DOES THE NUTRIENT ACTUALLY DO?</b> Every lesion in this topic can be reconstructed from the biochemical role, which is far more reliable than memorising a list. <b>Vitamin A</b> controls epithelial differentiation, so deficiency produces <b>squamous metaplasia wherever epithelium should be columnar or glandular</b> — and every one of its lesions follows. <b>Manganese</b> is required to synthesise the mucopolysaccharide matrix of cartilage, so deficiency deforms the growth plate and produces <b>perosis</b>. <b>Riboflavin</b> is central to flavoprotein-dependent oxidative metabolism, and peripheral nerves with long axons and high metabolic demand fail first, producing <b>curled toe paralysis</b>. <b>Selenium</b> is the active centre of glutathione peroxidase, so deficiency permits membrane lipid peroxidation in the tissues with the greatest oxidative load — <b>muscle, capillary endothelium and cerebellum</b>. Ask what the nutrient does, and the lesion follows.<br><br>" +
+      "<b>SQUAMOUS METAPLASIA IS THE KEY TO THE WHOLE OF VITAMIN A DEFICIENCY.</b> Retinoic acid regulates the transcription factors maintaining epithelial phenotype. Without it, columnar, glandular and transitional epithelia <b>revert to a stratified squamous, keratinising form</b>, and the consequences are purely mechanical. In the oesophagus and pharynx, the ducts of mucous glands become plugged with keratin, the glands distend with inspissated secretion, and the result is the <b>classic white pustule-like nodules</b> — which are not infection at all, but blocked glands. In the airway, loss of cilia and mucus destroys the mucociliary escalator, so <b>vitamin A deficiency presents clinically as increased respiratory infection</b>. In the renal tubules and ureters, metaplasia and desquamated keratin obstruct urate flow, producing <b>visceral gout</b>. Recognising that one histological change explains lesions in three unrelated systems is what turns a list into an argument.<br><br>" +
+      "<b>THE OESOPHAGEAL PUSTULE HAS A DANGEROUS DIFFERENTIAL.</b> White raised nodules and plaques in the oesophagus and pharynx occur in <b>vitamin A deficiency (blocked mucous glands), the diphtheritic form of fowl pox (with Bollinger bodies), candidiasis (turkish-towel plaques with pseudohyphae), and trichothecene mycotoxicosis (caustic contact burns at the beak commissures and palate)</b>. These four are readily confused and have entirely different implications — a ration problem, a viral disease requiring vaccination, an iatrogenic consequence of antibiotics, and a contaminated feed batch. <b>Distribution and history separate them</b>: pox spreads slowly over weeks and involves the comb; candidiasis follows prolonged in-water antibiotics and is centred on the crop; trichothecene lesions concentrate at the beak margins with feed refusal; and vitamin A lesions sit in the oesophagus with accompanying ocular and sinus changes.<br><br>" +
+      "<b>THE VITAMIN E AND SELENIUM TRIAD ILLUSTRATES TISSUE-SPECIFIC OXIDATIVE VULNERABILITY.</b> One deficiency state produces three quite different syndromes because different tissues fail for different reasons. <b>Encephalomalacia</b> reflects peroxidative damage to <b>cerebellar capillary endothelium</b>, causing thrombosis, oedema and ischaemic necrosis of the folia — which is why the lesion is haemorrhagic and softened rather than inflammatory. <b>Exudative diathesis</b> reflects the same capillary damage in <b>systemic subcutaneous vessels</b>, allowing plasma to leak into the subcutis; the greenish-blue colour comes from haemoglobin breakdown in the extravasated fluid. <b>Nutritional muscular dystrophy</b> reflects peroxidation of the membranes of the most metabolically active muscle. The practical corollary is that the three may occur together or separately depending on the relative deficiency of vitamin E, selenium and sulphur amino acids, and finding one should prompt a search for the others.<br><br>" +
+      "<b>SYMMETRY IS AGAIN THE KEY DISCRIMINATOR IN MUSCLE AND NERVE.</b> Nutritional muscular dystrophy produces <b>bilaterally symmetrical</b> pale streaks in the breast and thigh, because it is a metabolic disease affecting all muscle according to workload. Riboflavin deficiency produces <b>bilaterally symmetrical</b> enlargement of the sciatic and brachial nerves. <b>Marek disease, by contrast, enlarges nerves ASYMMETRICALLY</b>, because it arises from clonal expansion of individual transformed lymphocytes. This gives a reliable rule with wide application: <b>symmetrical, bilateral lesions indicate a metabolic, toxic or nutritional process; asymmetry indicates a neoplastic, infectious, traumatic or vascular one.</b> Comparing the two sciatic nerves directly is therefore as valuable in a nutritional investigation as in a Marek one.<br><br>" +
+      "<b>CAGE LAYER FATIGUE IS A CALCIUM ACCOUNTING PROBLEM.</b> A laying hen deposits roughly two grams of calcium into a shell every day, a quantity comparable to her entire skeletal exchangeable pool. She meets this by dietary intake supplemented by mobilisation from <b>medullary bone</b>, a labile reserve laid down in the marrow cavity under oestrogen influence specifically for shell formation. When intake or vitamin D3 is inadequate, or when calcium is supplied as fine particles that pass through too quickly, medullary bone is exhausted and <b>structural cortical and trabecular bone is resorbed instead</b>, producing osteoporosis, fractures and paralysis. Two practical consequences follow. <b>Particle size matters</b>: coarse limestone or oyster shell is retained in the gizzard and released slowly overnight, when shell calcification occurs, whereas fine powder is absorbed and excreted too early. And <b>birds moved from cages to the floor often recover</b>, because they can move, feed and avoid further fracture — a response that is itself diagnostically useful.<br><br>" +
+      "<b>WHY BIRDS NEED D3 AND NOT D2.</b> Poultry metabolise <b>cholecalciferol (D3) efficiently but ergocalciferol (D2) very poorly</b> — D2 has perhaps a tenth or less of the activity in birds that it has in mammals. This is a genuine and examinable species peculiarity, and it has a practical edge: <b>a vitamin supplement formulated for mammals, or a plant-derived D2 source, may be almost useless in poultry</b>, and rickets can occur in birds receiving what appears on paper to be adequate vitamin D.<br><br>" +
+      "<b>PEROSIS IS A FINAL COMMON PATHWAY, NOT A SINGLE DEFICIENCY.</b> Slipped tendon results from deformity of the distal tibiotarsus and proximal tarsometatarsus that allows the gastrocnemius tendon to displace from its condylar groove. <b>Manganese is the classic cause, but choline, biotin, niacin, folic acid, pyridoxine and zinc deficiency all produce it</b>, because all contribute to cartilage matrix formation or to the metabolism supporting it. Consequently, <b>diagnosing \"perosis\" identifies a lesion, not a cause</b>, and the ration must be reviewed as a whole rather than manganese simply added. The same reasoning applies to <b>fatty liver</b>, which follows choline, biotin, methionine or energy imbalance, and to <b>poor feathering</b>, which follows deficiency of sulphur amino acids, zinc, biotin, pantothenic acid or riboflavin.<br><br>" +
+      "<b>DEFICIENCY AND MYCOTOXICOSIS TRAVEL TOGETHER, AND THIS IS THE COMMONEST FIELD REALITY.</b> Feed stored damp through an Indian monsoon simultaneously <b>loses vitamin activity</b> — vitamins A and E are readily oxidised — and <b>gains mycotoxins</b>. Aflatoxin further impairs vitamin absorption and metabolism and blocks protein synthesis, deepening the deficiency. The result is a flock showing a confusing mixture of deficiency signs, immunosuppression and poor performance that fits no single classical syndrome. <b>The productive approach is to inspect and sample the feed and to review the whole ration, rather than to chase the single most striking sign</b> — and it is why nutritional and toxic disease are best investigated together.",
+
+    keyPoints: [
+      "Birds are unusually vulnerable to deficiency because ALL nutrients must come from the ration, growth is extremely rapid, layers have enormous mineral demand, and BIRDS HAVE LIMITED MICROBIAL B-VITAMIN SYNTHESIS.",
+      "Deficiency affects the WHOLE GROUP ON ONE FEED BATCH, is AFEBRILE and DOES NOT RESPOND TO ANTIBIOTICS — the same triad as mycotoxicosis, and the two frequently COEXIST because mouldy feed loses vitamins as it gains toxin.",
+      "VITAMIN A maintains EPITHELIAL DIFFERENTIATION — deficiency causes SQUAMOUS METAPLASIA of glandular and columnar epithelium, and this ONE change explains all its lesions.",
+      "THE CLASSIC VITAMIN A LESION: small WHITE RAISED PUSTULE-LIKE NODULES IN THE OESOPHAGUS AND PHARYNX — these are MUCOUS GLANDS BLOCKED BY KERATINISED METAPLASTIC EPITHELIUM, not infection.",
+      "Vitamin A deficiency also causes XEROPHTHALMIA with caseous exudate sticking the eyelids, sinusitis, LOSS OF THE MUCOCILIARY ESCALATOR (hence respiratory infection), and VISCERAL GOUT from ureteral metaplasia.",
+      "THE OESOPHAGEAL PUSTULE HAS A DANGEROUS DIFFERENTIAL: VITAMIN A DEFICIENCY, DIPHTHERITIC FOWL POX (Bollinger bodies), CANDIDIASIS (pseudohyphae, crop), and TRICHOTHECENE burns (beak margins, feed refusal).",
+      "BIRDS CAN USE ONLY VITAMIN D3 (CHOLECALCIFEROL) — VITAMIN D2 IS ALMOST INACTIVE IN POULTRY. A mammalian or plant-derived D2 supplement may be useless.",
+      "RICKETS in growing birds: soft rubbery bones and beak, enlarged costochondral junctions forming the RACHITIC ROSARY, inward-bent ribs, soft keel, splayed legs.",
+      "CAGE LAYER FATIGUE: hens PARALYSED LYING ON THEIR SIDES with soft fractured bones and thin-shelled eggs. BIRDS MOVED TO THE FLOOR OFTEN RECOVER — itself diagnostically useful.",
+      "A layer deposits about 2 g of calcium per shell daily, drawing on labile MEDULLARY BONE. COARSE limestone or oyster shell is retained in the gizzard and released slowly overnight when shell calcification occurs — PARTICLE SIZE MATTERS.",
+      "VITAMIN E and SELENIUM (as GLUTATHIONE PEROXIDASE) prevent membrane LIPID PEROXIDATION, and their deficiency gives THREE DISTINCT SYNDROMES.",
+      "ENCEPHALOMALACIA ('CRAZY CHICK DISEASE') — ataxia and RETRACTION OF THE HEAD in chicks 2-6 weeks, with the CEREBELLUM swollen, soft, oedematous and showing HAEMORRHAGE AND GREEN-YELLOW NECROTIC FOCI in the folia.",
+      "EXUDATIVE DIATHESIS — capillary damage leaking GREENISH-BLUE GELATINOUS OEDEMA INTO THE SUBCUTIS over the BREAST, ABDOMEN AND INNER THIGHS.",
+      "NUTRITIONAL MUSCULAR DYSTROPHY — BILATERALLY SYMMETRICAL chalky white streaks in BREAST and THIGH muscle, gizzard and heart, with hyaline degeneration and mineralisation.",
+      "RIBOFLAVIN deficiency = 'CURLED TOE PARALYSIS' — chicks walk on hocks with TOES CURLED INWARD AND DOWNWARD, from a PERIPHERAL NEUROPATHY with SCIATIC AND BRACHIAL NERVES SWOLLEN 4-6 TIMES and demyelinated.",
+      "SYMMETRY RULE: riboflavin and nutritional muscular dystrophy give BILATERALLY SYMMETRICAL lesions (metabolic); MAREK DISEASE enlarges nerves ASYMMETRICALLY (neoplastic). Compare both sciatic nerves.",
+      "Riboflavin deficiency in breeders causes embryo death with 'CLUBBED DOWN' — down feathers that fail to break through their sheaths.",
+      "THIAMINE deficiency = 'STAR-GAZING' (opisthotonus with head retracted over the back) and polyneuritis. THE RESPONSE TO THIAMINE IS DRAMATIC AND RAPID, which is itself diagnostic.",
+      "PANTOTHENIC ACID and BIOTIN deficiency both cause DERMATITIS AT THE ANGLES OF THE BEAK, EYELIDS AND FEET; biotin also causes FOOT PAD DERMATITIS, PEROSIS and FATTY LIVER AND KIDNEY SYNDROME.",
+      "NIACIN deficiency causes 'BLACK TONGUE' and ENLARGED HOCKS RESEMBLING PEROSIS BUT WITHOUT TENDON SLIPPING.",
+      "MANGANESE deficiency is the classic cause of PEROSIS ('SLIPPED TENDON') — deformity of the distal tibiotarsus lets the GASTROCNEMIUS TENDON SLIP OFF THE CONDYLES so the bird cannot stand.",
+      "PEROSIS IS A FINAL COMMON PATHWAY, NOT A SINGLE DEFICIENCY — manganese, CHOLINE, BIOTIN, NIACIN, FOLIC ACID, PYRIDOXINE and ZINC all cause it. Review the whole ration rather than adding manganese.",
+      "VITAMIN K deficiency (or antagonism by SULPHONAMIDES) causes widespread HAEMORRHAGE, and is WORSENED BY COCCIDIOSIS, which impairs absorption.",
+      "SALT DEFICIENCY causes CANNIBALISM and feather pecking; SALT EXCESS causes intense thirst, WET LITTER, ascites and oedema and is a common accidental killer of chicks.",
+      "Deficiency of SULPHUR AMINO ACIDS (methionine, lysine) causes poor feathering and FEATHER PECKING AND CANNIBALISM, because birds deprived of them eat feathers.",
+      "VITAMIN C IS SYNTHESISED BY BIRDS and is not a dietary requirement, though supplementation helps in HEAT STRESS."
+    ],
+
+    clinical:
+      "<b>Why this matters in Indian practice.</b><br>" +
+      "<b>Whenever you meet a flock problem, look at the feed and the feed store before you look for a pathogen.</b> A group of birds sharing one ration, with no fever and no response to antibiotics, has either a nutritional deficiency or a mycotoxicosis — and in Indian conditions it very often has both, because feed stored damp through the monsoon loses vitamin A and E activity while gaining aflatoxin. Ask to see the formulation, when the batch was made, how it has been stored, and whether the premix was actually included at the correct rate.<br><br>" +
+      "<b>Open the oesophagus in any bird with white oral or pharyngeal nodules, and think before you name the cause.</b> The four possibilities have completely different implications. <b>Vitamin A deficiency</b> gives white pustule-like nodules in the oesophagus with sinusitis and sticky eyelids; <b>diphtheritic fowl pox</b> gives firmly adherent membranes that bleed when peeled and spreads slowly over weeks with comb lesions; <b>candidiasis</b> gives white curd-like turkish-towel plaques centred on the crop after a course of in-water antibiotics; and <b>trichothecene mycotoxicosis</b> gives caseous ulcers at the beak margins and palate with marked feed refusal. Getting this wrong sends the farmer after the wrong problem entirely.<br><br>" +
+      "<b>Recognise crazy chick disease and exudative diathesis, because both are quickly reversible.</b> Chicks of two to six weeks falling backwards with the head retracted over the body should prompt you to open the skull and examine the cerebellum for <b>swelling, softening and greenish-yellow necrotic foci in the folia</b>. In the same flock, reflect the skin over the breast and abdomen and look for the <b>greenish-blue gelatinous oedema of exudative diathesis</b>. Both point to vitamin E and selenium, both respond to correction, and finding one should make you look for the other and for white muscle disease in the breast and thigh.<br><br>" +
+      "<b>Distinguish curled toe paralysis from Marek disease by symmetry and age.</b> Both enlarge peripheral nerves. <b>Riboflavin deficiency affects young chicks, curls the toes inward and downward, and enlarges the sciatic and brachial nerves symmetrically on both sides; Marek disease affects birds from six weeks and enlarges one nerve far more than its fellow.</b> Expose both sciatic nerves and compare them directly — the same technique serves both diagnoses.<br><br>" +
+      "<b>Give practical calcium advice to layer keepers, not just a number.</b> Cage layer fatigue and thin shells are common in Indian layer units, and the fault is often not the total calcium but its <b>form and timing</b>. Advise <b>coarse limestone particles or oyster shell rather than fine powder</b>, because coarse particles sit in the gizzard and dissolve slowly overnight, which is exactly when the shell is being calcified. Ensure <b>vitamin D3 rather than D2</b> is in the premix, since D2 is nearly inactive in birds. And note the useful field observation that <b>paralysed cage hens moved onto the floor frequently recover</b>, which both helps the bird and supports the diagnosis.<br><br>" +
+      "<b>Treat perosis as a ration audit, not a manganese prescription.</b> When you find slipped tendons in a batch of growing birds, remember that <b>manganese, choline, biotin, niacin, folic acid, pyridoxine and zinc can all produce it</b>. Adding manganese alone may not solve the problem. Ask whether the vitamin-mineral premix was included, whether it was stored in heat and humidity long enough to lose activity, and whether the mixer is actually delivering it evenly — <b>inadequate mixing is a common and invisible cause of deficiency in small Indian feed mills.</b><br><br>" +
+      "<b>Investigate cannibalism nutritionally as well as behaviourally.</b> Feather pecking and cannibalism in a flock should prompt questions about <b>salt and sulphur amino acid (methionine) adequacy</b> as well as about light intensity, stocking density and feeder space. Birds short of methionine eat feathers. Remember also that mite infestation initiates pecking, and that once established the habit persists after the cause is corrected — so early intervention matters.<br><br>" +
+      "<b>Beware the two salt errors.</b> Deficiency causes cannibalism and poor growth; <b>excess causes intense thirst, very wet litter, ascites and sudden mortality in chicks</b>, and is a recurring accidental problem when salt is added by hand or when saline water is used. Wet litter in a flock should always prompt a check of the salt level in the ration and of the water source, alongside the usual drinker and ventilation checks.<br><br>" +
+      "<b>Finally, remember vitamin K and coccidiosis together.</b> Birds with coccidiosis absorb vitamin K poorly and are simultaneously losing blood, and sulphonamide anticoccidials antagonise vitamin K. A flock with coccidiosis showing <b>unexpected haemorrhage, prolonged bleeding at injection sites or bruised carcasses at processing</b> may need vitamin K supplementation as well as anticoccidial treatment.",
+
+    tables: [
+      {
+        title: "The classic avian deficiencies — one naming sign each",
+        headers: ["Nutrient", "NAMING SIGN", "Underlying lesion", "Note"],
+        rows: [
+          ["VITAMIN A", "White PUSTULE-LIKE NODULES in OESOPHAGUS", "SQUAMOUS METAPLASIA blocking mucous glands", "Also xerophthalmia, gout, respiratory infection"],
+          ["VITAMIN D3 / Ca / P (young)", "RACHITIC ROSARY; soft bendable bones", "Failure of mineralisation of osteoid", "ONLY D3 works in birds — D2 is inactive"],
+          ["VITAMIN D3 / Ca (layer)", "CAGE LAYER FATIGUE — paralysed on her side", "Medullary then cortical bone resorbed", "Recovers if moved to the floor"],
+          ["VITAMIN E", "CRAZY CHICK DISEASE (encephalomalacia)", "Cerebellar oedema, haemorrhage, necrotic folia", "Head retracted; chicks 2-6 weeks"],
+          ["VITAMIN E + SELENIUM", "EXUDATIVE DIATHESIS", "Capillary leak — GREEN-BLUE subcutaneous oedema", "Breast, abdomen, inner thighs"],
+          ["VITAMIN E + cystine", "White muscle disease", "Symmetrical pale streaks in breast and thigh", "Also gizzard and heart"],
+          ["RIBOFLAVIN (B2)", "CURLED TOE PARALYSIS", "Sciatic and brachial nerves swollen 4-6x, demyelinated", "SYMMETRICAL — unlike Marek"],
+          ["THIAMINE (B1)", "STAR-GAZING (opisthotonus)", "Polyneuritis", "DRAMATIC rapid response to thiamine"],
+          ["NIACIN", "BLACK TONGUE; enlarged hocks", "Bowed legs WITHOUT tendon slipping", "Distinguish from perosis"],
+          ["PANTOTHENIC ACID", "Crusts at BEAK ANGLES and EYELIDS", "Dermatitis", "Resembles biotin deficiency"],
+          ["BIOTIN", "FOOT PAD DERMATITIS", "Cracked feet, perosis, fatty liver-kidney syndrome", "—"],
+          ["MANGANESE", "PEROSIS (SLIPPED TENDON)", "Deformed tibiotarsus; gastrocnemius tendon slips", "Also choline, biotin, niacin, folate, zinc"],
+          ["VITAMIN K", "Widespread HAEMORRHAGE", "Clotting factors II, VII, IX, X", "Worsened by COCCIDIOSIS and sulphonamides"],
+          ["SALT (deficiency)", "CANNIBALISM, feather pecking", "—", "EXCESS causes wet litter and ascites"],
+          ["METHIONINE / lysine", "Poor feathering, FEATHER EATING", "Sulphur amino acid lack", "Drives cannibalism"]
+        ]
+      },
+      {
+        title: "Leg weakness and lameness in growing poultry — a working differential",
+        headers: ["Condition", "Key feature", "Nerve/bone finding"],
+        rows: [
+          ["RICKETS (D3, Ca, P)", "Soft rubbery bones and beak; splayed legs", "RACHITIC ROSARY at costochondral junctions"],
+          ["PEROSIS (manganese etc.)", "Hock enlarged and deformed", "GASTROCNEMIUS TENDON SLIPPED off the condyles"],
+          ["CURLED TOE PARALYSIS (riboflavin)", "Toes curled inward and downward; walks on hocks", "Sciatic and brachial nerves swollen SYMMETRICALLY"],
+          ["MAREK DISEASE", "'SPLITS' posture, one leg forward one back", "One sciatic nerve grossly thicker — ASYMMETRICAL"],
+          ["Reoviral tenosynovitis", "Swollen hock and gastrocnemius tendon", "TENDON RUPTURE with green-black hock"],
+          ["Mycoplasma synoviae", "Swollen hocks, FOOT PADS, keel bursa", "VISCID creamy exudate"],
+          ["ARTICULAR GOUT", "Swollen toe and hock joints", "White pasty URATE deposits"],
+          ["CAGE LAYER FATIGUE", "Adult layer paralysed on her side", "Soft fractured bones; recovers on the floor"]
+        ]
+      }
+    ],
+
+    img: "",
+    tags: ["vitamin A", "squamous metaplasia", "oesophageal pustules", "vitamin D3", "rickets", "rachitic rosary", "cage layer fatigue", "medullary bone", "vitamin E", "encephalomalacia", "crazy chick disease", "exudative diathesis", "riboflavin", "curled toe paralysis", "thiamine", "star-gazing", "manganese", "perosis", "slipped tendon", "biotin", "salt toxicity", "cannibalism"]
+  },
+
+  "u5-t21": {
+    /* Miscellaneous Conditions and Common Vices */
+    summary: "The management and metabolic conditions of modern poultry: ascites and round heart from the broiler's inadequate cardiopulmonary reserve, fatty liver haemorrhagic syndrome in over-fat layers, gout from renal failure, egg binding and internal layers in the oviduct, breast blister and bumble foot from housing, plus cannibalism and the other vices.",
+
+    desc:
+      "<b>A. CONDITIONS OF THE FAST-GROWING BROILER</b><br><br>" +
+      "<b>1. ASCITES SYNDROME (PULMONARY HYPERTENSION SYNDROME, \"WATER BELLY\").</b> One of the most important non-infectious causes of broiler mortality.<br>" +
+      "<b>Pathogenesis — a chain worth learning in order:</b> the modern broiler&rsquo;s <b>muscle mass has been selected far faster than its heart and lungs</b>, so oxygen demand outstrips supply. Any additional demand — <b>cold, high altitude, poor ventilation, high ammonia and dust, rapid growth, or respiratory disease</b> — increases it further. The bird responds by increasing cardiac output through <b>rigid, non-expansible avian lungs</b>, which raises <b>PULMONARY ARTERIAL PRESSURE (pulmonary hypertension)</b>. Sustained pressure overload causes <b>RIGHT VENTRICULAR HYPERTROPHY, then DILATATION AND RIGHT-SIDED HEART FAILURE</b>, with venous congestion, hepatic congestion and finally transudation of fluid into the abdomen.<br>" +
+      "<b>Lesions:</b> <b>large volumes of clear, straw-coloured fluid, often with fibrin clots, in the abdominal cavity; a markedly DILATED AND HYPERTROPHIED RIGHT VENTRICLE with a flabby heart; a congested, firm, \"NUTMEG\" liver often covered by a gelatinous fibrinous coat; congested oedematous lungs; and generalised venous congestion.</b> Affected birds are cyanotic, reluctant to move and pant.<br><br>" +
+      "<b>2. SUDDEN DEATH SYNDROME (SDS, \"FLIP-OVER DISEASE\", ACUTE DEATH SYNDROME).</b> <b>Fast-growing, apparently perfectly healthy male broilers</b> suddenly give a convulsive squawk, flap their wings violently, and <b>die within seconds, characteristically found lying ON THEIR BACKS with the legs extended</b> — hence \"flip-over\". Death is from an <b>acute cardiac arrhythmia</b> in a metabolically overloaded heart.<br>" +
+      "<b>Lesions are minimal and largely negative</b>, which is itself diagnostically important: <b>a well-fleshed bird in excellent condition with a FULL CROP AND GIZZARD, contracted flabby ventricles, congested lungs and liver, and no significant pathology anywhere.</b><br><br>" +
+      "<b>3. ROUND HEART DISEASE (SPONTANEOUS CARDIOMYOPATHY).</b> The heart becomes <b>globular, rounded and enlarged, losing its normal conical apex, with a dilated flabby ventricle and pale myocardium</b>, and the bird dies of congestive heart failure. It is described in broilers and turkeys and is associated with rapid growth and with certain toxic and nutritional factors (including <b>furazolidone toxicity</b>).<br><br>" +
+
+      "<b>B. LIVER AND METABOLIC CONDITIONS</b><br><br>" +
+      "<b>4. FATTY LIVER HAEMORRHAGIC SYNDROME (FLHS).</b> A condition of <b>OVER-FAT, HIGH-PRODUCING CAGED LAYERS</b> on a high-energy ration with little exercise, aggravated by heat stress.<br>" +
+      "<b>The hen dies suddenly from HAEMORRHAGE, not from liver failure.</b> Excess energy is converted to fat and deposited in the liver, which becomes so soft and friable that the <b>fatty, fragile hepatic capsule ruptures and the hen bleeds into her abdomen</b>.<br>" +
+      "<b>Lesions:</b> a <b>MASSIVELY ENLARGED, PALE YELLOW TO OCHRE, GREASY, EXTREMELY FRIABLE LIVER that breaks apart under the fingers and FLOATS IN WATER</b>, with <b>subcapsular haematomas and a large BLOOD CLOT in the abdominal cavity</b>; <b>enormous abdominal fat deposits</b>; and a pale comb. Birds are typically found dead in good condition with a pale comb.<br><br>" +
+      "<b>5. FATTY LIVER AND KIDNEY SYNDROME (FLKS).</b> Distinct from FLHS. Affects <b>young broilers of 2-4 weeks</b>, associated with <b>BIOTIN DEFICIENCY</b> and low-fat, high-carbohydrate rations. Birds become suddenly lethargic and paralysed, lying on their breasts with the neck extended, and die. Lesions are <b>pale, swollen, fatty LIVER AND KIDNEYS, with the heart also pale and fatty</b>, and a depleted glycogen store — the bird dies of <b>hypoglycaemia</b>.<br><br>" +
+      "<b>6. GOUT.</b> Because birds are <b>URICOTELIC</b>, excreting poorly soluble <b>uric acid</b>, and have <b>no urinary bladder</b>, any failure of renal excretion causes urate precipitation.<br>" +
+      "<ul>" +
+      "<li><b>VISCERAL GOUT:</b> chalky white urate deposits on the <b>pericardium, liver capsule, air sacs, peritoneum and kidney</b>, as though the viscera had been dusted with lime.</li>" +
+      "<li><b>ARTICULAR GOUT:</b> white pasty urate in and around the <b>joints and tendon sheaths, especially of the feet</b>, causing swelling and lameness.</li>" +
+      "<li>Microscopically the deposits are <b>TOPHI — radiating needle-shaped urate crystals ringed by macrophages and giant cells. Fix tissue in ABSOLUTE ALCOHOL, since urates dissolve in formalin.</b></li>" +
+      "<li><b>GOUT IS A SIGN, NOT A DIAGNOSIS</b> — the causes to work through are <b>WATER DEPRIVATION (power cut, blocked drinker line, too few drinkers in summer heat), EXCESS DIETARY CALCIUM (layer feed given to growers), excess protein, VITAMIN A deficiency, OCHRATOXIN, nephropathogenic INFECTIOUS BRONCHITIS and AVIAN NEPHRITIS VIRUS.</b></li>" +
+      "</ul>" +
+      "<b>7. HAEMORRHAGIC SYNDROME (APLASTIC ANAEMIA SYNDROME).</b> Widespread haemorrhage into muscle, subcutis and viscera with a <b>pale, fatty, aplastic bone marrow</b>, caused by <b>bone marrow suppression</b> from <b>mycotoxins (aflatoxin, trichothecenes), sulphonamides and other drugs, and chicken infectious anaemia virus</b>.<br><br>" +
+      "<b>8. HEAT STROKE (HYPERTHERMIA).</b> A major cause of loss in Indian summers. Birds cannot sweat and lose heat by <b>panting</b>, which causes respiratory alkalosis. Signs: panting with the beak open and wings held away from the body, pale comb, prostration and sudden death, worst in <b>heavy, well-feathered, high-producing birds in the afternoon</b>. Lesions are <b>non-specific — generalised congestion, pulmonary congestion and oedema, cyanosis, and rapid post-mortem decomposition</b>. In layers there is a marked drop in production and <b>thin shells, because panting-induced respiratory alkalosis reduces bicarbonate available for shell formation.</b><br><br>" +
+
+      "<b>C. REPRODUCTIVE AND OVIDUCT CONDITIONS</b><br><br>" +
+      "<b>9. INTERNAL LAYER.</b> The hen ovulates normally but the ovum <b>fails to enter the infundibulum and is released into the abdominal cavity</b>, where the yolk material accumulates and causes <b>EGG-YOLK PERITONITIS</b> — a fibrinous, often foul-smelling peritonitis with masses of inspissated yellow yolk material among the viscera, frequently complicated by <i>E. coli</i>. The hen becomes a <b>\"penguin\"</b>, standing upright with a pendulous abdomen.<br><br>" +
+      "<b>10. FALSE LAYER.</b> The hen has a <b>normal, active ovary and a normal comb, and ovulates regularly, but the OVIDUCT is blind-ended, hypoplastic or cystic</b>, so the ovum can never be transmitted and yolks are shed into the abdomen. <b>The classic cause is INFECTIOUS BRONCHITIS infection in the FIRST 1-2 WEEKS of life, which permanently damages the developing oviduct while the ovary develops normally.</b> At post-mortem there is a large <b>thin-walled fluid-filled cyst</b> in place of the oviduct. <b>It is irreversible — identify and cull.</b><br><br>" +
+      "<b>11. EGG BOUND (EGG RETENTION).</b> The egg becomes lodged in the <b>caudal oviduct or vagina and cannot be expelled</b>. Predisposing causes are <b>an oversized or double-yolked egg, a pullet coming into lay too young or too small, obesity, calcium deficiency causing poor uterine contraction, oviduct inflammation and stress</b>. The hen strains persistently, is depressed, and may <b>prolapse the oviduct or die of shock and rupture</b>.<br><br>" +
+      "<b>12. IMPACTION OF THE OVIDUCT.</b> The oviduct becomes <b>grossly distended with accumulated masses of inspissated yolk, albumen and caseous exudate, often in concentric LAMINATED LAYERS resembling a boiled egg cut across</b>. It follows <b>salpingitis (usually <i>E. coli</i>, or after infectious bronchitis or Newcastle disease)</b> or obstruction, and the hen ceases to lay.<br><br>" +
+      "<b>13. VENT GLEET (CLOACITIS).</b> A chronic inflammation of the <b>cloaca and vent</b>, with a <b>foul-smelling, pasty, yellowish-white necrotic exudate, ulceration and encrustation of the vent, matting and loss of the surrounding feathers, and soreness</b>. It may be associated with <i>E. coli</i>, <i>Candida</i>, trauma, prolapse or venereal transmission, and it predisposes to <b>cannibalism because the soiled, inflamed vent attracts pecking</b>.<br><br>" +
+      "<b>14. PROLAPSE (\"BLOW-OUT\").</b> Eversion of the oviduct through the vent, most often in <b>pullets coming into lay too early or too fat, or laying oversized eggs</b>. <b>The prolapsed tissue is immediately and vigorously pecked by other birds, and this is a major initiator of outbreaks of cannibalism.</b><br><br>" +
+
+      "<b>D. CONDITIONS OF HOUSING AND MANAGEMENT</b><br><br>" +
+      "<b>15. BREAST BLISTER (STERNAL BURSITIS).</b> A <b>fluid-filled, later caseous, swelling of the bursa over the KEEL (sternum)</b>, caused by <b>prolonged pressure and friction from resting on hard, wet or caked litter</b>, particularly in heavy broilers and in birds that sit because they are lame. It becomes infected (<i>Staphylococcus</i>, <i>Mycoplasma synoviae</i>) and is a <b>major cause of downgrading and carcass condemnation</b>.<br><br>" +
+      "<b>16. BUMBLE FOOT (PODODERMATITIS, PLANTAR ABSCESS).</b> Infection — usually <b><i>Staphylococcus aureus</i></b> — entering through a <b>puncture, abrasion or crack in the plantar surface of the foot</b>, caused by rough perches, wire floors, wet caked litter or ammonia burn. There is a <b>firm, hot, swollen foot pad with a characteristic dark BLACK SCAB over the lesion, and beneath it a firm, dry, laminated, yellow CASEOUS CORE</b> (dry rather than liquid, because the avian heterophil lacks myeloperoxidase). Causes severe lameness.<br><br>" +
+      "<b>17. PENDULOUS CROP (CROP IMPACTION, \"SOUR CROP\").</b> The crop becomes <b>grossly distended, atonic and hangs down as a heavy pendulous sac</b>, filled with fermenting, foul-smelling, sour feed and fluid. Causes include <b>paralysis of the vagus (as in Marek disease), obstruction by coarse fibrous litter or long grass, candidiasis of the crop wall, and simple overeating after a period of feed deprivation</b>. Affected birds become emaciated because feed does not pass on.<br><br>" +
+      "<b>18. CAGE LAYER FATIGUE.</b> Covered fully with the nutritional deficiencies — <b>hens paralysed and lying on their sides in the cage with soft, easily fractured bones from calcium and vitamin D3 depletion</b>; birds moved to the floor often recover.<br><br>" +
+
+      "<b>E. COMMON VICES</b><br><br>" +
+      "<b>19. CANNIBALISM AND FEATHER PECKING — the most important vice.</b><br>" +
+      "<b>Forms:</b> <b>feather pecking</b> (pulling and eating feathers, especially at the tail base); <b>vent pecking (\"pick-out\")</b>, the most damaging, in which birds peck the everted vent of a laying hen, often eviscerating her; <b>toe pecking</b> in chicks; and <b>head pecking</b>.<br>" +
+      "<b>The predisposing causes are essentially a list of management faults:</b><br>" +
+      "<ul>" +
+      "<li><b>Light that is too bright or of too long a duration</b> — the single most important factor.</li>" +
+      "<li><b>Overcrowding; insufficient feeder and drinker space; boredom and lack of enrichment.</b></li>" +
+      "<li><b>Nutritional deficiency — of SALT, METHIONINE and other sulphur amino acids, protein and fibre.</b> Birds short of sulphur amino acids eat feathers.</li>" +
+      "<li><b>Anything that draws attention to a bird: PROLAPSE, VENT GLEET, blood from an injury, ectoparasites causing irritation, and mixing of birds of different size or colour.</b></li>" +
+      "<li>Heat stress and poor ventilation.</li>" +
+      "</ul>" +
+      "<b>THE CRITICAL POINT: once established, cannibalism becomes a SELF-SUSTAINING LEARNED HABIT that persists even after the original cause is removed</b> — which is why early intervention matters far more than eventual correction. <b>The sight of blood is a powerful stimulus and rapidly recruits other birds.</b><br>" +
+      "<b>Other vices:</b> <b>EGG EATING</b>, which begins when a bird tastes a broken egg and rapidly becomes habitual and is copied by others; and <b>toe and feather pulling in chicks</b>.",
+
+    eliteDesc:
+      "<b>THE BROILER&rsquo;S CARDIOPULMONARY RESERVE IS THE THREAD LINKING THREE CONDITIONS.</b> Modern broilers have been selected for muscle mass at a rate far exceeding any corresponding increase in the size of the heart and lungs. The bird therefore lives close to the ceiling of its oxygen delivery, and the avian lung compounds the problem: it is <b>rigid and non-expansible</b>, so unlike a mammal the bird cannot recruit additional pulmonary capacity when demand rises — it can only increase cardiac output through a fixed vascular bed, which raises pulmonary arterial pressure. This single physiological limitation underlies <b>ascites syndrome, sudden death syndrome and round heart disease</b>, and it explains why all three cluster in the fastest-growing birds, why males predominate, and why <b>cold, altitude, poor ventilation, high ammonia and any respiratory disease reliably increase their incidence</b>.<br><br>" +
+      "The chain in ascites is worth being able to recite in order because each step suggests an intervention: <b>oxygen demand exceeds supply → increased cardiac output through rigid lungs → pulmonary hypertension → right ventricular hypertrophy → right ventricular dilatation and failure → venous and hepatic congestion → transudation into the abdomen.</b> Interventions that work — <b>improving ventilation, avoiding cold, reducing dust and ammonia, and slowing early growth by lighting or feeding programmes</b> — all act at the first step, which is why they are effective while treating the ascites itself is not.<br><br>" +
+      "<b>WHY SUDDEN DEATH SYNDROME HAS NO LESIONS, AND WHY THAT IS THE FINDING.</b> Flip-over disease kills within seconds through an <b>acute cardiac arrhythmia</b> in a metabolically overloaded heart, before any structural change can develop. The post-mortem is therefore <b>conspicuously negative — a heavily fleshed bird in excellent condition, with a full crop and gizzard, contracted ventricles and congested lungs and liver</b>. The full crop is genuinely informative: it establishes that the bird was feeding normally moments before death, excluding a wasting or febrile illness. Recording \"no significant lesions in a well-conditioned bird found on its back\" is a positive diagnostic statement, not an admission of failure, and it distinguishes SDS from ascites, in which the abdomen is full of fluid, and from septicaemic disease, in which lesions abound.<br><br>" +
+      "<b>FATTY LIVER HAEMORRHAGIC SYNDROME KILLS BY MECHANICAL FAILURE, NOT BY LIVER FAILURE.</b> This is the point most often misunderstood. The hen does not die in hepatic coma; she <b>bleeds to death into her own abdomen</b> because the fat-laden hepatic parenchyma loses its tensile strength and the capsule tears, often after a trivial event such as being handled, startled or jumping down. The mechanism explains every feature of the case: the bird is found <b>dead in good condition with a pale comb</b>, the abdomen contains a <b>large blood clot</b>, and the liver is so friable it <b>breaks apart between the fingers</b>. It also explains the risk factors — <b>caged birds with no exercise, high-energy rations, high production and heat stress</b> — and why the control measures are dietary and managemental rather than therapeutic. Distinguishing FLHS from <b>fatty liver and kidney syndrome</b> matters, because the latter is a <b>biotin-responsive hypoglycaemic disease of two-to-four-week-old broilers</b>, an entirely different condition sharing only the word \"fatty\".<br><br>" +
+      "<b>URICOTELISM MAKES GOUT AN AVIAN SPECIALITY, AND GOUT IS ALWAYS A SIGN.</b> Birds excrete nitrogen as <b>poorly soluble uric acid</b> rather than urea, have <b>no urinary bladder</b> in which to dilute it, and depend heavily on <b>active tubular secretion</b> rather than filtration alone. The margin between normal plasma urate and its saturation point is therefore narrow, and any insult to the tubule or any reduction in water availability pushes urate past saturation within days. This is why finding chalky deposits over the heart and liver is easy and why it means nothing on its own. <b>The productive response is to work through the causes — water deprivation, excess calcium or protein, vitamin A deficiency, ochratoxin, nephropathogenic infectious bronchitis and avian nephritis virus — most of which are correctable management faults far commoner than the viral ones.</b> In Indian conditions, <b>an interrupted water supply during a summer power cut or a blocked drinker line is the single commonest cause</b>, and finding it is worth more to the farmer than any laboratory result. The technical trap is equally important: <b>urate crystals dissolve in formalin</b>, so a duplicate piece must be fixed in absolute alcohol or the evidence is lost.<br><br>" +
+      "<b>THE FALSE LAYER AND THE INTERNAL LAYER ARE DIFFERENT PROBLEMS WITH A SIMILAR APPEARANCE.</b> Both hens have yolk material free in the abdomen and neither lays, but the mechanisms differ. The <b>internal layer</b> has a structurally normal oviduct that has simply failed to capture the ovum, often because of inflammation, adhesions or disturbance at ovulation. The <b>false layer</b> has an <b>anatomically abnormal, blind-ended or cystic oviduct that could never have transmitted an ovum</b>, and the cause lies months earlier — infectious bronchitis infection in the <b>first one to two weeks of life</b>, which permanently damages the developing oviduct while the independently developing ovary matures normally. The distinction has real consequences: the false layer is <b>irreversible and identifies a failure of early chick protection nine months earlier</b>, telling the producer to look at breeder vaccination and early IB vaccination for the next batch rather than at current management.<br><br>" +
+      "<b>THE DRY CASEOUS CORE OF BUMBLE FOOT IS AVIAN INFLAMMATION IN MINIATURE.</b> A mammalian plantar abscess is fluctuant and drains; the avian equivalent is a <b>firm, dry, laminated caseous plug beneath a black scab</b>. The reason is the one that recurs throughout avian pathology: the <b>heterophil lacks myeloperoxidase and the hydrolytic enzymes needed to liquefy dead tissue</b>, so the lesion coagulates and dehydrates instead of suppurating. The practical consequence is that <b>bumble foot will not point and burst, and systemic antibiotics penetrate the avascular core poorly — the caseous plug must be physically removed</b> if treatment is attempted, and the predisposing surface must be corrected or it recurs.<br><br>" +
+      "<b>CANNIBALISM IS A BEHAVIOURAL DISEASE WITH A NUTRITIONAL, ENVIRONMENTAL AND PATHOLOGICAL DIFFERENTIAL.</b> The most important insight is that it is <b>multifactorial and, once established, self-sustaining</b>. Light intensity and duration are the dominant environmental drivers; <b>salt and sulphur amino acid deficiency</b> are the dominant nutritional ones, since birds short of methionine and cystine eat feathers as a substitute source; and <b>anything that makes one bird conspicuous — a prolapse, vent gleet, an injury, blood, or mite irritation — recruits pecking to that individual</b>. Because <b>the sight of blood is a powerful releasing stimulus</b> and the behaviour is rapidly learned and copied, removing the original cause after an outbreak is established frequently fails to stop it. That is the single most useful thing to tell a farmer: <b>intervene at the first sign, darken the house, remove and treat injured birds immediately, and do not wait to identify the cause before acting.</b>",
+
+    keyPoints: [
+      "ASCITES SYNDROME chain: broiler MUSCLE MASS OUTGROWS HEART AND LUNGS → increased cardiac output through RIGID NON-EXPANSIBLE AVIAN LUNGS → PULMONARY HYPERTENSION → RIGHT VENTRICULAR HYPERTROPHY then DILATATION → right heart failure → ASCITES.",
+      "Ascites lesions: clear straw-coloured abdominal fluid with fibrin clots, DILATED HYPERTROPHIED RIGHT VENTRICLE, congested firm 'NUTMEG' LIVER with a gelatinous coat, congested oedematous lungs.",
+      "Ascites is worsened by COLD, HIGH ALTITUDE, POOR VENTILATION, AMMONIA, DUST and rapid growth — interventions work at the FIRST step (oxygen demand), not on the ascites itself.",
+      "SUDDEN DEATH SYNDROME ('FLIP-OVER'): fast-growing MALE broilers die in SECONDS from an ACUTE ARRHYTHMIA, found ON THEIR BACKS with legs extended.",
+      "SDS LESIONS ARE CONSPICUOUSLY NEGATIVE — a well-fleshed bird with a FULL CROP AND GIZZARD, contracted ventricles and congested lungs. THE FULL CROP PROVES IT WAS FEEDING NORMALLY MOMENTS BEFORE DEATH.",
+      "ROUND HEART DISEASE: the heart becomes GLOBULAR AND ROUNDED, losing its conical apex, with a dilated flabby pale ventricle; associated with rapid growth and FURAZOLIDONE toxicity.",
+      "FATTY LIVER HAEMORRHAGIC SYNDROME occurs in OVER-FAT HIGH-PRODUCING CAGED LAYERS on high-energy rations with no exercise, worsened by heat stress.",
+      "THE HEN DIES OF HAEMORRHAGE, NOT LIVER FAILURE — the fatty friable liver capsule RUPTURES and she bleeds into her abdomen. Found dead in good condition with a PALE COMB.",
+      "FLHS lesions: MASSIVELY ENLARGED, PALE YELLOW-OCHRE, GREASY, EXTREMELY FRIABLE LIVER that BREAKS APART UNDER THE FINGERS AND FLOATS IN WATER, with subcapsular haematomas and a LARGE ABDOMINAL BLOOD CLOT.",
+      "FATTY LIVER AND KIDNEY SYNDROME is DIFFERENT — young broilers of 2-4 weeks, associated with BIOTIN DEFICIENCY, dying of HYPOGLYCAEMIA with pale fatty liver, kidneys and heart.",
+      "BIRDS ARE URICOTELIC with NO URINARY BLADDER, excreting poorly soluble URIC ACID largely by TUBULAR SECRETION — so any renal insult or water shortage rapidly causes GOUT.",
+      "VISCERAL GOUT = chalky urate on pericardium, liver capsule, air sacs and peritoneum. ARTICULAR GOUT = urate in joints and tendon sheaths. Microscopically TOPHI with giant cells.",
+      "GOUT IS A SIGN, NOT A DIAGNOSIS — work through WATER DEPRIVATION (power cut, blocked drinker line), EXCESS CALCIUM (layer feed to growers), excess protein, VITAMIN A DEFICIENCY, OCHRATOXIN, nephropathogenic IB and avian nephritis virus.",
+      "URATE CRYSTALS DISSOLVE IN FORMALIN — fix a duplicate piece in ABSOLUTE ALCOHOL.",
+      "HAEMORRHAGIC SYNDROME = bone marrow suppression with a PALE FATTY APLASTIC MARROW, from MYCOTOXINS, SULPHONAMIDES or CHICKEN INFECTIOUS ANAEMIA VIRUS.",
+      "HEAT STROKE: birds cannot sweat and lose heat by PANTING, causing RESPIRATORY ALKALOSIS which REDUCES BICARBONATE FOR SHELL FORMATION — hence THIN SHELLS in hot weather. Lesions are non-specific congestion.",
+      "INTERNAL LAYER: ovum released into the abdomen instead of entering the infundibulum, causing EGG-YOLK PERITONITIS; the hen stands upright as a 'PENGUIN' with a pendulous abdomen.",
+      "FALSE LAYER: NORMAL ACTIVE OVARY but a BLIND-ENDED, HYPOPLASTIC OR CYSTIC OVIDUCT — caused by INFECTIOUS BRONCHITIS IN THE FIRST 1-2 WEEKS OF LIFE. IRREVERSIBLE; identify and cull.",
+      "EGG BOUND: egg lodged in the caudal oviduct or vagina — from an oversized or double-yolked egg, a pullet laying too young, obesity, or CALCIUM DEFICIENCY causing poor uterine contraction.",
+      "IMPACTION OF THE OVIDUCT: gross distension with LAMINATED CONCENTRIC MASSES of inspissated yolk and caseous exudate resembling a boiled egg cut across, following SALPINGITIS.",
+      "VENT GLEET (CLOACITIS): foul-smelling pasty yellowish necrotic exudate with ulceration and encrustation of the vent — and it PREDISPOSES TO CANNIBALISM by attracting pecking.",
+      "PROLAPSE ('BLOW-OUT') in pullets laying too early or too fat is A MAJOR INITIATOR OF CANNIBALISM, because the everted tissue is immediately pecked.",
+      "BREAST BLISTER (STERNAL BURSITIS) from prolonged pressure on hard, wet or caked litter — a major cause of DOWNGRADING AND CONDEMNATION.",
+      "BUMBLE FOOT: STAPHYLOCOCCUS AUREUS entering through a foot-pad puncture, giving a swollen foot with a BLACK SCAB over a FIRM DRY LAMINATED CASEOUS CORE — dry because the heterophil lacks MYELOPEROXIDASE. The plug must be physically removed.",
+      "PENDULOUS CROP: grossly distended atonic crop full of sour fermenting feed — from VAGAL PARALYSIS (Marek), obstruction by coarse litter, CANDIDIASIS, or overeating after deprivation.",
+      "CANNIBALISM causes: LIGHT TOO BRIGHT OR TOO LONG (the most important), overcrowding, insufficient feeder space, boredom, and deficiency of SALT and SULPHUR AMINO ACIDS (birds short of methionine EAT FEATHERS).",
+      "ONCE ESTABLISHED, CANNIBALISM BECOMES A SELF-SUSTAINING LEARNED HABIT that persists after the original cause is removed — THE SIGHT OF BLOOD IS A POWERFUL STIMULUS. INTERVENE AT THE FIRST SIGN."
+    ],
+
+    clinical:
+      "<b>Why this matters in Indian practice.</b><br>" +
+      "<b>Read the negative post-mortem correctly.</b> A well-fleshed four-week-old broiler found <b>on its back with a full crop and gizzard and no significant lesions anywhere</b> has sudden death syndrome, and that absence of lesions is the diagnosis rather than a failure of examination. Record it explicitly, because the full crop proves the bird was eating normally seconds before death and rules out wasting and septicaemic disease.<br><br>" +
+      "<b>Open the abdomen expecting fluid in the panting, cyanotic broiler.</b> Ascites is one of the largest causes of non-infectious broiler mortality in India, particularly in cold weather and in poorly ventilated sheds. Find the <b>straw-coloured abdominal fluid, the dilated flabby right ventricle and the congested nutmeg liver</b>, and then take the diagnosis back to the shed: <b>improve ventilation, reduce dust and ammonia, avoid chilling, and consider slowing early growth through lighting or feeding programmes.</b> Treating the individual bird achieves nothing; every useful intervention acts on the bird&rsquo;s oxygen demand.<br><br>" +
+      "<b>In a dead layer with a pale comb, look for the blood clot.</b> An over-fat caged hen found dead in good condition with a pale comb, a huge greasy yellow liver that crumbles between your fingers, and a large clot in the abdomen, has fatty liver haemorrhagic syndrome. Explain to the owner that she <b>bled to death rather than dying of liver disease</b>, and that the answer is dietary and managemental — reducing dietary energy, avoiding over-fat birds, and reducing heat stress — not medication.<br><br>" +
+      "<b>When you find gout, check the water supply before anything else.</b> This is the single most valuable habit in Indian poultry practice. Ask directly: <b>has the power failed and stopped the pump; is a drinker line blocked; are there enough drinkers at the right height for the stocking density in summer heat; is the flock on layer feed while still growing; is the ration too high in protein; is the feed store damp enough for ochratoxin?</b> Most of these are correctable the same day and are far commoner than any viral cause. If you want laboratory confirmation of urate crystals, remember to <b>send a duplicate piece of kidney in absolute alcohol</b>, because formalin dissolves them.<br><br>" +
+      "<b>Distinguish the internal layer from the false layer, because the advice differs completely.</b> Both hens have yolk in the abdomen and neither lays. <b>An internal layer has a normal oviduct; a false layer has a blind-ended or cystic oviduct with a normal active ovary</b>, and that means the flock was infected with infectious bronchitis in its first fortnight of life. Finding false layers is useless for those birds — cull them — but it is valuable information, telling the producer that the fault lies in <b>breeder vaccination and early chick protection for the next batch</b>, not in current feed or management.<br><br>" +
+      "<b>Manage heat stress before the afternoon, not during it.</b> Indian summer losses in poultry are largely preventable. Advise <b>uninterrupted water supply with extra drinker space, cool drinking water, foggers or sprinklers and increased air movement, feeding in the cool early morning and late evening, reduced stocking density, and avoiding handling, transport or vaccination during the heat of the day.</b> Warn layer keepers that <b>thin shells in hot weather are a consequence of panting</b>, not of a calcium shortage alone, so simply adding limestone will not fix it.<br><br>" +
+      "<b>Treat breast blisters and bumble foot as housing problems.</b> Both are caused by the surface the bird sits or stands on. For <b>breast blister</b>, look at litter depth, caking and moisture, and remember that lame birds sit and therefore develop them — so the underlying lameness must also be addressed. For <b>bumble foot</b>, examine perches for rough edges, check wire floors, and correct wet caked litter and ammonia. Explain that the <b>dry caseous plug will not burst and drain like a mammalian abscess and that antibiotics penetrate it poorly</b>, so if treatment is attempted the plug must be removed surgically and the surface corrected, or it will simply recur.<br><br>" +
+      "<b>Act on cannibalism immediately, before you know the cause.</b> This is the most important practical message in the topic. <b>Darken the house or reduce light intensity at once, remove and isolate injured and pecked birds, and remove any prolapsed or vent-gleet bird from the flock</b> — then investigate. Check <b>light intensity and day length, stocking density, feeder and drinker space, salt and methionine adequacy, and mite infestation</b>. Explain clearly that <b>once the habit is learned it persists after the cause is corrected and the sight of blood recruits more birds within minutes</b>, which is why waiting to complete the investigation before acting is the wrong order. The same applies to egg eating — remove broken eggs promptly, collect frequently, and provide adequate darkened nest boxes, because a bird that has tasted egg will continue and others will copy.",
+
+    tables: [
+      {
+        title: "The broiler cardiopulmonary conditions — one physiological limitation, three diseases",
+        headers: ["Condition", "Mechanism", "Post-mortem picture", "Bird found"],
+        rows: [
+          ["ASCITES SYNDROME", "Pulmonary hypertension → RIGHT heart failure", "Straw-coloured abdominal fluid; DILATED RIGHT VENTRICLE; NUTMEG liver", "Cyanotic, panting, reluctant to move"],
+          ["SUDDEN DEATH SYNDROME", "Acute cardiac ARRHYTHMIA", "NO SIGNIFICANT LESIONS; FULL CROP; contracted ventricles", "ON ITS BACK, legs extended, well fleshed"],
+          ["ROUND HEART DISEASE", "Cardiomyopathy", "GLOBULAR heart losing its conical apex; pale flabby ventricle", "Congestive heart failure"],
+          ["Shared risk factors", "COLD, ALTITUDE, POOR VENTILATION, AMMONIA, DUST, RAPID GROWTH", "—", "Predominantly fast-growing MALES"],
+          ["Effective intervention", "Act on OXYGEN DEMAND — ventilation, warmth, growth rate", "—", "Treating the individual bird is futile"]
+        ]
+      },
+      {
+        title: "The two 'fatty liver' conditions — do not confuse them",
+        headers: ["Feature", "FATTY LIVER HAEMORRHAGIC SYNDROME", "FATTY LIVER AND KIDNEY SYNDROME"],
+        rows: [
+          ["Bird affected", "OVER-FAT high-producing CAGED LAYER", "YOUNG BROILER, 2-4 weeks"],
+          ["Cause", "High energy, no exercise, heat stress", "BIOTIN deficiency; low-fat high-carbohydrate ration"],
+          ["Mechanism of death", "HAEMORRHAGE from ruptured friable liver", "HYPOGLYCAEMIA"],
+          ["Liver", "MASSIVE, yellow-ochre, greasy, breaks apart, FLOATS", "Pale and fatty"],
+          ["Kidneys", "Normal", "PALE AND FATTY"],
+          ["Key finding", "LARGE BLOOD CLOT in abdomen; pale comb", "Bird paralysed on breast, neck extended"],
+          ["Correction", "Reduce dietary energy; reduce heat stress", "BIOTIN supplementation"]
+        ]
+      },
+      {
+        title: "Vices and the conditions that trigger them",
+        headers: ["Vice", "Triggering condition", "First action"],
+        rows: [
+          ["VENT PECKING ('pick-out')", "PROLAPSE, vent gleet, laying too young, obesity", "Remove affected bird; DARKEN THE HOUSE"],
+          ["FEATHER PECKING", "Bright/long light, crowding, LOW METHIONINE and SALT, mites, boredom", "Reduce light; check ration; treat ectoparasites"],
+          ["TOE PECKING (chicks)", "Bright light, hunger, crowded brooder", "Reduce light intensity; check feeder space"],
+          ["EGG EATING", "Broken eggs left in nests, too few or bright nest boxes", "Collect frequently; darken and increase nest boxes"],
+          ["CANNIBALISM generally", "ANY source of blood or conspicuousness", "ACT IMMEDIATELY — the habit becomes self-sustaining"],
+          ["Key principle", "THE SIGHT OF BLOOD RECRUITS OTHER BIRDS WITHIN MINUTES", "Do not wait to complete the investigation before acting"]
+        ]
+      }
+    ],
+
+    img: "",
+    tags: ["ascites syndrome", "pulmonary hypertension", "nutmeg liver", "sudden death syndrome", "flip-over disease", "round heart disease", "fatty liver haemorrhagic syndrome", "fatty liver and kidney syndrome", "biotin", "gout", "uricotelic", "heat stroke", "thin shells", "internal layer", "false layer", "egg bound", "oviduct impaction", "vent gleet", "prolapse", "breast blister", "bumble foot", "pendulous crop", "cage layer fatigue", "cannibalism", "feather pecking"]
   }
 
 };
