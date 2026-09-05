@@ -57,13 +57,60 @@ var app = (function () {
     speaker:   '<path d="M11 5 6.5 9H3v6h3.5L11 19z"/><path d="M15 9.5a3.5 3.5 0 0 1 0 5"/><path d="M17.5 7a7 7 0 0 1 0 10"/>',
     stop:      '<rect x="6" y="6" width="12" height="12" rx="2"/>',
     pen:       '<path d="M4 20h4L19.5 8.5a2.1 2.1 0 0 0-3-3L5 17z"/><path d="M14.5 6.5l3 3"/>',
-    share:     '<circle cx="18" cy="5.5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="18.5" r="2.5"/><path d="m8.2 10.8 7.6-4M8.2 13.2l7.6 4"/>'
+    share:     '<circle cx="18" cy="5.5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="18.5" r="2.5"/><path d="m8.2 10.8 7.6-4M8.2 13.2l7.6 4"/>',
+    sparkle:   '<path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3z"/>',
+    trophy:    '<path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.66V17c0 .55-.45 1-1 1H8v4h8v-4h-1c-.55 0-1-.45-1-1v-2.34M6 4h12v6a6 6 0 0 1-12 0z"/>',
+    copy:      '<rect width="13" height="13" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>',
+    microscope:'<path d="M6 18h8M3 22h14M14 22a7 7 0 1 0 0-14h-1M9 14h2M9 12a2 2 0 1 0-2-2v4M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3"/>',
+    dna:       '<path d="m2 15 5.5-5.5M16.5 4 22 9.5M10 2l12 12M2 10l12 12M5 6.5l2.5 2.5M15 16.5l2.5 2.5"/>',
+    shield:    '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>',
+    cell:      '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><circle cx="8" cy="10" r="1"/><circle cx="16" cy="14" r="1"/>',
+    virus:     '<circle cx="12" cy="12" r="5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.2 2.2M16.9 16.9l2.2 2.2M4.9 19.1l2.2-2.2M16.9 7.1l2.2-2.2"/>',
+    clipboard: '<rect width="14" height="18" x="5" y="3" rx="2"/><path d="M9 3v2a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V3M9 11h6M9 15h4"/>',
+    pulse:     '<path d="M22 12h-4l-3 9L9 3l-3 9H2"/>',
+    bell:      '<path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/>',
+    eye:       '<path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/>',
+    eyeOff:    '<path d="M9.88 9.88a3 3 0 1 0 4.24 4.24"/><path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"/><path d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"/><line x1="2" x2="22" y1="2" y2="22"/>',
+    repeat:    '<path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="m7 22-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/>',
+    help:      '<circle cx="12" cy="12" r="9"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/>',
+    filter:    '<polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/>',
+    checkCircle:'<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>',
+    crossCircle:'<circle cx="12" cy="12" r="10"/><path d="m15 9-6 6M9 9l6 6"/>',
+    feather:   '<path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" x2="2" y1="8" y2="22"/><line x1="17.5" x2="9" y1="15" y2="15"/>',
+    heart:     '<path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>',
+    lightbulb: '<path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6M10 22h4"/>',
+    folder:    '<path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"/>'
   };
 
   function icon(name, cls) {
     var d = ICONS[name] || ICONS.book;
     return '<svg class="ico ' + (cls || '') + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" ' +
       'stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + d + '</svg>';
+  }
+
+  function getUnitIcon(u) {
+    if (!u) return "book";
+    var no = parseInt(u.no, 10);
+    if (u.stream === "practical") {
+      switch (no) {
+        case 1: return "lab";
+        case 2: return "cell";
+        case 3: return "pulse";
+        case 4: return "microscope";
+        case 5: return "feather";
+        case 6: return "clipboard";
+        default: return "lab";
+      }
+    }
+    switch (no) {
+      case 1: return "cell";
+      case 2: return "pulse";
+      case 3: return "virus";
+      case 4: return "feather";
+      case 5: return "dna";
+      case 6: return "clipboard";
+      default: return "theory";
+    }
   }
 
   /* ============================================================
@@ -243,38 +290,306 @@ var app = (function () {
   function setCrumbs() {
     var c = el("#crumbs");
     if (!c) return;
-    var parts = ['<a href="#/">Home</a>'];
+    var parts = ['<a href="#/">' + icon("home") + '<span>Home</span></a>'];
 
-    function push(label, href) {
+    function push(label, href, icoName) {
       parts.push('<span class="sep">/</span>');
-      parts.push(href ? '<a href="' + href + '">' + esc(label) + '</a>'
-                      : '<span class="cur">' + esc(label) + '</span>');
+      var icoHtml = icoName ? icon(icoName) : "";
+      parts.push(href ? '<a href="' + href + '">' + icoHtml + '<span>' + esc(label) + '</span></a>'
+                      : '<span class="cur">' + icoHtml + '<span>' + esc(label) + '</span></span>');
     }
 
-    if (state.section === "theory") push("Theory");
-    else if (state.section === "practical") push("Practical");
-    else if (state.section === "why") push("WHY");
-    else if (state.section === "qa") push("Q & A");
-    else if (state.section === "quiz") push("Quiz");
-    else if (state.section === "dashboard") push("Dashboard");
-    else if (state.section === "library") push("Library");
-    else if (state.section === "me") push("Settings");
+    if (state.section === "theory") push("Theory", null, "theory");
+    else if (state.section === "practical") push("Practical", null, "practical");
+    else if (state.section === "why") push("WHY", null, "why");
+    else if (state.section === "qa") push("Q & A", null, "qa");
+    else if (state.section === "quiz") push("Quiz", null, "quiz");
+    else if (state.section === "dashboard") push("Dashboard", null, "dashboard");
+    else if (state.section === "library") push("Library", null, "library");
+    else if (state.section === "me") push("Settings", null, "me");
     else if (state.section === "unit") {
       var u = syllabus.unitById[state.params.a];
       if (u) {
-        push(u.stream === "theory" ? "Theory" : "Practical", "#/" + u.stream);
-        push("Unit " + u.no);
+        var strIco = u.stream === "theory" ? "theory" : "practical";
+        push(u.stream === "theory" ? "Theory" : "Practical", "#/" + u.stream, strIco);
+        push("Unit " + u.no, null, getUnitIcon(u));
       }
     } else if (state.section === "topic") {
       var t = syllabus.topicById[state.params.a];
       if (t) {
         var u2 = syllabus.unitById[t.unitId];
-        push(t.stream === "theory" ? "Theory" : "Practical", "#/" + t.stream);
-        push("Unit " + u2.no, "#/unit/" + u2.id);
-        push(t.title);
+        var strIco2 = t.stream === "theory" ? "theory" : "practical";
+        push(t.stream === "theory" ? "Theory" : "Practical", "#/" + t.stream, strIco2);
+        push("Unit " + u2.no, "#/unit/" + u2.id, getUnitIcon(u2));
+        push(t.title, null, "book");
       }
     }
-    c.innerHTML = parts.join(" ");
+    c.innerHTML = parts.join("");
+  }
+
+  /* ============================================================
+     3D HOLOGRAPHIC CELLULAR & DIAGNOSTIC LATTICE CANVAS
+     ============================================================ */
+  var landingCanvasLoopRunning = false;
+  function _initLandingCanvas() {
+    var canvas = document.getElementById("landing-canvas");
+    if (!canvas) return;
+
+    var ctx = canvas.getContext("2d");
+    var width = 0, height = 0;
+
+    function resize() {
+      if (!canvas) return;
+      width = canvas.width = canvas.clientWidth;
+      height = canvas.height = canvas.clientHeight;
+    }
+    window.addEventListener("resize", resize);
+    resize();
+
+    // 3D Model Vertices and Edges for Cellular & Diagnostic Matrix
+    var vertices = [];
+    var edges = [];
+
+    // 1. Central Nucleus (Spherical core)
+    var coreRings = 3;
+    var coreSegs = 8;
+    var coreRadius = 18;
+    for (var r = 0; r < coreRings; r++) {
+      var phi = ((r + 1) / (coreRings + 1)) * Math.PI;
+      var y = Math.cos(phi) * coreRadius;
+      var ringR = Math.sin(phi) * coreRadius;
+      for (var s = 0; s < coreSegs; s++) {
+        var theta = (s / coreSegs) * Math.PI * 2;
+        vertices.push({
+          x: Math.cos(theta) * ringR,
+          y: y,
+          z: Math.sin(theta) * ringR,
+          type: "core"
+        });
+        var idx = vertices.length - 1;
+        if (s > 0) edges.push([idx - 1, idx]);
+        else edges.push([idx + coreSegs - 1, idx]);
+        if (r > 0) edges.push([idx - coreSegs, idx]);
+      }
+    }
+
+    // 2. Cellular Membrane & Icosahedral Diagnostic Cage
+    var t = (1 + Math.sqrt(5)) / 2;
+    var scale = 52;
+    var icoVerts = [
+      [-1,  t,  0], [ 1,  t,  0], [-1, -t,  0], [ 1, -t,  0],
+      [ 0, -1,  t], [ 0,  1,  t], [ 0, -1, -t], [ 0,  1, -t],
+      [ t,  0, -1], [ t,  0,  1], [-t,  0, -1], [-t,  0,  1]
+    ];
+    var baseIcoIdx = vertices.length;
+    icoVerts.forEach(function (v) {
+      vertices.push({ x: v[0] * scale, y: v[1] * scale, z: v[2] * scale, type: "membrane" });
+    });
+
+    var icoEdges = [
+      [0,11],[0,5],[0,1],[0,7],[0,10],[1,5],[1,9],[1,8],[1,7],[2,11],[2,4],[2,3],[2,6],[2,10],
+      [3,9],[3,4],[3,8],[3,6],[4,9],[4,5],[4,11],[5,9],[6,7],[6,8],[6,10],[7,8],[7,10],[8,9],
+      [10,11]
+    ];
+    icoEdges.forEach(function (pair) {
+      edges.push([baseIcoIdx + pair[0], baseIcoIdx + pair[1]]);
+    });
+
+    // 3. Diagnostic Antigenic Receptor Spikes (Radiating Y-shapes)
+    for (var k = 0; k < 6; k++) {
+      var angle = (k / 6) * Math.PI * 2;
+      var spikeLen = 85;
+      var sx = Math.cos(angle) * spikeLen;
+      var sy = (k % 2 === 0 ? -1 : 1) * 24;
+      var sz = Math.sin(angle) * spikeLen;
+      vertices.push({ x: sx, y: sy, z: sz, type: "spike-stem" });
+      var stemIdx = vertices.length - 1;
+      edges.push([baseIcoIdx + (k % icoVerts.length), stemIdx]);
+
+      // Y-arms
+      vertices.push({ x: sx + 14, y: sy - 12, z: sz + 10, type: "spike-arm" });
+      edges.push([stemIdx, vertices.length - 1]);
+      vertices.push({ x: sx - 14, y: sy - 12, z: sz - 10, type: "spike-arm" });
+      edges.push([stemIdx, vertices.length - 1]);
+    }
+
+    // Interaction & Animation State
+    var angleX = 0.25;
+    var angleY = 0.45;
+    var targetAngleX = 0.25;
+    var targetAngleY = 0.45;
+    var dragStartX = 0, dragStartY = 0;
+    var isDragging = false;
+
+    var heroEl = document.querySelector(".hero");
+    if (heroEl) {
+      heroEl.addEventListener("mousedown", function (e) {
+        if (e.target.closest(".hero__cta, a, button, input")) return;
+        isDragging = true;
+        dragStartX = e.clientX;
+        dragStartY = e.clientY;
+      });
+
+      window.addEventListener("mouseup", function () {
+        isDragging = false;
+      });
+
+      window.addEventListener("mousemove", function (e) {
+        if (isDragging) {
+          var dx = e.clientX - dragStartX;
+          var dy = e.clientY - dragStartY;
+          targetAngleY = angleY + dx * 0.008;
+          targetAngleX = angleX + dy * 0.008;
+          dragStartX = e.clientX;
+          dragStartY = e.clientY;
+          angleX = targetAngleX;
+          angleY = targetAngleY;
+        } else {
+          var rx = (e.clientX - window.innerWidth / 2) / window.innerWidth;
+          var ry = (e.clientY - window.innerHeight / 2) / window.innerHeight;
+          targetAngleY = angleY + rx * 0.15;
+          targetAngleX = angleX + ry * 0.15;
+        }
+      });
+
+      heroEl.addEventListener("touchstart", function (e) {
+        if (e.target.closest(".hero__cta, a, button, input")) return;
+        isDragging = true;
+        dragStartX = e.touches[0].clientX;
+        dragStartY = e.touches[0].clientY;
+      }, { passive: true });
+
+      heroEl.addEventListener("touchmove", function (e) {
+        if (isDragging && e.touches.length > 0) {
+          var dx2 = e.touches[0].clientX - dragStartX;
+          var dy2 = e.touches[0].clientY - dragStartY;
+          targetAngleY = angleY + dx2 * 0.008;
+          targetAngleX = angleX + dy2 * 0.008;
+          dragStartX = e.touches[0].clientX;
+          dragStartY = e.touches[0].clientY;
+          angleX = targetAngleX;
+          angleY = targetAngleY;
+        }
+      }, { passive: true });
+
+      heroEl.addEventListener("touchend", function () {
+        isDragging = false;
+      });
+    }
+
+    function renderLoop() {
+      var activeCanvas = document.getElementById("landing-canvas");
+      if (!activeCanvas) {
+        landingCanvasLoopRunning = false;
+        return;
+      }
+
+      ctx.clearRect(0, 0, width, height);
+
+      if (!isDragging) {
+        angleY += 0.0035;
+        targetAngleY += 0.0035;
+      }
+
+      var smoothX = angleX + (targetAngleX - angleX) * 0.1;
+      var smoothY = angleY + (targetAngleY - angleY) * 0.1;
+
+      var cosX = Math.cos(smoothX), sinX = Math.sin(smoothX);
+      var cosY = Math.cos(smoothY), sinY = Math.sin(smoothY);
+
+      var isDark = store.getTheme() === "dark";
+      var fov = 380;
+      var centerX = width > 768 ? width * 0.72 : width * 0.5;
+      var centerY = height * 0.48;
+
+      var projected = vertices.map(function (v) {
+        var x1 = v.x * cosY - v.z * sinY;
+        var z1 = v.z * cosY + v.x * sinY;
+        var y2 = v.y * cosX - z1 * sinX;
+        var z2 = z1 * cosX + v.y * sinX;
+        var scale = fov / (fov + z2);
+        return {
+          x: x1 * scale + centerX,
+          y: y2 * scale + centerY,
+          z: z2,
+          type: v.type
+        };
+      });
+
+      // Orbit HUD Rings
+      ctx.beginPath();
+      ctx.arc(centerX, centerY, 150, 0, Math.PI * 2);
+      ctx.strokeStyle = isDark ? "rgba(79, 195, 247, 0.08)" : "rgba(21, 101, 192, 0.08)";
+      ctx.lineWidth = 1.2;
+      ctx.stroke();
+
+      ctx.beginPath();
+      ctx.arc(centerX, centerY, 190, smoothY * 0.4, smoothY * 0.4 + Math.PI * 0.7);
+      ctx.strokeStyle = isDark ? "rgba(128, 203, 196, 0.12)" : "rgba(0, 137, 123, 0.12)";
+      ctx.lineWidth = 1.5;
+      ctx.stroke();
+
+      // Draw Edges
+      ctx.lineWidth = 1.2;
+      edges.forEach(function (pair) {
+        var p1 = projected[pair[0]];
+        var p2 = projected[pair[1]];
+        if (!p1 || !p2) return;
+
+        var maxZ = 120;
+        var depthAlpha = Math.max(0.06, 1 - (p1.z + p2.z) / (2 * maxZ));
+        var baseOpacity = isDark ? 0.35 : 0.22;
+        var alpha = Math.min(1, depthAlpha * baseOpacity);
+
+        ctx.beginPath();
+        ctx.moveTo(p1.x, p1.y);
+        ctx.lineTo(p2.x, p2.y);
+        if (p1.type === "core") {
+          ctx.strokeStyle = isDark ? "rgba(179, 136, 255, " + alpha + ")" : "rgba(106, 72, 181, " + alpha + ")";
+        } else if (p1.type === "spike-stem" || p1.type === "spike-arm") {
+          ctx.strokeStyle = isDark ? "rgba(255, 183, 77, " + alpha + ")" : "rgba(178, 94, 0, " + alpha + ")";
+        } else {
+          ctx.strokeStyle = isDark ? "rgba(79, 195, 247, " + alpha + ")" : "rgba(21, 101, 192, " + alpha + ")";
+        }
+        ctx.stroke();
+      });
+
+      // Draw Nodes
+      projected.forEach(function (p) {
+        var radius = Math.max(1.2, (1 - p.z / 120) * 2.8);
+        var alpha = Math.max(0.12, (1 - p.z / 120) * (isDark ? 0.7 : 0.5));
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, radius, 0, Math.PI * 2);
+        if (p.type === "core") {
+          ctx.fillStyle = isDark ? "rgba(179, 136, 255, " + alpha + ")" : "rgba(106, 72, 181, " + alpha + ")";
+        } else if (p.type === "spike-stem" || p.type === "spike-arm") {
+          ctx.fillStyle = isDark ? "rgba(255, 183, 77, " + alpha + ")" : "rgba(178, 94, 0, " + alpha + ")";
+        } else {
+          ctx.fillStyle = isDark ? "rgba(79, 195, 247, " + alpha + ")" : "rgba(21, 101, 192, " + alpha + ")";
+        }
+        ctx.fill();
+      });
+
+      // Clinical Telemetry Overlay Text
+      ctx.font = "10px JetBrains Mono, Courier New, monospace";
+      ctx.fillStyle = isDark ? "rgba(148, 163, 184, 0.45)" : "rgba(84, 110, 122, 0.45)";
+      var txtY = height - 24;
+      ctx.fillText("SYS_DIAGNOSTICS: ACTIVE [FOV_380]", 24, txtY);
+      ctx.fillText("CELLULAR_LATTICE: NODES=" + vertices.length + " EDGES=" + edges.length, 24, txtY + 13);
+
+      var yawDeg = Math.round(((smoothY % (Math.PI * 2)) * 180) / Math.PI);
+      if (width > 600) {
+        ctx.fillText("ROT_YAW: " + yawDeg + "\u00B0 // REF: VCI_MSVE_2016", width - 240, txtY);
+        ctx.fillText("ICAR_IVRI_PATHOLOGY // UNITS_1_6_ONLINE", width - 240, txtY + 13);
+      }
+
+      requestAnimationFrame(renderLoop);
+    }
+
+    if (!landingCanvasLoopRunning) {
+      landingCanvasLoopRunning = true;
+      requestAnimationFrame(renderLoop);
+    }
   }
 
   /* ============================================================
@@ -334,16 +649,17 @@ var app = (function () {
 
     view.innerHTML =
       '<section class="hero">' +
+        '<canvas id="landing-canvas" class="landing-canvas" aria-hidden="true"></canvas>' +
         '<div class="hero__inner">' +
-          '<span class="eyebrow">B.V.Sc &amp; A.H. · Second Year · VCI Syllabus</span>' +
+          '<span class="eyebrow">' + icon("sparkle") + ' B.V.Sc &amp; A.H. · Second Year · VCI Syllabus</span>' +
           '<h1 class="hero__title">Veterinary Pathology<br><span class="hero__title-accent">Studio</span></h1>' +
           '<p class="lede hero__lede">Six theory units, six practical units, a question bank and a quiz engine — ' +
           'built for students at ICAR-IVRI, Izatnagar. Works offline once loaded.</p>' +
           '<div class="hero__cta">' +
             (lastT
-              ? '<a class="btn btn--primary btn--lg" href="#/topic/' + lastT.id + '">Resume: ' + esc(shorten(lastT.title, 34)) + '</a>'
-              : '<a class="btn btn--primary btn--lg" href="#/theory">Start with Unit 1</a>') +
-            '<a class="btn btn--lg" href="#/quiz">Take a quiz</a>' +
+              ? '<a class="btn btn--primary btn--lg" href="#/topic/' + lastT.id + '">' + icon("book") + ' Resume: ' + esc(shorten(lastT.title, 34)) + '</a>'
+              : '<a class="btn btn--primary btn--lg" href="#/theory">' + icon("theory") + ' Start with Unit 1</a>') +
+            '<a class="btn btn--lg" href="#/quiz">' + icon("quiz") + ' Take a quiz</a>' +
           '</div>' +
 
           /* Hero Statistics Strip (Mirrored from Anatomy) */
@@ -476,6 +792,9 @@ var app = (function () {
         '</div>' +
 
         '<div class="footer-tools">' +
+          '<button class="footer-tool-btn" onclick="app.startOnboarding()">' +
+            icon("sparkle") + ' Welcome Tour' +
+          '</button>' +
           '<button class="footer-tool-btn" onclick="app.openAbout()">' +
             icon("target") + ' About the Platform' +
           '</button>' +
@@ -484,6 +803,7 @@ var app = (function () {
           '</button>' +
         '</div>' +
       '</div>';
+    _initLandingCanvas();
   }
 
   function shorten(s, n) { return s.length > n ? s.slice(0, n - 1) + "…" : s; }
@@ -542,19 +862,20 @@ var app = (function () {
     var cards = units.map(function (u) {
       var pr = unitProgress(u);
       var written = unitContentCount(u);
+      var uIco = getUnitIcon(u);
       return '<a class="card card--link unitcard" href="#/unit/' + u.id + '">' +
         '<div class="row row--wrap">' +
-          '<span class="unitcard__no">Unit ' + u.no + '</span>' +
+          '<span class="unitcard__no">' + icon(uIco) + ' Unit ' + u.no + '</span>' +
           '<span class="chip push">' + (u.paper === "paper-1" ? "Paper I" : "Paper II") + '</span>' +
         '</div>' +
         '<div class="card__title mt-2">' + esc(u.title) + '</div>' +
         '<p class="card__desc">' + esc(u.blurb) + '</p>' +
         '<div class="bar mt-4"><div class="bar__fill" style="width:' + pr.pct + '%"></div></div>' +
         '<div class="unitcard__meta">' +
-          '<span>' + u.topics.length + ' topics</span>' +
-          '<span>' + pr.done + ' read</span>' +
-          '<span>' + written + ' written</span>' +
-          '<span>' + questionCount(u.id) + ' questions</span>' +
+          '<span>' + icon("book") + ' ' + u.topics.length + ' topics</span>' +
+          '<span>' + icon("check") + ' ' + pr.done + ' read</span>' +
+          '<span>' + icon("pen") + ' ' + written + ' written</span>' +
+          '<span>' + icon("quiz") + ' ' + questionCount(u.id) + ' questions</span>' +
         '</div>' +
       '</a>';
     }).join("");
@@ -562,13 +883,14 @@ var app = (function () {
     view.innerHTML =
       '<div class="pagehead">' +
         '<span class="eyebrow">' + (isTheory ? "4 credit hours" : "2 credit hours") + '</span>' +
-        '<h1>' + (isTheory ? "Theory" : "Practical") + '</h1>' +
+        '<h1>' + (isTheory ? icon("theory") + ' Theory' : icon("practical") + ' Practical') + '</h1>' +
         '<p class="lede">' + (isTheory
           ? "The six theory units of the VCI Veterinary Pathology syllabus. Units 1–3 form Paper I; Units 4–6 form Paper II."
           : "The six practical units. Gross specimens, histopathology technique, clinical pathology and necropsy.") + '</p>' +
         '<div class="row row--wrap mt-4">' +
-          '<span class="chip chip--accent">' + readN + ' / ' + totalTopics + ' topics read</span>' +
-          '<span class="chip">' + units.length + ' units</span>' +
+          '<span class="chip chip--accent">' + icon("check") + ' ' + readN + ' / ' + totalTopics + ' topics read</span>' +
+          '<span class="chip">' + icon("sparkle") + ' ' + pct(readN, totalTopics) + '% complete</span>' +
+          '<span class="chip">' + icon("folder") + ' ' + units.length + ' units</span>' +
         '</div>' +
       '</div>' +
       '<div class="grid grid--2">' + cards + '</div>';
@@ -588,15 +910,20 @@ var app = (function () {
     var rows = u.topics.map(function (t) {
       var isRead = !!readMap[t.id];
       var written = hasContent(t.id);
+      var isBm = bm.indexOf(t.id) !== -1;
+      var topicIco = isRead ? "checkCircle" : (isBm ? "star" : getUnitIcon(u));
       return '<a class="tlist__row" href="#/topic/' + t.id + '">' +
         '<span class="tlist__no">' + String(t.index).padStart(2, "0") + '</span>' +
+        '<span class="tlist__ico' + (isRead ? ' is-read' : (isBm ? ' is-saved' : '')) + '">' +
+          icon(topicIco) +
+        '</span>' +
         '<span class="tlist__body">' +
           '<span class="tlist__title">' + esc(t.title) + '</span>' +
           (written ? '' : '<span class="tlist__sub">Content not added yet</span>') +
         '</span>' +
         '<span class="tlist__right">' +
-          (bm.indexOf(t.id) !== -1 ? '<span class="chip chip--warn">Saved</span>' : '') +
-          (isRead ? '<span class="chip chip--ok chip--dot">Read</span>' : '') +
+          (isBm ? '<span class="chip chip--warn">' + icon("star") + ' Saved</span>' : '') +
+          (isRead ? '<span class="chip chip--ok chip--dot">' + icon("check") + ' Read</span>' : '') +
           icon("chevron", "faint") +
         '</span>' +
       '</a>';
@@ -605,18 +932,18 @@ var app = (function () {
     view.innerHTML =
       '<div class="pagehead">' +
         '<div class="pagehead__top">' +
-          '<div style="min-width:0">' +
+          '<div style="min-width:0; flex:1;">' +
             '<span class="eyebrow">' + (u.stream === "theory" ? "Theory" : "Practical") +
               ' · Unit ' + u.no + ' · ' + (u.paper === "paper-1" ? "Paper I" : "Paper II") + '</span>' +
-            '<h1>' + esc(u.title) + '</h1>' +
+            '<h1>' + icon(getUnitIcon(u)) + ' ' + esc(u.title) + '</h1>' +
             '<p class="lede">' + esc(u.blurb) + '</p>' +
           '</div>' +
-          '<div class="pagehead__actions">' + ringHtml(pr.pct, 78) + '</div>' +
+          '<div class="pagehead__actions" style="flex:none; display:flex; align-items:center;">' + ringHtml(pr.pct, 78) + '</div>' +
         '</div>' +
         '<div class="row row--wrap mt-6">' +
           '<a class="btn btn--soft" href="#/quiz/unit/' + u.id + '">' + icon("quiz") + 'Quiz this unit</a>' +
           '<a class="btn" href="#/qa/' + u.id + '">' + icon("qa") + 'Q &amp; A (' + qaCount(u.id) + ')</a>' +
-          '<span class="chip">' + pr.done + ' of ' + pr.total + ' read</span>' +
+          '<span class="chip">' + icon("check") + ' ' + pr.done + ' of ' + pr.total + ' read</span>' +
         '</div>' +
       '</div>' +
       '<div class="tlist">' + rows + '</div>';
@@ -667,9 +994,10 @@ var app = (function () {
     }).join("");
 
     /* ---- content blocks ---- */
-    function block(label, html, mod) {
+    function block(label, html, mod, ic) {
+      var iconHtml = ic ? icon(ic) : "";
       return '<section class="block' + (mod ? " block--" + mod : "") + '">' +
-        '<span class="block__label">' + label + '</span>' +
+        '<span class="block__label">' + iconHtml + ' ' + label + '</span>' +
         '<div class="block__body">' + html + '</div></section>';
     }
 
@@ -677,15 +1005,15 @@ var app = (function () {
     if (hasContent(t.id)) {
       var main = showDeep ? c.eliteDesc : c.desc;
       body =
-        (main ? block(showDeep ? "Deep description" : "Standard description", main) : "") +
+        (main ? block(showDeep ? "Deep diagnostic guide" : "Standard description", main, null, showDeep ? "sparkle" : "microscope") : "") +
         (c.keyPoints && c.keyPoints.length
           ? block("Key points — what earns marks",
               '<ul class="keylist">' + c.keyPoints.map(function (k) {
                 return '<li>' + k + '</li>';
-              }).join("") + '</ul>', "key")
+              }).join("") + '</ul>', "key", "star")
           : "") +
         (c.tables || []).map(function (tb) {
-          return block(tb.title || "Table", renderTable(tb, true), "table");
+          return block(tb.title || "Diagnostic Comparison", renderTable(tb, true), "table", "clipboard");
         }).join("") +
         (c.img
           ? '<figure class="lesson__fig"><img src="' + esc(c.img) + '" alt="' + esc(t.title) + '" loading="lazy"></figure>'
@@ -694,7 +1022,7 @@ var app = (function () {
               '<div class="pathology-placeholder-title">High-Quality Pathology Visuals in Development</div>' +
               '<div class="pathology-placeholder-sub">Carefully curated gross and histopathology reference images for this topic are being compiled at ICAR-IVRI.</div>' +
             '</div></div>') +
-        (c.clinical ? block("Clinical correlation", c.clinical, "clinical") : "");
+        (c.clinical ? block("Clinical correlation & Pathogenesis", c.clinical, "clinical", "shield") : "");
     } else {
       body =
         '<div class="slot">' +
@@ -724,7 +1052,7 @@ var app = (function () {
         '</aside>' +
 
         /* ============ MAIN CARD ============ */
-        '<article class="lesson__main">' +
+        '<article class="lesson__main lesson-body">' +
           '<div class="lesson__card">' +
 
             '<header class="lesson__head">' +
@@ -732,7 +1060,7 @@ var app = (function () {
                 '/// ' + (t.stream === "theory" ? "THEORY" : "PRACTICAL") +
                 ' // UNIT ' + u.no + ' // TOPIC ' + String(t.index).padStart(2, "0") + '</div>' +
               '<h1 class="lesson__title">' + esc(t.title) +
-                '<button class="speakbtn" id="speakbtn" aria-label="Read aloud" title="Read this topic aloud">' +
+                '<button class="speakbtn speak-btn" id="speakbtn" aria-label="Read aloud" title="Read this topic aloud">' +
                 icon("speaker") + '</button></h1>' +
               (c.summary ? '<p class="lesson__summary">' + c.summary + '</p>' : '') +
             '</header>' +
@@ -765,17 +1093,17 @@ var app = (function () {
               '<button class="toolbtn" data-act="share">' + icon("share") + '<span>Share</span></button>' +
               '<div class="push"></div>' +
               '<div class="seg" role="group" aria-label="Detail level">' +
-                '<button class="seg__btn' + (detail === "standard" ? " is-on" : "") + '" data-detail="standard">Standard</button>' +
-                '<button class="seg__btn' + (showDeep ? " is-on" : "") + '"' +
+                '<button class="seg__btn' + (detail === "standard" ? " is-on active" : "") + '" id="standard-toggle" data-detail="standard">' + icon("book") + ' Standard</button>' +
+                '<button class="seg__btn depth-toggle-btn' + (showDeep ? " is-on active" : "") + '" id="deep-toggle"' +
                   (hasDeep ? '' : ' disabled title="No deep version written for this topic yet"') +
-                  ' data-detail="deep">Deep view</button>' +
+                  ' data-detail="deep">' + icon("sparkle") + ' Deep view</button>' +
               '</div>' +
             '</div>' +
 
             '<div id="notebox" class="notebox" ' + (note ? '' : 'hidden') + '>' +
-              '<label class="stat__label" for="noteinput">My note</label>' +
+              '<label class="stat__label" for="noteinput">' + icon("note") + ' My note</label>' +
               '<textarea id="noteinput" rows="4" placeholder="Write anything you want to remember about this topic…">' + esc(note) + '</textarea>' +
-              '<div class="row mt-2"><button class="btn btn--sm btn--primary" data-act="note-save">Save note</button>' +
+              '<div class="row mt-2"><button class="btn btn--sm btn--primary" data-act="note-save">' + icon("check") + ' Save note</button>' +
               '<span class="small faint" id="notestatus"></span></div>' +
             '</div>' +
 
@@ -967,7 +1295,24 @@ var app = (function () {
     if (window.speechSynthesis) window.speechSynthesis.cancel();
     speaking = false;
     var b = el("#speakbtn");
-    if (b) { b.classList.remove("is-on"); b.innerHTML = icon("speaker"); }
+    if (b) {
+      b.classList.remove("is-on", "is-playing");
+      b.innerHTML = icon("speaker");
+      b.setAttribute("title", "Read this topic aloud");
+    }
+  }
+
+  function speak(text) {
+    if (!window.speechSynthesis) { toast("Speech not supported in this browser"); return; }
+    try {
+      window.speechSynthesis.cancel();
+      var u = new SpeechSynthesisUtterance(String(text));
+      u.rate = 0.92;
+      u.lang = "en-IN";
+      window.speechSynthesis.speak(u);
+    } catch (e) {
+      console.warn("Speech pronunciation error:", e);
+    }
   }
 
   function speakTopic(t, c) {
@@ -999,7 +1344,46 @@ var app = (function () {
 
     speaking = true;
     var b = el("#speakbtn");
-    if (b) { b.classList.add("is-on"); b.innerHTML = icon("stop"); }
+    if (b) {
+      b.classList.add("is-on", "is-playing");
+      b.innerHTML = icon("stop");
+      b.setAttribute("title", "Stop reading");
+    }
+  }
+
+  /* ============================================================
+     CONFETTI & MILESTONE CELEBRATIONS
+     ============================================================ */
+  function burstConfetti(originBtn) {
+    if (!originBtn) return;
+    var colors = ['#1565c0', '#00897b', '#6a48b5', '#b25e00', '#2e7d32', '#d84315'];
+    var rect = originBtn.getBoundingClientRect();
+    var cx = rect.left + rect.width / 2;
+    var cy = rect.top + rect.height / 2;
+    var N = 16;
+    for (var i = 0; i < N; i++) {
+      var dot = document.createElement("span");
+      dot.className = "qz-confetti";
+      var angle = (Math.PI * 2 * i) / N + (Math.random() - 0.5) * 0.4;
+      var dist = 70 + Math.random() * 65;
+      dot.style.setProperty("--tx", (Math.cos(angle) * dist) + "px");
+      dot.style.setProperty("--ty", (Math.sin(angle) * dist) + "px");
+      dot.style.setProperty("--rot", (Math.random() * 720 - 360) + "deg");
+      dot.style.background = colors[i % colors.length];
+      dot.style.left = cx + "px";
+      dot.style.top = cy + "px";
+      document.body.appendChild(dot);
+      setTimeout((function (d) { return function () { d.remove(); }; })(dot), 900);
+    }
+  }
+
+  function popMilestone(text) {
+    var pop = document.createElement("div");
+    pop.className = "qz-milestone";
+    pop.innerHTML = text;
+    document.body.appendChild(pop);
+    setTimeout(function () { pop.classList.add("out"); }, 1300);
+    setTimeout(function () { pop.remove(); }, 1800);
   }
 
   /* ============================================================
@@ -1219,6 +1603,185 @@ var app = (function () {
     }
   }
 
+  /* ============================================================
+     ONBOARDING TOUR (Interactive Orientation)
+     ============================================================ */
+  var onboardSlides = [
+    {
+      kicker: "WELCOME TO THE PLATFORM",
+      title: "Veterinary Pathology Studio",
+      body: "Built specifically for 2nd-year B.V.Sc &amp; A.H. students at <b>ICAR-IVRI</b>. Covers all 6 VCI Theory Units, 6 Practical Units, diagnostic necropsy, gross lesions, and histopathology.",
+      icon: "book"
+    },
+    {
+      kicker: "DUAL STUDY DEPTHS",
+      title: "Standard vs Deep View",
+      body: "Every lesson features <b>Standard View</b> for high-yield exam revision and <b>Deep View</b> for comprehensive pathogenesis, species differences, and clinical necropsy details. Switch anytime at the top of each lesson.",
+      icon: "sparkle"
+    },
+    {
+      kicker: "ACTIVE RETENTION",
+      title: "6-Color Highlighter & Notes",
+      body: "Select any sentence inside a lesson to reveal the <b>Floating Highlighter</b>. Mark findings in Yellow, Green, Blue, Pink, Orange, or Purple, or save instant notes directly into your <b>Library</b>.",
+      icon: "pen"
+    },
+    {
+      kicker: "EXAM MASTERY",
+      title: "Quizzes & Spaced Repetition",
+      body: "Test yourself with MCQ, True/False, and written exam Q&amp;A banks. Our <b>Smart SRS Review</b> automatically schedules difficult questions for review right before you forget them.",
+      icon: "trophy"
+    },
+    {
+      kicker: "ANYWHERE, ANYTIME",
+      title: "100% Offline Progressive App",
+      body: "Install this app on your phone, tablet, or laptop. It works completely offline in post-mortem necropsy halls, livestock farms, classrooms, and hostels with zero internet required.",
+      icon: "download"
+    }
+  ];
+
+  function startOnboarding() {
+    var modal = el("#onboard-modal");
+    if (!modal) return;
+    modal._slide = 0;
+    modal.style.display = "flex";
+    renderOnboardSlide();
+  }
+
+  function closeOnboarding(markDone) {
+    var modal = el("#onboard-modal");
+    if (!modal) return;
+    modal.style.display = "none";
+    if (markDone !== false) {
+      store.setOnboarded();
+    }
+  }
+
+  function replayOnboarding() {
+    store.resetOnboarding();
+    startOnboarding();
+  }
+
+  function renderOnboardSlide() {
+    var modal = el("#onboard-modal");
+    if (!modal) return;
+    var i = modal._slide || 0;
+    var s = onboardSlides[i];
+    var card = modal.querySelector(".onboard-card");
+    if (!card) return;
+
+    card.innerHTML =
+      '<button class="onboard-skip" onclick="app.closeOnboarding(true)">Skip Tour</button>' +
+      '<div class="onboard-icon-wrap">' + icon(s.icon) + '</div>' +
+      '<div class="onboard-step">Step ' + (i + 1) + ' of ' + onboardSlides.length + ' · ' + s.kicker + '</div>' +
+      '<h2 class="onboard-title">' + s.title + '</h2>' +
+      '<p class="onboard-body">' + s.body + '</p>' +
+      '<div class="onboard-dots">' +
+        onboardSlides.map(function (_, k) {
+          return '<span class="onboard-dot' + (k === i ? ' on' : '') + '"></span>';
+        }).join('') +
+      '</div>' +
+      '<div class="onboard-actions">' +
+        (i > 0
+          ? '<button class="onboard-btn ghost" onclick="app._onboardPrev()">' + icon("back") + ' Previous</button>'
+          : '<span></span>') +
+        (i < onboardSlides.length - 1
+          ? '<button class="onboard-btn primary" onclick="app._onboardNext()">Next ' + icon("chevron") + '</button>'
+          : '<button class="onboard-btn primary" onclick="app.closeOnboarding(true)">' + icon("check") + ' Get Started</button>') +
+      '</div>';
+  }
+
+  function _onboardNext() {
+    var modal = el("#onboard-modal");
+    if (!modal) return;
+    modal._slide = Math.min((modal._slide || 0) + 1, onboardSlides.length - 1);
+    renderOnboardSlide();
+  }
+
+  function _onboardPrev() {
+    var modal = el("#onboard-modal");
+    if (!modal) return;
+    modal._slide = Math.max((modal._slide || 0) - 1, 0);
+    renderOnboardSlide();
+  }
+
+  function checkFirstVisitOnboarding() {
+    if (store.isOnboarded()) return;
+    if (location.hash && location.hash !== "#/" && location.hash !== "#") return;
+    setTimeout(function () {
+      startOnboarding();
+    }, 700);
+  }
+
+  /* ============================================================
+     PWA INSTALL BANNER
+     ============================================================ */
+  var INSTALL_DISMISS_KEY = "vpath-install-dismissed";
+  var deferredInstallPrompt = null;
+
+  function setupInstallPrompt() {
+    window.addEventListener("beforeinstallprompt", function (e) {
+      e.preventDefault();
+      deferredInstallPrompt = e;
+      if (localStorage.getItem(INSTALL_DISMISS_KEY) === "1") return;
+      if (store.getVisits() < 2) return;
+      setTimeout(showInstallBanner, 1500);
+    });
+
+    window.addEventListener("appinstalled", function () {
+      hideInstallBanner();
+      toast("Veterinary Pathology Studio installed!");
+    });
+
+    var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    var isStandalone = window.matchMedia("(display-mode: standalone)").matches || window.navigator.standalone === true;
+    if (isIOS && !isStandalone && localStorage.getItem(INSTALL_DISMISS_KEY) !== "1" && store.getVisits() >= 2) {
+      setTimeout(showInstallBanner, 2000);
+    }
+  }
+
+  function showInstallBanner() {
+    var b = el("#install-banner");
+    if (!b) return;
+    var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    if (isIOS) {
+      var msg = b.querySelector(".install-msg");
+      if (msg) msg.innerHTML = "Install Pathology Studio: tap <b>Share</b>, then <b>Add to Home Screen</b>.";
+      var btn = b.querySelector(".install-btn");
+      if (btn) btn.style.display = "none";
+    }
+    b.style.display = "flex";
+    requestAnimationFrame(function () { b.classList.add("install-shown"); });
+  }
+
+  function hideInstallBanner() {
+    var b = el("#install-banner");
+    if (!b) return;
+    b.classList.remove("install-shown");
+    setTimeout(function () { b.style.display = "none"; }, 350);
+  }
+
+  function triggerInstall() {
+    if (!deferredInstallPrompt) {
+      toast("Tap browser menu (\u22EE or share) \u2192 'Install app' or 'Add to Home Screen'");
+      return;
+    }
+    try {
+      deferredInstallPrompt.prompt();
+      deferredInstallPrompt.userChoice.then(function (choice) {
+        if (choice && choice.outcome === "accepted") {
+          toast("Installing app…");
+        }
+      });
+    } catch (e) { console.warn(e); }
+    deferredInstallPrompt = null;
+    hideInstallBanner();
+  }
+
+  function dismissInstall() {
+    localStorage.setItem(INSTALL_DISMISS_KEY, "1");
+    hideInstallBanner();
+  }
+
   function wireTopicActions(t) {
     var c = topicContent(t.id) || {};
 
@@ -1230,6 +1793,10 @@ var app = (function () {
     var lessonMain = el(".lesson__main");
     applyDomHighlights(lessonMain, store.getHighlights()[t.id]);
     wireInlineMarks(t.id);
+
+    if (window.glossary && typeof window.glossary.decorate === 'function') {
+      window.glossary.decorate(lessonMain);
+    }
 
     // Attach floating selection toolbar directly to the lesson container
     attachHighlightSelectionUI(lessonMain, t.id);
@@ -1368,14 +1935,14 @@ var app = (function () {
     var head =
       '<div class="pagehead">' +
         '<span class="eyebrow">Mechanism first</span>' +
-        '<h1>WHY</h1>' +
+        '<h1>' + icon("why") + ' WHY</h1>' +
         '<p class="lede">Pathology is only memorisable once it stops being a list. ' +
         'Each card here explains why a lesion had to turn out the way it did.</p>' +
       '</div>';
 
     if (!data.length) {
       view.innerHTML = head +
-        '<div class="empty"><div class="empty__icon">💡</div>' +
+        '<div class="empty"><div class="empty__icon">' + icon("why") + '</div>' +
         '<h3>No WHY entries yet</h3>' +
         '<p>Add them in <b>data/data-why.JS</b>. Copy the template block that is already in the file, ' +
         'fill in <span class="mono">title</span>, <span class="mono">why</span> and ' +
@@ -1383,9 +1950,19 @@ var app = (function () {
       return;
     }
 
+    var catIcons = {
+      all: "sparkle",
+      mechanism: "pulse",
+      lesion: "microscope",
+      species: "target",
+      diagnostic: "clipboard",
+      clinical: "shield"
+    };
+
     var cats = ["all", "mechanism", "lesion", "species", "diagnostic", "clinical"];
     var chips = cats.map(function (c) {
       return '<button class="tab' + (c === "all" ? " is-active" : "") + '" data-cat="' + c + '">' +
+        icon(catIcons[c] || "sparkle") + ' ' +
         (c === "all" ? "All" : c.charAt(0).toUpperCase() + c.slice(1)) + '</button>';
     }).join("");
 
@@ -1395,17 +1972,18 @@ var app = (function () {
       el("#whygrid").innerHTML = data
         .filter(function (w) { return cat === "all" || w.category === cat; })
         .map(function (w) {
+          var catIco = catIcons[w.category] || "pulse";
           return '<article class="card whycard">' +
             '<div class="row row--wrap">' +
-              '<span class="chip chip--accent">' + esc(w.category || "mechanism") + '</span>' +
-              (w.comparison ? '<span class="chip">' + esc(w.comparison) + '</span>' : '') +
+              '<span class="chip chip--accent">' + icon(catIco) + ' ' + esc(w.category || "mechanism") + '</span>' +
+              (w.comparison ? '<span class="chip">' + icon("target") + ' ' + esc(w.comparison) + '</span>' : '') +
             '</div>' +
             '<h3 class="card__title mt-3">' + esc(w.title) + '</h3>' +
             '<div class="card__desc">' + (w.why || "") + '</div>' +
             (w.mechanism && w.mechanism.length
               ? '<ol class="chain mt-4">' + w.mechanism.map(function (s) { return '<li>' + s + '</li>'; }).join("") + '</ol>'
               : '') +
-            (w.clinical ? '<div class="callout mt-4"><div class="callout__title">At the clinic</div>' + w.clinical + '</div>' : '') +
+            (w.clinical ? '<div class="callout mt-4"><div class="callout__title">' + icon("shield") + ' At the clinic</div>' + w.clinical + '</div>' : '') +
           '</article>';
         }).join("") || '<div class="empty"><p>Nothing in this category yet.</p></div>';
     }
@@ -1431,8 +2009,8 @@ var app = (function () {
         var n = qaCount(u.id);
         return '<a class="card card--link" href="#/qa/' + u.id + '">' +
           '<div class="row"><span class="unitcard__no">' +
-          (u.stream === "theory" ? "Theory" : "Practical") + ' · Unit ' + u.no + '</span>' +
-          '<span class="chip push">' + n + '</span></div>' +
+          icon(getUnitIcon(u)) + ' ' + (u.stream === "theory" ? "Theory" : "Practical") + ' · Unit ' + u.no + '</span>' +
+          '<span class="chip push">' + icon("qa") + ' ' + n + '</span></div>' +
           '<div class="card__title mt-2">' + esc(u.short) + '</div>' +
           '</a>';
       }).join("");
@@ -1440,7 +2018,7 @@ var app = (function () {
       view.innerHTML =
         '<div class="pagehead">' +
           '<span class="eyebrow">Written exam practice</span>' +
-          '<h1>Question &amp; Answer</h1>' +
+          '<h1>' + icon("qa") + ' Question &amp; Answer</h1>' +
           '<p class="lede">Short notes, long answers, definitions and differentiate-between tables — ' +
           'the questions you have to write, not click.</p>' +
         '</div>' +
@@ -1456,18 +2034,18 @@ var app = (function () {
 
     var head =
       '<div class="pagehead">' +
-        '<span class="eyebrow">Unit ' + u2.no + ' · ' + esc(u2.short) + '</span>' +
-        '<h1>Question &amp; Answer</h1>' +
+        '<span class="eyebrow">' + icon(getUnitIcon(u2)) + ' Unit ' + u2.no + ' · ' + esc(u2.short) + '</span>' +
+        '<h1>' + icon("qa") + ' Question &amp; Answer</h1>' +
         '<div class="row row--wrap mt-4">' +
-          '<a class="btn btn--sm" href="#/qa">All units</a>' +
-          '<a class="btn btn--sm" href="#/unit/' + u2.id + '">Unit lessons</a>' +
-          '<span class="chip">' + real.length + ' questions</span>' +
+          '<a class="btn btn--sm" href="#/qa">' + icon("back") + ' All units</a>' +
+          '<a class="btn btn--sm" href="#/unit/' + u2.id + '">' + icon("book") + ' Unit lessons</a>' +
+          '<span class="chip">' + icon("help") + ' ' + real.length + ' questions</span>' +
         '</div>' +
       '</div>';
 
     if (!real.length) {
       view.innerHTML = head +
-        '<div class="empty"><div class="empty__icon">✍️</div>' +
+        '<div class="empty"><div class="empty__icon">' + icon("qa") + '</div>' +
         '<h3>No questions written for this unit yet</h3>' +
         '<p>Add them in <b>data/data-qa.JS</b> under <span class="mono">"' + esc(unitId) + '"</span>. ' +
         'The template block in that file shows every field.</p></div>';
@@ -1490,12 +2068,12 @@ var app = (function () {
         '<div class="qa__body">' +
           (q.answer ? '<div class="prose">' + q.answer + '</div>' : '<p class="faint">Model answer not written yet.</p>') +
           (q.keyPoints && q.keyPoints.length
-            ? '<div class="callout mt-4"><div class="callout__title">Marks-scoring points</div><ul>' +
+            ? '<div class="callout mt-4"><div class="callout__title">' + icon("star") + ' Marks-scoring points</div><ul>' +
               q.keyPoints.map(function (k) { return '<li>' + k + '</li>'; }).join("") + '</ul></div>' : '') +
           (q.table ? renderTable(q.table) : '') +
           (q.pyq && q.pyq.length ? '<p class="small faint mt-4">Previously asked: ' + q.pyq.join(", ") + '</p>' : '') +
           '<button class="btn btn--sm mt-4" data-qa="' + esc(q.id) + '">' +
-            (isDone ? "Mark as not done" : "Mark as revised") + '</button>' +
+            (isDone ? icon("check") + " Mark as not done" : icon("checkCircle") + " Mark as revised") + '</button>' +
         '</div>' +
       '</details>';
     }).join("") + '</div>';
@@ -1503,7 +2081,7 @@ var app = (function () {
     els("[data-qa]").forEach(function (b) {
       b.addEventListener("click", function () {
         var on = store.toggleQaDone(b.getAttribute("data-qa"));
-        b.textContent = on ? "Mark as not done" : "Mark as revised";
+        b.innerHTML = on ? (icon("check") + " Mark as not done") : (icon("checkCircle") + " Mark as revised");
         b.closest(".qa").classList.toggle("is-done", on);
       });
     });
@@ -1512,18 +2090,98 @@ var app = (function () {
   /* ============================================================
      LIBRARY — bookmarks · notes · highlights
      ============================================================ */
+  function copyTextToClipboard(text, successMsg) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () {
+        toast(successMsg || "Copied to clipboard!");
+      }).catch(function () {
+        fallbackCopyText(text, successMsg);
+      });
+    } else {
+      fallbackCopyText(text, successMsg);
+    }
+  }
+
+  function fallbackCopyText(text, successMsg) {
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    try {
+      document.execCommand("copy");
+      toast(successMsg || "Copied to clipboard!");
+    } catch (e) {
+      toast("Could not copy to clipboard");
+    }
+    document.body.removeChild(ta);
+  }
+
+  function exportHighlights() {
+    var hl = store.getHighlights();
+    var keys = Object.keys(hl);
+    if (!keys.length) {
+      toast("No highlights to export");
+      return;
+    }
+    var lines = [
+      "# Veterinary Pathology Study Highlights",
+      "ICAR-Indian Veterinary Research Institute · Izatnagar",
+      "Exported on: " + new Date().toLocaleDateString() + "\n"
+    ];
+    keys.forEach(function (id) {
+      var t = syllabus.topicById[id];
+      var title = t ? t.title : id;
+      var stream = t ? (t.stream === "theory" ? "Theory" : "Practical") : "";
+      var u = t ? syllabus.unitById[t.unitId] : null;
+      var unitText = u ? " (Unit " + u.no + " — " + u.short + ")" : "";
+      lines.push("## " + title + (stream ? " · " + stream : "") + unitText);
+      (hl[id] || []).forEach(function (raw) {
+        var h = normHl(raw);
+        lines.push("- [" + h.color.toUpperCase() + "] " + h.text);
+      });
+      lines.push("");
+    });
+    var fullText = lines.join("\n");
+    copyTextToClipboard(fullText, "All highlights copied to clipboard as Markdown!");
+  }
+
+  function exportNotes() {
+    var notes = store.getNotes();
+    var keys = Object.keys(notes);
+    if (!keys.length) {
+      toast("No notes to export");
+      return;
+    }
+    var lines = [
+      "# Veterinary Pathology Personal Notes",
+      "ICAR-Indian Veterinary Research Institute · Izatnagar",
+      "Exported on: " + new Date().toLocaleDateString() + "\n"
+    ];
+    keys.forEach(function (id) {
+      var t = syllabus.topicById[id];
+      var title = t ? t.title : id;
+      lines.push("## " + title);
+      lines.push(notes[id]);
+      lines.push("");
+    });
+    var fullText = lines.join("\n");
+    copyTextToClipboard(fullText, "All notes copied to clipboard as Markdown!");
+  }
+
   function renderLibrary() {
     var tab = state.params.a || "bookmarks";
 
     view.innerHTML =
       '<div class="pagehead">' +
         '<span class="eyebrow">Everything you saved</span>' +
-        '<h1>Library</h1>' +
+        '<h1>' + icon("library") + ' Library</h1>' +
       '</div>' +
       '<div class="tabs">' +
-        ['bookmarks', 'notes', 'highlights'].map(function (t) {
-          return '<a class="tab' + (t === tab ? " is-active" : "") + '" href="#/library/' + t + '">' +
-            t.charAt(0).toUpperCase() + t.slice(1) + '</a>';
+        [['bookmarks', 'Bookmarks', 'star'], ['notes', 'Notes', 'note'], ['highlights', 'Highlights', 'pen'], ['glossary', 'Glossary (270+)', 'book']].map(function (item) {
+          return '<a class="tab' + (item[0] === tab ? " is-active" : "") + '" href="#/library/' + item[0] + '">' +
+            icon(item[2]) + ' ' + item[1] + '</a>';
         }).join("") +
       '</div>' +
       '<div id="libbody"></div>';
@@ -1532,61 +2190,407 @@ var app = (function () {
 
     if (tab === "bookmarks") {
       var bm = store.getBookmarks();
-      body.innerHTML = bm.length
-        ? '<div class="tlist">' + bm.map(function (id) {
+      if (!bm.length) {
+        body.innerHTML = emptyState("⭐", "No saved topics", "Open any lesson and tap Save. It will appear here for quick revision.");
+        return;
+      }
+
+      var bmFilter = state._bmFilter || "all";
+      var bmSearch = (state._bmSearch || "").trim().toLowerCase();
+
+      var theoryCount = 0, pracCount = 0;
+      bm.forEach(function (id) {
+        var t = syllabus.topicById[id];
+        if (t && t.stream === "practical") pracCount++; else theoryCount++;
+      });
+
+      var filteredBm = bm.filter(function (id) {
+        var t = syllabus.topicById[id];
+        if (!t) return false;
+        if (bmFilter === "theory" && t.stream !== "theory") return false;
+        if (bmFilter === "practical" && t.stream !== "practical") return false;
+        if (bmSearch && t.title.toLowerCase().indexOf(bmSearch) === -1) return false;
+        return true;
+      });
+
+      var toolbarHtml =
+        '<div class="lib-topbar">' +
+          '<div class="hl-toolbar">' +
+            '<div class="hl-search-wrap">' +
+              icon("search", "hl-search-icon") +
+              '<input type="search" class="hl-search-input" id="bm-search" placeholder="Search bookmarked topics…" value="' + esc(state._bmSearch || "") + '">' +
+            '</div>' +
+            '<div class="hl-filter-chips">' +
+              '<button class="hl-chip-btn' + (bmFilter === "all" ? " is-active" : "") + '" data-bm-chip="all">All (' + bm.length + ')</button>' +
+              '<button class="hl-chip-btn' + (bmFilter === "theory" ? " is-active" : "") + '" data-bm-chip="theory">Theory (' + theoryCount + ')</button>' +
+              '<button class="hl-chip-btn' + (bmFilter === "practical" ? " is-active" : "") + '" data-bm-chip="practical">Practical (' + pracCount + ')</button>' +
+            '</div>' +
+          '</div>' +
+        '</div>';
+
+      var listHtml = filteredBm.length
+        ? '<div class="tlist">' + filteredBm.map(function (id) {
             var t = syllabus.topicById[id];
-            if (!t) return "";
             var u = syllabus.unitById[t.unitId];
             return '<a class="tlist__row" href="#/topic/' + id + '">' +
+              '<span class="tlist__ico is-saved">' + icon("star") + '</span>' +
               '<span class="tlist__body"><span class="tlist__title">' + esc(t.title) + '</span>' +
               '<span class="tlist__sub">' + (t.stream === "theory" ? "Theory" : "Practical") +
-              ' · Unit ' + u.no + '</span></span>' +
+              (u ? ' · Unit ' + u.no + ' — ' + esc(u.short) : '') + '</span></span>' +
               '<span class="tlist__right">' + icon("chevron", "faint") + '</span></a>';
           }).join("") + '</div>'
-        : emptyState("⭐", "No saved topics", "Open any lesson and tap Save. It will appear here for quick revision.");
+        : '<div class="empty"><h3>No matching bookmarks</h3><p>No saved topics match your filter.</p></div>';
+
+      body.innerHTML = toolbarHtml + listHtml;
+
+      var searchInput = el("#bm-search");
+      if (searchInput) {
+        searchInput.addEventListener("input", function (e) {
+          state._bmSearch = e.target.value;
+          renderLibrary();
+          var ni = el("#bm-search");
+          if (ni) {
+            ni.focus();
+            var val = ni.value;
+            ni.setSelectionRange(val.length, val.length);
+          }
+        });
+      }
+
+      els("[data-bm-chip]").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          state._bmFilter = btn.getAttribute("data-bm-chip");
+          renderLibrary();
+        });
+      });
     }
 
     else if (tab === "notes") {
       var notes = store.getNotes();
       var keys = Object.keys(notes);
-      body.innerHTML = keys.length
-        ? '<div class="grid grid--2">' + keys.map(function (id) {
+      if (!keys.length) {
+        body.innerHTML = emptyState("📝", "No notes yet", "Open a lesson, tap the Note button, and write anything you want to remember.");
+        return;
+      }
+
+      var noteSearch = (state._noteSearch || "").trim().toLowerCase();
+      var filteredKeys = keys.filter(function (id) {
+        if (!noteSearch) return true;
+        var t = syllabus.topicById[id];
+        var title = t ? t.title.toLowerCase() : id.toLowerCase();
+        var txt = (notes[id] || "").toLowerCase();
+        return title.indexOf(noteSearch) !== -1 || txt.indexOf(noteSearch) !== -1;
+      });
+
+      var toolbarHtml =
+        '<div class="lib-topbar">' +
+          '<div class="hl-toolbar">' +
+            '<div class="hl-search-wrap">' +
+              icon("search", "hl-search-icon") +
+              '<input type="search" class="hl-search-input" id="note-search" placeholder="Search your notes…" value="' + esc(state._noteSearch || "") + '">' +
+            '</div>' +
+            '<div class="hl-toolbar-actions">' +
+              '<button class="hl-export-btn" id="notes-export-btn">' +
+                icon("copy") + ' Export All Notes' +
+              '</button>' +
+            '</div>' +
+          '</div>' +
+        '</div>';
+
+      var notesHtml = filteredKeys.length
+        ? '<div class="grid grid--2">' + filteredKeys.map(function (id) {
             var t = syllabus.topicById[id];
-            return '<a class="card card--link" href="#/topic/' + id + '">' +
-              '<div class="stat__label">' + (t ? esc(t.title) : id) + '</div>' +
-              '<p class="mt-2">' + esc(notes[id]) + '</p></a>';
+            var u = t ? syllabus.unitById[t.unitId] : null;
+            var sub = t ? (t.stream === "theory" ? "Theory" : "Practical") + (u ? " · Unit " + u.no : "") : "";
+            return '<div class="card">' +
+              '<div class="stat__label" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px;">' +
+                '<a href="#/topic/' + id + '" style="color:inherit;text-decoration:none;font-weight:700;">' + (t ? esc(t.title) : id) + '</a>' +
+                (sub ? '<span class="chip chip--accent" style="font-size:11px;">' + esc(sub) + '</span>' : '') +
+              '</div>' +
+              '<p class="mt-3" style="white-space:pre-wrap;line-height:1.55;font-size:var(--fs-sm);">' + esc(notes[id]) + '</p>' +
+              '<div class="mt-3" style="display:flex;justify-content:flex-end;gap:6px;">' +
+                '<button class="hl-copy-btn" data-copy-note="' + esc(id) + '" title="Copy note">' + icon("copy") + ' Copy</button>' +
+                '<a class="btn btn--sm" href="#/topic/' + id + '">Edit in Topic</a>' +
+              '</div>' +
+            '</div>';
           }).join("") + '</div>'
-        : emptyState("📝", "No notes yet", "Open a lesson, tap the Note button, and write anything you want to remember.");
+        : '<div class="empty"><h3>No matching notes</h3><p>No notes match your search term.</p></div>';
+
+      body.innerHTML = toolbarHtml + notesHtml;
+
+      var searchInput = el("#note-search");
+      if (searchInput) {
+        searchInput.addEventListener("input", function (e) {
+          state._noteSearch = e.target.value;
+          renderLibrary();
+          var ni = el("#note-search");
+          if (ni) {
+            ni.focus();
+            var val = ni.value;
+            ni.setSelectionRange(val.length, val.length);
+          }
+        });
+      }
+
+      var exBtn = el("#notes-export-btn");
+      if (exBtn) exBtn.addEventListener("click", exportNotes);
+
+      els("[data-copy-note]").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var id = btn.getAttribute("data-copy-note");
+          var t = syllabus.topicById[id];
+          var title = t ? t.title : id;
+          var text = title + "\n\n" + (notes[id] || "");
+          copyTextToClipboard(text, "Note copied to clipboard!");
+        });
+      });
     }
 
-    else {
+    else if (tab === "highlights") {
       var hl = store.getHighlights();
       var hkeys = Object.keys(hl);
-      body.innerHTML = hkeys.length
-        ? hkeys.map(function (id) {
-            var t = syllabus.topicById[id];
-            var items = hl[id] || [];
-            return '<div class="card mb-4">' +
-              '<div class="stat__label"><a href="#/topic/' + id + '" style="color:inherit;text-decoration:none;">' + (t ? esc(t.title) : id) + '</a></div>' +
-              '<ul class="hllist mt-2">' +
-              items.map(function (raw) {
-                var h = normHl(raw);
-                return '<li class="hl-item--' + esc(h.color) + '">' +
-                  '<span class="hl-chip hl-chip--' + esc(h.color) + '">' + esc(h.color) + '</span>' +
-                  '<span class="hllist__text">' + esc(h.text) + '</span>' +
-                  '<button class="hllist__x" data-unhl-lib="' + esc(id) + '" data-unhl-text="' + esc(h.text) + '" aria-label="Remove highlight" title="Remove highlight">&times;</button>' +
-                '</li>';
-              }).join("") +
-              '</ul></div>';
-          }).join("")
-        : emptyState("🖍️", "No highlights yet", "Select any text inside a lesson and choose Highlight to keep it here.");
+      var totalCount = 0;
+      var colorCounts = { yellow: 0, green: 0, blue: 0, pink: 0, orange: 0, purple: 0 };
+      hkeys.forEach(function (id) {
+        (hl[id] || []).forEach(function (raw) {
+          totalCount++;
+          var h = normHl(raw);
+          if (colorCounts[h.color] !== undefined) colorCounts[h.color]++;
+        });
+      });
 
+      if (!totalCount) {
+        body.innerHTML = emptyState("🖍️", "No highlights yet", "Select any sentence inside a lesson and choose a color to keep it here.");
+        return;
+      }
+
+      var activeFilter = state._hlColorFilter || "all";
+      var searchQuery = (state._hlSearch || "").trim().toLowerCase();
+
+      var colorTabs = [
+        { id: "all", label: "All", count: totalCount }
+      ];
+      (store.VALID_HL_COLORS || ["yellow", "green", "blue", "pink", "orange", "purple"]).forEach(function (col) {
+        colorTabs.push({ id: col, label: col.charAt(0).toUpperCase() + col.slice(1), count: colorCounts[col] || 0 });
+      });
+
+      var toolbarHtml =
+        '<div class="lib-topbar">' +
+          '<div class="hl-toolbar">' +
+            '<div class="hl-search-wrap">' +
+              icon("search", "hl-search-icon") +
+              '<input type="search" class="hl-search-input" id="hl-search" placeholder="Search highlights or topic titles…" value="' + esc(state._hlSearch || "") + '">' +
+            '</div>' +
+            '<div class="hl-filter-chips">' +
+              colorTabs.map(function (ct) {
+                var isAct = activeFilter === ct.id;
+                var dot = ct.id === "all" ? "" : '<span class="hl-chip-dot hl-' + ct.id + '"></span>';
+                return '<button class="hl-chip-btn' + (isAct ? ' is-active' : '') + '" data-hl-chip="' + ct.id + '">' +
+                  dot + esc(ct.label) + ' <span class="hl-chip-count">(' + ct.count + ')</span>' +
+                '</button>';
+              }).join("") +
+            '</div>' +
+            '<div class="hl-toolbar-actions">' +
+              '<button class="hl-export-btn" id="hl-export-btn">' +
+                icon("copy") + ' Export All' +
+              '</button>' +
+            '</div>' +
+          '</div>' +
+        '</div>';
+
+      // Filter highlights by search and color
+      var filteredHl = [];
+      hkeys.forEach(function (id) {
+        var t = syllabus.topicById[id];
+        var topicTitle = t ? t.title.toLowerCase() : id.toLowerCase();
+        var items = (hl[id] || []).map(normHl).filter(function (h) {
+          if (activeFilter !== "all" && h.color !== activeFilter) return false;
+          if (searchQuery) {
+            var textMatch = h.text.toLowerCase().indexOf(searchQuery) !== -1;
+            var titleMatch = topicTitle.indexOf(searchQuery) !== -1;
+            if (!textMatch && !titleMatch) return false;
+          }
+          return true;
+        });
+        if (items.length > 0) {
+          filteredHl.push({ id: id, topic: t, items: items });
+        }
+      });
+
+      var cardsHtml = "";
+      if (filteredHl.length) {
+        cardsHtml = filteredHl.map(function (grp) {
+          var id = grp.id;
+          var t = grp.topic;
+          var u = t ? syllabus.unitById[t.unitId] : null;
+          var meta = t ? (t.stream === "theory" ? "Theory" : "Practical") + (u ? " · Unit " + u.no : "") : "";
+          return '<div class="card mb-4">' +
+            '<div class="stat__label" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px;">' +
+              '<a href="#/topic/' + id + '" style="color:inherit;text-decoration:none;font-weight:700;">' + (t ? esc(t.title) : id) + '</a>' +
+              (meta ? '<span class="chip chip--accent" style="font-size:11px;">' + esc(meta) + '</span>' : '') +
+            '</div>' +
+            '<ul class="hllist mt-3">' +
+            grp.items.map(function (h) {
+              return '<li class="hl-item--' + esc(h.color) + '">' +
+                '<span class="hl-chip hl-chip--' + esc(h.color) + '">' + esc(h.color) + '</span>' +
+                '<span class="hllist__text">' + esc(h.text) + '</span>' +
+                '<div class="hllist__actions">' +
+                  '<button class="hl-copy-btn" data-copy-txt="' + esc(h.text) + '" title="Copy highlight text">' + icon("copy") + ' Copy</button>' +
+                  '<button class="hllist__x" data-unhl-lib="' + esc(id) + '" data-unhl-text="' + esc(h.text) + '" aria-label="Remove highlight" title="Remove highlight">&times;</button>' +
+                '</div>' +
+              '</li>';
+            }).join("") +
+            '</ul></div>';
+        }).join("");
+      } else {
+        cardsHtml = '<div class="empty">' +
+          '<div class="empty__icon">🔍</div>' +
+          '<h3>No matching highlights</h3>' +
+          '<p>No highlights match your current search or color filter.</p>' +
+          '<button class="btn mt-3" id="hl-clear-filters">Clear filters</button>' +
+        '</div>';
+      }
+
+      body.innerHTML = toolbarHtml + '<div id="hl-cards-container">' + cardsHtml + '</div>';
+
+      // Wire search input
+      var searchInput = el("#hl-search");
+      if (searchInput) {
+        searchInput.addEventListener("input", function (e) {
+          state._hlSearch = e.target.value;
+          renderLibrary();
+          var ni = el("#hl-search");
+          if (ni) {
+            ni.focus();
+            var val = ni.value;
+            ni.setSelectionRange(val.length, val.length);
+          }
+        });
+      }
+
+      // Wire filter chips
+      els("[data-hl-chip]").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          state._hlColorFilter = btn.getAttribute("data-hl-chip");
+          renderLibrary();
+        });
+      });
+
+      // Wire clear filters
+      var clearBtn = el("#hl-clear-filters");
+      if (clearBtn) {
+        clearBtn.addEventListener("click", function () {
+          state._hlColorFilter = "all";
+          state._hlSearch = "";
+          renderLibrary();
+        });
+      }
+
+      // Wire export all
+      var exportBtn = el("#hl-export-btn");
+      if (exportBtn) {
+        exportBtn.addEventListener("click", exportHighlights);
+      }
+
+      // Wire copy single
+      els("[data-copy-txt]").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          copyTextToClipboard(btn.getAttribute("data-copy-txt"), "Quote copied to clipboard!");
+        });
+      });
+
+      // Wire remove highlight
       els("[data-unhl-lib]").forEach(function (b) {
         b.addEventListener("click", function () {
           var id = b.getAttribute("data-unhl-lib");
           var txt = b.getAttribute("data-unhl-text");
           store.removeHighlight(id, txt);
           renderLibrary();
+        });
+      });
+    }
+
+    else if (tab === "glossary") {
+      var allTerms = (window.glossary && glossary.getAll) ? glossary.getAll() : [];
+      if (state.params && state.params.b && state._lastGlossTerm !== state.params.b) {
+        state._lastGlossTerm = state.params.b;
+        state._glossSearch = decodeURIComponent(state.params.b).replace(/-/g, ' ');
+      }
+      var glossSearch = (state._glossSearch || "").trim().toLowerCase();
+      var glossCat = state._glossCat || "all";
+
+      var categories = ["all"].concat(Object.keys((window.glossary && glossary.categories) ? glossary.categories : {}));
+
+      var filtered = allTerms.filter(function (item) {
+        if (glossCat !== "all" && item.category !== glossCat) return false;
+        if (glossSearch) {
+          return item.term.toLowerCase().indexOf(glossSearch) !== -1 ||
+                 item.def.toLowerCase().indexOf(glossSearch) !== -1;
+        }
+        return true;
+      });
+
+      var toolbarHtml =
+        '<div class="lib-topbar">' +
+          '<div class="hl-toolbar">' +
+            '<div class="hl-search-wrap">' +
+              icon("search", "hl-search-icon") +
+              '<input type="search" class="hl-search-input" id="gloss-search" placeholder="Search ' + allTerms.length + ' pathology definitions and terms…" value="' + esc(state._glossSearch || "") + '">' +
+            '</div>' +
+            '<div class="hl-filter-chips">' +
+              categories.map(function (c) {
+                var isAct = glossCat === c;
+                var label = c === "all" ? "All (" + allTerms.length + ")" : c;
+                return '<button class="hl-chip-btn' + (isAct ? ' is-active' : '') + '" data-gloss-cat="' + esc(c) + '">' +
+                  esc(label) + '</button>';
+              }).join("") +
+            '</div>' +
+          '</div>' +
+        '</div>';
+
+      var cardsHtml = filtered.length
+        ? '<div class="grid grid--2 mt-4">' + filtered.map(function (item) {
+            return '<article class="card glossary-card">' +
+              '<div class="glossary-card__head">' +
+                '<span class="glossary-card__term">' + esc(item.term) + '</span>' +
+                '<div style="display:flex;align-items:center;gap:6px;">' +
+                  '<span class="chip chip--accent" style="font-size:11px;">' + esc(item.category) + '</span>' +
+                  '<button class="glossary-speak-btn" data-speak-term="' + esc(item.term) + '" title="Pronounce term" aria-label="Pronounce ' + esc(item.term) + '">' +
+                    icon("speaker") +
+                  '</button>' +
+                '</div>' +
+              '</div>' +
+              '<div class="glossary-card__def">' + esc(item.def) + '</div>' +
+            '</article>';
+          }).join("") + '</div>'
+        : '<div class="empty"><h3>No matching terms</h3><p>No glossary definitions match your search or filter.</p></div>';
+
+      body.innerHTML = toolbarHtml + cardsHtml;
+
+      var searchInput = el("#gloss-search");
+      if (searchInput) {
+        searchInput.addEventListener("input", function (e) {
+          state._glossSearch = e.target.value;
+          renderLibrary();
+          var ni = el("#gloss-search");
+          if (ni) {
+            ni.focus();
+            var val = ni.value;
+            ni.setSelectionRange(val.length, val.length);
+          }
+        });
+      }
+
+      els("[data-gloss-cat]").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          state._glossCat = btn.getAttribute("data-gloss-cat");
+          renderLibrary();
+        });
+      });
+
+      els("[data-speak-term]").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          app.speak(btn.getAttribute("data-speak-term"));
         });
       });
     }
@@ -1601,12 +2605,15 @@ var app = (function () {
      ============================================================ */
   function renderMe() {
     var theme = store.getTheme();
+    var navPos = store.getNavPos();
+    var srsNotify = store.getSrsNotify();
+    var srsTime = store.getSrsNotifyTime();
     var s = store.computeStreak();
     var readN = Object.keys(store.getRead()).length;
     var allTopics = syllabus.allUnits.reduce(function (n, u) { return n + u.topics.length; }, 0);
 
     view.innerHTML =
-      '<div class="pagehead"><span class="eyebrow">Your account lives only on this device</span><h1>Settings</h1></div>' +
+      '<div class="pagehead"><span class="eyebrow">Your account lives only on this device</span><h1>' + icon("me") + ' Settings</h1></div>' +
 
       '<div class="grid grid--3 mb-8">' +
         statCard("Topics read", readN + " / " + allTopics, pct(readN, allTopics) + "% complete", "check") +
@@ -1615,18 +2622,53 @@ var app = (function () {
       '</div>' +
 
       '<div class="card mb-4">' +
-        '<h3>Appearance</h3>' +
+        '<h3>' + icon("sun") + ' Appearance</h3>' +
         '<p class="muted mt-2">Light is the standard IVRI study theme. Dark is available for night reading.</p>' +
         '<div class="seg mt-4" role="group">' +
           ['light', 'dark'].map(function (t) {
             return '<button class="seg__btn' + (theme === t ? " is-on" : "") + '" data-theme="' + t + '">' +
+              icon(t === "light" ? "sun" : "moon") + ' ' +
               t.charAt(0).toUpperCase() + t.slice(1) + '</button>';
           }).join("") +
         '</div>' +
       '</div>' +
 
       '<div class="card mb-4">' +
-        '<h3>Backup and restore</h3>' +
+        '<h3>' + icon("folder") + ' Desktop Sidebar Position</h3>' +
+        '<p class="muted mt-2">Choose which side the navigation sidebar docks on desktop. Mobile screens automatically use the bottom navigation bar.</p>' +
+        '<div class="nav-pos-options mt-4" style="grid-template-columns: repeat(2, 1fr); max-width: 420px;">' +
+          ['left', 'right'].map(function (pos) {
+            var active = (navPos === pos ? " is-active" : "");
+            var label = (pos === 'left' ? "Left Side (Default)" : "Right Side");
+            return '<button class="nav-pos-option' + active + '" data-pos="' + pos + '" type="button" title="' + label + '" aria-label="' + label + '">' +
+              '<span class="np-frame"><span class="np-bar np-' + pos + '"></span></span>' +
+              '<span class="np-name">' + label + '</span>' +
+            '</button>';
+          }).join("") +
+        '</div>' +
+      '</div>' +
+
+      '<div class="card mb-4">' +
+        '<h3>' + icon("bell") + ' Spaced Repetition Review Reminders</h3>' +
+        '<p class="muted mt-2">Get an alert when flashcards and high-yield pathology questions are due for active recall.</p>' +
+        '<div class="me-reminder-setting mt-4">' +
+          '<button class="me-toggle-main" type="button" aria-label="Toggle daily review reminder">' +
+            '<span class="me-bell-ico">' + icon("bell") + '</span>' +
+            '<span class="me-toggle-text">' +
+              '<span class="me-toggle-title">Daily Review Alert</span>' +
+              '<span class="me-toggle-state">' + (srsNotify ? 'Active · scheduled daily' : 'Off · tap to activate') + '</span>' +
+            '</span>' +
+            '<span class="me-toggle-pill' + (srsNotify ? ' on' : '') + '"></span>' +
+          '</button>' +
+          '<div class="me-reminder-time-row mt-3">' +
+            '<label for="me-reminder-time-input">Reminder time:</label>' +
+            '<input id="me-reminder-time-input" class="me-reminder-time" type="time" value="' + esc(srsTime) + '">' +
+          '</div>' +
+        '</div>' +
+      '</div>' +
+
+      '<div class="card mb-4">' +
+        '<h3>' + icon("download") + ' Backup and restore</h3>' +
         '<p class="muted mt-2">Your progress, notes, bookmarks and quiz history are stored in this browser only. ' +
         'Clearing browser data will erase them. Export a backup file before you reinstall or switch phone.</p>' +
         '<div class="row row--wrap mt-4">' +
@@ -1639,13 +2681,17 @@ var app = (function () {
       '</div>' +
 
       '<div class="card">' +
-        '<h3>About</h3>' +
+        '<h3>' + icon("sparkle") + ' About</h3>' +
         '<p class="muted mt-2">' + esc(syllabus.meta.subject) + ' · ' + esc(syllabus.meta.course) +
         ' · Credit hours ' + esc(syllabus.meta.credits) + '.</p>' +
         '<p class="muted mt-2">Built for students of ' + esc(syllabus.meta.institute) + '. ' +
         'Content follows the Veterinary Council of India syllabus as published in the Gazette of India.</p>' +
         '<p class="small faint mt-4">This is a study aid. Always confirm against your prescribed textbooks ' +
         'and your department\'s teaching before an examination or a clinical decision.</p>' +
+        '<div class="mt-4 row row--wrap">' +
+          '<button class="btn" onclick="app.replayOnboarding()">' + icon("sparkle") + 'Replay Welcome Tour</button>' +
+          '<button class="btn" onclick="app.openAbout()">' + icon("target") + 'About Platform & Credits</button>' +
+        '</div>' +
       '</div>';
 
     els("[data-theme]").forEach(function (b) {
@@ -1655,6 +2701,26 @@ var app = (function () {
         refreshThemeButton();
       });
     });
+
+    els("[data-pos]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        setNavPosition(b.getAttribute("data-pos"));
+      });
+    });
+
+    var srsBtn = el(".me-toggle-main");
+    if (srsBtn) {
+      srsBtn.addEventListener("click", function () {
+        toggleSrsNotifications();
+      });
+    }
+
+    var srsTimeInput = el("#me-reminder-time-input");
+    if (srsTimeInput) {
+      srsTimeInput.addEventListener("change", function () {
+        setSrsNotificationTime(srsTimeInput.value);
+      });
+    }
 
     var ex = el('[data-act="export"]');
     if (ex) ex.addEventListener("click", function () {
@@ -1678,6 +2744,124 @@ var app = (function () {
         location.reload();
       }
     });
+  }
+
+  /* ---------- Sidebar Position (Desktop) ---------- */
+  function setNavPosition(pos) {
+    var valid = ["left", "right"];
+    if (valid.indexOf(pos) === -1) pos = "left";
+    store.setNavPos(pos);
+    els(".nav-pos-option").forEach(function (b) {
+      b.classList.toggle("is-active", b.getAttribute("data-pos") === pos);
+    });
+    var labels = { left: "left side (default)", right: "right side" };
+    toast("Sidebar docked to " + labels[pos]);
+  }
+
+  /* ---------- Daily SRS Notifications ---------- */
+  var _notifTimer = null;
+
+  function _scheduleNextSrsNotification() {
+    if (_notifTimer) clearTimeout(_notifTimer);
+    if (!store.getSrsNotify()) return;
+    var parts = (store.getSrsNotifyTime() || "19:00").split(":");
+    var hour = parseInt(parts[0], 10) || 19;
+    var minute = parseInt(parts[1], 10) || 0;
+    var next = new Date();
+    next.setHours(hour, minute, 0, 0);
+    if (next <= new Date()) next.setDate(next.getDate() + 1);
+    var delay = Math.min(next.getTime() - Date.now(), 2147483647);
+    _notifTimer = setTimeout(function () {
+      _maybeShowSrsNotification();
+      _scheduleNextSrsNotification();
+    }, delay);
+  }
+
+  function _maybeShowSrsNotification() {
+    if (!("Notification" in window)) return;
+    if (Notification.permission !== "granted") return;
+    if (!store.getSrsNotify()) return;
+    var clock = new Date();
+    var parts = (store.getSrsNotifyTime() || "19:00").split(":");
+    var hour = parseInt(parts[0], 10) || 19;
+    var minute = parseInt(parts[1], 10) || 0;
+    if (clock.getHours() * 60 + clock.getMinutes() < hour * 60 + minute) return;
+    var todayStr = store.today();
+    var lastNotified = localStorage.getItem("vpath-notify-last");
+    if (lastNotified === todayStr) return;
+
+    var due = store.dueSrs().length;
+    var msg = due > 0
+      ? "You have " + due + " question" + (due === 1 ? "" : "s") + " due for review today in Spaced Repetition."
+      : "Time for your daily Veterinary Pathology recall review!";
+
+    var opts = {
+      body: msg,
+      icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%231565c0'/><text x='16' y='22' font-size='16' font-family='monospace' font-weight='bold' fill='white' text-anchor='middle'>VP</text></svg>",
+      badge: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%231565c0'/><text x='16' y='22' font-size='16' font-family='monospace' font-weight='bold' fill='white' text-anchor='middle'>VP</text></svg>",
+      tag: "vpath-srs-daily",
+      renotify: true
+    };
+
+    if (navigator.serviceWorker && navigator.serviceWorker.ready) {
+      navigator.serviceWorker.ready.then(function (reg) {
+        if (reg.showNotification) reg.showNotification("Veterinary Pathology Studio", opts);
+        else new Notification("Veterinary Pathology Studio", opts);
+      }).catch(function () {
+        try { new Notification("Veterinary Pathology Studio", opts); } catch (e) {}
+      });
+    } else {
+      try { new Notification("Veterinary Pathology Studio", opts); } catch (e) {}
+    }
+    localStorage.setItem("vpath-notify-last", todayStr);
+  }
+
+  function requestNotificationPermission() {
+    if (!("Notification" in window)) {
+      toast("This browser does not support desktop notifications.");
+      return;
+    }
+    if (Notification.permission === "granted") {
+      store.setSrsNotify(true);
+      toast("Daily review reminders are on.");
+      _maybeShowSrsNotification();
+      _scheduleNextSrsNotification();
+      if (state.section === "me") renderMe();
+      return;
+    }
+    Notification.requestPermission().then(function (perm) {
+      if (perm === "granted") {
+        store.setSrsNotify(true);
+        toast("Daily review reminders are on.");
+        _maybeShowSrsNotification();
+        _scheduleNextSrsNotification();
+      } else {
+        toast("Notifications blocked. Enable them in browser settings if desired.");
+      }
+      if (state.section === "me") renderMe();
+    });
+  }
+
+  function toggleSrsNotifications() {
+    var cur = store.getSrsNotify();
+    if (cur) {
+      store.setSrsNotify(false);
+      if (_notifTimer) clearTimeout(_notifTimer);
+      toast("Review reminders turned off.");
+      if (state.section === "me") renderMe();
+    } else {
+      requestNotificationPermission();
+    }
+  }
+
+  function setSrsNotificationTime(val) {
+    if (!/^([01]\d|2[0-3]):[0-5]\d$/.test(val || "")) return;
+    store.setSrsNotifyTime(val);
+    localStorage.removeItem("vpath-notify-last");
+    _maybeShowSrsNotification();
+    _scheduleNextSrsNotification();
+    toast("Reminder time set to " + val);
+    if (state.section === "me") renderMe();
   }
 
   /* ============================================================
@@ -1762,7 +2946,16 @@ var app = (function () {
       });
     });
 
-    [["Dashboard", "#/dashboard"], ["Quiz", "#/quiz"], ["Library", "#/library"], ["Settings", "#/me"]]
+    (window.glossary && glossary.getAll ? glossary.getAll() : []).forEach(function (g) {
+      searchIndex.push({
+        title: g.term.charAt(0).toUpperCase() + g.term.slice(1),
+        sub: "Glossary (" + g.category + ") — " + g.def,
+        kind: "Glossary",
+        href: "#/library/glossary"
+      });
+    });
+
+    [["Dashboard", "#/dashboard"], ["Quiz", "#/quiz"], ["Library", "#/library"], ["Settings", "#/me"], ["Glossary", "#/library/glossary"]]
       .forEach(function (p) { searchIndex.push({ title: p[0], sub: "Go to section", kind: "Page", href: p[1] }); });
 
     return searchIndex;
@@ -1823,13 +3016,30 @@ var app = (function () {
     view = el("#view");
     store.bumpVisits();
     store.applyTheme();
+    if (store.applySidebarState) store.applySidebarState();
     refreshThemeButton();
 
     window.addEventListener("hashchange", route);
 
-    el("#menubtn").addEventListener("click", function () {
-      document.body.classList.contains("nav-open") ? closeNav() : openNav();
-    });
+    var menubtn = el("#menubtn");
+    if (menubtn) {
+      menubtn.addEventListener("click", function () {
+        if (window.innerWidth <= 860) {
+          document.body.classList.contains("nav-open") ? closeNav() : openNav();
+        } else {
+          var isCollapsed = store.toggleSidebarCollapsed();
+          toast(isCollapsed ? "Navigation panel hidden (Ctrl+B)" : "Navigation panel restored");
+        }
+      });
+    }
+
+    var sidebarCollapseBtn = el("#sidebar-collapse-btn");
+    if (sidebarCollapseBtn) {
+      sidebarCollapseBtn.addEventListener("click", function () {
+        store.setSidebarCollapsed(true);
+        toast("Navigation panel hidden (press Ctrl+B or menu icon to restore)");
+      });
+    }
 
     document.addEventListener("click", function (e) {
       if (document.body.classList.contains("nav-open") &&
@@ -1857,15 +3067,34 @@ var app = (function () {
 
     document.addEventListener("keydown", function (e) {
       if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") { e.preventDefault(); openSearch(); }
+      else if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "b") {
+        e.preventDefault();
+        if (window.innerWidth <= 860) {
+          document.body.classList.contains("nav-open") ? closeNav() : openNav();
+        } else {
+          var isCollapsed = store.toggleSidebarCollapsed();
+          toast(isCollapsed ? "Navigation panel hidden" : "Navigation panel restored");
+        }
+      }
       else if (e.key === "Escape") {
         if (!el("#searchmodal").hidden) closeSearch();
         closeAbout();
+        closeOnboarding(true);
       }
       else if (e.key === "/" && document.activeElement.tagName !== "INPUT" &&
                document.activeElement.tagName !== "TEXTAREA") { e.preventDefault(); openSearch(); }
     });
 
     route();
+    setupInstallPrompt();
+    checkFirstVisitOnboarding();
+    _scheduleNextSrsNotification();
+    document.addEventListener("visibilitychange", function () {
+      if (!document.hidden) {
+        _maybeShowSrsNotification();
+        _scheduleNextSrsNotification();
+      }
+    });
   }
 
   /* ---------- public ---------- */
@@ -1876,9 +3105,22 @@ var app = (function () {
     hasContent: hasContent, topicContent: topicContent, pct: pct,
     emptyState: emptyState, state: state,
     openAbout: openAbout, closeAbout: closeAbout, resetCache: resetCache,
+    startOnboarding: startOnboarding, closeOnboarding: closeOnboarding, replayOnboarding: replayOnboarding,
+    _onboardNext: _onboardNext, _onboardPrev: _onboardPrev,
+    triggerInstall: triggerInstall, dismissInstall: dismissInstall,
+    exportHighlights: exportHighlights, exportNotes: exportNotes,
+    copyTextToClipboard: copyTextToClipboard,
     teardownHighlightPopup: teardownHighlightPopup,
-    attachHighlightSelectionUI: attachHighlightSelectionUI
+    attachHighlightSelectionUI: attachHighlightSelectionUI,
+    speak: speak, speakTopic: speakTopic, stopSpeech: stopSpeech,
+    burstConfetti: burstConfetti, popMilestone: popMilestone,
+    setNavPosition: setNavPosition, toggleSrsNotifications: toggleSrsNotifications,
+    setSrsNotificationTime: setSrsNotificationTime
   };
 })();
 
-document.addEventListener("DOMContentLoaded", app.init);
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", app.init);
+} else {
+  app.init();
+}

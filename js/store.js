@@ -26,7 +26,15 @@ var store = (function () {
     visits:     PREFIX + "visits",      // number
     onboarded:  PREFIX + "onboarded",   // "1"
     lastTopic:  PREFIX + "last-topic",  // topicId — powers "Resume studying"
-    qaDone:     PREFIX + "qa-done"      // [ "qaId", ... ]
+    qaDone:     PREFIX + "qa-done",     // [ "qaId", ... ]
+    notifySrs:  PREFIX + "notify-srs",  // boolean: whether daily SRS notification is enabled
+    notifyTime: PREFIX + "notify-time", // preferred reminder time "HH:MM"
+    navPos:     PREFIX + "nav-pos",     // "bottom" | "top" | "left" | "right"
+    deepGuideSeen: PREFIX + "deep-guide-seen",
+    topicGuideSeen: PREFIX + "topic-guide-seen",
+    eventSeen:  PREFIX + "event-announcements-seen",
+    installDismissed: PREFIX + "install-dismissed",
+    sidebarCollapsed: PREFIX + "sidebar-collapsed"
   };
 
   /* ---------- low level ---------- */
@@ -234,8 +242,16 @@ var store = (function () {
     write(KEYS.visits, n);
     return n;
   }
+  function getVisits() { return read(KEYS.visits, 0) || 0; }
   function getLastTopic() { return read(KEYS.lastTopic, null); }
   function setLastTopic(id) { write(KEYS.lastTopic, id); }
+
+  /* ---------- onboarding ---------- */
+  function isOnboarded() { return !!read(KEYS.onboarded, false); }
+  function setOnboarded() { write(KEYS.onboarded, 1); }
+  function resetOnboarding() {
+    try { localStorage.removeItem(KEYS.onboarded); } catch (e) {}
+  }
 
   function getQaDone() { return read(KEYS.qaDone, []); }
   function toggleQaDone(id) {
@@ -245,6 +261,43 @@ var store = (function () {
     logActivity();
     return i === -1;
   }
+
+  /* ---------- nav position (Desktop) ---------- */
+  function getNavPos() { return read(KEYS.navPos, "left"); }
+  function setNavPos(pos) {
+    write(KEYS.navPos, pos);
+    applyNavPos();
+  }
+  function applyNavPos() {
+    var pos = getNavPos();
+    document.documentElement.setAttribute("data-nav-pos", pos);
+  }
+
+  /* ---------- sidebar collapsed state (Desktop) ---------- */
+  function isSidebarCollapsed() { return !!read(KEYS.sidebarCollapsed, false); }
+  function setSidebarCollapsed(val) {
+    write(KEYS.sidebarCollapsed, !!val);
+    applySidebarState();
+  }
+  function toggleSidebarCollapsed() {
+    var next = !isSidebarCollapsed();
+    setSidebarCollapsed(next);
+    return next;
+  }
+  function applySidebarState() {
+    try {
+      if (document.body) {
+        if (isSidebarCollapsed()) document.body.classList.add("sidebar-collapsed");
+        else document.body.classList.remove("sidebar-collapsed");
+      }
+    } catch (e) {}
+  }
+
+  /* ---------- daily SRS notifications ---------- */
+  function getSrsNotify() { return read(KEYS.notifySrs, false); }
+  function setSrsNotify(bool) { write(KEYS.notifySrs, !!bool); }
+  function getSrsNotifyTime() { return read(KEYS.notifyTime, "19:00"); }
+  function setSrsNotifyTime(t) { write(KEYS.notifyTime, t || "19:00"); }
 
   /* ---------- backup / restore ---------- */
   function backupKeys() {
@@ -303,14 +356,22 @@ var store = (function () {
     getQuiz: getQuiz, saveAttempt: saveAttempt,
     getSrs: getSrs, gradeSrs: gradeSrs, dueSrs: dueSrs,
     getActivity: getActivity, logActivity: logActivity, computeStreak: computeStreak,
-    bumpVisits: bumpVisits,
+    bumpVisits: bumpVisits, getVisits: getVisits,
     getLastTopic: getLastTopic, setLastTopic: setLastTopic,
+    isOnboarded: isOnboarded, setOnboarded: setOnboarded, resetOnboarding: resetOnboarding,
     getQaDone: getQaDone, toggleQaDone: toggleQaDone,
+    getNavPos: getNavPos, setNavPos: setNavPos, applyNavPos: applyNavPos,
+    isSidebarCollapsed: isSidebarCollapsed, setSidebarCollapsed: setSidebarCollapsed,
+    toggleSidebarCollapsed: toggleSidebarCollapsed, applySidebarState: applySidebarState,
+    getSrsNotify: getSrsNotify, setSrsNotify: setSrsNotify,
+    getSrsNotifyTime: getSrsNotifyTime, setSrsNotifyTime: setSrsNotifyTime,
     backupKeys: backupKeys, exportBackup: exportBackup, importBackup: importBackup,
     resetAll: resetAll,
     today: today
   };
 })();
 
-/* Apply the saved theme immediately, before first paint. */
+/* Apply the saved theme, navigation dock position, and sidebar visibility immediately. */
 store.applyTheme();
+store.applyNavPos();
+store.applySidebarState();

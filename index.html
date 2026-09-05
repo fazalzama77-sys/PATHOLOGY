@@ -23,6 +23,9 @@
 <link rel="stylesheet" href="assets/css/tokens.css">
 <link rel="stylesheet" href="assets/css/main.css">
 <link rel="stylesheet" href="assets/css/sections.css">
+<link rel="stylesheet" href="assets/css/deep-guide.css">
+<link rel="stylesheet" href="assets/css/events.css">
+<link rel="stylesheet" href="assets/css/animations.css">
 </head>
 
 <body>
@@ -81,6 +84,10 @@
     </nav>
 
     <div class="sidebar__foot">
+      <button class="sidebar-collapse-btn" id="sidebar-collapse-btn" type="button" title="Hide navigation panel" aria-label="Hide navigation panel">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5 8 12l7 7"/></svg>
+        <span>Hide Sidebar</span>
+      </button>
       <span class="small faint">ICAR-IVRI, Izatnagar</span>
     </div>
   </aside>
@@ -89,7 +96,7 @@
   <div class="main">
 
     <header class="topbar">
-      <button class="iconbtn topbar__menu" id="menubtn" aria-label="Open navigation">
+      <button class="iconbtn topbar__menu" id="menubtn" aria-label="Toggle navigation panel" title="Toggle navigation panel">
         <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
       </button>
 
@@ -192,6 +199,25 @@
   </div>
 </div>
 
+<!-- ==================== ONBOARDING TOUR ==================== -->
+<div class="onboard-modal" id="onboard-modal" style="display:none;" onclick="if(event.target===this) app.closeOnboarding(true)">
+  <div class="onboard-card" role="dialog" aria-modal="true" aria-label="Welcome tour">
+    <!-- contents dynamically injected by app._renderOnboardSlide() -->
+  </div>
+</div>
+
+<!-- ==================== INSTALL BANNER ==================== -->
+<div class="install-banner" id="install-banner" role="region" aria-label="Install app">
+  <div class="install-icon">
+    <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+  </div>
+  <div class="install-msg">
+    Install <b>Veterinary Pathology Studio</b> — 100% offline access, instant loading, lives on your device.
+  </div>
+  <button class="install-btn" onclick="app.triggerInstall()">Install App</button>
+  <button class="install-close" onclick="app.dismissInstall()" aria-label="Dismiss">&times;</button>
+</div>
+
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <!-- ==================== SCRIPTS ====================
@@ -212,10 +238,15 @@
 <script src="data/data-why.JS"></script>
 <script src="data/data-qa.JS"></script>
 <script src="data/data-quiz.JS"></script>
+<script src="data/events-data.js"></script>
 
 <script src="js/store.js"></script>
 <script src="js/quiz.js"></script>
 <script src="js/dashboard.js"></script>
+<script src="js/glossary.js"></script>
+<script src="js/search.js"></script>
+<script src="js/deep-guide.js"></script>
+<script src="js/events.js"></script>
 <script src="js/app.js"></script>
 
 <script>

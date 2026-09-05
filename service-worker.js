@@ -11,7 +11,7 @@
    PRECACHE, otherwise students keep seeing the old version.
    ============================================================ */
 
-var CACHE_VERSION = "vpath-v4";
+var CACHE_VERSION = "vpath-v8";
 var SHELL_CACHE = CACHE_VERSION + "-shell";
 var IMG_CACHE = CACHE_VERSION + "-img";
 
@@ -23,6 +23,9 @@ var PRECACHE = [
   "assets/css/tokens.css",
   "assets/css/main.css",
   "assets/css/sections.css",
+  "assets/css/deep-guide.css",
+  "assets/css/events.css",
+  "assets/css/animations.css",
 
   "data/data-syllabus.JS",
   "data/data-theory-unit1.JS",
@@ -35,10 +38,15 @@ var PRECACHE = [
   "data/data-why.JS",
   "data/data-qa.JS",
   "data/data-quiz.JS",
+  "data/events-data.js",
 
   "js/store.js",
   "js/quiz.js",
   "js/dashboard.js",
+  "js/glossary.js",
+  "js/search.js",
+  "js/deep-guide.js",
+  "js/events.js",
   "js/app.js"
 ];
 
