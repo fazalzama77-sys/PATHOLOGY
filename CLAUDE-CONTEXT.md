@@ -110,12 +110,12 @@ and `--ivri-purple` are the readable text/accent versions.
 | Theory Unit 6 — Lab & Wild Animals | 9 | ⏳ **EMPTY** | — | — |
 | Practical Units 1–6 (All 6 units) | 25 | ✅ **COMPLETE** | 291 | 50 |
 | WHY Section (Comparative Species) | 100 entries | ✅ **COMPLETE** | 100 mechanisms | 100 clinical notes |
+| Theory Q&A Bank (Units 1–6) | 150 questions | ✅ **COMPLETE** | 744 total marks | 6 comp tables |
 
-**Total so far: 78 of 145 topics (53 theory + 25 practical) + 100 WHY entries, >950,000 characters,
-1,191 key points/mechanisms, 185 tables. Every written topic and WHY entry has a clinical note.**
+**Total so far: 78 of 145 topics + 100 WHY entries + 150 Q&A written exam questions, >1,350,000 characters,
+1,700+ key points/mechanisms, 191 tables. Every written topic and Q&A entry has high-scoring notes.**
 
 ### Also still empty
-- `data-qa.JS` — Q&A bank (template block only)
 - `data-quiz.JS` — quiz bank (template blocks only)
 - App icons: `images/icon-192.png`, `-512.png`, `-maskable-512.png`
 - Not yet in a git repository; not yet deployed

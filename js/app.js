@@ -2010,90 +2010,545 @@ var app = (function () {
   }
 
   /* ============================================================
-     Q & A
+     Q & A (WRITTEN EXAM SUITE)
      ============================================================ */
   function renderQa() {
     var unitId = state.params.a;
 
+    function pad2(n) { return n < 10 ? "0" + n : String(n); }
+
+    function stripHtml(html) {
+      if (!html) return "";
+      var tmp = document.createElement("div");
+      tmp.innerHTML = html;
+      return (tmp.textContent || tmp.innerText || "").trim();
+    }
+
+    /* ------------------------------------------------------------
+       HUB VIEW (#/qa) — Exam Master Studio & Analytics
+       ------------------------------------------------------------ */
     if (!unitId) {
-      var cards = syllabus.allUnits.map(function (u) {
-        var n = qaCount(u.id);
-        return '<a class="card card--link" href="#/qa/' + u.id + '">' +
-          '<div class="row"><span class="unitcard__no">' +
-          icon(getUnitIcon(u)) + ' ' + (u.stream === "theory" ? "Theory" : "Practical") + ' · Unit ' + u.no + '</span>' +
-          '<span class="chip push">' + icon("qa") + ' ' + n + '</span></div>' +
-          '<div class="card__title mt-2">' + esc(u.short) + '</div>' +
-          '</a>';
+      var allUnits = syllabus.theory || [];
+      var done = store.getQaDone();
+
+      var totalQ = 0;
+      var totalMarks = 0;
+      var totalDone = 0;
+      var totalMarksDone = 0;
+
+      var unitData = allUnits.map(function (u) {
+        var list = ((window.qaBank || {})[u.id] || []).filter(function (q) { return q && q.question; });
+        var uMarks = list.reduce(function (sum, q) { return sum + (q.marks || 0); }, 0);
+        var uDone = list.filter(function (q) { return done.indexOf(q.id) !== -1; }).length;
+        var uMarksDone = list.filter(function (q) { return done.indexOf(q.id) !== -1; })
+                             .reduce(function (sum, q) { return sum + (q.marks || 0); }, 0);
+        var pct = list.length ? Math.round((uDone / list.length) * 100) : 0;
+
+        var count2m = list.filter(function (q) { return q.marks === 2; }).length;
+        var count5m = list.filter(function (q) { return q.marks === 5; }).length;
+        var count12m = list.filter(function (q) { return q.marks === 12; }).length;
+
+        totalQ += list.length;
+        totalMarks += uMarks;
+        totalDone += uDone;
+        totalMarksDone += uMarksDone;
+
+        return {
+          unit: u,
+          count: list.length,
+          marks: uMarks,
+          done: uDone,
+          marksDone: uMarksDone,
+          pct: pct,
+          count2m: count2m,
+          count5m: count5m,
+          count12m: count12m
+        };
+      });
+
+      var overallPct = totalQ ? Math.round((totalDone / totalQ) * 100) : 0;
+      var overallMarksPct = totalMarks ? Math.round((totalMarksDone / totalMarks) * 100) : 0;
+
+      var heroHtml =
+        '<div class="qa-hub-hero">' +
+          '<div class="qa-hub-hero__badge">' + icon("sparkle") + ' ICAR-IVRI Written Examination Studio</div>' +
+          '<h1>' + icon("qa") + ' Question &amp; Answer Master Bank</h1>' +
+          '<p>150 High-Yield Exam Questions across Theory Units 1 to 6 with gold-standard model answers, ' +
+          'examiner marking criteria, and past university questions (IVRI, TANUVAS, GADVASU, RAJUVAS, WBUAFS).</p>' +
+          '<div class="qa-stats-grid">' +
+            '<div class="qa-stat-card">' +
+              '<div class="qa-stat-card__icon is-blue">' + icon("quiz") + '</div>' +
+              '<div><div class="qa-stat-card__val">' + totalQ + '</div>' +
+              '<div class="qa-stat-card__label">Curated Questions</div></div>' +
+            '</div>' +
+            '<div class="qa-stat-card">' +
+              '<div class="qa-stat-card__icon is-amber">' + icon("trophy") + '</div>' +
+              '<div><div class="qa-stat-card__val">' + totalMarks + ' M</div>' +
+              '<div class="qa-stat-card__label">Total Exam Marks</div></div>' +
+            '</div>' +
+            '<div class="qa-stat-card">' +
+              '<div class="qa-stat-card__icon is-green">' + icon("checkCircle") + '</div>' +
+              '<div><div class="qa-stat-card__val">' + totalDone + ' / ' + totalQ + '</div>' +
+              '<div class="qa-stat-card__label">Questions Mastered (' + overallPct + '%)</div></div>' +
+            '</div>' +
+            '<div class="qa-stat-card">' +
+              '<div class="qa-stat-card__icon is-teal">' + icon("target") + '</div>' +
+              '<div><div class="qa-stat-card__val">' + totalMarksDone + ' / ' + totalMarks + ' M</div>' +
+              '<div class="qa-stat-card__label">Marks Secured (' + overallMarksPct + '%)</div></div>' +
+            '</div>' +
+          '</div>' +
+        '</div>';
+
+      var filterTabsHtml =
+        '<div class="qa-paper-nav">' +
+          '<button class="qa-paper-tab is-active" data-paper="all">' +
+            icon("filter") + ' All Units <span class="count-badge">6 Units · ' + totalQ + ' Q</span>' +
+          '</button>' +
+          '<button class="qa-paper-tab" data-paper="paper-1">' +
+            icon("book") + ' Paper I (Units 1–3) <span class="count-badge">75 Q · 372 M</span>' +
+          '</button>' +
+          '<button class="qa-paper-tab" data-paper="paper-2">' +
+            icon("book") + ' Paper II (Units 4–6) <span class="count-badge">75 Q · 372 M</span>' +
+          '</button>' +
+        '</div>';
+
+      var cardsHtml = unitData.map(function (d) {
+        var u = d.unit;
+        var paperLabel = u.paper === "paper-1" ? "Paper I" : "Paper II";
+        return '<a class="qa-unit-card" data-paper="' + (u.paper || "") + '" href="#/qa/' + u.id + '">' +
+          '<div class="qa-unit-card__top">' +
+            '<span class="qa-unit-card__tag">' + icon(getUnitIcon(u)) + ' Unit ' + u.no + ' · ' + paperLabel + '</span>' +
+            '<span class="qa-unit-card__marks">' + icon("star") + ' ' + d.marks + ' Marks</span>' +
+          '</div>' +
+          '<div class="qa-unit-card__title">' + esc(u.title) + '</div>' +
+          '<div class="qa-unit-card__blurb">' + esc(u.blurb || "") + '</div>' +
+          '<div class="qa-unit-card__breakdown">' +
+            '<span class="qa-pill-sm qa-pill-sm--2m">' + d.count2m + ' Def (2M)</span>' +
+            '<span class="qa-pill-sm qa-pill-sm--5m">' + d.count5m + ' Short (5M)</span>' +
+            '<span class="qa-pill-sm qa-pill-sm--12m">' + d.count12m + ' Long (12M)</span>' +
+          '</div>' +
+          '<div class="qa-progress-wrap">' +
+            '<div class="qa-progress-meta">' +
+              '<span>Progress: <strong>' + d.done + ' / ' + d.count + '</strong> (' + d.pct + '%)</span>' +
+              '<span><strong>' + d.marksDone + ' / ' + d.marks + '</strong> M</span>' +
+            '</div>' +
+            '<div class="qa-progress-bar">' +
+              '<div class="qa-progress-fill' + (d.pct === 100 ? ' is-complete' : '') + '" style="width: ' + d.pct + '%"></div>' +
+            '</div>' +
+          '</div>' +
+        '</a>';
       }).join("");
 
-      view.innerHTML =
-        '<div class="pagehead">' +
-          '<span class="eyebrow">Written exam practice</span>' +
-          '<h1>' + icon("qa") + ' Question &amp; Answer</h1>' +
-          '<p class="lede">Short notes, long answers, definitions and differentiate-between tables — ' +
-          'the questions you have to write, not click.</p>' +
-        '</div>' +
-        '<div class="grid grid--3">' + cards + '</div>';
+      view.innerHTML = heroHtml + filterTabsHtml + '<div class="grid grid--3 mt-4" id="qa-units-grid">' + cardsHtml + '</div>';
+
+      // Interactive Paper tabs filtering
+      els(".qa-paper-tab").forEach(function (tab) {
+        tab.addEventListener("click", function () {
+          els(".qa-paper-tab").forEach(function (t) { t.classList.remove("is-active"); });
+          tab.classList.add("is-active");
+          var paper = tab.getAttribute("data-paper");
+          els(".qa-unit-card").forEach(function (card) {
+            if (paper === "all" || card.getAttribute("data-paper") === paper) {
+              card.style.display = "";
+            } else {
+              card.style.display = "none";
+            }
+          });
+        });
+      });
       return;
     }
 
+    /* ------------------------------------------------------------
+       UNIT VIEW (#/qa/<unitId>) — Interactive High-Yield Practice
+       ------------------------------------------------------------ */
     var u2 = syllabus.unitById[unitId];
     if (!u2) { view.innerHTML = missing("unit"); return; }
     var list = (window.qaBank || {})[unitId] || [];
-    var real = list.filter(function (q) { return q.question; });
+    var real = list.filter(function (q) { return q && q.question; });
     var done = store.getQaDone();
 
-    var head =
-      '<div class="pagehead">' +
-        '<span class="eyebrow">' + icon(getUnitIcon(u2)) + ' Unit ' + u2.no + ' · ' + esc(u2.short) + '</span>' +
-        '<h1>' + icon("qa") + ' Question &amp; Answer</h1>' +
-        '<div class="row row--wrap mt-4">' +
-          '<a class="btn btn--sm" href="#/qa">' + icon("back") + ' All units</a>' +
-          '<a class="btn btn--sm" href="#/unit/' + u2.id + '">' + icon("book") + ' Unit lessons</a>' +
-          '<span class="chip">' + icon("help") + ' ' + real.length + ' questions</span>' +
-        '</div>' +
-      '</div>';
-
     if (!real.length) {
-      view.innerHTML = head +
+      view.innerHTML =
+        '<div class="qa-hud">' +
+          '<div class="qa-hud__breadcrumbs">' +
+            '<a href="#/qa">' + icon("back") + ' All Units</a> · ' +
+            '<span>Unit ' + u2.no + '</span>' +
+          '</div>' +
+          '<h1>' + icon(getUnitIcon(u2)) + ' ' + esc(u2.title) + '</h1>' +
+        '</div>' +
         '<div class="empty"><div class="empty__icon">' + icon("qa") + '</div>' +
         '<h3>No questions written for this unit yet</h3>' +
-        '<p>Add them in <b>data/data-qa.JS</b> under <span class="mono">"' + esc(unitId) + '"</span>. ' +
-        'The template block in that file shows every field.</p></div>';
+        '<p>Questions are loaded from <b>data/data-qa.JS</b> under <span class="mono">"' + esc(unitId) + '"</span>.</p></div>';
       return;
     }
 
+    var totalUnitMarks = real.reduce(function (sum, q) { return sum + (q.marks || 0); }, 0);
+    var doneUnitCount = real.filter(function (q) { return done.indexOf(q.id) !== -1; }).length;
+    var doneUnitMarks = real.filter(function (q) { return done.indexOf(q.id) !== -1; })
+                            .reduce(function (sum, q) { return sum + (q.marks || 0); }, 0);
+    var unitPct = Math.round((doneUnitCount / real.length) * 100);
+
+    var count2m = real.filter(function (q) { return q.marks === 2; }).length;
+    var count5m = real.filter(function (q) { return q.marks === 5; }).length;
+    var count12m = real.filter(function (q) { return q.marks === 12; }).length;
+    var countDiff = real.filter(function (q) { return q.type === "diff"; }).length;
+
+    var paperLabel = u2.paper === "paper-1" ? "Paper I" : "Paper II";
+
+    var hudHtml =
+      '<div class="qa-hud">' +
+        '<div class="qa-hud__breadcrumbs">' +
+          '<a href="#/qa">' + icon("back") + ' Q&amp;A Bank</a> · ' +
+          '<span>Unit ' + u2.no + ' (' + paperLabel + ')</span>' +
+        '</div>' +
+        '<div class="qa-hud__main">' +
+          '<div>' +
+            '<h1 class="qa-hud__title">' + icon(getUnitIcon(u2)) + ' Unit ' + u2.no + ' · ' + esc(u2.short) + '</h1>' +
+            '<div class="qa-hud__meta-chips">' +
+              '<span class="chip">' + paperLabel + '</span>' +
+              '<span class="chip">' + real.length + ' High-Yield Questions</span>' +
+              '<span class="chip">' + totalUnitMarks + ' Exam Marks</span>' +
+            '</div>' +
+          '</div>' +
+          '<div class="qa-hud__progress-box">' +
+            '<div class="qa-progress-meta">' +
+              '<span>Mastery: <strong id="qa-hud-count">' + doneUnitCount + '</strong> / ' + real.length +
+              ' (<strong id="qa-hud-pct">' + unitPct + '%</strong>)</span>' +
+              '<span><strong id="qa-hud-marks">' + doneUnitMarks + '</strong> / ' + totalUnitMarks + ' M</span>' +
+            '</div>' +
+            '<div class="qa-progress-bar">' +
+              '<div id="qa-hud-fill" class="qa-progress-fill' + (unitPct === 100 ? ' is-complete' : '') + '" style="width: ' + unitPct + '%"></div>' +
+            '</div>' +
+          '</div>' +
+        '</div>' +
+        '<div class="qa-hud__actions">' +
+          '<a class="btn btn--sm" href="#/qa">' + icon("back") + ' All units</a>' +
+          '<a class="btn btn--sm" href="#/unit/' + u2.id + '">' + icon("book") + ' Unit lessons</a>' +
+          '<button class="btn btn--sm btn--ghost" id="qa-btn-expand-all">' + icon("chevron") + ' Expand All</button>' +
+          '<button class="btn btn--sm btn--ghost" id="qa-btn-collapse-all">' + icon("chevron") + ' Collapse All</button>' +
+          '<button class="btn btn--sm btn--primary push" id="qa-btn-random">' + icon("sparkle") + ' Random Practice</button>' +
+        '</div>' +
+      '</div>';
+
+    var toolbarHtml =
+      '<div class="qa-toolbar">' +
+        '<div class="qa-toolbar__top">' +
+          '<div class="qa-search-wrap">' +
+            '<span class="qa-search-icon">' + icon("search") + '</span>' +
+            '<input type="search" id="qa-search" class="qa-search-input" placeholder="Search questions, model answers, topics, or PYQs..." autocomplete="off">' +
+            '<button id="qa-search-clear" class="qa-search-clear" title="Clear search">' + icon("close") + '</button>' +
+          '</div>' +
+          '<span id="qa-counter" class="qa-counter-badge">Showing ' + real.length + ' of ' + real.length + ' questions</span>' +
+        '</div>' +
+        '<div class="qa-toolbar__controls">' +
+          '<div class="qa-filter-chips">' +
+            '<button class="qa-filter-chip is-active" data-filter="all">All <span class="chip-count">' + real.length + '</span></button>' +
+            '<button class="qa-filter-chip" data-filter="2m">2M Definitions <span class="chip-count">' + count2m + '</span></button>' +
+            '<button class="qa-filter-chip" data-filter="5m">5M Short Notes <span class="chip-count">' + count5m + '</span></button>' +
+            '<button class="qa-filter-chip" data-filter="12m">12M Long Essays <span class="chip-count">' + count12m + '</span></button>' +
+            (countDiff ? '<button class="qa-filter-chip" data-filter="diff">Differences <span class="chip-count">' + countDiff + '</span></button>' : '') +
+            '<button class="qa-filter-chip" data-filter="pending">Pending <span class="chip-count" id="chip-pending-count">' + (real.length - doneUnitCount) + '</span></button>' +
+            '<button class="qa-filter-chip" data-filter="revised">Revised <span class="chip-count" id="chip-revised-count">' + doneUnitCount + '</span></button>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+
     var typeLabel = { short: "Short note", long: "Long answer", diff: "Differentiate", define: "Define", spot: "Spotting" };
 
-    view.innerHTML = head + '<div class="stack">' + real.map(function (q, i) {
+    var questionsListHtml = real.map(function (q, i) {
       var isDone = done.indexOf(q.id) !== -1;
-      return '<details class="qa' + (isDone ? ' is-done' : '') + '">' +
+      var marksBadge = "";
+      if (q.marks === 2) {
+        marksBadge = '<span class="badge-2m">2 Marks</span>';
+      } else if (q.marks === 5) {
+        marksBadge = '<span class="badge-5m">5 Marks</span>';
+      } else if (q.marks === 12) {
+        marksBadge = '<span class="badge-12m">' + icon("star") + ' 12 Marks</span>';
+      } else if (q.marks) {
+        marksBadge = '<span class="chip">' + q.marks + ' Marks</span>';
+      }
+
+      var pyqStar = "";
+      if (q.pyq && q.pyq.length) {
+        var firstPyq = q.pyq[0];
+        var extraCount = q.pyq.length > 1 ? " +" + (q.pyq.length - 1) : "";
+        pyqStar = '<span class="badge-pyq-star" title="' + esc(q.pyq.join(", ")) + '">' +
+          icon("star") + ' ' + esc(firstPyq) + extraCount + '</span>';
+      }
+
+      var doneTick = '<span class="badge-done-tick" data-done-badge style="display:' + (isDone ? 'inline-flex' : 'none') + '">' +
+        icon("check") + ' Done</span>';
+
+      return '<details class="qa' + (isDone ? ' is-done' : '') + '" id="' + esc(q.id) + '" ' +
+        'data-qa-item="true" data-id="' + esc(q.id) + '" data-marks="' + (q.marks || 0) + '" ' +
+        'data-type="' + esc(q.type || "") + '" data-done="' + (isDone ? '1' : '0') + '">' +
         '<summary>' +
-          '<span class="qa__no">Q' + (i + 1) + '</span>' +
+          icon("chevron", "qa__chevron") +
+          '<span class="qa__no">Q' + pad2(i + 1) + '</span>' +
           '<span class="qa__q">' + esc(q.question) + '</span>' +
           '<span class="qa__meta">' +
+            marksBadge +
             '<span class="chip">' + (typeLabel[q.type] || q.type) + '</span>' +
-            (q.marks ? '<span class="chip">' + q.marks + ' marks</span>' : '') +
+            pyqStar +
+            doneTick +
           '</span>' +
         '</summary>' +
         '<div class="qa__body">' +
-          (q.answer ? '<div class="prose">' + q.answer + '</div>' : '<p class="faint">Model answer not written yet.</p>') +
+          '<div class="qa-model-banner">' + icon("feather") + ' ICAR-IVRI Gold-Standard Model Answer</div>' +
+          (q.answer ? '<div class="qa-answer-prose">' + q.answer + '</div>' : '<p class="faint">Model answer not written yet.</p>') +
           (q.keyPoints && q.keyPoints.length
-            ? '<div class="callout mt-4"><div class="callout__title">' + icon("star") + ' Marks-scoring points</div><ul>' +
-              q.keyPoints.map(function (k) { return '<li>' + k + '</li>'; }).join("") + '</ul></div>' : '') +
+            ? '<div class="qa-scoring-callout">' +
+                '<div class="qa-scoring-callout__title">' + icon("star") + ' Examiner Marking Criteria (High-Scoring Points)</div>' +
+                '<ul>' + q.keyPoints.map(function (k) { return '<li>' + k + '</li>'; }).join("") + '</ul>' +
+              '</div>' : '') +
           (q.table ? renderTable(q.table) : '') +
-          (q.pyq && q.pyq.length ? '<p class="small faint mt-4">Previously asked: ' + q.pyq.join(", ") + '</p>' : '') +
-          '<button class="btn btn--sm mt-4" data-qa="' + esc(q.id) + '">' +
-            (isDone ? icon("check") + " Mark as not done" : icon("checkCircle") + " Mark as revised") + '</button>' +
+          (q.pyq && q.pyq.length
+            ? '<div class="qa-pyq-footer"><span>Previously asked at:</span>' +
+                q.pyq.map(function (p) { return '<span class="qa-pyq-pill">' + esc(p) + '</span>'; }).join("") +
+              '</div>' : '') +
+          '<div class="qa-action-bar">' +
+            '<div class="qa-action-group">' +
+              '<button class="btn btn--sm ' + (isDone ? 'btn--ghost' : 'btn--primary') + ' qa-btn-toggle" data-qa="' + esc(q.id) + '">' +
+                (isDone ? icon("check") + " Marked as Revised" : icon("checkCircle") + " Mark as Revised") +
+              '</button>' +
+              '<button class="btn btn--sm btn--ghost qa-btn-copy" data-copy-qa="' + esc(q.id) + '">' +
+                icon("copy") + ' Copy Model Answer' +
+              '</button>' +
+            '</div>' +
+            '<div class="qa-action-group">' +
+              (q.topicId ? '<a class="btn btn--sm btn--ghost" href="#/topic/' + esc(q.topicId) + '">' + icon("book") + ' Study Chapter</a>' : '') +
+            '</div>' +
+          '</div>' +
         '</div>' +
       '</details>';
-    }).join("") + '</div>';
+    }).join("");
 
-    els("[data-qa]").forEach(function (b) {
-      b.addEventListener("click", function () {
-        var on = store.toggleQaDone(b.getAttribute("data-qa"));
-        b.innerHTML = on ? (icon("check") + " Mark as not done") : (icon("checkCircle") + " Mark as revised");
-        b.closest(".qa").classList.toggle("is-done", on);
+    var noMatchHtml =
+      '<div id="qa-no-match" class="empty" style="display:none;">' +
+        '<div class="empty__icon">' + icon("search") + '</div>' +
+        '<h3>No matching questions found</h3>' +
+        '<p>Try adjusting your search query or switching to "All" filter chip.</p>' +
+      '</div>';
+
+    view.innerHTML = hudHtml + toolbarHtml + '<div class="stack" id="qa-list">' + questionsListHtml + '</div>' + noMatchHtml;
+
+    /* ------------------------------------------------------------
+       INTERACTION WIRING — Live Search, Filters, Batch, Copy, HUD
+       ------------------------------------------------------------ */
+    var searchInput = el("#qa-search");
+    var searchClear = el("#qa-search-clear");
+    var counterEl = el("#qa-counter");
+    var noMatchEl = el("#qa-no-match");
+    var currentFilter = "all";
+
+    // Text search cache built once
+    var textIndex = real.map(function (q) {
+      var fullText = [
+        q.question || "",
+        stripHtml(q.answer || ""),
+        (q.keyPoints || []).join(" "),
+        (q.pyq || []).join(" "),
+        typeLabel[q.type] || q.type || "",
+        (q.marks ? q.marks + " marks" : "")
+      ].join(" ").toLowerCase();
+      return { id: q.id, text: fullText };
+    });
+
+    function applyFilterAndSearch() {
+      var query = (searchInput ? searchInput.value : "").trim().toLowerCase();
+      if (searchClear) {
+        searchClear.classList.toggle("is-visible", query.length > 0);
+      }
+
+      var visibleCount = 0;
+      var cards = els("[data-qa-item]");
+
+      cards.forEach(function (card, index) {
+        var cardType = card.getAttribute("data-type");
+        var cardMarks = parseInt(card.getAttribute("data-marks"), 10);
+        var cardDone = card.getAttribute("data-done") === "1";
+
+        // 1. Filter match
+        var filterMatch = false;
+        if (currentFilter === "all") filterMatch = true;
+        else if (currentFilter === "2m" && cardMarks === 2) filterMatch = true;
+        else if (currentFilter === "5m" && cardMarks === 5) filterMatch = true;
+        else if (currentFilter === "12m" && cardMarks === 12) filterMatch = true;
+        else if (currentFilter === "diff" && cardType === "diff") filterMatch = true;
+        else if (currentFilter === "pending" && !cardDone) filterMatch = true;
+        else if (currentFilter === "revised" && cardDone) filterMatch = true;
+
+        // 2. Search match
+        var searchMatch = true;
+        if (query.length > 0) {
+          searchMatch = textIndex[index].text.indexOf(query) !== -1;
+        }
+
+        if (filterMatch && searchMatch) {
+          card.style.display = "";
+          visibleCount++;
+        } else {
+          card.style.display = "none";
+        }
+      });
+
+      if (counterEl) {
+        counterEl.textContent = "Showing " + visibleCount + " of " + real.length + " questions";
+      }
+      if (noMatchEl) {
+        noMatchEl.style.display = visibleCount === 0 ? "block" : "none";
+      }
+    }
+
+    // Live search listener
+    if (searchInput) {
+      searchInput.addEventListener("input", applyFilterAndSearch);
+    }
+    if (searchClear) {
+      searchClear.addEventListener("click", function () {
+        searchInput.value = "";
+        searchInput.focus();
+        applyFilterAndSearch();
+      });
+    }
+
+    // Filter chips listeners
+    els(".qa-filter-chip").forEach(function (chip) {
+      chip.addEventListener("click", function () {
+        els(".qa-filter-chip").forEach(function (c) { c.classList.remove("is-active"); });
+        chip.classList.add("is-active");
+        currentFilter = chip.getAttribute("data-filter");
+        applyFilterAndSearch();
+      });
+    });
+
+    // Expand / Collapse All
+    var btnExpandAll = el("#qa-btn-expand-all");
+    if (btnExpandAll) {
+      btnExpandAll.addEventListener("click", function () {
+        els("[data-qa-item]").forEach(function (card) {
+          if (card.style.display !== "none") card.open = true;
+        });
+      });
+    }
+    var btnCollapseAll = el("#qa-btn-collapse-all");
+    if (btnCollapseAll) {
+      btnCollapseAll.addEventListener("click", function () {
+        els("[data-qa-item]").forEach(function (card) {
+          card.open = false;
+        });
+      });
+    }
+
+    // Random Practice
+    var btnRandom = el("#qa-btn-random");
+    if (btnRandom) {
+      btnRandom.addEventListener("click", function () {
+        var visibleCards = Array.prototype.slice.call(els("[data-qa-item]")).filter(function (card) {
+          return card.style.display !== "none";
+        });
+        if (!visibleCards.length) {
+          visibleCards = Array.prototype.slice.call(els("[data-qa-item]"));
+        }
+        if (!visibleCards.length) return;
+
+        // Prefer unrevised questions
+        var pending = visibleCards.filter(function (c) { return c.getAttribute("data-done") === "0"; });
+        var targetPool = pending.length ? pending : visibleCards;
+        var chosen = targetPool[Math.floor(Math.random() * targetPool.length)];
+
+        chosen.open = true;
+        chosen.classList.remove("is-highlighted");
+        void chosen.offsetWidth; // trigger reflow
+        chosen.classList.add("is-highlighted");
+
+        chosen.scrollIntoView({ behavior: "smooth", block: "center" });
+        toast("🎲 Random high-yield question selected!");
+      });
+    }
+
+    // Copy Model Answer
+    els("[data-copy-qa]").forEach(function (btn) {
+      btn.addEventListener("click", function (e) {
+        e.stopPropagation();
+        var qId = btn.getAttribute("data-copy-qa");
+        var qObj = real.filter(function (q) { return q.id === qId; })[0];
+        if (!qObj) return;
+
+        var text = "QUESTION (" + (qObj.marks || 5) + " Marks):\n" + qObj.question + "\n\n" +
+                   "MODEL ANSWER:\n" + stripHtml(qObj.answer || "") + "\n";
+
+        if (qObj.keyPoints && qObj.keyPoints.length) {
+          text += "\nEXAMINER MARKING CRITERIA (Key Points):\n" +
+                  qObj.keyPoints.map(function (k) { return "• " + k; }).join("\n") + "\n";
+        }
+        if (qObj.pyq && qObj.pyq.length) {
+          text += "\nPREVIOUSLY ASKED IN:\n" + qObj.pyq.join(", ") + "\n";
+        }
+
+        copyTextToClipboard(text, "Model answer copied to clipboard!");
+      });
+    });
+
+    // Mark as Revised Toggle with Live HUD Reactive Updating
+    els(".qa-btn-toggle").forEach(function (btn) {
+      btn.addEventListener("click", function (e) {
+        e.stopPropagation();
+        var qId = btn.getAttribute("data-qa");
+        var isNowDone = store.toggleQaDone(qId);
+        var card = el("#" + qId);
+
+        if (card) {
+          card.classList.toggle("is-done", isNowDone);
+          card.setAttribute("data-done", isNowDone ? "1" : "0");
+
+          var tickBadge = card.querySelector("[data-done-badge]");
+          if (tickBadge) {
+            tickBadge.style.display = isNowDone ? "inline-flex" : "none";
+          }
+
+          if (isNowDone) {
+            card.classList.remove("is-celebrating");
+            void card.offsetWidth;
+            card.classList.add("is-celebrating");
+            setTimeout(function () { card.classList.remove("is-celebrating"); }, 600);
+          }
+        }
+
+        btn.className = "btn btn--sm " + (isNowDone ? "btn--ghost" : "btn--primary") + " qa-btn-toggle";
+        btn.innerHTML = isNowDone ? (icon("check") + " Marked as Revised") : (icon("checkCircle") + " Mark as Revised");
+
+        // Recalculate Unit Progress HUD live
+        var currentDoneList = store.getQaDone();
+        var newDoneCount = real.filter(function (q) { return currentDoneList.indexOf(q.id) !== -1; }).length;
+        var newDoneMarks = real.filter(function (q) { return currentDoneList.indexOf(q.id) !== -1; })
+                               .reduce(function (sum, q) { return sum + (q.marks || 0); }, 0);
+        var newPct = Math.round((newDoneCount / real.length) * 100);
+
+        var hudCount = el("#qa-hud-count");
+        var hudPct = el("#qa-hud-pct");
+        var hudMarks = el("#qa-hud-marks");
+        var hudFill = el("#qa-hud-fill");
+        var chipPending = el("#chip-pending-count");
+        var chipRevised = el("#chip-revised-count");
+
+        if (hudCount) hudCount.textContent = newDoneCount;
+        if (hudPct) hudPct.textContent = newPct + "%";
+        if (hudMarks) hudMarks.textContent = newDoneMarks;
+        if (hudFill) {
+          hudFill.style.width = newPct + "%";
+          hudFill.classList.toggle("is-complete", newPct === 100);
+        }
+        if (chipPending) chipPending.textContent = real.length - newDoneCount;
+        if (chipRevised) chipRevised.textContent = newDoneCount;
+
+        // If currently filtering by pending or revised, re-filter
+        if (currentFilter === "pending" || currentFilter === "revised") {
+          applyFilterAndSearch();
+        }
+
+        toast(isNowDone ? "Marked as revised!" : "Marked as unrevised");
       });
     });
   }
