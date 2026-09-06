@@ -10,6 +10,8 @@
      #/unit/<unitId>        One unit, its topic list
      #/topic/<topicId>      One lesson
      #/why                  WHY section
+     #/revision             Rapid Revision hub  (rendered by revision.js)
+     #/revision/<unitId>    One revision sheet
      #/qa                   Question & Answer bank
      #/qa/<unitId>          Q&A for one unit
      #/quiz                 Quiz hub  (rendered by quiz.js)
@@ -215,11 +217,13 @@ var app = (function () {
 
     stopSpeech();              // never let a lesson keep reading after you leave it
     teardownHighlightPopup();  // remove floating selection toolbar if active
+    if (window.revisionApp && revisionApp.teardown) revisionApp.teardown();  // kill the revision countdown
 
     var map = {
       home: "home", theory: "theory", practical: "practical",
       unit: "unit", topic: "topic", why: "why", qa: "qa",
-      quiz: "quiz", dashboard: "dashboard", library: "library", me: "me"
+      quiz: "quiz", dashboard: "dashboard", library: "library", me: "me",
+      revision: "revision"
     };
     state.section = map[name] || "home";
 
@@ -227,7 +231,7 @@ var app = (function () {
     var accentFor = {
       theory: "theory", unit: "theory", topic: "theory",
       practical: "practical", quiz: "quiz", why: "why",
-      dashboard: "dashboard", qa: "theory"
+      dashboard: "dashboard", qa: "theory", revision: "theory"
     };
     var sec = accentFor[state.section] || "";
     if (sec) document.body.setAttribute("data-section", sec);
@@ -272,6 +276,10 @@ var app = (function () {
       dashboard: function () {
         if (window.dashboardApp && dashboardApp.render) dashboardApp.render(view);
         else view.innerHTML = notReady("Dashboard");
+      },
+      revision: function () {
+        if (window.revisionApp && revisionApp.render) revisionApp.render(view, state.params);
+        else view.innerHTML = notReady("Rapid Revision");
       }
     }[state.section] || renderHome;
 
@@ -302,6 +310,13 @@ var app = (function () {
     if (state.section === "theory") push("Theory", null, "theory");
     else if (state.section === "practical") push("Practical", null, "practical");
     else if (state.section === "why") push("WHY", null, "why");
+    else if (state.section === "revision") {
+      push("Rapid Revision", state.params.a ? "#/revision" : null, "flame");
+      if (state.params.a) {
+        var ru = (window.revisionData || {})[state.params.a];
+        if (ru) push("Unit " + ru.no, null, "book");
+      }
+    }
     else if (state.section === "qa") push("Q & A", null, "qa");
     else if (state.section === "quiz") push("Quiz", null, "quiz");
     else if (state.section === "dashboard") push("Dashboard", null, "dashboard");

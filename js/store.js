@@ -34,7 +34,11 @@ var store = (function () {
     topicGuideSeen: PREFIX + "topic-guide-seen",
     eventSeen:  PREFIX + "event-announcements-seen",
     installDismissed: PREFIX + "install-dismissed",
-    sidebarCollapsed: PREFIX + "sidebar-collapsed"
+    sidebarCollapsed: PREFIX + "sidebar-collapsed",
+    revBoxes:   PREFIX + "rev-boxes",   // { boxId: 1 }        — revision box ticked off
+    revDrill:   PREFIX + "rev-drill",   // { drillId: 1 | -1 } — 1 right, -1 wrong
+    revUnits:   PREFIX + "rev-units",   // { unitId: timestamp } — unit marked revised
+    revPrefs:   PREFIX + "rev-prefs"    // { hideAnswers, blur, cols }
   };
 
   /* ---------- low level ---------- */
@@ -246,6 +250,64 @@ var store = (function () {
   function getLastTopic() { return read(KEYS.lastTopic, null); }
   function setLastTopic(id) { write(KEYS.lastTopic, id); }
 
+  /* ---------- rapid revision (#/revision) ---------- */
+  function getRevBoxes() { return read(KEYS.revBoxes, {}); }
+  function isRevBoxDone(id) { return !!getRevBoxes()[id]; }
+  function toggleRevBox(id) {
+    var m = getRevBoxes();
+    if (m[id]) delete m[id]; else m[id] = Date.now();
+    write(KEYS.revBoxes, m);
+    logActivity();
+    return !!m[id];
+  }
+  function setRevBoxes(ids, on) {
+    var m = getRevBoxes();
+    (ids || []).forEach(function (id) { if (on) m[id] = Date.now(); else delete m[id]; });
+    write(KEYS.revBoxes, m);
+    logActivity();
+  }
+
+  function getRevDrill() { return read(KEYS.revDrill, {}); }
+  function gradeRevDrill(id, right) {
+    var m = getRevDrill();
+    var v = right ? 1 : -1;
+    if (m[id] === v) delete m[id]; else m[id] = v;   // tapping the same button clears it
+    write(KEYS.revDrill, m);
+    logActivity();
+    return m[id] || 0;
+  }
+  function clearRevDrill(ids) {
+    var m = getRevDrill();
+    (ids || []).forEach(function (id) { delete m[id]; });
+    write(KEYS.revDrill, m);
+  }
+
+  function getRevUnits() { return read(KEYS.revUnits, {}); }
+  function isRevUnitDone(id) { return !!getRevUnits()[id]; }
+  function toggleRevUnit(id) {
+    var m = getRevUnits();
+    if (m[id]) delete m[id]; else m[id] = Date.now();
+    write(KEYS.revUnits, m);
+    logActivity();
+    return !!m[id];
+  }
+
+  function getRevPrefs() {
+    var d = { hideAnswers: false, blur: false, cols: true };
+    var p = read(KEYS.revPrefs, d) || d;
+    return {
+      hideAnswers: !!p.hideAnswers,
+      blur: !!p.blur,
+      cols: p.cols !== false
+    };
+  }
+  function setRevPref(k, v) {
+    var p = getRevPrefs();
+    p[k] = v;
+    write(KEYS.revPrefs, p);
+    return p;
+  }
+
   /* ---------- onboarding ---------- */
   function isOnboarded() { return !!read(KEYS.onboarded, false); }
   function setOnboarded() { write(KEYS.onboarded, 1); }
@@ -360,6 +422,11 @@ var store = (function () {
     getLastTopic: getLastTopic, setLastTopic: setLastTopic,
     isOnboarded: isOnboarded, setOnboarded: setOnboarded, resetOnboarding: resetOnboarding,
     getQaDone: getQaDone, toggleQaDone: toggleQaDone,
+    getRevBoxes: getRevBoxes, isRevBoxDone: isRevBoxDone,
+    toggleRevBox: toggleRevBox, setRevBoxes: setRevBoxes,
+    getRevDrill: getRevDrill, gradeRevDrill: gradeRevDrill, clearRevDrill: clearRevDrill,
+    getRevUnits: getRevUnits, isRevUnitDone: isRevUnitDone, toggleRevUnit: toggleRevUnit,
+    getRevPrefs: getRevPrefs, setRevPref: setRevPref,
     getNavPos: getNavPos, setNavPos: setNavPos, applyNavPos: applyNavPos,
     isSidebarCollapsed: isSidebarCollapsed, setSidebarCollapsed: setSidebarCollapsed,
     toggleSidebarCollapsed: toggleSidebarCollapsed, applySidebarState: applySidebarState,
