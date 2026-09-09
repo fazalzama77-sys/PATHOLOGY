@@ -2311,86 +2311,453 @@ var app = (function () {
   }
 
   /* ============================================================
-     WHY
+     WHY - High Yield Comparative Mechanisms Studio
      ============================================================ */
+  var whyState = {
+    filter: "all",
+    query: "",
+    modalId: null,
+    isChallenge: false,
+    challengeRevealed: false,
+    filteredList: []
+  };
+
+  var whyUnitLabels = {
+    "unit-1": "UNIT 1 · GENERAL",
+    "unit-2": "UNIT 2 · SYSTEMIC I",
+    "unit-3": "UNIT 3 · SYSTEMIC II",
+    "unit-4": "UNIT 4 · INFECTIOUS",
+    "unit-5": "UNIT 5 · AVIAN",
+    "unit-6": "UNIT 6 · WILDLIFE & TOX"
+  };
+
+  function getWhyData() {
+    return (window.whyData || []).filter(function (w) { return w && w.title; });
+  }
+
+  function filterWhyList() {
+    var data = getWhyData();
+    var f = whyState.filter;
+    var q = (whyState.query || "").trim().toLowerCase();
+
+    return data.filter(function (w) {
+      // Filter pill match
+      var passFilter = true;
+      if (f === "species") {
+        passFilter = Boolean(w.comparison || w.category === "species");
+      } else if (f !== "all") {
+        passFilter = (w.unit === f);
+      }
+      if (!passFilter) return false;
+
+      // Query search match
+      if (!q) return true;
+      var haystack = [
+        w.title || "",
+        w.comparison || "",
+        w.unit || "",
+        w.why || "",
+        w.clinical || "",
+        (w.mechanism || []).join(" ")
+      ].join(" ").toLowerCase();
+
+      return haystack.indexOf(q) !== -1;
+    });
+  }
+
+  function cleanWhyText(html) {
+    if (!html) return "";
+    var tmp = document.createElement("div");
+    tmp.innerHTML = html;
+    return (tmp.textContent || tmp.innerText || "").replace(/\s+/g, " ").trim();
+  }
+
   function renderWhy() {
-    var data = (window.whyData || []).filter(function (w) { return w.title; });
+    var allData = getWhyData();
 
     var head =
       '<div class="pagehead">' +
-        '<span class="eyebrow">Mechanism first</span>' +
-        '<h1>' + icon("why") + ' WHY</h1>' +
+        '<span class="eyebrow">Mechanism First · High-Yield Comparative Pathology</span>' +
+        '<h1>' + icon("why") + ' WHY Database</h1>' +
         '<p class="lede">Pathology is only memorisable once it stops being a list. ' +
-        'Each card here explains why a lesion had to turn out the way it did.</p>' +
+        'Explore 100 high-yield comparative mechanisms, species distinctions, and diagnostic rules across the B.V.Sc. &amp; A.H. curriculum.</p>' +
       '</div>';
 
-    if (!data.length) {
+    if (!allData.length) {
       view.innerHTML = head +
         '<div class="empty"><div class="empty__icon">' + icon("why") + '</div>' +
         '<h3>No WHY entries yet</h3>' +
-        '<p>Add them in <b>data/data-why.JS</b>. Copy the template block that is already in the file, ' +
-        'fill in <span class="mono">title</span>, <span class="mono">why</span> and ' +
-        '<span class="mono">clinical</span>, and they will appear here automatically.</p></div>';
+        '<p>Add them in <b>data/data-why.JS</b>.</p></div>';
       return;
     }
 
-    var catIcons = {
-      all: "sparkle",
-      mechanism: "pulse",
-      lesion: "microscope",
-      species: "target",
-      diagnostic: "clipboard",
-      clinical: "shield"
-    };
+    var filterPillsHtml =
+      '<div class="why-filter-pills">' +
+        '<button class="why-pill-btn' + (whyState.filter === "all" ? " is-active" : "") + '" data-why-filter="all">All Systems (' + allData.length + ')</button>' +
+        '<button class="why-pill-btn' + (whyState.filter === "unit-1" ? " is-active" : "") + '" data-why-filter="unit-1">Unit 1 (General)</button>' +
+        '<button class="why-pill-btn' + (whyState.filter === "unit-2" ? " is-active" : "") + '" data-why-filter="unit-2">Unit 2 (Systemic I)</button>' +
+        '<button class="why-pill-btn' + (whyState.filter === "unit-3" ? " is-active" : "") + '" data-why-filter="unit-3">Unit 3 (Systemic II)</button>' +
+        '<button class="why-pill-btn' + (whyState.filter === "unit-4" ? " is-active" : "") + '" data-why-filter="unit-4">Unit 4 (Infectious)</button>' +
+        '<button class="why-pill-btn' + (whyState.filter === "unit-5" ? " is-active" : "") + '" data-why-filter="unit-5">Unit 5 (Avian)</button>' +
+        '<button class="why-pill-btn' + (whyState.filter === "unit-6" ? " is-active" : "") + '" data-why-filter="unit-6">Unit 6 (Wildlife &amp; Tox)</button>' +
+        '<button class="why-pill-btn' + (whyState.filter === "species" ? " is-active" : "") + '" data-why-filter="species">Species Comparisons</button>' +
+      '</div>';
 
-    var cats = ["all", "mechanism", "lesion", "species", "diagnostic", "clinical"];
-    var chips = cats.map(function (c) {
-      return '<button class="tab' + (c === "all" ? " is-active" : "") + '" data-cat="' + c + '">' +
-        icon(catIcons[c] || "sparkle") + ' ' +
-        (c === "all" ? "All" : c.charAt(0).toUpperCase() + c.slice(1)) + '</button>';
-    }).join("");
+    var searchFilterBar =
+      '<div class="why-search-filter-bar">' +
+        '<div class="why-search-box">' +
+          '<span class="why-search-icon">' + icon("search") + '</span>' +
+          '<input type="text" id="why-search-input" class="why-search-input" placeholder="Search mechanisms, species, pathogens..." value="' + esc(whyState.query) + '" autocomplete="off" spellcheck="false">' +
+          '<button id="why-search-clear" class="why-search-clear" style="display:' + (whyState.query ? 'block' : 'none') + ';" title="Clear search">&times;</button>' +
+        '</div>' +
+        filterPillsHtml +
+        '<button class="why-challenge-btn" id="why-challenge-btn" title="Random diagnostic mechanism drill">' +
+          '<span>🧠</span> Challenge Me' +
+        '</button>' +
+      '</div>';
 
-    view.innerHTML = head + '<div class="tabs">' + chips + '</div><div id="whygrid" class="grid grid--auto"></div>';
+    view.innerHTML = head +
+      searchFilterBar +
+      '<div id="why-filter-info" class="muted mb-3" style="font-size:12.5px; font-weight:600;"></div>' +
+      '<div id="why-cards-grid" class="why-cards-grid"></div>';
 
-    function paint(cat) {
-      el("#whygrid").innerHTML = data
-        .filter(function (w) { return cat === "all" || w.category === cat; })
-        .map(function (w) {
-          var catIco = catIcons[w.category] || "pulse";
-          return '<article class="card whycard" id="why-' + w.id + '">' +
-            '<div class="row row--wrap">' +
-              '<span class="chip chip--accent">' + icon(catIco) + ' ' + esc(w.category || "mechanism") + '</span>' +
-              (w.comparison ? '<span class="chip">' + icon("target") + ' ' + esc(w.comparison) + '</span>' : '') +
-              (w.unit ? '<span class="chip chip--muted">' + esc(w.unit.toUpperCase().replace('-', ' ')) + '</span>' : '') +
-            '</div>' +
-            '<h3 class="card__title mt-3">' + esc(w.title) + '</h3>' +
-            '<div class="card__desc">' + (w.why || "") + '</div>' +
-            (w.mechanism && w.mechanism.length
-              ? '<ol class="chain mt-4">' + w.mechanism.map(function (s) { return '<li>' + s + '</li>'; }).join("") + '</ol>'
-              : '') +
-            (w.clinical ? '<div class="callout mt-4"><div class="callout__title">' + icon("shield") + ' At the clinic</div>' + w.clinical + '</div>' : '') +
-          '</article>';
-        }).join("") || '<div class="empty"><p>Nothing in this category yet.</p></div>';
+    // Wire search input
+    var searchInput = el("#why-search-input");
+    var searchClear = el("#why-search-clear");
+    if (searchInput) {
+      searchInput.addEventListener("input", function (e) {
+        whyState.query = e.target.value;
+        if (searchClear) searchClear.style.display = whyState.query ? "block" : "none";
+        paintWhyGrid();
+      });
+    }
+    if (searchClear) {
+      searchClear.addEventListener("click", function () {
+        whyState.query = "";
+        if (searchInput) searchInput.value = "";
+        searchClear.style.display = "none";
+        if (searchInput) searchInput.focus();
+        paintWhyGrid();
+      });
     }
 
-    paint("all");
-    if (state.params.a) {
-      setTimeout(function () {
-        var targetCard = el("#why-" + state.params.a);
-        if (targetCard) {
-          targetCard.scrollIntoView({ behavior: "smooth", block: "center" });
-          targetCard.style.outline = "2px solid var(--color-accent)";
-          targetCard.style.outlineOffset = "4px";
-        }
-      }, 80);
-    }
-    els("[data-cat]").forEach(function (b) {
-      b.addEventListener("click", function () {
-        els("[data-cat]").forEach(function (x) { x.classList.remove("is-active"); });
-        b.classList.add("is-active");
-        paint(b.getAttribute("data-cat"));
+    // Wire filter pills
+    els("[data-why-filter]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        els("[data-why-filter]").forEach(function (b) { b.classList.remove("is-active"); });
+        btn.classList.add("is-active");
+        whyState.filter = btn.getAttribute("data-why-filter");
+        paintWhyGrid();
       });
     });
+
+    // Wire Challenge Me button
+    var challengeBtn = el("#why-challenge-btn");
+    if (challengeBtn) {
+      challengeBtn.addEventListener("click", function () {
+        openWhyChallenge();
+      });
+    }
+
+    paintWhyGrid();
+
+    // Direct deep-link handling (#/why/15)
+    if (state.params.a) {
+      var directId = parseInt(state.params.a, 10);
+      if (!isNaN(directId)) {
+        setTimeout(function () {
+          openWhyModal(directId, false);
+        }, 80);
+      }
+    }
+  }
+
+  function paintWhyGrid() {
+    var grid = el("#why-cards-grid");
+    var info = el("#why-filter-info");
+    if (!grid) return;
+
+    var filtered = filterWhyList();
+    whyState.filteredList = filtered;
+
+    if (info) {
+      var countText = filtered.length === 1 ? "1 mechanism" : filtered.length + " mechanisms";
+      if (whyState.query) {
+        info.innerHTML = 'Showing <b>' + countText + '</b> matching "' + esc(whyState.query) + '"';
+      } else if (whyState.filter !== "all") {
+        info.innerHTML = 'Showing <b>' + countText + '</b> in active filter';
+      } else {
+        info.innerHTML = 'Showing all <b>' + countText + '</b>';
+      }
+    }
+
+    if (!filtered.length) {
+      grid.innerHTML =
+        '<div class="empty" style="grid-column: 1 / -1; padding: 40px 20px;">' +
+          '<div class="empty__icon">' + icon("search") + '</div>' +
+          '<h3>No matching mechanisms found</h3>' +
+          '<p class="muted">Try adjusting your search query or switching to "All Systems".</p>' +
+          '<button class="btn btn--sm btn--primary mt-3" id="why-reset-filters-btn">Reset Filters</button>' +
+        '</div>';
+      var resetBtn = el("#why-reset-filters-btn");
+      if (resetBtn) {
+        resetBtn.addEventListener("click", function () {
+          whyState.query = "";
+          whyState.filter = "all";
+          renderWhy();
+        });
+      }
+      return;
+    }
+
+    grid.innerHTML = filtered.map(function (w) {
+      var tagText = whyUnitLabels[w.unit] || (w.unit || "COMPARATIVE").toUpperCase().replace("-", " ");
+      var rawExcerpt = cleanWhyText(w.why || "");
+      var excerpt = rawExcerpt.length > 170 ? rawExcerpt.slice(0, 168) + "..." : rawExcerpt;
+
+      return '<article class="why-compact-card" data-why-id="' + w.id + '" tabindex="0" role="button" aria-label="' + esc(w.title) + '">' +
+        '<div class="why-card-top">' +
+          '<span class="why-card-tag">' + esc(tagText) + '</span>' +
+          '<button class="why-card-arrow" aria-label="Open details" tabindex="-1">&rarr;</button>' +
+        '</div>' +
+        '<h3 class="why-card-title" title="' + esc(w.title) + '">' + esc(w.title) + '</h3>' +
+        (w.comparison ? '<div class="why-card-comp"><span>⚖️</span> ' + esc(w.comparison) + '</div>' : '') +
+        '<div class="why-card-excerpt">' + esc(excerpt) + '</div>' +
+        '<div class="why-card-bottom">' +
+          '<button class="why-card-analyze" data-why-open="' + w.id + '" tabindex="-1">' +
+            'Analyze <span>🔬</span>' +
+          '</button>' +
+        '</div>' +
+      '</article>';
+    }).join("");
+
+    // Attach click events on compact cards
+    els(".why-compact-card").forEach(function (card) {
+      card.addEventListener("click", function (e) {
+        var id = parseInt(card.getAttribute("data-why-id"), 10);
+        openWhyModal(id, false);
+      });
+      card.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          var id = parseInt(card.getAttribute("data-why-id"), 10);
+          openWhyModal(id, false);
+        }
+      });
+    });
+  }
+
+  function openWhyModal(id, isChallenge) {
+    var allData = getWhyData();
+    var item = allData.find(function (w) { return w.id === id; });
+    if (!item) return;
+
+    whyState.modalId = id;
+    whyState.isChallenge = Boolean(isChallenge);
+    if (!isChallenge) {
+      whyState.challengeRevealed = true;
+    } else {
+      whyState.challengeRevealed = false;
+    }
+
+    try {
+      history.replaceState(null, "", "#/why/" + id);
+    } catch (e) {}
+
+    var modalRoot = document.getElementById("why-modal-root");
+    if (!modalRoot) {
+      modalRoot = document.createElement("div");
+      modalRoot.id = "why-modal-root";
+      document.body.appendChild(modalRoot);
+    } else if (modalRoot.parentElement !== document.body) {
+      document.body.appendChild(modalRoot);
+    }
+
+    var list = whyState.filteredList.length ? whyState.filteredList : allData;
+    var currentIndex = list.findIndex(function (w) { return w.id === id; });
+    var hasPrev = currentIndex > 0;
+    var hasNext = currentIndex !== -1 && currentIndex < list.length - 1;
+    var positionText = (currentIndex !== -1)
+      ? "Card " + (currentIndex + 1) + " of " + list.length
+      : "Card #" + id;
+
+    var unitLabel = whyUnitLabels[item.unit] || (item.unit || "COMPARATIVE").toUpperCase().replace("-", " ");
+
+    var modalHtml =
+      '<div class="why-modal-backdrop" id="why-modal-backdrop" role="dialog" aria-modal="true">' +
+        '<div class="why-modal-card" id="why-modal-card">' +
+          '<div class="why-modal-header">' +
+            '<div class="why-modal-tags">' +
+              '<span class="why-card-tag">' + esc(unitLabel) + '</span>' +
+              (item.comparison ? '<span class="why-card-tag" style="background:#fff7ed; color:#c2410c; border-color:#f97316;">⚖️ ' + esc(item.comparison) + '</span>' : '') +
+              (whyState.isChallenge ? '<span class="why-card-tag" style="background:#f3e8ff; color:#7e22ce; border-color:#a855f7;">🧠 CHALLENGE DRILL</span>' : '') +
+            '</div>' +
+            '<div style="display:flex; align-items:center; gap:8px;">' +
+              '<button class="btn btn--sm btn--subtle" id="why-modal-speak" title="Read explanation aloud">' +
+                icon("speaker") + ' Listen' +
+              '</button>' +
+              '<button class="why-modal-close" id="why-modal-close" aria-label="Close modal">&times;</button>' +
+            '</div>' +
+          '</div>' +
+          '<div class="why-modal-body" id="why-modal-body">' +
+            '<h2 class="why-modal-title">' + esc(item.title) + '</h2>' +
+            (whyState.isChallenge && !whyState.challengeRevealed ?
+              '<div class="why-modal-challenge-gate" style="text-align:center; padding:36px 20px; background:var(--surface-2); border-radius:14px; border:2px dashed var(--border); margin-top:12px;">' +
+                '<div style="font-size:42px; line-height:1; margin-bottom:12px;">🧠</div>' +
+                '<h3 style="font-size:18px; font-weight:800; margin-bottom:8px;">Diagnostic Recall Challenge</h3>' +
+                '<p style="color:var(--text-muted); font-size:14px; line-height:1.6; max-width:460px; margin:0 auto 20px auto;">' +
+                  'Can you recall the precise receptor, molecular cascade, or species difference before viewing the answer?' +
+                '</p>' +
+                '<button class="btn btn--primary" id="why-challenge-reveal" style="padding:10px 24px; font-size:14px; font-weight:750;">' +
+                  '🔍 Reveal Pathophysiology &amp; Field Rule' +
+                '</button>' +
+              '</div>'
+              :
+              '<div class="why-modal-section">' +
+                '<div class="why-modal-section-title">' +
+                  icon("pulse") + ' Molecular &amp; Cellular Pathogenesis' +
+                '</div>' +
+                '<div class="why-modal-text">' + (item.why || "") + '</div>' +
+              '</div>' +
+              (item.mechanism && item.mechanism.length ?
+                '<div class="why-modal-section" style="margin-top:20px;">' +
+                  '<div class="why-modal-section-title">' +
+                    icon("flow") + ' Pathogenesis Cascade' +
+                  '</div>' +
+                  '<ol class="chain mt-2">' +
+                    item.mechanism.map(function (step) { return '<li>' + esc(step) + '</li>'; }).join("") +
+                  '</ol>' +
+                '</div>' : '') +
+              (item.clinical ?
+                '<div class="why-modal-clinical">' +
+                  '<div class="why-modal-clinical-title">' +
+                    icon("shield") + ' Exam Distinction &amp; Practical Clinical Field Rule' +
+                  '</div>' +
+                  '<div>' + item.clinical + '</div>' +
+                '</div>' : '')
+            ) +
+          '</div>' +
+          '<div class="why-modal-footer">' +
+            '<div style="display:flex; align-items:center; gap:10px; font-size:13px; color:var(--text-muted); font-family:var(--font-mono, monospace);">' +
+              '<span>' + esc(positionText) + '</span>' +
+              '<span style="opacity:0.4;">•</span>' +
+              '<a href="#/quiz" class="muted" style="text-decoration:underline;">Test on Quiz &rarr;</a>' +
+            '</div>' +
+            '<div class="why-modal-nav-btns">' +
+              '<button class="btn btn--sm btn--subtle" id="why-modal-prev"' + (hasPrev ? '' : ' disabled') + '>&larr; Previous</button>' +
+              '<button class="btn btn--sm btn--subtle" id="why-modal-next"' + (hasNext ? '' : ' disabled') + '>Next &rarr;</button>' +
+            '</div>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+
+    modalRoot.innerHTML = modalHtml;
+    document.body.style.overflow = "hidden";
+
+    // Backdrop click
+    var backdrop = el("#why-modal-backdrop");
+    if (backdrop) {
+      backdrop.addEventListener("click", function (e) {
+        if (e.target === backdrop) closeWhyModal();
+      });
+    }
+
+    // Close button
+    var closeBtn = el("#why-modal-close");
+    if (closeBtn) {
+      closeBtn.addEventListener("click", closeWhyModal);
+    }
+
+    // Prev / Next buttons
+    var prevBtn = el("#why-modal-prev");
+    if (prevBtn && hasPrev) {
+      prevBtn.addEventListener("click", prevWhyModal);
+    }
+    var nextBtn = el("#why-modal-next");
+    if (nextBtn && hasNext) {
+      nextBtn.addEventListener("click", nextWhyModal);
+    }
+
+    // Speak button
+    var speakBtn = el("#why-modal-speak");
+    if (speakBtn) {
+      speakBtn.addEventListener("click", function () {
+        var speechContent = item.title + ". Pathogenesis: " + cleanWhyText(item.why) + ". Clinical distinction: " + cleanWhyText(item.clinical);
+        speak(speechContent);
+      });
+    }
+
+    // Challenge reveal button
+    var revealBtn = el("#why-challenge-reveal");
+    if (revealBtn) {
+      revealBtn.addEventListener("click", function () {
+        revealWhyChallenge();
+      });
+    }
+
+    // Keyboard navigation
+    window.removeEventListener("keydown", handleWhyModalKeydown);
+    window.addEventListener("keydown", handleWhyModalKeydown);
+  }
+
+  function handleWhyModalKeydown(e) {
+    if (!whyState.modalId) return;
+    if (e.key === "Escape") {
+      closeWhyModal();
+    } else if (e.key === "ArrowLeft") {
+      prevWhyModal();
+    } else if (e.key === "ArrowRight") {
+      nextWhyModal();
+    }
+  }
+
+  function closeWhyModal() {
+    whyState.modalId = null;
+    whyState.isChallenge = false;
+    document.body.style.overflow = "";
+    var modalRoot = document.getElementById("why-modal-root");
+    if (modalRoot) modalRoot.remove();
+    window.removeEventListener("keydown", handleWhyModalKeydown);
+    stopSpeech();
+    try {
+      history.replaceState(null, "", "#/why");
+    } catch (e) {}
+  }
+
+  function nextWhyModal() {
+    var allData = getWhyData();
+    var list = whyState.filteredList.length ? whyState.filteredList : allData;
+    var currentIndex = list.findIndex(function (w) { return w.id === whyState.modalId; });
+    if (currentIndex !== -1 && currentIndex < list.length - 1) {
+      openWhyModal(list[currentIndex + 1].id, whyState.isChallenge);
+    }
+  }
+
+  function prevWhyModal() {
+    var allData = getWhyData();
+    var list = whyState.filteredList.length ? whyState.filteredList : allData;
+    var currentIndex = list.findIndex(function (w) { return w.id === whyState.modalId; });
+    if (currentIndex > 0) {
+      openWhyModal(list[currentIndex - 1].id, whyState.isChallenge);
+    }
+  }
+
+  function openWhyChallenge() {
+    var allData = getWhyData();
+    var list = whyState.filteredList.length ? whyState.filteredList : allData;
+    if (!list.length) list = allData;
+    if (!list.length) return;
+    var randItem = list[Math.floor(Math.random() * list.length)];
+    openWhyModal(randItem.id, true);
+  }
+
+  function revealWhyChallenge() {
+    whyState.challengeRevealed = true;
+    toast("🧠 Challenge Completed! Pathogenesis Revealed.");
+    try {
+      burstConfetti();
+    } catch (e) {}
+    openWhyModal(whyState.modalId, true);
   }
 
   /* ============================================================
@@ -2977,7 +3344,7 @@ var app = (function () {
     }
     var lines = [
       "# Veterinary Pathology Study Highlights",
-      "ICAR-Indian Veterinary Research Institute · Izatnagar",
+      "Veterinary Pathology Studio · B.V.Sc. & A.H.",
       "Exported on: " + new Date().toLocaleDateString() + "\n"
     ];
     keys.forEach(function (id) {
@@ -3006,7 +3373,7 @@ var app = (function () {
     }
     var lines = [
       "# Veterinary Pathology Personal Notes",
-      "ICAR-Indian Veterinary Research Institute · Izatnagar",
+      "Veterinary Pathology Studio · B.V.Sc. & A.H.",
       "Exported on: " + new Date().toLocaleDateString() + "\n"
     ];
     keys.forEach(function (id) {
@@ -3968,7 +4335,13 @@ var app = (function () {
     setSrsNotificationTime: setSrsNotificationTime,
     toggleSpotterDetails: toggleSpotterDetails,
     shuffleWhyMechanism: shuffleWhyMechanism,
-    shuffleGlossaryTerm: shuffleGlossaryTerm
+    shuffleGlossaryTerm: shuffleGlossaryTerm,
+    openWhyModal: openWhyModal,
+    closeWhyModal: closeWhyModal,
+    nextWhyModal: nextWhyModal,
+    prevWhyModal: prevWhyModal,
+    openWhyChallenge: openWhyChallenge,
+    revealWhyChallenge: revealWhyChallenge
   };
 })();
 
