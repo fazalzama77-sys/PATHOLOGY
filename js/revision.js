@@ -166,7 +166,7 @@ var revisionApp = (function () {
   /* ============================================================
      SHEET
      ============================================================ */
-  function renderSheet(unitId) {
+  function renderSheet(unitId, focusId) {
     var u = unitById(unitId);
     if (!u) { app.go("#/revision"); return; }
     current = u;
@@ -241,6 +241,18 @@ var revisionApp = (function () {
 
     bind();
     paintTimer();
+
+    /* deep link from search: #/revision/<unitId>/<boxId> */
+    if (focusId) {
+      var target = el("#" + focusId, view);
+      if (target) {
+        setTimeout(function () {
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+          target.classList.add("is-flash");
+          setTimeout(function () { target.classList.remove("is-flash"); }, 1600);
+        }, 60);
+      }
+    }
   }
 
   function hasKind(b, k) {
@@ -516,7 +528,7 @@ var revisionApp = (function () {
     view = v;
     stopTick();
     timer.running = false;
-    if (params && params.a) renderSheet(params.a);
+    if (params && params.a) renderSheet(params.a, params.b);
     else { current = null; renderHub(); }
   }
 

@@ -152,6 +152,26 @@ const searchEngine = {
             });
         }
 
+        // 6. Index Rapid Revision cards
+        if (typeof revisionData !== 'undefined') {
+            Object.keys(revisionData).forEach(uid => {
+                const u = revisionData[uid];
+                (u.boxes || []).forEach(b => {
+                    searchEngine.index.push({
+                        type: 'revision',
+                        id: b.id,
+                        title: b.title,
+                        subtitle: `Rapid Revision · Unit ${u.no} · page ${b.page}`,
+                        description: searchEngine.stripHtml(b.html).substring(0, 260),
+                        badge: 'Revision',
+                        icon: 'fa-fire',
+                        color: 'var(--ivri-blue, #1565c0)',
+                        url: `#/revision/${uid}/${b.id}`
+                    });
+                });
+            });
+        }
+
         // 6. Index Glossary Dictionary (270+ terms)
         if (typeof glossary !== 'undefined' && typeof glossary.getAll === 'function') {
             glossary.getAll().forEach(item => {

@@ -230,6 +230,11 @@
 }
 .rev-box[hidden] { display: none; }
 .rev-box.is-done { border-color: color-mix(in srgb, var(--ok) 40%, var(--border)); }
+.rev-box.is-flash { animation: revFlash 1.6s var(--ease); }
+@keyframes revFlash {
+  0%, 100% { box-shadow: var(--shadow-sm); }
+  20%, 60% { box-shadow: 0 0 0 3px var(--accent-line), var(--shadow-md); }
+}
 
 .rev-box__head {
   display: flex; align-items: center; gap: var(--s2);

@@ -14,6 +14,7 @@ RUN IT AGAIN whenever you edit any revision/unit-*.html:
 ------------------------------------------------------------------
 """
 
+import html as _html
 import io
 import json
 import os
@@ -47,7 +48,9 @@ def clean(s):
 
 
 def strip_tags(s):
-    return clean(re.sub(r'<[^>]+>', '', s))
+    """Remove tags AND decode entities — titles are re-escaped by the app,
+    so leaving &amp; in place would double-escape it on screen."""
+    return clean(_html.unescape(re.sub(r'<[^>]+>', '', s)))
 
 
 def kinds_of(html):

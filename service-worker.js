@@ -6,19 +6,29 @@
        update in the background. The site opens instantly and
        works with no signal.
      - Images: cache as they are used, up to a sensible limit.
+     - Navigations: always fall back to index.html when offline,
+       so every #/route still resolves.
 
    IMPORTANT: bump CACHE_VERSION whenever you change any file in
    PRECACHE, otherwise students keep seeing the old version.
    ============================================================ */
 
-var CACHE_VERSION = "vpath-v15";
+var CACHE_VERSION = "vpath-v16";
 var SHELL_CACHE = CACHE_VERSION + "-shell";
 var IMG_CACHE = CACHE_VERSION + "-img";
+
+var MAX_IMAGES = 300;
 
 var PRECACHE = [
   "./",
   "index.html",
   "manifest.json",
+
+  "images/favicon-32.png",
+  "images/apple-touch-icon.png",
+  "images/icon-192.png",
+  "images/icon-512.png",
+  "images/icon-maskable-512.png",
 
   "assets/css/tokens.css",
   "assets/css/main.css",
@@ -62,6 +72,11 @@ var PRECACHE = [
   "js/app.js"
 ];
 
+/* Files are requested with cache-busting query strings in places
+   (e.g. revision.css?v=15). Matching with ignoreSearch means those
+   still hit the precached copy instead of failing offline. */
+var MATCH_OPTS = { ignoreSearch: true };
+
 self.addEventListener("install", function (e) {
   e.waitUntil(
     caches.open(SHELL_CACHE)
@@ -85,6 +100,19 @@ self.addEventListener("activate", function (e) {
   );
 });
 
+/* Lets the page tell a waiting worker to take over immediately. */
+self.addEventListener("message", function (e) {
+  if (e.data && e.data.type === "SKIP_WAITING") self.skipWaiting();
+});
+
+/* Keep the image cache from growing without bound. */
+function trimImageCache(cache) {
+  cache.keys().then(function (keys) {
+    if (keys.length <= MAX_IMAGES) return;
+    for (var i = 0; i < keys.length - MAX_IMAGES; i++) cache.delete(keys[i]);
+  });
+}
+
 self.addEventListener("fetch", function (e) {
   var req = e.request;
   if (req.method !== "GET") return;
@@ -92,17 +120,40 @@ self.addEventListener("fetch", function (e) {
   var url = new URL(req.url);
   if (url.origin !== location.origin) return;   // never touch third-party requests
 
-  // ---- Images: cache on first use ----
-  if (/\.(png|jpg|jpeg|webp|gif|svg)$/i.test(url.pathname)) {
+  // ---- Navigations: network first, fall back to the cached shell ----
+  if (req.mode === "navigate") {
     e.respondWith(
-      caches.open(IMG_CACHE).then(function (c) {
-        return c.match(req).then(function (hit) {
-          if (hit) return hit;
-          return fetch(req).then(function (res) {
-            if (res && res.status === 200) c.put(req, res.clone());
-            return res;
-          }).catch(function () { return hit; });
+      fetch(req).then(function (res) {
+        if (res && res.status === 200) {
+          var copy = res.clone();
+          caches.open(SHELL_CACHE).then(function (c) { c.put(req, copy); });
+        }
+        return res;
+      }).catch(function () {
+        return caches.match(req, MATCH_OPTS).then(function (hit) {
+          return hit || caches.match("index.html", MATCH_OPTS);
         });
+      })
+    );
+    return;
+  }
+
+  // ---- Images: cache on first use ----
+  if (/\.(png|jpg|jpeg|webp|gif|svg|ico)$/i.test(url.pathname)) {
+    e.respondWith(
+      // Icons are precached into the shell, so look there too.
+      caches.match(req, MATCH_OPTS).then(function (hit) {
+        if (hit) return hit;
+        return fetch(req).then(function (res) {
+          if (res && res.status === 200) {
+            var copy = res.clone();
+            caches.open(IMG_CACHE).then(function (c) {
+              c.put(req, copy);
+              trimImageCache(c);
+            });
+          }
+          return res;
+        }).catch(function () { return hit; });
       })
     );
     return;
@@ -110,7 +161,7 @@ self.addEventListener("fetch", function (e) {
 
   // ---- Everything else: cache first, refresh in background ----
   e.respondWith(
-    caches.match(req).then(function (hit) {
+    caches.match(req, MATCH_OPTS).then(function (hit) {
       var network = fetch(req).then(function (res) {
         if (res && res.status === 200) {
           var copy = res.clone();
@@ -118,9 +169,7 @@ self.addEventListener("fetch", function (e) {
         }
         return res;
       }).catch(function () {
-        // Offline and not cached: fall back to the app shell so
-        // hash routes still resolve.
-        return hit || caches.match("index.html");
+        return hit;
       });
       return hit || network;
     })

@@ -64,7 +64,7 @@ revisionData["unit-1"] = {
    "n": 3,
    "page": 1,
    "tone": "t1",
-   "title": "Branches &amp; course of disease",
+   "title": "Branches & course of disease",
    "stars": 0,
    "kinds": [
     "table",
@@ -277,7 +277,7 @@ revisionData["unit-1"] = {
    "n": 20,
    "page": 2,
    "tone": "t2",
-   "title": "FATTY CHANGE &amp; GLYCOGEN",
+   "title": "FATTY CHANGE & GLYCOGEN",
    "stars": 1,
    "kinds": [
     "flow",
@@ -443,7 +443,7 @@ revisionData["unit-1"] = {
    "n": 33,
    "page": 3,
    "tone": "t1",
-   "title": "INFLAMMATION — signs &amp; vascular sequence",
+   "title": "INFLAMMATION — signs & vascular sequence",
    "stars": 0,
    "kinds": [
     "flow",
@@ -561,7 +561,7 @@ revisionData["unit-1"] = {
    "n": 42,
    "page": 4,
    "tone": "t1",
-   "title": "IMMUNOPATHOLOGY — Coombs &amp; Gell",
+   "title": "IMMUNOPATHOLOGY — Coombs & Gell",
    "stars": 0,
    "kinds": [
     "table",
@@ -795,10 +795,10 @@ revisionData["unit-2"] = {
  "icon": "organs",
  "pages": 4,
  "pageTitles": [
-  "Digestive &amp; Respiratory System",
+  "Digestive & Respiratory System",
   "Musculoskeletal · Cardiovascular · Haematopoietic",
   "Lymphoid · Urinary · Reproductive",
-  "Nervous · Endocrine · Skin · Ear &amp; Eye"
+  "Nervous · Endocrine · Skin · Ear & Eye"
  ],
  "sheet": "revision/unit-2.html",
  "boxes": [
@@ -855,7 +855,7 @@ revisionData["unit-2"] = {
    "n": 5,
    "page": 1,
    "tone": "t6",
-   "title": "LIVER &amp; PANCREAS",
+   "title": "LIVER & PANCREAS",
    "stars": 0,
    "kinds": [
     "fact"
@@ -905,7 +905,7 @@ revisionData["unit-2"] = {
    "n": 9,
    "page": 2,
    "tone": "t6",
-   "title": "BONE &amp; JOINT",
+   "title": "BONE & JOINT",
    "stars": 1,
    "kinds": [
     "table"
@@ -953,7 +953,7 @@ revisionData["unit-2"] = {
    "n": 13,
    "page": 2,
    "tone": "t4",
-   "title": "Bone marrow &amp; white cells",
+   "title": "Bone marrow & white cells",
    "stars": 0,
    "kinds": [],
    "html": "<ul class=\"sm\">\n          <li><b>Aplastic anaemia / pancytopenia</b> — <b>bracken fern</b> (ptaquiloside), radiation, chloramphenicol, oestrogen toxicity in dogs, trichothecene mycotoxins</li>\n          <li><b>Myelophthisis</b> — marrow crowded out by tumour</li>\n          <li><b>Leukaemia</b> — neoplastic cells <b>in blood</b>; <b>lymphoma/lymphosarcoma</b> = solid tumour of lymphoid tissue, may be <b>aleukaemic</b></li>\n          <li><b>Polycythaemia</b> — relative (dehydration, the common one) vs absolute (primary or hypoxia-driven)</li>\n          <li><b>Leucopenia</b> — <b>viral</b> (CSF, BVD, IBD, panleukopenia, RD), overwhelming sepsis, endotoxaemia, radiation</li>\n        </ul>"
@@ -999,7 +999,7 @@ revisionData["unit-2"] = {
    "n": 17,
    "page": 3,
    "tone": "t5",
-   "title": "FEMALE GENITALIA &amp; PLACENTA",
+   "title": "FEMALE GENITALIA & PLACENTA",
    "stars": 0,
    "kinds": [
     "mem"
@@ -1011,7 +1011,7 @@ revisionData["unit-2"] = {
    "n": 18,
    "page": 3,
    "tone": "t5",
-   "title": "MALE GENITALIA &amp; UDDER",
+   "title": "MALE GENITALIA & UDDER",
    "stars": 0,
    "kinds": [
     "table"
@@ -1061,7 +1061,7 @@ revisionData["unit-2"] = {
    "n": 22,
    "page": 4,
    "tone": "t2",
-   "title": "EAR &amp; EYE",
+   "title": "EAR & EYE",
    "stars": 0,
    "kinds": [],
    "html": "<ul class=\"sm\">\n          <li><b>Otitis externa</b> — <i>Otodectes</i> ear mite, <i>Malassezia</i>, bacteria; long pendulous ears predispose</li>\n          <li><b>Aural haematoma</b> — blood between cartilage and perichondrium, from head shaking</li>\n          <li><b>Otitis media/interna</b> — head tilt, extension of pharyngeal infection through the Eustachian tube</li>\n          <li><b>IBK \"pinkeye\" ★</b> — <b><i>Moraxella bovis</i></b>, fly-spread; keratoconjunctivitis, corneal ulcer → opacity, possible perforation</li>\n          <li><b>\"BLUE EYE\" ★</b> — <b>anterior uveitis with corneal oedema</b> after <b>infectious canine hepatitis</b> (CAV-1) or its vaccine; a <b>Type III</b> immune-complex reaction</li>\n          <li><b>Equine recurrent uveitis (\"moon blindness\")</b> — immune-mediated, associated with <i>Leptospira</i>; leads to cataract, synechia and phthisis bulbi</li>\n          <li><b>Squamous cell carcinoma of the eye</b> — <b>Hereford</b> and other unpigmented-eyelid cattle, sunlight; commonest bovine eye tumour</li>\n          <li><b>Cataract</b> — lens opacity (diabetes, age, trauma) · <b>Glaucoma</b> — ↑ intraocular pressure, buphthalmos · <b>Exophthalmos</b> vs <b>enophthalmos</b></li>\n        </ul>"
@@ -1265,7 +1265,7 @@ revisionData["unit-3"] = {
    "n": 1,
    "page": 1,
    "tone": "t1",
-   "title": "Definitions &amp; structure",
+   "title": "Definitions & structure",
    "stars": 0,
    "kinds": [
     "flow",
@@ -1317,7 +1317,7 @@ revisionData["unit-3"] = {
    "n": 5,
    "page": 1,
    "tone": "t4",
-   "title": "AETIOLOGY &amp; CARCINOGENESIS",
+   "title": "AETIOLOGY & CARCINOGENESIS",
    "stars": 2,
    "kinds": [
     "table",
@@ -1357,7 +1357,7 @@ revisionData["unit-3"] = {
    "n": 8,
    "page": 2,
    "tone": "t4",
-   "title": "EFFECTS on the host &amp; paraneoplastic syndromes",
+   "title": "EFFECTS on the host & paraneoplastic syndromes",
    "stars": 0,
    "kinds": [
     "table"
@@ -1394,7 +1394,7 @@ revisionData["unit-3"] = {
    "n": 11,
    "page": 3,
    "tone": "t2",
-   "title": "MESENCHYMAL &amp; ROUND CELL TUMOURS",
+   "title": "MESENCHYMAL & ROUND CELL TUMOURS",
    "stars": 2,
    "kinds": [
     "table",
@@ -1472,7 +1472,7 @@ revisionData["unit-3"] = {
    "n": 17,
    "page": 5,
    "tone": "t3",
-   "title": "BIOPSY &amp; CYTOLOGY",
+   "title": "BIOPSY & CYTOLOGY",
    "stars": 0,
    "kinds": [
     "trap"
@@ -1484,7 +1484,7 @@ revisionData["unit-3"] = {
    "n": 18,
    "page": 5,
    "tone": "t6",
-   "title": "NECROPSY — objectives &amp; procedure",
+   "title": "NECROPSY — objectives & procedure",
    "stars": 2,
    "kinds": [
     "table",
@@ -1509,7 +1509,7 @@ revisionData["unit-3"] = {
    "n": 20,
    "page": 5,
    "tone": "t4",
-   "title": "SPECIMEN COLLECTION &amp; DISPATCH",
+   "title": "SPECIMEN COLLECTION & DISPATCH",
    "stars": 3,
    "kinds": [
     "table"
@@ -1521,7 +1521,7 @@ revisionData["unit-3"] = {
    "n": 21,
    "page": 5,
    "tone": "t3",
-   "title": "PM REPORT · VETEROLEGAL NECROPSY &amp; WOUNDS",
+   "title": "PM REPORT · VETEROLEGAL NECROPSY & WOUNDS",
    "stars": 2,
    "kinds": [
     "table",
@@ -1831,7 +1831,7 @@ revisionData["unit-4"] = {
    "n": 7,
    "page": 2,
    "tone": "t2",
-   "title": "CANINE &amp; FELINE viral diseases",
+   "title": "CANINE & FELINE viral diseases",
    "stars": 2,
    "kinds": [
     "table"
@@ -1843,7 +1843,7 @@ revisionData["unit-4"] = {
    "n": 8,
    "page": 2,
    "tone": "t6",
-   "title": "Ovine retroviral lung disease · Rota &amp; Corona · PRIONS",
+   "title": "Ovine retroviral lung disease · Rota & Corona · PRIONS",
    "stars": 0,
    "kinds": [
     "table"
@@ -1867,7 +1867,7 @@ revisionData["unit-4"] = {
    "n": 10,
    "page": 3,
    "tone": "t5",
-   "title": "TUBERCULOSIS &amp; JOHNE'S DISEASE",
+   "title": "TUBERCULOSIS & JOHNE'S DISEASE",
    "stars": 3,
    "kinds": [
     "table"
@@ -1879,7 +1879,7 @@ revisionData["unit-4"] = {
    "n": 11,
    "page": 3,
    "tone": "t5",
-   "title": "ANTHRAX &amp; the CLOSTRIDIA",
+   "title": "ANTHRAX & the CLOSTRIDIA",
    "stars": 3,
    "kinds": [
     "table",
@@ -1953,7 +1953,7 @@ revisionData["unit-4"] = {
    "n": 17,
    "page": 5,
    "tone": "t6",
-   "title": "SUPERFICIAL &amp; DEEP MYCOSES",
+   "title": "SUPERFICIAL & DEEP MYCOSES",
    "stars": 0,
    "kinds": [
     "table"
@@ -2387,8 +2387,8 @@ revisionData["unit-5"] = {
  "icon": "bird",
  "pages": 5,
  "pageTitles": [
-  "Avian Inflammation &amp; Viral Diseases I",
-  "Tumour Viruses &amp; Viral Diseases II",
+  "Avian Inflammation & Viral Diseases I",
+  "Tumour Viruses & Viral Diseases II",
   "Bacterial · Mycoplasmal · Chlamydial Diseases",
   "Mycoses · Mycotoxicoses · Parasites",
   "Nutritional Deficiencies · Miscellaneous Conditions · Vices · Drill"
@@ -2425,7 +2425,7 @@ revisionData["unit-5"] = {
    "n": 3,
    "page": 1,
    "tone": "t4",
-   "title": "IBD (Gumboro) &amp; CHICKEN INFECTIOUS ANAEMIA",
+   "title": "IBD (Gumboro) & CHICKEN INFECTIOUS ANAEMIA",
    "stars": 2,
    "kinds": [
     "table"
@@ -2449,7 +2449,7 @@ revisionData["unit-5"] = {
    "n": 5,
    "page": 1,
    "tone": "t5",
-   "title": "FOWL POX &amp; AVIAN INFLUENZA",
+   "title": "FOWL POX & AVIAN INFLUENZA",
    "stars": 0,
    "kinds": [
     "table"
@@ -2499,7 +2499,7 @@ revisionData["unit-5"] = {
    "n": 9,
    "page": 2,
    "tone": "t4",
-   "title": "EGG DROP SYNDROME &amp; REOVIRUS",
+   "title": "EGG DROP SYNDROME & REOVIRUS",
    "stars": 1,
    "kinds": [
     "table"
@@ -2558,7 +2558,7 @@ revisionData["unit-5"] = {
    "n": 14,
    "page": 3,
    "tone": "t6",
-   "title": "MYCOPLASMOSIS &amp; CHLAMYDIOSIS",
+   "title": "MYCOPLASMOSIS & CHLAMYDIOSIS",
    "stars": 2,
    "kinds": [
     "table"
@@ -2606,7 +2606,7 @@ revisionData["unit-5"] = {
    "n": 18,
    "page": 4,
    "tone": "t5",
-   "title": "COCCIDIOSIS &amp; HISTOMONIASIS",
+   "title": "COCCIDIOSIS & HISTOMONIASIS",
    "stars": 3,
    "kinds": [
     "table",
@@ -2929,7 +2929,7 @@ revisionData["unit-6"] = {
   "Diseases of Rats and Mice",
   "Diseases of Guinea Pigs and Rabbits",
   "Diseases of Wild Animals — Viral and Bacterial",
-  "Parasitic &amp; Nutritional Disease of Wildlife · Necropsy · Drill"
+  "Parasitic & Nutritional Disease of Wildlife · Necropsy · Drill"
  ],
  "sheet": "revision/unit-6.html",
  "boxes": [
@@ -2963,7 +2963,7 @@ revisionData["unit-6"] = {
    "n": 3,
    "page": 1,
    "tone": "t2",
-   "title": "Pseudotuberculosis &amp; Salmonellosis of rodents",
+   "title": "Pseudotuberculosis & Salmonellosis of rodents",
    "stars": 0,
    "kinds": [
     "table"

@@ -8,7 +8,19 @@
 <meta name="theme-color" content="#1565c0">
 
 <link rel="manifest" href="manifest.json">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%231565c0'/><text x='16' y='22' font-size='16' font-family='monospace' font-weight='bold' fill='white' text-anchor='middle'>VP</text></svg>">
+
+<!-- Icons. iOS ignores the manifest for the home-screen icon, so it needs
+     its own apple-touch-icon link. -->
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="images/icon-192.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+<!-- iOS standalone behaviour: launches full screen without Safari chrome -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Vet Pathology">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="Vet Pathology">
 
 <!-- Theme must be applied before first paint to avoid a white flash -->
 <script>
@@ -25,7 +37,7 @@
 <link rel="stylesheet" href="assets/css/sections.css">
 <link rel="stylesheet" href="assets/css/deep-guide.css">
 <link rel="stylesheet" href="assets/css/events.css">
-<link rel="stylesheet" href="assets/css/revision.css">
+<link rel="stylesheet" href="assets/css/revision.css?v=15">
 <link rel="stylesheet" href="assets/css/animations.css">
 </head>
 
@@ -237,19 +249,19 @@
 <script src="data/data-practical.JS"></script>
 <script src="data/data-why.JS"></script>
 <script src="data/data-qa.JS"></script>
-<script src="data/data-revision.JS"></script>
+<script src="data/data-revision.JS?v=15"></script>
 <script src="data/data-quiz.JS?v=12"></script>
 <script src="data/events-data.js"></script>
 
-<script src="js/store.js"></script>
+<script src="js/store.js?v=15"></script>
 <script src="js/quiz.js?v=12"></script>
 <script src="js/dashboard.js"></script>
 <script src="js/glossary.js"></script>
-<script src="js/search.js"></script>
+<script src="js/search.js?v=15"></script>
 <script src="js/deep-guide.js"></script>
 <script src="js/events.js"></script>
-<script src="js/revision.js"></script>
-<script src="js/app.js"></script>
+<script src="js/revision.js?v=15"></script>
+<script src="js/app.js?v=15"></script>
 
 <script>
   /* ---- Offline indicator ---- */
