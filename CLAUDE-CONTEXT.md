@@ -433,7 +433,7 @@ Whenever any AI assistant (Claude, Antigravity, ChatGPT) or Fazal finishes addin
 1. **Always edit in `D:/PATHOLOGY APPLICATION/`** (e.g. `data/data-theory-unit4.JS`, `js/app.js`).
 2. **Never drop flat, unorganized files into `repo/`**. The `repo/` folder must remain an exact mirror of the root structure.
 3. After completing any major content or feature update, remind Fazal to double-click `1-CLICK-PUSH-TO-GITHUB.bat` or run it for him if requested.
-4. **Before every release:** bump `CACHE_VERSION` in `service-worker.js` (currently **`vpath-v16`** → next release `vpath-v17`). Otherwise returning students keep the cached old version.
+4. **Before every release:** bump `CACHE_VERSION` in `service-worker.js` (currently **`vpath-v18`** → next release `vpath-v19`). Otherwise returning students keep the cached old version.
 
 ---
 
