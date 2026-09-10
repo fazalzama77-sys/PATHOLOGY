@@ -259,6 +259,12 @@ var app = (function () {
      RENDER DISPATCH
      ============================================================ */
   function render() {
+    var existingWhyModal = document.getElementById("why-modal-root");
+    if (existingWhyModal && state.section !== "why") {
+      existingWhyModal.remove();
+      document.body.style.overflow = "";
+      stopSpeech();
+    }
     var fn = {
       home: renderHome,
       theory: function () { renderStream("theory"); },
