@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.fazalzama.vetpathology",
+      "sha256_cert_fingerprints": [
+        "67:2F:1F:96:71:96:38:6D:A5:20:D4:26:5C:F2:98:70:55:C3:15:7D:02:25:E5:17:0B:70:DB:D5:61:7B:03:A7"
+      ]
+    }
+  }
+]

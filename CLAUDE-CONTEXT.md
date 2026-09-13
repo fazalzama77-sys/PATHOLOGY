@@ -4,7 +4,7 @@ Read this whole file before doing anything else. It tells you who I am, what we 
 building, the codebase layout, my conventions, and how I prefer to work. After reading,
 say "Got it — what do you want to work on?" and wait for my actual task.
 
-**Last updated:** 2026-09-05 (Hideable sidebar, global icons, 316-term glossary added)
+**Last updated:** 2026-09-13 (500-term complete glossary dictionary, hideable sidebar, global icons)
 
 ---
 
@@ -130,11 +130,11 @@ and `--ivri-purple` are the readable text/accent versions.
 ✅ Mobile bottom nav with Quiz FAB; PWA service worker
 ✅ **Hideable & Collapsible Desktop Navigation Panel**: `< Hide Sidebar` toggle button, `#menubtn` hamburger toggle, and <kbd>Ctrl</kbd> + <kbd>B</kbd> keyboard shortcut with smooth `0.25s` animated reflow
 ✅ **Clinical Icons Across All Views**: Inline SVGs for all sections, breadcrumbs, dynamic unit icons for Units 1–6, action toolbar, card badges, and quiz mode cards
-✅ **316-Term Veterinary Pathology Glossary Dictionary** (`js/glossary.js`):
-   - Comprehensive B.V.Sc UG curriculum terms across 9 clinical domains
+✅ **500-Term Veterinary Pathology Glossary Dictionary** (`js/glossary.js`):
+   - Comprehensive B.V.Sc UG curriculum terms across 9 clinical domains (expanded to exactly 500 terms)
    - In-lesson interactive hover tooltips with dynamic positioning and double-click SpeechSynthesis pronunciation
    - Dedicated `#/library/glossary` browser tab with live search filtering, 10 category chips, and audio speaker buttons
-   - Site-wide search engine (<kbd>Ctrl</kbd> + <kbd>K</kbd>) indexing all 316 terms with direct deep-linking
+   - Site-wide search engine (<kbd>Ctrl</kbd> + <kbd>K</kbd>) indexing all 500 terms with direct deep-linking
 ✅ **Animations & Transitions** (`assets/css/animations.css`): smooth micro-interactions, card elevates, and modal reveals
 
 ---
@@ -178,7 +178,7 @@ and `--ivri-purple` are the readable text/accent versions.
 │   ├── app.js               Router + shell + section renderers + highlighter + glossary UI
 │   ├── quiz.js              Quiz engine (window.quizApp)
 │   ├── dashboard.js         Analytics (window.dashboardApp)
-│   ├── glossary.js          316-term UG dictionary + tooltip decorator + SpeechSynthesis
+│   ├── glossary.js          500-term UG dictionary + tooltip decorator + SpeechSynthesis
 │   ├── search.js            Global search engine (<kbd>Ctrl</kbd>+<kbd>K</kbd>) indexing theory, prac, why, qa, quiz, glossary
 │   ├── deep-guide.js        Deep diagnostic guide overlay controller
 │   └── events.js            Scenario-based clinical pathology events
