@@ -617,13 +617,14 @@ table.tbl { width: 100%; border-collapse: collapse; font-size: var(--fs-base); }
   outline: none;
 }
 
-.gloss-term::after {
-  content: attr(data-def);
+/* Rendered as a single <body>-level element by glossary.js, so transformed
+   ancestors can't hijack its fixed positioning. */
+.gloss-tip {
   position: fixed;
-  left: var(--tt-left, 50%);
-  top: var(--tt-top, 100%);
-  width: var(--tt-width, 290px);
-  max-width: 330px;
+  left: 0;
+  top: 0;
+  width: 290px;
+  max-width: calc(100vw - 24px);
   padding: 10px 14px;
   background: var(--surface);
   color: var(--text);
@@ -642,7 +643,7 @@ table.tbl { width: 100%; border-collapse: collapse; font-size: var(--fs-base); }
   transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s;
 }
 
-.gloss-term:hover::after, .gloss-term:focus::after {
+.gloss-tip.is-on {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
