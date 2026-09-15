@@ -18,35 +18,35 @@ var quizApp = (function () {
   /* Sub-section metadata for Units 1 to 6 */
   var subSectionsByUnit = {
     "unit-1": [
-      { id: "u1-s1", icon: "🔬", title: "Cell Injury, Degeneration & Necrosis", desc: "Adaptations, cloudy swelling, fatty change, necrosis, gangrene & apoptosis" },
-      { id: "u1-s2", icon: "🩸", title: "Hemodynamic & Circulatory Disorders", desc: "Hyperemia, congestion, edema, hemorrhage, thrombosis, embolism & shock" },
-      { id: "u1-s3", icon: "🔥", title: "Acute & Chronic Inflammation", desc: "Vascular/cellular events, mediators, chemical signals, exudates & granulomas" },
-      { id: "u1-s4", icon: "🛡️", title: "Healing, Repair & Immune Pathology", desc: "Granulation tissue, wound repair, hypersensitivity & amyloidosis" },
-      { id: "u1-s5", icon: "🧬", title: "Neoplasia & Oncology Fundamentals", desc: "Benign vs malignant, metastasis, oncogenes, markers & staging" }
+      { id: "u1-s1", icon: "🔬", title: "Cell Injury, Adaptations & Degenerations", desc: "Aetiology, cellular adaptations, cloudy swelling, fatty change & amyloidosis" },
+      { id: "u1-s2", icon: "⚰️", title: "Necrosis, Apoptosis, Gangrene & Calcification", desc: "Coagulative, liquefactive, caseous, gangrene, apoptosis & dystrophic calcification" },
+      { id: "u1-s3", icon: "🩸", title: "Hemodynamic & Circulatory Disorders", desc: "Hyperemia, congestion, edema, hemorrhage, thrombosis, embolism & shock" },
+      { id: "u1-s4", icon: "🔥", title: "Acute & Chronic Inflammation & Repair", desc: "Vascular/cellular events, mediators, chemical signals, exudates & wound healing" },
+      { id: "u1-s5", icon: "🛡️", title: "Pigments, Growth Disturbances & Immunity", desc: "Endogenous/exogenous pigments, photosensitization, hypoplasia & hypersensitivity" }
     ],
     "unit-2": [
-      { id: "u2-s1", icon: "❤️", title: "Cardiovascular & Hematopoietic Pathology", desc: "Pericarditis, tiger heart, endocarditis, atherosclerosis, leukemias & lymphomas" },
-      { id: "u2-s2", icon: "🫁", title: "Respiratory System Pathology", desc: "Rhinitis, roaring, pulmonary edema, bronchopneumonia & atelectasis" },
-      { id: "u2-s3", icon: "🍽️", title: "Digestive & Hepatobiliary Pathology", desc: "Rumenitis, parakeratosis, enteritis, nutmeg liver, cirrhosis & jaundice" },
-      { id: "u2-s4", icon: "💧", title: "Urinary & Reproductive Pathology", desc: "Glomerulonephritis, nephrosis, pyelonephritis, metritis & pyometra" },
-      { id: "u2-s5", icon: "🧠", title: "Nervous & Musculoskeletal Systems", desc: "Meningitis, encephalomalacia, polioencephalomalacia, myositis & rickets" }
+      { id: "u2-s1", icon: "🍽️", title: "Digestive & Hepatobiliary Pathology", desc: "Stomatitis, rumenitis, enteritis, button ulcers, nutmeg liver, cirrhosis & jaundice" },
+      { id: "u2-s2", icon: "🫁", title: "Respiratory & Cardiovascular Pathology", desc: "Rhinitis, roaring, shipping fever, pneumonia, pericarditis & endocarditis" },
+      { id: "u2-s3", icon: "💧", title: "Urinary & Reproductive System Pathology", desc: "Glomerulonephritis, nephrosis, pyelonephritis, urolithiasis, metritis & pyometra" },
+      { id: "u2-s4", icon: "🧠", title: "Nervous, Musculoskeletal & Endocrine", desc: "Polioencephalomalacia, rabies, BSE, swayback, myositis, rickets & goitre" },
+      { id: "u2-s5", icon: "🩸", title: "Hematopoietic, Integumentary & Senses", desc: "Anemia types, sago spleen, diamond skin, greasy pig disease & keratitis" }
     ],
     "unit-3": [
-      { id: "u3-s1", icon: "🦠", title: "Bacterial Diseases of Large Animals", desc: "Anthrax, hemorrhagic septicemia (HS), blackquarter (BQ), brucellosis & glanders" },
-      { id: "u3-s2", icon: "🧫", title: "Clostridial & Mycobacterial Infections", desc: "Enterotoxemia, tetanus, botulism, bovine tuberculosis & Johne's disease" },
-      { id: "u3-s3", icon: "🧬", title: "Viral & Prion Diseases", desc: "FMD, rabies, swine fever, bluetongue, pox & scrapie/BSE" },
-      { id: "u3-s4", icon: "🍄", title: "Major Fungal & Mycotic Infections", desc: "Aspergillosis, blastomycosis, histoplasmosis, candidiasis & dermatophytosis" },
-      { id: "u3-s5", icon: "🪱", title: "Helminthic & Protozoal Parasitology", desc: "Fasciolosis, amphistomosis, hydatidosis, surra, theileriosis & babesiosis" }
+      { id: "u3-s1", icon: "🧬", title: "General Oncology & Carcinogenesis", desc: "Benign vs malignant, metastasis, viral/chemical carcinogenesis & tumor biology" },
+      { id: "u3-s2", icon: "🔬", title: "Tumor Classification, Diagnosis & Staging", desc: "Epithelial, mesenchymal, round cell tumors, grading & immunohistochemistry" },
+      { id: "u3-s3", icon: "🩸", title: "Clinical Hematology & Anemia Profiles", desc: "Erythron, PCV, regenerative/non-regenerative anemias, leukogram & bone marrow" },
+      { id: "u3-s4", icon: "🧪", title: "Diagnostic Cytology & Body Fluid Analysis", desc: "FNAC, transudate vs exudate, urinalysis, sediment & clinical chemistry" },
+      { id: "u3-s5", icon: "⚖️", title: "Necropsy Protocols, Forensics & Preservation", desc: "PM protocol, rigor mortis, forensic necropsy & 10% NBF tissue preservation" }
     ],
     "unit-4": [
-      { id: "u4-s1", icon: "⚖️", title: "Necropsy Protocols, Safety & Forensics", desc: "PM protocol, biosecurity, forensic procedures, rigor mortis & PM changes" },
-      { id: "u4-s2", icon: "🩸", title: "Hematology & Anemia Diagnostic Profiles", desc: "Erythron indices, PCV, regenerative anemias & leukogram evaluations" },
-      { id: "u4-s3", icon: "🔬", title: "Clinical Cytology & Body Fluid Analysis", desc: "FNA biopsy, transudate vs exudate, modified transudates & cytology" },
-      { id: "u4-s4", icon: "🧪", title: "Urinalysis & Clinical Renal Pathology", desc: "Specific gravity, casts, proteinuria, hematuria & sediment microscopy" },
-      { id: "u4-s5", icon: "🩺", title: "Hepatic, Pancreatic & Clinical Chemistry", desc: "Liver enzymes (ALT, AST, ALP), bilirubin, pancreatic amylase/lipase & BUN" },
-      { id: "u4-s6", icon: "🐄", title: "Necropsy Lesions of Ruminants & Equines", desc: "Systematic necropsy procedures and pathognomonic lesion identification" },
-      { id: "u4-s7", icon: "🐖", title: "Necropsy Lesions of Swine & Carnivores", desc: "Swine, canine & feline post-mortem patterns and diagnostic autopsy" },
-      { id: "u4-s8", icon: "📦", title: "Specimen Preservation & Diagnostic Packaging", desc: "Fixatives (10% NBF), tissue grossing, biopsy handling & transit cold chain" }
+      { id: "u4-s1", icon: "🐄", title: "Viral Diseases of Ruminants", desc: "FMD, rinderpest, MCF, bluetongue, PPR, rotavirus & sheep pox" },
+      { id: "u4-s2", icon: "🐕", title: "Viral Diseases of Equines, Swine & Carnivores", desc: "EIA, CSF, rabies, canine distemper, parvovirus & infectious canine hepatitis" },
+      { id: "u4-s3", icon: "🦠", title: "Major Bacterial Diseases (Anthrax, TB & Clostridia)", desc: "Anthrax, blackquarter, enterotoxemia, tetanus, bovine TB & Johne's disease" },
+      { id: "u4-s4", icon: "🧫", title: "Other Bacterial & Mycoplasmal Diseases", desc: "Hemorrhagic septicemia (HS), glanders, strangles, listeriosis, brucellosis & CBPP" },
+      { id: "u4-s5", icon: "🍄", title: "Fungal Diseases, Mycotoxicoses & Prions", desc: "Ringworm, aspergillosis, rhinosporidiosis, aflatoxicosis, degnala & BSE/scrapie" },
+      { id: "u4-s6", icon: "🪱", title: "Parasitic Pathology (Protozoa & Helminths)", desc: "Babesiosis, theileriosis, surra, fasciolosis, haemonchosis & cestodes" },
+      { id: "u4-s7", icon: "🩺", title: "Nutritional & Metabolic Disorders", desc: "Milk fever, ketosis, pregnancy toxemia, swayback, rickets & pica" },
+      { id: "u4-s8", icon: "☣️", title: "Toxicological Pathology (Metals, Plants & Chemicals)", desc: "Copper, arsenic, lead, nitrate/nitrite, HCN, bracken fern & lantana" }
     ],
     "unit-5": [
       { id: "u5-s1", icon: "🐓", title: "Avian Viral Respiratory & Systemic Diseases", desc: "Ranikhet (ND), infectious bronchitis (IB), ILT, avian influenza & fowl pox" },
