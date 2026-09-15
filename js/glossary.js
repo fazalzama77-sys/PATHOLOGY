@@ -22,7 +22,9 @@ const glossary = {
             "siderosis", "necrospermia", "mummification", "saponification", "ceroid",
             "haemofuscin", "bilichrome", "pseudojaundice", "hyaline cast", "fibrinoid change",
             "gout", "visceral gout", "articular gout", "tophi", "steatitis",
-            "zenker's necrosis", "parakeratosis", "hyperkeratosis", "acantholysis"
+            "zenker's necrosis", "parakeratosis", "hyperkeratosis", "acantholysis", "oncosis",
+            "ferroptosis", "pyroptosis", "autophagy", "hyalinuria", "liponecrosis",
+            "haematin", "haemoglobinuria"
         ],
         "Post-Mortem & Necropsy": [
             "autolysis", "putrefaction", "rigor mortis", "algor mortis", "livor mortis",
@@ -33,7 +35,9 @@ const glossary = {
             "cruor clot", "cooling curve", "marbling of skin", "bloat line", "formalin pigment",
             "carnoy's fluid", "gross specimen", "kaiserling's solution", "exfoliative cytology", "fine needle aspiration",
             "punch biopsy", "incisional biopsy", "excisional biopsy", "tache noire", "morbid anatomy",
-            "isosthenuria", "rouleaux formation", "anisokaryosis"
+            "isosthenuria", "rouleaux formation", "anisokaryosis", "necropsy protocol", "rigor mortis order",
+            "clot retraction", "autolytic sloughing", "formalin fixed tissue", "frozen section", "smear impression",
+            "clearing agent"
         ],
         "Disturbances of Growth": [
             "atrophy", "hypertrophy", "hyperplasia", "metaplasia", "dysplasia",
@@ -43,7 +47,9 @@ const glossary = {
             "microcephaly", "anencephaly", "palatoschisis", "cheiloschisis", "polydactyly",
             "syndactyly", "amelia", "phocomelia", "cyclopia", "hermaphroditism",
             "pseudohermaphroditism", "freemartin", "squamous metaplasia", "carcinoma in situ", "atrichia",
-            "dysraphism", "cranioschisis", "lipomatosis"
+            "dysraphism", "cranioschisis", "lipomatosis", "progeria", "brachygnathia",
+            "prognathism", "campylognathia", "arthrogryposis", "hydrops fetalis", "craniorachischisis",
+            "scoliosis"
         ],
         "Hemodynamics & Shock": [
             "hyperaemia", "congestion", "nutmeg liver", "heart failure cells", "brown induration",
@@ -58,7 +64,8 @@ const glossary = {
             "cor pulmonale", "pitting oedema", "anasarca foetalis", "hydrocele", "mural thrombus",
             "occlusive thrombus", "saddle thrombus", "paradoxical embolism", "air embolism", "fat embolism",
             "haematochezia", "suffusive haemorrhage", "petechial haemorrhage", "hypovolaemia", "pachymeningitis",
-            "perivascular cuffing"
+            "perivascular cuffing", "hypoproteinemia", "hypervolemia", "venous congestion", "recanalization",
+            "thromboembolus", "microangiopathy", "ecchymotic hemorrhage", "neurogenic shock"
         ],
         "Inflammation & Repair": [
             "inflammation", "cardinal signs", "rubor", "calor", "tumor",
@@ -71,7 +78,9 @@ const glossary = {
             "keloid", "leukodiapedesis", "exudation", "serofibrinous exudate", "diphtheritic membrane",
             "croupous membrane", "suppurative exudate", "caseonecrotic granuloma", "splendore-hoeppli phenomenon", "granulomatous lymphadenitis",
             "pyogranuloma", "keloidosis", "myofibroblast", "pericyte", "callus",
-            "sequestrum", "satellitosis", "neuronophagia", "pyrogen"
+            "sequestrum", "satellitosis", "neuronophagia", "pyrogen", "chemokine",
+            "granuloma pyogenic", "syncytium", "rosetting", "fibroplasia", "cicatrization",
+            "festering", "debridement"
         ],
         "Immunopathology": [
             "hypersensitivity", "anaphylaxis", "atopy", "arthus reaction", "serum sickness",
@@ -80,7 +89,9 @@ const glossary = {
             "immunodeficiency", "combined immunodeficiency", "failure of passive transfer", "isoerythrolysis", "autoimmune hemolytic anemia",
             "pemphigus vulgaris", "pemphigus foliaceus", "bullous pemphigoid", "myasthenia gravis", "polyarteritis nodosa",
             "arthus phenomenon", "serum sickness reaction", "amyloid a protein", "al amyloid", "coombs' test",
-            "haemochromatosis", "hypogammaglobulinemia", "type i hypersensitivity"
+            "haemochromatosis", "hypogammaglobulinemia", "type i hypersensitivity", "autoantibody", "type ii hypersensitivity",
+            "type iii hypersensitivity", "type iv hypersensitivity", "angioedema", "paraproteinemia", "alopecia areata",
+            "graft versus host disease"
         ],
         "Oncology & Neoplasia": [
             "neoplasia", "benign tumor", "malignant tumor", "carcinoma", "sarcoma",
@@ -93,7 +104,9 @@ const glossary = {
             "basal cell tumor", "sebaceous adenoma", "trichoepithelioma", "melanocytoma", "seminoma",
             "sertoli cell tumor", "granulosa cell tumor", "ameloblastoma", "epulis", "myxosarcoma",
             "gastrointestinal stromal tumor", "insulinoma", "pheochromocytoma", "plasma cell myeloma", "mastocytoma",
-            "cholangiocarcinoma", "anisocytosis", "atypical mitotic figure"
+            "cholangiocarcinoma", "anisocytosis", "atypical mitotic figure", "carcinoma solid", "sarcoma round cell",
+            "histiocytoma", "chordoma", "nephroblastoma", "craniopharyngioma", "syncytiotrophoblastoma",
+            "scirrhous carcinoma", "myeloproliferative disease", "papillomatosis"
         ],
         "Systemic Pathology": [
             "endocarditis", "vegetative endocarditis", "myocarditis", "pericarditis", "bread and butter pericarditis",
@@ -114,7 +127,9 @@ const glossary = {
             "abomasal displacement", "vagus indigestion", "rectal prolapse", "typhlocolitis", "steatohepatitis",
             "biliary cirrhosis", "acute pancreatitis", "exocrine pancreatic insufficiency", "glomerular sclerosis", "renal infarction",
             "cystitis emphysematosa", "cryptorchidism", "orchitis necrotizing", "subinvolution of placental sites", "heinz bodies",
-            "poikilocytosis", "hydrallantois", "hydramnios"
+            "poikilocytosis", "hydrallantois", "hydramnios", "myocardial infarction", "endocardiosis",
+            "emphysema alveolar", "pulmonary consolidation", "hydroperitoneum", "gastric dilation volvulus", "enterolith",
+            "cholelithiasis", "nephrolithiasis", "pyuria", "balanoposthitis", "hydrocephalus congenital"
         ],
         "Infectious & Avian Pathology": [
             "negri bodies", "cowdry type a", "cowdry type b", "guarnieri bodies", "bollinger bodies",
@@ -130,7 +145,9 @@ const glossary = {
             "avian encephalomyelitis", "blackhead disease", "pendulous crop", "bumblefoot", "cage layer fatigue",
             "round heart disease", "fatty liver hemorrhagic syndrome", "vesicular stomatitis", "canine distemper inclusions", "panleukopenia",
             "caseous lymphadenitis", "black disease", "prion", "bovine spongiform encephalopathy", "degnala disease",
-            "kyasanur forest disease"
+            "kyasanur forest disease", "scrapie", "braxy", "malignant catarrhal fever", "botulism",
+            "tetanus", "swayback", "enzootic ataxia", "bracken fern poisoning", "lantana poisoning",
+            "favus"
         ]
     },
 
@@ -635,7 +652,87 @@ const glossary = {
         "prion": "An infectious, misfolded proteinaceous particle lacking nucleic acid that induces conformational conversion of normal cellular prion protein (PrPC) into disease-associated PrPSc.",
         "bovine spongiform encephalopathy": "BSE or 'Mad Cow Disease'; a fatal transmissible neurodegenerative prion disease of cattle characterized by bilateral symmetric vacuolation of neurons and neuropil in the brainstem.",
         "degnala disease": "Mycotoxicosis in buffaloes and cattle caused by ingestion of Fusarium-contaminated rice straw, producing dry gangrene of the tail, ears, and distal extremities with sloughing.",
-        "kyasanur forest disease": "KFD; a tick-borne flaviviral hemorrhagic fever affecting monkeys (black-faced langurs, bonnet macaques) and wild animals in South India, causing necrotizing hepatitis and splenomegaly."
+        "kyasanur forest disease": "KFD; a tick-borne flaviviral hemorrhagic fever affecting monkeys (black-faced langurs, bonnet macaques) and wild animals in South India, causing necrotizing hepatitis and splenomegaly.",
+        "oncosis": "Ischemic cell death characterized by cellular swelling, blebbing, and increased membrane permeability prior to organelle rupture.",
+        "ferroptosis": "Non-apoptotic regulated cell death dependent on intracellular iron accumulation and lipid peroxidation of cellular membranes.",
+        "pyroptosis": "Inflammatory programmed cell death triggered by caspase-1 or caspase-11 activation and gasdermin D pore formation, common in intracellular bacterial infections.",
+        "autophagy": "Lysosomal degradation of cellular organelles and proteins to maintain metabolic homeostasis and cell survival during nutrient deprivation or cellular stress.",
+        "hyalinuria": "Presence of hyaline proteinaceous casts in the urine, indicating excessive glomerular filtration of plasma proteins in glomerulopathies.",
+        "liponecrosis": "Enzymatic or traumatic necrosis of adipose tissue characterized by lipid droplet leakage, saponification, and infiltration by foamy macrophages.",
+        "haematin": "A brownish-black ferric iron pigment formed by the oxidation of haemoglobin, visible as an artifact or in chronic liver fluke (Fascioloides) tracts.",
+        "haemoglobinuria": "Presence of free, uncomplexed hemoglobin in urine without intact erythrocytes, caused by severe intravascular hemolysis in babesiosis, bacillary hemoglobinuria, or copper toxicity.",
+        "necropsy protocol": "A standardized, systematic surgical sequence followed during veterinary post-mortem examination to inspect all cavities and visceral organs without cross-contamination.",
+        "rigor mortis order": "Nysten's law; the anatomical sequence of post-mortem muscular stiffening typically starting in the jaw and neck, progressing caudally to trunk and limbs.",
+        "clot retraction": "The spontaneous contraction and syneresis of a true antemortem fibrin clot mediated by platelet thrombosthenin, expressing serum and distinguishing it from post-mortem blood jellies.",
+        "autolytic sloughing": "Post-mortem detachment of epithelial mucosal sheets (e.g. ruminal papillae or intestinal villi) caused by hydrolytic enzymes rather than antemortem inflammation.",
+        "formalin fixed tissue": "Diagnostic tissue preserved in 10% neutral buffered formalin at a minimal fixative-to-tissue ratio of 10:1 to arrest autolysis and insolubilize tissue proteins.",
+        "frozen section": "Rapid histological sectioning of flash-frozen unfixed surgical tissue using a cryostat microtome for immediate intraoperative pathological diagnosis.",
+        "smear impression": "Touch imprint cytology prepared by gently touching the blotted cut surface of a fresh biopsy or excised lymph node directly onto a glass slide.",
+        "clearing agent": "An organic intermediate solvent (such as xylene) used in histological tissue processing to displace dehydrating ethanol and render the tissue miscible with paraffin wax.",
+        "progeria": "Rare congenital or hereditary condition characterized by accelerated premature biological aging and early tissue degeneration in young domestic animals.",
+        "brachygnathia": "Abnormal congenital shortening of the mandible ('parrot mouth') or maxilla ('monkey mouth') due to developmental failure of cranial ossification.",
+        "prognathism": "Congenital elongation and protrusion of the mandible beyond the maxilla, normal in brachycephalic dogs but an undesirable inherited defect in ruminants.",
+        "campylognathia": "Congenital lateral curvature or deviation of the rostral upper jaw, premaxilla, and nasal septum, commonly observed in foals and crias (wry nose).",
+        "arthrogryposis": "Congenital persistent fixation and flexure contracture of multiple joints, linked to in utero viral infection (Akabane, Schmallenberg) or maternal lupine ingestion.",
+        "hydrops fetalis": "Severe generalized subcutaneous edema and body cavity transudate accumulation in the fetus, associated with fetal cardiac defects, viral infection, or lymph blockage.",
+        "craniorachischisis": "The most severe form of congenital neural tube defect characterized by complete absence of skull closure and open exposed spinal cord along the entire vertebral column.",
+        "scoliosis": "Lateral deviation or spinal curvature of the vertebral column away from the vertical axis, caused by hemivertebrae, muscle imbalances, or congenital malformations.",
+        "hypoproteinemia": "Abnormally diminished concentration of total plasma proteins in the blood, reducing intravascular colloidal osmotic pressure and precipitating generalized edema.",
+        "hypervolemia": "Abnormal expansion of the circulating blood volume causing elevated central venous pressure, cardiac volume overload, and pulmonary edema.",
+        "venous congestion": "Passive pooling and engorgement of capillaries and venules in an organ or tissue resulting from mechanical obstruction or impaired venous drainage.",
+        "recanalization": "Ingrowth of new capillary vascular channels through an organized fibrous thrombus to partially restore downstream luminal blood flow.",
+        "thromboembolus": "A dislodged fragment of an intravascular blood clot transported by the bloodstream to lodge in and obstruct a distant, narrower vascular caliber.",
+        "microangiopathy": "Pathological disease or damage to the microvasculature (arterioles, capillaries), leading to microthrombosis, endothelial necrosis, and localized tissue ischemia.",
+        "ecchymotic hemorrhage": "Irregular, flat extravasation of blood (3 to 10 mm in diameter) into skin, mucous membranes, or serosa, intermediate in size between petechiae and suffusions.",
+        "neurogenic shock": "Severe form of distributive shock caused by sudden loss of sympathetic vasomotor tone from acute spinal trauma, producing profound systemic vasodilation and hypotension.",
+        "chemokine": "A family of small chemotactic cytokines (such as IL-8) that recruit and guide specific inflammatory leukocytes along a concentration gradient to sites of infection.",
+        "granuloma pyogenic": "A rapidly growing, benign vascular nodule composed of proliferating capillary-rich granulation tissue and dense neutrophilic infiltrates at mucosal wound sites.",
+        "syncytium": "A multinucleated protoplasmic mass formed by the viral fusion of adjacent infected epithelial cells, diagnostic of Bovine Respiratory Syncytial Virus (BRSV) infection.",
+        "rosetting": "Clustering of immune effector cells (such as macrophages or lymphocytes) around a central target cell, bacterium, or antigen-coated erythrocyte.",
+        "fibroplasia": "The proliferative phase of repair characterized by migration and active division of fibroblasts with extensive synthesis of extracellular collagenous matrix.",
+        "cicatrization": "The final maturation phase of wound healing wherein granulation tissue remodels into a dense, contracted, relatively avascular collagenous scar (cicatrix).",
+        "festering": "Persistent suppurative inflammation characterized by sustained neutrophil necrosis, liquefaction, and progressive pus accumulation without resolution.",
+        "debridement": "The physiological, enzymatic, or surgical excision of devitalized necrotic tissue, pus, and foreign contaminants from a wound bed to permit granulation.",
+        "autoantibody": "An immunoglobulin synthesized by host B lymphocytes that specifically targets and binds to the animal's own self-antigens, mediating autoimmune pathology.",
+        "type ii hypersensitivity": "Cytotoxic antibody-mediated reaction wherein IgG or IgM binds fixed cell-surface antigens, triggering complement activation or phagocytosis (e.g. Neonatal Isoerythrolysis).",
+        "type iii hypersensitivity": "Immune-complex mediated reaction where soluble antigen-antibody lattices deposit in vascular beds and renal glomeruli, inducing complement activation and vasculitis.",
+        "type iv hypersensitivity": "Cell-mediated delayed hypersensitivity governed by sensitized CD4+ T-helper 1 lymphocytes and activated macrophages without antibody involvement (e.g. Tuberculin reaction).",
+        "angioedema": "Rapidly developing, non-pitting edema of deep dermis, subcutis, or submucosa triggered by mast-cell histamine and bradykinin release in immediate hypersensitivity.",
+        "paraproteinemia": "Presence of excessive quantities of a single monoclonal immunoglobulin or light chain (paraprotein) in serum, diagnostic of multiple myeloma.",
+        "alopecia areata": "Autoimmune non-scarring dermatosis driven by CD8+ cytotoxic T lymphocytes targeting the bulb of anagen hair follicles, producing circumscribed patches of hair loss.",
+        "graft versus host disease": "Systemic immunopathological disorder wherein immunocompetent allogeneic donor lymphocytes attack the histocompatibility antigens of an immunocompromised recipient host.",
+        "carcinoma solid": "Malignant epithelial neoplasm arranged in dense cohesive sheets or nests without forming distinct glandular lumens, tubules, or keratin pearls.",
+        "sarcoma round cell": "Category of malignant mesenchymal/hematopoietic neoplasms composed of discrete, non-cohesive round cells, including lymphoma, mast cell tumor, TVT, and histiocytoma.",
+        "histiocytoma": "Benign, rapidly growing cutaneous round cell tumor of young dogs originating from epidermal Langerhans cells, uniquely prone to spontaneous T-cell-mediated regression.",
+        "chordoma": "Rare neoplasm derived from embryonic notochord remnants, typically developing in the coccygeal vertebrae of ferrets and cervical spine of dogs.",
+        "nephroblastoma": "Wilms' tumor; embryonal mixed malignant neoplasm of the kidney containing neoplastic epithelial tubules, primitive blastema, and mesenchymal stroma, seen in pigs and poultry.",
+        "craniopharyngioma": "Congenital slow-growing epithelial neoplasm arising from epithelial remnants of Rathke's pouch near the pituitary gland, compressing the hypothalamus in dogs.",
+        "syncytiotrophoblastoma": "Extremely rare malignant gestational trophoblastic neoplasm derived from syncytiotrophoblasts, characterized by marked hemorrhage and vascular invasion.",
+        "scirrhous carcinoma": "Malignant epithelial tumor that incites an intense, dense collagenous desmoplastic stromal reaction, imparting a stony-hard, contracted consistency to the mass.",
+        "myeloproliferative disease": "A group of clonal neoplastic disorders of non-lymphoid hematopoietic stem cells in the bone marrow, including myeloid, erythroid, and megakaryocytic leukemias.",
+        "papillomatosis": "Multiple benign epithelial papillomas (warts) induced by species-specific papillomaviruses on the skin, teats, or mucosa of cattle, horses, and dogs.",
+        "myocardial infarction": "Focal area of ischemic coagulative necrosis in the myocardium resulting from sudden coronary arterial thrombosis, embolus, or severe systemic hypotension.",
+        "endocardiosis": "Age-related myxomatous nodular degeneration of the atrioventricular heart valves (particularly mitral valve) in dogs, leading to chronic valvular regurgitation.",
+        "emphysema alveolar": "Pathological overdistension and permanent enlargement of pulmonary air spaces distal to terminal bronchioles accompanied by destruction of alveolar septal walls.",
+        "pulmonary consolidation": "Solidification of spongy lung parenchyma into a firm, liver-like mass caused by alveolar filling with inflammatory exudate, cells, and fibrin during acute pneumonia.",
+        "hydroperitoneum": "Abnormal accumulation of serous transudate in the peritoneal cavity caused by portal hypertension, right-sided heart failure, or severe hypoproteinemia.",
+        "gastric dilation volvulus": "GDV; life-threatening acute distension of the stomach with gas and fluid accompanied by clockwise rotation along its mesenteric axis, compromising venous return.",
+        "enterolith": "A hard, mineralized calculus (typically ammonium magnesium phosphate / struvite) formed in the large colon of horses around a foreign nidus, causing fatal impaction.",
+        "cholelithiasis": "Formation of gallstones (choleliths) composed of bilirubin, cholesterol, and calcium within the gallbladder or bile ducts, leading to biliary obstruction and jaundice.",
+        "nephrolithiasis": "Formation or presence of calculi (uroliths) in the renal pelvis or calyces, causing hydronephrosis, renal colic, and predisposing to pyelonephritis.",
+        "pyuria": "Excretion of elevated numbers of white blood cells (pus cells) in urine, indicating active suppurative inflammation in the kidneys, bladder, or urethra.",
+        "balanoposthitis": "Concurrent inflammation of the glans penis (balanitis) and prepuce (posthitis), seen in bulls with Bovine Herpesvirus-1 or wethers on high-protein diets.",
+        "hydrocephalus congenital": "Congenital pathological accumulation of cerebrospinal fluid in the cerebral ventricles due to developmental stenosis of the mesencephalic aqueduct, causing dome-shaped calvaria.",
+        "scrapie": "Fatal neurodegenerative prion disease of sheep and goats characterized by intense pruritus with fleece rubbing, tremors, ataxia, and neuronal vacuolation.",
+        "braxy": "Acute, highly fatal abomasitis of young sheep caused by Clostridium septicum proliferating after ingestion of frozen succulent feed, producing dark hemorrhagic abomasal walls.",
+        "malignant catarrhal fever": "Fatal lymphoproliferative and necrotizing vasculitis of cattle and deer caused by gammaherpesviruses (AlHV-1 or OvHV-2), producing severe corneal opacity ('blue eye'), oral erosions, and generalized lymphadenopathy.",
+        "botulism": "Severe flaccid motor paralysis resulting from ingestion of Clostridium botulinum neurotoxin, which blocks the release of acetylcholine at peripheral neuromuscular junctions.",
+        "tetanus": "Severe spastic paralysis ('sawhorse posture') caused by tetanospasmin neurotoxin from Clostridium tetani, which blocks glycine and GABA release from inhibitory interneurons.",
+        "swayback": "Congenital neurodegenerative disease of newborn lambs caused by maternal copper deficiency, characterized by cavitation and gelatinous softening of cerebral white matter.",
+        "enzootic ataxia": "Delayed form of copper-deficiency neurodysfunction in lambs aged 1 to 6 months, exhibiting progressive hindlimb incoordination and spinal cord myelin degeneration.",
+        "bracken fern poisoning": "Enzootic hematuria and bone marrow aplasia in cattle caused by ptaquiloside toxin from Pteridium aquilinum, inducing hemorrhagic cystitis and bladder tumors.",
+        "lantana poisoning": "Hepatogenous photosensitization in cattle caused by triterpenoid lantadenes A and B from Lantana camara, causing severe cholestasis, icterus, and photodermatitis.",
+        "favus": "Avian ringworm; fungal dermatophytosis caused by Microsporum gallinae affecting the unfeathered comb and wattles of chickens, producing white chalky crusts."
     },
 
     // Return all terms as an array of objects: { term, def, category }
