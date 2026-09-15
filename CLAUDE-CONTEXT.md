@@ -4,7 +4,7 @@ Read this whole file before doing anything else. It tells you who I am, what we 
 building, the codebase layout, my conventions, and how I prefer to work. After reading,
 say "Got it — what do you want to work on?" and wait for my actual task.
 
-**Last updated:** 2026-09-13 (500-term complete glossary dictionary, hideable sidebar, global icons)
+**Last updated:** 2026-09-15 (580-term comprehensive glossary dictionary, hideable sidebar, global icons)
 
 ---
 
