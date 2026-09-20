@@ -88,14 +88,21 @@ var quizApp = (function () {
         (b[f] || []).forEach(function (q, i) {
           if (!q.q || !String(q.q).trim()) return;   // skip empty template rows
           if (subSectionId && subSectionId !== "all" && q.subSection !== subSectionId) return;
+          var opts = q.o;
+          var ans = q.a;
+          if (f === "mcq" && Array.isArray(opts) && typeof ans === "number") {
+            var mixed = shuffleOptions(opts, ans);
+            opts = mixed.o;
+            ans = mixed.a;
+          }
           out.push({
             key: uid + ":" + f + ":" + i,
             format: f,
             unitId: uid,
             subSection: q.subSection || null,
             q: q.q,
-            o: q.o,
-            a: q.a,
+            o: opts,
+            a: ans,
             a_display: q.a_display || (Array.isArray(q.a) ? q.a[0] : q.a),
             e: q.e,
             topicId: q.topicId || null,
@@ -105,6 +112,22 @@ var quizApp = (function () {
       });
     });
     return out;
+  }
+
+  /* Most MCQs were authored with the correct choice written first. Shuffle the
+     options (and move the answer index with them) so the right answer is not
+     almost always option A. */
+  function shuffleOptions(options, answerIdx) {
+    var order = [];
+    for (var k = 0; k < options.length; k++) order.push(k);
+    for (var i = order.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var t = order[i]; order[i] = order[j]; order[j] = t;
+    }
+    return {
+      o: order.map(function (idx) { return options[idx]; }),
+      a: order.indexOf(answerIdx)
+    };
   }
 
   function scopeUnits(kind, id) {
