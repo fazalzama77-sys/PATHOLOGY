@@ -198,6 +198,143 @@ var dashboardApp = (function () {
     attachDashboardEvents(host, allUnits, readMap, quiz);
   }
 
+  /* ---------- Tab bar ---------- */
+  function renderTabs() {
+    var tabs = [
+      { id: "overview", label: "Overview", icon: "\ud83c\udfaf" },
+      { id: "performance", label: "Performance", icon: "\ud83d\udcc8" },
+      { id: "syllabus", label: "Syllabus", icon: "\ud83d\udcda" },
+      { id: "memory", label: "Memory", icon: "\ud83e\udde0" }
+    ];
+    return '<div class="dashtabs" role="tablist">' +
+      tabs.map(function (t) {
+        return '<button class="dashtab' + (activeTab === t.id ? ' is-on' : '') + '" role="tab" ' +
+          'aria-selected="' + (activeTab === t.id) + '" data-tab="' + t.id + '">' +
+          '<span class="dashtab__ico">' + t.icon + '</span>' + t.label +
+        '</button>';
+      }).join("") +
+    '</div>';
+  }
+
+  /* ---------- Today: goal, review queue, exam countdown ---------- */
+  function renderTodayCard(streak, dueCards, allUnits, readMap) {
+    var today = store.todayQuiz ? store.todayQuiz() : { q: 0, c: 0, s: 0 };
+    var goals = store.getGoals ? store.getGoals() : { daily: 20 };
+    var goal = goals.daily || 20;
+    var done = today.q || 0;
+    var pct = Math.min(100, Math.round((done / goal) * 100));
+    var left = Math.max(0, goal - done);
+    var acc = today.q ? Math.round((today.c / today.q) * 100) : null;
+
+    var days = store.daysToExam ? store.daysToExam() : null;
+    var nextTopic = findNextUnreadTopic(allUnits, readMap);
+
+    var examHtml;
+    if (days === null) {
+      examHtml =
+        '<div class="today-exam">' +
+          '<div class="today-exam__lbl">Exam date</div>' +
+          '<input type="date" id="examdate" class="today-date" aria-label="Set your exam date">' +
+          '<p class="small faint mt-1">Set it to see a countdown and a daily pace.</p>' +
+        '</div>';
+    } else {
+      var pace = days > 0 ? Math.ceil(Math.max(0, (goal * days)) / Math.max(1, days)) : 0;
+      examHtml =
+        '<div class="today-exam">' +
+          '<div class="today-exam__lbl">' + (days >= 0 ? 'Exam countdown' : 'Exam date passed') + '</div>' +
+          '<div class="today-exam__val">' + Math.abs(days) + ' <small>day' + (Math.abs(days) === 1 ? '' : 's') +
+            (days >= 0 ? ' left' : ' ago') + '</small></div>' +
+          (days > 0
+            ? '<p class="small faint mt-1">' + (goal * days).toLocaleString() + ' questions at your current pace of ' + pace + '/day.</p>'
+            : '') +
+          '<input type="date" id="examdate" class="today-date mt-2" value="' + (goals.examDate || '') + '" aria-label="Change your exam date">' +
+        '</div>';
+    }
+
+    return '<section class="today-card">' +
+      '<div class="today-goal">' +
+        '<div class="today-ring">' + app.ringHtml(pct, 96) + '</div>' +
+        '<div>' +
+          '<h3 class="today-title">Today\u2019s target</h3>' +
+          '<p class="today-sub">' + done + ' of ' + goal + ' questions' +
+            (acc !== null ? ' \u00b7 ' + acc + '% accurate' : '') + '</p>' +
+          '<p class="small ' + (left ? 'muted' : 'ok-text') + ' mt-1">' +
+            (left ? left + ' to go \u2014 about ' + Math.max(1, Math.round(left * 0.5)) + ' minutes.' : '\u2705 Target met. Anything more is a bonus.') +
+          '</p>' +
+          '<div class="row gap-2 mt-2 items-center">' +
+            '<button class="btn btn--sm" data-goal="-5" aria-label="Lower the daily target">\u2212</button>' +
+            '<span class="small faint">daily target</span>' +
+            '<button class="btn btn--sm" data-goal="5" aria-label="Raise the daily target">+</button>' +
+          '</div>' +
+        '</div>' +
+      '</div>' +
+
+      '<div class="today-actions">' +
+        '<a class="today-tile' + (dueCards ? ' is-urgent' : '') + '" href="#/quiz/review">' +
+          '<span class="today-tile__val">' + dueCards + '</span>' +
+          '<span class="today-tile__lbl">due for review</span>' +
+        '</a>' +
+        '<div class="today-tile">' +
+          '<span class="today-tile__val">' + streak.current + '</span>' +
+          '<span class="today-tile__lbl">day streak</span>' +
+        '</div>' +
+        (nextTopic
+          ? '<a class="today-tile is-wide" href="#/topic/' + nextTopic.id + '">' +
+              '<span class="today-tile__lbl">Next lesson</span>' +
+              '<span class="today-tile__title">' + app.esc(shorten(nextTopic.title, 34)) + '</span>' +
+            '</a>'
+          : '<a class="today-tile is-wide" href="#/quiz">' +
+              '<span class="today-tile__lbl">Syllabus complete</span>' +
+              '<span class="today-tile__title">Test yourself instead</span>' +
+            '</a>') +
+      '</div>' +
+
+      examHtml +
+    '</section>';
+  }
+
+  /* ---------- This week vs last week ---------- */
+  function renderWeekCard() {
+    if (!store.quizDaysRange) return '';
+    var thisWeek = store.quizDaysRange(7, 0);
+    var lastWeek = store.quizDaysRange(14, 7);
+
+    if (!thisWeek.q && !lastWeek.q) {
+      return '<div class="heatmap-card-elite">' +
+        '<h3>This week</h3>' +
+        '<p class="muted small mt-1">Your weekly volume, accuracy and time will appear here.</p>' +
+        '<div class="card p-5 text-center mt-4 text-muted">No questions answered in the last 7 days.' +
+          '<br><a class="btn btn--primary btn--sm mt-3" href="#/quiz">Start a quiz</a></div>' +
+      '</div>';
+    }
+
+    var accNow = thisWeek.q ? Math.round(thisWeek.c / thisWeek.q * 100) : 0;
+    var accPrev = lastWeek.q ? Math.round(lastWeek.c / lastWeek.q * 100) : 0;
+    var minsNow = Math.round(thisWeek.s / 60);
+
+    function delta(now, prev, suffix) {
+      if (!prev) return '<span class="small faint">first week of data</span>';
+      var d = now - prev;
+      var cls = d > 0 ? "chip--ok" : d < 0 ? "chip--danger" : "";
+      var sign = d > 0 ? "+" : "";
+      return '<span class="chip ' + cls + '">' + sign + d + (suffix || '') + ' vs last week</span>';
+    }
+
+    return '<div class="heatmap-card-elite">' +
+      '<h3>This week</h3>' +
+      '<p class="muted small mt-1">Rolling 7 days, compared with the 7 before it.</p>' +
+      '<div class="week-grid mt-4">' +
+        '<div><div class="week-val">' + thisWeek.q + '</div><div class="week-lbl">questions</div>' +
+          '<div class="mt-1">' + delta(thisWeek.q, lastWeek.q) + '</div></div>' +
+        '<div><div class="week-val">' + accNow + '%</div><div class="week-lbl">accuracy</div>' +
+          '<div class="mt-1">' + delta(accNow, accPrev, '%') + '</div></div>' +
+        '<div><div class="week-val">' + (minsNow >= 60 ? (Math.round(minsNow / 6) / 10) + 'h' : minsNow + 'm') + '</div>' +
+          '<div class="week-lbl">time in tests</div>' +
+          '<div class="mt-1"><span class="small faint">' + thisWeek.days + ' active day' + (thisWeek.days === 1 ? '' : 's') + '</span></div></div>' +
+      '</div>' +
+    '</div>';
+  }
+
   /* ---------- Rank calculation ---------- */
   function getRank(xp) {
     if (xp >= 750) {
@@ -863,6 +1000,42 @@ var dashboardApp = (function () {
 
   /* ---------- Attach UI events ---------- */
   function attachDashboardEvents(host, allUnits, readMap, quiz) {
+    // Tabs
+    host.querySelectorAll(".dashtab").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        activeTab = btn.getAttribute("data-tab") || "overview";
+        if (store.setDashTab) store.setDashTab(activeTab);
+        host.querySelectorAll(".dashtab").forEach(function (b) {
+          var on = b === btn;
+          b.classList.toggle("is-on", on);
+          b.setAttribute("aria-selected", String(on));
+        });
+        host.querySelectorAll(".dashpanel").forEach(function (panel) {
+          panel.hidden = panel.getAttribute("data-panel") !== activeTab;
+        });
+        var top = host.querySelector(".dashtabs");
+        if (top) top.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    });
+
+    // Daily target
+    host.querySelectorAll("[data-goal]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        if (!store.setDailyGoal || !store.getGoals) return;
+        var step = parseInt(btn.getAttribute("data-goal"), 10) || 0;
+        store.setDailyGoal((store.getGoals().daily || 20) + step);
+        render(host);
+      });
+    });
+
+    // Exam date
+    var examInput = host.querySelector("#examdate");
+    if (examInput) examInput.addEventListener("change", function () {
+      if (!store.setExamDate) return;
+      store.setExamDate(examInput.value || null);
+      render(host);
+    });
+
     var filterBtns = host.querySelectorAll(".matrix-tab-btn");
     var container = host.querySelector("#unit-matrix-container");
 
