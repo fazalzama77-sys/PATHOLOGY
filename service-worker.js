@@ -34,7 +34,6 @@ var PRECACHE = [
   "assets/css/main.css",
   "assets/css/sections.css",
   "assets/css/deep-guide.css",
-  "assets/css/events.css",
   "assets/css/revision.css",
   "assets/css/animations.css",
 
@@ -50,7 +49,6 @@ var PRECACHE = [
   "data/data-qa.JS",
   "data/data-quiz.JS",
   "data/data-revision.JS",
-  "data/events-data.js",
 
   "revision/index.html",
   "revision/assets/revision.css",
@@ -68,7 +66,6 @@ var PRECACHE = [
   "js/glossary.js",
   "js/search.js",
   "js/deep-guide.js",
-  "js/events.js",
   "js/app.js"
 ];
 

@@ -15,6 +15,7 @@
 var dashboardApp = (function () {
 
   var activeFilter = "all";
+  var activeTab = (store.getDashTab && store.getDashTab()) || "overview";
 
   function render(host) {
     if (!host) return;
@@ -151,40 +152,46 @@ var dashboardApp = (function () {
           '</div>' +
         '</div>' +
 
-        /* 2. Next Best Action Prescriptions */
-        renderPrescriptions(dueCards, allUnits, readMap, quiz) +
+        /* 2. Today's plan: goal, due reviews, exam countdown */
+        renderTodayCard(streak, dueCards, allUnits, readMap) +
 
-        /* 3. Paper I vs Paper II Dual Examination Readiness */
-        renderPaperReadiness(syllabus, readMap, quiz) +
+        /* 3. Everything else lives behind four tabs so no single screen
+              turns into a wall of cards. */
+        renderTabs() +
 
-        /* 4. Interactive Unit Mastery Matrix */
-        '<section>' +
-          '<div class="row row--between mb-3">' +
-            '<div>' +
-              '<h2>Unit Mastery Matrix</h2>' +
-              '<p class="muted small mt-1">Reading progress, question bank volume, and high score per curriculum unit.</p>' +
-            '</div>' +
+        '<div class="dashpanel" data-panel="overview"' + (activeTab === "overview" ? '' : ' hidden') + '>' +
+          renderPrescriptions(dueCards, allUnits, readMap, quiz) +
+          '<div class="grid grid--2 mt-6">' +
+            renderWeekCard() +
+            renderRecentAttemptsCard(quiz) +
           '</div>' +
-          renderMatrixFilters() +
-          '<div id="unit-matrix-container">' +
-            renderUnitMatrix(activeFilter, allUnits, readMap, quiz) +
-          '</div>' +
-        '</section>' +
-
-        /* 5. 5-Box Leitner Memory Pipeline */
-        renderLeitnerPipeline(srs, boxCounts, srsKeys.length, dueCards) +
-
-        /* 6. Quiz performance analytics */
-        renderQuizAnalytics(quiz) +
-
-        /* 7. Activity Heatmap & Performance Trends */
-        '<div class="grid grid--2">' +
-          renderHeatmapCard(activity, streak) +
-          renderRecentAttemptsCard(quiz) +
         '</div>' +
 
-        /* 7. Study Vault & Knowledge Artifacts */
-        renderKnowledgeVault(totalHighlights, hlColorCounts, Object.keys(notes).length, bms.length, qaDone.length) +
+        '<div class="dashpanel" data-panel="performance"' + (activeTab === "performance" ? '' : ' hidden') + '>' +
+          renderQuizAnalytics(quiz) +
+          renderPaperReadiness(syllabus, readMap, quiz) +
+        '</div>' +
+
+        '<div class="dashpanel" data-panel="syllabus"' + (activeTab === "syllabus" ? '' : ' hidden') + '>' +
+          '<section>' +
+            '<div class="row row--between mb-3">' +
+              '<div>' +
+                '<h2>Unit Mastery Matrix</h2>' +
+                '<p class="muted small mt-1">Reading progress, question volume and quiz accuracy per unit.</p>' +
+              '</div>' +
+            '</div>' +
+            renderMatrixFilters() +
+            '<div id="unit-matrix-container">' +
+              renderUnitMatrix(activeFilter, allUnits, readMap, quiz) +
+            '</div>' +
+          '</section>' +
+        '</div>' +
+
+        '<div class="dashpanel" data-panel="memory"' + (activeTab === "memory" ? '' : ' hidden') + '>' +
+          renderLeitnerPipeline(srs, boxCounts, srsKeys.length, dueCards) +
+          '<div class="mt-6">' + renderHeatmapCard(activity, streak) + '</div>' +
+          renderKnowledgeVault(totalHighlights, hlColorCounts, Object.keys(notes).length, bms.length, qaDone.length) +
+        '</div>' +
 
       '</div>';
 

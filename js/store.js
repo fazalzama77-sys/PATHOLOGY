@@ -22,6 +22,9 @@ var store = (function () {
     hlColor:    PREFIX + "hl-color",    // "yellow" | "green" | "blue" | "pink" | "orange" | "purple"
     quiz:       PREFIX + "quiz",        // { attempts: [], byUnit: {} }
     reports:    PREFIX + "reports",     // [ { id, at, rows: [] } ] detailed quiz reports
+    quizDays:   PREFIX + "quizdays",    // { "2026-09-22": { q, c, s } } questions per day
+    goals:      PREFIX + "goals",       // { daily: 20, examDate: "2027-04-15" }
+    dashTab:    PREFIX + "dashtab",     // last dashboard tab
     srs:        PREFIX + "srs",         // { questionKey: {box, due, wrong} }
     activity:   PREFIX + "activity",    // { "YYYY-MM-DD": actionCount }
     visits:     PREFIX + "visits",      // number
@@ -227,8 +230,82 @@ var store = (function () {
     });
 
     write(KEYS.quiz, q);
+    logQuizDay(attempt.total || 0, attempt.correct || 0, attempt.seconds || 0);
     logActivity();
   }
+
+  /* ---------- daily study ledger, goals and exam countdown ---------- */
+  function getQuizDays() { return read(KEYS.quizDays, {}) || {}; }
+
+  function logQuizDay(total, correct, seconds) {
+    var m = getQuizDays();
+    var t = today();
+    var d = m[t] || { q: 0, c: 0, s: 0 };
+    d.q += total;
+    d.c += correct;
+    d.s += seconds;
+    m[t] = d;
+
+    // Keep roughly a year of history, nothing more.
+    var keys = Object.keys(m).sort();
+    if (keys.length > 400) {
+      keys.slice(0, keys.length - 400).forEach(function (k) { delete m[k]; });
+    }
+    write(KEYS.quizDays, m);
+  }
+
+  /* Totals for the last n days (n = 7 gives this week vs last week). */
+  function quizDaysRange(fromDaysAgo, toDaysAgo) {
+    var m = getQuizDays();
+    var out = { q: 0, c: 0, s: 0, days: 0 };
+    for (var i = fromDaysAgo; i > toDaysAgo; i--) {
+      var d = new Date();
+      d.setDate(d.getDate() - (i - 1));
+      var key = d.getFullYear() + "-" +
+        String(d.getMonth() + 1).padStart(2, "0") + "-" +
+        String(d.getDate()).padStart(2, "0");
+      var rec = m[key];
+      if (rec) {
+        out.q += rec.q; out.c += rec.c; out.s += rec.s;
+        if (rec.q) out.days++;
+      }
+    }
+    return out;
+  }
+
+  function todayQuiz() {
+    return getQuizDays()[today()] || { q: 0, c: 0, s: 0 };
+  }
+
+  function getGoals() {
+    var g = read(KEYS.goals, {}) || {};
+    if (!g.daily) g.daily = 20;
+    return g;
+  }
+  function setDailyGoal(n) {
+    var g = getGoals();
+    g.daily = Math.max(5, Math.min(200, parseInt(n, 10) || 20));
+    write(KEYS.goals, g);
+    return g.daily;
+  }
+  function setExamDate(iso) {
+    var g = getGoals();
+    if (iso) g.examDate = iso; else delete g.examDate;
+    write(KEYS.goals, g);
+    return g.examDate || null;
+  }
+  function daysToExam() {
+    var g = getGoals();
+    if (!g.examDate) return null;
+    var exam = new Date(g.examDate + "T00:00:00");
+    if (isNaN(exam.getTime())) return null;
+    var now = new Date();
+    now.setHours(0, 0, 0, 0);
+    return Math.round((exam - now) / 86400000);
+  }
+
+  function getDashTab() { return read(KEYS.dashTab, "overview") || "overview"; }
+  function setDashTab(t) { write(KEYS.dashTab, t); }
 
   /* ---------- detailed quiz reports ----------
      One report per finished quiz, kept small on purpose: each row stores the
@@ -506,6 +583,9 @@ var store = (function () {
     getHighlights: getHighlights, addHighlight: addHighlight, removeHighlight: removeHighlight,
     getHighlightColor: getHighlightColor, setHighlightColor: setHighlightColor, VALID_HL_COLORS: VALID_HL_COLORS,
     getQuiz: getQuiz, saveAttempt: saveAttempt,
+    getQuizDays: getQuizDays, quizDaysRange: quizDaysRange, todayQuiz: todayQuiz,
+    getGoals: getGoals, setDailyGoal: setDailyGoal, setExamDate: setExamDate, daysToExam: daysToExam,
+    getDashTab: getDashTab, setDashTab: setDashTab,
     getReports: getReports, saveReport: saveReport, getReport: getReport,
     latestReport: latestReport, clearReports: clearReports,
     getSrs: getSrs, gradeSrs: gradeSrs, dueSrs: dueSrs,
