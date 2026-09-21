@@ -238,14 +238,20 @@ var dashboardApp = (function () {
           '<p class="small faint mt-1">Set it to see a countdown and a daily pace.</p>' +
         '</div>';
     } else {
-      var pace = days > 0 ? Math.ceil(Math.max(0, (goal * days)) / Math.max(1, days)) : 0;
+      // How many questions a day it takes to cover the whole bank once
+      // before the exam — far more useful than restating the goal.
+      var bankTotal = (syllabus.theory || []).reduce(function (n, u) {
+        return n + app.questionCount(u.id);
+      }, 0);
+      var needPerDay = days > 0 ? Math.ceil(bankTotal / days) : 0;
       examHtml =
         '<div class="today-exam">' +
           '<div class="today-exam__lbl">' + (days >= 0 ? 'Exam countdown' : 'Exam date passed') + '</div>' +
           '<div class="today-exam__val">' + Math.abs(days) + ' <small>day' + (Math.abs(days) === 1 ? '' : 's') +
             (days >= 0 ? ' left' : ' ago') + '</small></div>' +
           (days > 0
-            ? '<p class="small faint mt-1">' + (goal * days).toLocaleString() + ' questions at your current pace of ' + pace + '/day.</p>'
+            ? '<p class="small faint mt-1">' + needPerDay + ' a day covers all ' + bankTotal.toLocaleString() +
+                ' questions once' + (needPerDay > goal ? ' — above your ' + goal + '/day target.' : '.') + '</p>'
             : '') +
           '<input type="date" id="examdate" class="today-date mt-2" value="' + (goals.examDate || '') + '" aria-label="Change your exam date">' +
         '</div>';
