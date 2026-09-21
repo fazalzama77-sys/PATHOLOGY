@@ -615,8 +615,11 @@ var dashboardApp = (function () {
           if (a.avgSec) extra += ' · ' + a.avgSec + 's/question';
           if (a.skipped) extra += ' · ' + a.skipped + ' skipped';
           if (a.timedOut) extra += ' · time expired';
-          var tag = a.reportId ? 'a' : 'div';
-          var href = a.reportId ? ' href="#/quiz/report/' + a.reportId + '"' : '';
+          // Only the newest reports are kept, so an older attempt may no
+          // longer have one to open — don't offer a dead link.
+          var hasReport = a.reportId && store.getReport && store.getReport(a.reportId);
+          var tag = hasReport ? 'a' : 'div';
+          var href = hasReport ? ' href="#/quiz/report/' + a.reportId + '"' : '';
           return '<' + tag + ' class="tlist__row"' + href + '>' +
             '<span class="tlist__body">' +
               '<span class="tlist__title">' + app.esc(a.label || "Pathology Quiz") + '</span>' +

@@ -1448,7 +1448,8 @@ var quizApp = (function () {
           '<span class="chip">' + app.esc(report.label || "Quiz") + '</span>' +
           (report.orderMode === "sequence" ? '<span class="chip">\ud83d\udccb Sequence</span>' : '<span class="chip">\ud83d\udd00 Shuffle</span>') +
           (report.exam ? '<span class="chip">\u23f1\ufe0f Exam mode</span>' : '') +
-          '<span class="chip">\u23f3 ' + fmtDuration(report.seconds) + ' \u00b7 ' + report.avgSec + 's per question</span>' +
+          '<span class="chip">\u23f3 ' + fmtDuration(report.seconds) + ' \u00b7 ' +
+            (report.avgSec >= 1 ? report.avgSec + 's' : '<1s') + ' per question</span>' +
           (skippedCount ? '<span class="chip chip--warn">\u26a0\ufe0f ' + skippedCount + ' unanswered</span>' : '') +
           (report.bestStreak >= 3 ? '<span class="chip chip--ok">\ud83d\udd25 Best streak ' + report.bestStreak + '</span>' : '') +
         '</div>' +
