@@ -4346,3 +4346,82 @@
   0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4); }
   100% { transform: scale(1.05); box-shadow: 0 0 10px 2px rgba(239, 68, 68, 0.3); }
 }
+
+/* ============================================================
+   QUIZ: QUESTION MAP, TAP-TO-ANSWER STATES & SCORE TREND
+   ============================================================ */
+
+/* Options are tapped once to answer, so make the whole row feel like a
+   target and keep the un-chosen ones quiet once the answer is revealed. */
+.opt { cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.opt:active:not([disabled]) { transform: scale(0.995); }
+.opt.is-muted { opacity: 0.55; }
+.opt[disabled] { cursor: default; }
+
+.qpalette {
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  background: var(--surface);
+  padding: var(--s4);
+}
+.qpalette__head {
+  font-size: var(--fs-xs);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  font-weight: 700;
+  margin-bottom: var(--s3);
+}
+.qpalette__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(38px, 1fr));
+  gap: var(--s2);
+}
+.qp {
+  min-height: 38px;
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  background: var(--surface-2);
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform var(--dur-fast) var(--ease), background var(--dur-fast) var(--ease);
+}
+.qp:hover { transform: translateY(-1px); border-color: var(--accent-line); }
+.qp.is-done { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+.qp.is-right { background: var(--ok-soft); border-color: var(--ok); color: var(--ok); }
+.qp.is-wrong { background: var(--danger-soft); border-color: var(--danger); color: var(--danger); }
+.qp.is-current { outline: 2px solid var(--accent); outline-offset: 1px; color: var(--text); }
+
+/* Dashboard score trend */
+.qtrend {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--s2);
+  height: 130px;
+}
+.qtrend__col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  gap: 4px;
+}
+.qtrend__bar {
+  width: 100%;
+  border-radius: var(--r-sm) var(--r-sm) 0 0;
+  background: var(--accent);
+  min-height: 6px;
+}
+.qtrend__bar.is-ok { background: var(--ok); }
+.qtrend__bar.is-warn { background: var(--warn, #f59e0b); }
+.qtrend__bar.is-low { background: var(--danger); }
+.qtrend__val {
+  font-size: var(--fs-xs);
+  color: var(--text-faint);
+  font-family: var(--font-mono);
+}

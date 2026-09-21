@@ -174,7 +174,10 @@ var dashboardApp = (function () {
         /* 5. 5-Box Leitner Memory Pipeline */
         renderLeitnerPipeline(srs, boxCounts, srsKeys.length, dueCards) +
 
-        /* 6. Activity Heatmap & Performance Trends */
+        /* 6. Quiz performance analytics */
+        renderQuizAnalytics(quiz) +
+
+        /* 7. Activity Heatmap & Performance Trends */
         '<div class="grid grid--2">' +
           renderHeatmapCard(activity, streak) +
           renderRecentAttemptsCard(quiz) +
@@ -590,10 +593,14 @@ var dashboardApp = (function () {
           var p = app.pct(a.correct, a.total);
           var dt = new Date(a.at);
           var dateStr = dt.toLocaleDateString(undefined, { month: "short", day: "numeric" });
+          var extra = '';
+          if (a.avgSec) extra += ' · ' + a.avgSec + 's/question';
+          if (a.skipped) extra += ' · ' + a.skipped + ' skipped';
+          if (a.timedOut) extra += ' · time expired';
           return '<div class="tlist__row">' +
             '<span class="tlist__body">' +
               '<span class="tlist__title">' + app.esc(a.label || "Pathology Quiz") + '</span>' +
-              '<span class="tlist__sub">' + dateStr + (a.exam ? ' · ⏱️ Timed Exam' : '') + '</span>' +
+              '<span class="tlist__sub">' + dateStr + (a.exam ? ' · ⏱️ Timed Exam' : '') + extra + '</span>' +
             '</span>' +
             '<span class="tlist__right">' +
               '<span class="chip ' + (p >= 75 ? 'chip--ok' : p >= 50 ? 'chip--warn' : 'chip--danger') + '">' +
@@ -604,6 +611,107 @@ var dashboardApp = (function () {
         }).join("") +
       '</div>' +
     '</div>';
+  }
+
+  /* ---------- Quiz Performance Analytics ---------- */
+  function renderQuizAnalytics(quiz) {
+    var attempts = quiz.attempts || [];
+    if (!attempts.length) return '';
+
+    var fmtMeta = {
+      mcq: { label: "Multiple Choice", icon: "\ud83d\udd18" },
+      tf: { label: "True / False", icon: "\u2696\ufe0f" },
+      fib: { label: "Fill in the Blank", icon: "\u270d\ufe0f" }
+    };
+
+    // Lifetime accuracy per format (older attempts simply have no breakdown)
+    var byFormat = quiz.byFormat || {};
+    var fmtCards = ["mcq", "tf", "fib"].filter(function (f) {
+      return byFormat[f] && byFormat[f].total;
+    }).map(function (f) {
+      var rec = byFormat[f];
+      var pct = Math.round(rec.right / rec.total * 100);
+      return '<div class="card stat-card">' +
+        '<div class="stat-card__icon">' + fmtMeta[f].icon + '</div>' +
+        '<div>' +
+          '<div class="small muted">' + fmtMeta[f].label + '</div>' +
+          '<b>' + pct + '%</b>' +
+          '<div class="small faint">' + rec.right + ' / ' + rec.total + ' lifetime</div>' +
+        '</div>' +
+      '</div>';
+    }).join("");
+
+    // Last ten attempts as a simple score trend
+    var recent = attempts.slice(-10);
+    var trend = recent.map(function (a) {
+      var pct = a.pct !== undefined ? a.pct : app.pct(a.correct, a.total);
+      var cls = pct >= 75 ? "is-ok" : pct >= 50 ? "is-warn" : "is-low";
+      return '<div class="qtrend__col" title="' + app.esc(a.label || "Quiz") + ' \u2014 ' + pct + '%">' +
+        '<div class="qtrend__bar ' + cls + '" style="height:' + Math.max(6, pct) + '%"></div>' +
+        '<span class="qtrend__val">' + pct + '</span>' +
+      '</div>';
+    }).join("");
+
+    // Weakest sub-sections, so revision has a target
+    var bySection = quiz.bySection || {};
+    var weak = Object.keys(bySection).map(function (k) {
+      var rec = bySection[k];
+      return {
+        key: k,
+        unitId: k.split(":")[0],
+        acc: rec.totalQ ? Math.round(rec.totalCorrect / rec.totalQ * 100) : 0,
+        asked: rec.totalQ
+      };
+    }).filter(function (r) { return r.asked >= 4; })
+      .sort(function (a, b) { return a.acc - b.acc; })
+      .slice(0, 5);
+
+    var weakHtml = weak.length
+      ? '<div class="tlist mt-3" style="border:none">' + weak.map(function (r) {
+          var title = sectionTitle(r.key) || r.key;
+          return '<div class="tlist__row">' +
+            '<span class="tlist__body">' +
+              '<span class="tlist__title">' + app.esc(title) + '</span>' +
+              '<span class="tlist__sub">' + r.asked + ' questions attempted</span>' +
+            '</span>' +
+            '<span class="tlist__right">' +
+              '<span class="chip ' + (r.acc >= 75 ? 'chip--ok' : r.acc >= 50 ? 'chip--warn' : 'chip--danger') + '">' + r.acc + '%</span>' +
+            '</span>' +
+          '</div>';
+        }).join("") + '</div>'
+      : '<p class="small muted mt-3">Take a few more topic quizzes and your weakest sub-sections will be listed here.</p>';
+
+    return '<section>' +
+      '<h2>Assessment Analytics</h2>' +
+      '<p class="muted small mt-1">Every quiz you finish is recorded here \u2014 by format, by trend and by sub-section.</p>' +
+      (fmtCards ? '<div class="grid grid--3 mt-4 text-left">' + fmtCards + '</div>' : '') +
+      '<div class="grid grid--2 mt-4">' +
+        '<div class="heatmap-card-elite">' +
+          '<h3>Score Trend</h3>' +
+          '<p class="muted small mt-1">Your last ' + recent.length + ' completed attempt' + (recent.length === 1 ? '' : 's') + '.</p>' +
+          '<div class="qtrend mt-4">' + trend + '</div>' +
+        '</div>' +
+        '<div class="heatmap-card-elite">' +
+          '<h3>Weakest Sub-sections</h3>' +
+          '<p class="muted small mt-1">Lowest accuracy first \u2014 revise these before the exam.</p>' +
+          weakHtml +
+        '</div>' +
+      '</div>' +
+    '</section>';
+  }
+
+  /* Look up a readable title for a "unit-x:uX-sY" sub-section key. */
+  function sectionTitle(key) {
+    var parts = String(key).split(":");
+    var map = (window.quizApp && quizApp.subSections) ? quizApp.subSections[parts[0]] : null;
+    if (!map) return null;
+    for (var i = 0; i < map.length; i++) {
+      if (map[i].id === parts[1]) {
+        var unit = syllabus.unitById[parts[0]];
+        return (map[i].icon || "") + " " + map[i].title + (unit ? " \u00b7 " + (unit.short || "") : "");
+      }
+    }
+    return null;
   }
 
   /* ---------- Student Knowledge Vault ---------- */

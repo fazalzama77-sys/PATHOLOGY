@@ -156,21 +156,62 @@ var store = (function () {
   }
 
   /* ---------- quiz results ---------- */
-  function getQuiz() { return read(KEYS.quiz, { attempts: [], byUnit: {} }); }
+  function getQuiz() {
+    var q = read(KEYS.quiz, { attempts: [], byUnit: {}, bySection: {}, byFormat: {} });
+    if (!q.attempts) q.attempts = [];
+    if (!q.byUnit) q.byUnit = {};
+    if (!q.bySection) q.bySection = {};
+    if (!q.byFormat) q.byFormat = {};
+    return q;
+  }
+
+  /* Roll one slice of a result (total/correct) into a running record. */
+  function rollUp(bucket, key, total, correct, at) {
+    var rec = bucket[key] || { runs: 0, best: 0, totalQ: 0, totalCorrect: 0 };
+    rec.runs += 1;
+    rec.totalQ += total;
+    rec.totalCorrect += correct;
+    var pct = total ? Math.round(correct / total * 100) : 0;
+    if (pct > rec.best) rec.best = pct;
+    rec.last = pct;
+    rec.lastAt = at;
+    rec.accuracy = rec.totalQ ? Math.round(rec.totalCorrect / rec.totalQ * 100) : 0;
+    bucket[key] = rec;
+  }
+
   function saveAttempt(attempt) {
     var q = getQuiz();
+    attempt.pct = attempt.total ? Math.round(attempt.correct / attempt.total * 100) : 0;
     q.attempts.push(attempt);
     if (q.attempts.length > 200) q.attempts = q.attempts.slice(-200);
 
-    var u = q.byUnit[attempt.scope] || { runs: 0, best: 0, totalQ: 0, totalCorrect: 0 };
-    u.runs += 1;
-    u.totalQ += attempt.total;
-    u.totalCorrect += attempt.correct;
-    var pct = attempt.total ? Math.round(attempt.correct / attempt.total * 100) : 0;
-    if (pct > u.best) u.best = pct;
-    u.last = pct;
-    u.lastAt = attempt.at;
-    q.byUnit[attempt.scope] = u;
+    /* Unit mastery. perUnit comes from the questions actually asked, so a
+       sub-section test, a paper test or a grand test all credit the right
+       unit(s) instead of only an exactly matching scope string. */
+    var perUnit = attempt.perUnit;
+    if (perUnit && Object.keys(perUnit).length) {
+      Object.keys(perUnit).forEach(function (k) {
+        rollUp(q.byUnit, k, perUnit[k].total, perUnit[k].correct, attempt.at);
+      });
+    } else {
+      rollUp(q.byUnit, attempt.scope, attempt.total, attempt.correct, attempt.at);
+    }
+
+    // Sub-section mastery
+    var perSection = attempt.perSection || {};
+    Object.keys(perSection).forEach(function (k) {
+      rollUp(q.bySection, k, perSection[k].total, perSection[k].correct, attempt.at);
+    });
+
+    // Lifetime accuracy per question format
+    var fmts = attempt.formats || {};
+    Object.keys(fmts).forEach(function (f) {
+      if (!fmts[f] || !fmts[f].total) return;
+      var rec = q.byFormat[f] || { total: 0, right: 0 };
+      rec.total += fmts[f].total;
+      rec.right += fmts[f].right;
+      q.byFormat[f] = rec;
+    });
 
     write(KEYS.quiz, q);
     logActivity();
