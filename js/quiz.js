@@ -173,6 +173,8 @@ var quizApp = (function () {
     if (kind === "grand")     { renderSetup("grand", null); return; }
     if (kind === "practical") { renderSetup("practical", null); return; }
     if (kind === "review")    { renderReview(); return; }
+    if (kind === "report")    { renderReportRoute(params.b); return; }
+    if (kind === "reports")   { renderReportList(); return; }
     renderHub();
   }
 
@@ -241,12 +243,56 @@ var quizApp = (function () {
         modeCard("Smart Review", due + " question" + (due === 1 ? "" : "s") + " due today", due, "#/quiz/review", true, "repeat") +
       '</div>' +
 
+      renderHubStats(q) +
+
       '<h2 class="mt-12 flex items-center gap-2"><span>📚</span> Theory Units with Modular Sub-sections</h2>' +
       '<p class="small muted">Click any unit below to practice specific sub-sections or the full unit in Sequence or Shuffle mode.</p>' +
       '<div class="tlist mt-4">' + unitRows + '</div>' +
 
       '<h2 class="mt-12 flex items-center gap-2"><span>🔬</span> Practical Diagnostic Units</h2>' +
       '<div class="tlist mt-4">' + pracRows + '</div>';
+  }
+
+  /* A compact performance strip on the hub: lifetime numbers plus a way
+     straight back into the last report. */
+  function renderHubStats(q) {
+    var attempts = q.attempts || [];
+    if (!attempts.length) return '';
+
+    var totalQ = 0, totalCorrect = 0, totalSec = 0, exams = 0;
+    attempts.forEach(function (a) {
+      totalQ += a.total || 0;
+      totalCorrect += a.correct || 0;
+      totalSec += a.seconds || ((a.minutes || 0) * 60);
+      if (a.exam) exams++;
+    });
+    var acc = totalQ ? Math.round(totalCorrect / totalQ * 100) : 0;
+    var last = store.latestReport();
+    var hrs = totalSec / 3600;
+    var timeLabel = hrs >= 1
+      ? (Math.round(hrs * 10) / 10) + " h"
+      : totalSec >= 60 ? Math.round(totalSec / 60) + " min" : totalSec + " sec";
+
+    return '<div class="grid grid--4 mt-6 text-left">' +
+        '<div class="card stat-card"><div class="stat-card__icon">\ud83c\udfaf</div><div>' +
+          '<div class="small muted">Lifetime accuracy</div><b>' + acc + '%</b>' +
+          '<div class="small faint">' + totalCorrect + ' of ' + totalQ + ' questions</div></div></div>' +
+        '<div class="card stat-card"><div class="stat-card__icon">\ud83d\udcdd</div><div>' +
+          '<div class="small muted">Tests completed</div><b>' + attempts.length + '</b>' +
+          '<div class="small faint">' + exams + ' timed exam' + (exams === 1 ? '' : 's') + '</div></div></div>' +
+        '<div class="card stat-card"><div class="stat-card__icon">\u23f1\ufe0f</div><div>' +
+          '<div class="small muted">Time in tests</div><b>' + timeLabel + '</b>' +
+          '<div class="small faint">across all attempts</div></div></div>' +
+        '<div class="card stat-card"><div class="stat-card__icon">\ud83d\udcca</div><div>' +
+          '<div class="small muted">Reports</div><b>' + (store.getReports() || []).length + '</b>' +
+          '<div class="small faint">' +
+            (last ? '<a href="#/quiz/report/' + last.id + '">Open the latest \u2192</a>' : 'question-by-question') +
+          '</div></div></div>' +
+      '</div>' +
+      '<div class="row row--wrap gap-2 mt-3">' +
+        '<a class="btn btn--sm" href="#/quiz/reports">\ud83d\udcca All quiz reports</a>' +
+        (last ? '<a class="btn btn--sm btn--primary" href="#/quiz/report/' + last.id + '">Last report \u00b7 ' + last.pct + '%</a>' : '') +
+      '</div>';
   }
 
   function modeCard(title, sub, n, href, isReview, ico) {
@@ -624,6 +670,7 @@ var quizApp = (function () {
       revealed: new Array(questions.length).fill(false),
       graded: new Array(questions.length).fill(false),
       spent: new Array(questions.length).fill(0),
+      flags: new Array(questions.length).fill(false),
       scope: scope,
       label: label,
       orderMode: orderMode || "sequence",
@@ -729,6 +776,7 @@ var quizApp = (function () {
               cls += " is-done";
             }
           }
+          if (run.flags[i]) cls += " is-flagged";
           return '<button type="button" class="' + cls + '" data-jump="' + i + '" ' +
             'aria-label="Question ' + (i + 1) + '">' + (i + 1) + '</button>';
         }).join("") +
@@ -837,6 +885,9 @@ var quizApp = (function () {
           '<div class="push"></div>' +
           (run.streak >= 2 ? '<span class="chip chip--accent streak-badge">\ud83d\udd25 Streak ' + run.streak + '</span>' : '') +
           (run.exam ? '<span class="chip chip--warn" id="qtimer">' + fmtTime(run.endsAt - Date.now()) + '</span>' : '') +
+          '<button class="btn btn--sm btn--ghost flagbtn' + (run.flags[run.i] ? ' is-on' : '') + '" id="flagbtn" ' +
+            'title="Flag this question to revisit in the report">' +
+            (run.flags[run.i] ? '\ud83d\udd16 Flagged' : '\ud83d\udd16 Flag') + '</button>' +
           '<span class="chip font-mono">' + (run.i + 1) + ' / ' + run.qs.length + '</span>' +
         '</div>' +
 
@@ -955,6 +1006,12 @@ var quizApp = (function () {
     var sub = document.getElementById("submitbtn");
     if (sub) sub.addEventListener("click", function () { confirmFinish(); });
 
+    var flag = document.getElementById("flagbtn");
+    if (flag) flag.addEventListener("click", function () {
+      run.flags[run.i] = !run.flags[run.i];
+      paintRun();
+    });
+
     var quit = document.getElementById("quitbtn");
     if (quit) quit.addEventListener("click", function () {
       if (confirm("Quit this quiz? Your answers for this attempt will not be saved.")) {
@@ -1032,7 +1089,6 @@ var quizApp = (function () {
 
     var correct = 0;
     var skipped = 0;
-    var wrongList = [];
     var wrongKeys = [];
     var formatStats = {
       mcq: { total: 0, right: 0 },
@@ -1063,7 +1119,6 @@ var quizApp = (function () {
         perUnit[uKey].correct++;
         if (sKey) perSection[sKey].correct++;
       } else {
-        wrongList.push({ q: q, given: given });
         wrongKeys.push(q.key);
         if (!hasAnswer(given)) skipped++;
       }
@@ -1080,6 +1135,53 @@ var quizApp = (function () {
     var elapsedMs = Date.now() - run.startedAt;
     var mins = Math.round(elapsedMs / 60000) || 1;
     var avgSec = total ? Math.round(elapsedMs / 1000 / total) : 0;
+
+
+    // Build the detailed, re-openable report. Rows stay tiny: the question
+    // text, options and explanation are looked up from the bank by key.
+    var rows = run.qs.map(function (q, i) {
+      var given = run.answers[i];
+      return {
+        key: q.key,
+        ok: isCorrect(q, given),
+        given: givenText(q, given),
+        ms: run.spent[i] || 0,
+        flagged: !!run.flags[i]
+      };
+    });
+
+    var diffs = {};
+    run.qs.forEach(function (q, i) {
+      var d = String(q.diff || 1);
+      if (!diffs[d]) diffs[d] = { total: 0, right: 0 };
+      diffs[d].total++;
+      if (isCorrect(q, run.answers[i])) diffs[d].right++;
+    });
+
+    var report = {
+      at: Date.now(),
+      label: run.label,
+      scope: run.scope,
+      unitId: run.unitId,
+      subSectionId: run.subSectionId,
+      exam: run.exam,
+      timedOut: !!timedOut,
+      orderMode: run.orderMode,
+      total: total,
+      correct: correct,
+      skipped: skipped,
+      pct: percent,
+      seconds: Math.round(elapsedMs / 1000),
+      avgSec: avgSec,
+      bestStreak: run.bestStreak || 0,
+      formats: formatStats,
+      diffs: diffs,
+      perUnit: perUnit,
+      perSection: perSection,
+      rows: rows
+    };
+    var reportId = store.saveReport(report);
+    report.id = reportId;
 
     store.saveAttempt({
       at: Date.now(),
@@ -1098,108 +1200,371 @@ var quizApp = (function () {
       avgSec: avgSec,
       bestStreak: run.bestStreak || 0,
       formats: formatStats,
+      diffs: diffs,
+      reportId: reportId,
       perUnit: perUnit,
       perSection: perSection,
       wrongKeys: wrongKeys.slice(0, 60)
     });
 
-    var verdict = percent >= 85 ? "Rank 1 Distinction" : percent >= 70 ? "Strong First Class" : percent >= 50 ? "Passing Grade" : "Needs Revision";
-    var chipCls = percent >= 85 ? "chip--ok" : percent >= 70 ? "chip--accent" : percent >= 50 ? "chip--warn" : "chip--danger";
+    stopRun();
+    paintReport(report, true);
+  }
+
+  /* What the student actually answered, as readable text. */
+  function givenText(q, given) {
+    if (!hasAnswer(given)) return null;
+    if (q.format === "mcq") return (q.o || [])[given];
+    if (q.format === "tf") return given ? "True" : "False";
+    return String(given);
+  }
+
+  /* ============================================================
+     REPORT & ANALYSIS
+     ============================================================ */
+
+  /* Rebuild a full question from its bank key (unit:format:index). */
+  function questionFromKey(key) {
+    var parts = String(key).split(":");
+    var uid = parts[0], f = parts[1], idx = parseInt(parts[2], 10);
+    var bank = (window.quizBank || {})[uid];
+    var raw = bank && bank[f] && bank[f][idx];
+    if (!raw) return null;
+    return {
+      key: key,
+      format: f,
+      unitId: uid,
+      subSection: raw.subSection || null,
+      q: raw.q,
+      o: raw.o,
+      a: raw.a,
+      a_display: raw.a_display || (Array.isArray(raw.a) ? raw.a[0] : raw.a),
+      e: raw.e,
+      topicId: raw.topicId || null,
+      diff: raw.diff || 1
+    };
+  }
+
+  /* Questions for a list of keys, ready to run (MCQ options re-shuffled). */
+  function buildFromKeys(keys) {
+    var out = [];
+    (keys || []).forEach(function (k) {
+      var q = questionFromKey(k);
+      if (!q) return;
+      if (q.format === "mcq" && Array.isArray(q.o) && typeof q.a === "number") {
+        var mixed = shuffleOptions(q.o, q.a);
+        q = Object.assign({}, q, { o: mixed.o, a: mixed.a });
+      }
+      out.push(q);
+    });
+    return out;
+  }
+
+  function correctText(q) {
+    if (!q) return "";
+    if (q.format === "mcq") return (q.o || [])[q.a];
+    if (q.format === "tf") return q.a ? "True" : "False";
+    return q.a_display || (Array.isArray(q.a) ? q.a[0] : q.a);
+  }
+
+  function fmtDuration(sec) {
+    sec = Math.max(0, Math.round(sec || 0));
+    if (sec < 60) return sec + "s";
+    var m = Math.floor(sec / 60);
+    return m + "m " + (sec % 60) + "s";
+  }
+
+  function renderReportRoute(id) {
+    resetRun();
+    var report = id ? store.getReport(id) : store.latestReport();
+    if (!report) {
+      host.innerHTML =
+        '<div class="pagehead"><h1>Quiz report</h1></div>' +
+        '<div class="empty"><div class="empty__icon">\ud83d\udcca</div><h3>No report found</h3>' +
+        '<p>Finish a quiz and its full analysis will appear here.</p>' +
+        '<a class="btn btn--primary mt-4" href="#/quiz">Go to the quiz hub</a></div>';
+      return;
+    }
+    paintReport(report, false);
+  }
+
+  function renderReportList() {
+    resetRun();
+    var list = store.getReports().slice().reverse();
+    if (!list.length) {
+      host.innerHTML =
+        '<div class="pagehead"><h1>Quiz reports</h1></div>' +
+        '<div class="empty"><div class="empty__icon">\ud83d\udcca</div><h3>No quizzes finished yet</h3>' +
+        '<a class="btn btn--primary mt-4" href="#/quiz">Take your first test</a></div>';
+      return;
+    }
+    host.innerHTML =
+      '<div class="pagehead"><span class="eyebrow">Assessment history</span>' +
+        '<h1>Quiz reports</h1>' +
+        '<p class="lede">Every finished quiz, with its full question-by-question analysis.</p></div>' +
+      '<div class="tlist mt-4">' +
+        list.map(function (r) {
+          var d = new Date(r.at);
+          return '<a class="tlist__row" href="#/quiz/report/' + r.id + '">' +
+            '<span class="tlist__body">' +
+              '<span class="tlist__title">' + app.esc(r.label || "Pathology quiz") + '</span>' +
+              '<span class="tlist__sub">' +
+                d.toLocaleDateString(undefined, { month: "short", day: "numeric" }) + ' \u00b7 ' +
+                d.toLocaleTimeString(undefined, { hour: "2-digit", minute: "2-digit" }) +
+                (r.exam ? ' \u00b7 \u23f1\ufe0f timed exam' : '') +
+                ' \u00b7 ' + fmtDuration(r.seconds) +
+              '</span>' +
+            '</span>' +
+            '<span class="tlist__right"><span class="chip ' +
+              (r.pct >= 75 ? 'chip--ok' : r.pct >= 50 ? 'chip--warn' : 'chip--danger') + '">' +
+              r.correct + '/' + r.total + ' \u00b7 ' + r.pct + '%</span></span>' +
+          '</a>';
+        }).join("") +
+      '</div>';
+  }
+
+  function barRow(label, right, total, sub) {
+    var pct = total ? Math.round(right / total * 100) : 0;
+    var cls = pct >= 75 ? "is-ok" : pct >= 50 ? "is-warn" : "is-low";
+    return '<div class="brk">' +
+      '<div class="brk__head">' +
+        '<span class="brk__label">' + label + (sub ? ' <span class="faint">' + sub + '</span>' : '') + '</span>' +
+        '<span class="brk__val mono">' + right + '/' + total + ' \u00b7 ' + pct + '%</span>' +
+      '</div>' +
+      '<div class="bar" style="height:8px"><div class="bar__fill ' + cls + '" style="width:' + pct + '%"></div></div>' +
+    '</div>';
+  }
+
+  function paintReport(report, fresh) {
+    var rows = report.rows || [];
+    var pct = report.pct !== undefined ? report.pct : app.pct(report.correct, report.total);
+    var verdict = pct >= 85 ? "Rank 1 Distinction" : pct >= 70 ? "Strong First Class" : pct >= 50 ? "Passing Grade" : "Needs Revision";
+    var chipCls = pct >= 85 ? "chip--ok" : pct >= 70 ? "chip--accent" : pct >= 50 ? "chip--warn" : "chip--danger";
+
+    var wrongKeys = rows.filter(function (r) { return !r.ok; }).map(function (r) { return r.key; });
+    var skippedCount = rows.filter(function (r) { return r.given === null || r.given === undefined; }).length;
+    var flaggedCount = rows.filter(function (r) { return r.flagged; }).length;
+
+    var fmtMeta = {
+      mcq: { label: "Multiple choice", icon: "\ud83d\udd18" },
+      tf: { label: "True / False", icon: "\u2696\ufe0f" },
+      fib: { label: "Fill in the blank", icon: "\u270d\ufe0f" }
+    };
+    var diffMeta = {
+      "1": "\u2b50 Foundational",
+      "2": "\u2b50\u2b50 Core UG",
+      "3": "\u2b50\u2b50\u2b50 Rank 1 Classic"
+    };
+
+    var fmtBars = ["mcq", "tf", "fib"].filter(function (f) {
+      return report.formats && report.formats[f] && report.formats[f].total;
+    }).map(function (f) {
+      return barRow(fmtMeta[f].icon + " " + fmtMeta[f].label, report.formats[f].right, report.formats[f].total);
+    }).join("");
+
+    var diffBars = ["1", "2", "3"].filter(function (d) {
+      return report.diffs && report.diffs[d] && report.diffs[d].total;
+    }).map(function (d) {
+      return barRow(diffMeta[d], report.diffs[d].right, report.diffs[d].total);
+    }).join("");
+
+    var unitKeys = Object.keys(report.perUnit || {});
+    var unitBars = unitKeys.length > 1 ? unitKeys.map(function (k) {
+      var uid = k.replace("unit:", "");
+      var u = syllabus.unitById[uid] || {};
+      return barRow(app.esc(u.short || uid), report.perUnit[k].correct, report.perUnit[k].total);
+    }).join("") : "";
+
+    var secKeys = Object.keys(report.perSection || {});
+    var secBars = secKeys.map(function (k) {
+      var parts = k.split(":");
+      var meta = getSubSectionMeta(parts[0], parts[1]);
+      var label = meta ? (meta.icon + " " + app.esc(meta.title)) : app.esc(k);
+      return barRow(label, report.perSection[k].correct, report.perSection[k].total);
+    }).join("");
+
+    // ---- question-by-question review -------------------------------------
+    var reviewItems = rows.map(function (r, i) {
+      var q = questionFromKey(r.key);
+      var unanswered = (r.given === null || r.given === undefined);
+      var state = r.ok ? "right" : (unanswered ? "skipped" : "wrong");
+      var mine = unanswered ? "Not answered" : r.given;
+      var right = correctText(q);
+      var meta = q ? getSubSectionMeta(q.unitId, q.subSection) : null;
+
+      return '<div class="rev-item" data-state="' + state + '"' + (r.flagged ? ' data-flagged="1"' : '') + '>' +
+        '<button type="button" class="rev-item__head" data-rev="' + i + '" aria-expanded="false">' +
+          '<span class="rev-item__no mono">' + (i + 1) + '</span>' +
+          '<span class="rev-item__mark ' + state + '">' +
+            (r.ok ? '\u2713' : unanswered ? '\u2013' : '\u2717') +
+          '</span>' +
+          '<span class="rev-item__q">' + (q ? app.esc(q.q) : 'Question no longer in the bank') + '</span>' +
+          (r.flagged ? '<span class="chip chip--warn">\ud83d\udd16</span>' : '') +
+          '<span class="rev-item__time mono faint">' + Math.max(1, Math.round((r.ms || 0) / 1000)) + 's</span>' +
+        '</button>' +
+        '<div class="rev-item__body" hidden>' +
+          '<div class="rev-answers">' +
+            '<p class="small"><span class="chip ' + (r.ok ? 'chip--ok' : 'chip--danger') + '">Your answer</span> ' +
+              '<b>' + app.esc(String(mine)) + '</b></p>' +
+            (r.ok ? '' : '<p class="small"><span class="chip chip--ok">Correct answer</span> <b>' + app.esc(String(right)) + '</b></p>') +
+          '</div>' +
+          (q && q.e ? '<div class="callout mt-3"><div class="callout__title">Explanation</div>' + q.e + '</div>' : '') +
+          '<div class="row row--wrap gap-2 mt-3">' +
+            (meta ? '<span class="chip chip--subtle">' + meta.icon + ' ' + app.esc(meta.title) + '</span>' : '') +
+            (q ? '<span class="chip chip--subtle">' + app.esc((syllabus.unitById[q.unitId] || {}).short || q.unitId) + '</span>' : '') +
+            (q && q.topicId && syllabus.topicById[q.topicId]
+              ? '<a class="btn btn--sm" href="#/topic/' + q.topicId + '">\ud83d\udcd6 Read the lesson</a>' : '') +
+          '</div>' +
+        '</div>' +
+      '</div>';
+    }).join("");
+
+    var counts = {
+      all: rows.length,
+      wrong: rows.filter(function (r) { return !r.ok && r.given !== null && r.given !== undefined; }).length,
+      skipped: skippedCount,
+      right: rows.filter(function (r) { return r.ok; }).length,
+      flagged: flaggedCount
+    };
+
+    var filters = [
+      { id: "all", label: "All", n: counts.all },
+      { id: "wrong", label: "Incorrect", n: counts.wrong },
+      { id: "skipped", label: "Skipped", n: counts.skipped },
+      { id: "right", label: "Correct", n: counts.right },
+      { id: "flagged", label: "Flagged", n: counts.flagged }
+    ].filter(function (f) { return f.id === "all" || f.n; });
 
     host.innerHTML =
       '<div class="result animate-scale-up">' +
-        (timedOut ? '<div class="callout mb-6"><div class="callout__title">Time Expired</div>' +
-          'Your examination paper was submitted automatically when the countdown reached zero.</div>' : '') +
+        (report.timedOut ? '<div class="callout mb-6"><div class="callout__title">Time expired</div>' +
+          'Your paper was submitted automatically when the countdown reached zero.</div>' : '') +
 
-        '<div class="result__ring">' + app.ringHtml(percent, 150) + '</div>' +
-        '<h1 class="mt-6">' + correct + ' out of ' + total + ' Correct</h1>' +
+        '<div class="result__ring">' + app.ringHtml(pct, 150) + '</div>' +
+        '<h1 class="mt-6">' + report.correct + ' out of ' + report.total + ' correct</h1>' +
 
         '<div class="row row--wrap center mt-3 gap-2" style="justify-content:center">' +
           '<span class="chip ' + chipCls + ' font-bold">' + verdict + '</span>' +
-          '<span class="chip">' + app.esc(run.label) + '</span>' +
-          (run.orderMode === "sequence" ? '<span class="chip">📋 Sequence</span>' : '<span class="chip">🔀 Shuffle</span>') +
-          (run.exam ? '<span class="chip">⏱️ Exam Mode · ' + mins + ' min</span>' : '') +
-          '<span class="chip">⏳ ' + avgSec + 's per question</span>' +
-          (skipped ? '<span class="chip chip--warn">⚠️ ' + skipped + ' unanswered</span>' : '') +
-          (run.bestStreak >= 3 ? '<span class="chip chip--ok">🔥 Best streak ' + run.bestStreak + '</span>' : '') +
+          '<span class="chip">' + app.esc(report.label || "Quiz") + '</span>' +
+          (report.orderMode === "sequence" ? '<span class="chip">\ud83d\udccb Sequence</span>' : '<span class="chip">\ud83d\udd00 Shuffle</span>') +
+          (report.exam ? '<span class="chip">\u23f1\ufe0f Exam mode</span>' : '') +
+          '<span class="chip">\u23f3 ' + fmtDuration(report.seconds) + ' \u00b7 ' + report.avgSec + 's per question</span>' +
+          (skippedCount ? '<span class="chip chip--warn">\u26a0\ufe0f ' + skippedCount + ' unanswered</span>' : '') +
+          (report.bestStreak >= 3 ? '<span class="chip chip--ok">\ud83d\udd25 Best streak ' + report.bestStreak + '</span>' : '') +
         '</div>' +
 
-        /* Format Breakdown Metrics */
-        '<div class="grid grid--3 mt-6 text-left">' +
-          '<div class="card stat-card">' +
-            '<div class="stat-card__icon">🔘</div>' +
-            '<div>' +
-              '<div class="small muted">Multiple Choice</div>' +
-              '<b>' + formatStats.mcq.right + ' / ' + formatStats.mcq.total + '</b>' +
-              '<div class="small faint">' + (formatStats.mcq.total ? Math.round(formatStats.mcq.right / formatStats.mcq.total * 100) : 0) + '% accuracy</div>' +
-            '</div>' +
+        '<div class="row row--wrap mt-6 gap-3" style="justify-content:center">' +
+          (wrongKeys.length
+            ? '<button class="btn btn--primary btn--lg" id="retrywrong">\ud83c\udfaf Retry the ' + wrongKeys.length + ' you missed</button>'
+            : '') +
+          '<button class="btn btn--lg" id="retakeall">\ud83d\udd01 Retake this set</button>' +
+          '<a class="btn btn--lg" href="#/dashboard">\ud83d\udcc8 Dashboard</a>' +
+          '<a class="btn btn--lg" href="#/quiz">Quiz hub</a>' +
+        '</div>' +
+
+        /* ---- breakdowns ---- */
+        '<div class="grid grid--2 mt-10 text-left">' +
+          '<div class="card">' +
+            '<h3>Accuracy by question type</h3>' +
+            '<div class="mt-3">' + (fmtBars || '<p class="small muted">No breakdown available.</p>') + '</div>' +
           '</div>' +
-          '<div class="card stat-card">' +
-            '<div class="stat-card__icon">⚖️</div>' +
-            '<div>' +
-              '<div class="small muted">True / False</div>' +
-              '<b>' + formatStats.tf.right + ' / ' + formatStats.tf.total + '</b>' +
-              '<div class="small faint">' + (formatStats.tf.total ? Math.round(formatStats.tf.right / formatStats.tf.total * 100) : 0) + '% accuracy</div>' +
-            '</div>' +
-          '</div>' +
-          '<div class="card stat-card">' +
-            '<div class="stat-card__icon">✍️</div>' +
-            '<div>' +
-              '<div class="small muted">Fill in Blanks</div>' +
-              '<b>' + formatStats.fib.right + ' / ' + formatStats.fib.total + '</b>' +
-              '<div class="small faint">' + (formatStats.fib.total ? Math.round(formatStats.fib.right / formatStats.fib.total * 100) : 0) + '% accuracy</div>' +
-            '</div>' +
+          '<div class="card">' +
+            '<h3>Accuracy by difficulty</h3>' +
+            '<div class="mt-3">' + (diffBars || '<p class="small muted">No breakdown available.</p>') + '</div>' +
           '</div>' +
         '</div>' +
 
-        /* Missed questions review */
-        (wrongList.length
-          ? '<h2 class="mt-12 mb-4 text-left flex items-center gap-2"><span>🔍</span> Detailed Review of Missed Questions (' + wrongList.length + ')</h2>' +
-            '<div class="stack text-left">' + wrongList.map(function (w, idx) {
-              var q = w.q;
-              var right = q.format === "mcq" ? (q.o || [])[q.a]
-                : q.format === "tf" ? (q.a ? "True" : "False")
-                : (q.a_display || (Array.isArray(q.a) ? q.a[0] : q.a));
-              var mine = w.given === null || w.given === "" ? "Not answered"
-                : q.format === "mcq" ? (q.o || [])[w.given]
-                : q.format === "tf" ? (w.given ? "True" : "False")
-                : w.given;
-              return '<div class="card mb-3">' +
-                '<div class="row row--wrap items-center gap-2 mb-2">' +
-                  '<span class="chip chip--accent">#' + (idx + 1) + '</span>' +
-                  '<span class="chip font-mono">' + q.format.toUpperCase() + '</span>' +
-                  '<span class="chip">' + app.esc((syllabus.unitById[q.unitId] || {}).short || q.unitId) + '</span>' +
-                '</div>' +
-                '<p><b>' + app.esc(q.q) + '</b></p>' +
-                '<div class="row row--wrap gap-4 mt-3">' +
-                  '<p class="small"><span class="chip chip--danger">Your answer:</span> <b>' + app.esc(String(mine)) + '</b></p>' +
-                  '<p class="small"><span class="chip chip--ok">Correct answer:</span> <b>' + app.esc(String(right)) + '</b></p>' +
-                '</div>' +
-                (q.e ? '<div class="callout mt-3"><div class="callout__title">High-Yield Explanation</div>' + q.e + '</div>' : '') +
-                (q.topicId && syllabus.topicById[q.topicId]
-                  ? '<a class="btn btn--sm mt-3" href="#/topic/' + q.topicId + '">📖 Read Lesson on ' + app.esc(syllabus.topicById[q.topicId].title) + '</a>' : '') +
-              '</div>';
-            }).join("") + '</div>'
-          : '<div class="callout mt-8"><div class="callout__title">🏆 Clean Sweep! 100% Score!</div>' +
-            'Exceptional performance! Every single question was answered correctly with academic precision.</div>') +
+        (unitBars
+          ? '<div class="card mt-4 text-left"><h3>Accuracy by unit</h3><div class="mt-3">' + unitBars + '</div></div>'
+          : '') +
+        (secBars
+          ? '<div class="card mt-4 text-left"><h3>Accuracy by sub-section</h3><div class="mt-3">' + secBars + '</div></div>'
+          : '') +
 
-        '<div class="row row--wrap mt-12 gap-3" style="justify-content:center">' +
-          '<a class="btn btn--primary btn--lg" href="#/quiz">Back to Quiz Hub</a>' +
-          '<a class="btn btn--lg" href="#/dashboard">View My Dashboard</a>' +
-          (wrongList.length ? '<a class="btn btn--lg" href="#/quiz/review">Review in Smart SRS Queue</a>' : '') +
+        /* ---- question by question ---- */
+        '<h2 class="mt-12 mb-3 text-left">Question-by-question review</h2>' +
+        '<div class="revfilters" id="revfilters">' +
+          filters.map(function (f, idx) {
+            return '<button type="button" class="revfilter' + (idx === 0 ? ' is-on' : '') + '" data-filter="' + f.id + '">' +
+              f.label + ' <span class="mono faint">' + f.n + '</span></button>';
+          }).join("") +
+          '<button type="button" class="revfilter push" id="expandall">Expand all</button>' +
         '</div>' +
+        '<div class="revlist mt-3 text-left" id="revlist">' + reviewItems + '</div>' +
       '</div>';
 
-    if (percent >= 75 && app.burstConfetti) {
+    wireReport(report, wrongKeys);
+
+    if (fresh && pct >= 75 && app.burstConfetti) {
       setTimeout(function () {
         var ring = document.querySelector('.result__ring');
         if (ring) app.burstConfetti(ring);
-        if (app.popMilestone) app.popMilestone("🏆 " + verdict + ": " + percent + "%!");
+        if (app.popMilestone) app.popMilestone("\ud83c\udfc6 " + verdict + ": " + pct + "%!");
       }, 250);
     }
-
-    stopRun();
   }
+
+  function wireReport(report, wrongKeys) {
+    // Expand / collapse a question
+    document.querySelectorAll("[data-rev]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var body = b.nextElementSibling;
+        if (!body) return;
+        var open = !body.hidden;
+        body.hidden = open;
+        b.setAttribute("aria-expanded", String(!open));
+        b.parentNode.classList.toggle("is-open", !open);
+      });
+    });
+
+    // Filters
+    var list = document.getElementById("revlist");
+    document.querySelectorAll(".revfilter[data-filter]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        document.querySelectorAll(".revfilter[data-filter]").forEach(function (o) { o.classList.remove("is-on"); });
+        b.classList.add("is-on");
+        var f = b.getAttribute("data-filter");
+        list.querySelectorAll(".rev-item").forEach(function (item) {
+          var show = f === "all"
+            ? true
+            : f === "flagged"
+              ? item.getAttribute("data-flagged") === "1"
+              : item.getAttribute("data-state") === f;
+          item.hidden = !show;
+        });
+      });
+    });
+
+    var expand = document.getElementById("expandall");
+    if (expand) expand.addEventListener("click", function () {
+      var anyClosed = !!list.querySelector(".rev-item__body[hidden]");
+      list.querySelectorAll(".rev-item").forEach(function (item) {
+        var body = item.querySelector(".rev-item__body");
+        var head = item.querySelector(".rev-item__head");
+        if (!body || item.hidden) return;
+        body.hidden = !anyClosed;
+        item.classList.toggle("is-open", anyClosed);
+        if (head) head.setAttribute("aria-expanded", String(anyClosed));
+      });
+      expand.textContent = anyClosed ? "Collapse all" : "Expand all";
+    });
+
+    var retry = document.getElementById("retrywrong");
+    if (retry) retry.addEventListener("click", function () {
+      var qs = buildFromKeys(wrongKeys);
+      if (!qs.length) { app.toast("Those questions are no longer in the bank"); return; }
+      start(qs, report.scope, "\ud83c\udfaf Retry \u00b7 " + (report.label || "quiz"), false, 0, "sequence", report.subSectionId, report.unitId);
+    });
+
+    var again = document.getElementById("retakeall");
+    if (again) again.addEventListener("click", function () {
+      var qs = buildFromKeys((report.rows || []).map(function (r) { return r.key; }));
+      if (!qs.length) { app.toast("Those questions are no longer in the bank"); return; }
+      start(shuffle(qs), report.scope, "\ud83d\udd01 Retake \u00b7 " + (report.label || "quiz"), report.exam,
+        report.exam ? Math.max(5, Math.round(report.seconds / 60)) : 0, "shuffle", report.subSectionId, report.unitId);
+    });
+  }
+
 
   return { render: render, reset: stopRun, subSections: subSectionsByUnit };
 })();

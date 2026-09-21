@@ -21,6 +21,7 @@ var store = (function () {
     highlights: PREFIX + "highlights",  // { topicId: [ {text, color}, ... ] }
     hlColor:    PREFIX + "hl-color",    // "yellow" | "green" | "blue" | "pink" | "orange" | "purple"
     quiz:       PREFIX + "quiz",        // { attempts: [], byUnit: {} }
+    reports:    PREFIX + "reports",     // [ { id, at, rows: [] } ] detailed quiz reports
     srs:        PREFIX + "srs",         // { questionKey: {box, due, wrong} }
     activity:   PREFIX + "activity",    // { "YYYY-MM-DD": actionCount }
     visits:     PREFIX + "visits",      // number
@@ -162,6 +163,7 @@ var store = (function () {
     if (!q.byUnit) q.byUnit = {};
     if (!q.bySection) q.bySection = {};
     if (!q.byFormat) q.byFormat = {};
+    if (!q.byDiff) q.byDiff = {};
     return q;
   }
 
@@ -213,9 +215,56 @@ var store = (function () {
       q.byFormat[f] = rec;
     });
 
+    // Lifetime accuracy per difficulty tier (1 foundational \u2192 3 hardest)
+    if (!q.byDiff) q.byDiff = {};
+    var diffs = attempt.diffs || {};
+    Object.keys(diffs).forEach(function (d) {
+      if (!diffs[d] || !diffs[d].total) return;
+      var rec = q.byDiff[d] || { total: 0, right: 0 };
+      rec.total += diffs[d].total;
+      rec.right += diffs[d].right;
+      q.byDiff[d] = rec;
+    });
+
     write(KEYS.quiz, q);
     logActivity();
   }
+
+  /* ---------- detailed quiz reports ----------
+     One report per finished quiz, kept small on purpose: each row stores the
+     question key, what you answered and how long you took, so the full
+     question, options and explanation are looked up from the bank when the
+     report is opened again. */
+  var MAX_REPORTS = 15;
+
+  function getReports() {
+    var list = read(KEYS.reports, []);
+    return Array.isArray(list) ? list : [];
+  }
+
+  function saveReport(report) {
+    var list = getReports();
+    report.id = report.id || ("r" + report.at + "-" + Math.floor(Math.random() * 1000));
+    list.push(report);
+    if (list.length > MAX_REPORTS) list = list.slice(-MAX_REPORTS);
+    write(KEYS.reports, list);
+    return report.id;
+  }
+
+  function getReport(id) {
+    var list = getReports();
+    for (var i = list.length - 1; i >= 0; i--) {
+      if (list[i].id === id) return list[i];
+    }
+    return null;
+  }
+
+  function latestReport() {
+    var list = getReports();
+    return list.length ? list[list.length - 1] : null;
+  }
+
+  function clearReports() { write(KEYS.reports, []); }
 
   /* ---------- spaced repetition (Leitner boxes 1-5) ---------- */
   function getSrs() { return read(KEYS.srs, {}); }
@@ -457,6 +506,8 @@ var store = (function () {
     getHighlights: getHighlights, addHighlight: addHighlight, removeHighlight: removeHighlight,
     getHighlightColor: getHighlightColor, setHighlightColor: setHighlightColor, VALID_HL_COLORS: VALID_HL_COLORS,
     getQuiz: getQuiz, saveAttempt: saveAttempt,
+    getReports: getReports, saveReport: saveReport, getReport: getReport,
+    latestReport: latestReport, clearReports: clearReports,
     getSrs: getSrs, gradeSrs: gradeSrs, dueSrs: dueSrs,
     getActivity: getActivity, logActivity: logActivity, computeStreak: computeStreak,
     bumpVisits: bumpVisits, getVisits: getVisits,

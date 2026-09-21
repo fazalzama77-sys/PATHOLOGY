@@ -249,7 +249,7 @@ var dashboardApp = (function () {
         '<div class="presc-card">' +
           '<div>' +
             '<span class="presc-badge presc-badge--success">' + app.icon("trophy") + ' Full Coverage</span>' +
-            '<h3 class="presc-title mt-2">All 145 Topics Read</h3>' +
+            '<h3 class="presc-title mt-2">Every topic read</h3>' +
             '<p class="presc-desc mt-1">You have explored every theory and practical topic in the syllabus!</p>' +
           '</div>' +
           '<a class="btn btn--outline presc-btn" href="#/theory">' + app.icon("repeat") + ' Review Lessons</a>' +
@@ -263,7 +263,7 @@ var dashboardApp = (function () {
         '<div>' +
           '<span class="presc-badge presc-badge--primary">' + app.icon("target") + ' Target Diagnostic</span>' +
           '<h3 class="presc-title mt-2">' + app.esc(shorten(weakUnit.name, 32)) + '</h3>' +
-          '<p class="presc-desc mt-1">' + (weakUnit.hasScore ? 'Current best score: ' + weakUnit.score + '%. Take a 10-Q test to boost mastery.' : 'No assessment attempts yet. Take your first test.') + '</p>' +
+          '<p class="presc-desc mt-1">' + (weakUnit.hasScore ? 'Current accuracy: ' + weakUnit.score + '%. A 10-question test will lift it fastest.' : 'Never tested. Take your first test on this unit.') + '</p>' +
         '</div>' +
         '<a class="btn btn--primary presc-btn" href="#/quiz/unit/' + weakUnit.id + '">' + app.icon("quiz") + ' Test Knowledge</a>' +
       '</div>';
@@ -277,7 +277,7 @@ var dashboardApp = (function () {
       var units = (syl.theory || []).filter(function (u) { return unitIds.indexOf(u.id) !== -1; })
         .concat((syl.practical || []).filter(function (u) { return unitIds.indexOf(u.id) !== -1; }));
 
-      var totalT = 0, readT = 0, totalQuestions = 0;
+      var totalT = 0, readT = 0, totalQuestions = 0, answeredQ = 0, answeredRight = 0;
       var scores = [];
 
       units.forEach(function (u) {
@@ -288,11 +288,15 @@ var dashboardApp = (function () {
         });
         totalQuestions += app.questionCount(u.id);
         var rec = quiz.byUnit && quiz.byUnit["unit:" + u.id];
-        if (rec && typeof rec.best === "number") scores.push(rec.best);
+        if (rec && rec.totalQ) {
+          answeredQ += rec.totalQ;
+          answeredRight += rec.totalCorrect || 0;
+          scores.push(rec.best);
+        }
       });
 
       var readPercent = totalT ? Math.round((readT / totalT) * 100) : 0;
-      var avgScore = scores.length ? Math.round(scores.reduce(function (a, b) { return a + b; }, 0) / scores.length) : 0;
+      var avgScore = answeredQ ? Math.round((answeredRight / answeredQ) * 100) : 0;
 
       return {
         label: paperLabel,
@@ -340,7 +344,7 @@ var dashboardApp = (function () {
           '</div>' +
           '<div>' +
             '<div class="paper-stat-item-val">' + (p.testCount ? p.avgScore + '%' : '—') + '</div>' +
-            '<div class="paper-stat-item-lbl">Avg Score</div>' +
+            '<div class="paper-stat-item-lbl">Accuracy</div>' +
           '</div>' +
         '</div>' +
 
@@ -418,6 +422,7 @@ var dashboardApp = (function () {
         var qn = app.questionCount(u.id);
         var rec = quiz.byUnit && quiz.byUnit["unit:" + u.id];
         var bestScore = (rec && typeof rec.best === "number") ? rec.best : null;
+        var unitAcc = (rec && rec.totalQ) ? Math.round((rec.totalCorrect / rec.totalQ) * 100) : null;
 
         return '<div class="unit-card-elite">' +
           '<div class="unit-card-top">' +
@@ -442,6 +447,19 @@ var dashboardApp = (function () {
                 '<div class="bar__fill" style="width:' + readP + '%;background:var(--ivri-blue)"></div>' +
               '</div>' +
             '</div>' +
+            (unitAcc !== null
+              ? '<div class="unit-bar-item mt-2">' +
+                  '<div class="unit-bar-label">' +
+                    '<span>Quiz Accuracy</span>' +
+                    '<span class="mono">' + rec.totalCorrect + '/' + rec.totalQ + ' (' + unitAcc + '%)</span>' +
+                  '</div>' +
+                  '<div class="bar" style="height:6px">' +
+                    '<div class="bar__fill ' + (unitAcc >= 75 ? 'is-ok' : unitAcc >= 50 ? 'is-warn' : 'is-low') + '" style="width:' + unitAcc + '%"></div>' +
+                  '</div>' +
+                  '<div class="small faint mt-1">' + rec.runs + ' attempt' + (rec.runs === 1 ? '' : 's') +
+                    (typeof rec.last === "number" ? ' \u00b7 last ' + rec.last + '%' : '') + '</div>' +
+                '</div>'
+              : '<div class="small faint mt-2">No quiz attempts yet</div>') +
           '</div>' +
 
           '<div class="unit-card-actions">' +
@@ -585,7 +603,7 @@ var dashboardApp = (function () {
           '<h3>Assessment Ledger</h3>' +
           '<p class="muted small mt-1">Recent quizzes and simulation exams.</p>' +
         '</div>' +
-        '<a class="small" href="#/quiz">All Quizzes &rarr;</a>' +
+        '<a class="small" href="#/quiz/reports">All reports &rarr;</a>' +
       '</div>' +
 
       '<div class="tlist mt-4" style="border:none">' +
@@ -597,7 +615,9 @@ var dashboardApp = (function () {
           if (a.avgSec) extra += ' · ' + a.avgSec + 's/question';
           if (a.skipped) extra += ' · ' + a.skipped + ' skipped';
           if (a.timedOut) extra += ' · time expired';
-          return '<div class="tlist__row">' +
+          var tag = a.reportId ? 'a' : 'div';
+          var href = a.reportId ? ' href="#/quiz/report/' + a.reportId + '"' : '';
+          return '<' + tag + ' class="tlist__row"' + href + '>' +
             '<span class="tlist__body">' +
               '<span class="tlist__title">' + app.esc(a.label || "Pathology Quiz") + '</span>' +
               '<span class="tlist__sub">' + dateStr + (a.exam ? ' · ⏱️ Timed Exam' : '') + extra + '</span>' +
@@ -607,7 +627,7 @@ var dashboardApp = (function () {
                 a.correct + '/' + a.total + ' (' + p + '%)' +
               '</span>' +
             '</span>' +
-          '</div>';
+          '</' + tag + '>';
         }).join("") +
       '</div>' +
     '</div>';
@@ -681,10 +701,42 @@ var dashboardApp = (function () {
         }).join("") + '</div>'
       : '<p class="small muted mt-3">Take a few more topic quizzes and your weakest sub-sections will be listed here.</p>';
 
+    // Accuracy by difficulty tier
+    var diffMeta = { "1": "\u2b50 Foundational", "2": "\u2b50\u2b50 Core UG", "3": "\u2b50\u2b50\u2b50 Rank 1 Classic" };
+    var byDiff = quiz.byDiff || {};
+    var diffRows = ["1", "2", "3"].filter(function (d) {
+      return byDiff[d] && byDiff[d].total;
+    }).map(function (d) {
+      var rec = byDiff[d];
+      var pct = Math.round(rec.right / rec.total * 100);
+      return '<div class="brk">' +
+        '<div class="brk__head">' +
+          '<span class="brk__label">' + diffMeta[d] + '</span>' +
+          '<span class="brk__val mono">' + rec.right + '/' + rec.total + ' \u00b7 ' + pct + '%</span>' +
+        '</div>' +
+        '<div class="bar" style="height:8px"><div class="bar__fill ' +
+          (pct >= 75 ? 'is-ok' : pct >= 50 ? 'is-warn' : 'is-low') + '" style="width:' + pct + '%"></div></div>' +
+      '</div>';
+    }).join("");
+
+    var lastReport = store.latestReport && store.latestReport();
+
     return '<section>' +
-      '<h2>Assessment Analytics</h2>' +
+      '<div class="row row--between mb-1">' +
+        '<h2>Assessment Analytics</h2>' +
+        '<a class="small" href="#/quiz/reports">All reports &rarr;</a>' +
+      '</div>' +
       '<p class="muted small mt-1">Every quiz you finish is recorded here \u2014 by format, by trend and by sub-section.</p>' +
       (fmtCards ? '<div class="grid grid--3 mt-4 text-left">' + fmtCards + '</div>' : '') +
+      (diffRows
+        ? '<div class="card mt-4 text-left"><h3>Accuracy by difficulty</h3>' +
+            '<p class="muted small mt-1">Where the marks are actually being lost.</p>' +
+            '<div class="mt-3">' + diffRows + '</div></div>'
+        : '') +
+      (lastReport
+        ? '<a class="btn btn--primary mt-4" href="#/quiz/report/' + lastReport.id + '">' +
+            '\ud83d\udcca Open the full report of your last quiz</a>'
+        : '') +
       '<div class="grid grid--2 mt-4">' +
         '<div class="heatmap-card-elite">' +
           '<h3>Score Trend</h3>' +
@@ -777,23 +829,26 @@ var dashboardApp = (function () {
   }
 
   function findLowestScoringUnit(allUnits, quiz) {
-    var minScore = 999;
-    var candidate = null;
+    var untested = null;
+    var weakest = null;
 
     allUnits.forEach(function (u) {
-      if (u.id.indexOf("unit-") !== 0) return; // focus on theory units
+      if (u.id.indexOf("unit-") !== 0) return;      // theory units only
+      if (!app.questionCount(u.id)) return;         // nothing to test yet
       var rec = quiz.byUnit && quiz.byUnit["unit:" + u.id];
-      if (rec && typeof rec.best === "number") {
-        if (rec.best < minScore) {
-          minScore = rec.best;
-          candidate = { id: u.id, name: u.short || u.title, score: rec.best, hasScore: true };
-        }
-      } else if (!candidate) {
-        candidate = { id: u.id, name: u.short || u.title, score: 0, hasScore: false };
+
+      if (!rec || !rec.totalQ) {
+        // First unit never tested — that is the most useful next step.
+        if (!untested) untested = { id: u.id, name: u.short || u.title, score: 0, hasScore: false };
+        return;
+      }
+      var acc = Math.round((rec.totalCorrect / rec.totalQ) * 100);
+      if (!weakest || acc < weakest.score) {
+        weakest = { id: u.id, name: u.short || u.title, score: acc, hasScore: true };
       }
     });
 
-    return candidate || { id: "unit-1", name: "General Pathology", score: 0, hasScore: false };
+    return untested || weakest || { id: "unit-1", name: "General Pathology", score: 0, hasScore: false };
   }
 
   /* ---------- Attach UI events ---------- */
