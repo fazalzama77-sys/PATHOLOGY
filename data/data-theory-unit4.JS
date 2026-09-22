@@ -2039,7 +2039,7 @@ theoryData["unit-4"] = {
       "<li><b>NEUROTOXIC</b> — the toxin acts on the nervous system: tetanus and botulism.</li>" +
       "</ul>" +
 
-      "<b>B. BLACKQUARTER (BLACK LEG, BQ)</b><br><br>" +
+      "<b>B. BLACK QUARTER (BLACKLEG, BQ)</b><br><br>" +
       "<b>Cause.</b> <b><i>Clostridium chauvoei</i></b>.<br><br>" +
       "<b>The classic patient.</b> A <b>young (6 months to 2 years), well-nourished, rapidly growing, well-muscled bovine in good condition</b> on good pasture. Poor, thin animals are rarely affected — which is why farmers describe it as the disease that takes the best calf in the herd.<br><br>" +
       "<b>Pathogenesis — the key idea.</b> Spores are ingested, cross the gut wall, and lie dormant in muscle and other tissue, doing nothing for months. Disease begins when <b>local trauma or bruising creates an anaerobic focus</b> in a heavy muscle mass — from exercise, transport, handling or fighting. The spores germinate, the organism multiplies, and it releases toxins that cause <b>severe necrotising myositis with gas production</b>. <b>Note that no external wound is needed; blackquarter is ENDOGENOUS.</b><br><br>" +
@@ -2119,7 +2119,7 @@ theoryData["unit-4"] = {
       "CLOSTRIDIA are large GRAM-POSITIVE, ANAEROBIC, SPORE-FORMING rods of soil and normal gut. They cause disease by POWERFUL EXOTOXINS, not by invasion.",
       "THE UNIFYING TRIGGER IS A FALL IN TISSUE OXYGEN. Name the event that creates the anaerobic niche and you can explain and prevent each disease.",
       "Three groups: HISTOTOXIC (blackquarter, malignant oedema, black disease, bacillary haemoglobinuria), ENTEROTOXAEMIC (pulpy kidney, braxy, lamb dysentery), NEUROTOXIC (tetanus, botulism).",
-      "BLACKQUARTER = CLOSTRIDIUM CHAUVOEI in YOUNG (6 months-2 years), WELL-FED, WELL-MUSCLED cattle. It is ENDOGENOUS — NO WOUND IS NEEDED; bruising of a heavy muscle triggers it.",
+      "BLACK QUARTER (BLACKLEG) = CLOSTRIDIUM CHAUVOEI in YOUNG (6 months-2 years), WELL-FED, WELL-MUSCLED cattle. It is ENDOGENOUS — NO WOUND IS NEEDED; bruising of a heavy muscle triggers it.",
       "BQ lesion: dark red-black, DRY, SPONGY, POROUS muscle FULL OF GAS, CREPITANT under the hand, with a RANCID SWEETISH ODOUR. Much gas, little oedema.",
       "MALIGNANT OEDEMA = CLOSTRIDIUM SEPTICUM. It is EXOGENOUS — A WOUND IS ESSENTIAL (castration, docking, shearing, dirty injection, parturition).",
       "MALIGNANT OEDEMA lesion: MUCH blood-stained gelatinous OEDEMA, LITTLE gas. THE CONTRAST WITH BQ: BQ = gas, no wound; malignant oedema = oedema, wound essential.",
@@ -2148,7 +2148,8 @@ theoryData["unit-4"] = {
     clinical:
       "<b>Why this matters in Indian practice.</b><br>" +
       "<b>Blackquarter is a vaccine-preventable death of the best calf in the herd, and every case you see is a failure of the calendar.</b> In endemic districts — and most of India has them — BQ appears with the monsoon, in well-grown calves and young cattle between six months and two years. The farmer will tell you it took his finest animal, and he will be right, because the disease needs muscle glycogen. Vaccinate all cattle from six months of age annually, <b>before the rains</b>, with the multivalent clostridial vaccine, and record it. In an outbreak, vaccinate the whole group immediately and give penicillin cover to any animal showing early fever or lameness; move animals gently and avoid transport and rough handling for a few days, because bruising is the trigger.<br><br>" +
-      "<b>At the carcass, put your hand on the swelling.</b> A young bovine dead suddenly with a swollen hindquarter or shoulder that <b>crackles under the palm</b>, and which on incision reveals dark, dry, spongy muscle full of gas bubbles with a sweetish rancid smell, is blackquarter. This is one of the few clostridial diseases you can diagnose confidently in the field. Then remember the anthrax rule from the previous topic: if there is <b>tarry unclotted blood at the orifices and no crepitant swelling</b>, do not cut at all. When in doubt between BQ and anthrax, take the ear-vein smear first and cut second.<br><br>" +
+      "<b>Black quarter (blackleg) is a vaccine-preventable death of the best calf in the herd, and every case you see is a failure of the calendar.</b> In endemic districts — and most of India has them — BQ appears with the monsoon, in well-grown calves and young cattle between six months and two years. The farmer will tell you it took his finest animal, and he will be right, because the disease needs muscle glycogen. Vaccinate all cattle from six months of age annually, <b>before the rains</b>, with the multivalent clostridial vaccine, and record it. In an outbreak, vaccinate the whole group immediately and give penicillin cover to any animal showing early fever or lameness; move animals gently and avoid transport and rough handling for a few days, because bruising is the trigger.<br><br>" +
+      "<b>At the carcass, put your hand on the swelling.</b> A young bovine dead suddenly with a swollen hindquarter or shoulder that <b>crackles under the palm</b>, and which on incision reveals dark, dry, spongy muscle full of gas bubbles with a sweetish rancid smell, is black quarter (blackleg). This is one of the few clostridial diseases you can diagnose confidently in the field. Then remember the anthrax rule from the previous topic: if there is <b>tarry unclotted blood at the orifices and no crepitant swelling</b>, do not cut at all. When in doubt between BQ and anthrax, take the ear-vein smear first and cut second.<br><br>" +
       "<b>Do not let your own surgery cause malignant oedema or tetanus.</b> A large share of these cases in Indian practice follow castration, docking, ear-notching, shearing, dystocia, and injections given with a reused needle through dirty skin. The prevention is entirely in your hands: <b>clean the site, use a sterile needle and blade for every animal, castrate in clean dry conditions and not in the monsoon mud, and cover surgery in unvaccinated animals with tetanus antitoxin.</b> In horses this is not optional — a horse is the most susceptible species there is, and any wound, especially a hoof puncture from a nail or thorn, deserves antitoxin if its vaccination status is unknown, plus toxoid to begin active immunity.<br><br>" +
       "<b>Recognise tetanus early, because early is the only time treatment works.</b> The sign that lets you catch it before the animal is rigid is the <b>third eyelid flicking across the eye when you raise the head or clap your hands</b>, together with a stiff gait, erect ears and a slightly raised tail head. Search the animal thoroughly for the wound — check every hoof, the castration site, the navel in a young animal, and any recent injection site. Then: <b>open and debride the wound thoroughly and flush it with hydrogen peroxide, give tetanus antitoxin, give high-dose penicillin, and above all put the animal in a dark, quiet, deeply bedded stall and sedate it.</b> The nursing matters as much as the drugs, because every sudden sound sets off another spasm. Feed and water at a height the animal can reach without lowering its head, or by stomach tube. Be honest with the owner: a recumbent animal in generalised spasm has a poor prognosis, recovery takes weeks, and the humane decision is often euthanasia.<br><br>" +
       "<b>Pulpy kidney follows the feed bag, so ask about the diet before you look at anything else.</b> When the best-grown lambs or kids in a flock die suddenly, ask what changed — new grain, a jump in concentrate, a move onto lush green fodder, or a shift to intensive feeding. Confirm cheaply: <b>test the urine from the bladder of a fresh carcass for glucose with an ordinary dipstick</b>, and look for straw-coloured pericardial fluid that clots as you watch it. Do not hang the diagnosis on a soft kidney, especially in Indian heat, where every carcass has soft kidneys within a few hours. Then give advice that prevents the next death: <b>introduce concentrates gradually over ten to fourteen days, never make a sudden change, and vaccinate the flock — including pregnant ewes and does four to six weeks before lambing and kidding, so the newborns are protected through colostrum.</b><br><br>" +
@@ -2160,7 +2161,7 @@ theoryData["unit-4"] = {
         title: "The clostridial diseases at a glance",
         headers: ["Disease", "Organism", "Species", "Trigger / predisposing cause", "Key lesion or sign"],
         rows: [
-          ["Blackquarter", "C. chauvoei", "Cattle 6 mo-2 yr, well-fed", "BRUISING of a heavy muscle — ENDOGENOUS, no wound", "CREPITANT dark dry spongy muscle, gas, rancid smell"],
+          ["Black Quarter (Blackleg)", "C. chauvoei", "Cattle 6 mo-2 yr, well-fed", "BRUISING of a heavy muscle — ENDOGENOUS, no wound", "CREPITANT dark dry spongy muscle, gas, rancid smell"],
           ["Malignant oedema", "C. septicum (+ others)", "All species", "A WOUND — castration, docking, shearing, injection", "MUCH gelatinous blood-stained OEDEMA, little gas"],
           ["Black disease", "C. novyi type B", "Sheep, some cattle", "MIGRATING IMMATURE LIVER FLUKE", "Pale necrotic liver foci with fluke track; BLACK underside of skin"],
           ["Bacillary haemoglobinuria", "C. haemolyticum", "Cattle, sheep", "Liver fluke migration", "Large pale LIVER INFARCT; PORT-WINE URINE; jaundice"],
@@ -2195,8 +2196,8 @@ theoryData["unit-4"] = {
         ]
       },
       {
-        title: "Blackquarter versus Malignant oedema — the pair examiners love",
-        headers: ["Feature", "BLACKQUARTER", "MALIGNANT OEDEMA"],
+        title: "Black Quarter (Blackleg) versus Malignant oedema — the pair examiners love",
+        headers: ["Feature", "BLACK QUARTER (BLACKLEG)", "MALIGNANT OEDEMA"],
         rows: [
           ["Organism", "Clostridium chauvoei", "Clostridium septicum (± novyi, perfringens, sordellii)"],
           ["Wound required?", "NO — ENDOGENOUS from dormant tissue spores", "YES — EXOGENOUS, a wound is essential"],
@@ -2727,9 +2728,15 @@ theoryData["unit-4"] = {
     summary: "Caseous lymphadenitis is the abscess disease of sheep and goats: Corynebacterium pseudotuberculosis survives inside the macrophage that swallowed it and builds a thick-walled node abscess filled with dry, greenish, ONION-RING laminated pus.",
 
     desc:
-      "<b>A. THE ORGANISM</b><br><br>" +
-      "<b><i>Corynebacterium pseudotuberculosis</i></b> (formerly <i>C. ovis</i>, and the cause of the disease also called <b>pseudotuberculosis</b>). It is a small, <b>Gram-positive, non-motile, non-sporing, pleomorphic club-shaped (coryneform) rod</b> that characteristically lies in <b>V, L and palisade or \"Chinese letter\" arrangements</b> in smears.<br><br>" +
-      "<b>Two biotypes, and they matter:</b><br>" +
+      "<b>A. THE ORGANISM AND TAXONOMIC CONTEXT</b><br><br>" +
+      "<b><i>Corynebacterium pseudotuberculosis</i></b> (formerly <i>C. ovis</i>, causing <b>Caseous Lymphadenitis [CLA]</b>, historically and syllabus-termed <b>Ovine Pseudotuberculosis</b>). It is a small, <b>Gram-positive, non-motile, non-sporing, pleomorphic club-shaped (coryneform) rod</b> that characteristically lies in <b>V, L and palisade or \"Chinese letter\" arrangements</b> in smears.<br><br>" +
+      "<b>Corynebacterial diseases across veterinary pathology:</b><br>" +
+      "<ul>" +
+      "<li><b><i>Corynebacterium pseudotuberculosis</i></b> — Caseous lymphadenitis (pseudotuberculosis of sheep and goats); ulcerative lymphangitis and pectoral abscess ('pigeon fever') in horses.</li>" +
+      "<li><b><i>Corynebacterium renale</i> group</b> (<i>C. renale</i>, <i>C. cystitidis</i>, <i>C. pilosum</i>) — Contagious bovine pyelonephritis (ascending suppurative urinary infection; see Unit 2) and posthitis ('pizzle rot') in wethers.</li>" +
+      "<li><b><i>Corynebacterium kutscheri</i></b> — Murine pseudotuberculosis (caseopurulent lung and liver abscesses in laboratory mice and rats; see Unit 6). Note: Pseudotuberculosis in guinea pigs is caused by <i>Yersinia pseudotuberculosis</i> (Gram-negative).</li>" +
+      "</ul>" +
+      "<b>Two biotypes of <i>C. pseudotuberculosis</i>, and they matter:</b><br>" +
       "<ul>" +
       "<li><b>Nitrate-negative (ovis) biotype</b> — infects <b>sheep and goats</b>, causing caseous lymphadenitis.</li>" +
       "<li><b>Nitrate-positive (equi) biotype</b> — infects <b>horses and cattle</b>, causing ulcerative lymphangitis and pectoral abscess.</li>" +

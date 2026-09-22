@@ -2852,7 +2852,17 @@ theoryData["unit-1"] = {
       "<li><b>1. Inflammatory phase</b> (0-3 days) — haemostasis, clot formation, neutrophils then macrophages clear debris.</li>" +
       "<li><b>2. Proliferative phase</b> (3 days to 2-3 weeks) — angiogenesis, fibroplasia with collagen deposition, epithelialisation and wound contraction.</li>" +
       "<li><b>3. Maturation (remodelling) phase</b> (3 weeks to months or years) — <b>type III collagen is progressively replaced by stronger type I collagen</b>, fibres realign along lines of stress, and the scar becomes pale and avascular. A healed wound regains only about <b>70-80 per cent of original tensile strength</b> — it never becomes as strong as normal tissue.</li>" +
-      "</ul>" +
+      "</ul><br>" +
+
+      "<b>GROWTH FACTORS IN WOUND HEALING</b><br>" +
+      "Healing is orchestrated by peptide growth factors produced by platelets, macrophages and endothelial cells:<br>" +
+      "<ul>" +
+      "<li><b>PDGF (Platelet-Derived Growth Factor)</b> — from platelets and macrophages; chemotactic and mitogenic for fibroblasts and smooth muscle; stimulates collagen synthesis.</li>" +
+      "<li><b>TGF-β (Transforming Growth Factor-beta)</b> — the master fibrogenic cytokine; stimulates fibroblast migration and matrix production; inhibits collagen breakdown by metalloproteinases.</li>" +
+      "<li><b>VEGF (Vascular Endothelial Growth Factor)</b> — induces angiogenesis (new capillary bud formation) and increases vascular permeability.</li>" +
+      "<li><b>FGF (Fibroblast Growth Factor, especially FGF-2)</b> — stimulates angiogenesis, epithelial migration and fibroblast proliferation.</li>" +
+      "<li><b>EGF (Epidermal Growth Factor) & TGF-α</b> — stimulate keratinocyte migration and re-epithelialisation across the granulation bed.</li>" +
+      "</ul><br>" +
 
       "<b>FACTORS THAT DELAY HEALING</b><br>" +
       "<b>Local factors</b><br>" +

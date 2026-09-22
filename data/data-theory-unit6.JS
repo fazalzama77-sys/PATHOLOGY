@@ -34,21 +34,26 @@ theoryData["unit-6"] = {
       "<li>The lesions are foci of coagulative necrosis with a modest mixed inflammatory infiltrate.</li>" +
       "</ul>" +
 
-      "<b>C. PSEUDOTUBERCULOSIS (YERSINIOSIS)</b><br><br>" +
-      "<b>Cause.</b> <b><i>Yersinia pseudotuberculosis</i></b> — a <b>Gram-negative coccobacillus showing BIPOLAR STAINING</b>. (Note that the term \"pseudotuberculosis\" is also used for <i>Corynebacterium pseudotuberculosis</i> of sheep and goats; in laboratory animals it means <i>Yersinia</i>.)<br><br>" +
-      "<b>Two properties govern its epidemiology:</b><br>" +
+      "<b>C. PSEUDOTUBERCULOSIS — DUAL ETIOLOGY IN LABORATORY RODENTS</b><br><br>" +
+      "The term <b>pseudotuberculosis</b> in laboratory animals encompasses two distinct bacterial infections depending on the rodent host:<br><br>" +
+      "<b>1. Murine Pseudotuberculosis of Rats and Mice: <i>Corynebacterium kutscheri</i></b><br>" +
+      "<ul>" +
+      "<li><b>Cause:</b> <i>Corynebacterium kutscheri</i> (formerly <i>Corynethrix pseudotuberculosis murium</i>) — a <b>Gram-positive, non-motile, non-sporing, pleomorphic diphtheroid rod</b> characteristically arranged in <b>V, L and palisade or \"Chinese letter\" patterns</b>.</li>" +
+      "<li><b>Pathogenesis:</b> Infection is typically <b>latent and subclinical</b> in healthy mice and rats, with organisms colonising the nasopharynx, oral cavity, and colon. Clinical disease is precipitated by <b>stress, immunosuppression (e.g. experimental corticosteroid/cortisone administration), or concurrent viral infection</b>, allowing haematogenous spread.</li>" +
+      "<li><b>Lesions:</b> Multiple, discrete, <b>dry, cheese-like, greyish-white CASEOPURULENT ABSCESSES AND GRANULOMAS</b> resembling tubercles, prominently in the <b>LUNGS (the signature site)</b>, liver, kidneys, and regional lymph nodes. Smears of the pus reveal clumps of Gram-positive coryneform rods.</li>" +
+      "</ul>" +
+      "<b>2. Yersiniosis / Pseudotuberculosis of Guinea Pigs and Rodents: <i>Yersinia pseudotuberculosis</i></b><br>" +
+      "<ul>" +
+      "<li><b>Cause:</b> <i>Yersinia pseudotuberculosis</i> — a <b>Gram-negative coccobacillus showing distinct BIPOLAR STAINING</b> (safety-pin appearance with Giemsa or Wayson stain). While most devastating in <b>guinea pigs</b>, it also affects mice, rats, and rabbits.</li>" +
+      "<li><b>Two properties govern its epidemiology:</b></li>" +
       "<ul>" +
       "<li>It is <b>PSYCHROTROPHIC — it grows at 4 degrees C</b>, which allows it to multiply in refrigerated feed and water and is the basis of the <b>COLD ENRICHMENT</b> technique used to isolate it from contaminated samples.</li>" +
       "<li>The reservoir is <b>WILD BIRDS AND WILD RODENTS</b>, which contaminate feed, bedding and water. <b>Introduction into a colony is therefore usually through contaminated feed or through wild rodent and bird access</b>, not through the laboratory animals themselves.</li>" +
       "</ul>" +
-      "<b>Lesions — the resemblance to tuberculosis gives the disease its name.</b><br>" +
-      "<ul>" +
-      "<li><b>Multiple, discrete, firm, WHITE TO GREY-YELLOW CASEOUS NODULES</b> resembling tubercles, found chiefly in the <b>MESENTERIC LYMPH NODES (which are markedly enlarged), the SPLEEN, the LIVER, and the wall of the INTESTINE, particularly the ILEUM AND CAECUM</b>, and in the Peyer patches.</li>" +
-      "<li>The nodules have a <b>caseous or suppurative centre</b> surrounded by macrophages, epithelioid cells and a fibrous capsule, with <b>colonies of bacteria visible in the centre</b>.</li>" +
-      "<li>There may be ulceration of the intestinal mucosa over the affected lymphoid tissue, and a septicaemic form with widespread necrotic foci.</li>" +
-      "<li><b>THE CRITICAL NEGATIVE: THE ORGANISMS ARE NOT ACID-FAST.</b> A ZIEHL-NEELSEN STAIN is therefore essential to exclude true tuberculosis, which the lesion closely mimics.</li>" +
-      "</ul>" +
-      "<b>Clinical signs</b> are chronic: progressive weight loss, ruffled coat, diarrhoea, and death over weeks. <b>It is a ZOONOSIS</b>, causing mesenteric lymphadenitis in man that mimics appendicitis, and enteritis.<br><br>" +
+      "<li><b>Lesions — resemblance to tuberculosis:</b> Multiple, discrete, firm, <b>WHITE TO GREY-YELLOW CASEOUS NODULES</b> resembling tubercles, found chiefly in the <b>MESENTERIC LYMPH NODES (which are markedly enlarged)</b>, SPLEEN, LIVER, and the wall of the <b>INTESTINE (particularly ILEUM AND CAECUM)</b> and Peyer patches.</li>" +
+      "<li><b>THE CRITICAL NEGATIVE FOR BOTH: THE ORGANISMS ARE NOT ACID-FAST.</b> A ZIEHL-NEELSEN STAIN is therefore essential on any caseous nodule to exclude true tuberculosis (<i>Mycobacterium bovis / M. tuberculosis</i>), which the gross lesions closely mimic.</li>" +
+      "<li><b>Zoonosis:</b> <i>Y. pseudotuberculosis</i> is an important zoonosis causing mesenteric lymphadenitis mimicking appendicitis in humans.</li>" +
+      "</ul><br>" +
 
       "<b>D. SALMONELLOSIS</b><br><br>" +
       "<b>Cause.</b> Chiefly <b><i>Salmonella</i> Typhimurium and <i>S.</i> Enteritidis</b> — motile Gram-negative rods of the Enterobacteriaceae. These are <b>non-host-adapted serovars with a broad host range</b>.<br><br>" +
@@ -56,18 +61,18 @@ theoryData["unit-6"] = {
       "<b>Pathogenesis.</b> After ingestion, <i>Salmonella</i> invades the epithelium of the <b>ileum and caecum</b>, is taken up over the Peyer patches, and <b>survives and multiplies inside macrophages</b>. This intracellular survival gives the three characteristic consequences: <b>enteritis, septicaemia with localisation in liver and spleen, and a persistent carrier state</b>. <b>Endotoxin</b> produces the fever, depression and shock.<br><br>" +
       "<b>Lesions.</b><br>" +
       "<ul>" +
-      "<li><b>The SPLEEN IS MARKEDLY ENLARGED — often two to five times normal size — dark red and firm.</b> Splenomegaly of this degree in a rodent is a strong pointer to salmonellosis.</li>" +
-      "<li><b>The LIVER IS ENLARGED AND MOTTLED, studded with numerous small GREY-WHITE FOCI OF NECROSIS</b>, sometimes described as the <b>paratyphoid nodule</b> — a focus of necrotic hepatocytes surrounded by macrophages.</li>" +
+      "<li><b>THE SPLEEN IS MARKEDLY ENLARGED — often two to five times normal size — dark red and firm.</b> Splenomegaly of this degree in a rodent is a strong pointer to salmonellosis.</li>" +
+      "<li><b>THE LIVER IS ENLARGED AND MOTTLED, studded with numerous small GREY-WHITE FOCI OF NECROSIS</b>, sometimes described as the <b>paratyphoid nodule</b> — a focus of necrotic hepatocytes surrounded by macrophages.</li>" +
       "<li><b>Catarrhal to fibrinonecrotic ENTERITIS AND TYPHLITIS</b>, with a thickened, congested ileum and caecum, necrotic Peyer patches, and watery, foul, sometimes blood-stained contents.</li>" +
       "<li>Enlarged, oedematous mesenteric lymph nodes; petechiae on serosal surfaces; pneumonia and abortion in some cases.</li>" +
       "</ul>" +
       "<b>Clinical signs:</b> ruffled coat, hunched posture, weight loss, <b>diarrhoea with a soiled perineum</b>, conjunctivitis, abortion, and sudden death in acute cases. <b>It is a significant ZOONOSIS</b>, and infected rodent colonies are a genuine risk to handlers.<br><br>" +
 
       "<b>E. SEPARATING THE THREE AT THE POST-MORTEM TABLE</b><br><br>" +
-      "All three produce hepatic necrotic foci and enteritis in a rodent, so they must be distinguished deliberately:<br>" +
+      "All three produce hepatic necrotic foci or enteritis in a rodent, so they must be distinguished deliberately:<br>" +
       "<ul>" +
       "<li><b>Tyzzer's disease: the TRIAD of liver + intestine + HEART, with CRISS-CROSS INTRACELLULAR filamentous bacilli demonstrated only by SILVER STAIN. Culture is always negative.</b></li>" +
-      "<li><b>Pseudotuberculosis: firm CASEOUS NODULES resembling tubercles in MESENTERIC NODES and spleen, with bipolar Gram-negative organisms that are NOT ACID-FAST.</b></li>" +
+      "<li><b>Pseudotuberculosis: firm CASEOUS / CASEOPURULENT NODULES resembling tubercles (in lungs/liver with Gram-positive <i>C. kutscheri</i> in mice/rats; in MESENTERIC NODES and spleen with bipolar Gram-negative <i>Y. pseudotuberculosis</i> in guinea pigs/rodents). Both are NOT ACID-FAST.</b></li>" +
       "<li><b>Salmonellosis: MARKED SPLENOMEGALY with a mottled liver and enteritis, and the organism grows readily on ordinary culture media.</b></li>" +
       "</ul>",
 
@@ -94,7 +99,7 @@ theoryData["unit-6"] = {
       "The organisms lie INSIDE hepatocytes AT THE EDGE OF THE NECROTIC FOCI, never in the dead centre — because the organism is OBLIGATE INTRACELLULAR and needs a living cell.",
       "THE BACILLI LIE IN CRISS-CROSS INTERLACING BUNDLES — the classic 'PICK-UP STICKS' or JACKSTRAW arrangement, which no other rodent pathogen produces in hepatocytes.",
       "THEY ARE NOT VISIBLE ON ROUTINE H AND E AND NOT RELIABLY SHOWN BY GRAM — DEMAND WARTHIN-STARRY or LEVADITI SILVER, GIEMSA or PAS. Failure to request a silver stain is the commonest reason the diagnosis is missed.",
-      "PSEUDOTUBERCULOSIS in laboratory animals = YERSINIA PSEUDOTUBERCULOSIS, a Gram-negative coccobacillus with BIPOLAR STAINING. (In sheep and goats the same word means Corynebacterium pseudotuberculosis.)",
+      "PSEUDOTUBERCULOSIS in laboratory animals: in RATS & MICE, Murine Pseudotuberculosis = CORYNEBACTERIUM KUTSCHERI (Gram-positive coryneform rod in Chinese-letter arrangements; caseopurulent lung and liver abscesses precipitated by cortisone/stress); in GUINEA PIGS and wild rodents = YERSINIA PSEUDOTUBERCULOSIS (Gram-negative bipolar rod, psychrotrophic, causing caseous mesenteric lymphadenitis).",
       "YERSINIA IS PSYCHROTROPHIC — IT GROWS AT 4 DEGREES C. So it multiplies in REFRIGERATED FEED AND WATER, and it is isolated by COLD ENRICHMENT.",
       "The reservoir is WILD BIRDS AND WILD RODENTS contaminating feed and bedding — infection enters the colony from outside, not from the laboratory animals.",
       "Lesions: firm discrete WHITE-YELLOW CASEOUS NODULES resembling TUBERCLES in the MESENTERIC LYMPH NODES (markedly enlarged), SPLEEN, LIVER and wall of ILEUM AND CAECUM.",
@@ -105,7 +110,7 @@ theoryData["unit-6"] = {
       "SALMONELLA SURVIVES INSIDE MACROPHAGES — hence ENTERITIS plus SEPTICAEMIA plus a persistent CARRIER STATE in mesenteric nodes and GALL BLADDER.",
       "THE MOST STRIKING LESION IS MARKED SPLENOMEGALY — often 2-5 times normal — with an ENLARGED MOTTLED LIVER studded with grey-white necrotic foci (paratyphoid nodules), and enteritis and typhlitis.",
       "A SINGLE NEGATIVE FAECAL CULTURE CANNOT CLEAR AN ANIMAL of Salmonella — shedding is intermittent and resumes under stress. Salmonellosis is a significant ZOONOSIS for handlers.",
-      "SEPARATING THE THREE: TYZZER'S = triad including HEART, criss-cross intracellular bacilli on SILVER STAIN, culture negative. PSEUDOTUBERCULOSIS = caseous nodules in MESENTERIC NODES, NOT acid-fast. SALMONELLOSIS = MARKED SPLENOMEGALY, grows readily on culture."
+      "SEPARATING THE THREE: TYZZER'S = triad including HEART, criss-cross intracellular bacilli on SILVER STAIN, culture negative. PSEUDOTUBERCULOSIS = caseopurulent nodules (C. kutscheri in lung/liver of mice/rats; Y. pseudotuberculosis in mesenteric nodes/spleen), NOT acid-fast. SALMONELLOSIS = MARKED SPLENOMEGALY, grows readily on culture."
     ],
 
     clinical:
@@ -116,25 +121,25 @@ theoryData["unit-6"] = {
       "<b>Look outside the animal house for the source of <i>Yersinia</i> and <i>Salmonella</i>.</b> Both are introduced by <b>wild rodents, birds and insects, and by contaminated feed</b>, not by the laboratory animals. In Indian animal houses, where buildings are often not fully sealed and feed may be stored in open sacks, this is where the investigation belongs. Advise <b>rodent-proofing and bird-proofing the building, storing feed in closed containers off the floor, using heat-treated or irradiated diet where available, autoclaving bedding, and controlling insects</b>. Remember that <i>Yersinia</i> grows at refrigerator temperature, so cold storage of feed and water does not protect against it.<br><br>" +
       "<b>Ask for a Ziehl-Neelsen on any caseous nodule.</b> In a rodent or primate facility, firm caseous nodules in the mesenteric nodes and spleen raise two possibilities with completely different consequences — <b>yersiniosis, which is a colony hygiene problem, and tuberculosis, which is a zoonotic emergency</b>. The organisms of <i>Yersinia</i> are not acid-fast, so a single stain settles it. This habit generalises: caseous nodules in any species deserve an acid-fast stain.<br><br>" +
       "<b>Protect the students and staff, because all three are hazards.</b> <i>Salmonella</i> and <i>Yersinia</i> are genuine zoonoses, and animal house attendants, postgraduate students and researchers handling infected rodents are the exposed group. Insist on <b>gloves, handwashing with soap and running water after handling animals or bedding, no eating or drinking in the animal room, and prompt reporting of diarrhoeal illness with a mention of the animal contact</b>. Dust generated while emptying cages is a real exposure route, so bedding should be dampened or handled with a mask rather than tipped out dry.<br><br>" +
-      "<b>Explain to researchers why a healthy-looking colony still matters.</b> Investigators frequently resist health monitoring on the grounds that their animals look well. The argument that carries weight is the experimental one: <b>subclinical infection alters immune responses, growth rates, organ weights and tumour incidence, so infected animals generate unreliable data and wasted work</b>. Framing colony health as a matter of experimental validity rather than only of animal welfare is usually what secures cooperation.",
+      "<b>Explain to researchers why a healthy-looking colony still matters.</b> Investigators frequently resist health monitoring on the grounds that their animals look well. The argument that carries weight is the experimental one: <b>subclinical infection alters immune responses, growth rates, organ weights and tumour incidence, invalidating experimental results even when no animal appears ill</b>. Framing colony health as a matter of experimental validity rather than only of animal welfare is usually what secures cooperation.",
 
     tables: [
       {
         title: "Tyzzer's disease versus pseudotuberculosis versus salmonellosis in rodents",
         headers: ["Feature", "TYZZER'S DISEASE", "PSEUDOTUBERCULOSIS", "SALMONELLOSIS"],
         rows: [
-          ["Organism", "Clostridium piliforme", "Yersinia pseudotuberculosis", "S. Typhimurium / Enteritidis"],
-          ["Gram reaction", "Gram-negative to variable, FILAMENTOUS", "Gram-negative coccobacillus, BIPOLAR", "Gram-negative rod"],
-          ["Grows on ordinary media?", "NO — culture ALWAYS negative", "YES (use COLD ENRICHMENT)", "YES, readily"],
-          ["Location of organism", "INTRACELLULAR, in living cells at lesion EDGE", "Extracellular, in nodule centre", "Intracellular in macrophages"],
-          ["LIVER", "Multiple small pale necrotic foci", "Caseous nodules", "Enlarged, MOTTLED, grey-white foci"],
-          ["INTESTINE", "Necrotising ILEITIS, TYPHLITIS, COLITIS", "Nodules and ulcers over ileum and caecum", "Catarrhal to fibrinonecrotic enteritis"],
-          ["HEART", "MYOCARDIAL NECROSIS — part of the TRIAD", "Not affected", "Not typically"],
-          ["SPLEEN", "May be affected", "Caseous nodules", "MARKEDLY ENLARGED (2-5 times)"],
-          ["Mesenteric nodes", "Not prominent", "MARKEDLY ENLARGED with caseous nodules", "Enlarged, oedematous"],
+          ["Organism", "Clostridium piliforme", "C. kutscheri (mice/rats) / Yersinia pseudotuberculosis (guinea pigs)", "S. Typhimurium / Enteritidis"],
+          ["Gram reaction", "Gram-negative to variable, FILAMENTOUS", "C. kutscheri: Gram-positive rod; Yersinia: Gram-negative bipolar", "Gram-negative rod"],
+          ["Grows on ordinary media?", "NO — culture ALWAYS negative", "YES (C. kutscheri on blood agar; Yersinia cold enrichment)", "YES, readily"],
+          ["Location of organism", "INTRACELLULAR, in living cells at lesion EDGE", "Extracellular, in caseous / purulent centre", "Intracellular in macrophages"],
+          ["LIVER", "Multiple small pale necrotic foci", "Caseopurulent nodules / abscesses", "Enlarged, MOTTLED, grey-white foci"],
+          ["INTESTINE", "Necrotising ILEITIS, TYPHLITIS, COLITIS", "Yersinia: nodules & ulcers over ileum/caecum", "Catarrhal to fibrinonecrotic enteritis"],
+          ["HEART", "MYOCARDIAL NECROSIS — part of the TRIAD", "Not typical", "Not typically"],
+          ["SPLEEN", "May be affected", "Caseous nodules (especially Yersinia)", "MARKEDLY ENLARGED (2-5 times)"],
+          ["Mesenteric nodes", "Not prominent", "MARKEDLY ENLARGED with caseous nodules (Yersinia)", "Enlarged, oedematous"],
           ["Stain required", "WARTHIN-STARRY / Giemsa / PAS", "Gram + ZIEHL-NEELSEN (to exclude TB)", "Routine; culture"],
-          ["Diagnostic appearance", "CRISS-CROSS 'PICK-UP STICKS' bundles", "Bipolar organisms in caseous centre", "Paratyphoid nodules"],
-          ["Zoonotic", "Not significant", "YES — mimics appendicitis", "YES"]
+          ["Diagnostic appearance", "CRISS-CROSS 'PICK-UP STICKS' bundles", "C. kutscheri: Chinese letters in lung; Yersinia: bipolar in node", "Paratyphoid nodules"],
+          ["Zoonotic", "Not significant", "Yersinia: YES (mimics appendicitis); C. kutscheri: minimal", "YES"]
         ]
       },
       {
@@ -650,7 +655,7 @@ theoryData["unit-6"] = {
 
       "<b>B. MYXOMATOSIS — the most important viral disease of rabbits</b><br><br>" +
       "<b>Cause.</b> <b>Myxoma virus, a <i>Leporipoxvirus</i></b> — again a poxvirus, replicating in the cytoplasm.<br><br>" +
-      "<b>The natural history is one of the classic stories in pathology.</b> The virus is <b>naturally a harmless parasite of the South American forest rabbit (<i>Sylvilagus</i>)</b>, in which it causes only a small benign skin fibroma. In the <b>European rabbit (<i>Oryctolagus cuniculus</i>) — the domestic rabbit — it causes a devastating, near-100-per-cent-fatal disease</b>. It was deliberately introduced into Australia and Europe to control wild rabbit populations, and the subsequent <b>co-evolution of attenuated virus strains and resistant rabbits is the textbook demonstration of how virulence and host resistance change together over time</b>.<br><br>" +
+      "<b>The natural history is one of the classic stories in pathology.</b> The virus is <b>naturally a harmless parasite of the South American forest rabbit (<i>Sylvilagus</i>)</b>, in which it causes only a small benign skin fibroma. In the <b>European rabbit (<i>Oryctolagus cuniculus</i>) — the domestic rabbit — it causes a devastating, near-100-per-cent-fatal disease</b>. It was deliberately introduced into Australia and Europe to control wild rabbit populations, and the subsequent <b>concurrent natural selection of attenuated viral strains and host resistance is the textbook demonstration of how virulence and host resistance adapt together over time</b>.<br><br>" +
       "<b>Transmission — the critical practical fact.</b> Spread is chiefly <b>MECHANICAL, BY BITING ARTHROPODS — MOSQUITOES AND FLEAS</b>, which carry virus on their mouthparts. <b>There is no replication in the vector.</b> Consequently the disease is <b>strictly SEASONAL, appearing when mosquito and flea numbers peak — in India, during and after the monsoon</b> — and outbreaks can occur in a closed rabbitry with no introduction of animals. Direct contact and fomites also transmit it.<br><br>" +
       "<b>Pathogenesis.</b> The virus replicates at the inoculation site and in the regional node, then spreads systemically. It has a marked affinity for <b>undifferentiated mesenchymal cells</b>, which it transforms into large, stellate <b>MYXOMA CELLS</b> that secrete abundant <b>mucinous (myxomatous) ground substance rich in hyaluronic acid</b>. This mucinous material, not oedema fluid alone, is what produces the characteristic gelatinous swellings.<br><br>" +
       "<b>Lesions — the classic picture.</b><br>" +
@@ -694,7 +699,7 @@ theoryData["unit-6"] = {
       "</ul>",
 
     eliteDesc:
-      "<b>MYXOMATOSIS IS THE CLASSIC DEMONSTRATION THAT VIRULENCE IS A PROPERTY OF THE HOST-PARASITE RELATIONSHIP, NOT OF THE VIRUS ALONE.</b> In its natural host, the South American <i>Sylvilagus</i>, myxoma virus produces only a small benign skin fibroma — a well-adapted, essentially harmless parasitism of long standing. In the European rabbit, an evolutionarily unfamiliar host, the same virus is almost invariably fatal. The general principle is one already met with malignant catarrhal fever in cattle, <i>Setaria</i> in the horse and <i>Histomonas</i> in the turkey: <b>a pathogen in a host it has not co-adapted with typically causes far more damage than in its natural host, because neither party has evolved a working accommodation.</b><br><br>" +
+      "<b>MYXOMATOSIS IS THE CLASSIC DEMONSTRATION THAT VIRULENCE IS A PROPERTY OF THE HOST-PARASITE RELATIONSHIP, NOT OF THE VIRUS ALONE.</b> In its natural host, the South American <i>Sylvilagus</i>, myxoma virus produces only a small benign skin fibroma — a well-adapted, essentially harmless parasitism of long standing. In the European rabbit, an immunologically unadapted host, the same virus is almost invariably fatal. The general principle is one already met with malignant catarrhal fever in cattle, <i>Setaria</i> in the horse and <i>Histomonas</i> in the turkey: <b>a pathogen in a host with which it has not co-adapted typically causes far more damage than in its natural host, because neither party has established a working immunological accommodation.</b><br><br>" +
       "The sequel is equally instructive. After deliberate release into wild rabbit populations, <b>mortality fell from about 99 per cent to around 25 per cent within a few years</b> — through selection of <b>attenuated virus strains</b> on one side and <b>genetically resistant rabbits</b> on the other. Attenuated strains were favoured because a rabbit that survives longer remains available to mosquitoes for longer, whereas a strain that kills within days destroys its own transmission opportunity. This is the textbook illustration that <b>transmission requirements, not virulence itself, determine what natural selection favours in a pathogen</b>, and it is worth being able to state because it explains why some infections become milder over time and others do not.<br><br>" +
       "<b>MECHANICAL VECTOR TRANSMISSION EXPLAINS THE ENTIRE EPIDEMIOLOGY OF MYXOMATOSIS.</b> Mosquitoes and fleas carry myxoma virus <b>on their mouthparts, with no replication in the vector</b> — they act as flying contaminated needles. Three consequences follow, and each has a practical counterpart. The disease is <b>strictly seasonal, following vector abundance</b>, which in India means during and after the monsoon. Outbreaks can appear in a <b>closed rabbitry with no animal introductions at all</b>, which frequently bewilders owners who have practised good quarantine. And <b>control must be directed at the vector</b>: mosquito netting over hutches, drainage of standing water, removal of water-holding containers, flea control, and housing rabbits away from stagnant water. Quarantine of incoming rabbits, though sensible, will not by itself prevent myxomatosis.<br><br>" +
       "<b>THE GELATINOUS SWELLING IS A TUMOUR-LIKE PROLIFERATION, NOT SIMPLE OEDEMA.</b> Myxoma virus infects <b>undifferentiated mesenchymal cells</b> and transforms them into large stellate <b>myxoma cells</b> that secrete abundant <b>hyaluronic acid-rich mucinous ground substance</b>. The characteristic swelling of the face and anogenital region is therefore composed of <b>mucin and proliferating cells</b>, not merely of extravasated fluid — which is why it is firm and gelatinous rather than pitting, why it does not resolve with diuresis, and why it stains with <b>alcian blue and mucicarmine</b>. Recognising the lesion as a proliferative myxomatous change rather than as oedema also explains the name of the disease and the term \"myxoma\".<br><br>" +
@@ -784,7 +789,7 @@ theoryData["unit-6"] = {
     ],
 
     img: "",
-    tags: ["rabbit pox", "orthopoxvirus", "myxomatosis", "myxoma virus", "Leporipoxvirus", "big head", "myxoma cell", "hyaluronic acid", "mechanical vector", "mosquito", "co-evolution of virulence", "Shope papilloma", "viral oncology", "squamous cell carcinoma", "oral papillomatosis", "intranuclear inclusion", "Eimeria stiedae", "hepatic coccidiosis", "bile duct hyperplasia", "intestinal coccidiosis", "Psoroptes cuniculi", "ear canker", "Cheyletiella", "walking dandruff"]
+    tags: ["rabbit pox", "orthopoxvirus", "myxomatosis", "myxoma virus", "Leporipoxvirus", "big head", "myxoma cell", "hyaluronic acid", "mechanical vector", "mosquito", "attenuation and host resistance", "Shope papilloma", "viral oncology", "squamous cell carcinoma", "oral papillomatosis", "intranuclear inclusion", "Eimeria stiedae", "hepatic coccidiosis", "bile duct hyperplasia", "intestinal coccidiosis", "Psoroptes cuniculi", "ear canker", "Cheyletiella", "walking dandruff"]
   },
 
   "u6-t06": {
@@ -1180,7 +1185,7 @@ theoryData["unit-6"] = {
       "</ul>",
 
     eliteDesc:
-      "<b>THE TOLERANT WILD RESERVOIR IS THE CENTRAL IDEA, AND IT RECURS THROUGHOUT THE UNIT.</b> Long co-evolution between a parasite and its natural host produces an accommodation in which the host carries the organism with low parasitaemia and no illness. The wild ungulate that harbours <i>Trypanosoma evansi</i> or <i>Theileria</i> without any sign is not an anomaly but the expected outcome of a stable relationship. The important corollary is that <b>the animals that die are those outside that relationship</b> — the camel and horse introduced into a surra-endemic tract, the exotic or crossbred cow brought into a tick-endemic district, and the captive tiger fed infected meat. This is the same reasoning already met in <b>myxomatosis in the European rabbit, malignant catarrhal fever in cattle, <i>Setaria</i> in the horse and <i>Histomonas</i> in the turkey</b>: <b>a parasite in a host with which it has not co-adapted causes far more damage than in its natural host.</b><br><br>" +
+      "<b>THE TOLERANT WILD RESERVOIR IS THE CENTRAL IDEA, AND IT RECURS THROUGHOUT THE UNIT.</b> Long host-parasite co-adaptation produces an accommodation in which the natural host carries the organism with low parasitaemia and no illness. The wild ungulate that harbours <i>Trypanosoma evansi</i> or <i>Theileria</i> without any sign is not an anomaly but the expected outcome of a stable relationship. The important corollary is that <b>the animals that die are those outside that relationship</b> — the camel and horse introduced into a surra-endemic tract, the exotic or crossbred cow brought into a tick-endemic district, and the captive tiger fed infected meat. This is the same reasoning already met in <b>myxomatosis in the European rabbit, malignant catarrhal fever in cattle, <i>Setaria</i> in the horse and <i>Histomonas</i> in the turkey</b>: <b>a parasite in a host with which it has not co-adapted causes far more damage than in its natural host.</b><br><br>" +
       "<b>THE REVERSE SITUATION IS WHAT KILLS WILD ANIMALS, AND IT MATTERS MOST IN CAPTURE WORK.</b> Tolerance is maintained by an intact immune response holding the parasite at a low level. Anything that suppresses that response — <b>chemical capture, transport, confinement, translocation, malnutrition, concurrent disease or the stress of captivity</b> — allows recrudescence, and a wild animal that has carried <i>Trypanosoma</i> or <i>Theileria</i> harmlessly for years may die of it within days of an apparently successful operation. This is a leading cause of post-capture mortality and it is frequently attributed to the anaesthetic or to capture myopathy when the true cause is a recrudescent haemoparasitism. The practical implication is that <b>a blood smear and buffy coat examination should be part of pre-translocation screening and of any post-capture deterioration</b>, and that corticosteroids given during capture may make matters considerably worse.<br><br>" +
       "<b>THREE PARASITES, THREE LOCATIONS — AND EVERYTHING ELSE FOLLOWS.</b> The cleanest way to hold this topic is by where the organism lives. <b><i>Babesia</i> lives INSIDE THE RED CELL and bursts it; <i>Theileria</i> lives FIRST IN THE LYMPHOCYTE and then in the red cell; <i>Trypanosoma</i> lives FREE IN THE PLASMA.</b> From these three facts the entire comparative pathology can be reconstructed — the type of haemolysis, the colour of the urine, the state of the lymph nodes, the best diagnostic sample and even whether a vaccine is possible.<br><br>" +
       "<b>WHY BABESIOSIS COLOURS THE URINE AND THEILERIOSIS DOES NOT.</b> This is the highest-yield comparison and it should be reasoned rather than memorised. <i>Babesia</i> multiplies within the erythrocyte and <b>physically ruptures the membrane</b> to release merozoites. Rupture occurs in the circulating blood, so free haemoglobin enters plasma, exceeds the binding capacity of haptoglobin, passes the glomerular filter and appears in urine — <b>intravascular haemolysis, haemoglobinaemia, haemoglobinuria, red water</b>. <i>Theileria</i> does most of its damage in the lymphoid system, and the red cells it parasitises are removed largely <b>intact by macrophages</b> after opsonisation. Haemoglobin is therefore degraded inside the macrophage and never appears free in plasma — <b>extravascular haemolysis, jaundice, but clear urine</b>. The general rule generalises to every haemolytic anaemia: <b>intravascular haemolysis colours the urine; extravascular haemolysis does not.</b><br><br>" +
@@ -1192,7 +1197,7 @@ theoryData["unit-6"] = {
       "<b>ENDEMIC STABILITY AND THE DANGER OF PARTIAL TICK CONTROL.</b> Where tick challenge is constant, every young animal is infected early, survives, and becomes a solidly immune carrier, so clinical disease is rare despite universal infection. This equilibrium is disturbed by <b>introducing adult animals from a tick-free area, or by intermittent tick control that leaves a cohort unexposed until adulthood</b>. The counter-intuitive but important conclusion is that <b>partial or half-hearted tick control can cause more clinical disease than either full control or none at all</b>, and this is the correct answer to the common question of why imported and crossbred cattle at the edge of a wildlife area suffer so severely.",
 
     keyPoints: [
-      "THE GOVERNING PRINCIPLE: WILD ANIMALS IN AN ENDEMIC AREA ARE USUALLY INFECTED BUT NOT ILL — long co-evolution produces TOLERANT RESERVOIRS with low persistent parasitaemia.",
+      "THE GOVERNING PRINCIPLE: WILD ANIMALS IN AN ENDEMIC AREA ARE USUALLY INFECTED BUT NOT ILL — long host-pathogen co-adaptation produces TOLERANT RESERVOIRS with low persistent parasitaemia.",
       "DOMESTIC AND EXOTIC ANIMALS INTRODUCED INTO THAT AREA SUFFER SEVERE OR FATAL DISEASE, because they lack that adaptation. The same principle as myxomatosis, MCF, Setaria and Histomonas.",
       "CONVERSELY, A WILD ANIMAL THAT IS CAPTURED, TRANSLOCATED, MALNOURISHED OR STRESSED MAY DIE OF A PARASITE IT CARRIED HARMLESSLY FOR YEARS — the commonest way haemoparasitism kills wildlife.",
       "POST-CAPTURE DEATHS ATTRIBUTED TO ANAESTHESIA OR CAPTURE MYOPATHY ARE OFTEN RECRUDESCENT HAEMOPARASITISM — screen by blood smear and buffy coat before translocation and after any deterioration.",
@@ -1267,7 +1272,7 @@ theoryData["unit-6"] = {
         title: "Why the wild animal survives and the introduced animal dies",
         headers: ["Situation", "Outcome", "Reason"],
         rows: [
-          ["Wild ungulate in endemic area", "Infected, NOT ILL — tolerant reservoir", "Long co-evolution; early exposure; endemic stability"],
+          ["Wild ungulate in endemic area", "Infected, NOT ILL — tolerant reservoir", "Long host-pathogen co-adaptation; early exposure; endemic stability"],
           ["Locally raised zebu calf", "Mild infection, becomes immune carrier", "Exposed when young and innately resistant"],
           ["Exotic or crossbred ADULT introduced", "SEVERE or FATAL disease", "First exposure as a susceptible adult"],
           ["Camel or horse in a surra area", "Severe, often fatal", "Highly susceptible species; wild ungulates supply the reservoir"],

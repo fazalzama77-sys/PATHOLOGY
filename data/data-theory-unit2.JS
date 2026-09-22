@@ -806,7 +806,7 @@ theoryData["unit-2"] = {
 
       "<b>C. INTERSTITIAL AND TUBULOINTERSTITIAL DISEASE</b><br>" +
       "<ul>" +
-      "<li><b>Interstitial nephritis</b> — <b>leptospirosis</b> is the classic cause, producing <b>'white-spotted kidney'</b> in calves: multiple small grey-white foci of lymphocytic infiltration scattered through the cortex. Also seen in canine leptospirosis and infectious canine hepatitis.</li>" +
+      "<li><b>Interstitial nephritis</b> — non-suppurative inflammation of the renal interstitium. In young calves, subclinical <b><i>Escherichia coli</i> bacteraemia</b> is the classic cause of <b>'white-spotted kidney' (focal interstitial nephritis)</b>: multiple small grey-white nodular foci of lymphoplasmacytic infiltration scattered through the cortex. In adult cattle, pigs and dogs, <b>leptospirosis</b> is the classic cause of diffuse non-suppurative interstitial nephritis. Also seen in canine leptospirosis and infectious canine hepatitis.</li>" +
       "<li><b>Pyelonephritis</b> — suppurative infection ascending from the bladder, usually <i>Corynebacterium renale</i> in cattle and <i>E. coli</i> in dogs. The renal pelvis is dilated and filled with pus, the papillae are necrotic, and radiating pale streaks extend into the cortex. Ascending infection is favoured by urinary stasis, catheterisation and pregnancy.</li>" +
       "<li><b>Embolic (suppurative) nephritis</b> — multiple small cortical abscesses from bacteraemia, classically from <b>valvular endocarditis</b>.</li>" +
       "<li><b>Renal infarction</b> — pale wedge-shaped areas with the apex pointing to the hilus; from thromboembolism.</li>" +
@@ -856,7 +856,7 @@ theoryData["unit-2"] = {
       "Nephrotoxins: aminoglycosides, NSAIDs, heavy metals, ETHYLENE GLYCOL (calcium oxalate crystals), oxalate plants, ochratoxin.",
       "Pigment nephropathy: HAEMOGLOBIN (babesiosis, copper poisoning) and MYOGLOBIN (azoturia) precipitate in tubules.",
       "Tubular epithelium can REGENERATE if the tubular BASEMENT MEMBRANE is intact — hence acute renal failure may be fully reversible.",
-      "LEPTOSPIROSIS causes interstitial nephritis — the WHITE-SPOTTED KIDNEY of calves.",
+      "WHITE-SPOTTED KIDNEY in calves is caused by subclinical E. COLI bacteraemia; LEPTOSPIROSIS causes diffuse interstitial nephritis in cattle, pigs and dogs.",
       "PYELONEPHRITIS ascends from the bladder — Corynebacterium renale in cattle, E. coli in dogs; dilated pus-filled pelvis with necrotic papillae.",
       "Embolic suppurative nephritis (multiple cortical abscesses) points to VALVULAR ENDOCARDITIS upstream.",
       "HYDRONEPHROSIS = obstruction of outflow → pelvic dilatation → pressure atrophy → thin-walled fluid sac.",
@@ -870,7 +870,7 @@ theoryData["unit-2"] = {
       "<b>Most acute renal failure you will cause yourself is preventable.</b> Aminoglycosides and NSAIDs are nephrotoxic in proportion to dehydration, so never give them to a hypovolaemic animal before restoring fluid volume — a rule that applies to the colicky horse, the toxic cow and the vomiting dog alike. When an animal has been anaesthetised, in shock, or severely dehydrated, assume the tubules have been stressed and support them with fluids.<br><br>" +
       "The corollary is optimistic and worth remembering: because tubular epithelium regenerates when its basement membrane survives, <b>an animal in acute renal failure is worth treating</b>. Aggressive fluid therapy, correction of electrolytes and removal of the toxin can carry it through to full recovery. That is quite different from chronic renal failure, where nephrons have been permanently replaced by fibrous tissue and the kidney is small, firm and pale.<br><br>" +
       "In male ruminants, <b>obstructive urolithiasis is a common and time-critical emergency</b> in India. A feedlot bull calf or ram straining, tail-flagging, dribbling urine and vocalising has a calculus at the urethral process or sigmoid flexure; if it goes unnoticed the bladder or urethra ruptures and the animal develops a swollen ventral abdomen — 'water belly' — with rising urea and death. Treatment is surgical, but the real answer is dietary: correct the calcium-to-phosphorus ratio, add salt to force water intake, and acidify the urine.<br><br>" +
-      "Two field diagnoses worth carrying. Small grey-white spots scattered through a calf's renal cortex at necropsy is <b>leptospirosis</b> — a zoonosis, so handle the tissue with gloves and advise the owner. Persistent haematuria in adult cattle grazing bracken-infested hill land is <b>enzootic haematuria</b>, caused by chronic bracken ingestion inducing bladder tumours; the answer is pasture management, and the prognosis for the affected animal is poor. Finally, in a dog or cat with a soft, pliable jaw and loose teeth, think <b>renal secondary hyperparathyroidism</b> and check the kidneys — the mouth is telling you about the kidney."
+      "Two field diagnoses worth carrying. Multiple small grey-white spots scattered through a calf's renal cortex at necropsy represents the classic <b>'white-spotted kidney' from past subclinical <i>E. coli</i> bacteraemia</b> (or less commonly <i>Leptospira</i> in older stock — remember leptospirosis is a zoonosis, so handle suspicious kidneys with gloves). Persistent haematuria in adult cattle grazing bracken-infested hill land is <b>enzootic haematuria</b>, caused by chronic bracken ingestion inducing bladder tumours; the answer is pasture management, and the prognosis for the affected animal is poor. Finally, in a dog or cat with a soft, pliable jaw and loose teeth, think <b>renal secondary hyperparathyroidism</b> and check the kidneys — the mouth is telling you about the kidney."
     ,
 
     tables: [
@@ -880,7 +880,7 @@ theoryData["unit-2"] = {
         rows: [
           ["Glomerulus", "Glomerulonephritis, amyloidosis", "Immune complexes from chronic antigenaemia; chronic inflammation", "Heavy PROTEINURIA, nephrotic syndrome, oedema, ascites"],
           ["Tubule", "Nephrosis — degeneration and necrosis", "Nephrotoxins, ischaemia, haemoglobin and myoglobin pigments", "Acute renal failure; potentially REVERSIBLE"],
-          ["Interstitium", "Interstitial nephritis, pyelonephritis", "Leptospirosis; ascending bacterial infection", "White-spotted kidney; pus in pelvis, fever, pain"],
+          ["Interstitium", "Interstitial nephritis, pyelonephritis", "E. coli (white-spotted kidney in calves), Leptospira; ascending C. renale", "Focal or diffuse cortical pale spots; dilated pelvis full of pus"],
           ["Vessels", "Infarction, embolic nephritis", "Thromboembolism, endocarditis", "Wedge-shaped infarcts or cortical abscesses"]
         ]
       },
