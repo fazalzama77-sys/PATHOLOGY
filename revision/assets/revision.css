@@ -56,6 +56,9 @@ body{
 .cols{column-count:2;column-gap:4mm;column-fill:balance;flex:1}
 .full{column-span:all}
 .box{break-inside:avoid;page-break-inside:avoid;margin-bottom:1.6mm}
+/* The blank-fill drill is taller than one column. It MUST be allowed to
+   flow across both columns, or it spills onto an extra sheet. */
+.box--flow{break-inside:auto;page-break-inside:auto}
 
 /* ---------- BOX CHROME ---------- */
 .box>h2{
@@ -180,7 +183,9 @@ td.c{text-align:center}
 @media print{
   body{background:#fff}
   .bar{display:none!important}
-  .page{margin:0;box-shadow:none;width:210mm;height:297mm;min-height:0}
+  .page{margin:0;box-shadow:none;width:210mm;height:296mm;min-height:0;
+        break-after:page;page-break-after:always}
+  .page:last-of-type{break-after:auto;page-break-after:auto}
 }
 
 /* ---------- SMALL SCREEN (phone reading) ---------- */

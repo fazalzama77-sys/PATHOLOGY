@@ -43,7 +43,7 @@ SHORT = {
 }
 
 BOX_RE = re.compile(
-    r'<div class="box (t[1-6])">\s*<h2>(.*?)</h2>\s*<div class="body">(.*?)\n      </div>\s*</div>',
+    r'<div class="box (t[1-6])((?: [a-z-]+)*)">\s*<h2>(.*?)</h2>\s*<div class="body">(.*?)\n      </div>\s*</div>',
     re.S)
 HEAD_RE = re.compile(r'(<body>.*?</div>\n)\s*<!-- ', re.S)
 
@@ -53,12 +53,14 @@ def boxes_of(src):
     return BOX_RE.findall(src)
 
 
-def render_box(tone, heading, body):
-    return ('    <div class="box %s">\n'
+def render_box(tone, extra, heading, body):
+    """`extra` carries any additional classes, e.g. " box--flow" on the
+    oversized cards that are allowed to break across columns."""
+    return ('    <div class="box %s%s">\n'
             '      <h2>%s</h2>\n'
             '      <div class="body">%s\n'
             '      </div>\n'
-            '    </div>\n' % (tone, heading, body))
+            '    </div>\n' % (tone, extra, heading, body))
 
 
 def repaginate(no, bins):
@@ -94,8 +96,8 @@ def repaginate(no, bins):
             '  <div class="cols">\n\n'
             % ("=" * 18, pi, "=" * 18, no, SHORT[no], pi, total, a, b))
         for i in bin_:
-            tone, heading, body = found[i]
-            out.append(render_box(tone, heading, body))
+            tone, extra, heading, body = found[i]
+            out.append(render_box(tone, extra, heading, body))
             out.append("\n")
         out.append('  </div>\n</section>\n\n')
 

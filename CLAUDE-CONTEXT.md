@@ -113,7 +113,7 @@ and `--ivri-purple` are the readable text/accent versions.
 | Practical Units 1–6 (All 6 units) | 25 | ✅ **COMPLETE** | 291 | 50 |
 | WHY Section (Comparative Species) | 100 entries | ✅ **COMPLETE** | 100 mechanisms | 100 clinical notes |
 | Theory Q&A Bank (Units 1–6) | 150 questions | ✅ **COMPLETE** | 744 total marks | 6 comp tables |
-| **Rapid Revision sheets (Units 1–6)** | 41 A4 pages | ✅ **COMPLETE** | 151 cards | 317 blank-fill drills |
+| **Rapid Revision sheets (Units 1–6)** | 46 A4 pages | ✅ **COMPLETE** | 151 cards | 317 blank-fill drills |
 
 **Total so far: 78 of 145 topics + 100 WHY entries + 150 Q&A written exam questions, >1,350,000 characters,
 1,700+ key points/mechanisms, 191 tables. Every written topic and Q&A entry has high-scoring notes.**
@@ -536,7 +536,7 @@ Pages are fixed A4, so raising the knob makes every page overflow. The tool chai
 
 `revision/assets/revision.css` has **ONE KNOB**: `body { font-size }`, currently **9pt**.
 Everything else is in `em`/`mm`, so changing that one number rescales the whole sheet.
-Current knob: **9pt**. Fit: **U1 7pp · U2 5pp · U3 6pp · U4 10pp · U5 7pp · U6 6pp = 41 pages.**
+Current knob: **9pt**. Fit: **U1 8pp · U2 5pp · U3 6pp · U4 12pp · U5 8pp · U6 7pp = 46 pages.**
 (It was 7.35pt / 28 pages until 2026-09-23 — raised because the print was too small to read.)
 
 ### Two stylesheets, deliberately

@@ -38,7 +38,7 @@ PAGE_RE = re.compile(
 MASTHEAD_RE = re.compile(
     r'<div class="masthead">.*?<h1>(.*?)</h1>', re.S)
 BOX_RE = re.compile(
-    r'<div class="box (t[1-6])">\s*<h2>(.*?)</h2>\s*<div class="body">(.*?)\n      </div>\s*</div>',
+    r'<div class="box (t[1-6])((?: [a-z-]+)*)">\s*<h2>(.*?)</h2>\s*<div class="body">(.*?)\n      </div>\s*</div>',
     re.S)
 FIB_RE = re.compile(r'<div class="fib">(.*?)</div>', re.S)
 
@@ -92,7 +92,7 @@ def build_unit(no):
         if not found:
             raise SystemExit("no boxes parsed on page %d of %s" % (pi, path))
 
-        for tone, heading, body in found:
+        for tone, extra, heading, body in found:
             n += 1
             heading = clean(heading)
             # heading looks like "12 · SOME TITLE ★★"
@@ -109,6 +109,7 @@ def build_unit(no):
                 "n": n,
                 "page": pi,
                 "tone": tone,
+                "flow": bool(extra and "box--flow" in extra),
                 "title": label,
                 "stars": stars,
                 "kinds": k,
