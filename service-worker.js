@@ -13,7 +13,7 @@
    PRECACHE, otherwise students keep seeing the old version.
    ============================================================ */
 
-var CACHE_VERSION = "vpath-v26";
+var CACHE_VERSION = "vpath-v27";
 var SHELL_CACHE = CACHE_VERSION + "-shell";
 var IMG_CACHE = CACHE_VERSION + "-img";
 
@@ -51,7 +51,7 @@ var PRECACHE = [
   "data/data-revision.JS",
 
   "revision/index.html",
-  "revision/assets/revision.css",
+  "revision/assets/revision.css?v=2",
   "revision/unit-1.html",
   "revision/unit-2.html",
   "revision/unit-3.html",

@@ -36,6 +36,8 @@ and **uses the same shared visual theme** — see "The shared IVRI theme" below.
 1. **Theory** — Units 1–6 of the VCI theory syllabus, 120 topics.
 2. **Practical** — Units 1–6 of the practical syllabus, 25 topics.
 3. **WHY** — Mechanism-first explanations.
+3b. **Rapid Revision** — one dense, printable A4 sheet per theory unit, plus an
+   interactive in-app version at `#/revision`. Built for the last pass before the paper.
 4. **Question & Answer** — Written-exam practice: short notes, long answers,
    differentiate-between tables, definitions, practical spotting.
 5. **Quiz** — MCQ / True-False / Fill-blank, with unit-wise, paper-wise, grand test,
@@ -111,6 +113,7 @@ and `--ivri-purple` are the readable text/accent versions.
 | Practical Units 1–6 (All 6 units) | 25 | ✅ **COMPLETE** | 291 | 50 |
 | WHY Section (Comparative Species) | 100 entries | ✅ **COMPLETE** | 100 mechanisms | 100 clinical notes |
 | Theory Q&A Bank (Units 1–6) | 150 questions | ✅ **COMPLETE** | 744 total marks | 6 comp tables |
+| **Rapid Revision sheets (Units 1–6)** | 41 A4 pages | ✅ **COMPLETE** | 151 cards | 317 blank-fill drills |
 
 **Total so far: 78 of 145 topics + 100 WHY entries + 150 Q&A written exam questions, >1,350,000 characters,
 1,700+ key points/mechanisms, 191 tables. Every written topic and Q&A entry has high-scoring notes.**
@@ -136,6 +139,10 @@ and `--ivri-purple` are the readable text/accent versions.
    - Dedicated `#/library/glossary` browser tab with live search filtering, 10 category chips, and audio speaker buttons
    - Site-wide search engine (<kbd>Ctrl</kbd> + <kbd>K</kbd>) indexing all 580 terms with direct deep-linking
 ✅ **Animations & Transitions** (`assets/css/animations.css`): smooth micro-interactions, card elevates, and modal reveals
+✅ **RAPID REVISION section** (`#/revision`) — see its own section below. Hub with six unit
+   cards and progress rings; sheet view with card ticking, Tables/Flow/Traps/Drill filters,
+   **Self-test** (blur) and **Hide answers** modes, a 30-minute countdown, drill right/wrong
+   scoring, one/two-column layout, Print A4, and search deep-links into individual cards
 
 ---
 
@@ -171,6 +178,7 @@ and `--ivri-purple` are the readable text/accent versions.
 │   ├── data-why.JS              ⏳ WHY entries — template only
 │   ├── data-qa.JS               ⏳ Q&A bank — template only
 │   ├── data-quiz.JS             ⏳ quizBank[unitId][mcq|tf|fib] — template only
+│   ├── data-revision.JS         ⚠️ GENERATED — never edit by hand (see Rapid Revision below)
 │   └── events-data.js           Interactive scenario challenges
 │
 ├── js/
@@ -187,15 +195,23 @@ and `--ivri-purple` are the readable text/accent versions.
 │   ├── tokens.css           ★ SHARED IVRI THEME — copy verbatim to new subject sites
 │   ├── main.css             Reset, layout, shared components, tooltip & glossary styles, sidebar collapse
 │   ├── sections.css         Per-screen styles (lesson page, quiz, dashboard, etc.)
+│   ├── revision.css         Rapid Revision section styles
 │   ├── animations.css       Smooth micro-interactions, fade/slide animations
 │   ├── deep-guide.css       Deep guide presentation styles
 │   └── events.css           Interactive challenge card styles
+│
+├── revision/                ← 📄 THE PRINTABLE A4 SHEETS (source of truth for revision)
+│   ├── index.html           Standalone hub — opens by double-click, no server needed
+│   ├── unit-1.html … unit-6.html   28 A4 pages total
+│   └── assets/revision.css  Print-first stylesheet (★ THE KNOB = one font-size)
 │
 ├── images/                  theory/ practical/ why/ qa/ + app icons (icons MISSING)
 └── tools/
     ├── start-server.bat     Double-click → http://localhost:5177
     ├── make-data-files.bat  Double-click → scaffolds new topic blocks
     ├── make-data-files.py
+    ├── build-revision-data.py   revision/*.html → data/data-revision.JS
+    ├── rebuild-revision.bat 🌟 Double-click after editing any revision sheet
     └── sync-repo.bat        Double-click → refreshes repo/ folder
 ```
 
@@ -233,6 +249,17 @@ qaBank["unit-1"] = [
     topicId, answer, keyPoints: [], diagram, table, pyq: [] }
 ];
 ```
+
+**Rapid Revision** (`data-revision.JS` — ⚠️ GENERATED, do not hand-edit):
+```js
+revisionData["unit-1"] = {
+  id, no, title, paper, icon, pages, pageTitles, sheet,   // sheet = "revision/unit-1.html"
+  boxes: [ { id, n, page, tone, title, stars, kinds: [], html } ],
+  drill: [ { id, html } ]          // <u>…</u> wraps the answer
+};
+```
+`tone` is `t1`–`t6` = blue · teal · purple · amber · coral · sage.
+`kinds` is any of `table flow trap mem fact drill` — it drives the filter chips.
 
 **WHY** (`data-why.JS`):
 ```js
@@ -272,7 +299,8 @@ passive transfer, heat-accelerated autolysis, poultry post-mortem.
 
 ## ⚙️ KEY ARCHITECTURE FACTS
 
-- **Hash routing.** `#/theory`, `#/unit/unit-1`, `#/topic/u1-t09`, `#/quiz/paper/paper-1`.
+- **Hash routing.** `#/theory`, `#/unit/unit-1`, `#/topic/u1-t09`, `#/quiz/paper/paper-1`,
+  `#/revision`, `#/revision/unit-4`, `#/revision/unit-4/unit-4-b06` (deep link to one card).
   Works from `file://` and any host with no server config. `app.route()` is the single
   entry point; `state.params.a` and `.b` are the two path segments after the name.
 - **`syllabus` is the backbone.** `data-syllabus.JS` builds `syllabus.unitById` and
@@ -288,7 +316,8 @@ passive transfer, heat-accelerated autolysis, poultry post-mortem.
   (This exact bug was caught and fixed on 2026-09-04.)
 - **localStorage keys:** `vpath-theme`, `vpath-detail`, `vpath-read`, `vpath-bookmarks`,
   `vpath-notes`, `vpath-highlights`, `vpath-hl-color`, `vpath-quiz`, `vpath-srs`,
-  `vpath-activity`, `vpath-visits`, `vpath-onboarded`, `vpath-last-topic`, `vpath-qa-done`.
+  `vpath-activity`, `vpath-visits`, `vpath-onboarded`, `vpath-last-topic`, `vpath-qa-done`,
+  `vpath-rev-boxes`, `vpath-rev-drill`, `vpath-rev-units`, `vpath-rev-prefs`.
   **Add any new key to `store.KEYS`** — `backupKeys()` derives from it automatically, so
   a key added there is covered by Backup/Restore.
 - **Highlights are objects, not strings.** `{ text, color }`, colour being one of
@@ -448,6 +477,104 @@ Whenever any AI assistant (Claude, Antigravity, ChatGPT) or Fazal finishes addin
 
 ---
 
+## 📄 RAPID REVISION — how this section is built (added 2026-09-23)
+
+**Purpose:** the last pass before the paper. Everything a unit is examined on, compressed
+into one dense sheet — comparison tables, flow chains, named lesions, stain answers,
+red TRAP cards for the true/false confusions, and a blank-fill drill at the end.
+
+### The content lives in ONE place
+
+`revision/unit-1.html` … `unit-6.html` are **both** the printable A4 sheets **and** the
+source of truth for the in-app section. They are self-contained: double-click one and it
+opens, no server needed.
+
+```
+revision/unit-*.html   ←  EDIT HERE
+        │
+        │  tools/rebuild-revision.bat   (python tools/build-revision-data.py)
+        ▼
+data/data-revision.JS  ←  GENERATED. Never edit by hand.
+        │
+        ▼
+js/revision.js  renders it at #/revision
+```
+
+**If you edit a sheet, you MUST run `tools/rebuild-revision.bat`**, otherwise the app keeps
+showing the old text while the printed sheet shows the new text.
+
+### Page budget — the sheets must not overflow
+
+Each `<section class="page">` is a real A4 page, fixed at 297 mm in print. **If its content
+overflows, the extra is silently CLIPPED when printed.** After editing any sheet, verify:
+
+```js
+// in the browser, on revision/unit-N.html
+const st=document.createElement('style');
+st.textContent='.page{height:297mm!important;min-height:0!important}';
+document.head.appendChild(st);
+[...document.querySelectorAll('.page')].map((q,i)=>{const c=q.querySelector('.cols');
+  return (i+1)+':'+(c.scrollWidth>c.clientWidth+2?'OVERFLOW':'ok');});
+```
+
+Every page must say `ok`. To make room, **re-paginate** — do not shrink the font.
+
+### Changing the font size means RE-PAGINATING
+
+Pages are fixed A4, so raising the knob makes every page overflow. The tool chain is:
+
+1. Change the knob in `revision/assets/revision.css`, and bump its `?v=` in the sheets
+2. **Measure in the browser with the size FORCED inline**, because the browser pane caches
+   the stylesheet and will silently measure the old size:
+   `d.head.appendChild(style)` with `body{font-size:9pt!important}` before measuring
+3. Bin-pack the measured card heights into pages (capacity = `(297 - 10 - masthead - 1) * 2 * 0.94`)
+4. `python tools/repaginate-revision.py tools/bins.json`
+5. Re-run the overflow check — every page must say `ok`
+6. `python tools/build-revision-data.py`
+
+`tools/bins.json` holds the last plan used, as a record.
+
+`revision/assets/revision.css` has **ONE KNOB**: `body { font-size }`, currently **9pt**.
+Everything else is in `em`/`mm`, so changing that one number rescales the whole sheet.
+Current knob: **9pt**. Fit: **U1 7pp · U2 5pp · U3 6pp · U4 10pp · U5 7pp · U6 6pp = 41 pages.**
+(It was 7.35pt / 28 pages until 2026-09-23 — raised because the print was too small to read.)
+
+### Two stylesheets, deliberately
+
+| File | For | Size |
+|---|---|---|
+| `revision/assets/revision.css` | the **printed A4 sheet** | 9pt — print-first |
+| `assets/css/revision.css` | the **in-app section** | normal reading size, tokens only |
+
+The in-app one re-implements the sheet's classes (`table`, `.chain`, `.flow`, `.trap`,
+`.mem`, `.fact`, `.chip`, `.dl`) at a comfortable on-screen size. **Never** reuse the print
+stylesheet inside the app — 7.35pt is unreadable on screen.
+
+### Rules for this section
+
+- **Accent:** Rapid Revision reuses the **Theory blue** (`revision: "theory"` in
+  `accentFor`). It does **not** add a sixth section accent. The per-card tones `t1`–`t6`
+  are the existing brand hues, used only to tint a card — not a new palette.
+- **No 6th bottom-nav slot.** The link lives in the desktop sidebar under *Study*, and is
+  reachable on mobile through the sidebar and `Ctrl+K` search.
+- **The countdown timer uses `setInterval`.** `app.route()` calls
+  `revisionApp.teardown()` on **every** navigation. If you touch the timer, keep that call —
+  this is the same class of bug that burned the anatomy project twice.
+- **Titles are re-escaped by the app**, so `build-revision-data.py` decodes HTML entities
+  when it extracts them. Without that, `&amp;` renders literally. (Fixed 2026-09-23.)
+- **Search indexes all 151 cards** (`js/search.js`, type `revision`) and deep-links to
+  `#/revision/<unitId>/<boxId>`, which scrolls to the card and flashes it.
+
+### Cache busting — read this before the next release
+
+The browser will happily serve a **stale `js/app.js` from disk cache** even after you edit
+it, which looks exactly like "my change did nothing". Files changed in a release carry a
+`?v=` query in `index.html` (currently `?v=15` on `store.js`, `search.js`, `revision.js`,
+`app.js`, `data-revision.JS`, `revision.css`). **Bump that number on every release**, and
+bump `CACHE_VERSION` in `service-worker.js` (currently **`vpath-v15`**) as well.
+
+---
+
 ## 🐛 KNOWN PITFALLS (don't reintroduce)
 
 - **Counting empty template rows** as real questions/topics — filter on non-empty text.
@@ -458,6 +585,12 @@ Whenever any AI assistant (Claude, Antigravity, ChatGPT) or Fazal finishes addin
 - **Quiz `exam` flag and `timer` interval leaking** between runs.
 - **Unbuffered formalin / wrong anticoagulant** — content accuracy points I have already
   written; keep them consistent if you touch clinical pathology topics.
+- **Editing a revision sheet and forgetting `tools/rebuild-revision.bat`** — the printed
+  sheet and the app then disagree.
+- **A revision `.page` overflowing** — the overflow is clipped in print with no warning.
+  Run the overflow check above after every sheet edit.
+- **A stale `js/app.js` served from browser disk cache** — bump the `?v=` query in
+  `index.html`, not just `CACHE_VERSION`.
 
 ---
 
@@ -474,6 +607,11 @@ Whenever any AI assistant (Claude, Antigravity, ChatGPT) or Fazal finishes addin
 ---
 
 ## 💡 NEXT TASKS (in my preferred order)
+
+0. **Verify the revision sheets against my lessons and my professor's emphasis.** They were
+   written from the VCI syllabus and standard pathology, **not** extracted from
+   `data-theory-unit*.JS`. Where a sheet and a lesson disagree, reconcile them before I
+   print the sheets and start annotating a paper copy.
 
 1. **Theory Unit 4** — 37 topics (Infectious & Non-infectious Diseases). The biggest unit.
 2. **Theory Unit 5** — 21 topics (Avian Pathology). High-yield for Indian practice.

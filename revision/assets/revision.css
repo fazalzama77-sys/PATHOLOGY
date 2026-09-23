@@ -23,7 +23,7 @@ body{
   font-family:'Segoe UI',Inter,system-ui,-apple-system,sans-serif;
   background:var(--ground);
   color:var(--ink);
-  font-size:7.35pt;         /* ★ THE KNOB */
+  font-size:9pt;            /* ★ THE KNOB */
   line-height:1.19;
   -webkit-print-color-adjust:exact;
   print-color-adjust:exact;
