@@ -1,14 +1,14 @@
 /* ============================================================
-   data-quiz.JS  —  THE MASTER QUESTION BANK (1340 QUESTIONS)
+   data-quiz.JS  —  THE MASTER QUESTION BANK (1532 QUESTIONS)
    ------------------------------------------------------------
    Units 1 to 6:
      - Unit 1: 290 questions (150 MCQs, 70 TF, 70 FIB)
-     - Unit 2: 220 questions (110 MCQs, 55 TF, 55 FIB)
-     - Unit 3: 180 questions (90 MCQs, 45 TF, 45 FIB)
+     - Unit 2: 300 questions (150 MCQs, 75 TF, 75 FIB)
+     - Unit 3: 240 questions (120 MCQs, 60 TF, 60 FIB)
      - Unit 4: 290 questions (150 MCQs, 70 TF, 70 FIB)
-     - Unit 5: 180 questions (90 MCQs, 45 TF, 45 FIB)
+     - Unit 5: 232 questions (116 MCQs, 58 TF, 58 FIB)
      - Unit 6: 180 questions (90 MCQs, 45 TF, 45 FIB)
-   Total Theory Questions: 1,340 Questions (680 MCQs + 330 TF + 330 FIB)
+   Total Theory Questions: 1,532 Questions (776 MCQs + 378 TF + 378 FIB)
    Categorized by thematic sub-sections for targeted modular revision.
    ============================================================ */
 
@@ -5050,6 +5050,566 @@ var quizBank = {
         "topicId": "u2-t12",
         "subSection": "u2-s5",
         "diff": 1
+      },
+      {
+        "q": "Baby pig anaemia (iron deficiency anaemia of piglets) is prevented by injecting iron dextran at about 3 days of age because:",
+        "o": [
+          "Sow's milk is low in iron and piglets grow very rapidly without access to soil",
+          "Piglets cannot absorb any oral iron",
+          "Piglets are born with excess iron stores",
+          "Iron causes intravascular haemolysis in older pigs"
+        ],
+        "a": 0,
+        "e": "Piglets have small iron reserves, milk supplies little iron and growth is very fast; in intensive housing there is no soil iron. The anaemia is microcytic and hypochromic.",
+        "topicId": "u2-t05",
+        "subSection": "u2-s5",
+        "diff": 1
+      },
+      {
+        "q": "In horses, a bone marrow examination is often needed to assess regeneration in anaemia because horses:",
+        "o": [
+          "Do not release reticulocytes into the peripheral blood",
+          "Have no bone marrow in long bones",
+          "Always have non-regenerative anaemia",
+          "Release only nucleated RBCs"
+        ],
+        "a": 0,
+        "e": "Equine reticulocytes mature in the marrow, so the peripheral reticulocyte count cannot be used; rising MCV or marrow reticulocytes indicate regeneration.",
+        "topicId": "u2-t05",
+        "subSection": "u2-s5",
+        "diff": 2
+      },
+      {
+        "q": "Which finding best distinguishes intravascular haemolysis from extravascular haemolysis?",
+        "o": [
+          "Haemoglobinaemia and haemoglobinuria",
+          "Jaundice",
+          "Splenomegaly",
+          "Reticulocytosis"
+        ],
+        "a": 0,
+        "e": "When RBCs rupture inside vessels, free haemoglobin appears in plasma and urine (e.g. babesiosis, PPH, leptospirosis). Jaundice and reticulocytosis occur in both types.",
+        "topicId": "u2-t05",
+        "subSection": "u2-s5",
+        "diff": 1
+      },
+      {
+        "q": "A high PCV caused by dehydration, with a normal total red cell mass, is termed:",
+        "o": [
+          "Relative polycythaemia",
+          "Primary polycythaemia (polycythaemia vera)",
+          "Secondary appropriate polycythaemia",
+          "Aplastic anaemia"
+        ],
+        "a": 0,
+        "e": "Loss of plasma water concentrates the red cells; total protein is usually also raised. It corrects when the animal is rehydrated.",
+        "topicId": "u2-t05",
+        "subSection": "u2-s5",
+        "diff": 1
+      },
+      {
+        "q": "Acute bracken fern poisoning in cattle causes widespread haemorrhages mainly because of:",
+        "o": [
+          "Bone marrow aplasia leading to thrombocytopenia and leukopenia",
+          "Vitamin K antagonism like warfarin",
+          "Immune-mediated destruction of platelets",
+          "Liver failure with loss of clotting factors only"
+        ],
+        "a": 0,
+        "e": "A radiomimetic toxin in bracken destroys marrow stem cells; thrombocytopenia causes haemorrhages and leukopenia predisposes to infections.",
+        "topicId": "u2-t05",
+        "subSection": "u2-s5",
+        "diff": 2
+      },
+      {
+        "q": "Reactive (follicular) hyperplasia of a lymph node during antigenic stimulation is characterised by:",
+        "o": [
+          "Enlarged cortical follicles with prominent germinal centres",
+          "Replacement of the node by uniform neoplastic cells",
+          "Caseous necrosis with mineralisation",
+          "Atrophy of the cortex"
+        ],
+        "a": 0,
+        "e": "B-cell responses expand the follicles and germinal centres; the node is enlarged, moist and bulging, but its architecture is preserved (unlike lymphoma).",
+        "topicId": "u2-t06",
+        "subSection": "u2-s5",
+        "diff": 1
+      },
+      {
+        "q": "Thymic atrophy in young animals most commonly results from:",
+        "o": [
+          "Stress, malnutrition and viral infections such as canine distemper and parvovirus",
+          "Excess vitamin A",
+          "Physical exercise",
+          "High-protein diets"
+        ],
+        "a": 0,
+        "e": "Corticosteroids released in stress, starvation and lymphotropic viruses cause lymphocyte depletion, and the thymus becomes small.",
+        "topicId": "u2-t06",
+        "subSection": "u2-s5",
+        "diff": 2
+      },
+      {
+        "q": "Splenic nodular hyperplasia and haematoma in old dogs must be differentiated histologically from:",
+        "o": [
+          "Haemangiosarcoma",
+          "Amyloidosis",
+          "Siderotic plaques",
+          "Accessory spleen"
+        ],
+        "a": 0,
+        "e": "All form red, bulging splenic masses; only histopathology separates the benign lesions from malignant haemangiosarcoma.",
+        "topicId": "u2-t06",
+        "subSection": "u2-s5",
+        "diff": 2
+      },
+      {
+        "q": "Gamna-Gandy bodies (siderotic plaques) on the splenic capsule of old dogs are:",
+        "o": [
+          "Incidental yellow-brown deposits of iron and calcium on collagen",
+          "Metastatic carcinoma nodules",
+          "Foci of tuberculosis",
+          "Pre-malignant lesions"
+        ],
+        "a": 0,
+        "e": "They are crusty, yellow-brown plaques along the splenic margin, an age-related change of no clinical significance.",
+        "topicId": "u2-t06",
+        "subSection": "u2-s5",
+        "diff": 2
+      },
+      {
+        "q": "Marked, uniform congestive splenomegaly found in a dog at necropsy may be an artefact caused by:",
+        "o": [
+          "Barbiturate euthanasia",
+          "Starvation",
+          "Chronic dehydration",
+          "Hypothermia"
+        ],
+        "a": 0,
+        "e": "Barbiturates relax splenic smooth muscle so the spleen fills with blood; this must not be misread as a disease lesion.",
+        "topicId": "u2-t06",
+        "subSection": "u2-s5",
+        "diff": 2
+      },
+      {
+        "q": "Hypoadrenocorticism (Addison's disease) in dogs is characterised biochemically by:",
+        "o": [
+          "Hyponatraemia and hyperkalaemia (Na:K ratio below about 27:1)",
+          "Hypernatraemia and hypokalaemia",
+          "Hyperglycaemia and glucosuria",
+          "Hypercalcaemia and hypophosphataemia"
+        ],
+        "a": 0,
+        "e": "Lack of aldosterone causes sodium loss and potassium retention; hyperkalaemia can cause bradycardia and collapse.",
+        "topicId": "u2-t10",
+        "subSection": "u2-s4",
+        "diff": 2
+      },
+      {
+        "q": "Primary hypothyroidism in dogs is most commonly caused by:",
+        "o": [
+          "Lymphocytic thyroiditis or idiopathic follicular atrophy",
+          "Iodine excess",
+          "Thyroid carcinoma",
+          "Pituitary tumour"
+        ],
+        "a": 0,
+        "e": "Destruction of thyroid follicles causes lethargy, obesity, bilaterally symmetrical alopecia and myxoedema.",
+        "topicId": "u2-t10",
+        "subSection": "u2-s4",
+        "diff": 2
+      },
+      {
+        "q": "Congenital goitre in calves, lambs and kids is caused by iodine deficiency or by dams eating:",
+        "o": [
+          "Goitrogenic plants such as Brassica species (cabbage, mustard)",
+          "Bracken fern",
+          "Lantana camara",
+          "Ergot-infected grain"
+        ],
+        "a": 0,
+        "e": "Goitrogens (e.g. thiocyanates, glucosinolates) block iodine uptake or hormone synthesis; the newborn has an enlarged thyroid and may be hairless and weak.",
+        "topicId": "u2-t10",
+        "subSection": "u2-s4",
+        "diff": 1
+      },
+      {
+        "q": "Central diabetes insipidus, with polyuria and very dilute urine, is caused by deficiency of:",
+        "o": [
+          "Antidiuretic hormone (vasopressin)",
+          "Insulin",
+          "Aldosterone",
+          "Parathyroid hormone"
+        ],
+        "a": 0,
+        "e": "Without ADH from the posterior pituitary, the collecting ducts cannot reabsorb water; urine specific gravity stays below 1.008.",
+        "topicId": "u2-t10",
+        "subSection": "u2-s4",
+        "diff": 1
+      },
+      {
+        "q": "A phaeochromocytoma is a tumour of the:",
+        "o": [
+          "Adrenal medulla, secreting catecholamines",
+          "Adrenal cortex, secreting cortisol",
+          "Thyroid C cells, secreting calcitonin",
+          "Pancreatic beta cells, secreting insulin"
+        ],
+        "a": 0,
+        "e": "Chromaffin cells of the adrenal medulla release adrenaline and noradrenaline, causing hypertension and tachycardia; it may invade the caudal vena cava.",
+        "topicId": "u2-t10",
+        "subSection": "u2-s4",
+        "diff": 1
+      },
+      {
+        "q": "Hypertrophic osteopathy (Marie's disease) in dogs is characterised by:",
+        "o": [
+          "Periosteal new bone on distal limb bones, usually secondary to a mass in the thoracic cavity",
+          "Thinning of all long bones due to calcium deficiency",
+          "Tumour of the articular cartilage",
+          "Congenital failure of osteoclasts"
+        ],
+        "a": 0,
+        "e": "Palisading periosteal new bone develops on the metacarpals and metatarsals first; it often regresses if the lung tumour or thoracic lesion is removed.",
+        "topicId": "u2-t03",
+        "subSection": "u2-s4",
+        "diff": 2
+      },
+      {
+        "q": "In degenerative joint disease (osteoarthritis), 'eburnation' refers to:",
+        "o": [
+          "A polished, ivory-like subchondral bone surface after loss of articular cartilage",
+          "Fibrin deposition in synovial fluid",
+          "Bacterial colonisation of the joint",
+          "Fusion of the joint by bone"
+        ],
+        "a": 0,
+        "e": "When cartilage is worn away, bone rubs on bone and becomes smooth, dense and polished.",
+        "topicId": "u2-t03",
+        "subSection": "u2-s4",
+        "diff": 2
+      },
+      {
+        "q": "Green-discoloured muscles with eosinophilic myositis found in cattle carcasses at slaughter are associated with:",
+        "o": [
+          "Sarcocystis infection",
+          "Selenium deficiency",
+          "Clostridium chauvoei",
+          "Vitamin D toxicity"
+        ],
+        "a": 0,
+        "e": "Degenerating Sarcocystis cysts provoke a heavy eosinophil reaction; eosinophil pigment gives the muscle its green colour and the carcass may be condemned.",
+        "topicId": "u2-t03",
+        "subSection": "u2-s4",
+        "diff": 2
+      },
+      {
+        "q": "Canine hip dysplasia is characterised pathologically by:",
+        "o": [
+          "Laxity of the hip joint with subluxation, shallow acetabulum and secondary osteoarthritis",
+          "Primary bacterial infection of the femoral head",
+          "Neoplasia of the acetabulum",
+          "Congenital absence of the femur"
+        ],
+        "a": 0,
+        "e": "It is a hereditary developmental disease of large breeds; the femoral head flattens, the acetabulum becomes shallow and degenerative joint disease follows.",
+        "topicId": "u2-t03",
+        "subSection": "u2-s4",
+        "diff": 1
+      },
+      {
+        "q": "Internal (obstructive) hydrocephalus most commonly results from:",
+        "o": [
+          "Stenosis or obstruction of the mesencephalic aqueduct",
+          "Overproduction of CSF by a normal choroid plexus",
+          "Atrophy of the spinal cord",
+          "Meningeal haemorrhage in adults only"
+        ],
+        "a": 0,
+        "e": "CSF accumulates in the ventricles above the block; the ventricles dilate and the cerebral cortex becomes thinned.",
+        "topicId": "u2-t09",
+        "subSection": "u2-s4",
+        "diff": 2
+      },
+      {
+        "q": "Neurological canine distemper is characterised in the brain by:",
+        "o": [
+          "Demyelinating leukoencephalomyelitis, especially in the cerebellar white matter",
+          "Spongiform vacuolation of neurons",
+          "Suppurative meningitis with bacteria",
+          "Laminar cortical necrosis"
+        ],
+        "a": 0,
+        "e": "Virus infects astrocytes and oligodendrocytes, causing demyelination; inclusions are seen in astrocytes.",
+        "topicId": "u2-t09",
+        "subSection": "u2-s4",
+        "diff": 2
+      },
+      {
+        "q": "'Neuronophagia' in the central nervous system refers to:",
+        "o": [
+          "Phagocytosis of dead neurons by microglia",
+          "Proliferation of astrocytes",
+          "Loss of myelin",
+          "Swelling of axons"
+        ],
+        "a": 0,
+        "e": "Microglia cluster around and remove dying neurons — typical of viral encephalitis such as rabies. Satellitosis is glial cells surrounding a neuron.",
+        "topicId": "u2-t09",
+        "subSection": "u2-s4",
+        "diff": 1
+      },
+      {
+        "q": "Hansen type I intervertebral disc extrusion is most common in:",
+        "o": [
+          "Chondrodystrophic breeds such as Dachshund and Pekingese",
+          "Giant breeds such as Great Dane only",
+          "Cats",
+          "Horses"
+        ],
+        "a": 0,
+        "e": "Early chondroid degeneration and mineralisation of the nucleus pulposus lead to acute extrusion of disc material, compressing the spinal cord.",
+        "topicId": "u2-t09",
+        "subSection": "u2-s4",
+        "diff": 1
+      },
+      {
+        "q": "Acute bovine pulmonary oedema and emphysema ('fog fever') occurs in cattle moved onto lush pasture because:",
+        "o": [
+          "L-tryptophan is converted in the rumen to 3-methylindole, which damages type I pneumocytes and Clara cells",
+          "Of Mannheimia haemolytica infection",
+          "Of lungworm larvae migration",
+          "Of selenium deficiency"
+        ],
+        "a": 0,
+        "e": "3-methylindole is activated in the lung, causing interstitial pneumonia with oedema, emphysema and hyaline membranes.",
+        "topicId": "u2-t02",
+        "subSection": "u2-s2",
+        "diff": 2
+      },
+      {
+        "q": "Embolic pneumonia, with multiple abscesses distributed throughout all lung lobes, is typically seen in cattle with:",
+        "o": [
+          "Caudal vena caval thrombosis secondary to liver abscesses",
+          "Shipping fever",
+          "Lungworm infection",
+          "Fog fever"
+        ],
+        "a": 0,
+        "e": "Septic emboli from a thrombus in the caudal vena cava lodge randomly in the lungs; rupture of pulmonary arteries may cause epistaxis and haemoptysis.",
+        "topicId": "u2-t02",
+        "subSection": "u2-s2",
+        "diff": 2
+      },
+      {
+        "q": "Tuberculosis and systemic mycoses produce which morphological pattern of pneumonia?",
+        "o": [
+          "Granulomatous pneumonia",
+          "Suppurative bronchopneumonia",
+          "Fibrinous lobar pneumonia",
+          "Interstitial pneumonia"
+        ],
+        "a": 0,
+        "e": "Organisms resistant to killing provoke nodules of macrophages, epithelioid cells and giant cells distributed randomly in the lung.",
+        "topicId": "u2-t02",
+        "subSection": "u2-s2",
+        "diff": 1
+      },
+      {
+        "q": "The correct sequence of the stages of lobar pneumonia is:",
+        "o": [
+          "Congestion → red hepatization → grey hepatization → resolution",
+          "Red hepatization → congestion → resolution → grey hepatization",
+          "Grey hepatization → red hepatization → congestion → resolution",
+          "Resolution → congestion → grey hepatization → red hepatization"
+        ],
+        "a": 0,
+        "e": "Alveoli fill first with blood and exudate (red, liver-like), then with fibrin and leukocytes as RBCs break down (grey), before the exudate is removed.",
+        "topicId": "u2-t02",
+        "subSection": "u2-s2",
+        "diff": 1
+      },
+      {
+        "q": "Dilated cardiomyopathy in cats was historically associated with dietary deficiency of:",
+        "o": [
+          "Taurine",
+          "Methionine",
+          "Vitamin A",
+          "Iodine"
+        ],
+        "a": 0,
+        "e": "Cats cannot synthesise enough taurine; since taurine was added to cat foods, this cardiomyopathy has become rare.",
+        "topicId": "u2-t04",
+        "subSection": "u2-s2",
+        "diff": 1
+      },
+      {
+        "q": "Aortic 'saddle thrombus', causing sudden hind-limb paralysis in cats, is most commonly associated with:",
+        "o": [
+          "Hypertrophic cardiomyopathy with left atrial dilatation",
+          "Endocardiosis of the tricuspid valve",
+          "Heartworm disease",
+          "Pericarditis"
+        ],
+        "a": 0,
+        "e": "Blood stasis in a dilated left atrium forms thrombi that embolise to the aortic bifurcation.",
+        "topicId": "u2-t04",
+        "subSection": "u2-s2",
+        "diff": 2
+      },
+      {
+        "q": "The most common congenital cardiovascular anomaly in dogs is:",
+        "o": [
+          "Patent ductus arteriosus",
+          "Tetralogy of Fallot",
+          "Ventricular septal defect",
+          "Persistent right aortic arch"
+        ],
+        "a": 0,
+        "e": "Failure of the ductus arteriosus to close after birth creates a left-to-right shunt with a continuous 'machinery' murmur.",
+        "topicId": "u2-t04",
+        "subSection": "u2-s2",
+        "diff": 1
+      },
+      {
+        "q": "At necropsy, a 'bloat line' in the oesophagus of a cow indicates that bloat occurred before death. It consists of:",
+        "o": [
+          "Congested cervical oesophagus sharply demarcated from a pale, blanched thoracic oesophagus",
+          "Uniform pallor of the entire oesophagus",
+          "Ulcers along the oesophagus",
+          "Fibrin deposits on the oesophageal serosa"
+        ],
+        "a": 0,
+        "e": "Pressure from the distended rumen squeezes blood out of the thoracic oesophagus, while the cervical part stays congested — evidence of antemortem ruminal tympany.",
+        "topicId": "u2-t01",
+        "subSection": "u2-s1",
+        "diff": 2
+      },
+      {
+        "q": "Gastric dilatation-volvulus (GDV) occurs most commonly in:",
+        "o": [
+          "Large, deep-chested dog breeds",
+          "Toy dog breeds",
+          "Cats",
+          "Young calves"
+        ],
+        "a": 0,
+        "e": "The stomach dilates with gas and rotates on its axis, causing venous obstruction, shock and gastric wall necrosis; the spleen often twists with it.",
+        "topicId": "u2-t01",
+        "subSection": "u2-s1",
+        "diff": 1
+      },
+      {
+        "q": "A congenital portosystemic shunt in young dogs typically results in:",
+        "o": [
+          "A small liver (microhepatica) and hepatic encephalopathy",
+          "An enlarged fatty liver",
+          "Obstructive jaundice",
+          "Liver abscesses"
+        ],
+        "a": 0,
+        "e": "Portal blood bypasses the liver, so the liver fails to grow and ammonia reaches the brain, causing neurological signs after meals. Ammonium biurate crystals may appear in urine.",
+        "topicId": "u2-t01",
+        "subSection": "u2-s1",
+        "diff": 2
+      },
+      {
+        "q": "Left displacement of the abomasum in dairy cows occurs most often:",
+        "o": [
+          "Within the first few weeks after calving in high-yielding cows",
+          "In calves at birth",
+          "In bulls",
+          "In dry cows in mid-pregnancy"
+        ],
+        "a": 0,
+        "e": "After calving, the abomasum becomes atonic (associated with hypocalcaemia, ketosis and concentrate feeding) and gas-filled; it moves up the left side between the rumen and body wall.",
+        "topicId": "u2-t01",
+        "subSection": "u2-s1",
+        "diff": 1
+      },
+      {
+        "q": "End-stage kidneys due to chronic interstitial nephritis are grossly:",
+        "o": [
+          "Small, pale, firm, with an irregular pitted surface",
+          "Large, dark and soft",
+          "Enlarged with a smooth, yellow surface",
+          "Normal in size with red streaks"
+        ],
+        "a": 0,
+        "e": "Loss of nephrons with interstitial fibrosis shrinks and scars the kidney; the capsule adheres to the cortex.",
+        "topicId": "u2-t07",
+        "subSection": "u2-s3",
+        "diff": 1
+      },
+      {
+        "q": "Extra-renal lesions of uraemia in dogs include:",
+        "o": [
+          "Ulcerative stomatitis, ulcerative gastritis and mineralisation of the stomach and lungs",
+          "Hepatic lipidosis only",
+          "Skeletal muscle hypertrophy",
+          "Splenic amyloidosis"
+        ],
+        "a": 0,
+        "e": "Urea breaks down to ammonia in saliva and the stomach, causing ulcers; vascular injury and high calcium-phosphorus product cause soft tissue mineralisation.",
+        "topicId": "u2-t07",
+        "subSection": "u2-s3",
+        "diff": 2
+      },
+      {
+        "q": "Follicular ovarian cysts in cows are defined as:",
+        "o": [
+          "Anovulatory follicles over 2.5 cm persisting for 10 days or more, often causing irregular oestrus or nymphomania",
+          "A normal corpus luteum",
+          "Cysts of the oviduct",
+          "Neoplasms of the ovary"
+        ],
+        "a": 0,
+        "e": "Failure of the LH surge prevents ovulation; the cyst may secrete oestrogen, causing frequent or continuous oestrus.",
+        "topicId": "u2-t08",
+        "subSection": "u2-s3",
+        "diff": 2
+      },
+      {
+        "q": "A cryptorchid (retained) testis in dogs:",
+        "o": [
+          "Has a much higher risk of Sertoli cell tumour and seminoma",
+          "Is protected from neoplasia by body heat",
+          "Produces normal spermatozoa",
+          "Is always removed spontaneously"
+        ],
+        "a": 0,
+        "e": "Higher abdominal temperature impairs spermatogenesis, and the risk of testicular tumours is greatly increased.",
+        "topicId": "u2-t08",
+        "subSection": "u2-s3",
+        "diff": 1
+      },
+      {
+        "q": "Dermatophilosis ('rain scald', 'strawberry foot rot') caused by Dermatophilus congolensis is recognised microscopically by:",
+        "o": [
+          "Branching filaments dividing into parallel rows of coccoid cells ('railway-track' appearance)",
+          "Acid-fast rods",
+          "Septate hyphae branching at 45°",
+          "Budding yeasts"
+        ],
+        "a": 0,
+        "e": "Paintbrush-like crusts form on the back after prolonged wetting; the organism is seen in stained smears of crusts.",
+        "topicId": "u2-t11",
+        "subSection": "u2-s5",
+        "diff": 2
+      },
+      {
+        "q": "Keratoconjunctivitis sicca ('dry eye') in dogs results from:",
+        "o": [
+          "Deficient aqueous tear production",
+          "Excess tear production",
+          "Bacterial infection of the lens",
+          "Increased intraocular pressure"
+        ],
+        "a": 0,
+        "e": "Often immune-mediated destruction of lacrimal glands; the cornea becomes dry, dull, vascularised and pigmented, with mucoid discharge.",
+        "topicId": "u2-t12",
+        "subSection": "u2-s5",
+        "diff": 1
       }
     ],
     "tf": [
@@ -5490,6 +6050,166 @@ var quizBank = {
         "a": false,
         "e": "Reticulocytosis and polychromasia indicate active erythroid hyperplasia in bone marrow, which is the hallmark of REGENERATIVE anemia (e.g. blood loss or hemolysis).",
         "topicId": "u2-t05",
+        "subSection": "u2-s5",
+        "diff": 1
+      },
+      {
+        "q": "Horses release large numbers of reticulocytes into the peripheral blood in regenerative anaemia.",
+        "a": false,
+        "e": "Horses do not release reticulocytes; regeneration is judged from marrow examination or rising MCV.",
+        "topicId": "u2-t05",
+        "subSection": "u2-s5",
+        "diff": 1
+      },
+      {
+        "q": "Baby pig anaemia is a microcytic, hypochromic anaemia caused by iron deficiency.",
+        "a": true,
+        "e": "It is prevented by iron dextran injection at about 3 days of age.",
+        "topicId": "u2-t05",
+        "subSection": "u2-s5",
+        "diff": 1
+      },
+      {
+        "q": "Barbiturate euthanasia can cause marked congestion and enlargement of the spleen.",
+        "a": true,
+        "e": "It is an artefact and must not be interpreted as a disease lesion.",
+        "topicId": "u2-t06",
+        "subSection": "u2-s5",
+        "diff": 1
+      },
+      {
+        "q": "Siderotic plaques on the splenic capsule of old dogs are malignant lesions.",
+        "a": false,
+        "e": "They are incidental age-related deposits of iron and calcium.",
+        "topicId": "u2-t06",
+        "subSection": "u2-s5",
+        "diff": 1
+      },
+      {
+        "q": "Addison's disease in dogs causes hyponatraemia and hyperkalaemia.",
+        "a": true,
+        "e": "Lack of aldosterone leads to sodium loss and potassium retention.",
+        "topicId": "u2-t10",
+        "subSection": "u2-s4",
+        "diff": 1
+      },
+      {
+        "q": "Phaeochromocytoma is a tumour of the adrenal cortex.",
+        "a": false,
+        "e": "Phaeochromocytoma arises from the chromaffin cells of the adrenal medulla.",
+        "topicId": "u2-t10",
+        "subSection": "u2-s4",
+        "diff": 1
+      },
+      {
+        "q": "Hypertrophic osteopathy in dogs is usually secondary to a mass in the thoracic cavity.",
+        "a": true,
+        "e": "Lung tumours are the most common underlying cause; the limb lesions may regress when the mass is removed.",
+        "topicId": "u2-t03",
+        "subSection": "u2-s4",
+        "diff": 1
+      },
+      {
+        "q": "Eosinophilic myositis with green discolouration of muscle in cattle is associated with Sarcocystis.",
+        "a": true,
+        "e": "Degenerating cysts attract eosinophils, which give the green colour.",
+        "topicId": "u2-t03",
+        "subSection": "u2-s4",
+        "diff": 2
+      },
+      {
+        "q": "Hansen type I disc extrusion is common in chondrodystrophic breeds such as the Dachshund.",
+        "a": true,
+        "e": "Early chondroid degeneration of the nucleus pulposus leads to acute extrusion.",
+        "topicId": "u2-t09",
+        "subSection": "u2-s4",
+        "diff": 1
+      },
+      {
+        "q": "Neuronophagia is the phagocytosis of dead neurons by microglia.",
+        "a": true,
+        "e": "It is a feature of viral encephalitides such as rabies and avian encephalomyelitis.",
+        "topicId": "u2-t09",
+        "subSection": "u2-s4",
+        "diff": 1
+      },
+      {
+        "q": "In lobar pneumonia, grey hepatization precedes red hepatization.",
+        "a": false,
+        "e": "The order is congestion → red hepatization → grey hepatization → resolution.",
+        "topicId": "u2-t02",
+        "subSection": "u2-s2",
+        "diff": 1
+      },
+      {
+        "q": "Fog fever in cattle is caused by 3-methylindole formed in the rumen from L-tryptophan.",
+        "a": true,
+        "e": "3-methylindole damages type I pneumocytes and Clara cells, causing oedema and emphysema.",
+        "topicId": "u2-t02",
+        "subSection": "u2-s2",
+        "diff": 2
+      },
+      {
+        "q": "Taurine deficiency can cause dilated cardiomyopathy in cats.",
+        "a": true,
+        "e": "Cats need dietary taurine; the disease is now rare in cats fed commercial diets.",
+        "topicId": "u2-t04",
+        "subSection": "u2-s2",
+        "diff": 1
+      },
+      {
+        "q": "Aortic saddle thrombus in cats is commonly associated with hypertrophic cardiomyopathy.",
+        "a": true,
+        "e": "Thrombi form in a dilated left atrium and lodge at the aortic bifurcation.",
+        "topicId": "u2-t04",
+        "subSection": "u2-s2",
+        "diff": 1
+      },
+      {
+        "q": "A 'bloat line' in the oesophagus is evidence that bloat occurred before death.",
+        "a": true,
+        "e": "The congested cervical oesophagus is sharply separated from the blanched thoracic part.",
+        "topicId": "u2-t01",
+        "subSection": "u2-s1",
+        "diff": 1
+      },
+      {
+        "q": "Gastric dilatation-volvulus mainly affects small toy dog breeds.",
+        "a": false,
+        "e": "It mainly affects large, deep-chested breeds.",
+        "topicId": "u2-t01",
+        "subSection": "u2-s1",
+        "diff": 1
+      },
+      {
+        "q": "Uraemia in dogs can cause ulcerative stomatitis and gastritis.",
+        "a": true,
+        "e": "Ammonia released from urea damages the oral and gastric mucosa.",
+        "topicId": "u2-t07",
+        "subSection": "u2-s3",
+        "diff": 1
+      },
+      {
+        "q": "A cryptorchid testis has a lower risk of neoplasia than a normal scrotal testis.",
+        "a": false,
+        "e": "The retained testis has a much higher risk of Sertoli cell tumour and seminoma.",
+        "topicId": "u2-t08",
+        "subSection": "u2-s3",
+        "diff": 1
+      },
+      {
+        "q": "Dermatophilus congolensis shows a characteristic 'railway-track' arrangement of coccoid cells in smears.",
+        "a": true,
+        "e": "Branching filaments divide transversely and longitudinally into parallel rows of cocci.",
+        "topicId": "u2-t11",
+        "subSection": "u2-s5",
+        "diff": 1
+      },
+      {
+        "q": "Keratoconjunctivitis sicca results from deficient aqueous tear production.",
+        "a": true,
+        "e": "The cornea becomes dry, vascularised and pigmented.",
+        "topicId": "u2-t12",
         "subSection": "u2-s5",
         "diff": 1
       }
@@ -6132,6 +6852,236 @@ var quizBank = {
         "subSection": "u2-s5",
         "diff": 1,
         "a_display": "hyperkeratosis"
+      },
+      {
+        "q": "Baby pig anaemia is caused by a deficiency of ______.",
+        "a": [
+          "iron",
+          "fe"
+        ],
+        "a_display": "iron",
+        "e": "Piglets are given iron dextran at about 3 days of age.",
+        "topicId": "u2-t05",
+        "subSection": "u2-s5",
+        "diff": 1
+      },
+      {
+        "q": "An increase in PCV due to dehydration, with normal total red cell mass, is called relative ______.",
+        "a": [
+          "polycythaemia",
+          "polycythemia",
+          "erythrocytosis"
+        ],
+        "a_display": "polycythaemia",
+        "e": "It corrects on rehydration.",
+        "topicId": "u2-t05",
+        "subSection": "u2-s5",
+        "diff": 1
+      },
+      {
+        "q": "Siderotic plaques on the canine splenic capsule are also known as ______-Gandy bodies.",
+        "a": [
+          "gamna"
+        ],
+        "a_display": "Gamna",
+        "e": "They are incidental iron and calcium deposits in old dogs.",
+        "topicId": "u2-t06",
+        "subSection": "u2-s5",
+        "diff": 2
+      },
+      {
+        "q": "Enlargement of a lymph node with prominent germinal centres in response to antigen is called reactive follicular ______.",
+        "a": [
+          "hyperplasia"
+        ],
+        "a_display": "hyperplasia",
+        "e": "Unlike lymphoma, node architecture is preserved.",
+        "topicId": "u2-t06",
+        "subSection": "u2-s5",
+        "diff": 1
+      },
+      {
+        "q": "Addison's disease in dogs is also known as ______.",
+        "a": [
+          "hypoadrenocorticism"
+        ],
+        "a_display": "hypoadrenocorticism",
+        "e": "Deficiency of adrenocortical hormones, especially aldosterone and cortisol.",
+        "topicId": "u2-t10",
+        "subSection": "u2-s4",
+        "diff": 1
+      },
+      {
+        "q": "A catecholamine-secreting tumour of the adrenal medulla is called a ______.",
+        "a": [
+          "phaeochromocytoma",
+          "pheochromocytoma"
+        ],
+        "a_display": "phaeochromocytoma",
+        "e": "It arises from chromaffin cells.",
+        "topicId": "u2-t10",
+        "subSection": "u2-s4",
+        "diff": 1
+      },
+      {
+        "q": "Central diabetes insipidus is caused by deficiency of ______ hormone from the posterior pituitary.",
+        "a": [
+          "antidiuretic",
+          "adh"
+        ],
+        "a_display": "antidiuretic",
+        "e": "Without ADH (vasopressin) the kidney cannot concentrate urine.",
+        "topicId": "u2-t10",
+        "subSection": "u2-s4",
+        "diff": 1
+      },
+      {
+        "q": "Hypertrophic osteopathy, with periosteal new bone on the distal limbs, is also called ______ disease.",
+        "a": [
+          "marie's",
+          "maries",
+          "marie"
+        ],
+        "a_display": "Marie's",
+        "e": "It is usually secondary to a thoracic mass.",
+        "topicId": "u2-t03",
+        "subSection": "u2-s4",
+        "diff": 2
+      },
+      {
+        "q": "The polished, ivory-like appearance of subchondral bone after loss of articular cartilage is called ______.",
+        "a": [
+          "eburnation"
+        ],
+        "a_display": "eburnation",
+        "e": "A lesion of advanced degenerative joint disease.",
+        "topicId": "u2-t03",
+        "subSection": "u2-s4",
+        "diff": 2
+      },
+      {
+        "q": "Abnormal accumulation of cerebrospinal fluid within the ventricles of the brain is called ______.",
+        "a": [
+          "hydrocephalus"
+        ],
+        "a_display": "hydrocephalus",
+        "e": "Internal hydrocephalus usually follows aqueductal obstruction.",
+        "topicId": "u2-t09",
+        "subSection": "u2-s4",
+        "diff": 1
+      },
+      {
+        "q": "Phagocytosis of dead neurons by microglia is termed ______.",
+        "a": [
+          "neuronophagia"
+        ],
+        "a_display": "neuronophagia",
+        "e": "Typical of viral encephalitis.",
+        "topicId": "u2-t09",
+        "subSection": "u2-s4",
+        "diff": 1
+      },
+      {
+        "q": "In fog fever, rumen microbes convert L-tryptophan into the pneumotoxin 3-______.",
+        "a": [
+          "methylindole",
+          "methyl indole",
+          "methyl-indole"
+        ],
+        "a_display": "methylindole",
+        "e": "3-methylindole damages type I pneumocytes and Clara cells.",
+        "topicId": "u2-t02",
+        "subSection": "u2-s2",
+        "diff": 2
+      },
+      {
+        "q": "The early stage of lobar pneumonia in which the consolidated lung is red and liver-like is called red ______.",
+        "a": [
+          "hepatization",
+          "hepatisation"
+        ],
+        "a_display": "hepatization",
+        "e": "It is followed by grey hepatization and resolution.",
+        "topicId": "u2-t02",
+        "subSection": "u2-s2",
+        "diff": 1
+      },
+      {
+        "q": "Dilated cardiomyopathy in cats is associated with deficiency of the amino acid ______.",
+        "a": [
+          "taurine"
+        ],
+        "a_display": "taurine",
+        "e": "Now rare because commercial cat foods contain taurine.",
+        "topicId": "u2-t04",
+        "subSection": "u2-s2",
+        "diff": 1
+      },
+      {
+        "q": "The most common congenital cardiovascular anomaly in dogs is patent ductus ______.",
+        "a": [
+          "arteriosus"
+        ],
+        "a_display": "arteriosus",
+        "e": "It produces a continuous 'machinery' murmur.",
+        "topicId": "u2-t04",
+        "subSection": "u2-s2",
+        "diff": 1
+      },
+      {
+        "q": "Gastric dilatation and rotation of the stomach in large deep-chested dogs is called gastric dilatation-______.",
+        "a": [
+          "volvulus"
+        ],
+        "a_display": "volvulus",
+        "e": "It causes shock and gastric wall necrosis.",
+        "topicId": "u2-t01",
+        "subSection": "u2-s1",
+        "diff": 1
+      },
+      {
+        "q": "A congenital vessel carrying portal blood around the liver, causing microhepatica, is called a portosystemic ______.",
+        "a": [
+          "shunt"
+        ],
+        "a_display": "shunt",
+        "e": "It leads to hepatic encephalopathy in young dogs.",
+        "topicId": "u2-t01",
+        "subSection": "u2-s1",
+        "diff": 1
+      },
+      {
+        "q": "Small, pale, firm, pitted end-stage kidneys are typical of chronic interstitial ______.",
+        "a": [
+          "nephritis"
+        ],
+        "a_display": "nephritis",
+        "e": "Nephron loss is replaced by fibrous tissue.",
+        "topicId": "u2-t07",
+        "subSection": "u2-s3",
+        "diff": 1
+      },
+      {
+        "q": "'Rain scald' and 'strawberry foot rot' are caused by Dermatophilus ______.",
+        "a": [
+          "congolensis"
+        ],
+        "a_display": "congolensis",
+        "e": "The organism shows a railway-track pattern in smears.",
+        "topicId": "u2-t11",
+        "subSection": "u2-s5",
+        "diff": 1
+      },
+      {
+        "q": "'Dry eye' in dogs due to deficient tear production is called keratoconjunctivitis ______.",
+        "a": [
+          "sicca"
+        ],
+        "a_display": "sicca",
+        "e": "Often immune-mediated destruction of the lacrimal glands.",
+        "topicId": "u2-t12",
+        "subSection": "u2-s5",
+        "diff": 1
       }
     ]
   },
@@ -7396,6 +8346,426 @@ var quizBank = {
         "topicId": "u3-t20",
         "subSection": "u3-s5",
         "diff": 2
+      },
+      {
+        "q": "The single most reliable criterion that a tumour is malignant is:",
+        "o": [
+          "Metastasis",
+          "Large size",
+          "Rapid growth",
+          "Presence of a capsule"
+        ],
+        "a": 0,
+        "e": "Benign tumours never metastasise. Size and growth rate vary, and some benign tumours grow large.",
+        "topicId": "u3-t02",
+        "subSection": "u3-s1",
+        "diff": 1
+      },
+      {
+        "q": "Which set of features is typical of a benign tumour?",
+        "o": [
+          "Well-differentiated cells, expansile growth and a fibrous capsule",
+          "Anaplasia, invasion and metastasis",
+          "Atypical mitoses and necrosis",
+          "Rapid growth with lymphatic spread"
+        ],
+        "a": 0,
+        "e": "Benign tumours resemble their tissue of origin, grow slowly by expansion, and compress surrounding tissue into a capsule — so they can usually be removed completely.",
+        "topicId": "u3-t02",
+        "subSection": "u3-s1",
+        "diff": 1
+      },
+      {
+        "q": "The presence of numerous atypical (e.g. tripolar) mitotic figures in a tumour indicates:",
+        "o": [
+          "Malignancy",
+          "A benign tumour",
+          "Hyperplasia",
+          "Post-mortem autolysis"
+        ],
+        "a": 0,
+        "e": "Abnormal mitoses reflect genetic instability and are a histological hallmark of malignancy; the mitotic index is also used in grading.",
+        "topicId": "u3-t02",
+        "subSection": "u3-s1",
+        "diff": 1
+      },
+      {
+        "q": "Cutaneous papillomas ('warts') in cattle are caused by:",
+        "o": [
+          "Bovine papillomavirus, a DNA virus",
+          "Bovine leukaemia virus, a retrovirus",
+          "Mycobacterium bovis",
+          "Aflatoxin B1"
+        ],
+        "a": 0,
+        "e": "Papillomaviruses cause benign proliferation of squamous epithelium; most warts regress spontaneously as immunity develops.",
+        "topicId": "u3-t03",
+        "subSection": "u3-s1",
+        "diff": 1
+      },
+      {
+        "q": "Spread of a malignant tumour across the peritoneal or pleural cavity, seeding the serosal surfaces, is called:",
+        "o": [
+          "Transcoelomic spread",
+          "Haematogenous spread",
+          "Lymphatic spread",
+          "Direct implantation by surgery"
+        ],
+        "a": 0,
+        "e": "Ovarian carcinomas, mesotheliomas and some gastrointestinal carcinomas shed cells that implant on serosa (carcinomatosis), often with effusion.",
+        "topicId": "u3-t04",
+        "subSection": "u3-s1",
+        "diff": 2
+      },
+      {
+        "q": "Hypertrophic osteopathy developing in a dog with a pulmonary carcinoma is an example of:",
+        "o": [
+          "A paraneoplastic syndrome",
+          "Direct metastasis to bone",
+          "A primary bone tumour",
+          "Tumour grading"
+        ],
+        "a": 0,
+        "e": "Paraneoplastic syndromes are effects at sites distant from the tumour and its metastases; hypercalcaemia of malignancy is another example.",
+        "topicId": "u3-t05",
+        "subSection": "u3-s1",
+        "diff": 2
+      },
+      {
+        "q": "The most common anatomical form of lymphoma in dogs is:",
+        "o": [
+          "Multicentric, with generalised painless lymphadenopathy",
+          "Alimentary",
+          "Mediastinal (thymic)",
+          "Cutaneous"
+        ],
+        "a": 0,
+        "e": "About 80% of canine lymphomas are multicentric; the liver and spleen are often involved as well.",
+        "topicId": "u3-t08",
+        "subSection": "u3-s2",
+        "diff": 1
+      },
+      {
+        "q": "Heparin is not recommended for blood smears and routine CBC because it:",
+        "o": [
+          "Causes clumping of leukocytes and platelets and a blue background in Romanowsky-stained smears",
+          "Lyses all red cells",
+          "Chelates calcium permanently",
+          "Is toxic to the animal"
+        ],
+        "a": 0,
+        "e": "Heparin (an antithrombin activator) is preferred for plasma chemistry and blood gases, but EDTA is used for haematology.",
+        "topicId": "u3-t09",
+        "subSection": "u3-s3",
+        "diff": 2
+      },
+      {
+        "q": "Trisodium citrate (3.2–3.8%) is the anticoagulant of choice for:",
+        "o": [
+          "Coagulation tests such as prothrombin time, at a ratio of 1 part citrate to 9 parts blood",
+          "Blood glucose estimation",
+          "Routine blood smears",
+          "Blood gas analysis"
+        ],
+        "a": 0,
+        "e": "Citrate binds calcium reversibly, so coagulation can be restarted by adding calcium in the test.",
+        "topicId": "u3-t09",
+        "subSection": "u3-s3",
+        "diff": 1
+      },
+      {
+        "q": "EDTA prevents blood from clotting by:",
+        "o": [
+          "Chelating calcium ions",
+          "Activating antithrombin III",
+          "Inhibiting glycolysis",
+          "Destroying platelets"
+        ],
+        "a": 0,
+        "e": "Calcium is needed for several steps of the coagulation cascade; EDTA binds it irreversibly and preserves cell morphology best.",
+        "topicId": "u3-t09",
+        "subSection": "u3-s3",
+        "diff": 1
+      },
+      {
+        "q": "Mean corpuscular haemoglobin (MCH) is calculated as:",
+        "o": [
+          "(Hb in g/dL × 10) ÷ RBC count in millions/µL, expressed in picograms",
+          "(PCV × 10) ÷ RBC count",
+          "(Hb ÷ PCV) × 100",
+          "RBC count × PCV"
+        ],
+        "a": 0,
+        "e": "MCH is the average weight of haemoglobin in one red cell. MCV = PCV × 10 ÷ RBC; MCHC = Hb ÷ PCV × 100.",
+        "topicId": "u3-t10",
+        "subSection": "u3-s3",
+        "diff": 2
+      },
+      {
+        "q": "As a practical rule of thumb in most domestic animals, PCV is approximately:",
+        "o": [
+          "Three times the haemoglobin concentration",
+          "Equal to the haemoglobin concentration",
+          "Ten times the RBC count",
+          "Half the haemoglobin concentration"
+        ],
+        "a": 0,
+        "e": "For example, Hb 12 g/dL corresponds to PCV about 36%. A large mismatch suggests a laboratory error or haemolysis.",
+        "topicId": "u3-t10",
+        "subSection": "u3-s3",
+        "diff": 1
+      },
+      {
+        "q": "Sahli's method estimates haemoglobin by converting it into:",
+        "o": [
+          "Acid haematin, matched visually against a standard",
+          "Cyanmethaemoglobin, read on a spectrophotometer",
+          "Oxyhaemoglobin by centrifugation",
+          "Methaemoglobin by boiling"
+        ],
+        "a": 0,
+        "e": "Blood is mixed with N/10 HCl to form brown acid haematin and diluted until it matches the comparator. The cyanmethaemoglobin method is the more accurate reference method.",
+        "topicId": "u3-t10",
+        "subSection": "u3-s3",
+        "diff": 1
+      },
+      {
+        "q": "The absolute count of a leukocyte type is calculated as:",
+        "o": [
+          "Total leukocyte count × percentage of that cell in the differential ÷ 100",
+          "Percentage of that cell × 100",
+          "Total RBC count ÷ percentage of that cell",
+          "PCV × percentage of that cell"
+        ],
+        "a": 0,
+        "e": "Absolute counts are more meaningful than percentages: a 'lymphocytosis' in percentage may just be an absolute neutropenia.",
+        "topicId": "u3-t11",
+        "subSection": "u3-s3",
+        "diff": 1
+      },
+      {
+        "q": "In which species do lymphocytes normally outnumber neutrophils in the peripheral blood?",
+        "o": [
+          "Cattle",
+          "Dog",
+          "Cat",
+          "Horse"
+        ],
+        "a": 0,
+        "e": "Ruminants have a lymphocyte-predominant leukogram (N:L about 0.5). Dogs, cats and horses are neutrophil-predominant.",
+        "topicId": "u3-t11",
+        "subSection": "u3-s3",
+        "diff": 1
+      },
+      {
+        "q": "Turk's diluting fluid used for manual total leukocyte counting contains:",
+        "o": [
+          "Glacial acetic acid (to lyse RBCs) and gentian violet (to stain nuclei)",
+          "Sodium citrate and formalin",
+          "EDTA and saline",
+          "Hydrochloric acid only"
+        ],
+        "a": 0,
+        "e": "Blood is diluted 1:20 in the WBC pipette and counted in the four large corner squares of the Neubauer chamber.",
+        "topicId": "u3-t11",
+        "subSection": "u3-s3",
+        "diff": 1
+      },
+      {
+        "q": "The Wintrobe tube can be used to measure:",
+        "o": [
+          "Both ESR and PCV (macro-haematocrit)",
+          "Only total leukocyte count",
+          "Only haemoglobin",
+          "Only blood glucose"
+        ],
+        "a": 0,
+        "e": "The same graduated tube is read for ESR after 1 hour and then centrifuged for PCV. The Westergren tube is used for ESR only.",
+        "topicId": "u3-t11",
+        "subSection": "u3-s3",
+        "diff": 2
+      },
+      {
+        "q": "In Leishman's staining of blood smears, the smear is fixed by:",
+        "o": [
+          "The methanol present in the stain itself",
+          "Heat fixation over a flame",
+          "10% formalin",
+          "Glutaraldehyde"
+        ],
+        "a": 0,
+        "e": "Undiluted Leishman's stain is left for 1–2 minutes to fix; buffered water is then added to allow staining.",
+        "topicId": "u3-t12",
+        "subSection": "u3-s3",
+        "diff": 1
+      },
+      {
+        "q": "Numerous spherocytes on a canine blood smear strongly suggest:",
+        "o": [
+          "Immune-mediated haemolytic anaemia",
+          "Iron deficiency anaemia",
+          "Liver disease",
+          "Lead poisoning"
+        ],
+        "a": 0,
+        "e": "Macrophages remove part of the antibody-coated membrane, leaving small, dense, spherical cells without central pallor.",
+        "topicId": "u3-t12",
+        "subSection": "u3-s3",
+        "diff": 2
+      },
+      {
+        "q": "Schistocytes (fragmented RBCs) on a blood smear indicate:",
+        "o": [
+          "Mechanical damage in vessels, as in DIC and haemangiosarcoma",
+          "Iron overload",
+          "Normal ageing of RBCs",
+          "Vitamin B12 deficiency"
+        ],
+        "a": 0,
+        "e": "RBCs are sheared by fibrin strands or abnormal vessels, producing irregular fragments.",
+        "topicId": "u3-t12",
+        "subSection": "u3-s3",
+        "diff": 2
+      },
+      {
+        "q": "Döhle bodies in neutrophils are:",
+        "o": [
+          "Blue-grey cytoplasmic inclusions of retained rough ER, indicating toxic change",
+          "Nuclear remnants in red cells",
+          "Precipitated haemoglobin in red cells",
+          "Parasitic inclusions"
+        ],
+        "a": 0,
+        "e": "Toxic change (Döhle bodies, cytoplasmic basophilia, vacuolation) indicates accelerated neutrophil production in severe inflammation; small numbers can be normal in cats.",
+        "topicId": "u3-t12",
+        "subSection": "u3-s3",
+        "diff": 2
+      },
+      {
+        "q": "In diabetes mellitus, glucose appears in the urine because:",
+        "o": [
+          "Blood glucose exceeds the renal tubular threshold for reabsorption (about 180 mg/dL in dogs)",
+          "Glomeruli are destroyed",
+          "Urine is contaminated by bacteria",
+          "Insulin is excreted in urine"
+        ],
+        "a": 0,
+        "e": "Glucose with normal blood glucose instead suggests a proximal tubular defect (e.g. Fanconi syndrome).",
+        "topicId": "u3-t13",
+        "subSection": "u3-s3",
+        "diff": 1
+      },
+      {
+        "q": "Rothera's test (sodium nitroprusside) is used in urinalysis to detect:",
+        "o": [
+          "Ketone bodies (acetoacetate and acetone)",
+          "Glucose",
+          "Protein",
+          "Bile salts"
+        ],
+        "a": 0,
+        "e": "A purple ring indicates ketonuria — important in bovine ketosis and pregnancy toxaemia.",
+        "topicId": "u3-t13",
+        "subSection": "u3-s3",
+        "diff": 1
+      },
+      {
+        "q": "Red-brown urine due to haemoglobinuria is differentiated from myoglobinuria by:",
+        "o": [
+          "Pink plasma in haemoglobinuria but clear plasma in myoglobinuria",
+          "The dipstick blood test, which is only positive for haemoglobin",
+          "Urine specific gravity",
+          "Urine pH"
+        ],
+        "a": 0,
+        "e": "Haemoglobin is bound by haptoglobin and colours the plasma. Myoglobin is small and cleared quickly into the urine, so plasma stays clear (and CK is raised).",
+        "topicId": "u3-t13",
+        "subSection": "u3-s3",
+        "diff": 2
+      },
+      {
+        "q": "If a necropsy has to be delayed, the carcass should be:",
+        "o": [
+          "Refrigerated at about 4 °C but not frozen",
+          "Frozen immediately",
+          "Left in the sun to dry",
+          "Immersed in formalin"
+        ],
+        "a": 0,
+        "e": "Refrigeration slows autolysis; freezing forms ice crystals that damage cells and make histopathology unreliable.",
+        "topicId": "u3-t15",
+        "subSection": "u3-s5",
+        "diff": 1
+      },
+      {
+        "q": "The necropsy method in which all organs are removed together 'en masse' and then dissected is the:",
+        "o": [
+          "Letulle method",
+          "Virchow method",
+          "Rokitansky method",
+          "Ghon method"
+        ],
+        "a": 0,
+        "e": "Virchow removes organs one by one; Rokitansky dissects in situ; Ghon removes organs in functional blocks (en bloc); Letulle removes them en masse.",
+        "topicId": "u3-t16",
+        "subSection": "u3-s5",
+        "diff": 2
+      },
+      {
+        "q": "A brain sample from a suspected rabies case, for virus isolation, is traditionally dispatched in:",
+        "o": [
+          "50% glycerol saline",
+          "10% neutral buffered formalin",
+          "Saturated sodium chloride solution",
+          "Distilled water"
+        ],
+        "a": 0,
+        "e": "Glycerol saline preserves the virus; a portion is also sent in formalin for histopathology (Negri bodies). The hippocampus, cerebellum and brainstem are sampled.",
+        "topicId": "u3-t18",
+        "subSection": "u3-s5",
+        "diff": 1
+      },
+      {
+        "q": "Viscera for chemical (toxicological) analysis in suspected poisoning are preserved in:",
+        "o": [
+          "Saturated sodium chloride solution, or sent chilled without preservative",
+          "10% formalin",
+          "Glutaraldehyde",
+          "Glycerol saline"
+        ],
+        "a": 0,
+        "e": "Formalin interferes with many chemical analyses. Each organ goes in a separate, sealed and labelled container, with a sample of the preservative sent as a control.",
+        "topicId": "u3-t18",
+        "subSection": "u3-s5",
+        "diff": 2
+      },
+      {
+        "q": "The final section of a post-mortem report, in which the prosector interprets the findings, is the:",
+        "o": [
+          "Opinion (conclusion) on the cause of death",
+          "History",
+          "External examination",
+          "List of instruments used"
+        ],
+        "a": 0,
+        "e": "A PM report runs: identification and history → external examination → internal examination → samples sent → opinion on the cause of death.",
+        "topicId": "u3-t19",
+        "subSection": "u3-s5",
+        "diff": 1
+      },
+      {
+        "q": "Which is correct practice when writing a veterolegal post-mortem report?",
+        "o": [
+          "Record findings objectively at the time of necropsy and keep a signed copy",
+          "Leave the report blank until the court asks for it",
+          "Change the report later to match the owner's statement",
+          "Use personal abbreviations that only the prosector understands"
+        ],
+        "a": 0,
+        "e": "The report is a legal document: it must be written promptly, in clear language, signed, dated, and must not be altered after signing.",
+        "topicId": "u3-t19",
+        "subSection": "u3-s5",
+        "diff": 1
       }
     ],
     "tf": [
@@ -7756,6 +9126,126 @@ var quizBank = {
         "a": true,
         "e": "Electrical arcing along the moist skin surface produces characteristic branching, fern-like cutaneous burn patterns.",
         "topicId": "u3-t20",
+        "subSection": "u3-s5",
+        "diff": 1
+      },
+      {
+        "q": "Metastasis is the single most reliable criterion of malignancy.",
+        "a": true,
+        "e": "Benign tumours never metastasise.",
+        "topicId": "u3-t02",
+        "subSection": "u3-s1",
+        "diff": 1
+      },
+      {
+        "q": "Benign tumours typically show numerous atypical mitoses.",
+        "a": false,
+        "e": "Atypical mitoses are a feature of malignancy.",
+        "topicId": "u3-t02",
+        "subSection": "u3-s1",
+        "diff": 1
+      },
+      {
+        "q": "Heparin is the ideal anticoagulant for studying blood cell morphology in smears.",
+        "a": false,
+        "e": "Heparin causes leukocyte clumping and poor staining; EDTA is used for haematology.",
+        "topicId": "u3-t09",
+        "subSection": "u3-s3",
+        "diff": 1
+      },
+      {
+        "q": "Trisodium citrate is the anticoagulant used for coagulation tests.",
+        "a": true,
+        "e": "It binds calcium reversibly, at a ratio of 1:9 with blood.",
+        "topicId": "u3-t09",
+        "subSection": "u3-s3",
+        "diff": 1
+      },
+      {
+        "q": "The cyanmethaemoglobin method is the reference method for haemoglobin estimation.",
+        "a": true,
+        "e": "It is read spectrophotometrically and is more accurate than Sahli's visual method.",
+        "topicId": "u3-t10",
+        "subSection": "u3-s3",
+        "diff": 1
+      },
+      {
+        "q": "As a rule of thumb, PCV is about three times the haemoglobin concentration.",
+        "a": true,
+        "e": "A large mismatch suggests error or haemolysis.",
+        "topicId": "u3-t10",
+        "subSection": "u3-s3",
+        "diff": 1
+      },
+      {
+        "q": "In adult cattle, lymphocytes are normally the predominant circulating leukocyte.",
+        "a": true,
+        "e": "Ruminants have a lymphocyte-predominant leukogram.",
+        "topicId": "u3-t11",
+        "subSection": "u3-s3",
+        "diff": 1
+      },
+      {
+        "q": "The absolute count of a leukocyte type equals TLC multiplied by its percentage, divided by 100.",
+        "a": true,
+        "e": "Absolute counts should always be interpreted instead of percentages alone.",
+        "topicId": "u3-t11",
+        "subSection": "u3-s3",
+        "diff": 1
+      },
+      {
+        "q": "Schistocytes on a blood smear indicate mechanical fragmentation of RBCs, as in DIC.",
+        "a": true,
+        "e": "They are also seen with haemangiosarcoma and vascular abnormalities.",
+        "topicId": "u3-t12",
+        "subSection": "u3-s3",
+        "diff": 1
+      },
+      {
+        "q": "Spherocytes are the hallmark of iron deficiency anaemia.",
+        "a": false,
+        "e": "Spherocytes indicate immune-mediated haemolytic anaemia; iron deficiency causes microcytic, hypochromic cells.",
+        "topicId": "u3-t12",
+        "subSection": "u3-s3",
+        "diff": 1
+      },
+      {
+        "q": "In haemoglobinuria the plasma is pink, whereas in myoglobinuria the plasma remains clear.",
+        "a": true,
+        "e": "Myoglobin is rapidly cleared by the kidneys and does not stain the plasma.",
+        "topicId": "u3-t13",
+        "subSection": "u3-s3",
+        "diff": 2
+      },
+      {
+        "q": "Rothera's test is used to detect glucose in urine.",
+        "a": false,
+        "e": "Rothera's test detects ketone bodies; Benedict's test detects reducing sugars.",
+        "topicId": "u3-t13",
+        "subSection": "u3-s3",
+        "diff": 1
+      },
+      {
+        "q": "A carcass awaiting necropsy should be frozen to prevent autolysis.",
+        "a": false,
+        "e": "It should be refrigerated, not frozen; freezing artefacts ruin histopathology.",
+        "topicId": "u3-t15",
+        "subSection": "u3-s5",
+        "diff": 1
+      },
+      {
+        "q": "Brain from a suspected rabies case may be dispatched in 50% glycerol saline for virus isolation.",
+        "a": true,
+        "e": "A second portion is sent in formalin for histopathology.",
+        "topicId": "u3-t18",
+        "subSection": "u3-s5",
+        "diff": 1
+      },
+      {
+        "q": "A signed veterolegal post-mortem report may be altered later to agree with laboratory results.",
+        "a": false,
+        "e": "The signed report must not be altered; later lab findings are added as a separate supplementary report.",
+        "topicId": "u3-t19",
         "subSection": "u3-s5",
         "diff": 1
       }
@@ -8284,6 +9774,187 @@ var quizBank = {
         "topicId": "u3-t18",
         "subSection": "u3-s5",
         "diff": 2
+      },
+      {
+        "q": "The spread of tumour cells to distant sites where they form secondary tumours is called ______.",
+        "a": [
+          "metastasis"
+        ],
+        "a_display": "metastasis",
+        "e": "It is the most reliable criterion of malignancy.",
+        "topicId": "u3-t02",
+        "subSection": "u3-s1",
+        "diff": 1
+      },
+      {
+        "q": "Spread of a malignant tumour across the peritoneal or pleural cavity is called ______ spread.",
+        "a": [
+          "transcoelomic",
+          "transcelomic",
+          "trans-coelomic"
+        ],
+        "a_display": "transcoelomic",
+        "e": "Tumour cells seed the serosal surfaces, often with effusion.",
+        "topicId": "u3-t04",
+        "subSection": "u3-s1",
+        "diff": 2
+      },
+      {
+        "q": "About 80% of canine lymphomas are of the ______ form, with generalised lymphadenopathy.",
+        "a": [
+          "multicentric"
+        ],
+        "a_display": "multicentric",
+        "e": "Other forms are alimentary, mediastinal and cutaneous.",
+        "topicId": "u3-t08",
+        "subSection": "u3-s2",
+        "diff": 1
+      },
+      {
+        "q": "EDTA prevents coagulation by chelating ______ ions.",
+        "a": [
+          "calcium",
+          "ca",
+          "ca2+"
+        ],
+        "a_display": "calcium",
+        "e": "Calcium is needed at several steps of the coagulation cascade.",
+        "topicId": "u3-t09",
+        "subSection": "u3-s3",
+        "diff": 1
+      },
+      {
+        "q": "The anticoagulant used for coagulation tests, at a ratio of 1:9 with blood, is trisodium ______.",
+        "a": [
+          "citrate"
+        ],
+        "a_display": "citrate",
+        "e": "It binds calcium reversibly.",
+        "topicId": "u3-t09",
+        "subSection": "u3-s3",
+        "diff": 1
+      },
+      {
+        "q": "In Sahli's method, haemoglobin is converted by N/10 HCl into acid ______.",
+        "a": [
+          "haematin",
+          "hematin"
+        ],
+        "a_display": "haematin",
+        "e": "The brown colour is matched against a standard.",
+        "topicId": "u3-t10",
+        "subSection": "u3-s3",
+        "diff": 1
+      },
+      {
+        "q": "Mean corpuscular haemoglobin (MCH) is expressed in ______.",
+        "a": [
+          "picograms",
+          "picogram",
+          "pg"
+        ],
+        "a_display": "picograms",
+        "e": "MCV is expressed in femtolitres and MCHC in g/dL.",
+        "topicId": "u3-t10",
+        "subSection": "u3-s3",
+        "diff": 2
+      },
+      {
+        "q": "The diluting fluid for manual WBC counts, containing glacial acetic acid and gentian violet, is ______ fluid.",
+        "a": [
+          "turk's",
+          "turks",
+          "turk"
+        ],
+        "a_display": "Turk's",
+        "e": "The acetic acid lyses RBCs so only WBCs are counted.",
+        "topicId": "u3-t11",
+        "subSection": "u3-s3",
+        "diff": 1
+      },
+      {
+        "q": "Besides the Wintrobe tube, ESR is commonly measured using the ______ tube.",
+        "a": [
+          "westergren"
+        ],
+        "a_display": "Westergren",
+        "e": "The Westergren tube is longer and used for ESR only.",
+        "topicId": "u3-t11",
+        "subSection": "u3-s3",
+        "diff": 1
+      },
+      {
+        "q": "Leishman's stain fixes the blood smear because it is prepared in ______.",
+        "a": [
+          "methanol",
+          "methyl alcohol"
+        ],
+        "a_display": "methanol",
+        "e": "Undiluted stain fixes; adding buffered water starts staining.",
+        "topicId": "u3-t12",
+        "subSection": "u3-s3",
+        "diff": 1
+      },
+      {
+        "q": "Fragmented red blood cells seen in DIC and haemangiosarcoma are called ______.",
+        "a": [
+          "schistocytes",
+          "schizocytes"
+        ],
+        "a_display": "schistocytes",
+        "e": "They form when RBCs are sheared inside damaged vessels.",
+        "topicId": "u3-t12",
+        "subSection": "u3-s3",
+        "diff": 1
+      },
+      {
+        "q": "Blue-grey cytoplasmic inclusions in toxic neutrophils are called ______ bodies.",
+        "a": [
+          "döhle",
+          "dohle",
+          "doehle"
+        ],
+        "a_display": "Döhle",
+        "e": "They are remnants of rough endoplasmic reticulum.",
+        "topicId": "u3-t12",
+        "subSection": "u3-s3",
+        "diff": 2
+      },
+      {
+        "q": "Rothera's nitroprusside test detects ______ bodies in urine.",
+        "a": [
+          "ketone"
+        ],
+        "a_display": "ketone",
+        "e": "Important in bovine ketosis and pregnancy toxaemia.",
+        "topicId": "u3-t13",
+        "subSection": "u3-s3",
+        "diff": 1
+      },
+      {
+        "q": "The necropsy method in which all organs are removed en masse is the ______ method.",
+        "a": [
+          "letulle",
+          "letulle's"
+        ],
+        "a_display": "Letulle",
+        "e": "Virchow — one by one; Rokitansky — in situ; Ghon — en bloc.",
+        "topicId": "u3-t16",
+        "subSection": "u3-s5",
+        "diff": 2
+      },
+      {
+        "q": "For rabies virus isolation, brain tissue is dispatched in 50% ______ saline.",
+        "a": [
+          "glycerol",
+          "glycerine",
+          "glycerin"
+        ],
+        "a_display": "glycerol",
+        "e": "Formalin-fixed brain is sent separately for histopathology.",
+        "topicId": "u3-t18",
+        "subSection": "u3-s5",
+        "diff": 1
       }
     ]
   },
@@ -13028,6 +14699,370 @@ var quizBank = {
         "topicId": "u5-t5",
         "subSection": "u5-s5",
         "diff": 1
+      },
+      {
+        "q": "Inflammatory exudate in birds is usually caseous (solid, cheesy) rather than liquid pus because avian heterophils:",
+        "o": [
+          "Lack myeloperoxidase and strong proteolytic enzymes to liquefy the exudate",
+          "Are absent from avian blood",
+          "Produce excess fibrinogen",
+          "Contain more lysosomes than mammalian neutrophils"
+        ],
+        "a": 0,
+        "e": "This is why abscesses, airsacculitis and sinusitis in poultry contain firm yellow caseous plugs (e.g. CRD, aspergillosis, infectious coryza).",
+        "topicId": "u5-t01",
+        "subSection": "u5-s3",
+        "diff": 1
+      },
+      {
+        "q": "The primary lymphoid organ responsible for B-lymphocyte development in birds is the:",
+        "o": [
+          "Bursa of Fabricius",
+          "Thymus",
+          "Spleen",
+          "Caecal tonsil"
+        ],
+        "a": 0,
+        "e": "Destruction of the bursa (IBD) or its lymphocytes (CIA, MD) causes immunosuppression and vaccine failure.",
+        "topicId": "u5-t01",
+        "subSection": "u5-s3",
+        "diff": 1
+      },
+      {
+        "q": "Newcastle disease virus pathotypes (lentogenic, mesogenic, velogenic) are officially classified using the:",
+        "o": [
+          "Intracerebral pathogenicity index (ICPI) in day-old chicks",
+          "Haemagglutination inhibition titre",
+          "Agar gel immunodiffusion test",
+          "Egg production drop"
+        ],
+        "a": 0,
+        "e": "An ICPI of 0.7 or more (or a multibasic cleavage site in the F protein) defines virulent NDV, a notifiable disease.",
+        "topicId": "u5-t02",
+        "subSection": "u5-s1",
+        "diff": 2
+      },
+      {
+        "q": "In infectious bursal disease, the bursa of Fabricius by about 8 days after infection becomes:",
+        "o": [
+          "Atrophic, about one-third of its normal size",
+          "Permanently enlarged with tumour",
+          "Normal in size",
+          "Mineralised and hard"
+        ],
+        "a": 0,
+        "e": "In the first 3–4 days the bursa is swollen, oedematous and yellow with gelatinous transudate; then lymphocytes are lost and it atrophies.",
+        "topicId": "u5-t03",
+        "subSection": "u5-s2",
+        "diff": 1
+      },
+      {
+        "q": "Haemorrhages in the thigh and breast muscles, a swollen haemorrhagic bursa and swollen kidneys with urates in 3–6-week-old chicks suggest:",
+        "o": [
+          "Infectious bursal disease (Gumboro)",
+          "Marek's disease",
+          "Fowl pox",
+          "Infectious coryza"
+        ],
+        "a": 0,
+        "e": "IBD damages vessels and bursal lymphocytes; urates accumulate due to dehydration and kidney damage.",
+        "topicId": "u5-t03",
+        "subSection": "u5-s2",
+        "diff": 1
+      },
+      {
+        "q": "The HVT vaccine used against Marek's disease is derived from:",
+        "o": [
+          "Herpesvirus of turkeys, a non-pathogenic related virus",
+          "Killed Marek's tumour cells",
+          "Avian leukosis virus",
+          "Newcastle disease virus"
+        ],
+        "a": 0,
+        "e": "HVT (serotype 3) is given in ovo or at day old; it prevents tumour formation but not infection with field virus.",
+        "topicId": "u5-t06",
+        "subSection": "u5-s2",
+        "diff": 1
+      },
+      {
+        "q": "Osteopetrosis ('thick leg' or 'marble bone') in chickens is caused by:",
+        "o": [
+          "Avian leukosis virus",
+          "Marek's disease virus",
+          "Vitamin D excess",
+          "Manganese deficiency"
+        ],
+        "a": 0,
+        "e": "Certain ALV strains cause abnormal proliferation of osteoblasts, producing thickened diaphyses of long bones, especially the shanks.",
+        "topicId": "u5-t07",
+        "subSection": "u5-s2",
+        "diff": 2
+      },
+      {
+        "q": "Avian encephalomyelitis ('epidemic tremor') in 1–3-week-old chicks is caused by a picornavirus and characterised by:",
+        "o": [
+          "Head and neck tremors, with gliosis and central chromatolysis of brainstem neurons, and lymphoid aggregates in the gizzard and proventricular muscle",
+          "Paralysis with enlarged sciatic nerves",
+          "Tracheal casts of blood",
+          "Caseous plugs in the air sacs"
+        ],
+        "a": 0,
+        "e": "It is transmitted vertically through eggs; the lymphoid follicles in the muscular wall of the gizzard/proventriculus are a useful diagnostic lesion.",
+        "topicId": "u5-t08",
+        "subSection": "u5-s2",
+        "diff": 3
+      },
+      {
+        "q": "Avian nephritis in young chicks is caused by an astrovirus and produces:",
+        "o": [
+          "Swollen, pale kidneys with urate deposits (visceral gout) and tubular necrosis",
+          "Tumours in the kidney",
+          "Haemorrhagic bursa",
+          "Enlarged liver with white foci"
+        ],
+        "a": 0,
+        "e": "Tubular epithelial damage impairs uric acid excretion, causing urate accumulation in kidneys and on viscera, and growth depression.",
+        "topicId": "u5-t08",
+        "subSection": "u5-s2",
+        "diff": 2
+      },
+      {
+        "q": "Viral arthritis/tenosynovitis in broilers is caused by avian reovirus and characteristically results in:",
+        "o": [
+          "Swelling of the hock and gastrocnemius tendon sheaths, sometimes with tendon rupture",
+          "Slipping of the gastrocnemius tendon due to manganese deficiency",
+          "Curled toes",
+          "Scaly legs due to mites"
+        ],
+        "a": 0,
+        "e": "Ruptured gastrocnemius tendons show haemorrhage at the back of the shank, and birds cannot walk.",
+        "topicId": "u5-t10",
+        "subSection": "u5-s2",
+        "diff": 2
+      },
+      {
+        "q": "Egg drop syndrome (EDS-76) virus replicates mainly in the:",
+        "o": [
+          "Shell gland (uterus) of the oviduct, producing thin-shelled and shell-less eggs",
+          "Bursa of Fabricius",
+          "Trachea",
+          "Sciatic nerve"
+        ],
+        "a": 0,
+        "e": "Birds look healthy but egg production drops, and pale, thin-shelled or shell-less eggs are laid.",
+        "topicId": "u5-t10",
+        "subSection": "u5-s2",
+        "diff": 1
+      },
+      {
+        "q": "Coligranuloma (Hjarre's disease) in adult chickens is characterised by:",
+        "o": [
+          "Multiple granulomas in the intestine, caeca and liver caused by E. coli",
+          "Tumours of B lymphocytes in the bursa",
+          "Caseous nodules caused by Mycobacterium avium",
+          "Aspergillus plaques in air sacs"
+        ],
+        "a": 0,
+        "e": "It resembles tuberculosis and lymphoid leukosis grossly, so histopathology and culture are needed.",
+        "topicId": "u5-t11",
+        "subSection": "u5-s3",
+        "diff": 2
+      },
+      {
+        "q": "Gangrenous dermatitis in broilers, with dark, moist, crepitant skin over the wings, breast and thighs, is caused mainly by:",
+        "o": [
+          "Clostridium septicum and Clostridium perfringens type A (sometimes with Staphylococcus aureus)",
+          "Clostridium botulinum",
+          "Avibacterium paragallinarum",
+          "Mycoplasma synoviae"
+        ],
+        "a": 0,
+        "e": "It often follows immunosuppression by IBD or CIA; the subcutis contains gas and blood-tinged oedema.",
+        "topicId": "u5-t12",
+        "subSection": "u5-s3",
+        "diff": 2
+      },
+      {
+        "q": "Botulism ('limberneck') in poultry and ducks is diagnosed at necropsy by:",
+        "o": [
+          "The absence of specific gross lesions, with toxin demonstrated in serum or gut contents",
+          "Tracheal haemorrhages",
+          "Enlarged nerves",
+          "Caseous airsacculitis"
+        ],
+        "a": 0,
+        "e": "Toxin from decaying carcasses or maggots blocks acetylcholine release, causing flaccid paralysis of the neck, wings and legs.",
+        "topicId": "u5-t12",
+        "subSection": "u5-s3",
+        "diff": 1
+      },
+      {
+        "q": "Paratyphoid infections in poultry are caused by:",
+        "o": [
+          "Motile, non-host-adapted Salmonellae such as S. Typhimurium and S. Enteritidis, which are important zoonoses",
+          "Salmonella Pullorum only",
+          "Salmonella Gallinarum only",
+          "Escherichia coli"
+        ],
+        "a": 0,
+        "e": "Young chicks develop omphalitis and enteritis; adults are usually carriers and are a source of food-borne infection for humans.",
+        "topicId": "u5-t12",
+        "subSection": "u5-s3",
+        "diff": 1
+      },
+      {
+        "q": "In chronic fowl cholera, the localised lesion most commonly seen is:",
+        "o": [
+          "Swollen wattles filled with caseous exudate",
+          "Scaly legs",
+          "Enlarged sciatic nerves",
+          "Tracheal casts"
+        ],
+        "a": 0,
+        "e": "Chronic infection by Pasteurella multocida localises in the wattles, joints, sinuses, middle ear and oviduct.",
+        "topicId": "u5-t13",
+        "subSection": "u5-s3",
+        "diff": 1
+      },
+      {
+        "q": "Avian chlamydiosis (psittacosis/ornithosis) caused by Chlamydia psittaci produces:",
+        "o": [
+          "Fibrinous airsacculitis, pericarditis and perihepatitis with an enlarged spleen, and is zoonotic",
+          "Tumours in the liver",
+          "Cheesy plugs in the eyes only",
+          "Scaly leg lesions"
+        ],
+        "a": 0,
+        "e": "Pigeons, parrots, turkeys and ducks are commonly affected; humans can develop severe pneumonia by inhaling infected dust.",
+        "topicId": "u5-t14",
+        "subSection": "u5-s3",
+        "diff": 1
+      },
+      {
+        "q": "Favus ('white comb') in chickens is caused by:",
+        "o": [
+          "Microsporum gallinae, a dermatophyte",
+          "Candida albicans",
+          "Aspergillus fumigatus",
+          "Knemidocoptes mutans"
+        ],
+        "a": 0,
+        "e": "White, powdery, crusty lesions develop on the comb and wattles and may spread to feathered skin.",
+        "topicId": "u5-t15",
+        "subSection": "u5-s4",
+        "diff": 1
+      },
+      {
+        "q": "'Nodular tapeworm disease' of poultry, with nodules in the intestinal wall resembling tuberculosis, is caused by:",
+        "o": [
+          "Raillietina echinobothrida",
+          "Ascaridia galli",
+          "Heterakis gallinarum",
+          "Syngamus trachea"
+        ],
+        "a": 0,
+        "e": "The scolex embeds deeply in the mucosa, causing a caseous nodule; ants are intermediate hosts.",
+        "topicId": "u5-t17",
+        "subSection": "u5-s4",
+        "diff": 2
+      },
+      {
+        "q": "Prosthogonimus species are trematodes (flukes) of poultry found in the:",
+        "o": [
+          "Oviduct and bursa, causing soft-shelled eggs and egg peritonitis",
+          "Trachea",
+          "Caeca",
+          "Liver only"
+        ],
+        "a": 0,
+        "e": "Birds are infected by eating dragonflies (second intermediate host); inflamed oviducts cause abnormal eggs.",
+        "topicId": "u5-t17",
+        "subSection": "u5-s4",
+        "diff": 2
+      },
+      {
+        "q": "Chewing lice of poultry such as Menopon gallinae (shaft louse) feed on:",
+        "o": [
+          "Feather debris and skin scales, causing irritation and feather damage",
+          "Blood, causing severe anaemia",
+          "Tracheal mucus",
+          "Egg yolk"
+        ],
+        "a": 0,
+        "e": "Heavy infestations reduce weight gain and egg production. Blood-feeding ectoparasites include Dermanyssus mites and Argas ticks.",
+        "topicId": "u5-t19",
+        "subSection": "u5-s4",
+        "diff": 1
+      },
+      {
+        "q": "Fatty liver and kidney syndrome (FLKS) in young broilers is associated with deficiency of:",
+        "o": [
+          "Biotin",
+          "Vitamin A",
+          "Manganese",
+          "Vitamin E"
+        ],
+        "a": 0,
+        "e": "Pale, swollen, fatty liver and kidneys develop, often triggered by stress; biotin deficiency also causes footpad dermatitis.",
+        "topicId": "u5-t20",
+        "subSection": "u5-s5",
+        "diff": 2
+      },
+      {
+        "q": "Vitamin K deficiency in chickens, often aggravated by sulphonamides or coccidiostats, causes:",
+        "o": [
+          "Prolonged clotting time with haemorrhages in muscles and viscera",
+          "Curled toe paralysis",
+          "Slipped tendon",
+          "Squamous metaplasia"
+        ],
+        "a": 0,
+        "e": "Vitamin K is required for clotting factors II, VII, IX and X; the drugs reduce gut synthesis or antagonise it.",
+        "topicId": "u5-t20",
+        "subSection": "u5-s5",
+        "diff": 1
+      },
+      {
+        "q": "'Internal layer' in hens refers to:",
+        "o": [
+          "Release of ova into the abdominal cavity instead of the oviduct, leading to egg peritonitis",
+          "Hens that lay eggs only at night",
+          "Eggs formed with two yolks",
+          "Eggs retained in the shell gland"
+        ],
+        "a": 0,
+        "e": "Yolk in the abdomen causes a yellow, fibrinous peritonitis, often with secondary E. coli infection.",
+        "topicId": "u5-t21",
+        "subSection": "u5-s5",
+        "diff": 1
+      },
+      {
+        "q": "Bumblefoot in poultry is a chronic abscess of the foot pad most commonly caused by:",
+        "o": [
+          "Staphylococcus aureus entering through foot injuries",
+          "Mycoplasma synoviae",
+          "Avian reovirus",
+          "Knemidocoptes mutans"
+        ],
+        "a": 0,
+        "e": "Rough perches and litter cause wounds; the swollen foot pad contains caseous material.",
+        "topicId": "u5-t21",
+        "subSection": "u5-s5",
+        "diff": 1
+      },
+      {
+        "q": "Round heart disease in young turkeys is characterised by:",
+        "o": [
+          "Marked dilatation of the ventricles, giving a rounded heart shape (cardiomyopathy)",
+          "Heart tumours",
+          "Fibrinous pericarditis due to E. coli",
+          "Urate deposits on the pericardium"
+        ],
+        "a": 0,
+        "e": "Birds die suddenly or with heart failure; the apex of the heart becomes rounded rather than pointed.",
+        "topicId": "u5-t21",
+        "subSection": "u5-s5",
+        "diff": 2
       }
     ],
     "tf": [
@@ -13388,6 +15423,110 @@ var quizBank = {
         "a": true,
         "e": "Deficient mineralization of osteoid leaves bones soft and flexible, with enlargement of rib growth plates.",
         "topicId": "u5-t5",
+        "subSection": "u5-s5",
+        "diff": 1
+      },
+      {
+        "q": "Inflammatory exudate in birds is usually caseous rather than liquid pus.",
+        "a": true,
+        "e": "Avian heterophils lack myeloperoxidase to liquefy the exudate.",
+        "topicId": "u5-t01",
+        "subSection": "u5-s3",
+        "diff": 1
+      },
+      {
+        "q": "The intracerebral pathogenicity index (ICPI) is used to classify Newcastle disease virus pathotypes.",
+        "a": true,
+        "e": "An ICPI of 0.7 or more defines a virulent strain.",
+        "topicId": "u5-t02",
+        "subSection": "u5-s1",
+        "diff": 1
+      },
+      {
+        "q": "Haemorrhages in thigh and breast muscles are a common lesion of infectious bursal disease.",
+        "a": true,
+        "e": "They accompany a swollen, oedematous, haemorrhagic bursa.",
+        "topicId": "u5-t03",
+        "subSection": "u5-s2",
+        "diff": 1
+      },
+      {
+        "q": "The HVT vaccine against Marek's disease is derived from herpesvirus of turkeys.",
+        "a": true,
+        "e": "HVT is a non-pathogenic serotype 3 virus.",
+        "topicId": "u5-t06",
+        "subSection": "u5-s2",
+        "diff": 1
+      },
+      {
+        "q": "Osteopetrosis ('thick leg') in chickens is caused by Marek's disease virus.",
+        "a": false,
+        "e": "It is caused by avian leukosis virus.",
+        "topicId": "u5-t07",
+        "subSection": "u5-s2",
+        "diff": 1
+      },
+      {
+        "q": "Avian encephalomyelitis causes head and neck tremors in young chicks.",
+        "a": true,
+        "e": "Hence the name 'epidemic tremor'.",
+        "topicId": "u5-t08",
+        "subSection": "u5-s2",
+        "diff": 1
+      },
+      {
+        "q": "Viral arthritis caused by avian reovirus may lead to rupture of the gastrocnemius tendon.",
+        "a": true,
+        "e": "Rupture causes haemorrhage behind the shank and lameness.",
+        "topicId": "u5-t10",
+        "subSection": "u5-s2",
+        "diff": 1
+      },
+      {
+        "q": "Coligranuloma (Hjarre's disease) in chickens is caused by Escherichia coli.",
+        "a": true,
+        "e": "It forms granulomas in the intestine, caeca and liver that resemble tuberculosis.",
+        "topicId": "u5-t11",
+        "subSection": "u5-s3",
+        "diff": 1
+      },
+      {
+        "q": "Botulism in poultry produces pathognomonic gross lesions at necropsy.",
+        "a": false,
+        "e": "There are no specific gross lesions; diagnosis requires demonstrating the toxin.",
+        "topicId": "u5-t12",
+        "subSection": "u5-s3",
+        "diff": 1
+      },
+      {
+        "q": "Chlamydia psittaci infection of birds is zoonotic.",
+        "a": true,
+        "e": "Humans can develop psittacosis (pneumonia) by inhaling infected dust.",
+        "topicId": "u5-t14",
+        "subSection": "u5-s3",
+        "diff": 1
+      },
+      {
+        "q": "Raillietina echinobothrida causes nodular tapeworm disease in poultry.",
+        "a": true,
+        "e": "Intestinal nodules resemble tuberculosis lesions.",
+        "topicId": "u5-t17",
+        "subSection": "u5-s4",
+        "diff": 1
+      },
+      {
+        "q": "Biotin deficiency is associated with fatty liver and kidney syndrome in broilers.",
+        "a": true,
+        "e": "Biotin deficiency also causes footpad dermatitis.",
+        "topicId": "u5-t20",
+        "subSection": "u5-s5",
+        "diff": 1
+      },
+      {
+        "q": "Bumblefoot in poultry is most commonly caused by Staphylococcus aureus.",
+        "a": true,
+        "e": "Bacteria enter through foot pad injuries.",
+        "topicId": "u5-t21",
         "subSection": "u5-s5",
         "diff": 1
       }
@@ -13961,6 +16100,154 @@ var quizBank = {
         "topicId": "u5-t5",
         "subSection": "u5-s5",
         "diff": 2
+      },
+      {
+        "q": "The primary B-lymphocyte organ of birds is the bursa of ______.",
+        "a": [
+          "fabricius"
+        ],
+        "a_display": "Fabricius",
+        "e": "Its destruction causes immunosuppression.",
+        "topicId": "u5-t01",
+        "subSection": "u5-s3",
+        "diff": 1
+      },
+      {
+        "q": "Newcastle disease virus pathotypes are classified using the intracerebral ______ index (ICPI).",
+        "a": [
+          "pathogenicity"
+        ],
+        "a_display": "pathogenicity",
+        "e": "ICPI of 0.7 or more = virulent.",
+        "topicId": "u5-t02",
+        "subSection": "u5-s1",
+        "diff": 1
+      },
+      {
+        "q": "The HVT vaccine against Marek's disease is derived from the herpesvirus of ______.",
+        "a": [
+          "turkeys",
+          "turkey"
+        ],
+        "a_display": "turkeys",
+        "e": "HVT is non-pathogenic to chickens.",
+        "topicId": "u5-t06",
+        "subSection": "u5-s2",
+        "diff": 1
+      },
+      {
+        "q": "Avian encephalomyelitis is also known as 'epidemic ______'.",
+        "a": [
+          "tremor",
+          "tremors"
+        ],
+        "a_display": "tremor",
+        "e": "Young chicks show head and neck tremors.",
+        "topicId": "u5-t08",
+        "subSection": "u5-s2",
+        "diff": 1
+      },
+      {
+        "q": "The EDS-76 virus replicates mainly in the shell ______ of the oviduct.",
+        "a": [
+          "gland"
+        ],
+        "a_display": "gland",
+        "e": "It causes thin-shelled and shell-less eggs.",
+        "topicId": "u5-t10",
+        "subSection": "u5-s2",
+        "diff": 1
+      },
+      {
+        "q": "Flaccid paralysis of the neck in poultry with botulism is commonly called '______'.",
+        "a": [
+          "limberneck",
+          "limber neck"
+        ],
+        "a_display": "limberneck",
+        "e": "Caused by Clostridium botulinum toxin.",
+        "topicId": "u5-t12",
+        "subSection": "u5-s3",
+        "diff": 1
+      },
+      {
+        "q": "Favus in chickens, caused by Microsporum gallinae, is commonly called 'white ______'.",
+        "a": [
+          "comb"
+        ],
+        "a_display": "comb",
+        "e": "White crusty lesions develop on the comb and wattles.",
+        "topicId": "u5-t15",
+        "subSection": "u5-s4",
+        "diff": 1
+      },
+      {
+        "q": "Prosthogonimus flukes of poultry live in the ______.",
+        "a": [
+          "oviduct"
+        ],
+        "a_display": "oviduct",
+        "e": "They cause soft-shelled eggs and egg peritonitis.",
+        "topicId": "u5-t17",
+        "subSection": "u5-s4",
+        "diff": 1
+      },
+      {
+        "q": "The shaft louse of poultry is Menopon ______.",
+        "a": [
+          "gallinae"
+        ],
+        "a_display": "gallinae",
+        "e": "A chewing louse that feeds on feather debris.",
+        "topicId": "u5-t19",
+        "subSection": "u5-s4",
+        "diff": 1
+      },
+      {
+        "q": "Fatty liver and kidney syndrome in broilers is associated with deficiency of ______.",
+        "a": [
+          "biotin",
+          "vitamin h",
+          "vitamin b7"
+        ],
+        "a_display": "biotin",
+        "e": "Biotin deficiency also causes footpad dermatitis.",
+        "topicId": "u5-t20",
+        "subSection": "u5-s5",
+        "diff": 1
+      },
+      {
+        "q": "Haemorrhages and prolonged clotting time in chickens given sulphonamides are due to deficiency of vitamin ______.",
+        "a": [
+          "k"
+        ],
+        "a_display": "K",
+        "e": "Vitamin K is needed for clotting factors II, VII, IX and X.",
+        "topicId": "u5-t20",
+        "subSection": "u5-s5",
+        "diff": 1
+      },
+      {
+        "q": "A hen that releases ova into the abdominal cavity, causing egg peritonitis, is called an 'internal ______'.",
+        "a": [
+          "layer"
+        ],
+        "a_display": "layer",
+        "e": "Yolk causes fibrinous peritonitis.",
+        "topicId": "u5-t21",
+        "subSection": "u5-s5",
+        "diff": 1
+      },
+      {
+        "q": "Vent gleet is a chronic inflammation of the ______ in hens.",
+        "a": [
+          "cloaca"
+        ],
+        "a_display": "cloaca",
+        "e": "It produces a foul, whitish discharge and soiled vent feathers.",
+        "topicId": "u5-t21",
+        "subSection": "u5-s5",
+        "diff": 1
       }
     ]
   },
