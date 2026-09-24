@@ -1,14 +1,14 @@
 /* ============================================================
-   data-quiz.JS  —  THE MASTER QUESTION BANK (1200 QUESTIONS)
+   data-quiz.JS  —  THE MASTER QUESTION BANK (1340 QUESTIONS)
    ------------------------------------------------------------
    Units 1 to 6:
-     - Unit 1: 220 questions (110 MCQs, 55 TF, 55 FIB)
+     - Unit 1: 290 questions (150 MCQs, 70 TF, 70 FIB)
      - Unit 2: 220 questions (110 MCQs, 55 TF, 55 FIB)
      - Unit 3: 180 questions (90 MCQs, 45 TF, 45 FIB)
-     - Unit 4: 220 questions (110 MCQs, 55 TF, 55 FIB)
+     - Unit 4: 290 questions (150 MCQs, 70 TF, 70 FIB)
      - Unit 5: 180 questions (90 MCQs, 45 TF, 45 FIB)
      - Unit 6: 180 questions (90 MCQs, 45 TF, 45 FIB)
-   Total Theory Questions: 1,200 Questions (600 MCQs + 300 TF + 300 FIB)
+   Total Theory Questions: 1,340 Questions (680 MCQs + 330 TF + 330 FIB)
    Categorized by thematic sub-sections for targeted modular revision.
    ============================================================ */
 
@@ -1554,6 +1554,566 @@ var quizBank = {
         "topicId": "u1-t15",
         "subSection": "u1-s5",
         "diff": 1
+      },
+      {
+        "q": "The most common cause of cell injury in domestic animals is:",
+        "o": [
+          "Hypoxia",
+          "Genetic defects",
+          "Immunological reactions",
+          "Ageing"
+        ],
+        "a": 0,
+        "e": "Hypoxia (oxygen deficiency) from ischaemia, anaemia, cardiorespiratory failure or CO/cyanide poisoning is the single most frequent cause of cell injury.",
+        "topicId": "u1-t02",
+        "subSection": "u1-s1",
+        "diff": 1
+      },
+      {
+        "q": "Ischaemia injures tissue faster and more severely than pure hypoxia because ischaemia:",
+        "o": [
+          "Also stops delivery of nutrients and removal of toxic metabolites",
+          "Increases oxygen delivery to the tissue",
+          "Affects only the nucleus",
+          "Stimulates anaerobic glycolysis indefinitely"
+        ],
+        "a": 0,
+        "e": "Ischaemia is loss of blood supply: oxygen AND glucose supply fail, and lactate and other metabolites accumulate. In pure hypoxia, glycolysis can continue.",
+        "topicId": "u1-t02",
+        "subSection": "u1-s1",
+        "diff": 2
+      },
+      {
+        "q": "Carbon tetrachloride (CCl4) produces centrilobular hepatic necrosis because it is:",
+        "o": [
+          "Converted by cytochrome P-450 into the highly reactive CCl3• free radical",
+          "A direct inhibitor of cytochrome oxidase",
+          "An antigen that triggers Type I hypersensitivity",
+          "A chelator of hepatic copper"
+        ],
+        "a": 0,
+        "e": "CCl4 is activated in the smooth ER (P-450 is concentrated in centrilobular hepatocytes) to CCl3•, which causes lipid peroxidation of membranes.",
+        "topicId": "u1-t02",
+        "subSection": "u1-s1",
+        "diff": 2
+      },
+      {
+        "q": "Which selenium-dependent enzyme protects cell membranes against free radical (peroxide) injury?",
+        "o": [
+          "Glutathione peroxidase",
+          "Lactate dehydrogenase",
+          "Alkaline phosphatase",
+          "Acetylcholinesterase"
+        ],
+        "a": 0,
+        "e": "Glutathione peroxidase contains selenium and destroys H2O2 and lipid peroxides. Selenium/vitamin E deficiency therefore causes white muscle disease (Zenker's degeneration).",
+        "topicId": "u1-t02",
+        "subSection": "u1-s1",
+        "diff": 2
+      },
+      {
+        "q": "Fever during inflammation is produced mainly by which endogenous pyrogens acting on the hypothalamus?",
+        "o": [
+          "IL-1, TNF-α and IL-6",
+          "Histamine and serotonin",
+          "C3b and C5b-9",
+          "Bradykinin and Hageman factor"
+        ],
+        "a": 0,
+        "e": "Exogenous pyrogens (e.g. bacterial LPS) stimulate macrophages to release IL-1, TNF-α and IL-6, which raise the hypothalamic set point via PGE2.",
+        "topicId": "u1-t19",
+        "subSection": "u1-s4",
+        "diff": 1
+      },
+      {
+        "q": "The final hypothalamic mediator that raises the thermoregulatory set point in fever, and is blocked by NSAIDs, is:",
+        "o": [
+          "Prostaglandin E2",
+          "Leukotriene B4",
+          "Nitric oxide",
+          "Platelet activating factor"
+        ],
+        "a": 0,
+        "e": "Cytokines induce COX-2 in hypothalamic vessels, producing PGE2. NSAIDs lower fever by blocking cyclooxygenase.",
+        "topicId": "u1-t19",
+        "subSection": "u1-s4",
+        "diff": 1
+      },
+      {
+        "q": "Acute phase proteins released during systemic inflammation are synthesized mainly by:",
+        "o": [
+          "Hepatocytes under the influence of IL-6",
+          "Mast cells under the influence of IgE",
+          "Plasma cells in lymph nodes",
+          "Renal tubular epithelium"
+        ],
+        "a": 0,
+        "e": "IL-6 (with IL-1 and TNF) drives hepatocytes to produce acute phase proteins such as fibrinogen, haptoglobin, serum amyloid A and C-reactive protein.",
+        "topicId": "u1-t19",
+        "subSection": "u1-s4",
+        "diff": 1
+      },
+      {
+        "q": "The major acute phase protein most widely used as a marker of inflammation in cattle is:",
+        "o": [
+          "Haptoglobin",
+          "C-reactive protein",
+          "Albumin",
+          "Transferrin"
+        ],
+        "a": 0,
+        "e": "In cattle, haptoglobin (with serum amyloid A) rises sharply in mastitis, metritis and traumatic reticuloperitonitis. CRP is the major APP of the dog.",
+        "topicId": "u1-t19",
+        "subSection": "u1-s4",
+        "diff": 2
+      },
+      {
+        "q": "The major acute phase protein used to monitor inflammation in dogs is:",
+        "o": [
+          "C-reactive protein",
+          "Haptoglobin",
+          "Albumin",
+          "Ceruloplasmin"
+        ],
+        "a": 0,
+        "e": "C-reactive protein rises rapidly (up to 100-fold) in canine inflammation. Albumin is a negative acute phase protein and falls.",
+        "topicId": "u1-t19",
+        "subSection": "u1-s4",
+        "diff": 2
+      },
+      {
+        "q": "A 'left shift' in the leukogram of an animal with acute bacterial inflammation means:",
+        "o": [
+          "Increased numbers of immature (band) neutrophils in circulation",
+          "A fall in total leukocyte count",
+          "An increase in circulating lymphocytes",
+          "Hypersegmentation of neutrophil nuclei"
+        ],
+        "a": 0,
+        "e": "Increased demand makes the bone marrow release immature band neutrophils; a left shift indicates active acute inflammation.",
+        "topicId": "u1-t19",
+        "subSection": "u1-s4",
+        "diff": 1
+      },
+      {
+        "q": "A 'degenerative left shift' is recognised when:",
+        "o": [
+          "Immature neutrophils outnumber mature neutrophils with a normal or low total count",
+          "Mature neutrophils outnumber band cells with high total count",
+          "Lymphocytes exceed neutrophils",
+          "Eosinophils exceed 10% of leukocytes"
+        ],
+        "a": 0,
+        "e": "Tissue demand exceeds marrow supply — a poor prognostic sign, seen in overwhelming infections such as acute coliform mastitis and peritonitis.",
+        "topicId": "u1-t19",
+        "subSection": "u1-s4",
+        "diff": 2
+      },
+      {
+        "q": "Raised erythrocyte sedimentation rate (ESR) during inflammation is mainly due to:",
+        "o": [
+          "Increased plasma fibrinogen promoting rouleaux formation",
+          "Decreased plasma globulin",
+          "Increased red cell count",
+          "Decreased plasma viscosity from hypoproteinaemia"
+        ],
+        "a": 0,
+        "e": "Fibrinogen, an acute phase protein, reduces the negative charge between RBCs, so they form rouleaux and sediment faster.",
+        "topicId": "u1-t19",
+        "subSection": "u1-s4",
+        "diff": 2
+      },
+      {
+        "q": "Which cytokine, historically called 'cachectin', causes the wasting (cachexia) of chronic inflammation?",
+        "o": [
+          "TNF-α",
+          "IL-2",
+          "Interferon-γ",
+          "IL-10"
+        ],
+        "a": 0,
+        "e": "TNF-α suppresses appetite, mobilises lipid and protein and inhibits lipoprotein lipase, producing cachexia in chronic infections such as tuberculosis and Johne's disease.",
+        "topicId": "u1-t19",
+        "subSection": "u1-s4",
+        "diff": 2
+      },
+      {
+        "q": "A 'stress leukogram' caused by endogenous corticosteroids in cattle and dogs characteristically shows:",
+        "o": [
+          "Neutrophilia, lymphopenia and eosinopenia",
+          "Neutropenia, lymphocytosis and eosinophilia",
+          "Pancytopenia",
+          "Basophilia and monocytopenia"
+        ],
+        "a": 0,
+        "e": "Corticosteroids cause demargination of neutrophils, redistribution/lysis of lymphocytes and sequestration of eosinophils (monocytosis in dogs).",
+        "topicId": "u1-t19",
+        "subSection": "u1-s4",
+        "diff": 2
+      },
+      {
+        "q": "Anaemia of chronic inflammation is mainly caused by:",
+        "o": [
+          "Hepcidin-mediated sequestration of iron in macrophages",
+          "Acute intravascular haemolysis",
+          "Vitamin B12 deficiency",
+          "Excess erythropoietin"
+        ],
+        "a": 0,
+        "e": "IL-6 induces hepatic hepcidin, which blocks iron release from macrophages — a mild, normocytic, non-regenerative anaemia despite adequate body iron.",
+        "topicId": "u1-t19",
+        "subSection": "u1-s4",
+        "diff": 3
+      },
+      {
+        "q": "Peripheral eosinophilia as a systemic effect of inflammation most commonly indicates:",
+        "o": [
+          "Parasitic infestation or Type I hypersensitivity",
+          "Acute bacterial septicaemia",
+          "Viral infection",
+          "Corticosteroid therapy"
+        ],
+        "a": 0,
+        "e": "Eosinophils respond to IL-5 in helminth infections (e.g. fasciolosis, migrating larvae) and allergic reactions.",
+        "topicId": "u1-t19",
+        "subSection": "u1-s4",
+        "diff": 1
+      },
+      {
+        "q": "Which plasma-derived mediator is the principal cause of pain in acute inflammation?",
+        "o": [
+          "Bradykinin",
+          "Histamine",
+          "C3b",
+          "Nitric oxide"
+        ],
+        "a": 0,
+        "e": "Bradykinin (generated by the kinin system after Hageman factor activation) causes pain, vasodilation and increased vascular permeability; PGE2 sensitises nerve endings to it.",
+        "topicId": "u1-t18",
+        "subSection": "u1-s4",
+        "diff": 1
+      },
+      {
+        "q": "Which complement fragment is both a powerful anaphylatoxin and a strong chemotactic agent for neutrophils?",
+        "o": [
+          "C5a",
+          "C3b",
+          "C1q",
+          "C4b"
+        ],
+        "a": 0,
+        "e": "C5a (with C3a) releases histamine from mast cells; C5a is also a potent neutrophil chemoattractant.",
+        "topicId": "u1-t18",
+        "subSection": "u1-s4",
+        "diff": 2
+      },
+      {
+        "q": "The principal complement-derived opsonin that enhances phagocytosis is:",
+        "o": [
+          "C3b",
+          "C5a",
+          "C3a",
+          "C5b-9"
+        ],
+        "a": 0,
+        "e": "C3b coats microbes and binds CR1 receptors on phagocytes, making ingestion efficient.",
+        "topicId": "u1-t18",
+        "subSection": "u1-s4",
+        "diff": 1
+      },
+      {
+        "q": "The membrane attack complex (MAC) that lyses microbial cells is formed by complement components:",
+        "o": [
+          "C5b-9",
+          "C1-C3",
+          "C3a and C5a",
+          "C2-C4"
+        ],
+        "a": 0,
+        "e": "C5b initiates assembly of C6, C7, C8 and multiple C9 molecules into a pore that lyses the target cell.",
+        "topicId": "u1-t18",
+        "subSection": "u1-s4",
+        "diff": 1
+      },
+      {
+        "q": "Non-steroidal anti-inflammatory drugs (NSAIDs) such as aspirin and meloxicam reduce inflammation by inhibiting:",
+        "o": [
+          "Cyclooxygenase, decreasing prostaglandin synthesis",
+          "Phospholipase A2",
+          "5-lipoxygenase",
+          "Complement C3 convertase"
+        ],
+        "a": 0,
+        "e": "NSAIDs block COX-1/COX-2, reducing prostaglandins and thromboxane — hence reduced pain, fever and oedema.",
+        "topicId": "u1-t18",
+        "subSection": "u1-s4",
+        "diff": 1
+      },
+      {
+        "q": "Corticosteroids suppress both prostaglandin and leukotriene production because they inhibit:",
+        "o": [
+          "Phospholipase A2 (via lipocortin/annexin-1)",
+          "Cyclooxygenase only",
+          "Mast cell degranulation only",
+          "Nitric oxide synthase only"
+        ],
+        "a": 0,
+        "e": "Phospholipase A2 releases arachidonic acid from membranes; blocking it shuts down both the COX and lipoxygenase pathways.",
+        "topicId": "u1-t18",
+        "subSection": "u1-s4",
+        "diff": 2
+      },
+      {
+        "q": "Leukotrienes C4, D4 and E4 (formerly 'slow-reacting substance of anaphylaxis') mainly cause:",
+        "o": [
+          "Intense bronchoconstriction and increased vascular permeability",
+          "Neutrophil chemotaxis only",
+          "Platelet aggregation",
+          "Fever"
+        ],
+        "a": 0,
+        "e": "The cysteinyl leukotrienes are far more potent than histamine as bronchoconstrictors — important in equine recurrent airway obstruction and allergic asthma.",
+        "topicId": "u1-t18",
+        "subSection": "u1-s4",
+        "diff": 2
+      },
+      {
+        "q": "Nitric oxide (NO) acts as an inflammatory mediator by causing:",
+        "o": [
+          "Vasodilation and killing of microbes by macrophages",
+          "Bronchoconstriction",
+          "Platelet aggregation",
+          "Fibroblast proliferation"
+        ],
+        "a": 0,
+        "e": "NO from endothelium relaxes vascular smooth muscle; inducible NO synthase in activated macrophages produces NO as a microbicidal agent.",
+        "topicId": "u1-t18",
+        "subSection": "u1-s4",
+        "diff": 2
+      },
+      {
+        "q": "Gangrenous mastitis ('blue bag') in ewes and does is most commonly caused by:",
+        "o": [
+          "Staphylococcus aureus",
+          "Streptococcus agalactiae",
+          "Mycoplasma bovis",
+          "Clostridium tetani"
+        ],
+        "a": 0,
+        "e": "Staphylococcal alpha-toxin causes vascular thrombosis and moist gangrene; the udder becomes cold, blue-black and eventually sloughs.",
+        "topicId": "u1-t11",
+        "subSection": "u1-s2",
+        "diff": 2
+      },
+      {
+        "q": "In dry gangrene, the 'line of demarcation' between dead and living tissue is formed by:",
+        "o": [
+          "A zone of inflammatory reaction and granulation tissue",
+          "Putrefactive bacteria",
+          "Post-mortem autolysis",
+          "Dystrophic calcification"
+        ],
+        "a": 0,
+        "e": "The living tissue reacts to the dead area with hyperaemia and leukocytes, forming a sharp line along which the gangrenous part eventually separates.",
+        "topicId": "u1-t11",
+        "subSection": "u1-s2",
+        "diff": 1
+      },
+      {
+        "q": "The black discolouration of gangrenous tissue is due to:",
+        "o": [
+          "Iron sulphide formed from haemoglobin by putrefactive bacteria",
+          "Melanin deposition",
+          "Carbon (anthracotic) pigment",
+          "Lipofuscin accumulation"
+        ],
+        "a": 0,
+        "e": "Hydrogen sulphide produced by saprophytic bacteria reacts with iron released from haemoglobin to form black iron sulphide.",
+        "topicId": "u1-t11",
+        "subSection": "u1-s2",
+        "diff": 2
+      },
+      {
+        "q": "Primary (Type I) photosensitization in sheep grazing St John's wort (Hypericum perforatum) is caused by:",
+        "o": [
+          "Hypericin",
+          "Phylloerythrin",
+          "Lantadene",
+          "Sporidesmin"
+        ],
+        "a": 0,
+        "e": "Hypericin is a preformed photodynamic agent absorbed unchanged from the gut; liver function is normal.",
+        "topicId": "u1-t14",
+        "subSection": "u1-s5",
+        "diff": 2
+      },
+      {
+        "q": "Type II photosensitization (due to aberrant pigment synthesis) is classically seen in:",
+        "o": [
+          "Congenital erythropoietic porphyria (pink tooth) of cattle",
+          "Lantana poisoning",
+          "Buckwheat poisoning",
+          "Facial eczema"
+        ],
+        "a": 0,
+        "e": "Porphyrins accumulate from a defect in haem synthesis; they are photodynamic, and teeth/bones are stained pink-brown and fluoresce under UV light.",
+        "topicId": "u1-t14",
+        "subSection": "u1-s5",
+        "diff": 2
+      },
+      {
+        "q": "Skin lesions of photosensitization in cattle are typically confined to:",
+        "o": [
+          "Unpigmented, lightly haired, sun-exposed areas",
+          "Black pigmented areas of the back",
+          "The oral mucosa only",
+          "The coronary band only"
+        ],
+        "a": 0,
+        "e": "UV light must reach the photodynamic agent in the skin; melanin and hair coat protect. White patches of Holstein-Friesians show erythema, oedema and necrosis.",
+        "topicId": "u1-t14",
+        "subSection": "u1-s5",
+        "diff": 1
+      },
+      {
+        "q": "'Bottle jaw' (submandibular oedema) in sheep with haemonchosis develops because of:",
+        "o": [
+          "Hypoproteinaemia lowering plasma oncotic pressure",
+          "Increased capillary hydrostatic pressure",
+          "Lymphatic obstruction by worms",
+          "Increased vascular permeability due to histamine"
+        ],
+        "a": 0,
+        "e": "Blood-sucking Haemonchus contortus causes loss of plasma protein (albumin); the fall in oncotic pressure lets fluid escape into loose dependent tissues.",
+        "topicId": "u1-t04",
+        "subSection": "u1-s3",
+        "diff": 1
+      },
+      {
+        "q": "'Brisket disease' in cattle kept at high altitude produces dependent oedema because of:",
+        "o": [
+          "Right heart failure from hypoxic pulmonary hypertension",
+          "Hypoproteinaemia due to starvation",
+          "Lymphatic obstruction",
+          "Renal sodium loss"
+        ],
+        "a": 0,
+        "e": "Hypoxic pulmonary vasoconstriction causes right ventricular hypertrophy and failure; raised venous hydrostatic pressure produces oedema of the brisket.",
+        "topicId": "u1-t04",
+        "subSection": "u1-s3",
+        "diff": 2
+      },
+      {
+        "q": "At necropsy, pulmonary oedema is recognised grossly by:",
+        "o": [
+          "Stable white or blood-tinged froth in the trachea and bronchi, with heavy wet lungs",
+          "Dry, crepitant, pale lungs",
+          "Pleural fibrin tags",
+          "Emphysematous bullae only"
+        ],
+        "a": 0,
+        "e": "Oedema fluid mixes with air to form stable froth; the lungs fail to collapse and fluid oozes from the cut surface.",
+        "topicId": "u1-t04",
+        "subSection": "u1-s3",
+        "diff": 1
+      },
+      {
+        "q": "Enlargement of the mammary gland during pregnancy and lactation is an example of:",
+        "o": [
+          "Physiological (hormonal) hyperplasia",
+          "Pathological hypertrophy",
+          "Metaplasia",
+          "Dysplasia"
+        ],
+        "a": 0,
+        "e": "Oestrogen and progesterone stimulate proliferation of glandular epithelium — a normal, controlled increase in cell number.",
+        "topicId": "u1-t15",
+        "subSection": "u1-s5",
+        "diff": 1
+      },
+      {
+        "q": "Squamous metaplasia of glandular and respiratory epithelia is a classical lesion of deficiency of:",
+        "o": [
+          "Vitamin A",
+          "Vitamin D",
+          "Vitamin K",
+          "Thiamine"
+        ],
+        "a": 0,
+        "e": "Vitamin A is needed for differentiation of mucus-secreting epithelium; in deficiency it is replaced by keratinising squamous epithelium (e.g. oesophageal glands, parotid duct, conjunctiva).",
+        "topicId": "u1-t15",
+        "subSection": "u1-s5",
+        "diff": 1
+      },
+      {
+        "q": "Haemolytic (pre-hepatic) jaundice in bovine babesiosis is characterised by a rise in:",
+        "o": [
+          "Unconjugated (indirect) bilirubin",
+          "Conjugated (direct) bilirubin only",
+          "Serum albumin",
+          "Urine urobilinogen absence"
+        ],
+        "a": 0,
+        "e": "Massive RBC destruction produces more bilirubin than the liver can conjugate, so unconjugated bilirubin rises (van den Bergh indirect reaction).",
+        "topicId": "u1-t12",
+        "subSection": "u1-s5",
+        "diff": 2
+      },
+      {
+        "q": "The Arthus reaction is a localised form of:",
+        "o": [
+          "Type III (immune complex) hypersensitivity",
+          "Type I hypersensitivity",
+          "Type II hypersensitivity",
+          "Type IV hypersensitivity"
+        ],
+        "a": 0,
+        "e": "Antigen injected into the skin of an animal with high circulating antibody forms immune complexes in vessel walls, fixing complement and causing necrotising vasculitis.",
+        "topicId": "u1-t21",
+        "subSection": "u1-s5",
+        "diff": 2
+      },
+      {
+        "q": "Neonatal isoerythrolysis in foals and mule foals is an example of:",
+        "o": [
+          "Type II (antibody-mediated cytotoxic) hypersensitivity",
+          "Type I hypersensitivity",
+          "Type III hypersensitivity",
+          "Type IV hypersensitivity"
+        ],
+        "a": 0,
+        "e": "Colostral antibodies from the dam against the foal's RBC antigens bind and destroy the foal's erythrocytes, causing haemolytic anaemia and jaundice.",
+        "topicId": "u1-t21",
+        "subSection": "u1-s5",
+        "diff": 2
+      },
+      {
+        "q": "The correct sequence of the phases of wound healing is:",
+        "o": [
+          "Haemostasis → inflammation → proliferation (granulation) → remodelling",
+          "Inflammation → haemostasis → remodelling → proliferation",
+          "Proliferation → inflammation → haemostasis → remodelling",
+          "Remodelling → proliferation → inflammation → haemostasis"
+        ],
+        "a": 0,
+        "e": "The clot forms first, inflammatory cells clean the wound, granulation tissue and epithelium fill it, and collagen is finally remodelled into a scar.",
+        "topicId": "u1-t20",
+        "subSection": "u1-s4",
+        "diff": 1
+      },
+      {
+        "q": "Catarrhal inflammation is characterised by:",
+        "o": [
+          "Excess mucus secretion from inflamed mucous membranes",
+          "Formation of a fibrin pseudomembrane",
+          "Pus within a fibrous capsule",
+          "Granulomas with giant cells"
+        ],
+        "a": 0,
+        "e": "Catarrhal (mucous) inflammation occurs on mucous membranes, e.g. catarrhal enteritis and rhinitis; goblet cells secrete abundant mucus mixed with exudate.",
+        "topicId": "u1-t16",
+        "subSection": "u1-s4",
+        "diff": 1
       }
     ],
     "tf": [
@@ -1995,6 +2555,126 @@ var quizBank = {
         "e": "The tuberculin reaction is a classic manifestation of Type IV (cell-mediated / delayed-type) hypersensitivity mediated by sensitized CD4+ Th1 lymphocytes and macrophages.",
         "topicId": "u1-t21",
         "subSection": "u1-s5",
+        "diff": 1
+      },
+      {
+        "q": "Bacterial endotoxin produces fever by acting directly on the hypothalamus, without involvement of host cytokines.",
+        "a": false,
+        "e": "Endotoxin is an exogenous pyrogen; it acts through host endogenous pyrogens (IL-1, TNF-α, IL-6) that induce hypothalamic PGE2.",
+        "topicId": "u1-t19",
+        "subSection": "u1-s4",
+        "diff": 1
+      },
+      {
+        "q": "Haptoglobin is a major acute phase protein in cattle and rises markedly in inflammatory conditions such as mastitis.",
+        "a": true,
+        "e": "Haptoglobin and serum amyloid A are the major bovine acute phase proteins.",
+        "topicId": "u1-t19",
+        "subSection": "u1-s4",
+        "diff": 1
+      },
+      {
+        "q": "A degenerative left shift carries a better prognosis than a regenerative left shift.",
+        "a": false,
+        "e": "In a degenerative left shift immature cells outnumber mature neutrophils with a normal/low count — demand exceeds supply, a grave sign.",
+        "topicId": "u1-t19",
+        "subSection": "u1-s4",
+        "diff": 2
+      },
+      {
+        "q": "A stress leukogram consists of neutrophilia, lymphopenia and eosinopenia.",
+        "a": true,
+        "e": "Caused by endogenous or exogenous corticosteroids; monocytosis is also seen in dogs.",
+        "topicId": "u1-t19",
+        "subSection": "u1-s4",
+        "diff": 1
+      },
+      {
+        "q": "C5a is a potent chemotactic factor for neutrophils.",
+        "a": true,
+        "e": "C5a is both an anaphylatoxin and one of the strongest neutrophil chemoattractants.",
+        "topicId": "u1-t18",
+        "subSection": "u1-s4",
+        "diff": 1
+      },
+      {
+        "q": "Aspirin reduces inflammation by blocking the 5-lipoxygenase pathway of arachidonic acid metabolism.",
+        "a": false,
+        "e": "Aspirin and other NSAIDs inhibit cyclooxygenase (COX), not lipoxygenase.",
+        "topicId": "u1-t18",
+        "subSection": "u1-s4",
+        "diff": 1
+      },
+      {
+        "q": "Bradykinin is an important mediator of pain in acute inflammation.",
+        "a": true,
+        "e": "Bradykinin from the kinin system causes pain, vasodilation and increased permeability.",
+        "topicId": "u1-t18",
+        "subSection": "u1-s4",
+        "diff": 1
+      },
+      {
+        "q": "Ischaemia damages tissues more rapidly than pure hypoxia.",
+        "a": true,
+        "e": "Ischaemia also cuts off glucose supply and removal of metabolites, so anaerobic glycolysis cannot compensate.",
+        "topicId": "u1-t02",
+        "subSection": "u1-s1",
+        "diff": 1
+      },
+      {
+        "q": "Dry gangrene spreads rapidly and has a foul putrefactive odour.",
+        "a": false,
+        "e": "Dry gangrene is shrivelled, mummified and slow, with a clear line of demarcation; moist gangrene spreads rapidly and is foul-smelling.",
+        "topicId": "u1-t11",
+        "subSection": "u1-s2",
+        "diff": 1
+      },
+      {
+        "q": "Photosensitization lesions are most severe on black, heavily pigmented skin.",
+        "a": false,
+        "e": "Lesions occur on unpigmented, lightly haired skin; melanin protects pigmented skin from UV light.",
+        "topicId": "u1-t14",
+        "subSection": "u1-s5",
+        "diff": 1
+      },
+      {
+        "q": "'Bottle jaw' in haemonchosis is caused by increased capillary hydrostatic pressure.",
+        "a": false,
+        "e": "It is caused by hypoproteinaemia (fall in plasma oncotic pressure) from blood and protein loss.",
+        "topicId": "u1-t04",
+        "subSection": "u1-s3",
+        "diff": 1
+      },
+      {
+        "q": "Squamous metaplasia of glandular epithelium is a characteristic lesion of hypovitaminosis A.",
+        "a": true,
+        "e": "Vitamin A deficiency causes keratinising squamous metaplasia of mucous and glandular epithelia.",
+        "topicId": "u1-t15",
+        "subSection": "u1-s5",
+        "diff": 1
+      },
+      {
+        "q": "Neonatal isoerythrolysis in foals is an example of Type II hypersensitivity.",
+        "a": true,
+        "e": "Maternal colostral antibodies destroy the foal's red blood cells — antibody-mediated cytotoxicity.",
+        "topicId": "u1-t21",
+        "subSection": "u1-s5",
+        "diff": 1
+      },
+      {
+        "q": "During wound remodelling, type III collagen is gradually replaced by the stronger type I collagen.",
+        "a": true,
+        "e": "Early granulation tissue contains type III collagen; it is replaced by type I, and scar tensile strength increases (reaching about 70–80% of normal).",
+        "topicId": "u1-t20",
+        "subSection": "u1-s4",
+        "diff": 2
+      },
+      {
+        "q": "Apoptotic bodies are removed by phagocytes without provoking an inflammatory reaction.",
+        "a": true,
+        "e": "Apoptotic cells expose phosphatidylserine and are phagocytosed quickly while the membrane is intact, so no inflammation follows.",
+        "topicId": "u1-t10",
+        "subSection": "u1-s2",
         "diff": 1
       }
     ],
@@ -2647,6 +3327,185 @@ var quizBank = {
         "subSection": "u1-s5",
         "diff": 1,
         "a_display": "metaplasia"
+      },
+      {
+        "q": "IL-1, TNF-α and IL-6, which act on the hypothalamus to produce fever, are called endogenous ______.",
+        "a": [
+          "pyrogens",
+          "pyrogen"
+        ],
+        "a_display": "pyrogens",
+        "e": "Endogenous pyrogens are host cytokines; microbial products such as LPS are exogenous pyrogens.",
+        "topicId": "u1-t19",
+        "subSection": "u1-s4",
+        "diff": 1
+      },
+      {
+        "q": "The hypothalamic prostaglandin that resets the thermoregulatory set point in fever is prostaglandin ______.",
+        "a": [
+          "e2",
+          "e 2",
+          "e₂"
+        ],
+        "a_display": "E2",
+        "e": "PGE2 is produced by COX-2 in hypothalamic vessels; NSAIDs lower fever by blocking its synthesis.",
+        "topicId": "u1-t19",
+        "subSection": "u1-s4",
+        "diff": 1
+      },
+      {
+        "q": "An increase in immature band neutrophils in the peripheral blood during acute inflammation is termed a ______ shift.",
+        "a": [
+          "left"
+        ],
+        "a_display": "left",
+        "e": "A left shift reflects increased marrow release of immature neutrophils.",
+        "topicId": "u1-t19",
+        "subSection": "u1-s4",
+        "diff": 1
+      },
+      {
+        "q": "TNF-α, which causes wasting in chronic inflammation, was originally named ______.",
+        "a": [
+          "cachectin"
+        ],
+        "a_display": "cachectin",
+        "e": "TNF-α suppresses appetite and mobilises fat and protein, producing cachexia.",
+        "topicId": "u1-t19",
+        "subSection": "u1-s4",
+        "diff": 2
+      },
+      {
+        "q": "The major acute phase protein of cattle, used as a marker of mastitis and metritis, is ______.",
+        "a": [
+          "haptoglobin",
+          "hp"
+        ],
+        "a_display": "haptoglobin",
+        "e": "Haptoglobin and serum amyloid A are the main bovine acute phase proteins.",
+        "topicId": "u1-t19",
+        "subSection": "u1-s4",
+        "diff": 2
+      },
+      {
+        "q": "The complement membrane attack complex that lyses target cells is formed by components ______.",
+        "a": [
+          "c5b-9",
+          "c5b9",
+          "c5b–9",
+          "c5b to c9"
+        ],
+        "a_display": "C5b-9",
+        "e": "C5b, C6, C7, C8 and several C9 molecules form a transmembrane pore.",
+        "topicId": "u1-t18",
+        "subSection": "u1-s4",
+        "diff": 1
+      },
+      {
+        "q": "Corticosteroids block the release of arachidonic acid from cell membranes by inhibiting the enzyme phospholipase ______.",
+        "a": [
+          "a2",
+          "a 2",
+          "a₂"
+        ],
+        "a_display": "A2",
+        "e": "Via lipocortin (annexin-1), corticosteroids inhibit phospholipase A2 and so reduce both prostaglandins and leukotrienes.",
+        "topicId": "u1-t18",
+        "subSection": "u1-s4",
+        "diff": 2
+      },
+      {
+        "q": "NSAIDs such as aspirin and meloxicam inhibit the enzyme ______, which converts arachidonic acid into prostaglandins.",
+        "a": [
+          "cyclooxygenase",
+          "cyclo-oxygenase",
+          "cox"
+        ],
+        "a_display": "cyclooxygenase",
+        "e": "COX-1 and COX-2 produce prostaglandins and thromboxane.",
+        "topicId": "u1-t18",
+        "subSection": "u1-s4",
+        "diff": 1
+      },
+      {
+        "q": "The complement fragment that acts as the principal opsonin is ______.",
+        "a": [
+          "c3b"
+        ],
+        "a_display": "C3b",
+        "e": "C3b coats microbes and binds complement receptors on phagocytes.",
+        "topicId": "u1-t18",
+        "subSection": "u1-s4",
+        "diff": 1
+      },
+      {
+        "q": "The selenium-containing antioxidant enzyme that destroys hydrogen peroxide and lipid peroxides is glutathione ______.",
+        "a": [
+          "peroxidase"
+        ],
+        "a_display": "peroxidase",
+        "e": "Deficiency of selenium reduces glutathione peroxidase activity, leading to free radical injury such as white muscle disease.",
+        "topicId": "u1-t02",
+        "subSection": "u1-s1",
+        "diff": 2
+      },
+      {
+        "q": "Staphylococcal gangrenous mastitis of ewes, in which the udder becomes cold and blue-black, is commonly called '______ bag'.",
+        "a": [
+          "blue"
+        ],
+        "a_display": "blue",
+        "e": "Alpha-toxin of Staphylococcus aureus causes thrombosis and moist gangrene of the udder.",
+        "topicId": "u1-t11",
+        "subSection": "u1-s2",
+        "diff": 1
+      },
+      {
+        "q": "The photodynamic pigment in St John's wort that causes primary photosensitization is ______.",
+        "a": [
+          "hypericin"
+        ],
+        "a_display": "hypericin",
+        "e": "Hypericin is absorbed unchanged and reaches the skin; the liver is normal in primary photosensitization.",
+        "topicId": "u1-t14",
+        "subSection": "u1-s5",
+        "diff": 2
+      },
+      {
+        "q": "'Bottle jaw' oedema in haemonchosis results from a fall in plasma oncotic pressure due to ______.",
+        "a": [
+          "hypoproteinaemia",
+          "hypoproteinemia",
+          "hypoalbuminaemia",
+          "hypoalbuminemia"
+        ],
+        "a_display": "hypoproteinaemia",
+        "e": "Loss of plasma albumin through blood-sucking worms lowers oncotic pressure.",
+        "topicId": "u1-t04",
+        "subSection": "u1-s3",
+        "diff": 1
+      },
+      {
+        "q": "A localised Type III hypersensitivity reaction producing necrotising vasculitis at the site of antigen injection is called the ______ reaction.",
+        "a": [
+          "arthus"
+        ],
+        "a_display": "Arthus",
+        "e": "Immune complexes form in vessel walls, fix complement and attract neutrophils.",
+        "topicId": "u1-t21",
+        "subSection": "u1-s5",
+        "diff": 2
+      },
+      {
+        "q": "Wound ______, the drawing together of wound edges during healing by second intention, is carried out by myofibroblasts.",
+        "a": [
+          "contraction"
+        ],
+        "a_display": "contraction",
+        "e": "Myofibroblasts contain actin filaments and pull wound margins together, reducing the size of large open wounds.",
+        "topicId": "u1-t20",
+        "subSection": "u1-s4",
+        "diff": 1
       }
     ]
   },
@@ -8969,6 +9828,566 @@ var quizBank = {
         "topicId": "u4-t35",
         "subSection": "u4-s8",
         "diff": 1
+      },
+      {
+        "q": "Vesicular exanthema of swine, clinically indistinguishable from FMD, is caused by a:",
+        "o": [
+          "Calicivirus",
+          "Rhabdovirus",
+          "Picornavirus (Aphthovirus)",
+          "Parapoxvirus"
+        ],
+        "a": 0,
+        "e": "Vesicular exanthema of swine virus belongs to Caliciviridae. FMD (Picornaviridae), vesicular stomatitis (Rhabdoviridae) and swine vesicular disease must all be differentiated in the laboratory.",
+        "topicId": "u4-t09",
+        "subSection": "u4-s2",
+        "diff": 2
+      },
+      {
+        "q": "Which vesicular disease also affects horses, a feature that helps differentiate it from FMD?",
+        "o": [
+          "Vesicular stomatitis",
+          "Vesicular exanthema of swine",
+          "Swine vesicular disease",
+          "Bovine papular stomatitis"
+        ],
+        "a": 0,
+        "e": "Vesicular stomatitis (Vesiculovirus, Rhabdoviridae) affects horses, cattle and pigs. Horses are resistant to FMD.",
+        "topicId": "u4-t09",
+        "subSection": "u4-s2",
+        "diff": 1
+      },
+      {
+        "q": "Equine encephalomyelitis (EEE, WEE, VEE) is caused by an alphavirus and pathologically characterised by:",
+        "o": [
+          "Polioencephalomyelitis of grey matter with perivascular cuffing and neutrophils in acute EEE",
+          "Spongiform vacuolation of the obex without inflammation",
+          "Suppurative meningitis with Gram-positive cocci",
+          "Demyelination of peripheral nerves only"
+        ],
+        "a": 0,
+        "e": "Mosquito-borne alphaviruses cause grey matter encephalomyelitis — neuronal necrosis, gliosis and perivascular cuffs; neutrophils are prominent in acute EEE.",
+        "topicId": "u4-t09",
+        "subSection": "u4-s2",
+        "diff": 3
+      },
+      {
+        "q": "'Lumpy jaw' in cattle is caused by Actinomyces bovis and is pathologically a:",
+        "o": [
+          "Chronic pyogranulomatous rarefying osteomyelitis of the mandible or maxilla",
+          "Soft tissue granuloma of the tongue",
+          "Caseous lymphadenitis of the retropharyngeal node",
+          "Neoplasm of the jaw bone"
+        ],
+        "a": 0,
+        "e": "Actinomyces bovis enters through oral wounds and invades bone, producing a honeycombed, enlarged jaw with sinus tracts discharging pus with sulphur granules.",
+        "topicId": "u4-t13",
+        "subSection": "u4-s3",
+        "diff": 1
+      },
+      {
+        "q": "The 'sulphur granules' in pus from actinomycosis and actinobacillosis are microscopically:",
+        "o": [
+          "Bacterial colonies surrounded by radiating eosinophilic clubs (Splendore–Hoeppli material)",
+          "Crystals of calcium oxalate",
+          "Fungal sporangia with endospores",
+          "Masses of degenerate neutrophils only"
+        ],
+        "a": 0,
+        "e": "The club colonies ('rosettes') are surrounded by neutrophils, then epithelioid macrophages, giant cells and fibrous tissue — a pyogranuloma.",
+        "topicId": "u4-t13",
+        "subSection": "u4-s3",
+        "diff": 2
+      },
+      {
+        "q": "'Wooden tongue' in cattle is caused by:",
+        "o": [
+          "Actinobacillus lignieresii",
+          "Actinomyces bovis",
+          "Nocardia asteroides",
+          "Fusobacterium necrophorum"
+        ],
+        "a": 0,
+        "e": "Actinobacillus lignieresii (Gram-negative) causes pyogranulomatous glossitis; the tongue becomes hard, enlarged and protrudes.",
+        "topicId": "u4-t13",
+        "subSection": "u4-s3",
+        "diff": 1
+      },
+      {
+        "q": "The most important pathological difference between actinomycosis and actinobacillosis in cattle is that actinobacillosis:",
+        "o": [
+          "Affects soft tissues and lymph nodes and is caused by a Gram-negative bacillus",
+          "Affects bone and is caused by a Gram-positive filamentous organism",
+          "Never forms granules",
+          "Is caused by a fungus"
+        ],
+        "a": 0,
+        "e": "Actinomycosis = bone, Gram-positive (A. bovis). Actinobacillosis = soft tissue (tongue, lymph nodes), Gram-negative (A. lignieresii).",
+        "topicId": "u4-t13",
+        "subSection": "u4-s3",
+        "diff": 2
+      },
+      {
+        "q": "Enzootic abortion of ewes (Chlamydia abortus) is characterised pathologically by:",
+        "o": [
+          "Necrotizing placentitis with thickened, reddish-brown intercotyledonary areas",
+          "Mummified fetuses with no placental lesion",
+          "Cotyledonary white foci confined to cotyledons only",
+          "Fetal cerebellar hypoplasia"
+        ],
+        "a": 0,
+        "e": "The placenta shows necrosis of cotyledons and thickened, oedematous intercotyledonary membranes; trophoblasts contain chlamydial inclusions (modified ZN positive).",
+        "topicId": "u4-t22",
+        "subSection": "u4-s4",
+        "diff": 2
+      },
+      {
+        "q": "Q fever, an important zoonotic cause of abortion in sheep, goats and cattle, is caused by:",
+        "o": [
+          "Coxiella burnetii",
+          "Chlamydia abortus",
+          "Brucella melitensis",
+          "Anaplasma marginale"
+        ],
+        "a": 0,
+        "e": "Coxiella burnetii is shed in huge numbers in placenta and birth fluids; humans are infected by inhaling contaminated dust.",
+        "topicId": "u4-t22",
+        "subSection": "u4-s4",
+        "diff": 1
+      },
+      {
+        "q": "Bovine anaplasmosis (Anaplasma marginale) differs from babesiosis in that anaplasmosis produces:",
+        "o": [
+          "Extravascular haemolysis with anaemia and jaundice but no haemoglobinuria",
+          "Intravascular haemolysis with marked haemoglobinuria",
+          "Koch's blue bodies in lymphocytes",
+          "Cerebral capillary sludging"
+        ],
+        "a": 0,
+        "e": "Parasitised RBCs are removed by macrophages in spleen and liver, so haemoglobin is not released into plasma — anaemia and icterus without red urine.",
+        "topicId": "u4-t22",
+        "subSection": "u4-s4",
+        "diff": 2
+      },
+      {
+        "q": "Canine monocytic ehrlichiosis ('tropical canine pancytopenia') is caused by Ehrlichia canis, transmitted by:",
+        "o": [
+          "Rhipicephalus sanguineus, the brown dog tick",
+          "Culicoides midges",
+          "Aedes mosquitoes",
+          "Tabanid flies"
+        ],
+        "a": 0,
+        "e": "Ehrlichia canis forms morulae in monocytes. Chronic disease causes bone marrow hypoplasia, pancytopenia, haemorrhages and plasma cell infiltration in organs.",
+        "topicId": "u4-t22",
+        "subSection": "u4-s4",
+        "diff": 1
+      },
+      {
+        "q": "Bovine coccidiosis ('red dysentery') caused by Eimeria zuernii and E. bovis mainly damages the:",
+        "o": [
+          "Caecum, colon and rectum",
+          "Abomasum",
+          "Duodenum only",
+          "Liver and bile ducts"
+        ],
+        "a": 0,
+        "e": "Gamonts and oocysts destroy crypt epithelium of the large intestine, causing haemorrhagic, fibrinous enteritis and bloody diarrhoea with tenesmus in calves.",
+        "topicId": "u4-t30",
+        "subSection": "u4-s6",
+        "diff": 2
+      },
+      {
+        "q": "Ringworm in cattle is most commonly caused by:",
+        "o": [
+          "Trichophyton verrucosum",
+          "Microsporum canis",
+          "Malassezia pachydermatis",
+          "Candida albicans"
+        ],
+        "a": 0,
+        "e": "T. verrucosum produces grey-white, crusty, circular, alopecic lesions, especially around the eyes, face and neck of calves.",
+        "topicId": "u4-t23",
+        "subSection": "u4-s5",
+        "diff": 1
+      },
+      {
+        "q": "Ringworm due to Microsporum canis in cats and dogs can be screened with a Wood's lamp because infected hairs:",
+        "o": [
+          "Fluoresce apple-green under ultraviolet light",
+          "Turn blue with Perls' reaction",
+          "Stain red with Congo red",
+          "Become birefringent under polarised light"
+        ],
+        "a": 0,
+        "e": "About half of M. canis strains produce a tryptophan metabolite that fluoresces apple-green; a negative result does not exclude infection.",
+        "topicId": "u4-t23",
+        "subSection": "u4-s5",
+        "diff": 1
+      },
+      {
+        "q": "Histologically, dermatophytosis is confirmed by finding:",
+        "o": [
+          "Fungal hyphae and arthrospores in the keratin of hair shafts and stratum corneum",
+          "Broad aseptate hyphae invading blood vessels",
+          "Yeasts with thick mucoid capsules in the dermis",
+          "Large sporangia containing endospores"
+        ],
+        "a": 0,
+        "e": "Dermatophytes are keratinophilic — they invade only keratinised tissue. PAS or GMS stains show hyphae and spores around (ectothrix) or within (endothrix) hairs, with folliculitis.",
+        "topicId": "u4-t23",
+        "subSection": "u4-s5",
+        "diff": 2
+      },
+      {
+        "q": "At necropsy, the most reliable indicator of prolonged starvation (protein-energy malnutrition) is:",
+        "o": [
+          "Serous atrophy of fat in the coronary groove, perirenal area and bone marrow",
+          "Yellow, greasy enlarged liver",
+          "Excess fat in the omentum",
+          "Hypertrophy of skeletal muscles"
+        ],
+        "a": 0,
+        "e": "Fat depots are used up and replaced by grey, translucent, gelatinous tissue — serous atrophy of fat. The coronary groove and marrow are the last to lose fat.",
+        "topicId": "u4-t31",
+        "subSection": "u4-s7",
+        "diff": 1
+      },
+      {
+        "q": "Protein deficiency (hypoproteinaemia) in livestock most characteristically leads to:",
+        "o": [
+          "Subcutaneous oedema, ascites and hydrothorax",
+          "Metastatic calcification",
+          "Haemoglobinuria",
+          "Hepatic amyloidosis"
+        ],
+        "a": 0,
+        "e": "Low serum albumin reduces plasma oncotic pressure, causing generalised oedema and fluid in body cavities, along with muscle wasting and poor growth.",
+        "topicId": "u4-t31",
+        "subSection": "u4-s7",
+        "diff": 1
+      },
+      {
+        "q": "In grain overload (acute carbohydrate engorgement / lactic acidosis) of cattle, the rumen pH falls because:",
+        "o": [
+          "Streptococcus bovis and lactobacilli produce large amounts of lactic acid",
+          "Protozoa produce ammonia",
+          "Saliva production increases greatly",
+          "Volatile fatty acids are absorbed too quickly"
+        ],
+        "a": 0,
+        "e": "Excess readily fermentable carbohydrate favours S. bovis and then lactobacilli; lactic acid causes chemical rumenitis, systemic acidosis and dehydration. Mycotic rumenitis and liver abscesses may follow.",
+        "topicId": "u4-t31",
+        "subSection": "u4-s7",
+        "diff": 2
+      },
+      {
+        "q": "'Yellow fat disease' (steatitis) in cats fed oily fish is due to:",
+        "o": [
+          "Excess polyunsaturated fatty acids with vitamin E deficiency",
+          "Excess carotene in the diet",
+          "Copper toxicity",
+          "Aflatoxin exposure"
+        ],
+        "a": 0,
+        "e": "Peroxidation of PUFA without enough vitamin E produces ceroid pigment in fat, which becomes yellow-orange, firm and painful, with inflammation.",
+        "topicId": "u4-t31",
+        "subSection": "u4-s7",
+        "diff": 2
+      },
+      {
+        "q": "Equine influenza (H3N8, Orthomyxoviridae) produces which primary pathological lesion?",
+        "o": [
+          "Necrotizing bronchitis and bronchiolitis with loss of ciliated epithelium, predisposing to secondary bacterial pneumonia",
+          "Suppurative lymphadenitis of mandibular nodes",
+          "Vasculitis of the spinal cord",
+          "Glomerulonephritis"
+        ],
+        "a": 0,
+        "e": "Influenza virus destroys ciliated airway epithelium, impairing mucociliary clearance; secondary Streptococcus zooepidemicus bronchopneumonia is common.",
+        "topicId": "u4-t03",
+        "subSection": "u4-s2",
+        "diff": 2
+      },
+      {
+        "q": "Hydatid cysts found in the liver and lungs of cattle and buffaloes at slaughter are the larval stage of:",
+        "o": [
+          "Echinococcus granulosus",
+          "Taenia solium",
+          "Taenia multiceps",
+          "Moniezia expansa"
+        ],
+        "a": 0,
+        "e": "The dog is the definitive host. Cysts have an outer host fibrous capsule, a laminated acellular layer and an inner germinal layer producing brood capsules ('hydatid sand').",
+        "topicId": "u4-t29",
+        "subSection": "u4-s6",
+        "diff": 1
+      },
+      {
+        "q": "Feline panleukopenia is characterised microscopically in the small intestine by:",
+        "o": [
+          "Crypt epithelial necrosis and dilated crypts, with intranuclear inclusions and villous collapse",
+          "Villous hypertrophy with goblet cell hyperplasia",
+          "Granulomas with acid-fast bacilli",
+          "Eosinophilic enteritis with nematode larvae"
+        ],
+        "a": 0,
+        "e": "The parvovirus infects rapidly dividing cells: crypt epithelium, bone marrow and lymphoid tissue — hence enteritis with panleukopenia.",
+        "topicId": "u4-t06",
+        "subSection": "u4-s2",
+        "diff": 2
+      },
+      {
+        "q": "Visna, the nervous form of maedi-visna infection in sheep, is characterised by:",
+        "o": [
+          "Demyelinating leukoencephalomyelitis with lymphocytic infiltration",
+          "Spongiform vacuolation of neurons",
+          "Negri bodies in Purkinje cells",
+          "Suppurative meningitis"
+        ],
+        "a": 0,
+        "e": "The lentivirus causes chronic lymphocytic inflammation and demyelination in the white matter of brain and spinal cord, causing progressive paralysis.",
+        "topicId": "u4-t07",
+        "subSection": "u4-s1",
+        "diff": 2
+      },
+      {
+        "q": "Lumpy skin disease of cattle, which spread widely in India from 2019, is caused by a:",
+        "o": [
+          "Capripoxvirus, producing firm nodules involving the full thickness of skin, subcutis and muscle",
+          "Parapoxvirus, producing proliferative lesions on the lips only",
+          "Herpesvirus, producing vesicles on the teats",
+          "Papillomavirus, producing warts"
+        ],
+        "a": 0,
+        "e": "LSD nodules show vasculitis, thrombosis, necrosis and intracytoplasmic inclusions; necrotic cores ('sitfasts') slough. Nodules also occur in the respiratory and digestive tracts.",
+        "topicId": "u4-t08",
+        "subSection": "u4-s1",
+        "diff": 1
+      },
+      {
+        "q": "The typical sequence of development of a pox lesion is:",
+        "o": [
+          "Macule → papule → vesicle → pustule → scab",
+          "Vesicle → macule → papule → scab → pustule",
+          "Pustule → vesicle → macule → papule",
+          "Papule → scab → macule → vesicle"
+        ],
+        "a": 0,
+        "e": "Epithelial cells undergo ballooning degeneration, forming vesicles that become filled with neutrophils (pustules) and then crust.",
+        "topicId": "u4-t08",
+        "subSection": "u4-s1",
+        "diff": 1
+      },
+      {
+        "q": "Contagious ecthyma (orf) in lambs and kids, a zoonotic parapoxvirus infection, produces:",
+        "o": [
+          "Proliferative, scabby lesions on the lips, muzzle and udder",
+          "Generalised pox lesions of the lungs",
+          "Vesicles on the feet only",
+          "Necrotic foci in the liver"
+        ],
+        "a": 0,
+        "e": "Orf lesions are proliferative with marked epidermal hyperplasia and intracytoplasmic inclusions; sucking lambs may spread lesions to the ewe's teats.",
+        "topicId": "u4-t08",
+        "subSection": "u4-s1",
+        "diff": 1
+      },
+      {
+        "q": "Unlike rotavirus, bovine coronavirus additionally:",
+        "o": [
+          "Infects the colon epithelium and causes winter dysentery in adult cattle",
+          "Infects only the stomach",
+          "Causes vesicles in the mouth",
+          "Is transmitted only by ticks"
+        ],
+        "a": 0,
+        "e": "Bovine coronavirus infects small and large intestine (and respiratory tract), causing more severe calf diarrhoea and haemorrhagic diarrhoea (winter dysentery) in adults.",
+        "topicId": "u4-t10",
+        "subSection": "u4-s1",
+        "diff": 2
+      },
+      {
+        "q": "Organochlorine insecticide (e.g. DDT, lindane) poisoning in animals mainly causes:",
+        "o": [
+          "CNS stimulation with convulsions, with few specific lesions at necropsy",
+          "Muscarinic signs from acetylcholinesterase inhibition",
+          "Chronic haemolytic crisis",
+          "Methaemoglobinaemia"
+        ],
+        "a": 0,
+        "e": "Organochlorines alter sodium channels in nerves, causing hyperexcitability and seizures. Lesions are non-specific (congestion, haemorrhages from convulsions); residues persist in fat.",
+        "topicId": "u4-t36",
+        "subSection": "u4-s8",
+        "diff": 2
+      },
+      {
+        "q": "The three components of anthrax toxin are:",
+        "o": [
+          "Protective antigen, oedema factor and lethal factor",
+          "Alpha, beta and epsilon toxins",
+          "Tetanospasmin and tetanolysin",
+          "Coagulase, hyaluronidase and leukocidin"
+        ],
+        "a": 0,
+        "e": "Protective antigen binds cells and carries oedema factor (causing oedema) and lethal factor (killing macrophages) inside. The capsule prevents phagocytosis.",
+        "topicId": "u4-t14",
+        "subSection": "u4-s3",
+        "diff": 2
+      },
+      {
+        "q": "In pigs, anthrax most commonly occurs as:",
+        "o": [
+          "A localised pharyngeal form with oedematous swelling of the throat and lymph nodes",
+          "Peracute septicaemia with sudden death, like cattle",
+          "A purely cutaneous infection",
+          "A pulmonary form only"
+        ],
+        "a": 0,
+        "e": "Pigs are relatively resistant; the pharyngeal/intestinal form causes swelling of the throat and haemorrhagic, necrotic lymph nodes.",
+        "topicId": "u4-t14",
+        "subSection": "u4-s3",
+        "diff": 2
+      },
+      {
+        "q": "McFadyean's reaction used to diagnose anthrax in a blood smear demonstrates:",
+        "o": [
+          "Square-ended bacilli in chains with pink capsular material stained by polychrome methylene blue",
+          "Acid-fast rods stained red",
+          "Gram-negative bipolar rods",
+          "Spores stained green by malachite green"
+        ],
+        "a": 0,
+        "e": "Blood from an ear vein or a superficial vein is used — the carcass must not be opened. The capsule stains pink and the bacilli blue.",
+        "topicId": "u4-t14",
+        "subSection": "u4-s3",
+        "diff": 1
+      },
+      {
+        "q": "'Scirrhous cord' in horses after castration is a form of staphylococcal infection called:",
+        "o": [
+          "Botryomycosis — a chronic pyogranulomatous infection with bacterial granules",
+          "Strangles",
+          "Glanders",
+          "Epizootic lymphangitis"
+        ],
+        "a": 0,
+        "e": "Staphylococcus aureus forms granules (like sulphur granules) surrounded by pyogranulomatous inflammation and dense fibrosis of the spermatic cord.",
+        "topicId": "u4-t16",
+        "subSection": "u4-s4",
+        "diff": 2
+      },
+      {
+        "q": "Abortion in cows due to Brucella abortus occurs mainly in the last trimester because the placenta then contains high levels of:",
+        "o": [
+          "Erythritol, which the organism uses for growth",
+          "Progesterone",
+          "Lactose",
+          "Oxytocin"
+        ],
+        "a": 0,
+        "e": "Erythritol in bovine placenta and fetal fluids promotes Brucella growth, causing necrotizing placentitis with a leathery, thickened intercotyledonary placenta.",
+        "topicId": "u4-t18",
+        "subSection": "u4-s4",
+        "diff": 2
+      },
+      {
+        "q": "Chronic swine erysipelas commonly produces, in addition to arthritis:",
+        "o": [
+          "Vegetative valvular endocarditis, especially of the mitral valve",
+          "Pulmonary adenocarcinoma",
+          "Caseous lymphadenitis",
+          "Button ulcers of the colon"
+        ],
+        "a": 0,
+        "e": "Large cauliflower-like vegetations on heart valves may cause heart failure and infarcts in kidney and spleen.",
+        "topicId": "u4-t18",
+        "subSection": "u4-s4",
+        "diff": 2
+      },
+      {
+        "q": "'Pigeon fever' in horses, with large abscesses in the pectoral region, is caused by:",
+        "o": [
+          "Corynebacterium pseudotuberculosis",
+          "Streptococcus equi subsp. equi",
+          "Rhodococcus equi",
+          "Burkholderia mallei"
+        ],
+        "a": 0,
+        "e": "The equine biovar of C. pseudotuberculosis causes deep pectoral and ventral abdominal abscesses and ulcerative lymphangitis.",
+        "topicId": "u4-t19",
+        "subSection": "u4-s4",
+        "diff": 2
+      },
+      {
+        "q": "Acute enteric salmonellosis in cattle is characterised pathologically by:",
+        "o": [
+          "Fibrinonecrotic (diphtheritic) enteritis of the ileum and colon, with paratyphoid nodules in the liver",
+          "Villous atrophy without inflammation",
+          "Thickened, corrugated ileal mucosa without ulcers",
+          "Button ulcers of the oesophagus"
+        ],
+        "a": 0,
+        "e": "Salmonella causes necrosis with fibrin casts in the intestine, enlarged mesenteric lymph nodes, and focal hepatic necrosis with macrophages ('paratyphoid nodules').",
+        "topicId": "u4-t20",
+        "subSection": "u4-s4",
+        "diff": 2
+      },
+      {
+        "q": "Oedema disease of weaned pigs, caused by Shiga toxin (Stx2e)-producing E. coli, is characterised by:",
+        "o": [
+          "Oedema of the eyelids, stomach wall (greater curvature) and mesocolon, with cerebrospinal angiopathy",
+          "Watery diarrhoea with no lesions outside the intestine",
+          "Button ulcers and splenic infarcts",
+          "Pneumonia with lung abscesses"
+        ],
+        "a": 0,
+        "e": "The toxin damages vascular endothelium, causing oedema and degenerative angiopathy; neurological signs are from brain oedema and malacia.",
+        "topicId": "u4-t20",
+        "subSection": "u4-s4",
+        "diff": 2
+      },
+      {
+        "q": "Calf diphtheria (necrotic laryngitis and stomatitis) is caused by:",
+        "o": [
+          "Fusobacterium necrophorum",
+          "Corynebacterium diphtheriae",
+          "Mannheimia haemolytica",
+          "Actinomyces bovis"
+        ],
+        "a": 0,
+        "e": "F. necrophorum causes coagulative necrosis with a sharp red border — also foot rot and liver abscesses in feedlot cattle.",
+        "topicId": "u4-t20",
+        "subSection": "u4-s4",
+        "diff": 1
+      },
+      {
+        "q": "Bovine venereal campylobacteriosis (Campylobacter fetus subsp. venerealis) mainly causes:",
+        "o": [
+          "Infertility, repeat breeding and early embryonic death",
+          "Acute haemorrhagic enteritis",
+          "Mastitis",
+          "Pneumonia in calves"
+        ],
+        "a": 0,
+        "e": "The bull is an asymptomatic carrier; infected cows develop endometritis and salpingitis, with early embryonic death and irregular return to oestrus.",
+        "topicId": "u4-t20",
+        "subSection": "u4-s4",
+        "diff": 1
+      },
+      {
+        "q": "Contagious caprine pleuropneumonia (CCPP), caused by Mycoplasma capricolum subsp. capripneumoniae, differs from CBPP in that:",
+        "o": [
+          "Interlobular septa are not markedly thickened, so the lung lacks a marbled appearance",
+          "It affects only cattle",
+          "It causes no pleuritis",
+          "It produces caseous abscesses in lymph nodes"
+        ],
+        "a": 0,
+        "e": "CCPP produces fibrinous pleuropneumonia with pleural fluid, but goat lungs lack the prominent interlobular septa seen in cattle.",
+        "topicId": "u4-t21",
+        "subSection": "u4-s4",
+        "diff": 3
       }
     ],
     "tf": [
@@ -9410,6 +10829,126 @@ var quizBank = {
         "e": "Triterpenoids Lantadene A and B paralyze bile canalicular excretion, causing retention of phylloerythrin which accumulates in unpigmented skin to cause severe photosensitization.",
         "topicId": "u4-t37",
         "subSection": "u4-s8",
+        "diff": 1
+      },
+      {
+        "q": "Vesicular stomatitis can affect horses, whereas horses are resistant to Foot-and-Mouth Disease.",
+        "a": true,
+        "e": "This is one useful field point for differentiating the vesicular diseases.",
+        "topicId": "u4-t09",
+        "subSection": "u4-s2",
+        "diff": 1
+      },
+      {
+        "q": "Actinomycosis in cattle mainly affects the soft tissue of the tongue ('wooden tongue').",
+        "a": false,
+        "e": "Actinomycosis (A. bovis) affects bone (lumpy jaw). Wooden tongue is actinobacillosis (A. lignieresii).",
+        "topicId": "u4-t13",
+        "subSection": "u4-s3",
+        "diff": 1
+      },
+      {
+        "q": "Sulphur granules consist of bacterial colonies surrounded by eosinophilic club-shaped material, within a pyogranuloma.",
+        "a": true,
+        "e": "The clubs are Splendore–Hoeppli material (antigen–antibody complexes).",
+        "topicId": "u4-t13",
+        "subSection": "u4-s3",
+        "diff": 2
+      },
+      {
+        "q": "Bovine anaplasmosis causes marked haemoglobinuria, just like babesiosis.",
+        "a": false,
+        "e": "Anaplasmosis causes extravascular haemolysis, so there is anaemia and jaundice without haemoglobinuria.",
+        "topicId": "u4-t22",
+        "subSection": "u4-s4",
+        "diff": 1
+      },
+      {
+        "q": "Q fever is caused by Coxiella burnetii and is an important zoonosis.",
+        "a": true,
+        "e": "Humans are infected mainly by inhaling contaminated dust from birth products.",
+        "topicId": "u4-t22",
+        "subSection": "u4-s4",
+        "diff": 1
+      },
+      {
+        "q": "Hairs infected with Microsporum canis may fluoresce apple-green under a Wood's lamp.",
+        "a": true,
+        "e": "Only about 50% of strains fluoresce, so a negative Wood's lamp result does not rule out ringworm.",
+        "topicId": "u4-t23",
+        "subSection": "u4-s5",
+        "diff": 1
+      },
+      {
+        "q": "Serous atrophy of fat is a necropsy sign of prolonged starvation or cachexia.",
+        "a": true,
+        "e": "Fat depots become grey, translucent and gelatinous, especially in the coronary groove and bone marrow.",
+        "topicId": "u4-t31",
+        "subSection": "u4-s7",
+        "diff": 1
+      },
+      {
+        "q": "Bacillus anthracis forms spores inside the unopened carcass.",
+        "a": false,
+        "e": "Sporulation needs free oxygen. This is why an anthrax carcass must never be opened — spores form on exposure to air and contaminate the soil for decades.",
+        "topicId": "u4-t14",
+        "subSection": "u4-s3",
+        "diff": 2
+      },
+      {
+        "q": "Oedema disease of pigs is caused by Shiga toxin-producing E. coli that damages vascular endothelium.",
+        "a": true,
+        "e": "Stx2e causes angiopathy, leading to oedema of the eyelids, stomach wall and mesocolon and to neurological signs.",
+        "topicId": "u4-t20",
+        "subSection": "u4-s4",
+        "diff": 1
+      },
+      {
+        "q": "Chronic fasciolosis in cattle produces thickened, calcified 'pipe-stem' bile ducts.",
+        "a": true,
+        "e": "Adult flukes cause chronic cholangitis with fibrosis; cattle bile ducts often calcify and grate when cut.",
+        "topicId": "u4-t27",
+        "subSection": "u4-s6",
+        "diff": 1
+      },
+      {
+        "q": "Hydatid cysts in the liver and lungs of cattle are the larval stage of Taenia solium.",
+        "a": false,
+        "e": "They are the larval stage of Echinococcus granulosus. Taenia solium larvae (Cysticercus cellulosae) occur in pig muscle.",
+        "topicId": "u4-t29",
+        "subSection": "u4-s6",
+        "diff": 1
+      },
+      {
+        "q": "Cryptosporidium parvum organisms lie at the microvillous (brush) border of intestinal enterocytes.",
+        "a": true,
+        "e": "They are intracellular but extracytoplasmic, causing villous atrophy and diarrhoea in neonatal calves; it is zoonotic.",
+        "topicId": "u4-t30",
+        "subSection": "u4-s6",
+        "diff": 2
+      },
+      {
+        "q": "Organophosphate poisoning produces pathognomonic gross lesions at necropsy.",
+        "a": false,
+        "e": "Lesions are non-specific (pulmonary oedema, excess salivation). Diagnosis relies on history, cholinesterase activity and chemical analysis of stomach contents.",
+        "topicId": "u4-t36",
+        "subSection": "u4-s8",
+        "diff": 1
+      },
+      {
+        "q": "In cattle, tuberculous lesions are found most commonly in the lungs and thoracic lymph nodes because infection is mainly by inhalation.",
+        "a": true,
+        "e": "The bronchial and mediastinal lymph nodes are the most frequent sites; alimentary infection is more common in calves fed infected milk.",
+        "topicId": "u4-t12",
+        "subSection": "u4-s3",
+        "diff": 1
+      },
+      {
+        "q": "Bovine coronavirus can cause winter dysentery in adult cattle.",
+        "a": true,
+        "e": "It causes haemorrhagic diarrhoea in adults in winter, in addition to neonatal calf diarrhoea.",
+        "topicId": "u4-t10",
+        "subSection": "u4-s1",
         "diff": 1
       }
     ],
@@ -10051,6 +11590,180 @@ var quizBank = {
         "subSection": "u4-s8",
         "diff": 1,
         "a_display": "bracken"
+      },
+      {
+        "q": "Vesicular exanthema of swine is caused by a virus belonging to the family ______.",
+        "a": [
+          "caliciviridae",
+          "calicivirus",
+          "calici"
+        ],
+        "a_display": "Caliciviridae",
+        "e": "FMD is caused by a picornavirus and vesicular stomatitis by a rhabdovirus.",
+        "topicId": "u4-t09",
+        "subSection": "u4-s2",
+        "diff": 2
+      },
+      {
+        "q": "'Lumpy jaw' (rarefying osteomyelitis of the mandible) in cattle is caused by Actinomyces ______.",
+        "a": [
+          "bovis"
+        ],
+        "a_display": "bovis",
+        "e": "A Gram-positive filamentous organism entering through oral wounds.",
+        "topicId": "u4-t13",
+        "subSection": "u4-s3",
+        "diff": 1
+      },
+      {
+        "q": "'Wooden tongue' in cattle is caused by Actinobacillus ______.",
+        "a": [
+          "lignieresii",
+          "lignieresi"
+        ],
+        "a_display": "lignieresii",
+        "e": "A Gram-negative bacillus causing pyogranulomatous glossitis and lymphadenitis.",
+        "topicId": "u4-t13",
+        "subSection": "u4-s3",
+        "diff": 1
+      },
+      {
+        "q": "Anaplasma marginale is named for its inclusion bodies located at the ______ of the red blood cell.",
+        "a": [
+          "margin",
+          "periphery",
+          "edge"
+        ],
+        "a_display": "margin",
+        "e": "The dense bodies sit at the periphery of the erythrocyte.",
+        "topicId": "u4-t22",
+        "subSection": "u4-s4",
+        "diff": 1
+      },
+      {
+        "q": "In canine ehrlichiosis, morulae of Ehrlichia canis are seen in the cytoplasm of circulating ______.",
+        "a": [
+          "monocytes",
+          "monocyte"
+        ],
+        "a_display": "monocytes",
+        "e": "Hence the name canine monocytic ehrlichiosis.",
+        "topicId": "u4-t22",
+        "subSection": "u4-s4",
+        "diff": 1
+      },
+      {
+        "q": "Ringworm of calves with grey-white crusts around the eyes is most commonly caused by Trichophyton ______.",
+        "a": [
+          "verrucosum"
+        ],
+        "a_display": "verrucosum",
+        "e": "T. verrucosum is the main dermatophyte of cattle and is zoonotic.",
+        "topicId": "u4-t23",
+        "subSection": "u4-s5",
+        "diff": 1
+      },
+      {
+        "q": "In McFadyean's reaction for anthrax, the capsule of Bacillus anthracis stains pink with polychrome ______ blue.",
+        "a": [
+          "methylene"
+        ],
+        "a_display": "methylene",
+        "e": "A thin blood smear from a superficial vein is used; the carcass is not opened.",
+        "topicId": "u4-t14",
+        "subSection": "u4-s3",
+        "diff": 1
+      },
+      {
+        "q": "Grain overload in cattle causes rumen acidosis because of the accumulation of ______ acid.",
+        "a": [
+          "lactic"
+        ],
+        "a_display": "lactic",
+        "e": "Streptococcus bovis and lactobacilli produce lactic acid, causing chemical rumenitis and systemic acidosis.",
+        "topicId": "u4-t31",
+        "subSection": "u4-s7",
+        "diff": 1
+      },
+      {
+        "q": "Yellow fat disease in cats fed oily fish, due to vitamin E deficiency, is pathologically termed ______.",
+        "a": [
+          "steatitis",
+          "pansteatitis"
+        ],
+        "a_display": "steatitis",
+        "e": "Peroxidised fat accumulates ceroid pigment and becomes inflamed.",
+        "topicId": "u4-t31",
+        "subSection": "u4-s7",
+        "diff": 2
+      },
+      {
+        "q": "Lumpy skin disease of cattle is caused by a virus of the genus ______.",
+        "a": [
+          "capripoxvirus",
+          "capripox",
+          "capripox virus"
+        ],
+        "a_display": "Capripoxvirus",
+        "e": "The same genus includes sheep pox and goat pox viruses.",
+        "topicId": "u4-t08",
+        "subSection": "u4-s1",
+        "diff": 1
+      },
+      {
+        "q": "Orf, a zoonotic parapoxvirus infection causing scabby lips in lambs, is also called contagious ______.",
+        "a": [
+          "ecthyma"
+        ],
+        "a_display": "ecthyma",
+        "e": "Contagious ecthyma (contagious pustular dermatitis).",
+        "topicId": "u4-t08",
+        "subSection": "u4-s1",
+        "diff": 1
+      },
+      {
+        "q": "Hydatid cysts in the viscera of cattle and buffaloes are the larval stage of Echinococcus ______.",
+        "a": [
+          "granulosus"
+        ],
+        "a_display": "granulosus",
+        "e": "The adult tapeworm lives in the dog's intestine.",
+        "topicId": "u4-t29",
+        "subSection": "u4-s6",
+        "diff": 1
+      },
+      {
+        "q": "'Red dysentery' of calves, with haemorrhagic inflammation of the large intestine, is caused by protozoa of the genus ______.",
+        "a": [
+          "eimeria"
+        ],
+        "a_display": "Eimeria",
+        "e": "Mainly E. zuernii and E. bovis.",
+        "topicId": "u4-t30",
+        "subSection": "u4-s6",
+        "diff": 1
+      },
+      {
+        "q": "Porcine enzootic pneumonia, with cranioventral consolidation and peribronchiolar lymphoid cuffing, is caused by Mycoplasma ______.",
+        "a": [
+          "hyopneumoniae"
+        ],
+        "a_display": "hyopneumoniae",
+        "e": "The organism damages cilia and predisposes to secondary Pasteurella pneumonia.",
+        "topicId": "u4-t21",
+        "subSection": "u4-s4",
+        "diff": 2
+      },
+      {
+        "q": "Brucella abortus localises in the bovine placenta in late pregnancy because of the sugar alcohol ______.",
+        "a": [
+          "erythritol"
+        ],
+        "a_display": "erythritol",
+        "e": "Erythritol promotes Brucella growth in the placenta and fetal fluids.",
+        "topicId": "u4-t18",
+        "subSection": "u4-s4",
+        "diff": 2
       }
     ]
   },
