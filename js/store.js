@@ -128,30 +128,46 @@ var store = (function () {
     return color;
   }
   function getHighlights() { return read(KEYS.highlights, {}); }
-  function addHighlight(id, text, color) {
+  /* A highlight is identified by its text AND where it sits: `occ` is which
+     occurrence of that text in the lesson was selected (0 = first), and
+     `view` is the detail level ("standard" | "deep") it was made in.
+     Legacy highlights have neither and behave as the first occurrence. */
+  function sameHl(item, text, occ, view) {
+    var itemText = typeof item === "string" ? item : (item ? item.text : "");
+    if (itemText !== text) return false;
+    var itemOcc = (item && typeof item === "object" && typeof item.occ === "number") ? item.occ : 0;
+    var itemView = (item && typeof item === "object" && item.view) ? item.view : "";
+    return itemOcc === (occ || 0) && itemView === (view || "");
+  }
+
+  function addHighlight(id, text, color, occ, view) {
     color = (color && VALID_HL_COLORS.indexOf(color) !== -1) ? color : getHighlightColor();
     var m = getHighlights();
     if (!m[id]) m[id] = [];
+    var entry = { text: text, color: color };
+    if (typeof occ === "number" && occ >= 0) entry.occ = occ;
+    if (view) entry.view = view;
     var found = false;
     for (var i = 0; i < m[id].length; i++) {
-      var item = m[id][i];
-      var itemText = typeof item === "string" ? item : (item ? item.text : "");
-      if (itemText === text) {
-        m[id][i] = { text: text, color: color };
+      if (sameHl(m[id][i], text, entry.occ, entry.view)) {
+        m[id][i] = entry;
         found = true;
         break;
       }
     }
     if (!found) {
-      m[id].push({ text: text, color: color });
+      m[id].push(entry);
     }
     write(KEYS.highlights, m);
     logActivity();
   }
-  function removeHighlight(id, text) {
+  /* With no `occ`, every highlight of that text is removed (legacy behaviour). */
+  function removeHighlight(id, text, occ, view) {
     var m = getHighlights();
     if (!m[id]) return;
+    var exact = typeof occ === "number";
     m[id] = m[id].filter(function (t) {
+      if (exact) return !sameHl(t, text, occ, view);
       var itemText = typeof t === "string" ? t : (t ? t.text : "");
       return itemText !== text;
     });
