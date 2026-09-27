@@ -19,9 +19,9 @@ var quizBank = {
         "q": "Who is universally regarded as the Father of Modern Cellular Pathology?",
         "o": [
           "Rudolf Virchow",
-          "Robert Koch",
-          "Louis Pasteur",
-          "William Osler"
+          "Julius Cohnheim",
+          "Giovanni Morgagni",
+          "Carl Rokitansky"
         ],
         "a": 0,
         "e": "Rudolf Virchow published 'Cellular Pathology' in 1858 establishing 'Omnis cellula e cellula'.",
@@ -61,9 +61,9 @@ var quizBank = {
         "q": "Hydropic degeneration is primarily characterized microscopically by:",
         "o": [
           "Pale, vacuolated cytoplasm filled with water due to Na+/K+ pump failure",
-          "Intracytoplasmic lipid droplets displacing the nucleus",
-          "Eosinophilic hyaline droplets in renal tubules",
-          "Dense pyknotic nucleus with ruptured cell membrane"
+          "Clear cytoplasmic lipid vacuoles that displace the nucleus to the periphery",
+          "Glassy eosinophilic proteinaceous droplets filling proximal renal tubules",
+          "Dense clumped basophilic chromatin aggregates with ruptured plasma membranes"
         ],
         "a": 0,
         "e": "Hydropic swelling occurs when energy failure disables membrane sodium pumps, retaining water inside the cytosol.",
@@ -89,9 +89,9 @@ var quizBank = {
         "q": "The pathognomonic gross appearance of severe hepatic lipidosis (fatty liver) in high-yielding dairy cows is:",
         "o": [
           "Enlarged, pale yellowish organ with rounded borders that floats in water",
-          "Small, shrunken, dark reddish organ with sharp borders",
-          "Nutmeg liver with dark red central vein congestion",
-          "Firm, gritty organ with nodular regeneration"
+          "Nutmeg-patterned liver displaying dark red congested centers and pale zones",
+          "Shrunken, firm, nodular organ with thickened capsule and sharp fibrous edges",
+          "Soft, friable, dark mahogany liver with prominent gall bladder distension"
         ],
         "a": 0,
         "e": "Fatty liver is enlarged, pale yellow, greasy on touch, has rounded borders, and fragments float in water.",
@@ -103,9 +103,9 @@ var quizBank = {
         "q": "Glycogen accumulation in hepatocytes is classically demonstrated by which histochemical reaction?",
         "o": [
           "PAS positive, diastase-sensitive",
-          "Oil Red O positive",
-          "Alcian blue positive at pH 2.5",
-          "Von Kossa positive"
+          "Oil Red O positive, frozen section",
+          "Alcian blue positive at low pH 2.5",
+          "Von Kossa positive for calcium salts"
         ],
         "a": 0,
         "e": "Glycogen stains magenta with PAS and is digested by diastase/amylase, distinguishing it from mucin.",
@@ -145,9 +145,9 @@ var quizBank = {
         "q": "Hyaline droplets in the proximal convoluted renal tubular epithelium represent:",
         "o": [
           "Excessive reabsorption of filtered plasma proteins",
-          "Intracellular viral inclusion bodies",
-          "Amyloid fibrils",
-          "Lipofuscin pigments"
+          "Intracytoplasmic aggregation of viral inclusion bodies",
+          "Accumulation of insoluble cross-linked amyloid fibrils",
+          "Peroxidized lipid wear-and-tear lipofuscin granules"
         ],
         "a": 0,
         "e": "Proteinuria causes renal proximal tubular epithelial cells to pinocytose excess albumin, forming pink hyaline droplets.",
@@ -173,9 +173,9 @@ var quizBank = {
         "q": "The term 'etiology' in pathology strictly refers to:",
         "o": [
           "The primary causal agent or cause of a disease",
-          "The sequence of events from contact to lesion",
-          "The functional consequences of a lesion",
-          "The structural changes seen at necropsy"
+          "The sequence of cellular events leading to a lesion",
+          "The expected clinical course and outcome of disease",
+          "The gross structural changes observed during necropsy"
         ],
         "a": 0,
         "e": "Etiology is the cause, while pathogenesis is the mechanism of development.",
@@ -187,9 +187,9 @@ var quizBank = {
         "q": "Which organ is the most frequent and clinically significant site of secondary amyloid deposition in dogs?",
         "o": [
           "Kidney (glomeruli)",
-          "Spleen",
-          "Adrenal cortex",
-          "Myocardium"
+          "Spleen (white pulp)",
+          "Liver (sinusoids)",
+          "Myocardium (atria)"
         ],
         "a": 0,
         "e": "Renal glomerular amyloidosis causes severe proteinuria, nephrotic syndrome, and renal failure in dogs.",
@@ -215,9 +215,9 @@ var quizBank = {
         "q": "Sago spleen in animals refers to amyloid deposition predominantly in:",
         "o": [
           "Splenic Malpighian corpuscles (white pulp)",
-          "Splenic red pulp sinusoids",
-          "Splenic capsule and trabeculae",
-          "Subcapsular sinuses"
+          "Splenic red pulp cords and venous sinusoids",
+          "Splenic fibroelastic capsule and trabeculae",
+          "Splenic perivenous sinusoids and adventitia"
         ],
         "a": 0,
         "e": "Amyloid restricted to the lymphoid follicles of the spleen resembles boiled sago grains grossly.",
@@ -229,9 +229,9 @@ var quizBank = {
         "q": "Lardaceous spleen occurs when amyloid is deposited diffusely in:",
         "o": [
           "Red pulp cords and sinusoids",
-          "White pulp follicles only",
-          "Trabecular muscular walls",
-          "Splenic arterioles only"
+          "White pulp lymphoid follicles",
+          "Trabecular smooth muscle coats",
+          "Subcapsular venous sinus walls"
         ],
         "a": 0,
         "e": "Lardaceous spleen involves extensive red pulp deposition giving a large, waxy, map-like cut surface.",
@@ -243,9 +243,9 @@ var quizBank = {
         "q": "Fatty infiltration (adiposity) differs from fatty degeneration (steatosis) in that infiltration is:",
         "o": [
           "Accumulation of mature lipocytes in stroma/interstitial tissue",
-          "Accumulation of triglycerides inside parenchymal cells",
-          "Intracellular cholesterol clefting",
-          "Lipofuscin wear-and-tear pigment deposition"
+          "Accumulation of excess triglycerides inside parenchymal cytoplasm",
+          "Extracellular deposition of cholesterol clefts amidst necrosis",
+          "Peroxidative accumulation of wear-and-tear lipofuscin pigments"
         ],
         "a": 0,
         "e": "Fatty infiltration is stromal ingrowth of adult adipocytes into tissues like heart or pancreas without parenchymal cell injury.",
@@ -257,9 +257,9 @@ var quizBank = {
         "q": "Zenker's degeneration is a specific hyaline degeneration affecting which tissue in sheep with white muscle disease?",
         "o": [
           "Striated skeletal and cardiac muscle",
-          "Smooth muscle of the gut",
-          "Renal tubular epithelium",
-          "Vascular endothelium"
+          "Smooth muscle tunic of the intestine",
+          "Renal proximal tubular brush borders",
+          "Vascular endothelial lining of aorta"
         ],
         "a": 0,
         "e": "Zenker's degeneration produces shiny, swollen, pale, hyaline necrosis of skeletal muscle fibers.",
@@ -285,9 +285,9 @@ var quizBank = {
         "q": "The hallmark histopathological feature of coagulative necrosis is:",
         "o": [
           "Preservation of the basic architectural tissue outline with loss of cellular details",
-          "Complete enzymatic dissolution of tissue into liquid pus",
-          "Cheesy, structureless granular debris with loss of outline",
-          "Saponification of peripancreatic fat"
+          "Rapid enzymatic dissolution of tissue parenchyma into structureless liquid exudate",
+          "Obliteration of all architecture replaced by amorphous friable cheesy granular debris",
+          "Hydrolysis of adipocyte triglycerides forming shadowy outlines with basophilic soaps"
         ],
         "a": 0,
         "e": "Acid denaturation of structural and enzymatic proteins preserves the shadowy 'tombstone' tissue architecture.",
@@ -299,9 +299,9 @@ var quizBank = {
         "q": "Liquefactive necrosis is typically observed in ischemic injury to which organ?",
         "o": [
           "Brain and spinal cord (CNS)",
-          "Kidney",
-          "Myocardium",
-          "Spleen"
+          "Myocardium and cardiac apex",
+          "Renal cortex and parenchyma",
+          "Splenic red pulp and capsule"
         ],
         "a": 0,
         "e": "The CNS has high lipid/water content and little fibrous stroma, leading to rapid softening and liquefaction (malacia).",
@@ -327,9 +327,9 @@ var quizBank = {
         "q": "Fat necrosis with chalky white soap formation (saponification) typically accompanies:",
         "o": [
           "Acute necrotizing pancreatitis",
-          "Congestive heart failure",
-          "Chronic glomerulonephritis",
-          "Pulmonary atelectasis"
+          "Chronic congestive splenomegaly",
+          "Suppurative bacterial pleurisy",
+          "Severe ischemic myocardiopathy"
         ],
         "a": 0,
         "e": "Pancreatic lipases split triglycerides into fatty acids, which combine with calcium to form insoluble chalky soaps.",
@@ -341,9 +341,9 @@ var quizBank = {
         "q": "Wet gangrene differs from dry gangrene primarily because wet gangrene involves:",
         "o": [
           "Invasion by putrefactive and gas-producing bacteria on moist tissue with venous stasis",
-          "Arterial occlusion in dry extremities with mummification and no bacterial infection",
-          "Pure chemical burning without microbial contamination",
-          "Intracellular apoptosis triggered by granzyme B"
+          "Slow arterial occlusion in dry distal extremities with sterile tissue mummification",
+          "Pure coagulative ischemic infarction devoid of saprophytic or bacterial contamination",
+          "Extensive enzymatic liquefaction initiated exclusively by intracellular granzyme release"
         ],
         "a": 0,
         "e": "Wet gangrene develops in moist internal organs (lungs, intestines) with bacterial saprophytic putrefaction and foul odor.",
@@ -369,9 +369,9 @@ var quizBank = {
         "q": "Apoptosis is distinguished from necrosis by all of the following features EXCEPT:",
         "o": [
           "Elicitation of intense inflammatory response with neutrophilic infiltration",
-          "Energy-dependent, programmed cell deletion",
-          "Integrity of cell membrane maintained with apoptotic bodies",
-          "Internucleosomal DNA fragmentation by endonucleases"
+          "Active energy-dependent programmed cell shrinkage driven by caspase activation",
+          "Formation of membrane-bound apoptotic bodies cleared rapidly by phagocytes",
+          "Internucleosomal cleavage of genomic DNA into characteristic ladder fragments"
         ],
         "a": 0,
         "e": "Apoptosis does NOT elicit an inflammatory response because apoptotic bodies are rapidly cleared by macrophages.",
@@ -397,9 +397,9 @@ var quizBank = {
         "q": "Dystrophic calcification occurs in:",
         "o": [
           "Dead, degenerate, or necrotic tissue with normal serum calcium levels",
-          "Normal living tissues associated with elevated serum calcium",
-          "Bones of animals receiving excessive vitamin D",
-          "Tissues following severe hyperparathyroidism"
+          "Normal uninjured living tissues in the presence of marked hypercalcaemia",
+          "Healthy vascular elastic membranes stimulated by excess 1,25-D3 vitamin",
+          "Active osteoid matrices displaying elevated alkaline phosphatase activity"
         ],
         "a": 0,
         "e": "Dystrophic calcification is local deposition in dead/necrotic tissue despite normal blood calcium and phosphorus.",
@@ -411,9 +411,9 @@ var quizBank = {
         "q": "Metastatic calcification in cattle is classically induced by grazing which toxic plant?",
         "o": [
           "Solanum malacoxylon (Cestrum diurnum)",
-          "Lantana camara",
-          "Pteridium aquilinum",
-          "Gossypium hirsutum"
+          "Lantana camara (causing cholestasis)",
+          "Pteridium aquilinum (bracken poisoning)",
+          "Crotalaria spectabilis (pyrrolizidine)"
         ],
         "a": 0,
         "e": "Solanum malacoxylon contains 1,25-dihydroxycholecalciferol glycosides causing hypercalcaemia and metastatic calcification (Enzootic calcinosis).",
@@ -439,9 +439,9 @@ var quizBank = {
         "q": "Post-mortem rigor mortis is caused by:",
         "o": [
           "Depletion of ATP preventing actin-myosin detachment in muscle fibers",
-          "Excessive release of acetylcholine at motor end-plates",
-          "Rapid proliferation of putrefactive bacteria",
-          "Accumulation of lactic acid alone"
+          "Excessive synaptic release of acetylcholine at motor neural endplates",
+          "Rapid multiplication and tissue breakdown by putrefactive clostridia",
+          "Massive accumulation of lactic acid uncoupled from glycogen synthesis"
         ],
         "a": 0,
         "e": "Without ATP, the myosin cross-bridges remain locked to actin filaments, producing generalized rigidity.",
@@ -453,9 +453,9 @@ var quizBank = {
         "q": "Post-mortem hypostatic congestion (livor mortis) is distinguished from antemortem congestion because livor mortis:",
         "o": [
           "Shifts with changes in gravitational position of the cadaver during early hours",
-          "Has an accompanying line of demarcation and inflammatory cellular exudate",
-          "Results in severe tissue infarction with thrombus formation",
-          "Never disappears upon washing or pressure"
+          "Evokes an active inflammatory border with marked perivascular neutrophilic exudate",
+          "Triggers local microthrombosis accompanied by true antemortem tissue infarction",
+          "Resists gravitational shifting and persists unchanged regardless of body recumbency"
         ],
         "a": 0,
         "e": "Livor mortis is passive gravitational pooling in down-side vessels with no vascular or cellular inflammatory reaction.",
@@ -467,9 +467,9 @@ var quizBank = {
         "q": "Pseudomelanosis observed on the abdominal organs during necropsy is due to:",
         "o": [
           "Combination of hydrogen sulphide from bacteria with iron from lysed RBCs forming FeS",
-          "Excessive melanin synthesis by post-mortem melanocytes",
-          "Bile imbibition from the gall bladder",
-          "Intracellular hemosiderin deposition"
+          "Excessive de novo enzymatic synthesis and secretion of eumelanin by local melanocytes",
+          "Transudative diffusion and passive chemical imbibition of bile from ruptured gallbladder",
+          "Extensive phagocytosis and intracytoplasmic storage of hemosiderin in macrophages"
         ],
         "a": 0,
         "e": "H2S produced by intestinal bacteria combines with haemoglobin iron to form black iron sulphide (FeS).",
@@ -481,9 +481,9 @@ var quizBank = {
         "q": "Post-mortem clot in a cardiac chamber is distinguished from an antemortem thrombus because the post-mortem clot:",
         "o": [
           "Is moist, shiny, elastic, unattached, and takes the shape of the vessel ('currant jelly' / 'chicken fat')",
-          "Is dry, friable, granular, and firmly anchored to the endothelial wall",
-          "Displays distinct laminations called the Lines of Zahn",
-          "Produces infarction in the supplied tissue"
+          "Is dry, friable, dull, firmly anchored to the underlying injured endothelium, and resists easy peeling",
+          "Displays prominent microscopic alternating laminations of pale platelets and dense fibrin with trapped RBCs",
+          "Shows extensive ingrowth of fibroblasts and capillaries with direct fibrous adherence to the vascular wall"
         ],
         "a": 0,
         "e": "Post-mortem clots are unattached, glistening, elastic, and easily pulled free without tearing endothelium.",
@@ -495,9 +495,9 @@ var quizBank = {
         "q": "Fibrinoid necrosis is classically seen in which pathological condition?",
         "o": [
           "Immune-mediated vasculitis and malignant hypertension",
-          "Pulmonary tuberculosis",
-          "Pancreatic fat saponification",
-          "Cerebral infarction (stroke)"
+          "Caseous granulomas of bovine mycobacterial tuberculosis",
+          "Enzymatic saponification in acute peripancreatic fat",
+          "Ischemic cerebral malacia following carotid occlusion"
         ],
         "a": 0,
         "e": "Fibrinoid necrosis occurs when antigen-antibody complexes and leaking fibrin insudate into arteriolar walls.",
@@ -509,9 +509,9 @@ var quizBank = {
         "q": "Which enzyme is released from injured cells into serum and serves as a sensitive biomarker for hepatocellular necrosis in dogs?",
         "o": [
           "Alanine Aminotransferase (ALT)",
-          "Amylase",
-          "Lipase",
-          "Creatine Kinase (CK)"
+          "Aspartate aminotransferase (AST)",
+          "Alkaline phosphatase isozymes",
+          "Creatine phosphokinase (CPK)"
         ],
         "a": 0,
         "e": "ALT is concentrated in canine/feline hepatocyte cytoplasm and leaks rapidly into circulation upon necrosis.",
@@ -523,9 +523,9 @@ var quizBank = {
         "q": "Active hyperaemia is mediated primarily by:",
         "o": [
           "Arteriolar dilatation driven by vasoactive catabolites or neurogenic stimuli",
-          "Obstruction to venous outflow from an organ",
-          "Endothelial detachment and platelet aggregation",
-          "Hypoalbuminaemia reducing plasma oncotic pressure"
+          "Mechanical impedance or obstruction of venous drainage from affected tissue beds",
+          "Loss of endothelial integrity leading to platelet activation and fibrin meshwork",
+          "Severe reduction in plasma oncotic pressure secondary to hepatic hypoproteinemia"
         ],
         "a": 0,
         "e": "Hyperaemia is an active arteriolar process flooding the capillary bed with oxygenated, bright red blood.",
@@ -551,9 +551,9 @@ var quizBank = {
         "q": "'Heart failure cells' found in the pulmonary alveoli during chronic pulmonary congestion are:",
         "o": [
           "Alveolar macrophages laden with golden-brown hemosiderin pigment",
-          "Hypertrophied type II pneumocytes",
-          "Extravasated viable neutrophils",
-          "Desquamated endothelial cells"
+          "Hyperplastic type II pneumocytes producing abnormal thick surfactant",
+          "Extravasated neutrophils phagocytosing debris in alveolar spaces",
+          "Desquamated bronchial epithelial cells undergoing squamous metaplasia"
         ],
         "a": 0,
         "e": "Alveolar macrophages phagocytose diapedesed RBCs from congested capillaries, storing iron as hemosiderin.",
@@ -565,9 +565,9 @@ var quizBank = {
         "q": "Which primary Starling force alteration is the leading cause of generalized subcutaneous oedema (anasarca) in parasitic bottle-jaw?",
         "o": [
           "Decreased plasma colloid osmotic (oncotic) pressure",
-          "Increased capillary hydrostatic pressure",
-          "Lymphatic obstruction",
-          "Sodium retention by adrenal adenoma"
+          "Increased capillary systemic hydrostatic blood pressure",
+          "Mechanical obstruction of deep lymphatic drainage vessels",
+          "Excessive aldosterone-mediated renal sodium retention"
         ],
         "a": 0,
         "e": "Blood-sucking parasites (Haemonchus) cause severe hypoalbuminaemia, lowering intravascular oncotic pressure.",
@@ -580,8 +580,8 @@ var quizBank = {
         "o": [
           "Low protein content (< 2.5 g/dL) and specific gravity < 1.015",
           "High protein content (> 3.0 g/dL) and specific gravity > 1.020",
-          "Large numbers of degenerate neutrophils",
-          "Spontaneous clotting on exposure to air"
+          "High nucleated cell count (> 5000/μL) rich in viable neutrophils",
+          "Spontaneous fibrin clot formation upon exposure to atmospheric air"
         ],
         "a": 0,
         "e": "Transudate is a non-inflammatory filtrate with low protein and low cellularity.",
@@ -593,9 +593,9 @@ var quizBank = {
         "q": "Which three factors constitute Virchow's Triad in the pathogenesis of thrombosis?",
         "o": [
           "Endothelial injury, abnormal blood flow, and hypercoagulability",
-          "Hypoxia, acidosis, and cellular swelling",
-          "Hyperaemia, congestion, and oedema",
-          "Vasodilatation, stasis, and emigration"
+          "Cellular swelling, lactic acidosis, and severe lysosomal disruption",
+          "Active hyperaemia, vascular stasis, and increased colloid pressure",
+          "Arteriolar spasm, leukocytic emigration, and perivascular fibrosis"
         ],
         "a": 0,
         "e": "Virchow's Triad: 1. Endothelial damage, 2. Stasis/turbulence, 3. Hypercoagulability.",
@@ -607,9 +607,9 @@ var quizBank = {
         "q": "Lines of Zahn observed in thrombi microscopically consist of alternating layers of:",
         "o": [
           "Pale platelets/fibrin and dark red blood cells",
-          "Neutrophils and necrotic debris",
-          "Calcium salts and collagen fibers",
-          "Amyloid fibrils and proteoglycans"
+          "Degenerate neutrophils and liquefactive debris",
+          "Precipitated calcium salts and mature collagen",
+          "Insoluble amyloid fibrils and mucopolysaccharide"
         ],
         "a": 0,
         "e": "Lines of Zahn represent flowing blood laminations of pale platelet-fibrin layers and red cell layers.",
@@ -621,9 +621,9 @@ var quizBank = {
         "q": "An arterial thrombus typically differs from a venous thrombus in that an arterial thrombus is:",
         "o": [
           "Pale, dry, friable, and forms in high-flow turbulence",
-          "Red, gelatinous, soft, and forms in low-flow stasis",
-          "Always detached and floating free in the lumen",
-          "Lacking fibrin meshwork entirely"
+          "Dark red, gelatinous, soft, and forms in areas of stasis",
+          "Composed purely of unorganized erythrocytes without fibrin",
+          "Free-floating and unattached to the vascular intimal wall"
         ],
         "a": 0,
         "e": "Arterial thrombi are platelet-rich (white/pale thrombi) created by endothelial injury and rapid turbulent flow.",
@@ -635,9 +635,9 @@ var quizBank = {
         "q": "The most frequent site of verminous thrombosis in horses causing spasmodic colic is:",
         "o": [
           "Cranial mesenteric artery (due to Strongylus vulgaris larvae)",
-          "Pulmonary artery",
-          "Renal artery",
-          "Portal vein"
+          "External iliac arteries (due to migrating Parascaris equorum)",
+          "Main pulmonary trunk (due to adult Dictyocaulus arnfieldi)",
+          "Hepatic portal vein (due to larval Strongylus edentatus cysts)"
         ],
         "a": 0,
         "e": "Strongylus vulgaris L4 larvae migrate under cranial mesenteric arterial intima, inducing arteritis and thrombosis.",
@@ -649,9 +649,9 @@ var quizBank = {
         "q": "An embolus is defined as:",
         "o": [
           "A detached intravascular solid, liquid, or gaseous mass carried by blood to a distant site",
-          "A stationary clot attached to the endothelial wall",
-          "A localized area of ischemic necrosis",
-          "Extravasation of erythrocytes into interstitial spaces"
+          "An organized stationary blood clot remaining adherent to the injured vascular endothelial wall",
+          "A localized circumscribed zone of ischemic coagulative necrosis resulting from vascular occlusion",
+          "Extravasation and interstitial pooling of erythrocytes following mechanical microvascular rhexis"
         ],
         "a": 0,
         "e": "An embolus travels downstream in the vascular tree until it lodges in a vessel too small to pass.",
@@ -663,9 +663,9 @@ var quizBank = {
         "q": "Pale (white/anemic) infarcts characteristically occur following arterial occlusion in solid organs with:",
         "o": [
           "End-arterial circulation and compact parenchyma (e.g., kidney, spleen, heart)",
-          "Dual blood supply (e.g., lung, liver)",
-          "Extensive anastomotic collaterals (e.g., small intestine)",
-          "Loose spongy connective tissue"
+          "Dual blood supply and loose connective tissue scaffolding (e.g., lungs, liver)",
+          "Rich collateral anastomotic vascular arcades (e.g., jejunum and mesenteric ileum)",
+          "Low-pressure venous drainage systems lacking muscular walls (e.g., cavernous sinuses)"
         ],
         "a": 0,
         "e": "In dense solid organs with single end-arterial supply, blood cannot enter the ischemic area, leaving a wedge-shaped pale infarct.",
@@ -677,9 +677,9 @@ var quizBank = {
         "q": "Red (haemorrhagic) infarcts are typically seen in organs with:",
         "o": [
           "Dual blood supply or extensive anastomoses (e.g., lung, intestine)",
-          "Dense solid parenchyma like renal cortex",
-          "Only a single functional end-artery",
-          "Strictly avascular cartilage"
+          "Single functional end-arteries and dense solid parenchyma (e.g., kidney)",
+          "Strictly avascular cartilaginous matrix lacking precapillary sphincters",
+          "Complete absence of collateral anastomotic arcades (e.g., myocardium)"
         ],
         "a": 0,
         "e": "Lungs (pulmonary + bronchial arteries) and intestines allow blood to seep into the necrotic zone, rendering it dark red.",
@@ -705,9 +705,9 @@ var quizBank = {
         "q": "Haemorrhage by rhexis means extravasation of blood resulting from:",
         "o": [
           "Mechanical tear, rupture, or transection of the vascular wall",
-          "Diapedesis of red cells through intact widened endothelial junctions",
-          "Depletion of plasma clotting factors alone",
-          "Congenital absence of platelets"
+          "Passive migration of erythrocytes through widened endothelial gaps",
+          "Primary consumptive depletion of circulating plasma clotting factors",
+          "Congenital failure of platelet aggregation and thrombus formation"
         ],
         "a": 0,
         "e": "Per rhexin = physical tear/rupture of vessel wall; Per diapedesin = passage of RBCs through intact microvessels.",
@@ -719,9 +719,9 @@ var quizBank = {
         "q": "The accumulation of non-inflammatory serous fluid in the peritoneal cavity is termed:",
         "o": [
           "Ascites (hydroperitoneum)",
-          "Hydrothorax",
-          "Hydropericardium",
-          "Anasarca"
+          "Hydrothorax (pleural fluid)",
+          "Hydropericardium (cardiac)",
+          "Anasarca (systemic edema)"
         ],
         "a": 0,
         "e": "Ascites is fluid accumulation within the peritoneal sac.",
@@ -747,9 +747,9 @@ var quizBank = {
         "q": "Disseminated Intravascular Coagulation (DIC) is characterized pathophysiologically by:",
         "o": [
           "Widespread microthrombosis followed by consumptive coagulopathy and secondary haemorrhage",
-          "Primary failure of cardiac contraction",
-          "Massive localized arterial thrombosis without coagulopathy",
-          "Isolated deficiency of Factor VIII"
+          "Primary mechanical failure of ventricular contraction leading to terminal circulatory collapse",
+          "Isolated massive large-artery thrombosis with reactive intimal hyperplasia and no consumption",
+          "Congenital deficiency of coagulation Factor VIII resulting in defective secondary fibrin stabilization"
         ],
         "a": 0,
         "e": "Systemic activation of clotting exhausts platelets and fibrinogen, paradoxically resulting in severe bleeding.",
@@ -761,9 +761,9 @@ var quizBank = {
         "q": "In the kidney, renal cortical infarcts typically assume which gross geometrical shape?",
         "o": [
           "Wedge-shaped with the apex towards the medulla and base at the capsule",
-          "Circular with a depressed center",
-          "Linear branching cords",
-          "Concentric target-like rings"
+          "Circular to oval with an umbilicated center and sharp hyperaemic border",
+          "Linear branching cords following the longitudinal arc of medullary rays",
+          "Concentric target-like rings encircling the entire corticomedullary zone"
         ],
         "a": 0,
         "e": "Occlusion of an interlobular or arcuate artery produces a wedge-shaped territory corresponding to the fan of its branching.",
@@ -775,9 +775,9 @@ var quizBank = {
         "q": "The five classical cardinal signs of acute inflammation were originally formulated by Celsus, with the fifth added by:",
         "o": [
           "Rudolf Virchow (Functio laesa)",
-          "Galen",
-          "John Hunter",
-          "Julius Cohnheim"
+          "Claudius Galen (Pulsus frequens)",
+          "John Hunter (Vascular dilatation)",
+          "Julius Cohnheim (Leukodiapedesis)"
         ],
         "a": 0,
         "e": "Celsus described Rubor, Calor, Tumor, Dolor; Rudolf Virchow added Functio laesa (loss of function).",
@@ -789,9 +789,9 @@ var quizBank = {
         "q": "The first transient vascular response following acute microvascular injury is:",
         "o": [
           "Transient arteriolar vasoconstriction (lasting seconds)",
-          "Immediate persistent vasodilatation",
-          "Endothelial retraction and stasis",
-          "Emigration of lymphocytes"
+          "Immediate persistent postcapillary venular vasodilatation",
+          "Endothelial retraction leading to prolonged blood stasis",
+          "Active transmural emigration of circulating neutrophils"
         ],
         "a": 0,
         "e": "Neurogenic reflex induces brief arteriolar vasoconstriction for a few seconds before robust vasodilatation begins.",
@@ -831,9 +831,9 @@ var quizBank = {
         "q": "The rolling phase of leukocyte adhesion to endothelial walls is mediated by which adhesion molecules?",
         "o": [
           "Selectins (E-, P-, and L-selectin)",
-          "Integrins (LFA-1, Mac-1)",
-          "Immunoglobulin superfamily (ICAM-1, VCAM-1)",
-          "Cadherins"
+          "Integrins (LFA-1 and Mac-1 complex)",
+          "Immunoglobulins (ICAM-1 and VCAM-1)",
+          "Cadherins (E-cadherin and N-cadherin)"
         ],
         "a": 0,
         "e": "Selectins mediate low-affinity rolling; integrins and ICAM-1 mediate firm, high-affinity arrest.",
@@ -873,9 +873,9 @@ var quizBank = {
         "q": "Pus in a suppurative or purulent inflammatory exudate is primarily composed of:",
         "o": [
           "Dead and dying neutrophils, liquefactive necrotic tissue, and protein-rich fluid",
-          "Pure fibrin strands and erythrocytes",
-          "Eosinophils and Charcot-Leyden crystals",
-          "Caseous cheese-like lipid debris"
+          "Dense networks of polymerized fibrin strands, trapped viable erythrocytes, and fluid",
+          "Abundant degranulating eosinophils, Charcot-Leyden crystals, and clear serous lymph",
+          "Acellular amorphous lipid-rich caseous debris interspersed with calcium phosphate"
         ],
         "a": 0,
         "e": "Suppuration is liquefactive necrosis generated by neutrophil lysosomal enzymes (proteases and elastases).",
@@ -901,9 +901,9 @@ var quizBank = {
         "q": "Fibrinous inflammation is typically encountered on which anatomical surfaces in cattle with shipping fever (Pasteurellosis)?",
         "o": [
           "Serous membranes (pleura, pericardium, peritoneum)",
-          "Cutaneous epidermis",
-          "Skeletal muscle stroma",
-          "Cerebral grey matter"
+          "Stratified squamous epithelium of the dry epidermis",
+          "Deep skeletal muscle stroma of the hindquarters",
+          "Grey and white matter parenchyma of the cerebrum"
         ],
         "a": 0,
         "e": "Severe endothelial injury lets large fibrinogen molecules escape and polymerize into a yellow-grey fibrin mesh over serosal surfaces.",
@@ -915,9 +915,9 @@ var quizBank = {
         "q": "Pseudomembranous (diphtheritic) inflammation is characterized by:",
         "o": [
           "Formation of a false membrane of necrotic epithelium and fibrin that leaves an ulcer when peeled off",
-          "Accumulation of clear watery serous fluid inside mucosal blisters",
-          "Complete restoration of normal architecture without necrosis",
-          "Diffusely spreading phlegmonous infiltration"
+          "Accumulation of clear watery serous transudate beneath intact mucosa forming unruptured intraepithelial vesicles",
+          "Complete structural restoration of mucosal lining via rapid basal cell mitosis without tissue sloughing or scars",
+          "Diffusely spreading suppurative exudation dissecting rapidly along fascial planes without localized ulceration"
         ],
         "a": 0,
         "e": "Diphtheritic membranes (e.g. swine swine dysentery, necrotic enteritis) are firmly adherent; stripping tears the submucosa.",
@@ -929,9 +929,9 @@ var quizBank = {
         "q": "Which cell is the diagnostic hallmark of chronic granulomatous inflammation?",
         "o": [
           "Epithelioid macrophage and multinucleated giant cell",
-          "Eosinophil",
-          "Neutrophil",
-          "Mast cell"
+          "Eosinophil laden with toxic major basic protein crystals",
+          "Neutrophil exhibiting segmented hypercondensed chromatin",
+          "Mast cell containing metachromatic heparin granules"
         ],
         "a": 0,
         "e": "Granulomas consist of modified macrophages (epithelioid cells) surrounded by lymphocytes and fibroblasts.",
@@ -943,9 +943,9 @@ var quizBank = {
         "q": "Langhans giant cells, characteristic of tuberculosis, are identified by nuclei arranged in:",
         "o": [
           "A horseshoe or circular perimeter at the cell periphery",
-          "A central haphazard clump",
-          "A straight central row like a caterpillar",
-          "Scattered paired owl-eye patterns"
+          "A haphazard central cluster scattered through cytoplasm",
+          "A concentric central ring encircled by a foamy lipid rim",
+          "Hyperchromatic bizarre clumps clustered at one cell pole"
         ],
         "a": 0,
         "e": "Langhans cells have peripheral, horseshoe-arranged nuclei, whereas foreign body giant cells have haphazard central nuclei.",
@@ -957,9 +957,9 @@ var quizBank = {
         "q": "Granulation tissue, the essential morphological hallmark of tissue repair, consists histologically of:",
         "o": [
           "Proliferating capillary buds (angiogenesis), plump fibroblasts, and loose extracellular matrix",
-          "Dense avascular fibrous scar with acellular collagen",
-          "Liquefactive necrotic debris mixed with degenerate neutrophils",
-          "Mononuclear inflammatory cells without any blood vessels"
+          "Central caseous necrosis bordered by palisading epithelioid cells and multinucleated giant cells",
+          "Densely packed parallel bundles of hyalinized collagen fibers with acellular contracted fibrocytes",
+          "Confluent microabscesses filled with degenerate neutrophils, bacterial colonies, and necrotic pus"
         ],
         "a": 0,
         "e": "Granulation tissue is pink, soft, granular tissue made of new proliferating delicate capillaries and fibroblasts.",
@@ -971,9 +971,9 @@ var quizBank = {
         "q": "Healing by first intention (primary union) occurs typically in wounds that are:",
         "o": [
           "Clean, uninfected, surgically incised, with closely opposed margins",
-          "Large, open, infected, with extensive tissue loss",
-          "Contaminated by foreign bodies and left unsutured",
-          "Deep puncture wounds with extensive fat necrosis"
+          "Heavily contaminated, gaping, with extensive loss of parenchymal tissue",
+          "Chronic, non-healing ulcers requiring prolonged wound bed contraction",
+          "Complicated by persistent foreign bodies and exuberant proud flesh growth"
         ],
         "a": 0,
         "e": "First intention occurs when clean wound edges are directly apposed with minimal granulation and minimal scar.",
@@ -985,9 +985,9 @@ var quizBank = {
         "q": "Excessive formation of exuberant granulation tissue extending above the skin surface in horses is colloquially called:",
         "o": [
           "Proud flesh",
-          "Keloid",
-          "Hamartoma",
-          "Choristoma"
+          "Keloid scar",
+          "Sarcoid mass",
+          "Botryomycoma"
         ],
         "a": 0,
         "e": "Proud flesh is exuberant granulation tissue on distal equine limbs that prevents re-epithelialization.",
@@ -999,9 +999,9 @@ var quizBank = {
         "q": "Which cytokine is recognized as the master profibrogenic growth factor driving collagen synthesis by fibroblasts?",
         "o": [
           "Transforming Growth Factor-beta (TGF-beta)",
-          "Interleukin-1",
-          "Tumour Necrosis Factor-alpha",
-          "Histamine"
+          "Vascular Endothelial Growth Factor (VEGF-A)",
+          "Fibroblast Growth Factor basic (bFGF/FGF-2)",
+          "Platelet-Derived Growth Factor (PDGF-BB)"
         ],
         "a": 0,
         "e": "TGF-beta stimulates fibroblast migration, proliferation, and heavy collagen synthesis while inhibiting collagen degradation.",
@@ -1013,9 +1013,9 @@ var quizBank = {
         "q": "Eosinophilic inflammation is most commonly provoked by:",
         "o": [
           "Parasitic infections (helminths) and allergic/IgE-mediated hypersensitivity reactions",
-          "Acute pyogenic bacterial infections",
-          "Viral inclusions",
-          "Ischemic infarction"
+          "Pyogenic bacterial infections causing localized liquefactive suppuration and microabscesses",
+          "Viral pathogens producing extensive intracellular inclusion bodies and lymphoid exhaustion",
+          "Atypical systemic mycobacterioses inciting granulomatous palisades with Langhans giant cells"
         ],
         "a": 0,
         "e": "IL-5 and eotaxin mobilize eosinophils to target helminth parasites and allergic reactions.",
@@ -1027,9 +1027,9 @@ var quizBank = {
         "q": "Which endogenous, wear-and-tear pigment accumulates in non-dividing aging cells as a result of lipid peroxidation?",
         "o": [
           "Lipofuscin (brown atrophy pigment)",
-          "Hemosiderin",
-          "Melanin",
-          "Bilirubin"
+          "Hemosiderin (Prussian blue iron)",
+          "Melanin (tyrosinase brown pigment)",
+          "Hematoidin (iron-free bile clump)"
         ],
         "a": 0,
         "e": "Lipofuscin is an insoluble, golden-brown intracellular pigment composed of oxidized lipids and proteins.",
@@ -1055,9 +1055,9 @@ var quizBank = {
         "q": "Anthracosis is an exogenous pigmentation caused by the inhalation and alveolar macrophage storage of:",
         "o": [
           "Carbon / coal particles",
-          "Silica dust",
-          "Asbestos fibers",
-          "Iron oxide dust"
+          "Crystalline silica dust",
+          "Asbestos silicate fiber",
+          "Iron oxide ferric dusts"
         ],
         "a": 0,
         "e": "Carbon particles are inert black pigments phagocytosed by alveolar macrophages and drained to bronchial lymph nodes.",
@@ -1069,9 +1069,9 @@ var quizBank = {
         "q": "Secondary (hepatogenous) photosensitization in ruminants is caused by the accumulation of which photodynamic phylloerythrin derivative?",
         "o": [
           "Phylloerythrin derived from chlorophyll digestion",
-          "Hypericin",
-          "Fagopyrin",
-          "Protoporphyrin IX"
+          "Hypericin absorbed directly from ingested weeds",
+          "Uroporphyrin I synthesized due to enzyme defect",
+          "Fagopyrin extracted from buckwheat flowering tops"
         ],
         "a": 0,
         "e": "Liver damage impairs excretion of phylloerythrin into bile, causing it to enter the skin and activate upon UV exposure.",
@@ -1083,9 +1083,9 @@ var quizBank = {
         "q": "Hypertrophy is strictly defined as an increase in the size of an organ or tissue resulting from an increase in the:",
         "o": [
           "Size of its individual parenchymal cells",
-          "Number of its parenchymal cells",
-          "Amount of extracellular matrix alone",
-          "Water content of the cytoplasm"
+          "Total number of viable parenchymal cells",
+          "Volume of interstitial fibrotic collagen",
+          "Storage volume of interstitial lipid pools"
         ],
         "a": 0,
         "e": "Hypertrophy is increased cell volume (common in non-dividing tissues like cardiac muscle); hyperplasia is increased cell number.",
@@ -1097,9 +1097,9 @@ var quizBank = {
         "q": "The reversible transformation of one adult differentiated cell type into another adult cell type is termed:",
         "o": [
           "Metaplasia",
-          "Dysplasia",
-          "Anaplasia",
-          "Aplasia"
+          "Hyperplasia",
+          "Hypoplasia",
+          "Neoplasia"
         ],
         "a": 0,
         "e": "Metaplasia is a phenotypic change (e.g. ciliated columnar respiratory epithelium turning into stratified squamous epithelium under smoke irritation).",
@@ -1125,9 +1125,9 @@ var quizBank = {
         "q": "Hypoplasia is defined as:",
         "o": [
           "Failure of an organ or tissue to develop to its full normal adult size",
-          "Shrinkage of a previously fully developed normal organ",
-          "Enlargement of an organ due to functional demand",
-          "Disordered, atypical cellular proliferation"
+          "Complete absence of an organ along with its rudiment during embryogenesis",
+          "Reduction in the size of a fully formed mature organ due to cell loss",
+          "Abnormal organization and loss of orderly architectural layering of cells"
         ],
         "a": 0,
         "e": "Hypoplasia is incomplete development (e.g. cerebellar hypoplasia in feline panleukopenia virus infection).",
@@ -1139,9 +1139,9 @@ var quizBank = {
         "q": "Cerebellar hypoplasia in kittens is classical for intrauterine infection by:",
         "o": [
           "Feline Panleukopenia Virus (Parvovirus)",
-          "Feline Coronavirus",
-          "Feline Herpesvirus-1",
-          "Feline Calicivirus"
+          "Feline Infectious Peritonitis (Coronavirus)",
+          "Feline Leukemia Virus (Oncogenic retrovirus)",
+          "Feline Viral Rhinotracheitis (Herpesvirus)"
         ],
         "a": 0,
         "e": "Feline panleukopenia virus destroys rapidly dividing external germinal layer neurons of the fetal cerebellum.",
@@ -1153,9 +1153,9 @@ var quizBank = {
         "q": "Dysplasia in cellular pathology refers to:",
         "o": [
           "Disordered cellular growth and maturation with loss of architectural orientation and nuclear atypia",
-          "A normal physiological expansion of cell number",
-          "Programmed cell death by caspase activation",
-          "Replacement of one normal tissue by another normal tissue"
+          "Adaptive substitution of one adult differentiated cell lineage by another resilient adult cell type",
+          "Controlled physiological expansion of mature cell numbers in response to persistent endocrine stimuli",
+          "Total dedifferentiation with absolute loss of structural specialization and bizarre multipolar mitoses"
         ],
         "a": 0,
         "e": "Dysplasia is premalignant atypia characterized by pleomorphism, hyperchromasia, and loss of polarity.",
@@ -1181,9 +1181,9 @@ var quizBank = {
         "q": "Which of the following is a classic example of Type II (Antibody-mediated cytotoxic) Hypersensitivity in animals?",
         "o": [
           "Neonatal Isoerythrolysis in foals",
-          "Serum sickness",
-          "Tuberculin skin test",
-          "Anaphylaxis to penicillin"
+          "Systemic anaphylactic shock in dogs",
+          "Immune-complex glomerulonephritis",
+          "Tuberculin skin reaction in cattle"
         ],
         "a": 0,
         "e": "Neonatal isoerythrolysis involves maternal alloantibodies binding to foal RBC surface antigens causing complement lysis.",
@@ -1195,9 +1195,9 @@ var quizBank = {
         "q": "Type III Hypersensitivity is pathologically mediated by the deposition of:",
         "o": [
           "Circulating antigen-antibody immune complexes in vascular walls",
-          "IgE on tissue mast cells",
-          "CD8+ cytotoxic T lymphocytes killing infected cells",
-          "Secretory IgA dimers on mucosal surfaces"
+          "Specific IgE antibodies bound to high-affinity mast cell receptors",
+          "Cytotoxic CD8+ T-lymphocytes releasing perforins and granzyme toxins",
+          "Opsonizing autoantibodies directed against cell surface receptors"
         ],
         "a": 0,
         "e": "Immune complexes deposit in microvasculature (e.g., glomerulonephritis, Arthus reaction), fixing complement and recruiting neutrophils.",
@@ -1209,9 +1209,9 @@ var quizBank = {
         "q": "The delayed-type hypersensitivity reaction (Type IV) utilized in the single intradermal tuberculin test is mediated by:",
         "o": [
           "Sensitized CD4+ Th1 lymphocytes and activated macrophages",
-          "Circulating IgG antibodies",
-          "Mast cell degranulation via IgE",
-          "Membrane attack complex (C5b-9)"
+          "Preformed IgE molecules coating mucosal tissue mast cells",
+          "Circulating IgG-complement aggregates lodged in capillaries",
+          "Polymerized IgM cold agglutinins fixing red blood cells"
         ],
         "a": 0,
         "e": "Type IV is cell-mediated; Th1 memory cells release IFN-gamma recruiting and activating macrophages over 48-72 hours.",
@@ -1223,9 +1223,9 @@ var quizBank = {
         "q": "Combined Immunodeficiency (CID) in Arabian foals is genetically caused by a defect in:",
         "o": [
           "DNA-dependent protein kinase (DNA-PKcs) affecting V(D)J recombination",
-          "Bruton tyrosine kinase",
-          "Complement component C3",
-          "Integrin beta-2 subunit (LAD)"
+          "Integrin beta-2 subunit (CD18) leading to leukocyte adhesion deficiency",
+          "Bruton tyrosine kinase (BTK) arresting pre-B cell development in marrow",
+          "Common gamma chain (gamma-c) of the interleukin-2 cytokine receptor gene"
         ],
         "a": 0,
         "e": "Equine CID foals cannot produce functional T or B cells due to a mutation in DNA-PK catalytic subunit.",
@@ -1251,9 +1251,9 @@ var quizBank = {
         "q": "Primary photosensitization in animals occurs following ingestion of plants containing pre-formed photodynamic agents, such as:",
         "o": [
           "Hypericum perforatum (St. John's wort)",
-          "Lantana camara",
-          "Senecio jacobaea",
-          "Microcystis aeruginosa"
+          "Lantana camara (causing icterogenins)",
+          "Senecio jacobaea (pyrrolizidines toxic)",
+          "Tribulus terrestris (geeldikkop agent)"
         ],
         "a": 0,
         "e": "Hypericin from Hypericum is absorbed intact into blood and sensitizes unpigmented skin without liver injury.",
@@ -1265,9 +1265,9 @@ var quizBank = {
         "q": "Congenital porphyria (pink tooth) in cattle is an inborn error of metabolism leading to accumulation of:",
         "o": [
           "Uroporphyrin I and coproporphyrin I in bones and dentin",
-          "Hemosiderin in splenic macrophages",
-          "Bilirubin in elastic fibers of the aorta",
-          "Lipofuscin in myocardium"
+          "Phylloerythrin crystals deposited in superficial dermis",
+          "Ferric hemosiderin aggregates inside Kupffer cell vacuole",
+          "Insoluble lipofuscin granules within cardiac myocyte cores"
         ],
         "a": 0,
         "e": "Enzyme deficiency in heme synthesis causes porphyrins to deposit in bones and teeth, fluorescing bright red under UV light.",
@@ -1307,9 +1307,9 @@ var quizBank = {
         "q": "Excessive glycogen accumulation in the renal proximal tubular epithelial cells of diabetic animals is historically known as the:",
         "o": [
           "Armanni-Ebstein lesion",
-          "Councilman body",
-          "Russell body",
-          "Mallory-Denk body"
+          "Kimmelstiel-Wilson nodule",
+          "Aschoff giant cell nodule",
+          "Councilman eosinophil body"
         ],
         "a": 0,
         "e": "Severe glycosuria in uncontrolled diabetes mellitus leads to excessive proximal tubular reabsorption of glucose and glycogen deposition, known as Armanni-Ebstein nephropathy.",
@@ -1335,9 +1335,9 @@ var quizBank = {
         "q": "Caseous necrosis with a cheesy, friable, yellowish-white gross appearance is the hallmark pathognomonic lesion of which granulomatous disease?",
         "o": [
           "Tuberculosis (Mycobacterium bovis)",
-          "Blackleg (Clostridium chauvoei)",
-          "Anthrax (Bacillus anthracis)",
-          "Tetanus (Clostridium tetani)"
+          "Actinomycosis (Actinomyces bovis)",
+          "Johne's disease (M. paratuberculosis)",
+          "Glanders (Burkholderia mallei node)"
         ],
         "a": 0,
         "e": "Mycobacterial cell wall mycolic acids and cord factors resist enzymatic dissolution, producing a persistent amorphous, granular debris termed caseous necrosis.",
@@ -1349,9 +1349,9 @@ var quizBank = {
         "q": "Dry gangrene (mummification of extremities) in cattle grazing tall fescue grass is etiologically caused by endophyte alkaloids producing:",
         "o": [
           "Persistent peripheral vasoconstriction and ischemic necrosis",
-          "Direct cytolytic destruction of epidermal cells",
-          "Immune-mediated vasculitis",
-          "Severe thrombocytopenic bleeding"
+          "Massive saprophytic clostridial invasion and gas production",
+          "Extensive liquefactive suppuration within distal joint spaces",
+          "Severe neurotoxic demyelination of sensory and motor nerves"
         ],
         "a": 0,
         "e": "Ergot-like alkaloids produced by Epichloë coenophiala cause sustained arterial vasoconstriction, obliterating digital blood supply and producing ischemic dry gangrene (fescue foot).",
@@ -1363,9 +1363,9 @@ var quizBank = {
         "q": "Metastatic calcification occurs in normal, undamaged tissues primarily as a consequence of:",
         "o": [
           "Persistent systemic hypercalcemia and/or hyperphosphatemia",
-          "Local tissue necrosis with release of alkaline phosphatase",
-          "Hypocalcemia induced by alkalosis",
-          "Systemic iron overload"
+          "Localized enzymatic fat saponification following pancreatitis",
+          "Ischemic coagulation of parenchyma with normal serum minerals",
+          "Accumulation of calcium salts within dead caseous granulomas"
         ],
         "a": 0,
         "e": "Metastatic calcification reflects mineral precipitation in normal tissues (especially gastric mucosa, lungs, and kidneys) secondary to elevated serum calcium-phosphate product.",
@@ -1377,9 +1377,9 @@ var quizBank = {
         "q": "Which specific family of cysteine-dependent aspartate-directed proteases acts as the essential molecular executioners of apoptotic cell death?",
         "o": [
           "Caspases (e.g. Caspase-3, Caspase-7)",
-          "Matrix metalloproteinases (MMPs)",
-          "Calpains",
-          "Lysosomal cathepsins"
+          "Calpains (calcium-activated proteases)",
+          "Matrix metalloproteinases (e.g. MMP-9)",
+          "Lysosomal cathepsins (e.g. Cathepsin B)"
         ],
         "a": 0,
         "e": "Caspases (initiators like caspase-8/9 and executioners like caspase-3/6/7) cleave vital structural and repair proteins to orchestrate apoptosis without releasing inflammatory contents.",
@@ -1391,9 +1391,9 @@ var quizBank = {
         "q": "Anasarca is clinically and pathologically defined as:",
         "o": [
           "Generalized, severe subcutaneous edema throughout the body",
-          "Fluid accumulation restricted to the peritoneal cavity",
-          "Edema localized to the scrotum and prepuce",
-          "Inflammatory exudation within synovial joints"
+          "Fluid accumulation restricted strictly to peritoneal cavity",
+          "Edema localized specifically to the dependent lower limbs",
+          "Inflammatory fibrinous exudation filling synovial joints"
         ],
         "a": 0,
         "e": "Anasarca denotes profound, generalized subcutaneous edema often accompanied by cavitary effusions (hydrothorax, hydroperitoneum).",
@@ -1447,9 +1447,9 @@ var quizBank = {
         "q": "Which of the following was added by Rudolf Virchow as the fifth cardinal sign of acute inflammation to Celsus' original four signs?",
         "o": [
           "Functio laesa (Loss of function)",
-          "Calor (Heat)",
-          "Rubor (Redness)",
-          "Tumor (Swelling)"
+          "Calor (Local generation of heat)",
+          "Rubor (Active vascular erythema)",
+          "Tumor (Inflammatory extravasate)"
         ],
         "a": 0,
         "e": "Virchow added 'functio laesa' (disturbed or lost function) to Celsus' classic quartet of rubor, calor, tumor, and dolor.",
@@ -1461,9 +1461,9 @@ var quizBank = {
         "q": "Epithelioid cells and multinucleated Langhans giant cells characteristic of chronic granulomatous inflammation are modified transformed:",
         "o": [
           "Macrophages (histiocytes)",
-          "Eosinophils",
-          "Mast cells",
-          "Fibroblasts"
+          "Eosinophils (granulocytes)",
+          "Fibroblasts (fibrocytes)",
+          "Mast cells (mastocytes)"
         ],
         "a": 0,
         "e": "Under the influence of interferon-gamma (IFN-γ) from Th1 lymphocytes, activated macrophages transform into secretory epithelioid cells and fuse to form Langhans-type multinucleated giant cells.",
@@ -1489,9 +1489,9 @@ var quizBank = {
         "q": "Newly formed, highly vascularized healing tissue consisting of proliferating angioblasts, budding capillaries, active fibroblasts, and loose extracellular matrix is termed:",
         "o": [
           "Granulation tissue",
-          "Granuloma",
-          "Keloid",
-          "Hamartoma"
+          "Granulomatous node",
+          "Keloidal scar mass",
+          "Fibrovascular polyp"
         ],
         "a": 0,
         "e": "Granulation tissue is the hallmark of fibroplasia and angiogenesis during tissue repair, providing a supportive scaffold for re-epithelialization.",
@@ -1503,9 +1503,9 @@ var quizBank = {
         "q": "Which golden-brown endogenous pigment accumulates in tissues as a result of hemoglobin iron breakdown following extensive hemolysis or chronic passive congestion?",
         "o": [
           "Hemosiderin",
+          "Hematoidin",
           "Lipofuscin",
-          "Melanin",
-          "Hematoidin"
+          "Bilihematin"
         ],
         "a": 0,
         "e": "Hemosiderin is an iron-storage glycoprotein pigment formed when excessive iron aggregates in macrophages; it stains bright Prussian blue with Perls' reaction.",
@@ -1517,9 +1517,9 @@ var quizBank = {
         "q": "Type I (primary) photosensitization in herbivores is caused by the ingestion of preformed exogenous photodynamic agents found in plants such as:",
         "o": [
           "Hypericum perforatum (St. John's wort)",
-          "Lantana camara",
-          "Senecio jacobaea",
-          "Crotalaria spectabilis"
+          "Lantana camara (causing icterogenin)",
+          "Senecio jacobaea (pyrrolizidine base)",
+          "Tribulus terrestris (geeldikkop plant)"
         ],
         "a": 0,
         "e": "Hypericum perforatum contains the preformed naphthodianthrone pigment hypericin, which reaches dermal capillaries directly without requiring prior hepatic damage.",
@@ -1573,9 +1573,9 @@ var quizBank = {
         "q": "Ischaemia injures tissue faster and more severely than pure hypoxia because ischaemia:",
         "o": [
           "Also stops delivery of nutrients and removal of toxic metabolites",
-          "Increases oxygen delivery to the tissue",
-          "Affects only the nucleus",
-          "Stimulates anaerobic glycolysis indefinitely"
+          "Selectively halts aerobic respiration while accelerating glucose entry",
+          "Causes isolated nuclear chromatin degradation without plasma injury",
+          "Sustains anaerobic glycolysis indefinitely through glycogen stores"
         ],
         "a": 0,
         "e": "Ischaemia is loss of blood supply: oxygen AND glucose supply fail, and lactate and other metabolites accumulate. In pure hypoxia, glycolysis can continue.",
@@ -1587,9 +1587,9 @@ var quizBank = {
         "q": "Carbon tetrachloride (CCl4) produces centrilobular hepatic necrosis because it is:",
         "o": [
           "Converted by cytochrome P-450 into the highly reactive CCl3• free radical",
-          "A direct inhibitor of cytochrome oxidase",
-          "An antigen that triggers Type I hypersensitivity",
-          "A chelator of hepatic copper"
+          "Directly converted into cyanide gas that uncouples oxidative phosphorylation",
+          "Excreted unchanged by biliary canaliculi causing immediate mucosal lysis",
+          "A potent hapten that triggers immediate Type I hypersensitivity in liver"
         ],
         "a": 0,
         "e": "CCl4 is activated in the smooth ER (P-450 is concentrated in centrilobular hepatocytes) to CCl3•, which causes lipid peroxidation of membranes.",
@@ -1601,9 +1601,9 @@ var quizBank = {
         "q": "Which selenium-dependent enzyme protects cell membranes against free radical (peroxide) injury?",
         "o": [
           "Glutathione peroxidase",
-          "Lactate dehydrogenase",
-          "Alkaline phosphatase",
-          "Acetylcholinesterase"
+          "Superoxide dismutase-1",
+          "Hepatic catalase enzyme",
+          "Lactate dehydrogenase"
         ],
         "a": 0,
         "e": "Glutathione peroxidase contains selenium and destroys H2O2 and lipid peroxides. Selenium/vitamin E deficiency therefore causes white muscle disease (Zenker's degeneration).",
@@ -1643,9 +1643,9 @@ var quizBank = {
         "q": "Acute phase proteins released during systemic inflammation are synthesized mainly by:",
         "o": [
           "Hepatocytes under the influence of IL-6",
-          "Mast cells under the influence of IgE",
-          "Plasma cells in lymph nodes",
-          "Renal tubular epithelium"
+          "Tissue mast cells stimulated by IgE-Fc",
+          "Plasma cells under stimulation by IL-4",
+          "Monocytes stimulated by interferon-gamma"
         ],
         "a": 0,
         "e": "IL-6 (with IL-1 and TNF) drives hepatocytes to produce acute phase proteins such as fibrinogen, haptoglobin, serum amyloid A and C-reactive protein.",
@@ -1671,9 +1671,9 @@ var quizBank = {
         "q": "The major acute phase protein used to monitor inflammation in dogs is:",
         "o": [
           "C-reactive protein",
-          "Haptoglobin",
-          "Albumin",
-          "Ceruloplasmin"
+          "Serum amyloid A-1",
+          "Alpha-1-antitrypsin",
+          "Haptoglobin complex"
         ],
         "a": 0,
         "e": "C-reactive protein rises rapidly (up to 100-fold) in canine inflammation. Albumin is a negative acute phase protein and falls.",
@@ -1685,9 +1685,9 @@ var quizBank = {
         "q": "A 'left shift' in the leukogram of an animal with acute bacterial inflammation means:",
         "o": [
           "Increased numbers of immature (band) neutrophils in circulation",
-          "A fall in total leukocyte count",
-          "An increase in circulating lymphocytes",
-          "Hypersegmentation of neutrophil nuclei"
+          "Predominance of hypersegmented mature neutrophils in peripheral blood",
+          "Absolute reduction in the total circulating white blood cell count",
+          "Preferential migration of mononuclear phagocytes into lymph nodes"
         ],
         "a": 0,
         "e": "Increased demand makes the bone marrow release immature band neutrophils; a left shift indicates active acute inflammation.",
@@ -1699,9 +1699,9 @@ var quizBank = {
         "q": "A 'degenerative left shift' is recognised when:",
         "o": [
           "Immature neutrophils outnumber mature neutrophils with a normal or low total count",
-          "Mature neutrophils outnumber band cells with high total count",
-          "Lymphocytes exceed neutrophils",
-          "Eosinophils exceed 10% of leukocytes"
+          "Mature segmented neutrophils heavily predominate alongside marked leukocytosis",
+          "Total leukocyte count rises dramatically with only occasional circulating metamyelocytes",
+          "Immature band neutrophils exceed segmented forms accompanied by robust leukocytosis"
         ],
         "a": 0,
         "e": "Tissue demand exceeds marrow supply — a poor prognostic sign, seen in overwhelming infections such as acute coliform mastitis and peritonitis.",
@@ -1713,9 +1713,9 @@ var quizBank = {
         "q": "Raised erythrocyte sedimentation rate (ESR) during inflammation is mainly due to:",
         "o": [
           "Increased plasma fibrinogen promoting rouleaux formation",
-          "Decreased plasma globulin",
-          "Increased red cell count",
-          "Decreased plasma viscosity from hypoproteinaemia"
+          "Marked hypoproteinemia reducing blood colloidal viscosity",
+          "Severe spherocytosis increasing erythrocyte fragility",
+          "Enhanced negative surface charge (zeta potential) of RBCs"
         ],
         "a": 0,
         "e": "Fibrinogen, an acute phase protein, reduces the negative charge between RBCs, so they form rouleaux and sediment faster.",
@@ -1741,9 +1741,9 @@ var quizBank = {
         "q": "A 'stress leukogram' caused by endogenous corticosteroids in cattle and dogs characteristically shows:",
         "o": [
           "Neutrophilia, lymphopenia and eosinopenia",
-          "Neutropenia, lymphocytosis and eosinophilia",
-          "Pancytopenia",
-          "Basophilia and monocytopenia"
+          "Neutropenia, lymphocytosis and monocytosis",
+          "Eosinophilia, basophilia and neutropenia",
+          "Pancytopenia with left shift and anemia"
         ],
         "a": 0,
         "e": "Corticosteroids cause demargination of neutrophils, redistribution/lysis of lymphocytes and sequestration of eosinophils (monocytosis in dogs).",
@@ -1755,9 +1755,9 @@ var quizBank = {
         "q": "Anaemia of chronic inflammation is mainly caused by:",
         "o": [
           "Hepcidin-mediated sequestration of iron in macrophages",
-          "Acute intravascular haemolysis",
-          "Vitamin B12 deficiency",
-          "Excess erythropoietin"
+          "Massive intravascular hemolysis induced by complement",
+          "Acute nutritional deficiency of cobalamin and folate",
+          "Direct antibody-mediated lysis of erythroid precursors"
         ],
         "a": 0,
         "e": "IL-6 induces hepatic hepcidin, which blocks iron release from macrophages — a mild, normocytic, non-regenerative anaemia despite adequate body iron.",
@@ -1769,9 +1769,9 @@ var quizBank = {
         "q": "Peripheral eosinophilia as a systemic effect of inflammation most commonly indicates:",
         "o": [
           "Parasitic infestation or Type I hypersensitivity",
-          "Acute bacterial septicaemia",
-          "Viral infection",
-          "Corticosteroid therapy"
+          "Acute suppurative bacterial infection and sepsis",
+          "Chronic granulomatous mycobacterial infection",
+          "Severe hyperadrenocorticism or steroid therapy"
         ],
         "a": 0,
         "e": "Eosinophils respond to IL-5 in helminth infections (e.g. fasciolosis, migrating larvae) and allergic reactions.",
@@ -1839,9 +1839,9 @@ var quizBank = {
         "q": "Non-steroidal anti-inflammatory drugs (NSAIDs) such as aspirin and meloxicam reduce inflammation by inhibiting:",
         "o": [
           "Cyclooxygenase, decreasing prostaglandin synthesis",
-          "Phospholipase A2",
-          "5-lipoxygenase",
-          "Complement C3 convertase"
+          "Lipoxygenase, blocking leukotriene B4 biosynthesis",
+          "Phospholipase A2, inhibiting arachidonate release",
+          "Histaminase, preventing cellular histamine release"
         ],
         "a": 0,
         "e": "NSAIDs block COX-1/COX-2, reducing prostaglandins and thromboxane — hence reduced pain, fever and oedema.",
@@ -1853,9 +1853,9 @@ var quizBank = {
         "q": "Corticosteroids suppress both prostaglandin and leukotriene production because they inhibit:",
         "o": [
           "Phospholipase A2 (via lipocortin/annexin-1)",
-          "Cyclooxygenase only",
-          "Mast cell degranulation only",
-          "Nitric oxide synthase only"
+          "Cyclooxygenase-2 directly at active site",
+          "5-Lipoxygenase through allosteric inhibition",
+          "Myeloperoxidase within phagocytic lysosomes"
         ],
         "a": 0,
         "e": "Phospholipase A2 releases arachidonic acid from membranes; blocking it shuts down both the COX and lipoxygenase pathways.",
@@ -1867,9 +1867,9 @@ var quizBank = {
         "q": "Leukotrienes C4, D4 and E4 (formerly 'slow-reacting substance of anaphylaxis') mainly cause:",
         "o": [
           "Intense bronchoconstriction and increased vascular permeability",
-          "Neutrophil chemotaxis only",
-          "Platelet aggregation",
-          "Fever"
+          "Marked systemic vasoconstriction and decreased capillary flow",
+          "Direct platelet aggregation and activation of intrinsic cascade",
+          "Selective chemotaxis of eosinophils without vascular changes"
         ],
         "a": 0,
         "e": "The cysteinyl leukotrienes are far more potent than histamine as bronchoconstrictors — important in equine recurrent airway obstruction and allergic asthma.",
@@ -1881,9 +1881,9 @@ var quizBank = {
         "q": "Nitric oxide (NO) acts as an inflammatory mediator by causing:",
         "o": [
           "Vasodilation and killing of microbes by macrophages",
-          "Bronchoconstriction",
-          "Platelet aggregation",
-          "Fibroblast proliferation"
+          "Potent arteriolar constriction and platelet aggregation",
+          "Selective suppression of lysosomal enzyme exocytosis",
+          "Deposition of collagen and maturation of fibrocytes"
         ],
         "a": 0,
         "e": "NO from endothelium relaxes vascular smooth muscle; inducible NO synthase in activated macrophages produces NO as a microbicidal agent.",
@@ -1909,9 +1909,9 @@ var quizBank = {
         "q": "In dry gangrene, the 'line of demarcation' between dead and living tissue is formed by:",
         "o": [
           "A zone of inflammatory reaction and granulation tissue",
-          "Putrefactive bacteria",
-          "Post-mortem autolysis",
-          "Dystrophic calcification"
+          "An acellular fibrous band of calcium salts and amyloid",
+          "A prominent ring of anaerobic gas-producing microcavities",
+          "A demarcating border of normal skeletal muscle and adipose"
         ],
         "a": 0,
         "e": "The living tissue reacts to the dead area with hyperaemia and leukocytes, forming a sharp line along which the gangrenous part eventually separates.",
@@ -1923,9 +1923,9 @@ var quizBank = {
         "q": "The black discolouration of gangrenous tissue is due to:",
         "o": [
           "Iron sulphide formed from haemoglobin by putrefactive bacteria",
-          "Melanin deposition",
-          "Carbon (anthracotic) pigment",
-          "Lipofuscin accumulation"
+          "Oxidized eumelanin synthesized rapidly by hyperactive melanocytes",
+          "Dense lipofuscin wear-and-tear pigment inside ischemic myocytes",
+          "Insoluble acid hematin precipitated by gastric hydrochloric acid"
         ],
         "a": 0,
         "e": "Hydrogen sulphide produced by saprophytic bacteria reacts with iron released from haemoglobin to form black iron sulphide.",
@@ -1951,9 +1951,9 @@ var quizBank = {
         "q": "Type II photosensitization (due to aberrant pigment synthesis) is classically seen in:",
         "o": [
           "Congenital erythropoietic porphyria (pink tooth) of cattle",
-          "Lantana poisoning",
-          "Buckwheat poisoning",
-          "Facial eczema"
+          "Lantana camara toxic hepatogenous jaundice in grazing ewes",
+          "Primary ingestion of Hypericum perforatum in white sheep",
+          "Facial eczema caused by sporidesmin mycotoxicosis in rams"
         ],
         "a": 0,
         "e": "Porphyrins accumulate from a defect in haem synthesis; they are photodynamic, and teeth/bones are stained pink-brown and fluoresce under UV light.",
@@ -1965,9 +1965,9 @@ var quizBank = {
         "q": "Skin lesions of photosensitization in cattle are typically confined to:",
         "o": [
           "Unpigmented, lightly haired, sun-exposed areas",
-          "Black pigmented areas of the back",
-          "The oral mucosa only",
-          "The coronary band only"
+          "Heavily pigmented, dark-skinned dorsal patches",
+          "Ventral abdominal areas protected from sunlight",
+          "Deep flexor folds and unexposed inguinal skin"
         ],
         "a": 0,
         "e": "UV light must reach the photodynamic agent in the skin; melanin and hair coat protect. White patches of Holstein-Friesians show erythema, oedema and necrosis.",
@@ -1979,9 +1979,9 @@ var quizBank = {
         "q": "'Bottle jaw' (submandibular oedema) in sheep with haemonchosis develops because of:",
         "o": [
           "Hypoproteinaemia lowering plasma oncotic pressure",
-          "Increased capillary hydrostatic pressure",
-          "Lymphatic obstruction by worms",
-          "Increased vascular permeability due to histamine"
+          "Right ventricular failure raising venous pressure",
+          "Mechanical obstruction of deep cervical lymphatics",
+          "Endotoxin-induced systemic capillary permeability"
         ],
         "a": 0,
         "e": "Blood-sucking Haemonchus contortus causes loss of plasma protein (albumin); the fall in oncotic pressure lets fluid escape into loose dependent tissues.",
@@ -1993,9 +1993,9 @@ var quizBank = {
         "q": "'Brisket disease' in cattle kept at high altitude produces dependent oedema because of:",
         "o": [
           "Right heart failure from hypoxic pulmonary hypertension",
-          "Hypoproteinaemia due to starvation",
-          "Lymphatic obstruction",
-          "Renal sodium loss"
+          "Severe parasitic hypoalbuminemia reducing oncotic pull",
+          "Direct obstruction of lymphatic vessels by thoracic mass",
+          "Primary toxic glomerulonephritis leading to proteinuria"
         ],
         "a": 0,
         "e": "Hypoxic pulmonary vasoconstriction causes right ventricular hypertrophy and failure; raised venous hydrostatic pressure produces oedema of the brisket.",
@@ -2007,9 +2007,9 @@ var quizBank = {
         "q": "At necropsy, pulmonary oedema is recognised grossly by:",
         "o": [
           "Stable white or blood-tinged froth in the trachea and bronchi, with heavy wet lungs",
-          "Dry, crepitant, pale lungs",
-          "Pleural fibrin tags",
-          "Emphysematous bullae only"
+          "Small, collapsed, dark red, leathery lungs that sink completely in formalin fixative",
+          "Multifocal dry, chalky-white caseous nodules scattered throughout all lung lobes",
+          "Extensive pleural thickening covered by a dry, friable, granular fibrin membrane"
         ],
         "a": 0,
         "e": "Oedema fluid mixes with air to form stable froth; the lungs fail to collapse and fluid oozes from the cut surface.",
@@ -2021,9 +2021,9 @@ var quizBank = {
         "q": "Enlargement of the mammary gland during pregnancy and lactation is an example of:",
         "o": [
           "Physiological (hormonal) hyperplasia",
-          "Pathological hypertrophy",
-          "Metaplasia",
-          "Dysplasia"
+          "Pathological hormonal hyperplasia",
+          "Physiological compensatory hypertrophy",
+          "Reversible squamous duct metaplasia"
         ],
         "a": 0,
         "e": "Oestrogen and progesterone stimulate proliferation of glandular epithelium — a normal, controlled increase in cell number.",
@@ -2049,9 +2049,9 @@ var quizBank = {
         "q": "Haemolytic (pre-hepatic) jaundice in bovine babesiosis is characterised by a rise in:",
         "o": [
           "Unconjugated (indirect) bilirubin",
-          "Conjugated (direct) bilirubin only",
-          "Serum albumin",
-          "Urine urobilinogen absence"
+          "Conjugated (direct) bilirubin pool",
+          "Delta bilirubin protein conjugates",
+          "Biliary alkaline phosphatase level"
         ],
         "a": 0,
         "e": "Massive RBC destruction produces more bilirubin than the liver can conjugate, so unconjugated bilirubin rises (van den Bergh indirect reaction).",
@@ -2063,9 +2063,9 @@ var quizBank = {
         "q": "The Arthus reaction is a localised form of:",
         "o": [
           "Type III (immune complex) hypersensitivity",
-          "Type I hypersensitivity",
-          "Type II hypersensitivity",
-          "Type IV hypersensitivity"
+          "Type I (immediate-type) hypersensitivity",
+          "Type II (antibody cytotoxic) hypersensitivity",
+          "Type IV (cell-mediated) hypersensitivity"
         ],
         "a": 0,
         "e": "Antigen injected into the skin of an animal with high circulating antibody forms immune complexes in vessel walls, fixing complement and causing necrotising vasculitis.",
@@ -2077,9 +2077,9 @@ var quizBank = {
         "q": "Neonatal isoerythrolysis in foals and mule foals is an example of:",
         "o": [
           "Type II (antibody-mediated cytotoxic) hypersensitivity",
-          "Type I hypersensitivity",
-          "Type III hypersensitivity",
-          "Type IV hypersensitivity"
+          "Type I (immediate mast cell degranulating) anaphylaxis",
+          "Type III (circulating immune-complex) vasculitis lesion",
+          "Type IV (delayed-type T-cell mediated) hypersensitivity"
         ],
         "a": 0,
         "e": "Colostral antibodies from the dam against the foal's RBC antigens bind and destroy the foal's erythrocytes, causing haemolytic anaemia and jaundice.",
@@ -2091,9 +2091,9 @@ var quizBank = {
         "q": "The correct sequence of the phases of wound healing is:",
         "o": [
           "Haemostasis → inflammation → proliferation (granulation) → remodelling",
-          "Inflammation → haemostasis → remodelling → proliferation",
-          "Proliferation → inflammation → haemostasis → remodelling",
-          "Remodelling → proliferation → inflammation → haemostasis"
+          "Inflammation → haemostasis → remodelling (maturation) → proliferation",
+          "Proliferation → inflammation → haemostasis → maturation and remodelling",
+          "Haemostasis → proliferation → acute inflammation → fibrosis and scarring"
         ],
         "a": 0,
         "e": "The clot forms first, inflammatory cells clean the wound, granulation tissue and epithelium fill it, and collagen is finally remodelled into a scar.",
@@ -2105,9 +2105,9 @@ var quizBank = {
         "q": "Catarrhal inflammation is characterised by:",
         "o": [
           "Excess mucus secretion from inflamed mucous membranes",
-          "Formation of a fibrin pseudomembrane",
-          "Pus within a fibrous capsule",
-          "Granulomas with giant cells"
+          "Massive purulent exudate with abundant degenerate pus",
+          "Formation of a dense adherent fibrinous pseudomembrane",
+          "Copious watery transudation into subcutaneous tissues"
         ],
         "a": 0,
         "e": "Catarrhal (mucous) inflammation occurs on mucous membranes, e.g. catarrhal enteritis and rhinitis; goblet cells secrete abundant mucus mixed with exudate.",
@@ -3515,9 +3515,9 @@ var quizBank = {
         "q": "Vesicular stomatitis in livestock is characterized pathologically by:",
         "o": [
           "Epithelial vesicles and erosions on tongue, lips, and oral mucosa",
-          "Diphtheritic pseudomembrane over the larynx",
-          "Necrotizing caseous granulomas in tonsils",
-          "Papillomatous warts on the gingiva"
+          "Proliferative papules and ulcerative ring lesions on oral mucosa",
+          "Deep diphtheritic necrotic ulcers along the pharynx and esophagus",
+          "Multiple caseous granulomas with fibrous capsules in oral tonsils"
         ],
         "a": 0,
         "e": "Vesicular stomatitis induces intercellular edema (spongiosis) and intraepithelial vesicles that rupture into erosions.",
@@ -3557,9 +3557,9 @@ var quizBank = {
         "q": "Rumenitis in feedlot cattle is most commonly initiated by:",
         "o": [
           "Lactic acidosis resulting from rapid ingestion of high-grain carbohydrates",
-          "Traumatic perforation by metal wires",
-          "Viral infection with rotavirus",
-          "Excessive intake of roughages"
+          "Mechanical abrasion of ruminal papillae by excessive fibrous coarse roughage",
+          "Primary transmural ulceration caused by invasive ruminal fluke metacercariae",
+          "Septic capillary microthrombosis induced by acute coliform endotoxaemia"
         ],
         "a": 0,
         "e": "Grain overload increases Streptococcus bovis and lactic acid production, lowering rumen pH and ulcerating rumen epithelium.",
@@ -3571,9 +3571,9 @@ var quizBank = {
         "q": "Mycotic rumenitis with circular, target-like infarctive lesions in cattle is typically caused by secondary invasion of:",
         "o": [
           "Aspergillus and Zygomycetes (Mucor, Rhizopus)",
-          "Candida albicans",
-          "Microsporum canis",
-          "Histoplasma capsulatum"
+          "Blastomyces dermatitidis and Coccidioides immitis",
+          "Histoplasma capsulatum and Cryptococcus neoformans",
+          "Candida tropicalis and Trichophyton verrucosum"
         ],
         "a": 0,
         "e": "Acid-induced rumen wall damage allows angioinvasive Zygomycetes to penetrate, causing thrombosis and infarction.",
@@ -3585,9 +3585,9 @@ var quizBank = {
         "q": "Traumatic reticuloperitonitis (hardware disease) in cattle develops when a swallowed metallic foreign body penetrates the:",
         "o": [
           "Reticulum, diaphragm, and pericardial sac",
-          "Rumen dorsal sac and spleen",
-          "Omasum and liver parenchyma",
-          "Abomasum and duodenum"
+          "Dorsal ruminal sac, spleen, and left kidney",
+          "Abomasal fundus, pancreas, and cystic duct",
+          "Omasal laminae, liver capsule, and spleen"
         ],
         "a": 0,
         "e": "Foreign bodies lodge in the honeycomb reticulum; contractions drive wire through diaphragm into the pericardium.",
@@ -3599,9 +3599,9 @@ var quizBank = {
         "q": "Intussusception in the domestic animal intestine is defined as:",
         "o": [
           "Telescoping of an invaginated intestinal segment (intussuscipiens) into an adjacent segment",
-          "Twisting of the bowel loop on its mesenteric axis (volvulus)",
-          "Complete rotation of the intestine along its longitudinal axis (torsion)",
-          "Protrusion of bowel loops through an abdominal ring"
+          "Axial rotation of an intestinal segment along its mesenteric base causing vascular strangulation",
+          "Twisting of an intestinal loop around its longitudinal axis resulting in luminal occlusion",
+          "Displacement and incarceration of a bowel loop through an acquired opening or mesenteric tear"
         ],
         "a": 0,
         "e": "Intussusception is invagination of proximal bowel (intussusceptum) into distal lumen (intussuscipiens).",
@@ -3613,9 +3613,9 @@ var quizBank = {
         "q": "Johne's disease in ruminants (Mycobacterium avium subsp. paratuberculosis) produces which characteristic intestinal lesion?",
         "o": [
           "Transverse corrugated mucosal ridges with 'cerebriform' folding that cannot be smoothed out",
-          "Sharply punched-out button ulcers in the cecum",
-          "Pseudomembranous croupous casting of the colon",
-          "Volvulus with gangrenous strangulation"
+          "Circumscribed necrotic button ulcers centered over lymphoid follicles of the ileocecal valve",
+          "Extensive diphtheritic pseudomembranous enteritis with diffuse fibrinous sloughing of mucosa",
+          "Segmental transmural hemorrhagic necrosis with multifocal gas emphysema of the intestinal wall"
         ],
         "a": 0,
         "e": "Granulomatous infiltration of the lamina propria and submucosa causes permanent transverse corrugations (cerebriform mucosa).",
@@ -3627,9 +3627,9 @@ var quizBank = {
         "q": "Button ulcers observed in the cecum and colon of swine are pathognomonic for:",
         "o": [
           "Chronic Classical Swine Fever (Hog Cholera)",
-          "Swine Erysipelas",
-          "Porcine Parvovirus",
-          "Atrophic Rhinitis"
+          "Acute African Swine Fever Hemorrhagic Diathesis",
+          "Porcine Epidemic Diarrhea Coronavirus Enteritis",
+          "Chronic Swine Dysentery (Brachyspira colitis)"
         ],
         "a": 0,
         "e": "Ischemic infarction of lymphoid follicles followed by secondary infection with Salmonella produces concentric button ulcers.",
@@ -3641,9 +3641,9 @@ var quizBank = {
         "q": "Post-necrotic cirrhosis of the liver is characterized histologically by:",
         "o": [
           "Broad irregular fibrous bands separating large, pleomorphic regenerative nodules",
-          "Delicate diffuse pericellular fibrosis without nodules",
-          "Biliary ductular proliferation without fibrous bridging",
-          "Uniform micronodular pseudolobules of identical size"
+          "Uniform delicate pericellular collagen fibers dissecting between individual hepatocytes",
+          "Concentric 'onion-skin' periductular fibrosis enclosing hyperplastic bile ductules",
+          "Regular micronodular pseudolobules enclosed by thin symmetrical fibrous connective septa"
         ],
         "a": 0,
         "e": "Massive collapse following extensive necrosis produces coarse, irregular fibrous scars and large hyperplastic nodules.",
@@ -3655,9 +3655,9 @@ var quizBank = {
         "q": "In pre-hepatic (hemolytic) jaundice, the predominant pigment elevated in serum is:",
         "o": [
           "Unconjugated (indirect-reacting) bilirubin",
-          "Conjugated (direct-reacting) bilirubin",
-          "Bile salts and biliverdin",
-          "Hemosiderin iron"
+          "Conjugated (direct-reacting) diglucuronide",
+          "Intrahepatic conjugated bile acid salts",
+          "Oxidized biliverdin and urobilin complexes"
         ],
         "a": 0,
         "e": "Massive erythrocyte destruction floods the liver with unconjugated lipophilic bilirubin, exceeding conjugating capacity.",
@@ -3669,9 +3669,9 @@ var quizBank = {
         "q": "Obstructive (post-hepatic) jaundice in animals is typically accompanied by:",
         "o": [
           "Clay-colored (acholic) pale feces due to absence of stercobilin",
-          "Dark brown urine packed with hemoglobin casts",
-          "Profound reticulocytosis and regenerative anemia",
-          "Marked decrease in serum alkaline phosphatase"
+          "Port-wine colored red urine containing high levels of hemoglobin",
+          "Marked erythroid marrow hyperplasia and massive reticulocytosis",
+          "Severe reduction in serum alkaline phosphatase and gamma-GT levels"
         ],
         "a": 0,
         "e": "Biliary outflow blockage prevents bile from reaching the intestine, resulting in unpigmented pale acholic stools.",
@@ -3683,9 +3683,9 @@ var quizBank = {
         "q": "Centrilobular necrosis of the liver is the most common pattern in toxic and hypoxic injury because hepatocytes around the central vein:",
         "o": [
           "Receive the lowest oxygen tension and possess highest cytochrome P450 monooxygenase activity",
-          "Are closest to the incoming portal blood supply",
-          "Possess the lowest concentration of metabolic enzymes",
-          "Contain dense fibrous connective tissue rings"
+          "Receive the highest portal oxygen tension and express lowest concentrations of detoxifying enzymes",
+          "Are directly surrounded by dense periportal connective stroma containing phagocytic Kupffer cells",
+          "Possess abundant glutathione stores but completely lack microsomal mixed-function oxidase systems"
         ],
         "a": 0,
         "e": "Zone 3 (pericentral) receives deoxygenated blood and has maximum cytochrome P450, converting xenobiotics into toxic radicals.",
@@ -3697,9 +3697,9 @@ var quizBank = {
         "q": "The pathognomonic liver lesion of Rift Valley Fever in sheep and goats is:",
         "o": [
           "Massive multifocal hepatic necrosis with eosinophilic intranuclear inclusion bodies",
-          "Severe biliary cirrhosis with pipestem bile ducts",
-          "Nutmeg congestion with central vein thrombosis",
-          "Suppurative abscessation caused by Trueperella"
+          "Diffuse biliary hyperplasia with marked canalicular cholestasis and bile duct casts",
+          "Severe centrilobular bridging fibrosis with large intracytoplasmic hyaline bodies",
+          "Multiple suppurative abscesses containing granular eosinophilic sulfur granules"
         ],
         "a": 0,
         "e": "Rift Valley fever virus causes rapid pin-point necrotic foci and intranuclear eosinophilic inclusions in lamb hepatocytes.",
@@ -3711,9 +3711,9 @@ var quizBank = {
         "q": "Canine infectious hepatitis (Canine Adenovirus-1) produces which diagnostic cellular feature?",
         "o": [
           "Large basophilic or amphophilic intranuclear inclusion bodies in hepatocytes and Kupffer cells",
-          "Eosinophilic intracytoplasmic Negri bodies",
-          "Nuclear pyknosis with viral capsid crystalline arrays in lysosomes",
-          "Granulomatous Langhans multinucleated giant cells"
+          "Eosinophilic intracytoplasmic inclusion bodies within neurons and biliary ductal epithelial cells",
+          "Intranuclear and intracytoplasmic acidophilic inclusions within syncytial multinucleated giants",
+          "Prominent perinuclear haloed vacuolation with basophilic intracytoplasmic elementary granules"
         ],
         "a": 0,
         "e": "CAV-1 produces diagnostic large Cowdry type A amphophilic intranuclear inclusions with surrounding halos.",
@@ -3725,9 +3725,9 @@ var quizBank = {
         "q": "Torsion of the abomasum in dairy cattle typically occurs following:",
         "o": [
           "Right-sided abomasal displacement with gas distension",
-          "Chronic copper toxicity",
-          "Gastric ulceration by Ostertagia",
-          "Foreign body perforation of the ruminal pillar"
+          "Left-sided abomasal displacement during early dry period",
+          "Chronic mucosal ulceration caused by Ostertagia ostertagi",
+          "Severe traumatic reticuloperitonitis with vagal neuritis"
         ],
         "a": 0,
         "e": "Abomasal atony causes right-side displacement (RDA), which twists around its mesenteric axis into full torsion/volvulus.",
@@ -3739,9 +3739,9 @@ var quizBank = {
         "q": "Acute hemorrhagic pancreatitis in dogs is pathogenetically initiated by:",
         "o": [
           "Intra-acinar premature activation of trypsinogen and digestive proenzymes",
-          "Bacterial infection ascending through the portal vein",
-          "Primary thrombosis of the splenic artery",
-          "Autoimmune destruction of islet beta cells"
+          "Ascending bacterial colonization of the main pancreatic duct from duodenum",
+          "Immune-mediated cytotoxic T-cell destruction of endocrine islet beta cells",
+          "Primary arterial thrombosis of cranial pancreaticoduodenal vessels by emboli"
         ],
         "a": 0,
         "e": "Inappropriate intra-acinar activation of trypsin catalyzes elastase and phospholipase A2, digesting parenchymal tissue and blood vessels.",
@@ -3753,9 +3753,9 @@ var quizBank = {
         "q": "'Pipestem liver' in sheep and cattle is the chronic pathological outcome of:",
         "o": [
           "Chronic Fasciola hepatica infection with bile duct fibrosis and calcification",
-          "Echinococcus granulosus hydatid cysts",
-          "Hepatic lipidosis in pregnancy toxaemia",
-          "Aflatoxin B1 ingestion"
+          "Chronic pyrrolizidine alkaloid toxicosis with megalocytosis and biliary fibrosis",
+          "Echinococcus granulosus hydatidosis with thick fibrotic cysts in liver lobes",
+          "Dicrocoelium dendriticum infection without ductal calcification or pipe lesion"
         ],
         "a": 0,
         "e": "Adult flukes in bile ducts provoke chronic mechanical irritation, dense periductal fibrosis, and calcification (pipestem ducts).",
@@ -3767,9 +3767,9 @@ var quizBank = {
         "q": "The histological hallmark of fibrinous bronchopneumonia (shipping fever) in cattle is:",
         "o": [
           "Alveolar spaces filled with fibrin, neutrophils, and streaming 'oat-shaped' degenerate leukocytes",
-          "Pure serous transudate with no cellular infiltration",
-          "Necrotic caseous tubercles with Langhans giant cells",
-          "Diffuse alveolar septal thickening by type II pneumocyte hyperplasia"
+          "Diffuse interstitial infiltration of lymphocytes and plasma cells with type II pneumocyte hypertrophy",
+          "Extensive caseous granulomas surrounded by epithelioid macrophages and multinucleated giant cells",
+          "Purulent bronchiolitis with syncytial cell formation and eosinophilic intracytoplasmic inclusions"
         ],
         "a": 0,
         "e": "Mannheimia haemolytica leukotoxin destroys bovine leukocytes, forming elongated 'oat cells' within dense fibrin mesh.",
@@ -3795,9 +3795,9 @@ var quizBank = {
         "q": "Interstitial pneumonia (atypical pneumonia) is predominantly characterized microscopically by:",
         "o": [
           "Thickening of alveolar septa by edema, mononuclear cells, and type II pneumocyte hyperplasia",
-          "Alveoli packed with dense plugs of degenerate neutrophils and pus",
-          "Massive caseous necrosis with dystrophic calcification",
-          "Obstruction of major bronchi by mucus casts"
+          "Suppurative consolidation of bronchiolar lumina by degenerate neutrophils and necrotic debris",
+          "Fibrinous interlobular exudation with coagulative parenchymal necrosis and dense oat cells",
+          "Extensive granulomatous nodules with central caseation surrounded by dense fibrous capsules"
         ],
         "a": 0,
         "e": "Injury to type I alveolar pneumocytes or capillary endothelium provokes septal infiltration and type II pneumocyte lining.",
@@ -3809,9 +3809,9 @@ var quizBank = {
         "q": "Pulmonary atelectasis strictly refers to:",
         "o": [
           "Incomplete expansion or collapse of previously aerated lung parenchyma",
-          "Permanent abnormal dilatation of alveoli with alveolar wall destruction",
-          "Inflammation of pulmonary bronchioles",
-          "Intra-alveolar accumulation of protein-rich fluid"
+          "Permanent abnormal dilatation of alveoli with destruction of their walls",
+          "Accumulation of protein-rich edematous transudate within alveolar spaces",
+          "Diffuse organization of intra-alveolar fibrinous exudate by fibroblasts"
         ],
         "a": 0,
         "e": "Atelectasis is alveolar collapse (congenital due to lack of surfactant, or acquired due to airway obstruction or compression).",
@@ -3823,9 +3823,9 @@ var quizBank = {
         "q": "Alveolar pulmonary emphysema is morphologically characterized by:",
         "o": [
           "Permanent enlargement of airspaces distal to terminal bronchioles with destruction of alveolar walls",
-          "Fluid filling the alveolar spaces with air bronchograms",
-          "Accumulation of air within interlobular septa and subpleural tissue",
-          "Fibrous organization of alveolar exudates"
+          "Accumulation of air bubbles within the interlobular septal connective tissues and deep beneath pleura",
+          "Permanent irreversible dilatation of bronchi and bronchioles accompanied by transmural chronic necrosis",
+          "Acute intra-alveolar consolidation with dense fibrin plugs and proliferation of type II pneumocytes"
         ],
         "a": 0,
         "e": "Alveolar emphysema involves disruption of alveolar septa, creating enlarged, bullous, hyperexpanded airspaces.",
@@ -3837,9 +3837,9 @@ var quizBank = {
         "q": "Interlobular emphysema occurs with high frequency in cattle because bovine lungs possess:",
         "o": [
           "Complete, thick interlobular connective tissue septa and no collateral ventilation",
-          "Very thin, delicate, porous pleura",
-          "Extensive inter-alveolar pores of Kohn",
-          "Double pulmonary arterial blood supplies"
+          "Incomplete interlobular septa with abundant collateral ventilation via pores of Kohn",
+          "Thin, poorly developed subpleural connective stroma with extensive anastomotic airways",
+          "Extensive bronchopulmonary collateral anastomoses and highly porous visceral pleura"
         ],
         "a": 0,
         "e": "Cattle have wide interlobular septa with distinct lobulation and poor collateral ventilation; ruptured air tracks into septa.",
@@ -3865,9 +3865,9 @@ var quizBank = {
         "q": "Traumatic pericarditis in cattle results in which classic gross pathological appearance of the pericardial sac?",
         "o": [
           "'Bread and butter' fibrinous and purulent exudate with thickened, foul-smelling pericardium",
-          "Smooth, shiny, transparent serosa with minimal clear fluid",
-          "Dry parchment-like mummification of the myocardium",
-          "Multiple small white calcified buttons on epicardium"
+          "'Tiger heart' appearance with pale yellowish striations of fatty change in the myocardium",
+          "'Mulberry heart' appearance showing extensive coalescing subepicardial ecchymoses and edema",
+          "'Porcelain heart' appearance marked by extensive smooth, glistening subendocardial calcification"
         ],
         "a": 0,
         "e": "Penetrating wires introduce Trueperella pyogenes and anaerobes, creating massive shaggy fibrin ('bread and butter') and pus.",
@@ -3880,8 +3880,8 @@ var quizBank = {
         "o": [
           "Left atrioventricular (mitral) valve",
           "Right atrioventricular (tricuspid) valve",
-          "Aortic semilunar valve",
-          "Pulmonic valve"
+          "Aortic semilunar outflow valve leaflet",
+          "Pulmonic semilunar arterial valve cusp"
         ],
         "a": 0,
         "e": "Myxomatous degeneration of the mitral valve produces nodular thickening, chordae tendineae rupture, and mitral regurgitation.",
@@ -3893,9 +3893,9 @@ var quizBank = {
         "q": "Vegetative valvular endocarditis in swine is classically caused by infection with:",
         "o": [
           "Erysipelothrix rhusiopathiae",
-          "Pasteurella multocida",
-          "Staphylococcus hyicus",
-          "Clostridium perfringens"
+          "Streptococcus suis serotype 2",
+          "Actinobacillus pleuropneumoniae",
+          "Trueperella pyogenes isolates"
         ],
         "a": 0,
         "e": "Erysipelothrix forms large, friable, cauliflower-like vegetative bacterial-fibrin thrombi on the mitral and aortic valves.",
@@ -3907,9 +3907,9 @@ var quizBank = {
         "q": "'Mulberry heart disease' in rapidly growing swine is a nutritional cardiomyopathy caused by deficiency of:",
         "o": [
           "Vitamin E and Selenium",
-          "Thiamine (Vitamin B1)",
-          "Copper",
-          "Iron"
+          "Thiamine and Pyridoxine",
+          "Copper and Molybdenum",
+          "Cobalt and Cyanocobalamin"
         ],
         "a": 0,
         "e": "Vitamin E/Selenium deficiency produces extensive myocardial necrosis, microvascular thrombosis, and ecchymotic haemorrhages.",
@@ -3921,9 +3921,9 @@ var quizBank = {
         "q": "Left ventricular eccentric hypertrophy in domestic animals is typically stimulated by:",
         "o": [
           "Chronic volume (preload) overload (e.g. valvular regurgitation, patent ductus arteriosus)",
-          "Chronic pressure (afterload) overload (e.g. aortic stenosis, systemic hypertension)",
-          "Severe myocardial fibrosis without dilation",
-          "Nutritional protein starvation"
+          "Chronic pressure (afterload) overload (e.g. severe subaortic stenosis, systemic hypertension)",
+          "Primary restrictive cardiomyopathy with severe diffuse interstitial endocardial fibrosis",
+          "Toxic myocardial degeneration induced by chronic monensin or dietary gossypol poisoning"
         ],
         "a": 0,
         "e": "Volume overload stimulates addition of sarcomeres in series, leading to ventricular dilation with increased lumen diameter.",
@@ -3935,9 +3935,9 @@ var quizBank = {
         "q": "Concentric cardiac hypertrophy is characterized by:",
         "o": [
           "Thickening of the ventricular wall with reduced or normal ventricular lumen diameter",
-          "Thin, stretched ventricular wall with markedly dilated lumen",
-          "Fatty infiltration of the right ventricular free wall",
-          "Extensive replacement of myocardium by amyloid"
+          "Thinning and stretching of ventricular walls with marked enlargement of chamber volume",
+          "Fibrofatty infiltration of the right ventricular free wall with aneurysm formation",
+          "Diffuse endocardial thickening by fibroelastic tissue without increased wall mass"
         ],
         "a": 0,
         "e": "Pressure overload stimulates addition of sarcomeres in parallel, thickening the wall toward the lumen (reduced cavity size).",
@@ -3949,9 +3949,9 @@ var quizBank = {
         "q": "Bovine enzootic pneumonia is primarily an infectious complex initiated by:",
         "o": [
           "Mycoplasma bovis and Parainfluenza-3 virus with secondary Pasteurella",
-          "Mycobacterium bovis alone",
-          "Aspergillus fumigatus",
-          "Dictyocaulus viviparus"
+          "Mycobacterium bovis and Dictyocaulus viviparus with Trueperella pyogenes",
+          "Bovine herpesvirus-1 and Histophilus somni with secondary Aspergillus",
+          "Bovine viral diarrhea virus and Mannheimia haemolytica with Fusobacterium"
         ],
         "a": 0,
         "e": "Viral/mycoplasmal agents damage mucociliary defenses, allowing opportunistic Pasteurella/Mannheimia invasion.",
@@ -3977,9 +3977,9 @@ var quizBank = {
         "q": "Pleuritis with accumulation of cloudy, foul-smelling purulent exudate in the pleural cavity is called:",
         "o": [
           "Pyothorax (empyema)",
-          "Hydrothorax",
-          "Hemothorax",
-          "Pneumothorax"
+          "Chylothorax (chyle)",
+          "Hydrothorax (serum)",
+          "Hemothorax (bloody)"
         ],
         "a": 0,
         "e": "Pyothorax is the presence of pus in the pleural space, commonly resulting from bite wounds or migrating plant awns.",
@@ -3991,9 +3991,9 @@ var quizBank = {
         "q": "A true aneurysm is pathologically defined as a localized dilatation of a blood vessel resulting from:",
         "o": [
           "Weakening of the vascular wall with all three tunics (intima, media, adventitia) intact",
-          "A rupture of the intima and media with blood contained only by adventitia",
-          "An inflammatory clot occluding the arterial lumen",
-          "Dissection of blood between media layers"
+          "Complete rupture of the tunica media with extravasated hematoma bound only by adventitia",
+          "Intramural hematoma splitting the medial laminar planes without communicating dilatation",
+          "Endarteritis obliterans causing luminal occlusion with secondary recanalized thrombosis"
         ],
         "a": 0,
         "e": "A true aneurysm involves bulging of the intact attenuated vessel wall (all 3 layers).",
@@ -4019,9 +4019,9 @@ var quizBank = {
         "q": "Glomerulonephritis in domestic animals is most frequently initiated pathogenetically by:",
         "o": [
           "Deposition of circulating soluble antigen-antibody immune complexes in glomerular basement membranes",
-          "Direct ascending bacterial infection from the urinary bladder",
-          "Mechanical obstruction of collecting ducts by calcium oxalate crystals",
-          "Severe hypovolaemic shock"
+          "Direct ascending suppurative bacterial colonization of Bowman spaces from the lower urinary tract",
+          "Extracellular deposition of insoluble beta-pleated fibrillar amyloid protein within mesangial matrix",
+          "Mechanical obstruction of descending medullary vasa recta by insoluble microcrystalline aggregates"
         ],
         "a": 0,
         "e": "Immune complex glomerulonephritis (Type III hypersensitivity) is the dominant form in dogs and cats with chronic antigenemia.",
@@ -4033,9 +4033,9 @@ var quizBank = {
         "q": "The hallmark clinical consequence of severe glomerular injury resulting in heavy loss of albumin in urine is:",
         "o": [
           "Nephrotic syndrome (proteinuria, hypoalbuminaemia, generalized oedema, and hypercholesterolaemia)",
-          "Anuric renal failure with acute hydronephrosis",
-          "Severe glycosuria without ketosis",
-          "Renal tubular acidosis with metabolic alkalosis"
+          "Nephritic syndrome (active urine sediment, microscopic hematuria, hypertension, and mild proteinuria)",
+          "Fanconi syndrome (generalized proximal tubular transport defects with glucosuria and aminoaciduria)",
+          "Uremic encephalopathy (severe azotemia, hyperkalemic metabolic acidosis, and muscular tremors)"
         ],
         "a": 0,
         "e": "Loss of glomerular charge/size selectivity allows albuminuria, lowering plasma oncotic pressure and causing anasarca.",
@@ -4047,9 +4047,9 @@ var quizBank = {
         "q": "Nephrosis (acute tubular necrosis/injury) is predominantly characterized morphologically by:",
         "o": [
           "Degeneration and necrosis of renal proximal tubular epithelial cells with basement membrane intact or disrupted",
-          "Intense neutrophilic inflammation within Bowman's capsule space",
-          "Fibrous replacement of collecting ducts",
-          "Formation of multiple epithelial cysts in renal cortex"
+          "Extensive crescentic proliferation of parietal epithelial cells leading to fibrous obliteration of Bowman spaces",
+          "Dense interstitial infiltration of neutrophils and macrophages with multiple discrete cortical microabscesses",
+          "Widespread amyloid fibril deposition within the mesangial matrix leading to complete glomerular obsolescence"
         ],
         "a": 0,
         "e": "Ischemia or nephrotoxins (heavy metals, aminoglycosides) selectively target metabolically active proximal tubular epithelium.",
@@ -4061,9 +4061,9 @@ var quizBank = {
         "q": "The definitive histological distinction between toxic nephrosis and ischemic nephrosis is that toxic nephrosis:",
         "o": [
           "Leaves the tubular basement membrane largely intact (tubulonecrosis without tubulorrhexis)",
-          "Completely disrupts the tubular basement membrane (tubulorrhexis)",
-          "Never affects the proximal convoluted tubules",
-          "Affects only collecting ducts in the medulla"
+          "Completely disrupts the tubular basement membrane along its length (patchy tubulorrhexis)",
+          "Specifically spares the proximal convoluted tubules while destroying medullary loop segments",
+          "Produces prominent interstitial suppurative nephritis with microabscesses around glomeruli"
         ],
         "a": 0,
         "e": "Toxic necrosis spares the basement membrane, permitting regeneration; ischemic necrosis disrupts the basement membrane (tubulorrhexis).",
@@ -4075,9 +4075,9 @@ var quizBank = {
         "q": "Pyelonephritis in cattle is typically an ascending suppurative infection caused by:",
         "o": [
           "Corynebacterium renale",
-          "Mycobacterium bovis",
-          "Brucella abortus",
-          "Leptospira hardjo"
+          "Trueperella pyogenes",
+          "Leptospira interrogans",
+          "Staphylococcus aureus"
         ],
         "a": 0,
         "e": "Corynebacterium renale possesses pili that attach to urothelium, ascending from bladder to renal pelvis and medulla.",
@@ -4089,9 +4089,9 @@ var quizBank = {
         "q": "Hydronephrosis is defined pathologically as:",
         "o": [
           "Dilation of the renal pelvis and calyces accompanied by progressive atrophy of renal parenchyma due to urinary outflow obstruction",
-          "Congenital accumulation of serous fluid under the renal capsule",
-          "Accumulation of pus within the renal pelvis",
-          "Infiltration of renal cortex by amyloid fibrils"
+          "Suppurative inflammation of the renal pelvis extending into collecting ducts with extensive papillary necrosis and parenchymal fibrosis",
+          "Congenital failure of metanephric blastema differentiation resulting in diffuse bilateral formation of fluid-filled renal cortical cysts",
+          "Extensive ischemic infarction of the renal medullary crests secondary to prolonged administration of nonsteroidal anti-inflammatory drugs"
         ],
         "a": 0,
         "e": "Urinary tract obstruction causes increased back-pressure, compressing parenchyma and causing ischemic medullary and cortical atrophy.",
@@ -4103,9 +4103,9 @@ var quizBank = {
         "q": "Urolithiasis in feedlot steers and wethers receiving high-concentrate grain diets most commonly forms stones composed of:",
         "o": [
           "Struvite (magnesium ammonium phosphate)",
-          "Uric acid",
-          "Cystine",
-          "Calcium oxalate"
+          "Calcium oxalate monohydrate precipitates",
+          "Silica and calcium carbonate concretions",
+          "Ammonium acid urate and xanthine calculi"
         ],
         "a": 0,
         "e": "High grain diets provide high phosphorus and magnesium, promoting struvite calculus precipitation in alkaline urine.",
@@ -4117,9 +4117,9 @@ var quizBank = {
         "q": "The most frequent anatomical site of urolith obstruction in rams and wethers is the:",
         "o": [
           "Urethral process (vermiform appendage)",
-          "Ischial arch of the urethra",
-          "Sigmoid flexure of the penis",
-          "Neck of the urinary bladder"
+          "Distal loop of the penile sigmoid flexure",
+          "Ischial arch of the pelvic dorsal urethra",
+          "Internal urethral orifice at bladder neck"
         ],
         "a": 0,
         "e": "The filiform urethral process is extremely narrow in rams; stones easily lodge at its tip, causing bladder rupture.",
@@ -4131,9 +4131,9 @@ var quizBank = {
         "q": "In bullocks, the most common site of urethral calculus obstruction is the:",
         "o": [
           "Sigmoid flexure of the penis",
-          "Urethral process",
-          "Pelvic urethra near prostate",
-          "Glans penis"
+          "Ischial arch of pelvic tract",
+          "Vermiform urethral appendage",
+          "Neck of the distended bladder"
         ],
         "a": 0,
         "e": "The distal curve of the S-shaped sigmoid flexure is the primary site of urolith lodgement in male cattle.",
@@ -4145,9 +4145,9 @@ var quizBank = {
         "q": "White spotted kidney in calves is a subclinical multifocal interstitial nephritis caused by:",
         "o": [
           "Escherichia coli bacteremia",
-          "Corynebacterium renale",
-          "Leptospira interrogans",
-          "Salmonella Dublin"
+          "Corynebacterium renale sepsis",
+          "Leptospira interrogans serovar",
+          "Salmonella Dublin colonization"
         ],
         "a": 0,
         "e": "Transient coliform bacteremia in neonatal calves leaves discrete white non-suppurative lymphoplasmacytic interstitial cortical spots.",
@@ -4159,9 +4159,9 @@ var quizBank = {
         "q": "Cystic endometrial hyperplasia (CEH) - pyometra complex in intact bitches is primed by which hormone?",
         "o": [
           "Progesterone (during prolonged luteal phase / diestrus)",
-          "Estrogen alone",
-          "Prolactin",
-          "Oxytocin"
+          "Estrogen (during repeated follicular waves without mating)",
+          "Prolactin (following pseudopregnancy mammary stimulation)",
+          "Oxytocin (during early postpartum myometrial involution)"
         ],
         "a": 0,
         "e": "Repeated diestrual progesterone causes endometrial gland proliferation and secretions, allowing secondary E. coli invasion.",
@@ -4173,9 +4173,9 @@ var quizBank = {
         "q": "In bovine brucellosis (Brucella abortus), the characteristic gross lesion on the fetal placenta is:",
         "o": [
           "Necrotizing placentitis with leathery, thickened intercotyledonary areas and necrotic yellowish cotyledons",
-          "Smooth, shiny, transparent chorioallantois with no exudate",
-          "Generalized hydropic villous edema without necrosis",
-          "Pure cystic glandular hyperplasia"
+          "Diffuse hemorrhagic edema restricted to maternal caruncles with completely normal, translucent fetal cotyledons",
+          "Severe granulomatous placentitis with multifocal caseating calcified nodules in intercotyledonary spaces",
+          "Extensive cystic adenomatous hyperplasia of trophoblast epithelium without vascular thrombi or necrosis"
         ],
         "a": 0,
         "e": "Brucella abortus targets erythritol in trophoblasts, causing severe necrotizing placentitis and leathery intercotyledonary thickening.",
@@ -4187,9 +4187,9 @@ var quizBank = {
         "q": "Campylobacter fetus subsp. venerealis in cattle causes infertility and abortion characterized by:",
         "o": [
           "Subacute endometritis and salpingitis preventing conception",
-          "Massive fetal mummification at 8 months of gestation",
-          "Extensive hepatic necrosis with target lesions in the cow",
-          "Severe fibrotic orchitis in bulls"
+          "Severe necrotic cotyledonitis with fetal hepatic target lesions",
+          "Mummification of twin fetuses during the final third trimester",
+          "Purulent orchitis and testicular atrophy in breeding herd bulls"
         ],
         "a": 0,
         "e": "Venereal transmission produces mild endometritis causing early embryonic death, repeat breeding, and irregular heat cycles.",
@@ -4201,9 +4201,9 @@ var quizBank = {
         "q": "Granulomatous orchitis with extensive testicular destruction and 'sperm granuloma' formation results from:",
         "o": [
           "Autoimmune inflammatory reaction against extravasated spermatozoa following ductal rupture",
-          "Ascending viral infection with Canine Distemper",
-          "Nutritional vitamin A deficiency",
-          "Direct mechanical pressure from cryptorchidism"
+          "Hematogenous dissemination of Brucella ovis causing chronic caseating testicular necrosis",
+          "Ascending bacterial invasion of epididymal tubules by Escherichia coli from the prostate",
+          "Hyperestrogenism induced by a functional Sertoli cell tumor leading to squamous metaplasia"
         ],
         "a": 0,
         "e": "Spermatozoa are immunologically foreign; disruption of the blood-testis barrier incites an intense granulomatous foreign-body reaction.",
@@ -4215,9 +4215,9 @@ var quizBank = {
         "q": "The most common form of mastitis in dairy cattle, causing chronic fibrosis and progressive loss of functional secretory tissue, is caused by:",
         "o": [
           "Streptococcus agalactiae and Staphylococcus aureus",
-          "Escherichia coli",
-          "Klebsiella pneumoniae",
-          "Trueperella pyogenes alone"
+          "Escherichia coli and Klebsiella pneumoniae strains",
+          "Corynebacterium bovis and Trueperella pyogenes rods",
+          "Mycoplasma bovis and Serratia marcescens microbes"
         ],
         "a": 0,
         "e": "Staph aureus and Strep agalactiae produce chronic contagious mastitis with microabscesses, ductal fibrosis, and agalactia.",
@@ -4229,9 +4229,9 @@ var quizBank = {
         "q": "Coliform mastitis in dairy cows is characterized clinically and pathologically by:",
         "o": [
           "Severe acute endotoxemia, vascular thrombosis, and marked serous/hemorrhagic gland edema",
-          "Slow insidious induration with milk stones",
-          "Caseous granulomas with Langhans giant cells",
-          "Pure purulent galactophoritis without systemic signs"
+          "Insidious chronic ductal fibrosis, ductal squamous metaplasia, and progressive induration",
+          "Multiple well-encapsulated caseous granulomas with extensive dystrophic mineralization",
+          "Subclinical chronic lymphocytic galactophoritis without significant systemic pyrexia"
         ],
         "a": 0,
         "e": "LPS endotoxin released by E. coli causes microvascular damage, gland necrosis, profound leukopenia, and systemic septic shock.",
@@ -4257,9 +4257,9 @@ var quizBank = {
         "q": "Freemartinism in cattle is an intersex condition developing in a female twin due to:",
         "o": [
           "Placental vascular anastomoses with a male co-twin sharing anti-Müllerian hormone and testosterone",
-          "Single X chromosome monosomy (XO)",
-          "Somatic mutation in the SRY gene of the female",
-          "Excessive maternal progesterone therapy"
+          "Constitutional sex-chromosome monosomy (60,XO karyotype) causing complete failure of gonadal genesis",
+          "Exogenous exposure to high maternal progesterone during differentiation of the mesonephric ducts",
+          "Deleterious point mutation in the SRY gene preventing standard development of internal genitalia"
         ],
         "a": 0,
         "e": "Chorionic vascular fusion lets male anti-Müllerian hormone suppress female paramesonephric (Müllerian) duct development.",
@@ -4271,9 +4271,9 @@ var quizBank = {
         "q": "Polioencephalomalacia (cerebrocortical necrosis) in ruminants is etiologically linked to:",
         "o": [
           "Thiamine (Vitamin B1) deficiency or high dietary sulfur intake",
-          "Copper deficiency",
-          "Toxoplasma gondii infection",
-          "Vitamin A deficiency"
+          "Chronic copper deficiency causing demyelination of motor tracts",
+          "Hypervitaminosis A induced cerebellar hypoplasia and herniation",
+          "Toxoplasma gondii tachyzoites invading the cerebral parenchyma"
         ],
         "a": 0,
         "e": "Thiamine pyrophosphate depletion impairs cerebral neuronal energy, causing laminar cortical necrosis that fluoresces under Wood's lamp.",
@@ -4285,9 +4285,9 @@ var quizBank = {
         "q": "The pathognomonic diagnostic lesion of Rabies in the central nervous system is the presence of:",
         "o": [
           "Intracytoplasmic Negri bodies in pyramidal neurons of hippocampus and Purkinje cells of cerebellum",
-          "Intranuclear Cowdry type A inclusion bodies in astrocytes",
-          "Microabscesses in the brainstem medulla",
-          "Extensive myelin sheath vacuolation (status spongiosus)"
+          "Large basophilic intranuclear inclusion bodies in both cerebral vascular endothelia and astrocytes",
+          "Microscopic suppurative microabscesses with dense perivascular cuffing throughout pons and medulla",
+          "Status spongiosus with widespread coalescing neuronal vacuoles in the obex of the fourth ventricle"
         ],
         "a": 0,
         "e": "Negri bodies are round/oval eosinophilic intracytoplasmic inclusions containing rabies viral ribonucleoprotein complexes.",
@@ -4299,9 +4299,9 @@ var quizBank = {
         "q": "Bovine Spongiform Encephalopathy (BSE) and scrapie are neuropathologically characterized by:",
         "o": [
           "Neuronal vacuolation and status spongiosus in the brainstem without any inflammatory infiltrate",
-          "Massive suppurative infiltration of the meninges by neutrophils",
-          "Intranuclear inclusion bodies in ependymal cells",
-          "Severe thrombosis of cerebral cortical arteries"
+          "Severe lymphocytic leptomeningitis accompanied by prominent perivascular cuffs and glial nodules",
+          "Extensive liquefactive necrosis of white matter with gitter cell proliferation and hemorrhage",
+          "Intranuclear eosinophilic inclusion bodies within degenerate brainstem neurons and astroglia"
         ],
         "a": 0,
         "e": "Prion conversion (PrP-Sc) induces neurodegeneration, intracytoplasmic neuronal vacuoles, and astrogliosis with zero inflammation.",
@@ -4313,9 +4313,9 @@ var quizBank = {
         "q": "Listeriosis (circling disease) in ruminants produces which pathognomonic lesion in the brainstem medulla and pons?",
         "o": [
           "Microabscesses with perivascular mononuclear cuffing",
-          "Large cavitation cysts (malacia)",
-          "Extensive amyloid plaque deposition",
-          "Eosinophilic meningeal infiltration"
+          "Extensive cavitation malacia with gitter cell sheets",
+          "Status spongiosus with intraneuronal empty vacuoles",
+          "Eosinophilic meningeal infiltration and edema in gyri"
         ],
         "a": 0,
         "e": "Listeria monocytogenes ascends cranial nerves (trigeminal), creating focal microabscesses and mononuclear perivascular cuffs.",
@@ -4327,9 +4327,9 @@ var quizBank = {
         "q": "Equine Encephalomyelitis (Eastern, Western, Venezuelan) causes lesions predominantly localized to:",
         "o": [
           "Cerebral cortex and thalamic grey matter with neuronal necrosis and neutrophilic-to-mononuclear cuffs",
-          "Cerebellar Purkinje cells only",
-          "Lumbosacral spinal cord white matter only",
-          "Peripheral motor nerves"
+          "Cerebellar cortex and vermis with selective coagulative necrosis of Purkinje cells and reactive Bergmann glia",
+          "Spinal cord ventral motor horns showing chromatolysis and degeneration of motor neurons exclusively",
+          "Brainstem cranial nerve nuclei displaying extensive non-suppurative microabscesses and vacuolation"
         ],
         "a": 0,
         "e": "Arboviral alphaviruses destroy cortical neurons, inciting perivascular cuffing, microgliosis, and neuronophagia.",
@@ -4341,9 +4341,9 @@ var quizBank = {
         "q": "Wallerian degeneration occurs in a peripheral nerve fiber following:",
         "o": [
           "Transection or crush injury of the axon, leading to anterograde axonal and myelin breakdown distal to injury",
-          "Retrograde loss of the cell body only",
-          "Congenital failure of Schwann cell migration",
-          "Selective destruction of the perineurium"
+          "Retrograde disintegration of the neuronal perikaryon with prominent central chromatolysis and cell demise",
+          "Segmental demyelination with intact underlying axon caused by selective immune-mediated injury of Schwann cells",
+          "Congenital failure of neural crest cell migration leading to complete absence of sensory peripheral ganglia"
         ],
         "a": 0,
         "e": "Wallerian degeneration is the anterograde breakdown of the axon and myelin sheath distal to axonal transection.",
@@ -4355,9 +4355,9 @@ var quizBank = {
         "q": "Rickets in young growing animals is characterized pathogenetically by:",
         "o": [
           "Failure of mineralization of osteoid and cartilaginous matrix at the growth plates (epiphyses)",
-          "Excessive osteoclastic bone resorption with fibrous replacement",
-          "Failure of osteoclasts to resorb bone (dense heavy bones)",
-          "Pure loss of bone mass with normal mineral-to-matrix ratio"
+          "Excessive osteoclastic bone resorption with dense fibrovascular replacement of trabecular bone",
+          "Defective osteoclastic resorption producing excessively dense brittle bones without medullary cavity",
+          "Reduction of overall bone mass while maintaining a completely normal mineral-to-matrix balance"
         ],
         "a": 0,
         "e": "Vitamin D or phosphorus deficiency impairs calcification of provisional cartilage, leading to widened, irregular growth plates.",
@@ -4369,9 +4369,9 @@ var quizBank = {
         "q": "Osteomalacia differs from rickets in that osteomalacia occurs in:",
         "o": [
           "Adult mature animals with closed growth plates, causing soft, unmineralized cortical osteoid",
-          "Young growing animals with open growth plates",
-          "Animals with primary bone marrow aplasia",
-          "Fetuses in utero"
+          "Young rapidly growing animals with open physes, causing widening of cartilaginous growth plates",
+          "Senile geriatric carnivores exhibiting marked generalized osteopenia without osteoid seams",
+          "Neonatal calves due to congenital defects in type I collagen biosynthesis and brittle bones"
         ],
         "a": 0,
         "e": "Osteomalacia is defective mineralization of remodeled osteoid in adults, predisposing to pathological fractures and deformities.",
@@ -4383,9 +4383,9 @@ var quizBank = {
         "q": "Fibrous osteodystrophy (osteodystrophia fibrosa / rubber jaw) develops as a consequence of:",
         "o": [
           "Prolonged hyperparathyroidism (primary, secondary nutritional, or secondary renal)",
-          "Vitamin C deficiency (scurvy)",
-          "Fluorosis with osteosclerosis",
-          "Hypovitaminosis A"
+          "Chronic hypervitaminosis D resulting in widespread metastatic soft tissue calcification",
+          "Prolonged calcitonin hypersecretion by functional C-cell thyroid adenomas in bulls",
+          "Severe dietary ascorbic acid deficiency causing defective osteoid collagen synthesis"
         ],
         "a": 0,
         "e": "Excess parathyroid hormone stimulates osteoclastic bone resorption; the lost bone is replaced by fibrous connective tissue.",
@@ -4397,9 +4397,9 @@ var quizBank = {
         "q": "'Big head' in horses is a form of nutritional fibrous osteodystrophy caused by diets:",
         "o": [
           "High in phosphorus and low in calcium (e.g. excessive wheat bran)",
-          "High in calcium and low in phosphorus",
-          "Deficient in vitamin D and high in protein",
-          "Toxic in fluoride compounds"
+          "High in calcium and low in dietary phosphorus (e.g. pure alfalfa forage)",
+          "Severely deficient in vitamin D and low in dietary total protein",
+          "Containing toxic amounts of organic fluorine and silicate grains"
         ],
         "a": 0,
         "e": "High phosphorus diet complexes calcium in gut, inducing hypocalcaemia, secondary hyperparathyroidism, and facial bone swelling.",
@@ -4411,9 +4411,9 @@ var quizBank = {
         "q": "Osteopetrosis (marble bone disease) is an inherited metabolic bone disease characterized by:",
         "o": [
           "Defect in osteoclasts causing failure of bone resorption and solid, dense, fragile bones lacking marrow cavity",
-          "Accelerated bone resorption with soft bones",
-          "Malignant transformation of osteoblasts",
-          "Bacterial osteomyelitis"
+          "Defect in osteoblastic collagen synthesis causing severe skeletal fragility, recurrent fractures, and blue sclerae",
+          "Excessive parathyroid hormone activity promoting extensive osteoclastic bone resorption and replacement fibrosis",
+          "Failure of endochondral ossification leading to abnormal epiphyseal enlargement and defective matrix calcification"
         ],
         "a": 0,
         "e": "Defective osteoclasts fail to remodel primary spongiosa; the medullary cavity remains filled with calcified cartilage.",
@@ -4439,9 +4439,9 @@ var quizBank = {
         "q": "Capture myopathy in wild ungulates and birds is a severe metabolic muscle disorder triggered by:",
         "o": [
           "Extreme exertion, fear, and struggle during capture, resulting in massive lactic acidosis and rhabdomyolysis",
-          "Inhalation of toxic anesthetic gases",
-          "Congenital glycogen storage disease",
-          "Bacterial infection with Clostridium septicum"
+          "Acute nutritional deficiency of vitamin E and selenium exacerbated by sudden hypothermic exposure and stress",
+          "Clostridial spore germination within traumatized skeletal muscle beds with malignant gas edema and toxemia",
+          "Inherited calcium release channel mutations causing malignant hyperthermia during halogenated anesthesia"
         ],
         "a": 0,
         "e": "Sympathetic hyperstimulation causes intense anaerobic glycolysis, hyperthermia, metabolic acidosis, myoglobinuria, and acute renal failure.",
@@ -4453,9 +4453,9 @@ var quizBank = {
         "q": "Goitre is pathologically defined as:",
         "o": [
           "Non-neoplastic, non-inflammatory enlargement of the thyroid gland",
-          "Malignant adenocarcinoma of thyroid follicular cells",
-          "Severe atrophy and fibrosis of the thyroid lobes",
-          "Metastatic calcification of the thyroid capsule"
+          "Malignant adenocarcinoma originating from thyroid follicular cells",
+          "Autoimmune lymphocytic thyroiditis leading to progressive atrophy",
+          "Metastatic calcification of the thyroid gland and fibrous capsule"
         ],
         "a": 0,
         "e": "Goitre is thyroid hypertrophy and hyperplasia driven by compensatory TSH secretion, usually from dietary iodine deficiency.",
@@ -4481,9 +4481,9 @@ var quizBank = {
         "q": "Cushing's disease (pituitary-dependent hyperadrenocorticism) in dogs is characterized by:",
         "o": [
           "Pituitary ACTH-secreting adenoma leading to bilateral adrenal cortical hyperplasia",
-          "Primary adrenal cortical atrophy (Addison's)",
-          "Complete aplasia of the adrenal medulla",
-          "Destruction of the hypothalamus by trauma"
+          "Unilateral functional adrenal cortical adenoma with atrophy of contralateral cortex",
+          "Primary immune-mediated destruction of adrenal cortex causing adrenal insufficiency",
+          "Chromaffin cell tumor of the adrenal medulla causing episodic systemic hypertension"
         ],
         "a": 0,
         "e": "Excess ACTH from a pituitary corticotrope tumor drives bilateral adrenal hyperplasia and hypercortisolemia.",
@@ -4495,9 +4495,9 @@ var quizBank = {
         "q": "Diabetes mellitus in dogs is primarily characterized by:",
         "o": [
           "Hypoinsulinaemia due to autoimmune or pancreatitis-induced destruction of pancreatic beta cells",
-          "Absolute insulin resistance with normal beta cell mass",
-          "Excessive secretion of glucagon by an alpha-cell tumor",
-          "Overproduction of cortisol by the thyroid"
+          "Peripheral insulin resistance caused by severe obesity with normal to elevated insulin synthesis",
+          "Glucagon-secreting alpha cell neoplasia inducing persistent severe hepatic glycogen mobilization",
+          "Secondary somatostatin hypersecretion by delta cell adenomas suppressing insulin and gastrin release"
         ],
         "a": 0,
         "e": "Canine diabetes resembles human Type 1 diabetes, featuring irreversible loss of pancreatic beta cells and lifelong insulin requirement.",
@@ -4509,9 +4509,9 @@ var quizBank = {
         "q": "Equine Pituitary Pars Intermedia Dysfunction (PPID) in aged horses is clinically characterized by:",
         "o": [
           "Hirsutism (hypertrichosis), polyuria/polydipsia, and laminitis due to loss of dopaminergic inhibition",
-          "Severe hypoglycemia and acute collapse",
-          "Congenital dwarfism with thyroid aplasia",
-          "Hypocalcaemia and muscle tetany"
+          "Profound bilateral symmetrical alopecia, lethargy, and cold intolerance due to severe primary hypothyroidism",
+          "Acute hypoglycemia, hypothermia, and neuromuscular collapse caused by an insulin-secreting beta cell tumor",
+          "Severe hypocalcemic tetany, facial muscle spasms, and tachycardia resulting from parathyroid gland atrophy"
         ],
         "a": 0,
         "e": "Dopaminergic neurodegeneration disinhibits pars intermedia melanotropes, overproducing ACTH, CLIP, and alpha-MSH.",
@@ -4537,9 +4537,9 @@ var quizBank = {
         "q": "Aplastic anaemia is characterized pathologically by:",
         "o": [
           "Pancytopenia in peripheral blood with marked replacement of hematopoietic marrow by adipocytes",
-          "Massive expansion of erythroid precursors in the spleen",
-          "Severe hemolysis with elevated serum unconjugated bilirubin",
-          "Profound reticulocytosis with polychromasia"
+          "Regenerative hemolytic anemia with marked splenomegaly and massive erythroid hyperplasia in marrow",
+          "Isolated microcytic hypochromic anemia with abundant storage iron throughout macrophage stroma",
+          "Megaloblastic marrow maturation arrest caused by severe nutritional folate and cobalamin deficit"
         ],
         "a": 0,
         "e": "Bone marrow failure causes pancytopenia (erythroid, myeloid, megakaryocytic depletion) with fatty replacement.",
@@ -4551,9 +4551,9 @@ var quizBank = {
         "q": "Which infectious agent causes severe non-regenerative anaemia in domestic cats by attacking marrow stem cells?",
         "o": [
           "Feline Leukemia Virus (FeLV)",
-          "Feline Parvovirus",
-          "Feline Calicivirus",
-          "Toxoplasma gondii"
+          "Feline Immunodeficiency Virus",
+          "Feline Infectious Peritonitis",
+          "Mycoplasma haemofelis bacteria"
         ],
         "a": 0,
         "e": "FeLV subgroup C selectively infects and destroys erythroid progenitor cells, producing pure red cell aplasia.",
@@ -4579,9 +4579,9 @@ var quizBank = {
         "q": "Parakeratosis, characterized by retention of pyknotic nuclei in the stratum corneum, is classically caused in swine by:",
         "o": [
           "Dietary zinc deficiency (often exacerbated by excess calcium)",
-          "Vitamin C deficiency",
-          "Copper toxicity",
-          "Selenium poisoning"
+          "Severe dietary copper deficiency leading to hair depigmentation",
+          "Chronic selenium toxicosis causing coronary band horn sloughing",
+          "Excessive dietary vitamin A supplementation producing exostoses"
         ],
         "a": 0,
         "e": "Zinc deficiency in growing pigs impairs keratinocyte maturation, producing crusty, fissured, parakeratotic skin plaques.",
@@ -4593,9 +4593,9 @@ var quizBank = {
         "q": "Spongiosis in dermatopathology is defined as:",
         "o": [
           "Intercellular edema of the epidermis widening the intercellular spaces between keratinocytes",
-          "Intracellular ballooning of individual keratinocytes",
-          "Thickening of the stratum granulosum",
-          "Formation of subcorneal pustules"
+          "Intracellular edema causing marked hydropic ballooning degeneration of the keratinocyte cytoplasm",
+          "Loss of desmosomal attachments leading to separation and rounded acantholytic cells in epidermis",
+          "Premature keratinization of individual keratinocytes within deeper layers of stratum spinosum"
         ],
         "a": 0,
         "e": "Spongiosis is intercellular fluid accumulation, giving the epidermis a sponge-like appearance on histology.",
@@ -4607,9 +4607,9 @@ var quizBank = {
         "q": "Acantholysis, the loss of cohesion between keratinocytes with intraepidermal clefting, is the hallmark of:",
         "o": [
           "Pemphigus vulgaris and Pemphigus foliaceus",
-          "Dermatophytosis (ringworm)",
-          "Bovine papillomatosis",
-          "Sarcoptic mange"
+          "Bullous pemphigoid and systemic lupus rash",
+          "Erythema multiforme and toxic epidermolysis",
+          "Dermatophytosis and canine sarcoptic mange"
         ],
         "a": 0,
         "e": "Autoantibodies against desmosomal cadherins (desmogleins) dissolve desmosomes, freeing rounded acantholytic cells into blister fluid.",
@@ -4649,9 +4649,9 @@ var quizBank = {
         "q": "Ringworm (dermatophytosis) in calves is most commonly caused by which fungal pathogen?",
         "o": [
           "Trichophyton verrucosum",
-          "Microsporum canis",
-          "Aspergillus fumigatus",
-          "Candida albicans"
+          "Trichophyton mentagrophytes",
+          "Microsporum canis species",
+          "Microsporum gypseum mold"
         ],
         "a": 0,
         "e": "Trichophyton verrucosum invades hair shafts and stratum corneum in calves, producing circular, crusty, alopecic lesions.",
@@ -4663,9 +4663,9 @@ var quizBank = {
         "q": "Sarcoptic mange in dogs and pigs is characterized microscopically by:",
         "o": [
           "Burrows in the stratum corneum containing mites, ova, and feces with intense pruritic dermatitis",
-          "Mites strictly inside hair follicles and sebaceous glands",
-          "Superficial non-pruritic scale without inflammation",
-          "Subcutaneous granulomas around dead larvae"
+          "Colonization of hair follicle infundibula by elongated mites causing secondary mural folliculitis",
+          "Non-burrowing surface-feeding mites inducing heavy crusting and scale over the lumbar skin region",
+          "Dermal eosinophilic granulomas enclosing migrating parasite larvae around cutaneous arterioles"
         ],
         "a": 0,
         "e": "Sarcoptes scabiei females tunnel in the stratum corneum, inciting Type I and Type IV allergic hypersensitivity.",
@@ -4677,9 +4677,9 @@ var quizBank = {
         "q": "Demodectic mange (Demodex canis) in dogs differs from sarcoptic mange in that Demodex mites:",
         "o": [
           "Reside inside hair follicles and sebaceous glands and are generally non-pruritic in early stages",
-          "Tunnel in the stratum corneum causing violent itching",
-          "Are highly contagious to humans",
-          "Are transmitted venereally only"
+          "Burrow into the epidermal stratum corneum eliciting an intensely pruritic hypersensitivity response",
+          "Feed strictly on surface stratum corneum scales without penetrating into hair follicle structures",
+          "Are highly contagious obligate parasites readily transmitted between distinct mammalian species"
         ],
         "a": 0,
         "e": "Demodex mites are normal commensals in hair follicles; overgrowth occurs when T-cell immunity is suppressed.",
@@ -4691,9 +4691,9 @@ var quizBank = {
         "q": "Cataract is defined pathologically as:",
         "o": [
           "Any opacity or loss of transparency of the crystalline lens",
-          "Increased intraocular pressure damaging the optic nerve",
-          "Inflammation of the cornea with vascular ingrowth",
-          "Prolapse of the third eyelid gland"
+          "Persistent intraocular hypertension damaging the optic disc",
+          "Neovascular fibrovascular membrane on anterior corneal stroma",
+          "Suppurative purulent exudate in anterior chamber (hypopyon)"
         ],
         "a": 0,
         "e": "Cataract involves denaturation and aggregation of lens crystallin proteins, causing clouding and blindness.",
@@ -4705,9 +4705,9 @@ var quizBank = {
         "q": "Glaucoma in domestic animals is defined as a pathological state characterized by:",
         "o": [
           "Sustained elevation of intraocular pressure incompatible with normal retinal and optic nerve health",
-          "Opacity of the anterior lens capsule only",
-          "Infection of the ciliary body by Pseudomonas",
-          "Ulceration of the corneal epithelium"
+          "Fibrovascular membrane proliferation covering the iris surface without changing intraocular tension",
+          "Progressive liquefaction of the vitreous humor leading to rhegmatogenous retinal detachment in dogs",
+          "Suppurative endophthalmitis with complete destruction of ciliary body epithelium and hyaloid canal"
         ],
         "a": 0,
         "e": "Impaired drainage of aqueous humor through the iridocorneal angle increases IOP, producing buphthalmos and retinal atrophy.",
@@ -4747,9 +4747,9 @@ var quizBank = {
         "q": "The pathological condition in cattle known as 'cancer eye' is most commonly a:",
         "o": [
           "Squamous cell carcinoma arising from the conjunctiva or cornea",
-          "Malignant melanoma of the choroid",
-          "Retinoblastoma",
-          "Lymphosarcoma of the retrobulbar fat"
+          "Malignant intraocular melanoma originating from choroidal stroma",
+          "Multicentric lymphoma invading retrobulbar extraocular tissues",
+          "Adenoma of the third eyelid gland with marked myxoid metaplasia"
         ],
         "a": 0,
         "e": "Bovine ocular SCC develops on unpigmented eyelids and conjunctiva exposed to chronic solar ultraviolet radiation.",
@@ -4761,9 +4761,9 @@ var quizBank = {
         "q": "Hypersplenism is characterized clinically and pathologically by:",
         "o": [
           "Splenomegaly with premature and excessive destruction of one or more peripheral blood cell lines",
-          "Complete atrophy of the splenic red pulp",
-          "Congenital aplasia of the spleen",
-          "Pure deposition of amyloid in lymphoid follicles without cell destruction"
+          "Splenic atrophy with marked exhaustion of lymphoid follicles and absence of reticuloendothelial cells",
+          "Systemic extramedullary hematopoiesis in red pulp accompanied by severe leukocytosis and thrombocytosis",
+          "Extensive sinusoidal amyloid deposition with complete hyaline obliteration of the periarteriolar sheaths"
         ],
         "a": 0,
         "e": "Splenic enlargement increases phagocytic sequestration, causing hemolytic anemia, leukopenia, or thrombocytopenia.",
@@ -4775,9 +4775,9 @@ var quizBank = {
         "q": "'Button ulcers' in the cecum and colon of pigs are pathognomonic necropsy lesions of:",
         "o": [
           "Classical Swine Fever (Hog Cholera)",
-          "Swine Dysentery",
+          "Swine Dysentery (Brachyspira colitis)",
           "Transmissible Gastroenteritis (TGE)",
-          "Porcine Circovirus Infection"
+          "Porcine Epidemic Diarrhea Infection"
         ],
         "a": 0,
         "e": "In Classical Swine Fever, thrombosis of submucosal arterioles in the cecum and ileocecal valve causes well-circumscribed circular ischemic necrosis and button ulcers.",
@@ -4789,9 +4789,9 @@ var quizBank = {
         "q": "'Tiger stripe' or 'zebra marking' on the longitudinal mucosal folds of the rectum and colon is a classical post-mortem finding in ruminants affected with:",
         "o": [
           "Rinderpest (or Bovine Viral Diarrhea)",
-          "Anthrax",
-          "Blackleg",
-          "Bovine Tuberculosis"
+          "Bovine Malignant Catarrhal Fever (MCF)",
+          "Infectious Bovine Rhinotracheitis IBR",
+          "Paratuberculosis (Bovine Johne's Dis)"
         ],
         "a": 0,
         "e": "Severe congestion and linear mucosal hemorrhages along the crests of rectal folds give the characteristic 'zebra striping' pathognomonic for Rinderpest and acute BVD.",
@@ -4803,9 +4803,9 @@ var quizBank = {
         "q": "Hepatic cirrhosis is defined pathologically by the cardinal morphologic triad of:",
         "o": [
           "Diffuse bridging fibrosis, parenchymal regenerative nodules, and architectural/vascular disruption",
-          "Diffuse fatty change, hydropic swelling, and hemosiderin overload",
-          "Bile duct hyperplasia, amyloidosis, and Kupffer cell hyperplasia",
-          "Multiple suppurative abscesses, caseation, and dystrophic calcification"
+          "Centrilobular coagulative necrosis, severe sinusoidal congestion, and extensive lipid accumulation",
+          "Severe panlobular steatosis, extensive periportal glycogen accumulation, and biliary cast impaction",
+          "Suppurative portal cholangitis, severe bile duct proliferation, and extensive dystrophic calcification"
         ],
         "a": 0,
         "e": "Cirrhosis is end-stage liver disease featuring irreversible diffuse fibrous bridging bands enclosing nodular clusters of regenerating hepatocytes, causing portal hypertension.",
@@ -4817,9 +4817,9 @@ var quizBank = {
         "q": "'Pipe-stem liver' in cattle and sheep characterized by prominent, thickened, calcified bile ducts and periportal fibrosis is caused by chronic infection with:",
         "o": [
           "Fasciola hepatica (Liver fluke)",
-          "Dicrocoelium dendriticum",
-          "Echinococcus granulosus",
-          "Haemonchus contortus"
+          "Dicrocoelium dendriticum flukes",
+          "Paramphistomum cervi parasites",
+          "Schistosoma bovis trematodes sp"
         ],
         "a": 0,
         "e": "Adult Fasciola hepatica inhabiting major bile ducts induce chronic mechanical and proline-mediated irritation, leading to cholangitis, pipestem ductal thickening, and calcification.",
@@ -4831,9 +4831,9 @@ var quizBank = {
         "q": "'Roaring' (laryngeal hemiplegia) in horses is caused by neurogenic atrophy of the left cricoarytenoideus dorsalis muscle resulting from axonopathy of the:",
         "o": [
           "Left recurrent laryngeal nerve",
-          "Right vagus nerve trunk",
-          "Glossopharyngeal nerve",
-          "Hypoglossal nerve"
+          "Right cranial laryngeal branch",
+          "Vagosympathetic nerve trunk axis",
+          "Left hypoglossal cranial motor"
         ],
         "a": 0,
         "e": "The left recurrent laryngeal nerve is one of the longest in the equine body, curving around the aortic arch; distal axonopathy leads to denervation atrophy and roaring.",
@@ -4845,9 +4845,9 @@ var quizBank = {
         "q": "Pneumonic pasteurellosis ('Shipping fever') in feedlot cattle caused by Pasteurella multocida or Mannheimia haemolytica is classified morphologically as:",
         "o": [
           "Fibrinous bronchopneumonia with marbled lung appearance",
-          "Suppurative interstitial pneumonia",
-          "Granulomatous cuffing pneumonia",
-          "Chronic atelectasis with emphysema"
+          "Suppurative bronchopneumonia with abscess consolidation",
+          "Diffuse interstitial pneumonia with severe septal edema",
+          "Granulomatous pneumonia with caseating calcified nodes"
         ],
         "a": 0,
         "e": "Mannheimia leukotoxin causes massive neutrophil necrosis and extensive fibrinous exudation in alveoli and interlobular septa, producing a marbled mosaic appearance.",
@@ -4873,9 +4873,9 @@ var quizBank = {
         "q": "Vegetative (valvular) endocarditis in cattle most commonly affects which heart valve?",
         "o": [
           "Right AV (Tricuspid) valve",
-          "Left AV (Mitral) valve",
-          "Aortic valve",
-          "Pulmonic valve"
+          "Left AV (Bicuspid) leaflets",
+          "Aortic semilunar cusp valve",
+          "Pulmonary arterial leaflet"
         ],
         "a": 0,
         "e": "In cattle, Trueperella pyogenes or Streptococcus infections predilect the right AV (tricuspid) valve; in dogs, pigs, and horses, the mitral and aortic valves are most frequently affected.",
@@ -4887,9 +4887,9 @@ var quizBank = {
         "q": "Nephrotic syndrome in domestic animals is characterized clinically by massive proteinuria, severe hypoalbuminemia, generalized edema, and hypercholesterolemia, resulting primarily from:",
         "o": [
           "Severe glomerular capillary wall injury with loss of podocyte barrier",
-          "Acute tubular necrosis from nephrotoxins",
-          "Ascending pyelonephritis",
-          "Renal hydronephrosis from urolithiasis"
+          "Acute ischemic necrosis of proximal convoluted tubular epithelial cells",
+          "Ascending suppurative pyelonephritis centered upon the renal calyces",
+          "Bilateral obstructive hydronephrosis causing secondary cortical atrophy"
         ],
         "a": 0,
         "e": "Immune-complex glomerulonephritis damages the podocyte filtration slits and negative charge barrier, permitting massive urinary albumin leakage and subsequent edema.",
@@ -4901,9 +4901,9 @@ var quizBank = {
         "q": "Urolithiasis in feedlot steers and wethers is most frequently associated with urethral obstruction at which anatomical location?",
         "o": [
           "Sigmoid flexure of the penis",
-          "Neck of the urinary bladder",
-          "Ischial arch",
-          "External urethral orifice"
+          "Ischial arch of pelvic tract",
+          "Neck of the distended bladder",
+          "Glans penis urethral process"
         ],
         "a": 0,
         "e": "The S-shaped sigmoid flexure in ruminants creates an anatomical constriction where calculi readily lodge, causing urethral rupture and 'water belly' (uroperitoneum).",
@@ -4915,9 +4915,9 @@ var quizBank = {
         "q": "Cystic Endometrial Hyperplasia - Pyometra Complex in bitches is hormonally primed by prolonged exposure to:",
         "o": [
           "Progesterone during the luteal (diestrual) phase",
-          "Estrogen during proestrus",
-          "Testosterone",
-          "Prolactin"
+          "Estrogen during the extended follicular proestrus",
+          "Prolactin during postpartum pseudopregnancy phase",
+          "Testosterone hypersecretion from adrenal adenomas"
         ],
         "a": 0,
         "e": "Repeated estrous cycles with prolonged luteal progesterone induce endometrial glandular hyperplasia and inhibit myometrial contraction, predisposing to secondary E. coli infection.",
@@ -4929,9 +4929,9 @@ var quizBank = {
         "q": "Freemartinism in bovine heterosexual twin births results from placental vascular anastomoses that transfer which critical hormonal factor from the male twin to the female fetus?",
         "o": [
           "Anti-Müllerian Hormone (AMH) and testosterone",
-          "Progesterone and relaxin",
-          "Maternal oxytocin",
-          "Fetal erythropoietin"
+          "Placental gonadotropin and maternal estrone pool",
+          "Progesterone and relaxin from the luteal cysts",
+          "Erythropoietin and placental lactogen peptide"
         ],
         "a": 0,
         "e": "Early chorionic vascular fusion allows AMH from the developing male fetus to suppress paramesonephric (Müllerian) duct development in the female co-twin, causing sterile freemartinism.",
@@ -4943,9 +4943,9 @@ var quizBank = {
         "q": "'Star-gazing' posture and laminar cortical necrosis (polioencephalomalacia) in ruminants is etiologically linked to:",
         "o": [
           "Thiamine (Vitamin B1) deficiency or high dietary sulfur intake",
-          "Copper deficiency",
-          "Vitamin A deficiency",
-          "Acute hypocalcemia"
+          "Chronic copper deficiency causing demyelination of motor tracts",
+          "Excessive dietary fluoride leading to chronic neuro-osteopathy",
+          "Cyanocobalamin (Vitamin B12) deficiency from cobalt depletion"
         ],
         "a": 0,
         "e": "Thiamine deficiency or excess dietary sulfur disrupts neuronal carbohydrate energy metabolism in the cerebrocortex, producing autofluorescent laminar necrosis and stargazing posture.",
@@ -4971,9 +4971,9 @@ var quizBank = {
         "q": "Defective endochondral ossification and failure of osteoid mineralization in young growing animals leads to 'rickets', which is primarily caused by dietary deficiency of:",
         "o": [
           "Vitamin D or Phosphorus",
-          "Vitamin C",
-          "Vitamin A",
-          "Magnesium"
+          "Ascorbic acid (Vitamin C)",
+          "Vitamin A or Carotenoid",
+          "Copper or Dietary Cobalt"
         ],
         "a": 0,
         "e": "In rickets, inadequate calcium-phosphate mineralization causes persistence of unmineralized osteoid and hypertrophic chondrocytes, producing flared metaphyses and 'rachitic rosary'.",
@@ -5055,9 +5055,9 @@ var quizBank = {
         "q": "Baby pig anaemia (iron deficiency anaemia of piglets) is prevented by injecting iron dextran at about 3 days of age because:",
         "o": [
           "Sow's milk is low in iron and piglets grow very rapidly without access to soil",
-          "Piglets cannot absorb any oral iron",
-          "Piglets are born with excess iron stores",
-          "Iron causes intravascular haemolysis in older pigs"
+          "Colostrum contains high levels of phytates that block intestinal iron absorption",
+          "Piglet enterocytes completely lack functional transferrin receptors during infancy",
+          "Sow milk actively chelates systemic iron causing accelerated splenic removal"
         ],
         "a": 0,
         "e": "Piglets have small iron reserves, milk supplies little iron and growth is very fast; in intensive housing there is no soil iron. The anaemia is microcytic and hypochromic.",
@@ -5069,9 +5069,9 @@ var quizBank = {
         "q": "In horses, a bone marrow examination is often needed to assess regeneration in anaemia because horses:",
         "o": [
           "Do not release reticulocytes into the peripheral blood",
-          "Have no bone marrow in long bones",
-          "Always have non-regenerative anaemia",
-          "Release only nucleated RBCs"
+          "Release only metarubricytes into circulating bloodstream",
+          "Rapidly clear polychromatophilic cells in splenic cords",
+          "Undergo rapid intravascular lysis of immature red cells"
         ],
         "a": 0,
         "e": "Equine reticulocytes mature in the marrow, so the peripheral reticulocyte count cannot be used; rising MCV or marrow reticulocytes indicate regeneration.",
@@ -5083,9 +5083,9 @@ var quizBank = {
         "q": "Which finding best distinguishes intravascular haemolysis from extravascular haemolysis?",
         "o": [
           "Haemoglobinaemia and haemoglobinuria",
-          "Jaundice",
-          "Splenomegaly",
-          "Reticulocytosis"
+          "Severe jaundice and hyperbilirubinemia",
+          "Splenomegaly with sinusoidal clearance",
+          "Marked reticulocytosis in bone marrow"
         ],
         "a": 0,
         "e": "When RBCs rupture inside vessels, free haemoglobin appears in plasma and urine (e.g. babesiosis, PPH, leptospirosis). Jaundice and reticulocytosis occur in both types.",
@@ -5111,9 +5111,9 @@ var quizBank = {
         "q": "Acute bracken fern poisoning in cattle causes widespread haemorrhages mainly because of:",
         "o": [
           "Bone marrow aplasia leading to thrombocytopenia and leukopenia",
-          "Vitamin K antagonism like warfarin",
-          "Immune-mediated destruction of platelets",
-          "Liver failure with loss of clotting factors only"
+          "Hepatic synthesis failure of vitamin K-dependent clotting factors",
+          "Severe immune-mediated destruction of circulating blood platelets",
+          "Extensive toxic damage to vascular endothelial junctional complexes"
         ],
         "a": 0,
         "e": "A radiomimetic toxin in bracken destroys marrow stem cells; thrombocytopenia causes haemorrhages and leukopenia predisposes to infections.",
@@ -5125,9 +5125,9 @@ var quizBank = {
         "q": "Reactive (follicular) hyperplasia of a lymph node during antigenic stimulation is characterised by:",
         "o": [
           "Enlarged cortical follicles with prominent germinal centres",
-          "Replacement of the node by uniform neoplastic cells",
-          "Caseous necrosis with mineralisation",
-          "Atrophy of the cortex"
+          "Diffuse monomorphic infiltration effacing nodal architecture",
+          "Caseous necrosis with extensive dystrophic calcification zone",
+          "Atrophy of lymphoid follicles with extensive sinus histiocytosis"
         ],
         "a": 0,
         "e": "B-cell responses expand the follicles and germinal centres; the node is enlarged, moist and bulging, but its architecture is preserved (unlike lymphoma).",
@@ -5139,9 +5139,9 @@ var quizBank = {
         "q": "Thymic atrophy in young animals most commonly results from:",
         "o": [
           "Stress, malnutrition and viral infections such as canine distemper and parvovirus",
-          "Excess vitamin A",
-          "Physical exercise",
-          "High-protein diets"
+          "Chronic hypercalcemia, hypervitaminosis D, and secondary medullary mineralisation",
+          "Primary immune-mediated destruction targeting cortical Hassall corpuscle proteins",
+          "Nutritional excess of high-protein diets accelerating somatic lymphoid maturity"
         ],
         "a": 0,
         "e": "Corticosteroids released in stress, starvation and lymphotropic viruses cause lymphocyte depletion, and the thymus becomes small.",
@@ -5167,9 +5167,9 @@ var quizBank = {
         "q": "Gamna-Gandy bodies (siderotic plaques) on the splenic capsule of old dogs are:",
         "o": [
           "Incidental yellow-brown deposits of iron and calcium on collagen",
-          "Metastatic carcinoma nodules",
-          "Foci of tuberculosis",
-          "Pre-malignant lesions"
+          "Metastatic neoplastic foci originating from splenic hemangiosarcoma",
+          "Chronic granulomatous microabscesses caused by Histoplasma yeast",
+          "Discrete tuberculous caseous nodules with Langhans giant cell rings"
         ],
         "a": 0,
         "e": "They are crusty, yellow-brown plaques along the splenic margin, an age-related change of no clinical significance.",
@@ -5181,9 +5181,9 @@ var quizBank = {
         "q": "Marked, uniform congestive splenomegaly found in a dog at necropsy may be an artefact caused by:",
         "o": [
           "Barbiturate euthanasia",
-          "Starvation",
-          "Chronic dehydration",
-          "Hypothermia"
+          "Prolonged hyperthermia",
+          "Carbon monoxide anoxia",
+          "Acute cyanide poisoning"
         ],
         "a": 0,
         "e": "Barbiturates relax splenic smooth muscle so the spleen fills with blood; this must not be misread as a disease lesion.",
@@ -5195,9 +5195,9 @@ var quizBank = {
         "q": "Hypoadrenocorticism (Addison's disease) in dogs is characterised biochemically by:",
         "o": [
           "Hyponatraemia and hyperkalaemia (Na:K ratio below about 27:1)",
-          "Hypernatraemia and hypokalaemia",
-          "Hyperglycaemia and glucosuria",
-          "Hypercalcaemia and hypophosphataemia"
+          "Hypernatraemia and hypokalaemia (Na:K ratio above about 40:1)",
+          "Marked hypercalcaemia and profound hypophosphataemia in blood",
+          "Marked hyperglycaemia, glucosuria, and elevated fructosamine"
         ],
         "a": 0,
         "e": "Lack of aldosterone causes sodium loss and potassium retention; hyperkalaemia can cause bradycardia and collapse.",
@@ -5209,9 +5209,9 @@ var quizBank = {
         "q": "Primary hypothyroidism in dogs is most commonly caused by:",
         "o": [
           "Lymphocytic thyroiditis or idiopathic follicular atrophy",
-          "Iodine excess",
-          "Thyroid carcinoma",
-          "Pituitary tumour"
+          "Severe dietary iodine deficiency leading to nodular goitre",
+          "Thyroid follicular adenocarcinoma invading adjacent tissue",
+          "Pituitary chromophobe adenoma destroying thyrotroph cells"
         ],
         "a": 0,
         "e": "Destruction of thyroid follicles causes lethargy, obesity, bilaterally symmetrical alopecia and myxoedema.",
@@ -5223,9 +5223,9 @@ var quizBank = {
         "q": "Congenital goitre in calves, lambs and kids is caused by iodine deficiency or by dams eating:",
         "o": [
           "Goitrogenic plants such as Brassica species (cabbage, mustard)",
-          "Bracken fern",
-          "Lantana camara",
-          "Ergot-infected grain"
+          "Ptaquiloside-containing plants such as Pteridium (bracken fern)",
+          "Pyrrolizidine alkaloid-bearing plants such as Senecio species",
+          "Lantadene A containing shrubs such as Lantana camara species"
         ],
         "a": 0,
         "e": "Goitrogens (e.g. thiocyanates, glucosinolates) block iodine uptake or hormone synthesis; the newborn has an enlarged thyroid and may be hairless and weak.",
@@ -5237,9 +5237,9 @@ var quizBank = {
         "q": "Central diabetes insipidus, with polyuria and very dilute urine, is caused by deficiency of:",
         "o": [
           "Antidiuretic hormone (vasopressin)",
-          "Insulin",
-          "Aldosterone",
-          "Parathyroid hormone"
+          "Parathyroid hormone (parathormone)",
+          "Adrenocorticotropic hormone (ACTH)",
+          "Thyroid-stimulating hormone (TSH)"
         ],
         "a": 0,
         "e": "Without ADH from the posterior pituitary, the collecting ducts cannot reabsorb water; urine specific gravity stays below 1.008.",
@@ -5251,9 +5251,9 @@ var quizBank = {
         "q": "A phaeochromocytoma is a tumour of the:",
         "o": [
           "Adrenal medulla, secreting catecholamines",
-          "Adrenal cortex, secreting cortisol",
-          "Thyroid C cells, secreting calcitonin",
-          "Pancreatic beta cells, secreting insulin"
+          "Adrenal cortex, secreting mineralocorticoid",
+          "Thyroid C cells, secreting excess calcitonin",
+          "Pancreatic islets, hypersecreting glucagon"
         ],
         "a": 0,
         "e": "Chromaffin cells of the adrenal medulla release adrenaline and noradrenaline, causing hypertension and tachycardia; it may invade the caudal vena cava.",
@@ -5265,9 +5265,9 @@ var quizBank = {
         "q": "Hypertrophic osteopathy (Marie's disease) in dogs is characterised by:",
         "o": [
           "Periosteal new bone on distal limb bones, usually secondary to a mass in the thoracic cavity",
-          "Thinning of all long bones due to calcium deficiency",
-          "Tumour of the articular cartilage",
-          "Congenital failure of osteoclasts"
+          "Diffuse cortical bone resorption with severe fibrous replacement secondary to chronic nephritis",
+          "Defective osteoclastic resorption producing solid dense brittle bones without medullary cavities",
+          "Primary osteolytic fibrosarcoma arising from diaphyseal endosteum with pathological fractures"
         ],
         "a": 0,
         "e": "Palisading periosteal new bone develops on the metacarpals and metatarsals first; it often regresses if the lung tumour or thoracic lesion is removed.",
@@ -5279,9 +5279,9 @@ var quizBank = {
         "q": "In degenerative joint disease (osteoarthritis), 'eburnation' refers to:",
         "o": [
           "A polished, ivory-like subchondral bone surface after loss of articular cartilage",
-          "Fibrin deposition in synovial fluid",
-          "Bacterial colonisation of the joint",
-          "Fusion of the joint by bone"
+          "Proliferation of marginal osteophytes and fibrocartilage at synovial attachments",
+          "Fibrous or bony ankylosis causing complete obliteration of the joint cavity space",
+          "Villous hypertrophy and lymphoplasmacytic infiltration of the synovial membrane"
         ],
         "a": 0,
         "e": "When cartilage is worn away, bone rubs on bone and becomes smooth, dense and polished.",
@@ -5293,9 +5293,9 @@ var quizBank = {
         "q": "Green-discoloured muscles with eosinophilic myositis found in cattle carcasses at slaughter are associated with:",
         "o": [
           "Sarcocystis infection",
-          "Selenium deficiency",
-          "Clostridium chauvoei",
-          "Vitamin D toxicity"
+          "Cysticercus bovis cysts",
+          "Trichinella infection",
+          "Neospora caninum tachy"
         ],
         "a": 0,
         "e": "Degenerating Sarcocystis cysts provoke a heavy eosinophil reaction; eosinophil pigment gives the muscle its green colour and the carcass may be condemned.",
@@ -5307,9 +5307,9 @@ var quizBank = {
         "q": "Canine hip dysplasia is characterised pathologically by:",
         "o": [
           "Laxity of the hip joint with subluxation, shallow acetabulum and secondary osteoarthritis",
-          "Primary bacterial infection of the femoral head",
-          "Neoplasia of the acetabulum",
-          "Congenital absence of the femur"
+          "Aseptic ischemic necrosis of the femoral head leading to bone collapse (Legg-Perthes disease)",
+          "Primary septic suppurative arthritis with complete erosion of synovial articular capsule",
+          "Congenital aplasia of the femoral head and neck with complete absence of ligamentum teres"
         ],
         "a": 0,
         "e": "It is a hereditary developmental disease of large breeds; the femoral head flattens, the acetabulum becomes shallow and degenerative joint disease follows.",
@@ -5321,9 +5321,9 @@ var quizBank = {
         "q": "Internal (obstructive) hydrocephalus most commonly results from:",
         "o": [
           "Stenosis or obstruction of the mesencephalic aqueduct",
-          "Overproduction of CSF by a normal choroid plexus",
-          "Atrophy of the spinal cord",
-          "Meningeal haemorrhage in adults only"
+          "Congenital agenesis of the lateral ventricle ependyma",
+          "Excessive hypersecretion of CSF by the choroid plexus",
+          "Defective reabsorption of CSF at arachnoid granulations"
         ],
         "a": 0,
         "e": "CSF accumulates in the ventricles above the block; the ventricles dilate and the cerebral cortex becomes thinned.",
@@ -5335,9 +5335,9 @@ var quizBank = {
         "q": "Neurological canine distemper is characterised in the brain by:",
         "o": [
           "Demyelinating leukoencephalomyelitis, especially in the cerebellar white matter",
-          "Spongiform vacuolation of neurons",
-          "Suppurative meningitis with bacteria",
-          "Laminar cortical necrosis"
+          "Spongiform neuronal vacuolation restricted exclusively to the brainstem nuclei",
+          "Suppurative neutrophilic leptomeningitis with extensive cerebral cortical lysis",
+          "Extensive laminar cortical necrosis accompanied by severe astrocytic scar tissue"
         ],
         "a": 0,
         "e": "Virus infects astrocytes and oligodendrocytes, causing demyelination; inclusions are seen in astrocytes.",
@@ -5349,9 +5349,9 @@ var quizBank = {
         "q": "'Neuronophagia' in the central nervous system refers to:",
         "o": [
           "Phagocytosis of dead neurons by microglia",
-          "Proliferation of astrocytes",
-          "Loss of myelin",
-          "Swelling of axons"
+          "Perivascular cuffing by mononuclear cells",
+          "Astrocytic hypertrophy forming glial scar",
+          "Axonal spheroids along degenerating paths"
         ],
         "a": 0,
         "e": "Microglia cluster around and remove dying neurons — typical of viral encephalitis such as rabies. Satellitosis is glial cells surrounding a neuron.",
@@ -5363,9 +5363,9 @@ var quizBank = {
         "q": "Hansen type I intervertebral disc extrusion is most common in:",
         "o": [
           "Chondrodystrophic breeds such as Dachshund and Pekingese",
-          "Giant breeds such as Great Dane only",
-          "Cats",
-          "Horses"
+          "Non-chondrodystrophic breeds such as adult German Shepherds",
+          "Brachycephalic breeds presenting with hemivertebra defects",
+          "Giant dog breeds exhibiting chronic annulus fibrosus bulge"
         ],
         "a": 0,
         "e": "Early chondroid degeneration and mineralisation of the nucleus pulposus lead to acute extrusion of disc material, compressing the spinal cord.",
@@ -5377,9 +5377,9 @@ var quizBank = {
         "q": "Acute bovine pulmonary oedema and emphysema ('fog fever') occurs in cattle moved onto lush pasture because:",
         "o": [
           "L-tryptophan is converted in the rumen to 3-methylindole, which damages type I pneumocytes and Clara cells",
-          "Of Mannheimia haemolytica infection",
-          "Of lungworm larvae migration",
-          "Of selenium deficiency"
+          "Lush pasture grasses produce high levels of 4-ipomeanol, which is directly metabolized into toxic furans",
+          "Rumen bacteria produce excessive lactic acid that is absorbed systemically and destroys pulmonary capillaries",
+          "Immature lungworm larvae migrate en masse through alveolar walls triggering acute type I hypersensitivity"
         ],
         "a": 0,
         "e": "3-methylindole is activated in the lung, causing interstitial pneumonia with oedema, emphysema and hyaline membranes.",
@@ -5391,9 +5391,9 @@ var quizBank = {
         "q": "Embolic pneumonia, with multiple abscesses distributed throughout all lung lobes, is typically seen in cattle with:",
         "o": [
           "Caudal vena caval thrombosis secondary to liver abscesses",
-          "Shipping fever",
-          "Lungworm infection",
-          "Fog fever"
+          "Acute fibrinous shipping fever caused by Mannheimia strains",
+          "Dictyocaulus viviparus infestation of caudal lung margins",
+          "Inhalation of chemical regurgitated ruminal lactic fluids"
         ],
         "a": 0,
         "e": "Septic emboli from a thrombus in the caudal vena cava lodge randomly in the lungs; rupture of pulmonary arteries may cause epistaxis and haemoptysis.",
@@ -5447,9 +5447,9 @@ var quizBank = {
         "q": "Aortic 'saddle thrombus', causing sudden hind-limb paralysis in cats, is most commonly associated with:",
         "o": [
           "Hypertrophic cardiomyopathy with left atrial dilatation",
-          "Endocardiosis of the tricuspid valve",
-          "Heartworm disease",
-          "Pericarditis"
+          "Vegetative bacterial endocarditis of the tricuspid cusp",
+          "Dirofilaria immitis adult worms residing in the vena cava",
+          "Idiopathic immune-mediated systemic necrotizing vasculitis"
         ],
         "a": 0,
         "e": "Blood stasis in a dilated left atrium forms thrombi that embolise to the aortic bifurcation.",
@@ -5475,9 +5475,9 @@ var quizBank = {
         "q": "At necropsy, a 'bloat line' in the oesophagus of a cow indicates that bloat occurred before death. It consists of:",
         "o": [
           "Congested cervical oesophagus sharply demarcated from a pale, blanched thoracic oesophagus",
-          "Uniform pallor of the entire oesophagus",
-          "Ulcers along the oesophagus",
-          "Fibrin deposits on the oesophageal serosa"
+          "Pale, ischemic cervical oesophagus contrasting sharply with a severely engorged thoracic portion",
+          "Diffuse mucosal ulceration extending along the entire length of the mucosal lining tissue",
+          "Linear submucosal emphysema accompanied by thick fibrinonecrotic pseudomembranous exudate"
         ],
         "a": 0,
         "e": "Pressure from the distended rumen squeezes blood out of the thoracic oesophagus, while the cervical part stays congested — evidence of antemortem ruminal tympany.",
@@ -5489,9 +5489,9 @@ var quizBank = {
         "q": "Gastric dilatation-volvulus (GDV) occurs most commonly in:",
         "o": [
           "Large, deep-chested dog breeds",
-          "Toy dog breeds",
-          "Cats",
-          "Young calves"
+          "Small, brachycephalic dog lines",
+          "Chondrodystrophic puppy litters",
+          "Young domestic feline neonates"
         ],
         "a": 0,
         "e": "The stomach dilates with gas and rotates on its axis, causing venous obstruction, shock and gastric wall necrosis; the spleen often twists with it.",
@@ -5503,9 +5503,9 @@ var quizBank = {
         "q": "A congenital portosystemic shunt in young dogs typically results in:",
         "o": [
           "A small liver (microhepatica) and hepatic encephalopathy",
-          "An enlarged fatty liver",
-          "Obstructive jaundice",
-          "Liver abscesses"
+          "Marked hepatomegaly with diffuse microvesicular steatosis",
+          "Severe obstructive cholestasis and post-hepatic jaundice",
+          "Massive centrilobular coagulative necrosis with ascites"
         ],
         "a": 0,
         "e": "Portal blood bypasses the liver, so the liver fails to grow and ammonia reaches the brain, causing neurological signs after meals. Ammonium biurate crystals may appear in urine.",
@@ -5517,9 +5517,9 @@ var quizBank = {
         "q": "Left displacement of the abomasum in dairy cows occurs most often:",
         "o": [
           "Within the first few weeks after calving in high-yielding cows",
-          "In calves at birth",
-          "In bulls",
-          "In dry cows in mid-pregnancy"
+          "During mid-pregnancy in pasture-fed heifers without concentrates",
+          "In neonatal calves immediately upon receiving initial colostrum",
+          "Exclusively in adult breeding bulls during strenuous mounting acts"
         ],
         "a": 0,
         "e": "After calving, the abomasum becomes atonic (associated with hypocalcaemia, ketosis and concentrate feeding) and gas-filled; it moves up the left side between the rumen and body wall.",
@@ -5531,9 +5531,9 @@ var quizBank = {
         "q": "End-stage kidneys due to chronic interstitial nephritis are grossly:",
         "o": [
           "Small, pale, firm, with an irregular pitted surface",
-          "Large, dark and soft",
-          "Enlarged with a smooth, yellow surface",
-          "Normal in size with red streaks"
+          "Enlarged, soft, congested, with petechial hemorrhages",
+          "Markedly swollen, yellowish, with a smooth moist cortex",
+          "Normal in dimensions, showing dark diffuse red bands"
         ],
         "a": 0,
         "e": "Loss of nephrons with interstitial fibrosis shrinks and scars the kidney; the capsule adheres to the cortex.",
@@ -5545,9 +5545,9 @@ var quizBank = {
         "q": "Extra-renal lesions of uraemia in dogs include:",
         "o": [
           "Ulcerative stomatitis, ulcerative gastritis and mineralisation of the stomach and lungs",
-          "Hepatic lipidosis only",
-          "Skeletal muscle hypertrophy",
-          "Splenic amyloidosis"
+          "Widespread hepatic centrilobular lipidosis, splenic thrombosis, and skeletal osteopenia",
+          "Proliferative enteritis, severe myocardial hypertrophy, and systemic amyloid deposits",
+          "Pancreatic islet amyloidosis, splenic hemosiderosis, and severe diffuse muscle atrophy"
         ],
         "a": 0,
         "e": "Urea breaks down to ammonia in saliva and the stomach, causing ulcers; vascular injury and high calcium-phosphorus product cause soft tissue mineralisation.",
@@ -5559,9 +5559,9 @@ var quizBank = {
         "q": "Follicular ovarian cysts in cows are defined as:",
         "o": [
           "Anovulatory follicles over 2.5 cm persisting for 10 days or more, often causing irregular oestrus or nymphomania",
-          "A normal corpus luteum",
-          "Cysts of the oviduct",
-          "Neoplasms of the ovary"
+          "Persistent corpora lutea failing to undergo physiological luteolysis at cycle end, producing prolonged anestrus",
+          "Parovarian retention cysts originating from mesonephric duct remnants situated within the broad ligament stroma",
+          "Malignant granulosa cell tumors displaying Call-Exner bodies and excessive secretion of systemic inhibin hormone"
         ],
         "a": 0,
         "e": "Failure of the LH surge prevents ovulation; the cyst may secrete oestrogen, causing frequent or continuous oestrus.",
@@ -5573,9 +5573,9 @@ var quizBank = {
         "q": "A cryptorchid (retained) testis in dogs:",
         "o": [
           "Has a much higher risk of Sertoli cell tumour and seminoma",
-          "Is protected from neoplasia by body heat",
-          "Produces normal spermatozoa",
-          "Is always removed spontaneously"
+          "Is protected from neoplastic transformation by warm body heat",
+          "Maintains full spermatogenesis with normal fertile sperm count",
+          "Spontaneously descends into scrotal sac during sexual maturity"
         ],
         "a": 0,
         "e": "Higher abdominal temperature impairs spermatogenesis, and the risk of testicular tumours is greatly increased.",
@@ -5587,9 +5587,9 @@ var quizBank = {
         "q": "Dermatophilosis ('rain scald', 'strawberry foot rot') caused by Dermatophilus congolensis is recognised microscopically by:",
         "o": [
           "Branching filaments dividing into parallel rows of coccoid cells ('railway-track' appearance)",
-          "Acid-fast rods",
-          "Septate hyphae branching at 45°",
-          "Budding yeasts"
+          "Thin non-branching acid-fast rods tightly packed within the cytoplasm of epithelioid macrophages",
+          "Broad septate fungal hyphae displaying prominent acute-angle dichotomous branching patterns",
+          "Round budding yeast cells surrounded by wide, clear, non-staining mucopolysaccharide capsules"
         ],
         "a": 0,
         "e": "Paintbrush-like crusts form on the back after prolonged wetting; the organism is seen in stained smears of crusts.",
@@ -5601,9 +5601,9 @@ var quizBank = {
         "q": "Keratoconjunctivitis sicca ('dry eye') in dogs results from:",
         "o": [
           "Deficient aqueous tear production",
-          "Excess tear production",
-          "Bacterial infection of the lens",
-          "Increased intraocular pressure"
+          "Excessive lacrimal gland secretion",
+          "Elevated intraocular fluid pressure",
+          "Purulent bacterial endophthalmitis"
         ],
         "a": 0,
         "e": "Often immune-mediated destruction of lacrimal glands; the cornea becomes dry, dull, vascularised and pigmented, with mucoid discharge.",
@@ -7091,9 +7091,9 @@ var quizBank = {
         "q": "Neoplasia was defined by Sir Rupert Willis as an abnormal mass of tissue, the growth of which:",
         "o": [
           "Exceeds and is uncoordinated with that of normal tissues, persisting after cessation of stimuli",
-          "Is completely reversible once the initiating irritant is removed",
-          "Is strictly non-clonal in origin",
-          "Always develops metastases to distant organs"
+          "Remains strictly dependent on hormonal stimulation and regresses after removal of the inciting agent",
+          "Is characterized by orderly cellular hyperplasia that ceases following withdrawal of injury",
+          "Exhibits reversible physiological hypertrophy in response to increased functional load and stress"
         ],
         "a": 0,
         "e": "Willis' classic definition emphasizes autonomy, uncoordinated growth, and persistence after stimulus removal.",
@@ -7105,9 +7105,9 @@ var quizBank = {
         "q": "Anaplasia, the fundamental microscopic hallmark of malignant neoplasms, is characterized by all EXCEPT:",
         "o": [
           "Strict maintenance of uniform cell size and normal nuclear-to-cytoplasmic ratio",
-          "Pleomorphism (variation in size and shape of cells and nuclei)",
-          "Hyperchromatism with prominent coarse nucleoli",
-          "Atypical, bizarre mitotic figures"
+          "Marked cellular and nuclear pleomorphism with prominent variation in shape and size",
+          "Nuclear hyperchromatism due to abundant chromatin with multiple prominent nucleoli",
+          "Presence of bizarre, atypical mitotic figures including multipolar spindle formations"
         ],
         "a": 0,
         "e": "Anaplasia implies dedifferentiation with loss of uniformity, pleomorphism, and elevated N:C ratio.",
@@ -7119,9 +7119,9 @@ var quizBank = {
         "q": "Benign tumours are clinically and microscopically distinguished from malignant tumours by:",
         "o": [
           "Slow, expansile, encapsulated growth with no invasion or metastasis",
-          "Infiltrative borders with frequent vascular permeation",
-          "Presence of widespread regional lymph node metastases",
-          "Marked nuclear atypia and tripolar mitoses"
+          "Rapid, infiltrative invasion into surrounding stroma and lymphatics",
+          "Infiltrative borders with frequent vascular permeation and embolism",
+          "Early hematogenous dissemination producing distant secondary colonies"
         ],
         "a": 0,
         "e": "Benign tumours remain localized, grow by expansion, are usually encapsulated, and do not metastasize.",
@@ -7147,9 +7147,9 @@ var quizBank = {
         "q": "Sarcomas (malignant mesenchymal tumours) typically prefer which primary route of distant metastasis?",
         "o": [
           "Hematogenous route via thin-walled veins to lungs",
-          "Lymphatic vessels to superficial nodes",
-          "Trans-synovial migration",
-          "Retrograde cerebrospinal fluid flow"
+          "Lymphatic permeation to regional drainage nodes",
+          "Transcoelomic seeding across peritoneal cavities",
+          "Direct perineural invasion along local nerve trunks"
         ],
         "a": 0,
         "e": "Sarcoma cells invade thin-walled capillaries and venules, shedding directly into venous return to lodge in the lungs.",
@@ -7175,9 +7175,9 @@ var quizBank = {
         "q": "Enzootic bovine hematuria and urinary bladder carcinomas in cattle are etiologically caused by grazing:",
         "o": [
           "Bracken fern (Pteridium aquilinum) containing ptaquiloside, synergistic with BPV-2",
-          "Lantana camara",
-          "Senecio jacobaea",
-          "Crotalaria spectabilis"
+          "Lantana camara containing lantadene A and B, producing severe hepatogenic photosensitization",
+          "Senecio jacobaea containing pyrrolizidine alkaloids, inducing hepatic megalocytosis",
+          "Crotalaria spectabilis containing monocrotaline, producing severe pulmonary hypertension"
         ],
         "a": 0,
         "e": "Ptaquiloside from bracken fern induces bladder urothelial carcinomas in concert with Bovine Papillomavirus-2.",
@@ -7189,9 +7189,9 @@ var quizBank = {
         "q": "Which tumour suppressor gene is known as the 'Guardian of the Genome' and is most frequently mutated in animal cancers?",
         "o": [
           "p53 (TP53)",
-          "HER2/neu",
-          "RAS",
-          "c-MYC"
+          "RB1 (p105)",
+          "p16 (INK4a)",
+          "p21 (WAF1)"
         ],
         "a": 0,
         "e": "p53 arrests the cell cycle at G1/S upon DNA damage or induces apoptosis if repair fails.",
@@ -7203,9 +7203,9 @@ var quizBank = {
         "q": "The TNM system for clinical cancer staging evaluates which three parameters?",
         "o": [
           "Tumour size/depth (T), Regional lymph Node involvement (N), Distant Metastasis (M)",
-          "Time of onset (T), Necrosis score (N), Mitotic count (M)",
-          "Toxic grade (T), Nuclear grade (N), Margin clearance (M)",
-          "Thickness (T), Neutrophil density (N), Morphology (M)"
+          "Time course/duration (T), Nuclear atypia grade (N), Mitotic figure frequency (M)",
+          "Tissue differentiation (T), Necrosis extent/score (N), Microscopic margin status (M)",
+          "Tumour vascularity index (T), Neovascular density (N), Microvascular invasion (M)"
         ],
         "a": 0,
         "e": "TNM is the international standard staging system assessing local primary tumor, node status, and distant metastasis.",
@@ -7217,9 +7217,9 @@ var quizBank = {
         "q": "Tumour grading, unlike clinical staging, is determined by:",
         "o": [
           "Histopathological degree of anaplasia, mitotic rate, and tissue differentiation under the microscope",
-          "Physical palpation and CT scan measurement of tumor size",
-          "Presence of lung metastases on radiographs",
-          "Duration of clinical signs reported by the owner"
+          "Clinical measurement of primary tumour diameter and physical palpation of regional lymph node beds",
+          "Diagnostic imaging evaluation of distant organ metastasis using thoracic radiographs and sonography",
+          "Surgical assessment of gross tissue invasion and anatomical extent of regional lymphatic involvement"
         ],
         "a": 0,
         "e": "Grading is a histological assessment performed by a pathologist; staging is clinical assessment of anatomical spread.",
@@ -7231,9 +7231,9 @@ var quizBank = {
         "q": "Cancer cachexia (progressive wasting in cancer patients) is primarily driven by pro-inflammatory cytokines such as:",
         "o": [
           "TNF-alpha (cachectin), IL-1, and IL-6",
-          "Insulin-like growth factor-1",
-          "Epidermal growth factor",
-          "Histamine and serotonin"
+          "Insulin-like growth factor-1 and IGF-2",
+          "Transforming growth factor-beta & IL-10",
+          "Epidermal growth factor and FGF-basic"
         ],
         "a": 0,
         "e": "TNF-alpha and IL-1 mobilize adipose and skeletal muscle protein, inducing anorexia, hypermetabolism, and wasting.",
@@ -7245,9 +7245,9 @@ var quizBank = {
         "q": "Hypercalcaemia of malignancy in dogs with apocrine gland anal sac adenocarcinoma or lymphoma is caused by tumour secretion of:",
         "o": [
           "Parathyroid Hormone-related Protein (PTHrP)",
-          "Thyrocalcitonin",
-          "Aldosterone",
-          "Erythropoietin"
+          "Calcitonin-gene-related peptide alpha (CGRP)",
+          "Insulin-like growth factor binding protein-3",
+          "Thyrocalcitonin from parafollicular C-cells"
         ],
         "a": 0,
         "e": "PTHrP binds to PTH receptors on osteoclasts, stimulating massive bone resorption and humoral hypercalcaemia.",
@@ -7259,9 +7259,9 @@ var quizBank = {
         "q": "A choristoma is pathologically defined as:",
         "o": [
           "A mass of histologically normal tissue in an abnormal anatomical location (heterotopic rest)",
-          "A disorganized focal overgrowth of mature normal tissue native to that organ",
-          "A malignant teratoma with tri-germinal differentiation",
-          "A benign glandular neoplasm"
+          "A benign, focal, disorganized overgrowth of mature cells and tissues native to that anatomic organ",
+          "A neoplastic teratoma composed of multiple tissues derived from all three embryonic germ layers",
+          "A localized cystic malformation caused by developmental dilation of vestigial branchial ducts"
         ],
         "a": 0,
         "e": "Choristoma is normal tissue in the wrong place (e.g., corneal dermoid with hair follicles on the eye).",
@@ -7273,9 +7273,9 @@ var quizBank = {
         "q": "A hamartoma is defined as:",
         "o": [
           "A benign, focal, disorganized overgrowth of mature cells and tissues normally present at that site",
-          "A metastatic focus of adenocarcinoma",
-          "A congenital cystic remnant of the thyroglossal duct",
-          "A malignant mesenchymal tumour of blood vessels"
+          "An ectopic aggregate of histologically normal mature tissue situated at an abnormal anatomical site",
+          "A true tri-germinal neoplasm containing foreign tissues derived from all three embryonic germ layers",
+          "A malignant infiltrative mesenchymal tumour displaying rapid destructive growth and early metastasis"
         ],
         "a": 0,
         "e": "Hamartomas are developmental anomalies native to the organ (e.g., vascular hamartoma, pulmonary chondroid hamartoma).",
@@ -7287,9 +7287,9 @@ var quizBank = {
         "q": "Tumour-associated neoangiogenesis is critically mediated by which endothelial mitogen secreted by hypoxic tumor cells?",
         "o": [
           "Vascular Endothelial Growth Factor (VEGF)",
-          "Platelet-Derived Growth Factor only",
-          "Interferon-gamma",
-          "Tumour Necrosis Factor-beta"
+          "Platelet-Derived Growth Factor subunit BB",
+          "Fibroblast Growth Factor basic form (bFGF)",
+          "Transforming Growth Factor-beta (TGF-beta)"
         ],
         "a": 0,
         "e": "Hypoxia triggers HIF-1-alpha, driving VEGF secretion to sprout new, leaky capillaries to feed expanding tumours.",
@@ -7301,9 +7301,9 @@ var quizBank = {
         "q": "Malignant tumours degrade extracellular matrix and basement membranes to invade tissue using which family of enzymes?",
         "o": [
           "Matrix Metalloproteinases (MMPs, e.g. gelatinases, collagenases)",
-          "Lysozyme",
-          "Amylase",
-          "Lipoprotein lipase"
+          "Tissue Inhibitors of Metalloproteinases (TIMP-1 and TIMP-2 class)",
+          "Lysosomal acid hydrolases and glycosaminoglycan endopeptidases",
+          "Serine proteases and urokinase-type plasminogen activator receptor"
         ],
         "a": 0,
         "e": "MMP-2 and MMP-9 (gelatinases) digest Type IV collagen of basement membranes, permitting tumor cell invasion.",
@@ -7329,9 +7329,9 @@ var quizBank = {
         "q": "A benign tumour arising from stratified squamous epithelium forming finger-like projections is a:",
         "o": [
           "Papilloma",
-          "Adenoma",
-          "Polyp",
-          "Fibroma"
+          "Carcinoma",
+          "Acanthoma",
+          "Hamartoma"
         ],
         "a": 0,
         "e": "Papillomas are benign epithelial projections with a vascular connective tissue core covered by stratified squamous epithelium.",
@@ -7343,9 +7343,9 @@ var quizBank = {
         "q": "Squamous cell carcinoma (SCC) is histopathologically recognized by the diagnostic presence of:",
         "o": [
           "Keratin pearls (epithelial pearls) and intercellular bridges (desmosomes)",
-          "Intracellular mucin droplets displacing the nucleus",
-          "Whorls of mature spindle-shaped fibrocytes",
-          "Sheets of round cells with metachromatic granules"
+          "Signet-ring cells containing abundant intracellular mucin displacing nuclei",
+          "Tubuloacinar structures surrounded by dense scirrhous collagenous stroma",
+          "Sheets of polyhedral cells with prominent cytoplasmic metachromatic granules"
         ],
         "a": 0,
         "e": "Concentric lamellae of eosinophilic keratin (keratin pearls) and intercellular bridges confirm squamous differentiation.",
@@ -7371,9 +7371,9 @@ var quizBank = {
         "q": "Canine Transmissible Venereal Tumour (CTVT) cells possess a characteristic karyotype containing:",
         "o": [
           "57 to 59 chromosomes (normal dog karyotype is 78)",
-          "78 normal chromosomes",
-          "38 chromosomes",
-          "102 chromosomes"
+          "78 normal acrocentric chromosomes (standard dog)",
+          "38 normal diploid chromosomes (standard cat count)",
+          "68 to 70 chromosomes (abnormal hyperdiploid set)"
         ],
         "a": 0,
         "e": "CTVT is a naturally transmitted cellular allograft with 57-59 chromosomes bearing an LINE-1 insertion near the c-myc oncogene.",
@@ -7385,9 +7385,9 @@ var quizBank = {
         "q": "Cytologically, CTVT round cells are classically described as having:",
         "o": [
           "Centrally located round nuclei with prominent nucleoli and pale blue cytoplasm containing distinct clear vacuoles",
-          "Spindle-shaped nuclei with abundant pink collagen bundles",
-          "Deeply basophilic cytoplasm with dark metachromatic granules",
-          "Multinucleated syncytia with nuclear moulding"
+          "Eccentrically located round nuclei with clock-face chromatin, perinuclear clear halo, and deeply basophilic cytoplasm",
+          "Pleomorphic indented nuclei with pale eosinophilic cytoplasm densely packed with purple metachromatic granules",
+          "Scant pale cytoplasm with large clefted nuclei, multiple coarse nucleoli, and numerous lymphoglandular bodies"
         ],
         "a": 0,
         "e": "CTVT round cells have crisp margins, pale blue cytoplasm, and distinctive lipid-like clear vacuoles.",
@@ -7399,9 +7399,9 @@ var quizBank = {
         "q": "Mast cell tumours (MCT) in dogs are identified histochemically by staining their cytoplasmic granules purple with:",
         "o": [
           "Toluidine Blue or Giemsa (metachromatic staining)",
-          "Periodic Acid-Schiff",
-          "Prussian Blue",
-          "Congo Red"
+          "Periodic Acid-Schiff (PAS) for glycogen staining",
+          "Prussian Blue stain (detecting ferric hemosiderin)",
+          "Masson's Trichrome (highlighting collagen fibers)"
         ],
         "a": 0,
         "e": "Heparin in mast cell granules stains metachromatically (purple-red) with toluidine blue or Romanowsky stains.",
@@ -7413,9 +7413,9 @@ var quizBank = {
         "q": "The degranulation of canine mast cell tumours releases histamine, predisposing the dog to which gastrointestinal complication?",
         "o": [
           "Gastroduodenal ulceration",
-          "Megacolon",
-          "Intussusception",
-          "Salivary mucocele"
+          "Acute hemorrhagic colitis",
+          "Ileocecal intussusception",
+          "Esophageal diverticulosis"
         ],
         "a": 0,
         "e": "Systemic histamine binds gastric H2 receptors, stimulating massive HCl secretion and resulting in severe peptic ulceration.",
@@ -7427,9 +7427,9 @@ var quizBank = {
         "q": "Fibrosarcoma is histologically characterized by neoplastic spindle cells arranged in:",
         "o": [
           "Interlacing bundles and a 'herringbone' pattern with abundant collagen",
-          "Concentric perivascular whorls",
-          "Solid sheets of round cells with eccentric nuclei",
-          "Tubular glands lined by columnar epithelium"
+          "Concentric whorls around blood vessels with onion-skin lamellar arrays",
+          "Palisading rows of nuclei flanking fibrillar zones (Antoni A and B)",
+          "Woven streams of pleomorphic cells producing unmineralized bony osteoid"
         ],
         "a": 0,
         "e": "Malignant fibroblasts produce collagen fibrils and arrange in distinctive intersecting herringbone fascicles.",
@@ -7441,9 +7441,9 @@ var quizBank = {
         "q": "Haemangiosarcoma in dogs has the highest primary incidence in which two anatomical locations?",
         "o": [
           "Spleen and Right Atrium of the heart",
-          "Lungs and Kidneys",
-          "Skin and Subcutis of extremities",
-          "Testis and Prostate"
+          "Liver and Left Ventricle of the heart",
+          "Lungs and Renal Cortex bilaterally",
+          "Skin and Subcutaneous adipose tissue"
         ],
         "a": 0,
         "e": "Canine haemangiosarcoma originates in splenic red pulp and right atrial auricle, predisposing to hemoperitoneum/hemopericardium.",
@@ -7455,9 +7455,9 @@ var quizBank = {
         "q": "Osteosarcoma in large and giant breed dogs occurs with highest frequency at which skeletal sites?",
         "o": [
           "'Away from the elbow, towards the knee' (proximal humerus, distal radius, distal femur, proximal tibia)",
-          "Mid-diaphysis of the femur and humerus",
-          "Cervical vertebrae and ribs",
-          "Mandible and maxilla only"
+          "'Towards the elbow, away from the knee' (distal humerus, proximal radius, proximal femur, distal tibia)",
+          "Axial skeleton locations predominantly (mandible, maxilla, cervical vertebrae, and costochondral junctions)",
+          "Mid-diaphyseal cortical shafts of long bones (mid-femur, mid-humerus, mid-radius, and mid-tibial shaft)"
         ],
         "a": 0,
         "e": "Canine osteosarcoma predilection sites: distal radius, proximal humerus, distal femur, and proximal tibia ('away from elbow, towards knee').",
@@ -7469,9 +7469,9 @@ var quizBank = {
         "q": "The definitive histopathological criterion for diagnosing osteosarcoma is:",
         "o": [
           "Production of unmineralized osteoid directly by malignant mesenchymal cells",
-          "Presence of multinucleated osteoclasts",
-          "Extensive cartilage matrix with lacunae",
-          "Bone necrosis with reactive osteosclerosis"
+          "Presence of abundant multinucleated osteoclasts within necrotic bone matrix",
+          "Formation of mature hyaline cartilage lobules bordered by periosteal bone",
+          "Extensive cortical lysis accompanied by exuberant reactive subperiosteal bone"
         ],
         "a": 0,
         "e": "Malignant osteoblasts producing amorphous eosinophilic osteoid directly is the pathognomonic diagnostic criterion.",
@@ -7483,9 +7483,9 @@ var quizBank = {
         "q": "Melanocytic tumours in horses (melanoma) are extremely common in older animals with which coat color?",
         "o": [
           "Grey (especially around perineum, tail base, and parotid gland)",
-          "Chestnut",
-          "Bay",
-          "Black"
+          "Chestnut (predominantly involving the distal limb extremities)",
+          "Bay (most frequently observed along the dorsum and flank region)",
+          "Black (predominantly affecting ocular and oral mucous membranes)"
         ],
         "a": 0,
         "e": "Over 80% of grey horses older than 15 years develop dermal melanocytic tumours at the perineum and tail base.",
@@ -7497,9 +7497,9 @@ var quizBank = {
         "q": "Which immunohistochemical marker is widely used as a specific intermediate filament marker for epithelial carcinomas?",
         "o": [
           "Cytokeratin",
-          "Vimentin",
-          "Desmin",
-          "S-100"
+          "Calretinin",
+          "Chromogranin",
+          "Peripherin"
         ],
         "a": 0,
         "e": "Cytokeratins identify epithelial cells/carcinomas; vimentin identifies mesenchymal cells/sarcomas.",
@@ -7553,9 +7553,9 @@ var quizBank = {
         "q": "Adenocarcinomas of glandular organs often elicit a dense, hard, fibrous connective tissue stroma, a phenomenon termed:",
         "o": [
           "Desmoplasia (scirrhous reaction)",
-          "Acantholysis",
-          "Spongiosis",
-          "Metaplasia"
+          "Metaplasia with stromal fibrosis",
+          "Acantholysis with cleft formation",
+          "Carcinomatosis (coelomic seeding)"
         ],
         "a": 0,
         "e": "Desmoplasia is tumor-induced fibrous proliferation, giving scirrhous carcinomas their stony-hard consistency.",
@@ -7567,9 +7567,9 @@ var quizBank = {
         "q": "Equine sarcoid is a locally aggressive cutaneous fibroblastic tumour caused by infection with:",
         "o": [
           "Bovine Papillomavirus types 1 and 2 (BPV-1 and BPV-2)",
-          "Equine Herpesvirus-1",
-          "Equine Papillomavirus-1",
-          "Equine Arteritis Virus"
+          "Equine Papillomavirus types 1 and 2 (EcPV-1 and EcPV-2)",
+          "Equine Herpesvirus types 1 and 4 (EHV-1 and EHV-4 alpha)",
+          "Equine Infectious Anemia Lentivirus (EIA retrovirus)"
         ],
         "a": 0,
         "e": "Cross-species infection of horses by Bovine Papillomavirus 1 or 2 drives the proliferation of dermal fibroblasts.",
@@ -7581,9 +7581,9 @@ var quizBank = {
         "q": "Lipomas in domestic animals are benign mesenchymal tumours composed of mature:",
         "o": [
           "Adipocytes containing a single large lipid droplet displacing the nucleus",
-          "Chondrocytes with pericellular lacunae",
-          "Endothelial cells forming blood channels",
-          "Smooth muscle fibers in fascicles"
+          "Chondrocytes residing in lacunae surrounded by abundant basophilic matrix",
+          "Fibroblasts arranged in uniform fascicles producing fine reticular fiber",
+          "Leiomyocytes with blunt-ended cigar-shaped nuclei forming interlaced bands"
         ],
         "a": 0,
         "e": "Lipomas are circumscribed, soft, yellow masses of mature adult univacuolar adipocytes.",
@@ -7595,9 +7595,9 @@ var quizBank = {
         "q": "Which anticoagulant is the preferred agent for routine mammalian hematological analysis (CBC) and blood smears?",
         "o": [
           "EDTA (dipotassium or tripotassium)",
-          "Sodium heparin",
-          "Sodium citrate",
-          "Sodium fluoride"
+          "Sodium heparin (mucopolysaccharide)",
+          "Trisodium citrate (buffered solution)",
+          "Sodium fluoride with potassium oxalate"
         ],
         "a": 0,
         "e": "EDTA chelates calcium, preserving cell morphology and staining characteristics without inducing cell clumping.",
@@ -7609,9 +7609,9 @@ var quizBank = {
         "q": "Sodium fluoride is specifically utilized as an anticoagulant/preservative tube for blood collection when testing for:",
         "o": [
           "Blood glucose (inhibits glycolysis by enolase)",
-          "Prothrombin time (PT)",
-          "Platelet count",
-          "Total protein"
+          "Serum calcium (chelates divalent cations fast)",
+          "Blood urea nitrogen (preserves urease activity)",
+          "Prothrombin time (preserves coagulation factor)"
         ],
         "a": 0,
         "e": "Sodium fluoride inhibits enolase in the glycolytic pathway, preventing erythrocytes from consuming glucose in vitro.",
@@ -7623,9 +7623,9 @@ var quizBank = {
         "q": "Packed Cell Volume (PCV) is determined by microhaematocrit centrifugation and represents the:",
         "o": [
           "Percentage of total blood volume occupied by erythrocytes",
-          "Ratio of hemoglobin to total serum protein",
-          "Number of red cells per microliter of blood",
-          "Weight of white cells in the buffy coat"
+          "Absolute mass of hemoglobin contained in circulating blood",
+          "Proportion of whole blood volume occupied by buffy coat",
+          "Ratio of packed red blood cells to total serum proteins"
         ],
         "a": 0,
         "e": "PCV (hematocrit) is the volume fraction of whole blood made up of packed red blood cells.",
@@ -7651,9 +7651,9 @@ var quizBank = {
         "q": "Mean Corpuscular Hemoglobin Concentration (MCHC) is calculated by:",
         "o": [
           "(Hb (g/dL) x 100) / PCV (%)",
-          "(PCV (%) x 10) / TEC",
-          "(Hb (g/dL) x 10) / TEC",
-          "Hb x PCV"
+          "(PCV (%) x 10) / RBC count",
+          "(Hb (g/dL) x 10) / RBC count",
+          "(PCV (%) x 100) / Hb (g/dL)"
         ],
         "a": 0,
         "e": "MCHC (g/dL or %) = [Hb (g/dL) × 100] / PCV (%). Measures hemoglobin concentration per unit volume of packed red cells.",
@@ -7665,9 +7665,9 @@ var quizBank = {
         "q": "Macrocytic, hypochromic anaemia is typically characteristic of:",
         "o": [
           "Active, highly regenerative hemolytic or acute hemorrhagic anaemia",
-          "Chronic iron deficiency anaemia",
-          "Aplastic bone marrow failure",
-          "Chronic renal disease with erythropoietin deficiency"
+          "Chronic iron deficiency anemia with microcytic erythrocyte indices",
+          "Non-regenerative aplastic anemia caused by direct marrow toxicities",
+          "Anemia of chronic renal disease due to deficient erythropoietin output"
         ],
         "a": 0,
         "e": "Regenerating marrow releases young reticulocytes that are larger (high MCV) and have incomplete hemoglobin filling (low MCHC).",
@@ -7707,9 +7707,9 @@ var quizBank = {
         "q": "A 'degenerative left shift' in canine haematology is defined as:",
         "o": [
           "Presence of immature band neutrophils exceeding the number of mature segmented neutrophils, with normal or low total leukocyte count",
-          "Leukocytosis with increased segmented neutrophils only",
-          "Eosinophilia with basophilia",
-          "Elevated lymphocyte count during viral infections"
+          "Marked neutrophilia with band neutrophils present, but mature segmented neutrophils still outnumber bands, with high leukocyte count",
+          "Significant leukocytosis characterized by persistent mature neutrophilia and hypersegmentation of neutrophils with no immature forms",
+          "Severe absolute leukopenia accompanied by marked lymphopenia, monocytopenia, and absence of immature myeloid precursors in circulation"
         ],
         "a": 0,
         "e": "Degenerative left shift indicates overwhelming tissue consumption exceeding bone marrow production, signifying a grave prognosis.",
@@ -7735,9 +7735,9 @@ var quizBank = {
         "q": "Howell-Jolly bodies observed inside erythrocytes represent:",
         "o": [
           "Small, round, dark purple nuclear chromatin remnants",
-          "Precipitated oxidized hemoglobin granules",
-          "Iron storage particles",
-          "Intracellular protozoan trophozoites"
+          "Precipitated oxidized denatured hemoglobin aggregates",
+          "Basophilic ribosomal aggregates due to lead poisoning",
+          "Siderotic iron granules in non-heme ferritin deposits"
         ],
         "a": 0,
         "e": "Howell-Jolly bodies are nuclear fragments retained in young erythrocytes, increased in regenerative anemia or splenectomy.",
@@ -7805,9 +7805,9 @@ var quizBank = {
         "q": "Calcium carbonate crystals resembling 'dumbbells' or radiating spheres are normally abundant in the urine of which species?",
         "o": [
           "Horse",
-          "Dog",
-          "Cat",
-          "Pig"
+          "Sheep",
+          "Goats",
+          "Swine"
         ],
         "a": 0,
         "e": "Equine urine normally contains large quantities of calcium carbonate crystals and mucus, giving it a turbid appearance.",
@@ -7819,9 +7819,9 @@ var quizBank = {
         "q": "Struvite (triple phosphate) urinary crystals exhibit which classic microscopic shape?",
         "o": [
           "'Coffin-lid' prismatic crystals",
-          "Envelope-shaped octahedrons",
-          "Dumbbell-shaped spheres",
-          "Hexagonal plates"
+          "Envelope-like octahedral shapes",
+          "Hexagonal flat refractive plates",
+          "Dumbbell-shaped radiating spheres"
         ],
         "a": 0,
         "e": "Magnesium ammonium phosphate (struvite) crystals precipitate in alkaline urine, resembling 3D coffin-lids.",
@@ -7833,9 +7833,9 @@ var quizBank = {
         "q": "Cellular casts in urine sediments are formed within the lumen of which nephron segments?",
         "o": [
           "Distal convoluted tubules and collecting ducts",
-          "Bowman's space of glomeruli",
-          "Proximal convoluted tubules only",
-          "Urinary bladder and ureters"
+          "Proximal convoluted tubules and descending loop",
+          "Bowman's capsular spaces of renal corpuscles",
+          "Renal pelvis and muscular walls of ureters"
         ],
         "a": 0,
         "e": "Tamm-Horsfall mucoprotein precipitates in distal tubules and collecting ducts, trapping tubular cells, RBCs, or WBCs.",
@@ -7847,9 +7847,9 @@ var quizBank = {
         "q": "Fine Needle Aspiration Cytology (FNAC) is preferred for initial clinical diagnostic workup because it is:",
         "o": [
           "Rapid, minimally invasive, cost-effective, and provides immediate cellular orientation",
-          "Superior to histopathology in grading and staging margins",
-          "Capable of replacing surgical excision biopsies completely in all cases",
-          "A sterile surgical technique performed under general anaesthesia only"
+          "A definitive replacement for histopathology that reliably evaluates all tissue margins",
+          "Superior to core needle biopsy for grading sarcomas and detecting capsule penetration",
+          "A major surgical procedure requiring general anaesthesia and dedicated sterile theatre"
         ],
         "a": 0,
         "e": "FNAC allows rapid aspiration of cells for immediate Romanowsky staining and diagnostic evaluation.",
@@ -7875,9 +7875,9 @@ var quizBank = {
         "q": "In diagnostic cytology, epithelial neoplasms typically exfoliate in:",
         "o": [
           "Cohesive clusters, sheets, or acinar structures with distinct cell borders",
-          "Loose, individualized single cells with eccentric nuclei",
-          "Dispersed spindle cells in faint pink matrix",
-          "Pure multinucleated giant cells"
+          "Individually dispersed discrete round cells with distinct punched-out margins",
+          "Isolated spindle-shaped to fusiform cells embedded in abundant pink matrix",
+          "Dense syncytial sheets of multinucleated cells with indistinct boundaries"
         ],
         "a": 0,
         "e": "Epithelial cells retain intercellular junctions (desmosomes), exfoliating in cohesive clusters, sheets, or glandular balls.",
@@ -7889,9 +7889,9 @@ var quizBank = {
         "q": "Mesenchymal (spindle cell) neoplasms in cytology characteristically exhibit:",
         "o": [
           "Poor exfoliation, with individual or clustered spindle-to-fusiform cells with indistinct borders",
-          "High exfoliation of tight glandular sheets",
-          "Dense sheets of round cells with halo borders",
-          "Abundant floating nuclear chromatin without cytoplasm"
+          "High exfoliation, yielding dense epithelial sheets and cohesive acinar clusters with distinct borders",
+          "Abundant exfoliation of discrete, individualized round cells with sharp borders and bare nuclei",
+          "Copious fluid aspirates consisting predominantly of degenerate neutrophils and necrotic debris"
         ],
         "a": 0,
         "e": "Mesenchymal cells embed in extracellular matrix, exfoliating poorly into oval or spindle cells with wispy tails.",
@@ -7931,9 +7931,9 @@ var quizBank = {
         "q": "Which Romanowsky-type rapid stain is most widely used in veterinary clinical cytology practices?",
         "o": [
           "Diff-Quik (or Leishman / Giemsa)",
-          "Papanicolaou stain",
+          "Papanicolaou multi-step staining",
           "Hematoxylin and Eosin (wet-fixed)",
-          "Mucicarmine"
+          "Toluidine blue aqueous solution"
         ],
         "a": 0,
         "e": "Diff-Quik is a rapid 3-step Romanowsky stain providing excellent nuclear, cytoplasmic, and infectious agent detail on air-dried smears.",
@@ -7945,9 +7945,9 @@ var quizBank = {
         "q": "The gold-standard tissue fixative for routine diagnostic histopathology is:",
         "o": [
           "10% Neutral Buffered Formalin (NBF)",
-          "Absolute alcohol (100% ethanol)",
-          "Bouin's fluid",
-          "Glutaraldehyde (2.5%)"
+          "Absolute alcohol (100% ethanol fix)",
+          "Bouin's picric acid-acetic solution",
+          "Glutaraldehyde 2.5% buffered system"
         ],
         "a": 0,
         "e": "10% NBF (approx 4% formaldehyde) maintains neutral pH, penetrates rapidly, cross-links proteins, and prevents formalin pigment formation.",
@@ -7959,9 +7959,9 @@ var quizBank = {
         "q": "The recommended volumetric ratio of 10% neutral buffered formalin to tissue specimen for adequate fixation is:",
         "o": [
           "10 : 1 to 20 : 1 (formalin volume to tissue volume)",
-          "1 : 1",
-          "2 : 1",
-          "50 : 1"
+          "1 : 1 to 2 : 1 (equal volume of formalin to tissue)",
+          "50 : 1 to 100 : 1 (excessive ratio for large organs)",
+          "3 : 1 to 5 : 1 (suboptimal volume covering specimen)"
         ],
         "a": 0,
         "e": "Adequate fixation requires at least 10 to 20 times the volume of formalin relative to the tissue sample volume.",
@@ -7973,9 +7973,9 @@ var quizBank = {
         "q": "To ensure adequate fixative penetration, solid parenchymal organ tissue slices should not exceed what thickness?",
         "o": [
           "0.5 to 1.0 cm (5 to 10 mm)",
-          "3.0 to 4.0 cm",
-          "Whole intact organ",
-          "2 inches"
+          "2.0 to 3.0 cm (20 to 30 mm)",
+          "4.0 to 5.0 cm (40 to 50 mm)",
+          "1.5 to 2.0 cm (15 to 20 mm)"
         ],
         "a": 0,
         "e": "Formalin penetrates tissue at approximately 1 mm per hour; thick specimens (> 1 cm) suffer central autolysis before fixation.",
@@ -7987,9 +7987,9 @@ var quizBank = {
         "q": "An incisional biopsy differs from an excisional biopsy in that an incisional biopsy removes:",
         "o": [
           "Only a representative portion or wedge of a mass for diagnosis",
-          "The entire tumor mass along with a wide margin of normal tissue",
-          "A core of tissue using a fine 23-gauge needle",
-          "Surface cells collected by scraping"
+          "The complete tumor mass along with a wide cuff of normal margin",
+          "A minute core of tissue using a specialized needle instrument",
+          "Exfoliated surface cells dislodged by scraping with a spatula"
         ],
         "a": 0,
         "e": "Incisional biopsy samples a portion of a lesion; excisional biopsy removes the entire lesion for curative and diagnostic intent.",
@@ -8001,9 +8001,9 @@ var quizBank = {
         "q": "Punch biopsy instruments are most commonly utilized in veterinary medicine for obtaining full-thickness biopsies of:",
         "o": [
           "Skin and superficial cutaneous lesions",
-          "Liver and spleen",
-          "Bone marrow cores",
-          "Cerebral cortex"
+          "Cerebral cortex and meningeal membranes",
+          "Liver parenchyma and splenic red pulp",
+          "Femoral cortical bone and marrow canal"
         ],
         "a": 0,
         "e": "Circular dermal biopsy punches (4-8 mm) yield clean, full-thickness cylindrical samples of epidermis, dermis, and subcutis.",
@@ -8015,9 +8015,9 @@ var quizBank = {
         "q": "Exfoliative cytology of the canine vagina during estrus is dominated by which epithelial cell type (> 90%)?",
         "o": [
           "Superficial (cornified) anuclear or pyknotic squames",
-          "Parabasal cells",
-          "Small intermediate cells",
-          "Erythrocytes only"
+          "Parabasal cells with prominent large vesicular nuclei",
+          "Small intermediate cells with round vesicular nuclei",
+          "Neutrophilic granulocytes and foamy metestrum cells"
         ],
         "a": 0,
         "e": "High estrogen levels during proestrus/estrus drive vaginal epithelial cornification; estrus shows > 90% cornified superficial cells.",
@@ -8029,9 +8029,9 @@ var quizBank = {
         "q": "Impression smear (touch prep) of an ulcerated tissue biopsy should always be preceded by:",
         "o": [
           "Blotting the tissue on clean filter paper to remove excess blood and surface exudate",
-          "Washing the tissue vigorously in hot tap water",
-          "Scraping the tissue vigorously with a dull scalpel",
-          "Fixing the tissue in formalin before touching the slide"
+          "Vigorously washing the specimen under warm running tap water to remove surface crusts",
+          "Fixing the tissue piece in 10% formalin for thirty minutes before contacting slides",
+          "Scraping the cut margin vigorously with a scalpel blade to dislodge adherent stroma"
         ],
         "a": 0,
         "e": "Blotting away blood and fluid allows cells to adhere directly to the glass slide rather than floating in a thick blood film.",
@@ -8043,9 +8043,9 @@ var quizBank = {
         "q": "Bouin's fixative contains picric acid, formalin, and acetic acid, and is the preferred fixative for preserving:",
         "o": [
           "Testicular tissue, eye, and delicate endocrine structures",
-          "Whole brains for BSE testing",
-          "Routine bone specimens",
-          "Frozen sections for Oil Red O"
+          "Bovine brainstem samples submitted for spongiform testing",
+          "Fresh frozen muscle biopsies intended for enzyme testing",
+          "Dense cortical bone specimens prior to formic decalcifying"
         ],
         "a": 0,
         "e": "Bouin's fluid preserves delicate nuclear morphology and prevents shrinkage in testicular and retinal biopsies.",
@@ -8057,9 +8057,9 @@ var quizBank = {
         "q": "Glutaraldehyde (2.5%) is the specialized primary fixative required for:",
         "o": [
           "Transmission and scanning electron microscopy",
-          "Routine light microscopy (H&E)",
-          "Cytogenetic karyotyping",
-          "Polymerase chain reaction (PCR)"
+          "Routine diagnostic light microscopy with H&E",
+          "Fluorescent antibody staining on frozen tissue",
+          "Polymerase chain reaction and DNA sequencing"
         ],
         "a": 0,
         "e": "Glutaraldehyde creates extensive protein cross-links, preserving ultrastructure for electron microscopy.",
@@ -8071,9 +8071,9 @@ var quizBank = {
         "q": "Crush artifact on diagnostic cytology slides is avoided by:",
         "o": [
           "Gently drawing a second slide across the droplet without applying downward compressive pressure",
-          "Vigorously pressing the slides together with thumbs",
-          "Heating the slide rapidly over a Bunsen flame",
-          "Air-drying the smear inside an incubator"
+          "Firmly pressing the two glass slides together between the fingers before rapidly pulling them apart",
+          "Rapidly heat-fixing the wet specimen droplet over an open Bunsen burner flame prior to air-drying",
+          "Applying vigorous downward mechanical pressure on the aspirate using a sterile syringe plunger"
         ],
         "a": 0,
         "e": "Light parallel sliding technique smears cells intact; downward pressure ruptures fragile nuclei into bare 'basket cells'.",
@@ -8085,9 +8085,9 @@ var quizBank = {
         "q": "The presence of phagocytosed red blood cells (erythrophagocytosis) within macrophages in a body cavity fluid indicates:",
         "o": [
           "True antemortem hemorrhage rather than iatrogenic vessel puncture during paracentesis",
-          "Recent vessel laceration by the aspirating needle",
-          "Primary bacterial peritonitis",
-          "Severe hypoproteinemic transudation"
+          "Recent iatrogenic vessel laceration produced by the aspirating needle during centesis",
+          "Septic suppurative exudation caused by acute rupture of an internal abdominal viscus",
+          "Pure hypoproteinemic transudation resulting from severe hepatic cirrhosis or nephrosis"
         ],
         "a": 0,
         "e": "Macrophages require several hours to engulf RBCs; erythrophagocytosis or hemosiderin confirms prior in vivo bleeding.",
@@ -8099,9 +8099,9 @@ var quizBank = {
         "q": "Before commencing any post-mortem examination, the prosector MUST first thoroughly verify:",
         "o": [
           "Complete clinical history, owner identity, animal tag/marks, and that the animal is truly dead",
-          "That histological fixative has already been injected into the brain",
-          "That the body has undergone complete putrefactive autolysis",
-          "That an embalming fluid has been perfused"
+          "That chemical embalming fluid has already been completely perfused through major arterial trunks",
+          "That complete putrefactive autolysis has occurred throughout all parenchymal organ systems",
+          "That high concentrations of neutral formalin fixative have been infused into the cranial case"
         ],
         "a": 0,
         "e": "Verification of animal identity, owner consent, history, and irreversible death (loss of corneal reflex, heartbeat) is mandatory.",
@@ -8113,9 +8113,9 @@ var quizBank = {
         "q": "If Anthrax (Bacillus anthracis) is suspected in a dead ruminant, the necropsy procedure MUST:",
         "o": [
           "NOT be performed; the carcass must not be opened, and a peripheral blood smear from an ear vein should be examined",
-          "Be performed immediately in an open field",
-          "Involve rapid boiling of all internal organs",
-          "Be restricted to opening only the thoracic cavity"
+          "Be initiated immediately in an open grazing pasture to rapidly harvest internal parenchymal organs for bacteriology",
+          "Be restricted strictly to opening the thoracic cavity while avoiding exposure or incisions into abdominal viscera",
+          "Include thorough high-temperature boiling of all intact viscera inside an autoclave before diagnostic inspection"
         ],
         "a": 0,
         "e": "Opening an anthrax carcass exposes vegetative bacilli to atmospheric oxygen, inducing virulent, persistent spore formation.",
@@ -8127,9 +8127,9 @@ var quizBank = {
         "q": "During ruminant necropsy, the carcass is conventionally placed in which recumbency?",
         "o": [
           "Left lateral recumbency (so the massive rumen lies underneath on the left side)",
-          "Right lateral recumbency",
-          "Dorsal recumbency",
-          "Sternal recumbency"
+          "Right lateral recumbency (so the rumen is positioned uppermost for inspection)",
+          "Dorsal recumbency in v-troughs (to facilitate ventral midline body exploration)",
+          "Sternal recumbency with legs flexed (to allow dorsal access to vertebral column)"
         ],
         "a": 0,
         "e": "Placing cattle/sheep on the left side keeps the rumen on the table, allowing clean view of intestines, liver, and right kidney.",
@@ -8141,9 +8141,9 @@ var quizBank = {
         "q": "Equine necropsy is conventionally performed with the horse placed in:",
         "o": [
           "Right lateral recumbency (so the massive cecum and right colon lie downward initially)",
-          "Left lateral recumbency only",
-          "Dorsal recumbency suspended by hooves",
-          "Ventral sternal position"
+          "Left lateral recumbency (so the massive cecum and ventral colon lie uppermost initially)",
+          "Dorsal recumbency with limbs suspended by overhead hoists (to access ventral viscera)",
+          "Sternal recumbency with the head elevated on wooden blocks (to examine dorsal cervical)"
         ],
         "a": 0,
         "e": "Right recumbency in horses exposes the spleen and left double colon; small animal carcasses are placed in dorsal recumbency.",
@@ -8169,9 +8169,9 @@ var quizBank = {
         "q": "Post-mortem bile imbibition is recognized grossly as:",
         "o": [
           "Greenish-yellow discoloration of tissues adjacent to the gall bladder (liver, duodenum)",
-          "Bright red staining of the endocardium by lysed erythrocytes",
-          "Chalky white spots in peripancreatic fat",
-          "Dark black staining of the abdominal wall"
+          "Bright reddish-pink staining of the vascular intima and endocardium from lysed red cells",
+          "Chalky white, opaque necrotic foci within mesenteric and peripancreatic adipose depots",
+          "Bluish-black staining of intestinal walls produced by iron sulfide post-mortem reactions"
         ],
         "a": 0,
         "e": "Autolysis of the gall bladder wall allows bile salts and pigments to diffuse into adjacent liver parenchyma and intestine.",
@@ -8183,9 +8183,9 @@ var quizBank = {
         "q": "Post-mortem hemoglobin imbibition is recognized by:",
         "o": [
           "Diffuse reddish-pink staining of the vascular intima, endocardium, and tissues due to erythrocyte lysis",
-          "Greenish discoloration of the intestines",
-          "Black streaks on the diaphragmatic surface",
-          "White chalky deposits in the myocardium"
+          "Local greenish-yellow pigment diffusion staining surfaces of the liver and duodenum near the gall bladder",
+          "Diffuse greyish-black discoloration of abdominal viscera caused by iron sulfide formation from putrefaction",
+          "Multiple dry, chalky-white flecks distributed throughout the peripancreatic mesentery and omental fat tissue"
         ],
         "a": 0,
         "e": "Hemolyzed RBCs release hemoglobin, which diffuses through autolyzed vessel walls, staining the intima and endocardium pinkish-red.",
@@ -8197,9 +8197,9 @@ var quizBank = {
         "q": "For bacteriological isolation from post-mortem morbid tissue, samples should be collected:",
         "o": [
           "Aseptically using sterile instruments and searing the organ surface with a heated spatula before stabbing",
-          "After washing the organ thoroughly under running tap water",
-          "From advanced putrefied tissues with high gas production",
-          "By dipping the whole carcass into formalin"
+          "Directly from advanced putrefied tissues showing high gas formation to ensure maximum microbial numbers",
+          "After thoroughly washing and soaking the intact organ in running chlorinated tap water for thirty minutes",
+          "By scraping mucosal surfaces with non-sterile blades following prolonged post-mortem exposure to room air"
         ],
         "a": 0,
         "e": "Searing the capsule sterilizes surface contaminants, allowing sterile swabs or instruments to sample the parenchymal interior.",
@@ -8211,9 +8211,9 @@ var quizBank = {
         "q": "Morbid specimens intended for viral isolation should be preserved and dispatched in:",
         "o": [
           "50% sterile buffered glycerin-saline (pH 7.4) or transported on dry ice at -70°C",
-          "10% neutral buffered formalin",
-          "Absolute ethanol",
-          "Concentrated sodium chloride brine"
+          "10% neutral buffered formalin solution preserved at ambient room temperatures",
+          "Absolute ethanol or pure acetone fixative shipped in airtight glass containers",
+          "Zenker's fluid or concentrated potassium dichromate solution at refrigerator cold"
         ],
         "a": 0,
         "e": "Glycerin-saline preserves viral infectivity; formalin and alcohol kill viruses and cross-link nucleic acids.",
@@ -8225,9 +8225,9 @@ var quizBank = {
         "q": "For toxicology testing in suspected malicious poisoning, which visceral organ is the most critical to submit in generous quantities?",
         "o": [
           "Stomach/rumen contents and Liver (at least 500 g to 1 kg)",
-          "Trachea and thyroid gland",
-          "Pancreas and adrenal gland",
-          "Spleen alone"
+          "Thyroid gland and deep cervical lymph nodes (total 50 g)",
+          "Pancreas and bilateral adrenal glands (at least 20 to 50 g)",
+          "Whole cerebral cortex and cerebellar tissue (around 150 g)"
         ],
         "a": 0,
         "e": "Liver is the metabolic clearing organ, and stomach contents contain unabsorbed toxins, making them primary toxicological specimens.",
@@ -8239,9 +8239,9 @@ var quizBank = {
         "q": "In a veterolegal necropsy report, the professional prosector must strictly distinguish between:",
         "o": [
           "Factual, objective description of lesions (findings) and the interpretive diagnosis/opinion",
-          "The age of the animal and its breed",
-          "The time of necropsy and sunrise",
-          "Internal lesions and external lesions only"
+          "The estimated commercial market value of the animal and its anticipated reproductive yield",
+          "The geographical weather conditions on the day of necropsy and local ambient sun elevation",
+          "Superficial external skin abrasions and incidental post-mortem hypostatic livor discolorations"
         ],
         "a": 0,
         "e": "Objective physical descriptions must be separated from diagnostic interpretations to withstand scrutiny in a court of law.",
@@ -8253,9 +8253,9 @@ var quizBank = {
         "q": "An antemortem wound is conclusively distinguished from a post-mortem wound in veterolegal pathology by the presence of:",
         "o": [
           "A vital reaction (fibrin deposition, hemorrhage with thrombi, active hyperaemia, and neutrophilic infiltration)",
-          "Sharp edges without any cellular reaction",
-          "Absence of clotting or hemorrhage",
-          "Gravitational hypostatic pooling only"
+          "Cleanly divided wound edges devoid of cellular extravasation, inflammatory margin swelling, or fibrin nets",
+          "Complete absence of true clotting, active vascular engorgement, and marked leukocytic infiltration along margins",
+          "Gravitational hypostatic congestion with uniform fluid blood accumulation unaccompanied by tissue responses"
         ],
         "a": 0,
         "e": "Vital reaction (active clotting, tissue retraction, cellular inflammation) proves the animal was alive when the wound occurred.",
@@ -8267,9 +8267,9 @@ var quizBank = {
         "q": "In gunshot wound pathology, the entrance wound typically differs from the exit wound in that the entrance wound:",
         "o": [
           "Is smaller, rounded, with inverted margins, a collar of abrasion, and possible soot/tattooing",
-          "Is larger, irregular, with everted margins and no abrasion collar",
-          "Always exhibits massive tissue evisceration",
-          "Is completely free of any epidermal defect"
+          "Is larger, irregular, with everted ragged edges, absence of abrasion ring, and no soot deposits",
+          "Always exhibits massive visceral herniation, extensive burning, and multiple secondary exits",
+          "Presents cleanly incised linear margins with complete preservation of dermal hair and epidermis"
         ],
         "a": 0,
         "e": "Entrance wounds feature an abrasion ring and inverted margins; exit wounds are larger, stellate, and everted.",
@@ -8281,9 +8281,9 @@ var quizBank = {
         "q": "An incised wound produced by a sharp cutting weapon is characterized by:",
         "o": [
           "Clean-cut linear edges without tissue bridges and length greater than depth",
-          "Irregular torn edges with intact bridging strands of vessels and nerves",
-          "A narrow, deep channel whose depth far exceeds its length",
-          "Crushed, bruised skin with irregular lacerations"
+          "Irregular, ragged torn margins with intact bridging nerves and blood vessels",
+          "A narrow, circular puncture whose penetrating depth far exceeds its length",
+          "Crushed, contused epidermal margins accompanied by extensive zone abrasion"
         ],
         "a": 0,
         "e": "Sharp weapons slice vessels cleanly without tissue bridging; blunt force tears tissues leaving tissue bridges (lacerations).",
@@ -8295,9 +8295,9 @@ var quizBank = {
         "q": "A lacerated wound is caused by blunt mechanical force and is characterized by:",
         "o": [
           "Irregular, torn, ragged edges with intact tissue bridging across the wound depth and surrounding contusion",
-          "Smooth, cleanly sliced margins with no tissue bridging",
-          "Pinpoint puncture holes extending into deep joints",
-          "Charred skin margins with entrance tattooing"
+          "Smooth, cleanly sliced linear margins completely lacking tissue bridges, with length clearly exceeding depth",
+          "A narrow, deep puncture defect produced by sharp pointed objects whose depth far exceeds surface length",
+          "Circumferential charred borders displaying a distinct abrasion collar with propellant powder tattooing"
         ],
         "a": 0,
         "e": "Lacerations show tissue bridges (intact vessels and nerve filaments traversing the tear) and abraded/bruised margins.",
@@ -8309,9 +8309,9 @@ var quizBank = {
         "q": "A contusion (bruise) in veterolegal pathology is defined as:",
         "o": [
           "An injury produced by blunt trauma causing rupture of subcutaneous blood vessels with extravasation, while the overlying skin remains intact",
-          "A break or breach in the continuity of the skin",
-          "A scrape or denudation of the superficial epidermis",
-          "A deep penetrating stab into a body cavity"
+          "A mechanical trauma causing complete breach in the continuity of skin and subcutaneous tissues with free external hemorrhage to the outside",
+          "A superficial friction injury restricted to the loss of epidermis, exposing the corium with serum exudation and crusting but no skin rupture",
+          "A penetrating wound caused by a pointed weapon wherein the depth of the track in viscera is significantly greater than the surface dimension"
         ],
         "a": 0,
         "e": "Contusion is closed blunt injury causing internal microvascular rupture and interstitial hematoma without skin tearing.",
@@ -8337,9 +8337,9 @@ var quizBank = {
         "q": "To confirm lightning strike as the cause of sudden death in pastured cattle, the prosector searches for pathognomonic:",
         "o": [
           "Arborescent, branching 'tree-like' singeing burns on the skin (Lichtenberg figures) and singed hair",
-          "Massive caseous necrosis in mesenteric lymph nodes",
-          "Extensive fibrinous pleuropneumonia",
-          "Bilateral symmetrical cerebellar hypoplasia"
+          "Massive fibrinous pleuropneumonia with marbled lung hepatization and serofibrinous pleural fluid",
+          "Extensive caseous necrosis of mesenteric lymph nodes with multiple concentric calcified tubercles",
+          "Diffuse petechial hemorrhages throughout endocardium with marked acute splenomegaly and unclotted blood"
         ],
         "a": 0,
         "e": "Lichtenberg figures are cutaneous arborizing burn patterns produced by electrical arcing over moist skin.",
@@ -8365,9 +8365,9 @@ var quizBank = {
         "q": "Which set of features is typical of a benign tumour?",
         "o": [
           "Well-differentiated cells, expansile growth and a fibrous capsule",
-          "Anaplasia, invasion and metastasis",
-          "Atypical mitoses and necrosis",
-          "Rapid growth with lymphatic spread"
+          "Poorly differentiated anaplastic cells with marked local invasion",
+          "Infiltrative borders, frequent vascular permeation and metastasis",
+          "Atypical bizarre mitoses, central ischemic necrosis and ulceration"
         ],
         "a": 0,
         "e": "Benign tumours resemble their tissue of origin, grow slowly by expansion, and compress surrounding tissue into a capsule — so they can usually be removed completely.",
@@ -8393,9 +8393,9 @@ var quizBank = {
         "q": "Cutaneous papillomas ('warts') in cattle are caused by:",
         "o": [
           "Bovine papillomavirus, a DNA virus",
-          "Bovine leukaemia virus, a retrovirus",
-          "Mycobacterium bovis",
-          "Aflatoxin B1"
+          "Bovine leukaemia virus, an RNA virus",
+          "Bovine herpesvirus-1 (infectious IBR)",
+          "Bovine parapoxvirus, a poxvirus type"
         ],
         "a": 0,
         "e": "Papillomaviruses cause benign proliferation of squamous epithelium; most warts regress spontaneously as immunity develops.",
@@ -8435,9 +8435,9 @@ var quizBank = {
         "q": "The most common anatomical form of lymphoma in dogs is:",
         "o": [
           "Multicentric, with generalised painless lymphadenopathy",
-          "Alimentary",
-          "Mediastinal (thymic)",
-          "Cutaneous"
+          "Alimentary, with diffuse infiltration of intestinal wall",
+          "Mediastinal (thymic), causing dyspnoea and pleural fluid",
+          "Cutaneous (epitheliotropic), causing generalized scaling"
         ],
         "a": 0,
         "e": "About 80% of canine lymphomas are multicentric; the liver and spleen are often involved as well.",
@@ -8449,9 +8449,9 @@ var quizBank = {
         "q": "Heparin is not recommended for blood smears and routine CBC because it:",
         "o": [
           "Causes clumping of leukocytes and platelets and a blue background in Romanowsky-stained smears",
-          "Lyses all red cells",
-          "Chelates calcium permanently",
-          "Is toxic to the animal"
+          "Causes rapid osmotic lysis of erythrocytes and marked denaturation of intact hemoglobin chains",
+          "Irreversibly binds all divalent calcium cations, leading to severe red blood cell crenation",
+          "Degrades plasma coagulation factors rapidly, preventing accurate automated cell count analysis"
         ],
         "a": 0,
         "e": "Heparin (an antithrombin activator) is preferred for plasma chemistry and blood gases, but EDTA is used for haematology.",
@@ -8463,9 +8463,9 @@ var quizBank = {
         "q": "Trisodium citrate (3.2–3.8%) is the anticoagulant of choice for:",
         "o": [
           "Coagulation tests such as prothrombin time, at a ratio of 1 part citrate to 9 parts blood",
-          "Blood glucose estimation",
-          "Routine blood smears",
-          "Blood gas analysis"
+          "Routine mammalian blood counts (CBC), at a fixed ratio of 1 part citrate to 2 parts blood",
+          "Blood glucose estimation, by inhibiting glycolytic enolase at a 1 to 5 sample dilution ratio",
+          "Blood gas and electrolyte testing, preserving arterial pH at a 1 part to 10 parts dilution"
         ],
         "a": 0,
         "e": "Citrate binds calcium reversibly, so coagulation can be restarted by adding calcium in the test.",
@@ -8491,9 +8491,9 @@ var quizBank = {
         "q": "Mean corpuscular haemoglobin (MCH) is calculated as:",
         "o": [
           "(Hb in g/dL × 10) ÷ RBC count in millions/µL, expressed in picograms",
-          "(PCV × 10) ÷ RBC count",
-          "(Hb ÷ PCV) × 100",
-          "RBC count × PCV"
+          "(PCV in % × 10) ÷ RBC count in millions/µL, expressed in femtolitres",
+          "(Hb in g/dL ÷ PCV in %) × 100, expressed in grams per decilitre blood",
+          "(RBC count in millions/µL × PCV in %) ÷ 100, expressed as percentage"
         ],
         "a": 0,
         "e": "MCH is the average weight of haemoglobin in one red cell. MCV = PCV × 10 ÷ RBC; MCHC = Hb ÷ PCV × 100.",
@@ -8505,9 +8505,9 @@ var quizBank = {
         "q": "As a practical rule of thumb in most domestic animals, PCV is approximately:",
         "o": [
           "Three times the haemoglobin concentration",
-          "Equal to the haemoglobin concentration",
-          "Ten times the RBC count",
-          "Half the haemoglobin concentration"
+          "Equal to the total haemoglobin concentration",
+          "Six times the total erythrocyte count level",
+          "Half of the circulating haemoglobin value"
         ],
         "a": 0,
         "e": "For example, Hb 12 g/dL corresponds to PCV about 36%. A large mismatch suggests a laboratory error or haemolysis.",
@@ -8519,9 +8519,9 @@ var quizBank = {
         "q": "Sahli's method estimates haemoglobin by converting it into:",
         "o": [
           "Acid haematin, matched visually against a standard",
-          "Cyanmethaemoglobin, read on a spectrophotometer",
-          "Oxyhaemoglobin by centrifugation",
-          "Methaemoglobin by boiling"
+          "Cyanmethaemoglobin, measured by spectrophotometer",
+          "Oxyhaemoglobin, read via automated photocolorimetry",
+          "Alkaline haematin, titrated against standard buffer"
         ],
         "a": 0,
         "e": "Blood is mixed with N/10 HCl to form brown acid haematin and diluted until it matches the comparator. The cyanmethaemoglobin method is the more accurate reference method.",
@@ -8533,9 +8533,9 @@ var quizBank = {
         "q": "The absolute count of a leukocyte type is calculated as:",
         "o": [
           "Total leukocyte count × percentage of that cell in the differential ÷ 100",
-          "Percentage of that cell × 100",
-          "Total RBC count ÷ percentage of that cell",
-          "PCV × percentage of that cell"
+          "Percentage of that cell in differential count × total RBC count in µL ÷ 100",
+          "Total leukocyte count ÷ percentage of that cell in the differential × 100",
+          "Packed cell volume (PCV) × percentage of that cell in the differential ÷ 10"
         ],
         "a": 0,
         "e": "Absolute counts are more meaningful than percentages: a 'lymphocytosis' in percentage may just be an absolute neutropenia.",
@@ -8547,9 +8547,9 @@ var quizBank = {
         "q": "In which species do lymphocytes normally outnumber neutrophils in the peripheral blood?",
         "o": [
           "Cattle",
-          "Dog",
-          "Cat",
-          "Horse"
+          "Horses",
+          "Canine",
+          "Feline"
         ],
         "a": 0,
         "e": "Ruminants have a lymphocyte-predominant leukogram (N:L about 0.5). Dogs, cats and horses are neutrophil-predominant.",
@@ -8561,9 +8561,9 @@ var quizBank = {
         "q": "Turk's diluting fluid used for manual total leukocyte counting contains:",
         "o": [
           "Glacial acetic acid (to lyse RBCs) and gentian violet (to stain nuclei)",
-          "Sodium citrate and formalin",
-          "EDTA and saline",
-          "Hydrochloric acid only"
+          "Sodium citrate (to prevent clots) and basic fuchsin (to stain cytoplasm)",
+          "Formalin solution (to fix cells) and methylene blue (to stain membranes)",
+          "Hydrochloric acid (to lyse white cells) and eosin (to stain background)"
         ],
         "a": 0,
         "e": "Blood is diluted 1:20 in the WBC pipette and counted in the four large corner squares of the Neubauer chamber.",
@@ -8575,9 +8575,9 @@ var quizBank = {
         "q": "The Wintrobe tube can be used to measure:",
         "o": [
           "Both ESR and PCV (macro-haematocrit)",
-          "Only total leukocyte count",
-          "Only haemoglobin",
-          "Only blood glucose"
+          "Only total leukocyte and platelet count",
+          "Only erythrocyte osmotic fragility test",
+          "Both serum bilirubin and total proteins"
         ],
         "a": 0,
         "e": "The same graduated tube is read for ESR after 1 hour and then centrifuged for PCV. The Westergren tube is used for ESR only.",
@@ -8589,9 +8589,9 @@ var quizBank = {
         "q": "In Leishman's staining of blood smears, the smear is fixed by:",
         "o": [
           "The methanol present in the stain itself",
-          "Heat fixation over a flame",
-          "10% formalin",
-          "Glutaraldehyde"
+          "Heat fixation briefly over a Bunsen flame",
+          "Immersion in 10% neutral formalin bath",
+          "Glutaraldehyde buffer before application"
         ],
         "a": 0,
         "e": "Undiluted Leishman's stain is left for 1–2 minutes to fix; buffered water is then added to allow staining.",
@@ -8603,9 +8603,9 @@ var quizBank = {
         "q": "Numerous spherocytes on a canine blood smear strongly suggest:",
         "o": [
           "Immune-mediated haemolytic anaemia",
-          "Iron deficiency anaemia",
-          "Liver disease",
-          "Lead poisoning"
+          "Chronic iron deficiency microcytosis",
+          "Aplastic non-regenerative anaemia",
+          "Chronic lead poisoning toxicosis"
         ],
         "a": 0,
         "e": "Macrophages remove part of the antibody-coated membrane, leaving small, dense, spherical cells without central pallor.",
@@ -8617,9 +8617,9 @@ var quizBank = {
         "q": "Schistocytes (fragmented RBCs) on a blood smear indicate:",
         "o": [
           "Mechanical damage in vessels, as in DIC and haemangiosarcoma",
-          "Iron overload",
-          "Normal ageing of RBCs",
-          "Vitamin B12 deficiency"
+          "Systemic iron overload resulting in severe hemochromatosis",
+          "Normal physiological ageing and splenic clearance of red cells",
+          "Cobalamin and folate deficiency causing megaloblastic anemia"
         ],
         "a": 0,
         "e": "RBCs are sheared by fibrin strands or abnormal vessels, producing irregular fragments.",
@@ -8631,9 +8631,9 @@ var quizBank = {
         "q": "Döhle bodies in neutrophils are:",
         "o": [
           "Blue-grey cytoplasmic inclusions of retained rough ER, indicating toxic change",
-          "Nuclear remnants in red cells",
-          "Precipitated haemoglobin in red cells",
-          "Parasitic inclusions"
+          "Small round nuclear fragments of chromatin in erythrocytes, representing remnants",
+          "Refractile oxidized hemoglobin inclusions in red cells, reflecting oxidant injury",
+          "Dense intracytoplasmic parasitic schizonts observed inside circulating monocytes"
         ],
         "a": 0,
         "e": "Toxic change (Döhle bodies, cytoplasmic basophilia, vacuolation) indicates accelerated neutrophil production in severe inflammation; small numbers can be normal in cats.",
@@ -8645,9 +8645,9 @@ var quizBank = {
         "q": "In diabetes mellitus, glucose appears in the urine because:",
         "o": [
           "Blood glucose exceeds the renal tubular threshold for reabsorption (about 180 mg/dL in dogs)",
-          "Glomeruli are destroyed",
-          "Urine is contaminated by bacteria",
-          "Insulin is excreted in urine"
+          "Glomerular basement membranes are completely destroyed, allowing passive leakage of glucose",
+          "Excess systemic insulin is excreted directly across proximal tubules into the collect ducts",
+          "Urinary bacterial proliferation generates endogenous glucose through breakdown of urothelium"
         ],
         "a": 0,
         "e": "Glucose with normal blood glucose instead suggests a proximal tubular defect (e.g. Fanconi syndrome).",
@@ -8659,9 +8659,9 @@ var quizBank = {
         "q": "Rothera's test (sodium nitroprusside) is used in urinalysis to detect:",
         "o": [
           "Ketone bodies (acetoacetate and acetone)",
-          "Glucose",
-          "Protein",
-          "Bile salts"
+          "Reducing sugars (glucose and galactose)",
+          "Bile pigments (conjugated bilirubin forms)",
+          "Bile salts (sodium taurocholate salt)"
         ],
         "a": 0,
         "e": "A purple ring indicates ketonuria — important in bovine ketosis and pregnancy toxaemia.",
@@ -8673,9 +8673,9 @@ var quizBank = {
         "q": "Red-brown urine due to haemoglobinuria is differentiated from myoglobinuria by:",
         "o": [
           "Pink plasma in haemoglobinuria but clear plasma in myoglobinuria",
-          "The dipstick blood test, which is only positive for haemoglobin",
-          "Urine specific gravity",
-          "Urine pH"
+          "Commercial dipstick blood test, which reacts only with hemoglobin",
+          "Marked elevation of urine specific gravity in myoglobinuria cases",
+          "Acidic urine pH in haemoglobinuria versus alkaline in myoglobinuria"
         ],
         "a": 0,
         "e": "Haemoglobin is bound by haptoglobin and colours the plasma. Myoglobin is small and cleared quickly into the urine, so plasma stays clear (and CK is raised).",
@@ -8687,9 +8687,9 @@ var quizBank = {
         "q": "If a necropsy has to be delayed, the carcass should be:",
         "o": [
           "Refrigerated at about 4 °C but not frozen",
-          "Frozen immediately",
-          "Left in the sun to dry",
-          "Immersed in formalin"
+          "Deep-frozen at -20 °C to prevent autolysis",
+          "Immersed completely in a 10% formalin vat",
+          "Maintained in direct sunlight to dry skin"
         ],
         "a": 0,
         "e": "Refrigeration slows autolysis; freezing forms ice crystals that damage cells and make histopathology unreliable.",
@@ -8729,9 +8729,9 @@ var quizBank = {
         "q": "Viscera for chemical (toxicological) analysis in suspected poisoning are preserved in:",
         "o": [
           "Saturated sodium chloride solution, or sent chilled without preservative",
-          "10% formalin",
-          "Glutaraldehyde",
-          "Glycerol saline"
+          "10% neutral buffered formalin solution to prevent putrefaction of tissues",
+          "Bouin's picric acid solution to rapidly fix and precipitate toxic metals",
+          "50% buffered glycerin-saline solution maintained at freezer temperature"
         ],
         "a": 0,
         "e": "Formalin interferes with many chemical analyses. Each organ goes in a separate, sealed and labelled container, with a sample of the preservative sent as a control.",
@@ -8743,9 +8743,9 @@ var quizBank = {
         "q": "The final section of a post-mortem report, in which the prosector interprets the findings, is the:",
         "o": [
           "Opinion (conclusion) on the cause of death",
-          "History",
-          "External examination",
-          "List of instruments used"
+          "Objective gross anatomical lesion description",
+          "Summary of clinical history and signalment",
+          "Itemized inventory of instruments utilized"
         ],
         "a": 0,
         "e": "A PM report runs: identification and history → external examination → internal examination → samples sent → opinion on the cause of death.",
@@ -8757,9 +8757,9 @@ var quizBank = {
         "q": "Which is correct practice when writing a veterolegal post-mortem report?",
         "o": [
           "Record findings objectively at the time of necropsy and keep a signed copy",
-          "Leave the report blank until the court asks for it",
-          "Change the report later to match the owner's statement",
-          "Use personal abbreviations that only the prosector understands"
+          "Withhold writing the written record until requested by the presiding court",
+          "Modify the autopsy description retrospectively to support owner testimony",
+          "Utilize ambiguous subjective abbreviations known only to the prosector staff"
         ],
         "a": 0,
         "e": "The report is a legal document: it must be written promptly, in clear language, signed, dated, and must not be altered after signing.",
@@ -9964,9 +9964,9 @@ var quizBank = {
         "q": "Foot-and-Mouth Disease (FMD) in young calves frequently causes fatal acute myocarditis producing which pathognomonic gross lesion?",
         "o": [
           "'Tiger heart' (tigroid appearance of myocardium)",
-          "'Bread and butter' pericarditis",
-          "'Mulberry heart'",
-          "'Cor bovinum'"
+          "'Mulberry heart disease' with severe diffuse myocardial ecchymoses and hydropericardium",
+          "'Cor villosum' with shaggy fibrinous bread-and-butter pericardial pseudomembranes",
+          "'Nutmeg liver' appearance secondary to chronic passive right ventricular congestion"
         ],
         "a": 0,
         "e": "FMD virus causes non-suppurative myocarditis with greyish-yellow necrotic streaks alternating with normal muscle (tiger heart).",
@@ -9978,9 +9978,9 @@ var quizBank = {
         "q": "Rinderpest (Cattle Plague) is characterized pathologically by which hallmark mucosal alteration throughout the digestive tract?",
         "o": [
           "Necrotic erosions with 'zebra striping' of the rectum and colon",
-          "Button ulcers in the cecum only",
-          "Corrugated cerebriform folds of the ileum",
-          "Diphtheritic casting of the rumen pillars"
+          "Prominent elevated button ulcers scattered throughout the cecal and colic mucosa",
+          "Transverse corrugation with severe cerebriform mucosal thickening of distal ileum",
+          "Extensive diphtheritic pseudomembranous casting over the ruminal and omasal pillars"
         ],
         "a": 0,
         "e": "Rinderpest causes lymphoid necrosis and mucosal erosions; linear congested mucosal folds in the rectum form 'zebra striping'.",
@@ -9992,9 +9992,9 @@ var quizBank = {
         "q": "Malignant Catarrhal Fever (MCF) in cattle is histopathologically defined by:",
         "o": [
           "Generalized necrotizing lymphocytic vasculitis and perivascular cuffing in multiple organs",
-          "Suppurative bronchopneumonia with oat cells",
-          "Granulomatous enteritis with multinucleated giant cells",
-          "Intracytoplasmic Negri bodies in Purkinje cells"
+          "Severe acute suppurative bronchopneumonia with abundant degenerate neutrophils and oat cells",
+          "Chronic granulomatous enteritis characterized by diffuse infiltrates of Langhans giant cells",
+          "Extensive fibrinoid arterial necrosis with prominent intranuclear viral inclusion bodies"
         ],
         "a": 0,
         "e": "Alcelaphine/Ovine herpesviruses induce systemic T-lymphocyte proliferation causing severe necrotizing arteritis and panophthalmitis.",
@@ -10020,9 +10020,9 @@ var quizBank = {
         "q": "Peste des Petits Ruminants (PPR) in goats produces which characteristic combination of lesions?",
         "o": [
           "Necrotic stomatitis, catarrhal/erosive enteritis, and bronchointerstitial pneumonia",
-          "Severe fibrinous pleuropneumonia only",
-          "Granulomatous mastitis with caseous lymph nodes",
-          "Extensive vesicular eruptions on the coronary band"
+          "Severe acute fibrinous pleuropneumonia with marked marbled appearance of lung parenchyma",
+          "Chronic caseous lymphadenitis with extensive onion-ring concentric calcified laminations",
+          "Vesicular erosions on the coronary band accompanied by diffuse necrotizing pododermatitis"
         ],
         "a": 0,
         "e": "PPR (goat plague) produces lesions mirroring rinderpest: erosive stomatitis, enteritis, lymphoid depletion, plus bronchointerstitial pneumonia.",
@@ -10034,9 +10034,9 @@ var quizBank = {
         "q": "Infectious Bovine Rhinotracheitis (IBR, Bovine Herpesvirus-1) is characterized by:",
         "o": [
           "Fibrinonecrotic tracheitis with eosinophilic intranuclear inclusion bodies",
-          "Intracytoplasmic inclusions in enterocytes",
-          "Severe necrotizing splenitis with Negri bodies",
-          "Suppurative osteomyelitis of the turbinates"
+          "Diffuse proliferative catarrhal enteritis with prominent intracytoplasmic inclusions",
+          "Severe necrotizing splenitis accompanied by numerous basophilic cytoplasmic bodies",
+          "Chronic suppurative osteomyelitis affecting both nasal turbinates and frontal sinuses"
         ],
         "a": 0,
         "e": "BHV-1 causes necrotic 'red nose' rhinotracheitis with Cowdry type A intranuclear inclusions in respiratory epithelial cells.",
@@ -10048,9 +10048,9 @@ var quizBank = {
         "q": "Bovine Viral Diarrhea (BVD) - Mucosal Disease complex develops when a persistently infected (PI) animal is superinfected with:",
         "o": [
           "A cytopathic (CP) BVDV strain homologous to the persisting non-cytopathic (NCP) strain",
-          "A heterologous rotavirus",
-          "Bovine Coronavirus",
-          "Bovine Herpesvirus-4"
+          "A virulent heterologous rotavirus strain causing extensive mucosal villous tip enterocyte lysis",
+          "A secondary enterotoxigenic Escherichia coli infection establishing in an immunotolerant host",
+          "A Bovine Coronavirus strain producing widespread crypt epithelial destruction in distal colon"
         ],
         "a": 0,
         "e": "Calves infected in utero with non-cytopathic BVDV become immunotolerant (PI); mutation or superinfection with cytopathic virus causes fatal mucosal disease.",
@@ -10062,9 +10062,9 @@ var quizBank = {
         "q": "Maedi (visna) in sheep is a slow retroviral infection causing which pulmonary lesion?",
         "o": [
           "Chronic interstitial pneumonia with heavy, rubbery lungs that fail to collapse upon opening the thorax",
-          "Acute fibrinous pleuropneumonia with oat cells",
-          "Extensive caseous abscesses throughout apical lobes",
-          "Suppurative bronchopneumonia with liquefaction"
+          "Acute severe fibrinous pleuropneumonia with extensive pleural adhesions and marked oat-cell streaming",
+          "Suppurative bronchopneumonia with multifocal caseous abscesses distributed throughout cranioventral lobes",
+          "Multifocal chronic granulomatous pneumonia characterized by Langhans giant cells with central calcification"
         ],
         "a": 0,
         "e": "Maedi retrovirus causes progressive lymphoid hyperplasia, alveolar septal thickening, and smooth muscle hypertrophy; lungs are grey, heavy, and rubbery.",
@@ -10076,9 +10076,9 @@ var quizBank = {
         "q": "Jaagziekte (Ovine Pulmonary Adenocarcinoma) is caused by Jaagziekte Sheep Retrovirus (JSRV) and represents a neoplastic transformation of:",
         "o": [
           "Alveolar Type II pneumocytes and Clara (club) cells",
-          "Vascular endothelial cells in pulmonary capillaries",
-          "Bronchial smooth muscle myocytes",
-          "Alveolar macrophages"
+          "Vascular endothelial cells lining pulmonary alveolar capillaries",
+          "Bronchial and bronchiolar smooth muscle myocytes and pericytes",
+          "Resident interstitial pulmonary dendritic cells and macrophages"
         ],
         "a": 0,
         "e": "JSRV envelope protein acts as an oncoprotein, driving malignant transformation of type II pneumocytes into papillary adenocarcinomas.",
@@ -10090,9 +10090,9 @@ var quizBank = {
         "q": "Sheep pox is the most severe poxvirus disease of livestock, characterized histologically by:",
         "o": [
           "'Cellules claveleuses' (sheep pox cells) with intracytoplasmic inclusion bodies",
-          "Cowdry type A intranuclear inclusions in keratinocytes",
-          "Fibrinoid necrosis of arterioles with Negri bodies",
-          "Extensive intraepithelial microabscesses"
+          "Large Cowdry type A eosinophilic intranuclear inclusions within stratum spinosum cells",
+          "Marked fibrinoid degeneration of medium arteries with pathognomonic Negri inclusion bodies",
+          "Extensive intraepithelial microabscesses accompanied by marked epidermal hypergranulosis"
         ],
         "a": 0,
         "e": "Sheep pox lesions contain pathognomonic large vacuolated histiocytic 'Borrel cells' (cellules claveleuses) with eosinophilic inclusions.",
@@ -10104,9 +10104,9 @@ var quizBank = {
         "q": "Bovine papular stomatitis (Parapoxvirus) lesions are distinguished from FMD because papular stomatitis lesions are:",
         "o": [
           "Proliferative, raised reddish papules that expand into ring-like lesions without true vesiculation",
-          "Fluid-filled blisters containing clear lymph",
-          "Deep caseous ulcers leaving bony sequestra",
-          "Pseudomembranous croupous casts"
+          "Fragile fluid-filled intraepithelial blisters containing large volumes of clear, protein-rich lymph",
+          "Deep ragged ulcerations with caseous necrotic bases leaving large exposed areas of underlying facial bone",
+          "Thick pseudomembranous croupous sheets overlying widespread petechial hemorrhages of buccal mucosa"
         ],
         "a": 0,
         "e": "Parapoxviruses stimulate keratinocyte proliferation (ballooning and acanthosis) forming circular papules rather than fluid-filled vesicles.",
@@ -10118,9 +10118,9 @@ var quizBank = {
         "q": "Rotavirus and Coronavirus infections in neonatal calves cause profuse diarrhea primarily by destroying:",
         "o": [
           "Absorptive enterocytes on the tips of small intestinal villi, leading to villous blunting and atrophy",
-          "Crypt progenitor cells in the crypts of Lieberkühn",
-          "Vascular endothelium in the submucosa",
-          "Peyer's patch lymphoid follicles exclusively"
+          "Actively dividing crypt progenitor cells within the crypts of Lieberkühn, leading to crypt collapse",
+          "Vascular endothelial cells within mucosal arterioles, leading to extensive microvascular thrombosis",
+          "Lymphoid follicles of mucosal Peyer's patches, leading to generalized gut-associated lymphocytolysis"
         ],
         "a": 0,
         "e": "Rotavirus selectively infects and lyses mature villous tip enterocytes, causing malabsorptive/osmotic diarrhea.",
@@ -10132,9 +10132,9 @@ var quizBank = {
         "q": "Canine Distemper Virus (Morbillivirus) produces which diagnostic combination of inclusion bodies?",
         "o": [
           "Both intracytoplasmic and intranuclear eosinophilic inclusions in epithelial, lymphoid, and neural tissues",
-          "Strictly intranuclear basophilic inclusions in hepatocytes only",
-          "Strictly intracytoplasmic Negri bodies in neurons",
-          "Intranuclear inclusions in vascular endothelium exclusively"
+          "Strictly intranuclear amphophilic to basophilic inclusions confined solely to degenerating hepatocytes",
+          "Strictly intracytoplasmic eosinophilic Negri bodies located within cerebellar Purkinje cell perikaryons",
+          "Eosinophilic intranuclear inclusions restricted specifically to the nuclei of vascular endothelial cells"
         ],
         "a": 0,
         "e": "Canine distemper is unique in producing both intranuclear and intracytoplasmic eosinophilic viral inclusions.",
@@ -10146,9 +10146,9 @@ var quizBank = {
         "q": "Hardpad disease in dogs is a chronic manifestation of Canine Distemper characterized by:",
         "o": [
           "Marked hyperkeratosis of the footpads and nasal planum",
-          "Calcification of the digital flexor tendons",
-          "Suppurative arthritis of the hock joints",
-          "Gangrenous necrosis of the paw tips"
+          "Dystrophic mineralization and calcification of flexor tendons",
+          "Chronic erosive suppurative arthritis of major carpal joints",
+          "Ischemic coagulative gangrenous necrosis of distal digital pads"
         ],
         "a": 0,
         "e": "Persistent viral infection of digital and nasal keratinocytes drives profound orthokeratotic and parakeratotic hyperkeratosis.",
@@ -10160,9 +10160,9 @@ var quizBank = {
         "q": "Canine Parvovirus (CPV-2) and Feline Panleukopenia Virus (FPV) cause fatal enteritis by selectively targeting and destroying:",
         "o": [
           "Rapidly dividing crypt epithelial cells of the crypts of Lieberkühn",
-          "Mature enterocytes on the tips of villi only",
-          "Biliary ductular epithelium",
-          "Brunner's glands in the duodenum"
+          "Mature terminally differentiated enterocytes situated on villous tips",
+          "Mucin-secreting goblet cells lining the upper third of luminal mucosal folds",
+          "Specialized branched Brunner's glands located within the submucosal layer"
         ],
         "a": 0,
         "e": "Parvoviruses require S-phase host DNA machinery, destroying intestinal crypts, collapsing mucosal architecture, and destroying bone marrow.",
@@ -10174,9 +10174,9 @@ var quizBank = {
         "q": "Infectious Canine Hepatitis (CAV-1) causes corneal edema colloquially termed 'blue eye' as a result of:",
         "o": [
           "Immune complex-mediated Type III hypersensitivity targeting corneal endothelium",
-          "Direct bacterial infection of the sclera",
-          "Glaucoma induced by pupillary block",
-          "Metastatic calcification of the lens"
+          "Direct cytopathic viral lysis of superficial corneal epithelium and anterior stroma",
+          "Secondary opportunistic bacterial keratitis caused by pathogenic Staphylococcus strains",
+          "Severe acute anterior uveitis resulting from direct intraocular adenoviral replication"
         ],
         "a": 0,
         "e": "Antigen-antibody complexes deposit in the anterior chamber during recovery, causing anterior uveitis, endothelial injury, and corneal edema.",
@@ -10188,9 +10188,9 @@ var quizBank = {
         "q": "Rabies virus travels from the site of a bite wound to the central nervous system via:",
         "o": [
           "Retrograde axoplasmic flow within peripheral motor and sensory nerves",
-          "Hematogenous dissemination in circulating monocytes",
-          "Cerebrospinal fluid circulation from the choroid plexus",
-          "Lymphatic drainage to deep cervical lymph nodes"
+          "Hematogenous dissemination within circulating mononuclear leukocytes",
+          "Bulk cerebrospinal fluid flow from ventricular ependyma to subarachnoid space",
+          "Passive lymphatic drainage through afferent channels to regional lymph nodes"
         ],
         "a": 0,
         "e": "Rabies glycoprotein binds acetylcholine receptors at neuromuscular junctions and migrates centripetally along axoplasm to the spinal cord and brain.",
@@ -10202,9 +10202,9 @@ var quizBank = {
         "q": "Classical Swine Fever (Hog Cholera, Pestivirus) is characterized by pathognomonic renal lesions called:",
         "o": [
           "'Turkey egg kidney' (multifocal petechial and ecchymotic cortical hemorrhages)",
-          "'White spotted kidney'",
-          "'Large pale amyloid kidney'",
-          "'Polycystic kidney'"
+          "'White spotted kidney' (multifocal subcapsular lymphoplasmacytic interstitial nephritis)",
+          "'Large pale waxy kidney' (diffuse glomerular amyloid deposition with hyaline casts)",
+          "'Flea-bitten kidney' (focal necrotizing glomerulitis with multiple capillary microthrombi)"
         ],
         "a": 0,
         "e": "Pestivirus-induced endothelial necrosis and thrombocytopenia produce petechiae scattered over the renal cortex like a turkey egg.",
@@ -10216,9 +10216,9 @@ var quizBank = {
         "q": "Splenic infarction in pigs characterized by dark, raised, wedge-shaped peripheral infarcts is diagnostic for:",
         "o": [
           "Classical Swine Fever (Hog Cholera)",
-          "Swine Erysipelas",
-          "Glasser's disease",
-          "Porcine Parvovirus"
+          "Swine Erysipelas (Diamond Skin Disease)",
+          "Glasser's Disease (Infectious Polyserositis)",
+          "Porcine Circovirus-Associated Lymphadenopathy"
         ],
         "a": 0,
         "e": "Marginal splenic infarcts caused by viral microvascular thrombosis are virtually pathognomonic for hog cholera.",
@@ -10230,9 +10230,9 @@ var quizBank = {
         "q": "African Swine Fever (ASFV, Asfarviridae) differs pathologically from Classical Swine Fever by causing:",
         "o": [
           "Massive, profound lymphoid necrosis, friable dark splenomegaly, and severe hemorrhages in gastrohepatic lymph nodes",
-          "Intracytoplasmic Negri bodies in Purkinje cells",
-          "Non-suppurative periportal hepatitis without hemorrhage",
-          "Pure demyelinating encephalitis"
+          "Widespread immune-mediated glomerulonephritis, severe splenic follicular atrophy, and bilateral non-suppurative parotitis",
+          "Suppurative bronchopneumonia with marked lobular consolidation and abundant fibrinous exudate over visceral pleura",
+          "Severe non-suppurative polioencephalomalacia with multifocal microabscessation in thalamic and brainstem nuclei"
         ],
         "a": 0,
         "e": "ASFV triggers massive macrophage destruction and cytokine storm, producing intense hemorrhage and giant congested friable spleens.",
@@ -10244,9 +10244,9 @@ var quizBank = {
         "q": "Equine Infectious Anaemia (EIA, Lentivirus) causes recurrent bouts of fever, thrombocytopenia, and hemolytic anemia mediated by:",
         "o": [
           "Complement-mediated immune destruction of erythrocytes and glomerulonephritis",
-          "Direct viral replication inside mature red blood cells",
-          "Bone marrow fat infiltration",
-          "Splenic rupture"
+          "Direct lytic retroviral replication inside circulating mature equine erythrocytes",
+          "Extensive toxic bone marrow aplasia characterized by total adipocyte replacement",
+          "Massive splenic sequestration and parenchymal rupture caused by acute splenitis"
         ],
         "a": 0,
         "e": "Antibodies and complement coat viral-antigen-adsorbed erythrocytes, which are cleared by splenic and Kupffer macrophages (erythrophagocytosis).",
@@ -10258,9 +10258,9 @@ var quizBank = {
         "q": "Equine Viral Arteritis (EVA) is characterized pathologically by:",
         "o": [
           "Necrotizing arteritis of small and medium arteries, edema of limbs and prepuce, and abortion",
-          "Granulomatous pneumonia with Langhans giant cells",
-          "Suppurative osteomyelitis of the splint bones",
-          "Widespread intestinal button ulcers"
+          "Chronic caseous granulomatous pneumonia with Langhans giant cells and extensive thoracic calcification",
+          "Severe suppurative osteomyelitis of cannon bones accompanied by degenerative fibrinous arthritis",
+          "Proliferative and ulcerative enterocolitis featuring widespread button ulcer formation in colon"
         ],
         "a": 0,
         "e": "EVA virus replicates in arterial medial smooth muscle cells, causing fibrinoid medial necrosis, edema, and petechiation.",
@@ -10272,9 +10272,9 @@ var quizBank = {
         "q": "Equine Herpesvirus-1 (EHV-1) causes late-term equine abortion by inducing:",
         "o": [
           "Severe fetal hypoxia secondary to necrotizing uterine vasculitis and fetal focal hepatic necrosis",
-          "Ascending purulent vaginitis",
-          "Direct mechanical rupture of the amniotic sac",
-          "Maternal diabetes mellitus"
+          "Ascending purulent bacterial endometritis accompanied by severe necrotic chorioallantoic separation",
+          "Direct mechanical rupture of the amniotic sac resulting from vigorous fetal movements and hydramnios",
+          "Severe maternal hypoglycemia and metabolic ketosis induced by acute diffuse hepatic lipidosis"
         ],
         "a": 0,
         "e": "Endotheliotropic EHV-1 causes uterine thrombosis and multifocal focal necrosis with intranuclear inclusions in fetal liver and lungs.",
@@ -10286,9 +10286,9 @@ var quizBank = {
         "q": "Feline Infectious Peritonitis (FIP) is caused by a mutated Feline Coronavirus and is characterized in its effusive form by:",
         "o": [
           "Pyogranulomatous vasculitis with sticky, straw-colored, protein-rich exudate that clots upon exposure to air",
-          "Severe watery transudate with specific gravity < 1.010",
-          "Massive hemorrhagic ascites from splenic rupture",
-          "Pure neutrophilic abscessation of mesenteric lymph nodes"
+          "Pure transudative hydroperitoneum having specific gravity under 1.010 with negligible total protein concentration",
+          "Massive acute hemoperitoneum secondary to spontaneous atraumatic rupture of a congested, hyperplastic spleen",
+          "Suppurative peritonitis containing abundant degenerate neutrophils and free bacteria from intestinal perforation"
         ],
         "a": 0,
         "e": "Mutant FCoV replicates in macrophages; immune complex deposition causes pyogranulomatous vasculitis and high-protein straw-colored effusion.",
@@ -10300,9 +10300,9 @@ var quizBank = {
         "q": "Bovine tuberculosis (Mycobacterium bovis) is microscopically characterized by the classic tubercle consisting of:",
         "o": [
           "Central caseous necrosis with mineralization, surrounded by epithelioid cells, Langhans giant cells, and a fibrous capsule",
-          "Pure liquefactive suppuration with degenerate neutrophils",
-          "Whorls of mature spindle fibroblasts with no necrosis",
-          "Extensive fibrin deposition with oat-shaped cells"
+          "Pure liquefactive suppurative necrosis densely populated by degenerate neutrophils and encircled by vascular granulation tissue",
+          "Dense concentric laminations of keratin pearls surrounded by dysplastic prickle cells and abundant atypical mitotic figures",
+          "Extensive confluent sheets of foamy lipid-laden macrophages completely devoid of caseation, giant cells, or fibrosis"
         ],
         "a": 0,
         "e": "Tuberculous granulomas display central caseation and calcification rimmed by Langhans cells, lymphocytes, and fibrous capsule.",
@@ -10314,9 +10314,9 @@ var quizBank = {
         "q": "'Pearl disease' in cattle is a manifestation of bovine tuberculosis involving which anatomical site?",
         "o": [
           "Serosal surfaces of the pleura and peritoneum (tuberculous pleurisy/peritonitis)",
-          "Endocardium of the left ventricle",
-          "Medulla of the adrenal glands",
-          "Synovial sheath of the digital flexor tendons"
+          "Endocardial surfaces of ventricular atrioventricular valves (vegetative endocarditis)",
+          "Medulla and cortex of both adrenal glands (chronic fibrocaseous hypoadrenocorticism)",
+          "Synovial sheaths of major digital flexor tendons (chronic proliferative tenosynovitis)"
         ],
         "a": 0,
         "e": "Tubercles studding the pleura and peritoneum resemble shiny white pearls, giving the historic name 'pearl disease'.",
@@ -10328,9 +10328,9 @@ var quizBank = {
         "q": "The acid-fast staining property of Mycobacterium species in the Ziehl-Neelsen (ZN) stain is due to high concentration of:",
         "o": [
           "Mycolic acids in the bacterial cell wall",
-          "Peptidoglycan layers",
-          "Lipopolysaccharide endotoxin",
-          "Capsular poly-D-glutamic acid"
+          "Cross-linked peptidoglycan murein layer complex",
+          "Lipopolysaccharide lipid-A endotoxin core chains",
+          "Poly-D-glutamic acid antiphagocytic polymers"
         ],
         "a": 0,
         "e": "Long-chain mycolic acids prevent destaining by acid-alcohol, retaining carbol fuchsin (red rods).",
@@ -10342,9 +10342,9 @@ var quizBank = {
         "q": "Anthrax (Bacillus anthracis) produces sudden death in cattle with which triad of cardinal necropsy findings?",
         "o": [
           "Absence of rigor mortis, incomplete clotting of dark tarry blood, and massive soft blackberry-jam splenomegaly",
-          "Severe dry gangrene of limbs, intact rigor mortis, and shrunken pale spleen",
-          "Corrugated cerebriform ileitis with button ulcers",
-          "Generalized petechiae with clear fluid effusions"
+          "Rapidly setting generalized rigor mortis, bright red hyper-oxygenated blood, and shrunken pale spleen with wrinkling",
+          "Severe peripheral ischemic dry gangrene of limbs, normal firm dark spleen, and generalized superficial lymphadenopathy",
+          "Marked generalized icterus, hemoglobinuric nephrosis, and enlarged liver showing prominent nutmeg congestion pattern"
         ],
         "a": 0,
         "e": "Anthrax toxin causes endothelial lysis and DIC, yielding failure of rigor mortis, dark uncoagulated blood from orifices, and soft splenomegaly.",
@@ -10356,9 +10356,9 @@ var quizBank = {
         "q": "Blackleg in cattle (Clostridium chauvoei) is characterized pathologically by necrotizing myositis with:",
         "o": [
           "Dark, dry, porous muscle smelling of rancid butter, with gas crepitation and serosanguinous exudate",
-          "Pale, waxy Zenker's degeneration without gas",
-          "Suppurative liquefaction of the entire limb musculature",
-          "Caseous nodules with concentric laminations"
+          "Pale, waxy, fish-flesh Zenker's degeneration without gas bubble formation or characteristic rancid odor",
+          "Extensive purulent liquefactive necrosis of skeletal muscle with creamy odorless yellowish exudate",
+          "Hard, fibrous, woody myositis containing radiating sulfur granules and extensive chronic fibroplasia"
         ],
         "a": 0,
         "e": "Chauvoei toxins induce ischemic necrosis and ferment muscle glycogen into butyric acid ('rancid butter' odor) and gas bubbles.",
@@ -10370,9 +10370,9 @@ var quizBank = {
         "q": "Black disease (Infectious Necrotic Hepatitis) in sheep is caused by Clostridium novyi Type B multiplying in liver areas damaged by:",
         "o": [
           "Migrating immature flukes of Fasciola hepatica",
-          "Echinococcus granulosus hydatid cysts",
-          "Toxic ingestion of Lantana camara",
-          "Heavy copper toxicity"
+          "Ruptured thick-walled hydatid cysts of Echinococcus",
+          "Intrahepatic migratory tracks of larval Ascaris suum",
+          "Peritoneal vesicular stages of Taenia hydatigena"
         ],
         "a": 0,
         "e": "Fluke migration creates anaerobic tracts allowing latent C. novyi spores to germinate, releasing alpha-toxin that causes necrotic hepatitis.",
@@ -10384,9 +10384,9 @@ var quizBank = {
         "q": "Pulpy kidney disease (Enterotoxaemia) in sheep is caused by Clostridium perfringens Type D producing which potent protoxin?",
         "o": [
           "Epsilon toxin (activated by trypsin in the small intestine)",
-          "Alpha toxin",
-          "Tetanospasmin",
-          "Botulinum toxin"
+          "Alpha toxin (phospholipase C causing intravascular hemolysis)",
+          "Beta toxin (pore-forming necrotizing toxin sensitive to trypsin)",
+          "Iota toxin (binary ADP-ribosylating toxin affecting the colon)"
         ],
         "a": 0,
         "e": "High grain intake sends starch into the ileum; C. perfringens Type D proliferates, producing epsilon protoxin activated by trypsin.",
@@ -10412,9 +10412,9 @@ var quizBank = {
         "q": "Braxy in sheep is an acute, fatal abomasitis caused by Clostridium septicum typically occurring after:",
         "o": [
           "Ingestion of frozen, frosted pasture in winter",
-          "Severe grazing on lush spring clover",
-          "Excessive water intake during summer",
-          "Prolonged feeding of dry cereal straw"
+          "Sudden unrestricted access to lush spring clover pastures",
+          "Rapid excessive consumption of concentrated cereal grains",
+          "Prolonged unsupplemented feeding on moldy sweet clover hay"
         ],
         "a": 0,
         "e": "Frosted feed injures the abomasal mucosa, allowing C. septicum to penetrate and induce hemorrhagic, emphysematous abomasitis.",
@@ -10426,9 +10426,9 @@ var quizBank = {
         "q": "Tetanus (Clostridium tetani) produces spastic paralysis and 'sawhorse' stance primarily through the action of tetanospasmin, which:",
         "o": [
           "Blocks the release of inhibitory neurotransmitters (GABA and glycine) from Renshaw interneurons in the spinal cord",
-          "Blocks acetylcholine release at the neuromuscular junction",
-          "Destroys upper motor neurons in the motor cortex",
-          "Degenerates myelin sheaths of peripheral motor nerves"
+          "Irreversibly blocks acetylcholine release at the neuromuscular junctions of striated peripheral skeletal muscle fibers",
+          "Directly causes cytotoxic destruction of lower motor neurons within the ventral grey horn of the lumbar spinal cord",
+          "Selectively demyelinates peripheral motor nerve axons, severely slowing motor action potential conduction velocity"
         ],
         "a": 0,
         "e": "Tetanospasmin migrates retrograde into spinal inhibitory interneurons, blocking GABA/glycine release, resulting in unchecked motor excitation.",
@@ -10440,9 +10440,9 @@ var quizBank = {
         "q": "Botulism (Clostridium botulinum) causes flaccid paralysis (limberneck in waterfowl) because botulinum toxin:",
         "o": [
           "Cleaves SNARE proteins and prevents acetylcholine release at peripheral neuromuscular junctions",
-          "Blocks glycine release in the spinal cord",
-          "Destroys ventral horn motor neurons",
-          "Causes severe muscle necrosis with myoglobinuria"
+          "Inhibits glycine and GABA exocytosis from presynaptic inhibitory interneurons in the spinal cord",
+          "Completely blocks voltage-gated sodium channels along sensory and motor peripheral nerve axons",
+          "Directly induces rapid enzymatic degradation of nicotinic receptors on the skeletal motor end-plate"
         ],
         "a": 0,
         "e": "Botulinum neurotoxin enters motor nerve terminals, cleaving SNARE proteins (SNAP-25/synaptobrevin) to halt acetylcholine release.",
@@ -10468,9 +10468,9 @@ var quizBank = {
         "q": "Hemorrhagic Septicaemia (HS) in cattle and buffalo is caused by Pasteurella multocida (serotypes B:2 and E:2) and produces:",
         "o": [
           "Severe pharyngeal and submandibular edema with acute fibrinous pleuropneumonia and petechiation",
-          "Chronic caseous lymphadenitis with onion-ring appearance",
-          "Atrophic rhinitis with nasal septum deviation",
-          "Suppurative arthritis without systemic signs"
+          "Chronic caseous lymphadenitis of superficial nodes characterized by classic concentric laminations",
+          "Severe progressive atrophic rhinitis featuring lateral deviation and atrophy of dorsal nasal turbinates",
+          "Suppurative polyarthritis and tenosynovitis with marked serosanguinous synovial effusion in heifers"
         ],
         "a": 0,
         "e": "Endotoxin-induced microvascular damage causes massive throat/submandibular edema, petechiae, and fibrinous pleuropneumonia.",
@@ -10482,9 +10482,9 @@ var quizBank = {
         "q": "Glanders in horses (Burkholderia mallei) manifests in three anatomical forms, namely:",
         "o": [
           "Nasal, Pulmonary, and Cutaneous (Farcy)",
-          "Intestinal, Ocular, and Articular",
-          "Hepatic, Splenic, and Renal",
-          "Cerebral, Spinal, and Peripheral"
+          "Intestinal, Hepatic, and Peritoneal forms",
+          "Cerebral, Meningeal, and Ocular forms",
+          "Articular, Muscular, and Osseous forms"
         ],
         "a": 0,
         "e": "Glanders affects equines as: Nasal (stellate ulcers/scars), Pulmonary (nodules), and Cutaneous/Farcy (nodular lymphangitis).",
@@ -10496,9 +10496,9 @@ var quizBank = {
         "q": "In cutaneous glanders (Farcy), the characteristic lesion is:",
         "o": [
           "Enlarged, corded subcutaneous lymphatic vessels studded with nodules that rupture into craters",
-          "Extensive vesicular eruptions on the coronary band",
-          "Rhomboid diamond skin plaques with central necrosis",
-          "Crusty circular alopecic patches on the face"
+          "Extensive vesicular eruptions and ulcerations extending along coronary bands and interdigital clefts",
+          "Rhomboid diamond-shaped hyperemic erythematous plaques with central ischemic infarction and necrosis",
+          "Multifocal circular alopecic crusty epidermal plaques with severe folliculitis and perifolliculitis"
         ],
         "a": 0,
         "e": "Farcy involves subcutaneous lymphangitis ('farcy pipes') and suppurative ulcerated nodules ('farcy buds').",
@@ -10510,9 +10510,9 @@ var quizBank = {
         "q": "Strangles in equines is an acute contagious suppurative lymphadenitis caused by:",
         "o": [
           "Streptococcus equi subspecies equi",
-          "Streptococcus dysgalactiae",
-          "Corynebacterium pseudotuberculosis",
-          "Rhodococcus equi"
+          "Streptococcus equi subspecies zooepidemicus",
+          "Corynebacterium pseudotuberculosis biotype ovis",
+          "Rhodococcus equi capsular serotype 1 strains"
         ],
         "a": 0,
         "e": "Strep. equi subsp. equi produces acute pharyngitis and suppurative abscessation of submandibular and retropharyngeal lymph nodes.",
@@ -10524,9 +10524,9 @@ var quizBank = {
         "q": "Bastard strangles in horses occurs when Streptococcus equi spreads hematogenously to cause:",
         "o": [
           "Metastatic abscesses in internal organs (mesenteric lymph nodes, spleen, brain)",
-          "Necrotizing pneumonia with oat cells",
-          "Chronic caseous granulomas with calcification in liver",
-          "Severe laminitis with pedal bone rotation"
+          "Acute necrotizing fibrinous pleuropneumonia with oat cells and marbled parenchyma",
+          "Chronic granulomatous hepatitis with extensive caseation necrosis and calcification",
+          "Severe bilateral degenerative osteoarthropathy accompanied by pedal bone rotation"
         ],
         "a": 0,
         "e": "Bastard strangles is metastatic dissemination producing abscesses in mesenteric nodes, lungs, spleen, or brain.",
@@ -10538,9 +10538,9 @@ var quizBank = {
         "q": "Bovine Brucellosis (Brucella abortus) in bulls produces which primary reproductive lesion?",
         "o": [
           "Necrotizing and granulomatous orchitis and epididymitis with testicular degeneration",
-          "Preputial prolapse with papillomatosis",
-          "Complete urethral calculus obstruction",
-          "Transmissible venereal round cell tumors"
+          "Severe proliferative balanoposthitis with multiple coalescing fibrous papillomatous masses",
+          "Complete obstructive urolithiasis producing secondary bilateral hydronephrosis and rupture",
+          "Multifocal transmissible venereal round cell tumors scattered along the penile shaft mucosa"
         ],
         "a": 0,
         "e": "Brucella abortus targets the male reproductive tract, causing severe necrotizing orchitis, seminal vesiculitis, and permanent sterility.",
@@ -10552,9 +10552,9 @@ var quizBank = {
         "q": "Caseous lymphadenitis (CLA) in sheep and goats is caused by Corynebacterium pseudotuberculosis, producing lymph nodes with:",
         "o": [
           "Concentric laminations of caseous necrotic debris resembling an 'onion ring' on cross-section",
-          "Solid gray medullary hyperplasia with zero necrosis",
-          "Pure watery serous cyst formation",
-          "Complete diffuse liquefaction into watery pus"
+          "Diffuse medullary lymphoid hyperplasia with severe follicular expansion but zero tissue necrosis",
+          "Multifocal multilocular retention cysts filled with clear serous fluid and lined by flat endothelium",
+          "Total liquefactive suppurative necrosis resulting in fluctuating cavities filled with thin watery pus"
         ],
         "a": 0,
         "e": "Repeated waves of bacterial necrosis, leukocyte influx, and fibrous encapsulation yield classic 'onion-ring' concentric rings.",
@@ -10566,9 +10566,9 @@ var quizBank = {
         "q": "Contagious Bovine Pleuropneumonia (CBPP) caused by Mycoplasma mycoides subsp. mycoides produces a diagnostic gross appearance called:",
         "o": [
           "'Marbled lung' (marbling of pulmonary parenchyma by widened, edematous interlobular septa and red/grey hepatization)",
-          "'Nutmeg lung'",
-          "'Bread and butter lung'",
-          "'Honeycomb lung'"
+          "'Nutmeg liver' pattern resulting from chronic passive venous congestion around central veins in cardiac failure",
+          "'Bread and butter' appearance caused by extensive deposition of fibrinous exudate across opposing pericardial surfaces",
+          "'Honeycomb lung' appearance characterized by extensive terminal bronchiolar dilation and diffuse interstitial fibrosis"
         ],
         "a": 0,
         "e": "Stages of red hepatization, grey hepatization, and massive gelatinous interlobular edema create the pathognomonic marbled lung.",
@@ -10580,9 +10580,9 @@ var quizBank = {
         "q": "Rhodococcus equi infection in foals typically produces which life-threatening pathological lesion?",
         "o": [
           "Suppurative and pyogranulomatous bronchopneumonia with large lung abscesses and ulcerative enterocolitis",
-          "Acute fibrinous pericarditis with cardiac tamponade",
-          "Severe degenerative osteoarthritis of the stifle",
-          "Widespread diamond skin infarcts"
+          "Acute severe fibrinous pericarditis accompanied by cardiac tamponade and widespread epicardial hemorrhages",
+          "Severe bilateral chronic degenerative osteoarthritis affecting predominantly the stifle and hock joint surfaces",
+          "Generalized cutaneous rhomboid diamond skin infarctions accompanied by vegetative mitral endocarditis"
         ],
         "a": 0,
         "e": "Rhodococcus equi is a facultative intracellular pathogen of macrophages, causing cavitary pyogranulomatous pulmonary abscesses.",
@@ -10594,9 +10594,9 @@ var quizBank = {
         "q": "Colibacillosis in neonatal calves manifesting as severe watery, yellowish diarrhea without mucosal ulceration is caused by:",
         "o": [
           "Enterotoxigenic E. coli (ETEC) producing heat-labile or heat-stable enterotoxins via K99/F5 fimbriae",
-          "Enteropathogenic E. coli (EPEC)",
-          "Enterohemorrhagic E. coli (EHEC)",
-          "Septicemic E. coli (SEPEC)"
+          "Enteropathogenic E. coli (EPEC) inducing severe effacing lesions with pedestal formation on microvilli",
+          "Enterohemorrhagic E. coli (EHEC) producing Shiga toxins with severe hemorrhagic fibrinonecrotic colitis",
+          "Septicemic E. coli (SEPEC) possessing capsular polysaccharide antigens causing acute endotoxic shock"
         ],
         "a": 0,
         "e": "ETEC adheres via K99 fimbriae and produces enterotoxins, stimulating chloride secretion without destroying enterocytes (secretory diarrhea).",
@@ -10608,9 +10608,9 @@ var quizBank = {
         "q": "Swine Erysipelas (Erysipelothrix rhusiopathiae) produces chronic arthritis characterized morphologically by:",
         "o": [
           "Proliferative non-suppurative synovitis with prominent villous synovial hypertrophy ('synovial fronds')",
-          "Suppurative erosive arthritis with massive pus",
-          "Extensive caseous necrosis of subchondral bone",
-          "Complete ankylosis without synovial change"
+          "Acute erosive suppurative arthritis with extensive accumulation of purulent creamy joint exudate",
+          "Extensive chronic caseous necrosis of subchondral articular bone surrounded by thick fibrous capsules",
+          "Complete fibrous ankylosis accompanied by widespread osteophyte formation without synovial change"
         ],
         "a": 0,
         "e": "Chronic erysipelas stimulates intense synovial proliferation with villous fronds, lymphocytic infiltration, and pannus formation.",
@@ -10622,9 +10622,9 @@ var quizBank = {
         "q": "Leptospirosis in cattle and dogs typically causes which primary pathological lesions?",
         "o": [
           "Acute interstitial nephritis, hemolytic anemia, hemoglobinuria, and hepatic dysfunction",
-          "Chronic caseous lymphadenitis of mesenteric nodes",
-          "Granulomatous osteomyelitis of the facial bones",
-          "Severe fibrinous pleuropneumonia with oat cells"
+          "Chronic caseating granulomatous lymphadenitis involving cranial and mesenteric lymph nodes",
+          "Severe osteolytic granulomatous osteomyelitis of mandibular and maxillary facial bones",
+          "Acute fibrinous pleuropneumonia with pronounced interlobular edema and oat-cell infiltration"
         ],
         "a": 0,
         "e": "Leptospires colonize renal proximal tubules and produce hemolysins, causing interstitial nephritis, hemolysis, and jaundice.",
@@ -10636,9 +10636,9 @@ var quizBank = {
         "q": "Aspergillosis in domestic animals (Aspergillus fumigatus) is characterized histologically by fungal hyphae that are:",
         "o": [
           "Dichotomously branching at 45-degree angles, uniform in width, and septate",
-          "Broad, irregular, non-septate branching at 90-degree angles",
-          "Budding yeast cells with thick mucopolysaccharide capsules",
-          "Cigar-shaped pleomorphic intracellular yeast forms"
+          "Broad, irregular, sparsely septate hyphae branching haphazardly at 90-degree angles",
+          "Encapsulated budding spherical yeast cells possessing thick mucopolysaccharide coats",
+          "Small oval to cigar-shaped pleomorphic intracellular yeasts within macrophages"
         ],
         "a": 0,
         "e": "Aspergillus hyphae are slender, septate, and branch acutely (45°); Mucor/Zygomycetes are broad, non-septate, and branch at 90°.",
@@ -10650,9 +10650,9 @@ var quizBank = {
         "q": "Rhinosporidiosis (Rhinosporidium seeberi) causes which characteristic lesions in the nasal cavities of cattle and dogs?",
         "o": [
           "Friable, bleeding, strawberry-like polypoid growths containing large thick-walled sporangia filled with endospores",
-          "Deep caseous ulcers leaving nasal septal perforation",
-          "Bilateral symmetrical necrosis of nasal turbinates",
-          "Atrophic rhinitis without masses"
+          "Deep transmural ulcerative craterous lesions accompanied by complete necrosis and perforation of nasal septum",
+          "Bilateral symmetrical liquefactive necrosis of the ventral and dorsal nasal conchae without mass formation",
+          "Chronic progressive atrophic rhinitis characterized by severe osteolysis of the turbinates without polypoid growths"
         ],
         "a": 0,
         "e": "Rhinosporidiosis forms vascular polyps containing giant mature sporangia (up to 300 µm) filled with thousands of endospores.",
@@ -10664,9 +10664,9 @@ var quizBank = {
         "q": "Aflatoxicosis in livestock is caused by ingestion of aflatoxins produced by Aspergillus flavus, with the primary target organ being the:",
         "o": [
           "Liver (causing fatty change, centrilobular necrosis, bile duct proliferation, and cirrhosis)",
-          "Kidney collecting ducts",
-          "Myocardium",
-          "Lungs"
+          "Kidney (producing severe tubular degeneration, interstitial fibrosis, and marked glycosuria)",
+          "Myocardium (inducing multifocal myocardial Zenker's degeneration and eccentric dilation)",
+          "Bone marrow (causing generalized hypoplasia of erythroid and myeloid progenitor lineages)"
         ],
         "a": 0,
         "e": "Aflatoxin B1 is metabolized by liver CYP450 into reactive epoxides that alkylate DNA, causing severe hepatotoxicity and carcinoma.",
@@ -10678,9 +10678,9 @@ var quizBank = {
         "q": "Degnala disease in buffaloes and cattle in the Indian subcontinent is a mycotoxicosis associated with feeding moldy paddy straw containing:",
         "o": [
           "Fusarium toxins (producing dry gangrene of dependent extremities like tail, ears, and hooves)",
-          "Aflatoxin B1",
-          "Ochratoxin A",
-          "Ergot alkaloids"
+          "Aflatoxin B1 (causing severe centrilobular hepatic lipidosis and subsequent micronodular cirrhosis)",
+          "Ochratoxin A (inducing progressive proximal tubular degeneration and severe interstitial nephritis)",
+          "Stachybotryotoxins (causing extensive mucosal ulceration, hemorrhages, and aplastic pancytopenia)"
         ],
         "a": 0,
         "e": "Fusarium mycotoxins on wet paddy straw cause severe peripheral vasoconstriction and endothelial damage, causing gangrene of extremities.",
@@ -10692,9 +10692,9 @@ var quizBank = {
         "q": "Ergotism in livestock caused by Claviceps purpurea on cereal grasses produces dry gangrene of extremities due to:",
         "o": [
           "Persistent peripheral arteriolar vasoconstriction and endothelial damage induced by ergot alkaloids",
-          "Suppurative necrotizing cellulitis",
-          "Massive immune-complex mediated vasculitis",
-          "Primary deficiency of Vitamin B12"
+          "Acute suppurative and necrotizing cellulitis driven by opportunistic subcutaneous bacterial infection",
+          "Widespread Type III immune-complex mediated leukocytoclastic vasculitis within superficial capillaries",
+          "Severe primary deficiency of cyanocobalamin causing degenerative changes in peripheral sensory nerves"
         ],
         "a": 0,
         "e": "Ergotamine/ergosine stimulate alpha-1 receptors on arterioles, inducing prolonged vasoconstriction, ischemia, and dry gangrenous sloughing.",
@@ -10706,9 +10706,9 @@ var quizBank = {
         "q": "Bovine Spongiform Encephalopathy (BSE, Mad Cow Disease) neuropathology is characterized by vacuolation localized predominantly in the:",
         "o": [
           "Solitary tract nucleus and spinal trigeminal nucleus of the brainstem medulla",
-          "Cerebral white matter centrum semiovale",
-          "Cerebellar molecular layer only",
-          "Optic chiasm"
+          "Deep subcortical white matter tracts situated within the centrum semiovale and internal capsule",
+          "Superficial molecular and Purkinje cell layers of the cerebellar hemispheres and vermis folia",
+          "Optic chiasm and lateral geniculate nuclei within the rostral diencephalon and midbrain"
         ],
         "a": 0,
         "e": "The obex/medulla oblongata contains diagnostic intracytoplasmic neuronal vacuoles in the nucleus of the solitary tract and red nucleus.",
@@ -10720,9 +10720,9 @@ var quizBank = {
         "q": "Scrapie in sheep differs from BSE clinically and pathologically in that scrapie-affected sheep characteristically exhibit:",
         "o": [
           "Intense pruritus with compulsive rubbing and scraping of the fleece against fences",
-          "Severe generalized muscular flaccid paralysis without itching",
-          "Marked hydrocephalus with blindness",
-          "Suppurative meningoencephalitis with microabscesses"
+          "Severe generalized flaccid muscular paralysis without cutaneous pruritus or scratching",
+          "Marked internal hydrocephalus accompanied by persistent head-pressing and cortical blindness",
+          "Acute suppurative meningoencephalitis with microabscesses localized to the medulla oblongata"
         ],
         "a": 0,
         "e": "Severe pruritus causing wool loss from rubbing against posts gave 'scrapie' its name; spongiform vacuoles develop in the obex.",
@@ -10734,9 +10734,9 @@ var quizBank = {
         "q": "Ochratoxicosis in swine and poultry caused by Aspergillus and Penicillium toxins is primarily a disease of the:",
         "o": [
           "Kidney (nephrotoxicosis with tubular degeneration, interstitial fibrosis, and pale kidneys)",
-          "Rumen epithelium",
-          "Bone marrow stem cells",
-          "Adrenal medulla"
+          "Liver (hepatotoxicosis with severe biliary hyperplasia, megalocytosis, and portal fibrosis)",
+          "Rumen epithelium (severe parakeratotic ruminitis with blunting of ruminal absorptive papillae)",
+          "Bone marrow (myelotoxicosis resulting in severe generalized aplastic anemia and pancytopenia)"
         ],
         "a": 0,
         "e": "Ochratoxin A is a potent nephrotoxin causing chronic proximal tubular atrophy, interstitial fibrosis, and glucosuria.",
@@ -10748,9 +10748,9 @@ var quizBank = {
         "q": "Cryptococcosis (Cryptococcus neoformans) is identified microscopically by yeast cells possessing a:",
         "o": [
           "Wide mucopolysaccharide capsule that stains positive with Mucicarmine and Alcian Blue",
-          "Thick double-contoured wall without a capsule",
-          "Multiple broad-based buds",
-          "Hyphae with right-angle branching"
+          "Thick double-contoured refractile cell wall completely devoid of any mucinous capsule",
+          "Multiple broad-based buds emerging synchronously from a single central mother yeast cell",
+          "True septate hyphae displaying prominent right-angle branching and parallel cell walls"
         ],
         "a": 0,
         "e": "Cryptococcus capsule is rich in glucuronoxylomannan, creating diagnostic halos on India ink and staining pink with mucicarmine.",
@@ -10762,9 +10762,9 @@ var quizBank = {
         "q": "Equine leukoencephalomalacia (moldy corn poisoning) is caused by fumonisin B1 from Fusarium verticillioides, causing:",
         "o": [
           "Massive liquefactive necrosis of the cerebral white matter (malacia)",
-          "Severe fibrinous pleuropneumonia",
-          "Acute hemorrhagic cystitis",
-          "Spongiform encephalopathy in the brainstem"
+          "Acute severe fibrinous pleuropneumonia with extensive pleural fibrin sheets",
+          "Severe diffuse hemorrhagic cystitis accompanied by intraluminal blood clots",
+          "Widespread neuronal vacuolation restricted strictly to the brainstem nuclei"
         ],
         "a": 0,
         "e": "Fumonisin B1 inhibits ceramide synthase, disrupting sphingolipid metabolism and liquefying cerebral white matter.",
@@ -10776,9 +10776,9 @@ var quizBank = {
         "q": "Bovine Babesiosis ('Redwater' / Tick fever) caused by Babesia bigemina is characterized by intravascular hemolysis leading to:",
         "o": [
           "Hemoglobinuria, severe hemolytic jaundice, and a large, dark, congested 'blackberry jam' spleen",
-          "Clay-colored feces without hemoglobinuria",
-          "Massive caseous necrosis of mesenteric lymph nodes",
-          "Severe non-regenerative bone marrow aplasia"
+          "Acholuric jaundice, clay-colored pale feces, and severe hepatic atrophy without hemoglobinuria",
+          "Multifocal caseating granulomas within mesenteric lymph nodes accompanied by terminal ascites",
+          "Severe aplastic pancytopenia with dry bone marrow cavities and non-regenerative anemia"
         ],
         "a": 0,
         "e": "Intraerythrocytic Babesia trophozoites lyse RBCs intravascularly, spilling free hemoglobin into plasma and urine (redwater).",
@@ -10790,9 +10790,9 @@ var quizBank = {
         "q": "Theileriosis (East Coast Fever / Bovine Theileriosis, Theileria annulata) produces pathognomonic lymphoid proliferative bodies called:",
         "o": [
           "Koch's blue bodies (schizonts in lymphocytes and lymph node impression smears)",
-          "Negri bodies",
-          "Guarnieri bodies",
-          "Russell bodies"
+          "Negri inclusion bodies (intracytoplasmic viral aggregates in neuronal perikarya)",
+          "Guarnieri bodies (intracytoplasmic eosinophilic poxvirus inclusion complexes)",
+          "Russell bodies (eosinophilic immunoglobulin accumulations inside plasma cells)"
         ],
         "a": 0,
         "e": "Theileria macroschizonts transform infected lymphocytes, appearing as clusters of tiny blue dots (Koch's blue bodies) on Giemsa stain.",
@@ -10804,9 +10804,9 @@ var quizBank = {
         "q": "In acute Theileria annulata infection in cattle, characteristic lesions on the abomasal mucosa consist of:",
         "o": [
           "Punched-out necrotic abomasal ulcers surrounded by a hemorrhagic halo",
-          "Transverse corrugated folds that cannot be flattened",
-          "Dense pseudomembranous casts",
-          "Large pedunculated papillomas"
+          "Transverse corrugated mucosal folds that fail to flatten on stretching",
+          "Thick diphtheritic croupous membranes covering diffuse mucosal sloughs",
+          "Multiple pedunculated papillomatous growths protruding into the lumen"
         ],
         "a": 0,
         "e": "Lymphoid infiltration followed by ischemic necrosis produces classic punched-out ulcers in the abomasal folds.",
@@ -10818,9 +10818,9 @@ var quizBank = {
         "q": "Trypanosoma evansi is the causative agent of 'Surra' in horses, camels, and cattle, and is transmitted biologically/mechanically by:",
         "o": [
           "Tabanid horse flies and Stomoxys biting flies",
-          "Ixodid ticks (Rhipicephalus microplus)",
-          "Culicoides midges",
-          "Simulium blackflies"
+          "Ixodid hard ticks (Rhipicephalus microplus)",
+          "Culicoides midges and Phlebotomus sandflies",
+          "Simulium blackflies and Chrysops deer flies"
         ],
         "a": 0,
         "e": "Surra is transmitted mechanically by biting tabanid and stable flies, causing progressive anemia, recurrent fever, and dependent edema.",
@@ -10832,9 +10832,9 @@ var quizBank = {
         "q": "Acute Fasciolosis in sheep occurs when thousands of immature Fasciola hepatica flukes migrate through:",
         "o": [
           "Hepatic parenchyma, causing traumatic hemorrhagic tracts and predisposing to Black disease",
-          "Bile ducts, causing pipestem fibrosis",
-          "Abomasal mucosa, producing cobble-stone appearance",
-          "Splenic pulp, causing rupture"
+          "Major bile ducts, causing progressive mechanical cholangiohepatitis and pipestem fibrosis",
+          "Abomasal mucosal folds, inducing marked hyperplasia and a cobblestone gross appearance",
+          "Splenic red pulp sinuses, causing severe congestion, parenchymal softening, and rupture"
         ],
         "a": 0,
         "e": "Massive parenchymal burrowing by young flukes causes traumatic hepatitis, hemoperitoneum, and germinates C. novyi spores.",
@@ -10846,9 +10846,9 @@ var quizBank = {
         "q": "Immature paramphistomes (Amphistomiasis) cause severe clinical disease in sheep and cattle when they embed and migrate within the:",
         "o": [
           "Duodenal and upper jejunal mucosa, causing severe catarrhal enteritis and hypoalbuminaemia",
-          "Rumen pillars and reticulum",
-          "Common bile duct",
-          "Mesenteric arterial branches"
+          "Ruminal pillars and reticular folds, inducing severe papillary atrophy and parakeratosis",
+          "Common bile duct and hepatic ducts, causing obstructive jaundice and biliary hyperplasia",
+          "Branches of the cranial mesenteric artery, causing verminous arteritis and thrombosis"
         ],
         "a": 0,
         "e": "Immature paramphistomes in duodenum cause severe catarrhal enteritis, protein-losing enteropathy, and submandibular edema (bottle jaw).",
@@ -10860,9 +10860,9 @@ var quizBank = {
         "q": "Haemonchosis (Haemonchus contortus / Barber's pole worm) in sheep causes severe pathology primarily by:",
         "o": [
           "Blood-sucking in the abomasum, causing severe anemia, hypoproteinemia, and submandibular edema ('bottle jaw')",
-          "Penetrating the cranial mesenteric artery to form thrombi",
-          "Forming fibrous cysts in the liver parenchyma",
-          "Obstructing the common bile duct"
+          "Penetrating into the cranial mesenteric arterial walls, producing verminous aneurysms and colic infarcts",
+          "Forming extensive thick-walled fibrous hydatid cysts throughout hepatic and pulmonary parenchyma",
+          "Mechanically occluding the common bile duct, resulting in severe post-hepatic obstructive jaundice"
         ],
         "a": 0,
         "e": "Voracious abomasal blood feeding causes severe blood loss, hypoalbuminaemia, anasarca/bottle-jaw, with zero diarrhea.",
@@ -10874,9 +10874,9 @@ var quizBank = {
         "q": "Ostertagia ostertagi infection in cattle produces a characteristic gross appearance of the abomasal mucosa described as:",
         "o": [
           "'Morocco leather' or cobblestone appearance due to nodular mucosal hyperplasia",
-          "Zebra-striped longitudinal ridges",
-          "Transverse corrugated folds",
-          "Smooth atrophic paper-thin mucosa"
+          "'Zebra-striped' longitudinal mucosal hemorrhages in the rectum and lower colon",
+          "'Corrugated cerebriform' transverse intestinal folds that resist smoothing",
+          "'Button ulcer' formations characterized by concentric layers of necrotic debris"
         ],
         "a": 0,
         "e": "Larvae developing in gastric glands cause mucosal hyperplasia and loss of acid-producing parietal cells ('Morocco leather' abomasum).",
@@ -10888,9 +10888,9 @@ var quizBank = {
         "q": "Spirocerca lupi in dogs characteristically induces fibrous granulomas in the wall of the:",
         "o": [
           "Esophagus, which may undergo neoplastic transformation into fibrosarcoma or osteosarcoma",
-          "Stomach pylorus, causing gastric dilation",
-          "Pulmonary alveoli, causing emphysema",
-          "Small intestine, causing intussusception"
+          "Gastric pylorus, inducing muscular hypertrophy, gastric outflow stenosis, and dilation",
+          "Pulmonary alveolar walls, producing severe chronic diffuse interstitial emphysema",
+          "Duodenal submucosa, inducing persistent violent peristalsis and ileocecal invagination"
         ],
         "a": 0,
         "e": "Spirocerca nodules in the distal esophagus incite severe chronic granulomatous inflammation, often transforming into malignant sarcomas.",
@@ -10902,9 +10902,9 @@ var quizBank = {
         "q": "Ancylostoma caninum (canine hookworm) causes disease primarily through:",
         "o": [
           "Lacerating intestinal mucosa and sucking blood, causing severe iron deficiency microcytic anemia",
-          "Migrating into the cerebral cortex causing malacia",
-          "Inducing gall bladder wall calcification",
-          "Blocking lymphatic drainage causing chylothorax"
+          "Migrating into the cerebral cortical white matter, causing severe focal polioencephalomalacia",
+          "Invading and calcifying the gall bladder wall, causing marked cystic mucosal hyperplasia",
+          "Occluding thoracic duct lymphatic drainage, producing severe bilateral recurrent chylothorax"
         ],
         "a": 0,
         "e": "Hookworms use buccal teeth to browse intestinal mucosa, shifting sites and leaving bleeding wounds that cause profound anemia.",
@@ -10916,9 +10916,9 @@ var quizBank = {
         "q": "Coenurosis ('Gid' / 'Sturdy') in sheep is caused by the larval stage (Coenurus cerebralis) of which tapeworm?",
         "o": [
           "Taenia multiceps (adult in dogs)",
-          "Taenia hydatigena",
-          "Echinococcus granulosus",
-          "Dipylidium caninum"
+          "Taenia hydatigena (cysticercus tenuicollis)",
+          "Echinococcus granulosus (hydatid cyst)",
+          "Dipylidium caninum (cucumber tapeworm)"
         ],
         "a": 0,
         "e": "Coenurus cerebralis cysts lodge in the ovine brain, exerting pressure that produces circling, head tilting, and blindness.",
@@ -10930,9 +10930,9 @@ var quizBank = {
         "q": "Toxoplasma gondii infection in pregnant ewes typically produces which diagnostic placental lesion?",
         "o": [
           "Focal white necrosis and calcification confined to the cotyledons, with intercotyledonary areas normal",
-          "Diffuse leathery thickening of the intercotyledonary chorioallantois",
-          "Massive hemorrhagic detachment of the whole placenta",
-          "Complete hydropic swelling of the amnion"
+          "Diffuse leathery brownish thickening and edema involving primarily the intercotyledonary chorioallantois",
+          "Massive acute hemorrhagic detachment of maternal caruncles resulting in catastrophic uterine hemorrhage",
+          "Complete hydropic swelling of the amnion accompanied by widespread necrotic pustules over the fetus"
         ],
         "a": 0,
         "e": "Toxoplasma produces 'frosted strawberry' cotyledons (discrete white necrotic foci) while leaving intercotyledonary areas clean.",
@@ -10944,9 +10944,9 @@ var quizBank = {
         "q": "Parturient paresis (Milk Fever) in high-producing dairy cows is an acute metabolic disorder characterized by severe:",
         "o": [
           "Hypocalcaemia occurring at or near the onset of lactation",
-          "Hypomagnesaemia with tetany",
-          "Hypoglycemia with ketonuria",
-          "Hyperphosphataemia with urolithiasis"
+          "Hypomagnesaemia with hyperexcitability and tetanic spasms",
+          "Severe hypoglycemia with excessive accumulation of ketones",
+          "Hyperphosphataemia with formation of obstructive calculi"
         ],
         "a": 0,
         "e": "Sudden calcium demand for colostrum synthesis exceeds homeostatic parathyroid mobilization, producing flaccid paresis.",
@@ -10958,9 +10958,9 @@ var quizBank = {
         "q": "Bovine ketosis (acetonaemia) in high-yielding cows occurs in early lactation when:",
         "o": [
           "Energy demand exceeds feed intake, forcing excessive adipose lipolysis and hepatic ketone body generation",
-          "Calcium levels drop precipitously after calving",
-          "Excess protein is fed causing rumen alkalosis",
-          "Thiamine is degraded by bacterial thiaminases"
+          "Serum calcium levels drop precipitously after calving, causing acute blockade of neuromuscular transmission",
+          "High dietary soluble carbohydrates induce rapid lactic acidosis with severe ruminal mucosal ulceration",
+          "Bacterial thiaminases degrade ruminal vitamin B1, producing widespread cerebrocortical laminar necrosis"
         ],
         "a": 0,
         "e": "Negative energy balance drives adipose lipolysis; incomplete oxidation of NEFA in hepatocytes generates acetoacetate and beta-hydroxybutyrate.",
@@ -10972,9 +10972,9 @@ var quizBank = {
         "q": "Pregnancy toxaemia in twin-bearing ewes in late gestation is pathologically characterized by:",
         "o": [
           "Severe hepatic lipidosis (swollen, greasy, pale yellow liver) and hypoglycemia",
-          "Massive cardiac hypertrophy",
-          "Pulmonary atelectasis with oat cells",
-          "Epithelial hyperplasia of the abomasum"
+          "Massive eccentric ventricular cardiac hypertrophy accompanied by severe hydropericardium",
+          "Acute fibrinous bronchopneumonia with marbled parenchymal consolidation and pleural exudate",
+          "Severe abomasal mucosal edema with prominent nodular cobblestone glandular hyperplasia"
         ],
         "a": 0,
         "e": "High fetal glucose drain in late twin gestation forces massive fat mobilization, resulting in severe hepatic steatosis and ketoacidosis.",
@@ -10986,9 +10986,9 @@ var quizBank = {
         "q": "Hypomagnesaemic tetany ('Grass tetany' / 'Grass staggers') in pastured cattle is provoked by grazing lush pastures:",
         "o": [
           "High in potassium and nitrogen, which competitively inhibit ruminal magnesium absorption",
-          "High in calcium and low in phosphorus",
-          "Contaminated with Clostridium novyi",
-          "Deficient in sodium chloride alone"
+          "High in calcium and phosphorus, which precipitate dietary magnesium as insoluble rumen salts",
+          "Deficient in sodium, which impairs active electrochemical magnesium transport across rumen wall",
+          "Rich in sulfur and molybdenum, which form insoluble chelates preventing ruminal cation uptake"
         ],
         "a": 0,
         "e": "High dietary potassium depolarizes rumen apical membranes, blocking active magnesium transport and causing hypomagnesaemic tetany.",
@@ -11000,9 +11000,9 @@ var quizBank = {
         "q": "Post-parturient hemoglobinuria (PPH) in high-yielding dairy cows is etiologically associated with severe:",
         "o": [
           "Hypophosphataemia, which depletes erythrocyte ATP and compromises membrane deformability",
-          "Hypocalcaemia causing tetany",
-          "Hyperkalemia causing cardiac arrest",
-          "Hypovitaminosis A"
+          "Hypocalcaemia, which prevents erythrocyte membrane stabilization and induces rapid cell lysis",
+          "Hypomagnesaemia, which inactivates erythrocyte Na+/K+-ATPase and produces osmotic swelling",
+          "Hypovitaminosis E, which causes peroxidative lipid cleavage in circulating red blood cell walls"
         ],
         "a": 0,
         "e": "Low phosphorus impairs glycolysis and ATP generation in red blood cells, causing acute intravascular hemolysis and hemoglobinuria.",
@@ -11028,9 +11028,9 @@ var quizBank = {
         "q": "Exertional rhabdomyolysis ('Azoturia' / 'Monday morning disease') in working draft horses is characterized pathologically by:",
         "o": [
           "Massive acute myonecrosis of gluteal/lumbar muscles and severe myoglobinuria with dark red/brown urine",
-          "Suppurative osteomyelitis of the third phalanx",
-          "Rupture of the common digital extensor tendon",
-          "Severe hydropericardium"
+          "Extensive suppurative myositis of major pectoral muscles accompanied by severe hematuria and renal calculi",
+          "Severe fibrous contracture of semitendinosus muscle with dark bile-stained urine and acute biliary rupture",
+          "Symmetrical coagulative necrosis of masseter muscles resulting in progressive anuria and hydronephrosis"
         ],
         "a": 0,
         "e": "Rest on full grain rations followed by sudden exercise produces excessive lactic acid accumulation, severe myonecrosis, and myoglobinuria.",
@@ -11042,9 +11042,9 @@ var quizBank = {
         "q": "Pica (depraved appetite, chewing bones and wood) in pastured cattle is classic evidence of dietary deficiency of:",
         "o": [
           "Phosphorus (osteophagia)",
-          "Iron",
-          "Vitamin E",
-          "Magnesium"
+          "Dietary potassium (hypokalemia)",
+          "Dietary selenium (myodystrophy)",
+          "Dietary cobalt (enzootic pining)"
         ],
         "a": 0,
         "e": "Phosphorus-deficient cattle chew bones (osteophagia), which frequently transmits Clostridium botulinum toxin from carrion.",
@@ -11056,9 +11056,9 @@ var quizBank = {
         "q": "Hypovitaminosis A in growing calves leads to blindness due to:",
         "o": [
           "Constriction of the optic nerve within the optic foramen due to defective bone remodeling of the sphenoid bone",
-          "Cataract formation in the crystalline lens",
-          "Detachment of the retina by fungal hyphae",
-          "Suppurative keratitis caused by Moraxella"
+          "Extensive ischemic necrosis of the visual cerebral cortex resulting from severe thiamine pyrophosphate deficiency",
+          "Progressive bilateral cataractous degeneration of crystalline lens fibers triggered by persistent galactosemia",
+          "Suppurative panophthalmitis and corneal perforation initiated by virulent Moraxella bovis secondary infection"
         ],
         "a": 0,
         "e": "Failure of osteoclastic remodeling of the optic canal compresses and atrophies the optic nerve, causing permanent blindness.",
@@ -11070,9 +11070,9 @@ var quizBank = {
         "q": "White muscle disease in calves and lambs is characterized pathologically by:",
         "o": [
           "Bilateral symmetrical chalky white streaks of Zenker's hyaline necrosis and calcification in skeletal and cardiac muscle",
-          "Suppurative cellulitis of the limb fascia",
-          "Fatty infiltration of the liver without muscle lesions",
-          "Multiple osteochondromas at physes"
+          "Diffuse asymmetrical purulent suppurative myositis with extensive gas gangrene formation throughout major skeletal limb muscles",
+          "Severe hemorrhagic fasciitis and subcutaneous gelatinous edema caused by clostridial exotoxins in deep skeletal muscle layers",
+          "Extensive granulomatous myositis containing radiating sulfur granules and marked peripheral fibroblastic capsule formation"
         ],
         "a": 0,
         "e": "Vitamin E/Selenium deficiency deprives muscle of antioxidant protection, resulting in Zenker's necrosis and dystrophic calcification.",
@@ -11084,9 +11084,9 @@ var quizBank = {
         "q": "Acute arsenic poisoning in livestock is pathologically characterized by:",
         "o": [
           "Severe gastroenteritis with 'boiled rice' or shredded mucosal sloughing, and subendocardial hemorrhages",
-          "Extensive dry gangrene of the tail and ears",
-          "Massive pulmonary emphysema with bullae",
-          "Polioencephalomalacia with autofluorescence"
+          "Extensive peripheral dry gangrene involving the distal extremity of tail, ears, and coronary bands",
+          "Massive acute pulmonary edema and interstitial emphysema with extensive bullae throughout diaphragmatic lobes",
+          "Severe cerebrocortical polioencephalomalacia with autofluorescence under ultraviolet illumination"
         ],
         "a": 0,
         "e": "Arsenic binds sulfhydryl enzymes, producing profound splanchnic capillary damage, intense gastroenteritis, and dehydration.",
@@ -11098,9 +11098,9 @@ var quizBank = {
         "q": "Chronic copper toxicity in sheep manifests as a sudden 'hemolytic crisis' when copper stored in the liver is released, causing:",
         "o": [
           "Massive intravascular hemolysis, icterus, and pathognomonic dark 'gunmetal' kidneys",
-          "Suppurative encephalomalacia",
-          "Extensive osteopetrosis with dense bones",
-          "Acute pancreatitis with fat saponification"
+          "Severe diffuse liquefactive polioencephalomalacia with yellow cortical fluorescence",
+          "Extensive generalized osteopetrosis with dense obliteration of all marrow cavities",
+          "Acute necrotizing pancreatitis with extensive enzymatic peripancreatic fat saponification"
         ],
         "a": 0,
         "e": "Sudden release of hepatic copper into blood oxidizes red blood cells, causing acute intravascular hemolysis and black/gunmetal kidneys.",
@@ -11112,9 +11112,9 @@ var quizBank = {
         "q": "Chronic lead poisoning in cattle produces which characteristic neurological lesion?",
         "o": [
           "Laminar necrosis of cerebral cortical neurons (polioencephalomalacia)",
-          "Hydrocephalus with cerebellar hypoplasia",
-          "Suppurative microabscesses in the medulla",
-          "Neuronal vacuolation in the obex"
+          "Severe internal hydrocephalus accompanied by marked cerebellar hypoplasia",
+          "Suppurative microabscessation localized strictly to the medulla oblongata",
+          "Extensive neuronal vacuolation in the obex and solitary tract nucleus"
         ],
         "a": 0,
         "e": "Lead damages capillary endothelium and astrocyte energy production, producing laminar cortical necrosis and edema in young cattle.",
@@ -11126,9 +11126,9 @@ var quizBank = {
         "q": "Nitrate/nitrite poisoning in cattle results in sudden death characterized by:",
         "o": [
           "Dark 'chocolate-brown' blood due to conversion of hemoglobin to methemoglobin",
-          "Bright cherry-red blood and tissues",
-          "Pale watery blood with high reticulocytosis",
-          "Severe coagulative necrosis of the liver"
+          "Bright cherry-red blood due to tissue failure to extract oxygen from hemoglobin",
+          "Pale thin watery blood with profound macrocytic hypochromic reticulocytosis",
+          "Marked icteric plasma accompanied by acute centrilobular coagulative necrosis"
         ],
         "a": 0,
         "e": "Nitrite oxidizes ferrous iron (Fe2+) of hemoglobin to ferric iron (Fe3+), forming methemoglobin which cannot transport oxygen.",
@@ -11140,9 +11140,9 @@ var quizBank = {
         "q": "Hydrocyanic acid (HCN / Prussic acid) poisoning from ingestion of immature sorghum produces death with characteristic:",
         "o": [
           "Bright 'cherry-red' blood and tissues that do not darken upon exposure to air",
-          "Dark chocolate-brown blood",
-          "Severe jaundice with yellow sclera",
-          "Massive subcutaneous edema"
+          "Dark chocolate-brown blood caused by the widespread conversion of hemoglobin",
+          "Intense golden-yellow jaundice with widespread staining of sclera and serosa",
+          "Massive subcutaneous gelatinous edema and marked hemopericardial accumulation"
         ],
         "a": 0,
         "e": "Cyanide blocks cytochrome c oxidase, preventing cellular oxygen utilization; venous blood remains fully oxygenated and bright cherry-red.",
@@ -11154,9 +11154,9 @@ var quizBank = {
         "q": "Chronic fluorosis in cattle ingesting high-fluoride rock phosphates is clinically identified by:",
         "o": [
           "Mottled, chalky, pitted, and rapidly worn incisor teeth, along with painful periosteal exostoses",
-          "Extensive dry gangrene of the ear tips",
-          "Severe chronic glomerulonephritis",
-          "Laminar cortical brain necrosis"
+          "Extensive ischemic dry gangrene affecting distal ear tips, tail extremities, and coronary borders",
+          "Severe chronic membranoproliferative glomerulonephritis resulting in diffuse anasarca and uremia",
+          "Widespread laminar necrosis of cerebral cortical neurons with brilliant ultraviolet fluorescence"
         ],
         "a": 0,
         "e": "Fluoride substitutes for hydroxyl groups forming brittle fluorapatite, causing dental enamel mottling and skeletal exostoses.",
@@ -11168,9 +11168,9 @@ var quizBank = {
         "q": "Organophosphate and carbamate insecticide poisoning in domestic animals causes death by:",
         "o": [
           "Irreversibly inhibiting acetylcholinesterase, producing toxic accumulation of acetylcholine and SLUD signs",
-          "Blocking voltage-gated sodium channels in the heart",
-          "Uncoupling oxidative phosphorylation",
-          "Directly lysing erythrocyte membranes"
+          "Competitively blocking voltage-gated sodium channels in cardiac conduction fibers, inducing sudden cardiac arrest",
+          "Uncoupling mitochondrial oxidative phosphorylation, causing profound severe hyperthermia and metabolic acidosis",
+          "Directly lysing circulating erythrocyte membranes, triggering catastrophic acute intravascular hemolytic crisis"
         ],
         "a": 0,
         "e": "Inhibition of AChE produces excessive parasympathetic stimulation: Salivation, Lacrimation, Urination, Defecation, and respiratory failure.",
@@ -11182,9 +11182,9 @@ var quizBank = {
         "q": "Lantana camara poisoning in grazing cattle is characterized pathologically by:",
         "o": [
           "Severe hepatogenous (secondary) photosensitization and severe cholestatic jaundice with swollen yellow-orange liver",
-          "Primary photosensitization without liver injury",
-          "Acute hemorrhagic cystitis with hematuria",
-          "Severe spastic paralysis like tetanus"
+          "Direct primary photosensitization without underlying hepatocellular injury, biliary stasis, or generalized hyperbilirubinemia",
+          "Acute diffuse hemorrhagic and ulcerative cystitis accompanied by persistent profuse macroscopic hematuria and dysuria",
+          "Severe generalized tetanic muscular spasms mimicking strychnine poisoning with no visible characteristic necropsy lesions"
         ],
         "a": 0,
         "e": "Lantadene A and B cause biliary canalicular paralysis; phylloerythrin retention leads to secondary photosensitization and icterus.",
@@ -11196,9 +11196,9 @@ var quizBank = {
         "q": "Chronic bracken fern (Pteridium aquilinum) toxicity in cattle produces enzootic hematuria characterized by:",
         "o": [
           "Multiple hemangiomas, hemangiosarcomas, and urothelial carcinomas in the urinary bladder wall",
-          "Polioencephalomalacia from thiaminase activity",
-          "Severe osteomalacia of the pelvic girdle",
-          "Suppurative pyelonephritis"
+          "Severe cerebrocortical polioencephalomalacia induced by the enzymatic activity of thiaminases",
+          "Progressive fibrous osteodystrophy and osteomalacia of the pelvic girdle and distal extremities",
+          "Ascending suppurative pyelonephritis with extensive abscessation throughout the renal parenchyma"
         ],
         "a": 0,
         "e": "In cattle, ptaquiloside induces vascular and epithelial tumors in the bladder mucosa; in horses, bracken fern causes thiamine deficiency.",
@@ -11210,9 +11210,9 @@ var quizBank = {
         "q": "Gossypol poisoning in swine and calves resulting from feeding raw cottonseed meal produces:",
         "o": [
           "Congestive heart failure with dilated cardiomyopathy, myocardial degeneration, and centrilobular liver necrosis",
-          "Severe acute nephritis with oxaluria",
-          "Dry gangrene of the tail",
-          "Enzootic calcinosis of the aorta"
+          "Acute severe toxic nephrosis characterized by extensive calcium oxalate monohydrate crystal deposition in renal tubules",
+          "Peripheral ischemic dry gangrene of the tail tip, ear margins, and hooves caused by persistent arteriolar vasoconstriction",
+          "Enzootic calcinosis characterized by widespread mineralization of the elastic lamina of the thoracic and abdominal aorta"
         ],
         "a": 0,
         "e": "Gossypol is a toxic polyphenolic binaphthyl that damages cardiac myocytes, resulting in acute cardiac failure and pulmonary edema.",
@@ -11238,9 +11238,9 @@ var quizBank = {
         "q": "Peste des Petits Ruminants (PPR) virus in sheep and goats targets which tissues to cause the classic syndrome of stomatitis, enteritis, and pneumonia?",
         "o": [
           "Epithelial and lymphoid tissues",
-          "Skeletal muscle and myocardium",
-          "Renal tubular epithelium only",
-          "Central nervous system neurons"
+          "Skeletal muscle and myocardium bundles",
+          "Renal tubular and pelvic lining cells",
+          "Central nervous system grey neurons"
         ],
         "a": 0,
         "e": "PPR morbillivirus is both epitheliotropic (erosive stomatitis, catarrhal enteritis, bronchointerstitial pneumonia) and lymphotropic (severe lymphoid necrosis and depletion).",
@@ -11252,9 +11252,9 @@ var quizBank = {
         "q": "Classical Swine Fever (CSF / Hog Cholera) produces which characteristic gross lesion on the kidneys of affected pigs?",
         "o": [
           "'Turkey-egg' kidney (diffuse cortical petechial hemorrhages)",
-          "Amyloid contracted kidney",
-          "Large white polycystic kidney",
-          "Gunmetal kidney"
+          "'White-spotted' kidney (subcapsular interstitial nephritis)",
+          "'Amyloid contracted' kidney with diffuse waxy pale cortical zones",
+          "'Gunmetal' kidney (diffuse acute hemoglobinuric tubular nephrosis)"
         ],
         "a": 0,
         "e": "CSF pestivirus causes endothelial degeneration and vasculitis, resulting in widespread petechial hemorrhages throughout the renal cortex resembling a turkey egg.",
@@ -11266,9 +11266,9 @@ var quizBank = {
         "q": "Canine Parvovirus-2 (CPV-2) targets rapidly dividing tissues, producing severe hemorrhagic enteritis in older pups and which fatal lesion in pups under 8 weeks of age?",
         "o": [
           "Acute non-suppurative myocarditis",
-          "Acute interstitial nephritis",
-          "Laryngeal paralysis",
-          "Corneal ulceration"
+          "Acute interstitial lipid nephrosis",
+          "Suppurative laryngeal paralysis",
+          "Erosive ulcerative keratitis"
         ],
         "a": 0,
         "e": "In neonatal and young puppies lacking maternal antibodies, actively replicating cardiomyocytes support parvoviral replication, causing fatal acute myocarditis.",
@@ -11280,9 +11280,9 @@ var quizBank = {
         "q": "Equine Infectious Anemia (EIA / Swamp Fever) is a lentiviral infection diagnosed officially by demonstrating serum precipitating antibodies using the:",
         "o": [
           "Coggins test (agar gel immunodiffusion / AGID)",
-          "Rose Bengal plate test",
-          "Tuberculin skin test",
-          "Mallein intradermo-palpebral test"
+          "Rose Bengal plate agglutination test (standard RBPT)",
+          "Intradermal comparative cervical tuberculin skin test",
+          "Mallein intradermo-palpebral ophthalmic diagnostic test"
         ],
         "a": 0,
         "e": "The Coggins AGID test detects antibodies directed against the major p26 core protein of the EIA lentivirus and is the international regulatory standard.",
@@ -11294,9 +11294,9 @@ var quizBank = {
         "q": "Which post-mortem triad is hallmark of an Anthrax carcass, making opening of the dead animal strictly prohibited under law?",
         "o": [
           "Failure of blood to clot, incomplete rigor mortis, and dark tarry unclotted blood from natural orifices",
-          "Marbled lung consolidation, serofibrinous pleuritis, and pulmonary abscesses",
-          "Diffusely ulcerated tongue, coronary band blisters, and myocardial tiger striping",
-          "Purulent omphalophlebitis, swollen hocks, and fibrinous peritonitis"
+          "Marbled pulmonary consolidation, extensive serofibrinous pleuritis, and encapsulated chronic lung abscesses",
+          "Diffusely ulcerated lingual mucosa, coronary band vesiculation, and myocardial tiger-striped necrotizing lesions",
+          "Purulent omphalophlebitis, swollen suppurative hock joints, and widespread fibrinous peritonitis in calves"
         ],
         "a": 0,
         "e": "Opening an anthrax carcass exposes Bacillus anthracis vegetative cells to atmospheric oxygen, inducing sporulation which contaminates soil for decades.",
@@ -11308,9 +11308,9 @@ var quizBank = {
         "q": "Johne's Disease (Paratuberculosis) in cattle is pathologically characterized by chronic emaciation and which hallmark gross lesion of the intestinal tract?",
         "o": [
           "Transverse corrugated 'brain-like' mucosal folding of the ileum that cannot be flattened by stretching",
-          "Perforating button ulcers around the ileocecal valve",
-          "Pseudomembranous diphtheritic sloughing of mucosal lining",
-          "Acute hemorrhagic infarction with volvulus"
+          "Multiple necrotic button ulcers with raised borders scattered around the ileocecal valve and ascending colon",
+          "Pseudomembranous diphtheritic sloughing and casting of the mucosal lining throughout the small and large gut",
+          "Severe acute hemorrhagic infarction of the distal jejunum and ileum secondary to complete mesenteric volvulus"
         ],
         "a": 0,
         "e": "Massive infiltration of the lamina propria and submucosa by epithelioid macrophages packed with acid-fast bacilli causes severe thickening and brain-like rugae.",
@@ -11322,9 +11322,9 @@ var quizBank = {
         "q": "The 'Strauss reaction' (purulent periorchitis and scrotal enlargement in inoculated male guinea pigs) is an in vivo diagnostic test for:",
         "o": [
           "Burkholderia mallei (Glanders)",
-          "Bacillus anthracis",
-          "Pasteurella multocida",
-          "Brucella abortus"
+          "Bacillus anthracis (Anthrax spores)",
+          "Pasteurella multocida (Septicemia)",
+          "Brucella abortus (Bovine abortion)"
         ],
         "a": 0,
         "e": "Intraperitoneal injection of Glanders suspect material into male guinea pigs causes severe acute suppurative periorchitis within 2-4 days, known as the Strauss phenomenon.",
@@ -11350,9 +11350,9 @@ var quizBank = {
         "q": "Contagious Bovine Pleuropneumonia (CBPP) caused by Mycoplasma mycoides subsp. mycoides is pathognomonically recognized by which gross pulmonary lesion?",
         "o": [
           "'Marbled lung' with massive widening of interlobular septa by serofibrinous exudate and sequestrum formation",
-          "Miliary caseous granulomatous nodules throughout all lobes",
-          "Suppurative cuffing bronchopneumonia restricted to cranioventral lobes",
-          "Multiple hydatid cysts with adventitial capsules"
+          "Miliary caseous granulomatous nodules distributed uniformly throughout all pulmonary lobes with calcification",
+          "Suppurative peribronchiolar cuffing bronchopneumonia restricted strictly to the dependent cranioventral lobes",
+          "Multiple unilocular hydatid cysts surrounded by thick fibrous adventitial capsules within the lung parenchyma"
         ],
         "a": 0,
         "e": "Thrombosis of pulmonary and lymphatic vessels in bovine lung with prominent interlobular septa yields extreme septal widening, alternating hepatization, and necrotic sequestra.",
@@ -11364,9 +11364,9 @@ var quizBank = {
         "q": "'Rhinosporidiosis' in equines, cattle, and dogs produces polypoid, cauliflower-like friable nasal growths studded with white specks representing:",
         "o": [
           "Thick-walled sporangia filled with thousands of round endospores",
-          "Colonies of actinomycetes forming sulfur granules",
-          "Filarial nematode microfilariae",
-          "Caseous tuberculoid granulomas"
+          "Colonies of higher filamentous bacteria forming visible sulfur granules",
+          "Intravascular coiled microfilariae surrounded by eosinophilic cuffs",
+          "Concentric fibrocaseous tubercles containing multinucleated giant cells"
         ],
         "a": 0,
         "e": "Rhinosporidium seeberi (a mesomycetozoan) forms giant sporangia (up to 300 µm) visible to the naked eye as minute white dots that burst to release endospores.",
@@ -11378,9 +11378,9 @@ var quizBank = {
         "q": "'Degnala disease' in buffaloes and cattle in the Indian subcontinent is an extremity necrosis syndrome caused by mycotoxins from:",
         "o": [
           "Fusarium equiseti / Fusarium oxysporum on moldy paddy straw",
-          "Aspergillus flavus in peanut cake",
-          "Claviceps purpurea in rye",
-          "Penicillium citrinum in rice"
+          "Aspergillus flavus and parasiticus on stored oilseed peanut cake",
+          "Claviceps purpurea sclerotia infesting rye and forage rye grasses",
+          "Penicillium citrinum producing citrinin in stored commercial rice"
         ],
         "a": 0,
         "e": "Feeding moldy paddy straw containing Fusarium trichothecene mycotoxins produces severe peripheral vasoconstriction, leading to dry gangrene of feet, tail tip, and ear tips.",
@@ -11392,9 +11392,9 @@ var quizBank = {
         "q": "'Koch's blue bodies' (macroschizonts inside lymphocytes and lymphoblast cytoplasm) are the pathognomonic diagnostic microscopic stage of:",
         "o": [
           "Theileria annulata (or T. parva)",
-          "Babesia bigemina",
-          "Trypanosoma evansi",
-          "Anaplasma marginale"
+          "Babesia bigemina (bovine redwater)",
+          "Trypanosoma evansi (surra agent)",
+          "Anaplasma marginale (gall sickness)"
         ],
         "a": 0,
         "e": "Theileria sporozoites invade lymphocytes, transforming into schizonts ('Koch's blue bodies') that drive uncontrolled lymphoid proliferation and massive lymph node enlargement.",
@@ -11406,9 +11406,9 @@ var quizBank = {
         "q": "Haemonchosis ('barber's pole worm' infestation) in small ruminants produces fatal disease primarily through which pathogenic mechanism?",
         "o": [
           "Voracious blood-sucking causing profound hemorrhagic anemia and hypoproteinemia ('bottle jaw')",
-          "Biliary obstruction causing post-hepatic jaundice",
-          "Perforation of the ruminal wall causing fatal peritonitis",
-          "Destruction of bone marrow stem cells"
+          "Mechanical obstruction of common bile duct producing severe post-hepatic obstructive jaundice",
+          "Extensive transmural perforation of ruminal wall leading to fatal diffuse septic acute peritonitis",
+          "Selective toxic destruction of multipotent hematopoietic stem cells within active red bone marrow"
         ],
         "a": 0,
         "e": "Each adult Haemonchus contortus worm removes ~0.05 mL of blood daily; heavy burdens cause acute exsanguinating anemia, hypoproteinemia, and submandibular edema.",
@@ -11434,9 +11434,9 @@ var quizBank = {
         "q": "'Pregnancy Toxaemia' (Twin Lamb Disease) in late-gestation ewes is a metabolic crisis initiated by:",
         "o": [
           "Severe negative energy balance leading to hypoglycemia, hyperketonemia, and hepatic lipidosis",
-          "Acute hypocalcemia from colostrum synthesis",
-          "Dietary magnesium deficiency",
-          "Excessive dietary protein leading to ammonia toxicity"
+          "Acute neuromuscular paralysis triggered by precipitous calcium depletion during early colostrogenesis",
+          "Dietary magnesium deficiency provoked by high ruminal potassium concentrations in lush pastures",
+          "Excessive non-protein nitrogen intake causing systemic hyperammonemia and metabolic alkalosis"
         ],
         "a": 0,
         "e": "High glucose demand by multiple fetuses in late gestation combined with inadequate caloric intake induces massive fat mobilization, producing severe ketosis and fatty liver.",
@@ -11448,9 +11448,9 @@ var quizBank = {
         "q": "Post-parturient hemoglobinuria (PPH) in high-yielding dairy cows within 2 to 4 weeks following parturition is etiologically caused by acute deficiency of:",
         "o": [
           "Phosphorus (P)",
-          "Calcium (Ca)",
-          "Potassium (K)",
-          "Sodium (Na)"
+          "Serum Magnesium",
+          "Serum Potassium",
+          "Ionized Calcium"
         ],
         "a": 0,
         "e": "Phosphorus deficiency depletes erythrocyte ATP and reduces intracellular glycolysis, rendering red blood cells fragile and triggering acute intravascular hemolysis and hemoglobinuria.",
@@ -11490,9 +11490,9 @@ var quizBank = {
         "q": "In acute cyanide (HCN / prussic acid) poisoning from ingestion of immature sorghum, inactivation of cytochrome oxidase prevents tissue oxygen extraction, causing venous blood to appear:",
         "o": [
           "Bright 'cherry-red'",
-          "Dark tarry brown",
-          "Pale pinkish white",
-          "Olive green"
+          "Dark 'tarry-brownish'",
+          "Pale 'milky-pinkish'",
+          "Deep 'slate-blueish'"
         ],
         "a": 0,
         "e": "Cyanide binds ferric iron of cytochrome aa3, halting cellular respiration; oxygen remains unextracted in venous blood, keeping it bright cherry-red.",
@@ -11532,9 +11532,9 @@ var quizBank = {
         "q": "Equine encephalomyelitis (EEE, WEE, VEE) is caused by an alphavirus and pathologically characterised by:",
         "o": [
           "Polioencephalomyelitis of grey matter with perivascular cuffing and neutrophils in acute EEE",
-          "Spongiform vacuolation of the obex without inflammation",
-          "Suppurative meningitis with Gram-positive cocci",
-          "Demyelination of peripheral nerves only"
+          "Spongiform vacuolation confined strictly to the obex and solitary tract nucleus without inflammation",
+          "Acute suppurative leptomeningitis characterized by massive infiltration of degenerate neutrophils",
+          "Diffuse primary demyelination of peripheral motor nerves accompanied by Schwann cell proliferation"
         ],
         "a": 0,
         "e": "Mosquito-borne alphaviruses cause grey matter encephalomyelitis — neuronal necrosis, gliosis and perivascular cuffs; neutrophils are prominent in acute EEE.",
@@ -11546,9 +11546,9 @@ var quizBank = {
         "q": "'Lumpy jaw' in cattle is caused by Actinomyces bovis and is pathologically a:",
         "o": [
           "Chronic pyogranulomatous rarefying osteomyelitis of the mandible or maxilla",
-          "Soft tissue granuloma of the tongue",
-          "Caseous lymphadenitis of the retropharyngeal node",
-          "Neoplasm of the jaw bone"
+          "Chronic granulomatous glossitis featuring dense fibrous induration of tongue",
+          "Caseous necrotizing lymphadenitis involving superficial retropharyngeal nodes",
+          "Malignant osteosarcoma arising from the periosteum of the horizontal ramus"
         ],
         "a": 0,
         "e": "Actinomyces bovis enters through oral wounds and invades bone, producing a honeycombed, enlarged jaw with sinus tracts discharging pus with sulphur granules.",
@@ -11560,9 +11560,9 @@ var quizBank = {
         "q": "The 'sulphur granules' in pus from actinomycosis and actinobacillosis are microscopically:",
         "o": [
           "Bacterial colonies surrounded by radiating eosinophilic clubs (Splendore–Hoeppli material)",
-          "Crystals of calcium oxalate",
-          "Fungal sporangia with endospores",
-          "Masses of degenerate neutrophils only"
+          "Dense crystalline aggregates of calcium oxalate monohydrate embedded within fibrous stroma",
+          "Thick-walled fungal sporangia tightly packed with thousands of small spherical endospores",
+          "Confluent sheets of degenerate polymorphonuclear neutrophils surrounded by fibroblastic caps"
         ],
         "a": 0,
         "e": "The club colonies ('rosettes') are surrounded by neutrophils, then epithelioid macrophages, giant cells and fibrous tissue — a pyogranuloma.",
@@ -11574,9 +11574,9 @@ var quizBank = {
         "q": "'Wooden tongue' in cattle is caused by:",
         "o": [
           "Actinobacillus lignieresii",
-          "Actinomyces bovis",
-          "Nocardia asteroides",
-          "Fusobacterium necrophorum"
+          "Actinomyces bovis organisms",
+          "Corynebacterium renale group",
+          "Fusobacterium necrophorum sp"
         ],
         "a": 0,
         "e": "Actinobacillus lignieresii (Gram-negative) causes pyogranulomatous glossitis; the tongue becomes hard, enlarged and protrudes.",
@@ -11588,9 +11588,9 @@ var quizBank = {
         "q": "The most important pathological difference between actinomycosis and actinobacillosis in cattle is that actinobacillosis:",
         "o": [
           "Affects soft tissues and lymph nodes and is caused by a Gram-negative bacillus",
-          "Affects bone and is caused by a Gram-positive filamentous organism",
-          "Never forms granules",
-          "Is caused by a fungus"
+          "Affects cortical bones and is caused by a Gram-positive branching filamentous rod",
+          "Exclusively involves pulmonary parenchyma and is caused by an acid-fast mycobacterium",
+          "Produces widespread cutaneous ulcerative lesions caused by an opportunistic fungal yeast"
         ],
         "a": 0,
         "e": "Actinomycosis = bone, Gram-positive (A. bovis). Actinobacillosis = soft tissue (tongue, lymph nodes), Gram-negative (A. lignieresii).",
@@ -11602,9 +11602,9 @@ var quizBank = {
         "q": "Enzootic abortion of ewes (Chlamydia abortus) is characterised pathologically by:",
         "o": [
           "Necrotizing placentitis with thickened, reddish-brown intercotyledonary areas",
-          "Mummified fetuses with no placental lesion",
-          "Cotyledonary white foci confined to cotyledons only",
-          "Fetal cerebellar hypoplasia"
+          "Severe multifocal cotyledonary calcification leaving intercotyledonary zones normal",
+          "Mummified fetuses retained in utero accompanied by total absence of placental lesions",
+          "Extensive purulent endometritis with diffuse cystic endometrial glandular hyperplasia"
         ],
         "a": 0,
         "e": "The placenta shows necrosis of cotyledons and thickened, oedematous intercotyledonary membranes; trophoblasts contain chlamydial inclusions (modified ZN positive).",
@@ -11630,9 +11630,9 @@ var quizBank = {
         "q": "Bovine anaplasmosis (Anaplasma marginale) differs from babesiosis in that anaplasmosis produces:",
         "o": [
           "Extravascular haemolysis with anaemia and jaundice but no haemoglobinuria",
-          "Intravascular haemolysis with marked haemoglobinuria",
-          "Koch's blue bodies in lymphocytes",
-          "Cerebral capillary sludging"
+          "Severe intravascular haemolysis with marked haemoglobinuria and dark kidneys",
+          "Proliferation of Koch's blue bodies within the cytoplasm of transformed lymphocytes",
+          "Extensive cerebral capillary sludging and petechiation without systemic hemolysis"
         ],
         "a": 0,
         "e": "Parasitised RBCs are removed by macrophages in spleen and liver, so haemoglobin is not released into plasma — anaemia and icterus without red urine.",
@@ -11644,9 +11644,9 @@ var quizBank = {
         "q": "Canine monocytic ehrlichiosis ('tropical canine pancytopenia') is caused by Ehrlichia canis, transmitted by:",
         "o": [
           "Rhipicephalus sanguineus, the brown dog tick",
-          "Culicoides midges",
-          "Aedes mosquitoes",
-          "Tabanid flies"
+          "Ixodes ricinus, the European castor bean tick",
+          "Dermacentor reticulatus, the marsh dog tick",
+          "Amblyomma americanum, the lone star tick vector"
         ],
         "a": 0,
         "e": "Ehrlichia canis forms morulae in monocytes. Chronic disease causes bone marrow hypoplasia, pancytopenia, haemorrhages and plasma cell infiltration in organs.",
@@ -11658,9 +11658,9 @@ var quizBank = {
         "q": "Bovine coccidiosis ('red dysentery') caused by Eimeria zuernii and E. bovis mainly damages the:",
         "o": [
           "Caecum, colon and rectum",
-          "Abomasum",
-          "Duodenum only",
-          "Liver and bile ducts"
+          "Abomasal and omasal folds",
+          "Duodenum and proximal gut",
+          "Common bile and liver duct"
         ],
         "a": 0,
         "e": "Gamonts and oocysts destroy crypt epithelium of the large intestine, causing haemorrhagic, fibrinous enteritis and bloody diarrhoea with tenesmus in calves.",
@@ -11686,9 +11686,9 @@ var quizBank = {
         "q": "Ringworm due to Microsporum canis in cats and dogs can be screened with a Wood's lamp because infected hairs:",
         "o": [
           "Fluoresce apple-green under ultraviolet light",
-          "Turn blue with Perls' reaction",
-          "Stain red with Congo red",
-          "Become birefringent under polarised light"
+          "Exhibit deep Prussian blue Perls' iron staining",
+          "Turn intense Congo red with green birefringence",
+          "Display bright sulfur yellow under polarized beam"
         ],
         "a": 0,
         "e": "About half of M. canis strains produce a tryptophan metabolite that fluoresces apple-green; a negative result does not exclude infection.",
@@ -11700,9 +11700,9 @@ var quizBank = {
         "q": "Histologically, dermatophytosis is confirmed by finding:",
         "o": [
           "Fungal hyphae and arthrospores in the keratin of hair shafts and stratum corneum",
-          "Broad aseptate hyphae invading blood vessels",
-          "Yeasts with thick mucoid capsules in the dermis",
-          "Large sporangia containing endospores"
+          "Broad, sparsely septate hyphae invading deep dermal blood vessels with angiotropism",
+          "Thick-walled encapsulated budding yeasts surrounded by wide mucopolysaccharide halos",
+          "Large spherical sporangia filled with thousands of tiny uninucleate round endospores"
         ],
         "a": 0,
         "e": "Dermatophytes are keratinophilic — they invade only keratinised tissue. PAS or GMS stains show hyphae and spores around (ectothrix) or within (endothrix) hairs, with folliculitis.",
@@ -11714,9 +11714,9 @@ var quizBank = {
         "q": "At necropsy, the most reliable indicator of prolonged starvation (protein-energy malnutrition) is:",
         "o": [
           "Serous atrophy of fat in the coronary groove, perirenal area and bone marrow",
-          "Yellow, greasy enlarged liver",
-          "Excess fat in the omentum",
-          "Hypertrophy of skeletal muscles"
+          "Diffuse hepatocellular swelling and fatty degeneration resulting in an enlarged liver",
+          "Massive deposition of firm white saturated stearin fats throughout greater omentum",
+          "Marked compensatory muscular hypertrophy of major postural and locomotor muscle groups"
         ],
         "a": 0,
         "e": "Fat depots are used up and replaced by grey, translucent, gelatinous tissue — serous atrophy of fat. The coronary groove and marrow are the last to lose fat.",
@@ -11728,9 +11728,9 @@ var quizBank = {
         "q": "Protein deficiency (hypoproteinaemia) in livestock most characteristically leads to:",
         "o": [
           "Subcutaneous oedema, ascites and hydrothorax",
-          "Metastatic calcification",
-          "Haemoglobinuria",
-          "Hepatic amyloidosis"
+          "Metastatic mineralization of major arteries",
+          "Severe acute hemoglobinuria and jaundice",
+          "Extensive primary hepatic amyloidosis beds"
         ],
         "a": 0,
         "e": "Low serum albumin reduces plasma oncotic pressure, causing generalised oedema and fluid in body cavities, along with muscle wasting and poor growth.",
@@ -11742,9 +11742,9 @@ var quizBank = {
         "q": "In grain overload (acute carbohydrate engorgement / lactic acidosis) of cattle, the rumen pH falls because:",
         "o": [
           "Streptococcus bovis and lactobacilli produce large amounts of lactic acid",
-          "Protozoa produce ammonia",
-          "Saliva production increases greatly",
-          "Volatile fatty acids are absorbed too quickly"
+          "Ruminal protozoa rapidly multiply and release large quantities of free ammonia",
+          "Salivary bicarbonate secretions increase dramatically, overwhelming ruminal buffers",
+          "Volatile fatty acids are absorbed across the stratified squamous mucosa too quickly"
         ],
         "a": 0,
         "e": "Excess readily fermentable carbohydrate favours S. bovis and then lactobacilli; lactic acid causes chemical rumenitis, systemic acidosis and dehydration. Mycotic rumenitis and liver abscesses may follow.",
@@ -11756,9 +11756,9 @@ var quizBank = {
         "q": "'Yellow fat disease' (steatitis) in cats fed oily fish is due to:",
         "o": [
           "Excess polyunsaturated fatty acids with vitamin E deficiency",
-          "Excess carotene in the diet",
-          "Copper toxicity",
-          "Aflatoxin exposure"
+          "Excessive accumulation of carotene pigments in depot fat stores",
+          "Chronic copper toxicosis triggering massive hepatic copper release",
+          "Severe dietary aflatoxicosis causing centrilobular lipidosis"
         ],
         "a": 0,
         "e": "Peroxidation of PUFA without enough vitamin E produces ceroid pigment in fat, which becomes yellow-orange, firm and painful, with inflammation.",
@@ -11770,9 +11770,9 @@ var quizBank = {
         "q": "Equine influenza (H3N8, Orthomyxoviridae) produces which primary pathological lesion?",
         "o": [
           "Necrotizing bronchitis and bronchiolitis with loss of ciliated epithelium, predisposing to secondary bacterial pneumonia",
-          "Suppurative lymphadenitis of mandibular nodes",
-          "Vasculitis of the spinal cord",
-          "Glomerulonephritis"
+          "Suppurative lymphadenitis of submandibular and retropharyngeal lymph nodes with extensive metastatic abscess formation",
+          "Severe necrotizing vasculitis and thrombosis of spinal cord arterioles resulting in progressive hindlimb ataxia and paresis",
+          "Immune complex-mediated proliferative glomerulonephritis accompanied by generalized subcutaneous dependent edema"
         ],
         "a": 0,
         "e": "Influenza virus destroys ciliated airway epithelium, impairing mucociliary clearance; secondary Streptococcus zooepidemicus bronchopneumonia is common.",
@@ -11784,9 +11784,9 @@ var quizBank = {
         "q": "Hydatid cysts found in the liver and lungs of cattle and buffaloes at slaughter are the larval stage of:",
         "o": [
           "Echinococcus granulosus",
-          "Taenia solium",
-          "Taenia multiceps",
-          "Moniezia expansa"
+          "Taenia solium (pork tape)",
+          "Taenia multiceps (gid worm)",
+          "Moniezia expansa (tapeworm)"
         ],
         "a": 0,
         "e": "The dog is the definitive host. Cysts have an outer host fibrous capsule, a laminated acellular layer and an inner germinal layer producing brood capsules ('hydatid sand').",
@@ -11798,9 +11798,9 @@ var quizBank = {
         "q": "Feline panleukopenia is characterised microscopically in the small intestine by:",
         "o": [
           "Crypt epithelial necrosis and dilated crypts, with intranuclear inclusions and villous collapse",
-          "Villous hypertrophy with goblet cell hyperplasia",
-          "Granulomas with acid-fast bacilli",
-          "Eosinophilic enteritis with nematode larvae"
+          "Diffuse enterocyte hyperplasia of villous crests accompanied by prominent goblet cell metaplasia",
+          "Multifocal transmural granulomatous enteritis characterized by Langhans cells with acid-fast rods",
+          "Severe eosinophilic and lymphoplasmacytic enteritis with coiled nematode larvae in the submucosa"
         ],
         "a": 0,
         "e": "The parvovirus infects rapidly dividing cells: crypt epithelium, bone marrow and lymphoid tissue — hence enteritis with panleukopenia.",
@@ -11812,9 +11812,9 @@ var quizBank = {
         "q": "Visna, the nervous form of maedi-visna infection in sheep, is characterised by:",
         "o": [
           "Demyelinating leukoencephalomyelitis with lymphocytic infiltration",
-          "Spongiform vacuolation of neurons",
-          "Negri bodies in Purkinje cells",
-          "Suppurative meningitis"
+          "Widespread neuronal vacuolation in the obex of the medulla oblongata",
+          "Pathognomonic eosinophilic intracytoplasmic Negri bodies in neurons",
+          "Acute purulent leptomeningitis with degenerate neutrophilic exudates"
         ],
         "a": 0,
         "e": "The lentivirus causes chronic lymphocytic inflammation and demyelination in the white matter of brain and spinal cord, causing progressive paralysis.",
@@ -11826,9 +11826,9 @@ var quizBank = {
         "q": "Lumpy skin disease of cattle, which spread widely in India from 2019, is caused by a:",
         "o": [
           "Capripoxvirus, producing firm nodules involving the full thickness of skin, subcutis and muscle",
-          "Parapoxvirus, producing proliferative lesions on the lips only",
-          "Herpesvirus, producing vesicles on the teats",
-          "Papillomavirus, producing warts"
+          "Parapoxvirus, producing localized proliferative papular lesions restricted exclusively to lips",
+          "Bovine herpesvirus-2, producing superficial ulcerative and vesicular lesions on teat epidermis",
+          "Bovine papillomavirus-1, inducing fibroblastic proliferation and benign pedunculated cutaneous warts"
         ],
         "a": 0,
         "e": "LSD nodules show vasculitis, thrombosis, necrosis and intracytoplasmic inclusions; necrotic cores ('sitfasts') slough. Nodules also occur in the respiratory and digestive tracts.",
@@ -11854,9 +11854,9 @@ var quizBank = {
         "q": "Contagious ecthyma (orf) in lambs and kids, a zoonotic parapoxvirus infection, produces:",
         "o": [
           "Proliferative, scabby lesions on the lips, muzzle and udder",
-          "Generalised pox lesions of the lungs",
-          "Vesicles on the feet only",
-          "Necrotic foci in the liver"
+          "Generalized cutaneous pox papules and necrotic lung nodules",
+          "Vesicular erosions and ulcers confined strictly to coronary bands",
+          "Multifocal coagulative necrotic foci scattered throughout the liver"
         ],
         "a": 0,
         "e": "Orf lesions are proliferative with marked epidermal hyperplasia and intracytoplasmic inclusions; sucking lambs may spread lesions to the ewe's teats.",
@@ -11868,9 +11868,9 @@ var quizBank = {
         "q": "Unlike rotavirus, bovine coronavirus additionally:",
         "o": [
           "Infects the colon epithelium and causes winter dysentery in adult cattle",
-          "Infects only the stomach",
-          "Causes vesicles in the mouth",
-          "Is transmitted only by ticks"
+          "Infects only abomasal parietal cells, causing severe hypochlorhydria",
+          "Causes large fluid-filled intraepithelial blisters in oral mucosa",
+          "Is transmitted strictly by biological tick vectors without faecal spread"
         ],
         "a": 0,
         "e": "Bovine coronavirus infects small and large intestine (and respiratory tract), causing more severe calf diarrhoea and haemorrhagic diarrhoea (winter dysentery) in adults.",
@@ -11882,9 +11882,9 @@ var quizBank = {
         "q": "Organochlorine insecticide (e.g. DDT, lindane) poisoning in animals mainly causes:",
         "o": [
           "CNS stimulation with convulsions, with few specific lesions at necropsy",
-          "Muscarinic signs from acetylcholinesterase inhibition",
-          "Chronic haemolytic crisis",
-          "Methaemoglobinaemia"
+          "Profuse salivation, lacrimation, and SLUD signs from cholinesterase arrest",
+          "Sudden acute intravascular hemolytic crisis with dark gunmetal kidneys",
+          "Severe methemoglobinemia resulting in dark chocolate-brown colored blood"
         ],
         "a": 0,
         "e": "Organochlorines alter sodium channels in nerves, causing hyperexcitability and seizures. Lesions are non-specific (congestion, haemorrhages from convulsions); residues persist in fat.",
@@ -11896,9 +11896,9 @@ var quizBank = {
         "q": "The three components of anthrax toxin are:",
         "o": [
           "Protective antigen, oedema factor and lethal factor",
-          "Alpha, beta and epsilon toxins",
-          "Tetanospasmin and tetanolysin",
-          "Coagulase, hyaluronidase and leukocidin"
+          "Alpha toxin, beta toxin and epsilon necrotic toxin",
+          "Tetanospasmin, tetanolysin and non-spasmogenic toxin",
+          "Alpha-hemolysin, beta-lactamase and enterotoxin B"
         ],
         "a": 0,
         "e": "Protective antigen binds cells and carries oedema factor (causing oedema) and lethal factor (killing macrophages) inside. The capsule prevents phagocytosis.",
@@ -11910,9 +11910,9 @@ var quizBank = {
         "q": "In pigs, anthrax most commonly occurs as:",
         "o": [
           "A localised pharyngeal form with oedematous swelling of the throat and lymph nodes",
-          "Peracute septicaemia with sudden death, like cattle",
-          "A purely cutaneous infection",
-          "A pulmonary form only"
+          "Peracute fatal septicaemia with complete failure of blood clotting, like in cattle",
+          "A purely cutaneous infection manifesting as circular dry necrotic eschar sloughs",
+          "An acute pulmonary form characterized by massive hemorrhagic lobar pneumonia"
         ],
         "a": 0,
         "e": "Pigs are relatively resistant; the pharyngeal/intestinal form causes swelling of the throat and haemorrhagic, necrotic lymph nodes.",
@@ -11924,9 +11924,9 @@ var quizBank = {
         "q": "McFadyean's reaction used to diagnose anthrax in a blood smear demonstrates:",
         "o": [
           "Square-ended bacilli in chains with pink capsular material stained by polychrome methylene blue",
-          "Acid-fast rods stained red",
-          "Gram-negative bipolar rods",
-          "Spores stained green by malachite green"
+          "Acid-fast slender beaded rods staining bright crimson red against a contrasting blue background",
+          "Pleomorphic Gram-negative coccobacilli displaying characteristic bipolar safety-pin staining",
+          "Endospores staining bright malachite green surrounded by pinkish vegetative bacterial cytoplasm"
         ],
         "a": 0,
         "e": "Blood from an ear vein or a superficial vein is used — the carcass must not be opened. The capsule stains pink and the bacilli blue.",
@@ -11938,9 +11938,9 @@ var quizBank = {
         "q": "'Scirrhous cord' in horses after castration is a form of staphylococcal infection called:",
         "o": [
           "Botryomycosis — a chronic pyogranulomatous infection with bacterial granules",
-          "Strangles",
-          "Glanders",
-          "Epizootic lymphangitis"
+          "Strangles — an acute suppurative lymphadenitis caused by Streptococcus equi",
+          "Glanders — a chronic granulomatous ulcerating disease with nodular lymphatic cords",
+          "Epizootic lymphangitis — a chronic suppurative fungal disease of cutaneous lymphatics"
         ],
         "a": 0,
         "e": "Staphylococcus aureus forms granules (like sulphur granules) surrounded by pyogranulomatous inflammation and dense fibrosis of the spermatic cord.",
@@ -11952,9 +11952,9 @@ var quizBank = {
         "q": "Abortion in cows due to Brucella abortus occurs mainly in the last trimester because the placenta then contains high levels of:",
         "o": [
           "Erythritol, which the organism uses for growth",
-          "Progesterone",
-          "Lactose",
-          "Oxytocin"
+          "Progesterone, which enhances bacterial pili adhesion",
+          "Placental lactogen, which suppresses local neutrophils",
+          "Transferrin, which supplies vital metabolic iron sources"
         ],
         "a": 0,
         "e": "Erythritol in bovine placenta and fetal fluids promotes Brucella growth, causing necrotizing placentitis with a leathery, thickened intercotyledonary placenta.",
@@ -11966,9 +11966,9 @@ var quizBank = {
         "q": "Chronic swine erysipelas commonly produces, in addition to arthritis:",
         "o": [
           "Vegetative valvular endocarditis, especially of the mitral valve",
-          "Pulmonary adenocarcinoma",
-          "Caseous lymphadenitis",
-          "Button ulcers of the colon"
+          "Severe chronic fibrinous pleuropneumonia with extensive pleural adhesions",
+          "Extensive caseous lymphadenitis characterized by concentric laminations",
+          "Multiple necrotic button ulcers with raised hyperemic borders in colon"
         ],
         "a": 0,
         "e": "Large cauliflower-like vegetations on heart valves may cause heart failure and infarcts in kidney and spleen.",
@@ -11980,9 +11980,9 @@ var quizBank = {
         "q": "'Pigeon fever' in horses, with large abscesses in the pectoral region, is caused by:",
         "o": [
           "Corynebacterium pseudotuberculosis",
-          "Streptococcus equi subsp. equi",
-          "Rhodococcus equi",
-          "Burkholderia mallei"
+          "Streptococcus equi subspecies equi",
+          "Rhodococcus equi (equine strains)",
+          "Burkholderia mallei bacilli rods"
         ],
         "a": 0,
         "e": "The equine biovar of C. pseudotuberculosis causes deep pectoral and ventral abdominal abscesses and ulcerative lymphangitis.",
@@ -11994,9 +11994,9 @@ var quizBank = {
         "q": "Acute enteric salmonellosis in cattle is characterised pathologically by:",
         "o": [
           "Fibrinonecrotic (diphtheritic) enteritis of the ileum and colon, with paratyphoid nodules in the liver",
-          "Villous atrophy without inflammation",
-          "Thickened, corrugated ileal mucosa without ulcers",
-          "Button ulcers of the oesophagus"
+          "Extensive villous atrophy and blunting without inflammatory infiltration, localized to proximal jejunum",
+          "Chronic hypertrophic corrugated ileitis with marked mucosal thickening and no evidence of ulceration",
+          "Multiple necrotic button ulcers scattered throughout the mucosa of the thoracic esophagus and stomach"
         ],
         "a": 0,
         "e": "Salmonella causes necrosis with fibrin casts in the intestine, enlarged mesenteric lymph nodes, and focal hepatic necrosis with macrophages ('paratyphoid nodules').",
@@ -12008,9 +12008,9 @@ var quizBank = {
         "q": "Oedema disease of weaned pigs, caused by Shiga toxin (Stx2e)-producing E. coli, is characterised by:",
         "o": [
           "Oedema of the eyelids, stomach wall (greater curvature) and mesocolon, with cerebrospinal angiopathy",
-          "Watery diarrhoea with no lesions outside the intestine",
-          "Button ulcers and splenic infarcts",
-          "Pneumonia with lung abscesses"
+          "Severe profuse watery diarrhoea with total absence of gross pathological lesions outside the intestines",
+          "Chronic necrotizing button ulcers in the cecum accompanied by raised wedge-shaped splenic infarctions",
+          "Suppurative bronchopneumonia with multifocal encapsulated lung abscesses and fibrinous pleuritis"
         ],
         "a": 0,
         "e": "The toxin damages vascular endothelium, causing oedema and degenerative angiopathy; neurological signs are from brain oedema and malacia.",
@@ -12036,9 +12036,9 @@ var quizBank = {
         "q": "Bovine venereal campylobacteriosis (Campylobacter fetus subsp. venerealis) mainly causes:",
         "o": [
           "Infertility, repeat breeding and early embryonic death",
-          "Acute haemorrhagic enteritis",
-          "Mastitis",
-          "Pneumonia in calves"
+          "Severe acute hemorrhagic enteritis with bloody scour",
+          "Acute gangrenous mastitis with cold purple quarters",
+          "Suppurative bronchopneumonia with large lung abscesses"
         ],
         "a": 0,
         "e": "The bull is an asymptomatic carrier; infected cows develop endometritis and salpingitis, with early embryonic death and irregular return to oestrus.",
@@ -12050,9 +12050,9 @@ var quizBank = {
         "q": "Contagious caprine pleuropneumonia (CCPP), caused by Mycoplasma capricolum subsp. capripneumoniae, differs from CBPP in that:",
         "o": [
           "Interlobular septa are not markedly thickened, so the lung lacks a marbled appearance",
-          "It affects only cattle",
-          "It causes no pleuritis",
-          "It produces caseous abscesses in lymph nodes"
+          "It produces severe miliary caseous nodules with calcification throughout both lungs",
+          "It is caused by an intracellular rickettsia transmitted biologically by hard ticks",
+          "It causes extensive caseous lymphadenitis with concentric onion-ring laminations"
         ],
         "a": 0,
         "e": "CCPP produces fibrinous pleuropneumonia with pleural fluid, but goat lungs lack the prominent interlobular septa seen in cattle.",
@@ -13444,9 +13444,9 @@ var quizBank = {
         "q": "Which specific gross lesion at the proventricular-gizzard junction is classic for velogenic Newcastle Disease (Ranikhet)?",
         "o": [
           "Hemorrhagic ulcers on mucosal tips of proventricular papillae",
-          "Diffuse fibrinous pseudomembrane with ulceration",
-          "Muscular hypertrophy with hyperkeratosis",
-          "Caseous core occlusion with diphtheritic casts"
+          "Diphtheritic necrotic plaques lining proventricular sulci beds",
+          "Extensive mucosal button ulcers across the muscular gizzard body",
+          "Catarrhal desquamation with diffuse proventricular dilation"
         ],
         "a": 0,
         "e": "Petechial hemorrhages and necrotic ulcers at the tips of proventricular papillae and peyer's patches are pathognomonic for velogenic viscerotropic Newcastle Disease (VVND).",
@@ -13471,10 +13471,10 @@ var quizBank = {
       {
         "q": "Pathognomonic hemorrhagic and necrotic lesions on cecal tonsils are typically seen in:",
         "o": [
-          "Infectious Bronchitis",
+          "Infectious Bursal Disease",
           "Velogenic Newcastle Disease",
-          "Infectious Coryza",
-          "Mycoplasmosis"
+          "Infectious Laryngotracheitis",
+          "Avian Infectious Bronchitis"
         ],
         "a": 1,
         "e": "Necrotic, hemorrhagic, button-like ulcers on the cecal tonsils and intestinal lymphoid patches are characteristic of velogenic ND.",
@@ -13499,10 +13499,10 @@ var quizBank = {
       {
         "q": "Which microscopic inclusion bodies are diagnostic for Infectious Laryngotracheitis (ILT)?",
         "o": [
-          "Intracytoplasmic Bollinger bodies",
+          "Intracytoplasmic eosinophilic Bollinger bodies situated within cutaneous epithelial cells",
           "Intranuclear eosinophilic (Cowdry type A) inclusion bodies in tracheal epithelial syncytia",
-          "Intracytoplasmic Negri bodies",
-          "Intranuclear basophilic inclusions in hepatocytes"
+          "Intranuclear basophilic viral inclusion bodies located inside degenerating avian hepatocytes",
+          "Intracytoplasmic acidophilic Negri-like inclusion bodies in cerebral Purkinje perikarya"
         ],
         "a": 1,
         "e": "ILT virus forms syncytial giant cells with pathognomonic eosinophilic Cowdry type A intranuclear inclusion bodies in respiratory epithelium.",
@@ -13514,9 +13514,9 @@ var quizBank = {
         "q": "Tracheal casts consisting of blood, mucus, and necrotic caseous exudate leading to suffocation is typical of:",
         "o": [
           "Infectious Laryngotracheitis (severe epizootic form)",
-          "Infectious Bronchitis",
-          "Infectious Coryza",
-          "Nutritional roup"
+          "Avian Infectious Bronchitis (nephropathogenic type)",
+          "Infectious Coryza complicated by Mycoplasma synoviae",
+          "Diphtheritic Avian Pox involving the larynx/trachea"
         ],
         "a": 0,
         "e": "Epizootic ILT causes severe hemorrhagic to diphtheritic tracheitis with bloody casts that occlude the tracheal lumen causing gasping and death.",
@@ -13542,9 +13542,9 @@ var quizBank = {
         "q": "Misshapen, thin-shelled, rough eggs with watery albumen ('watery whites') are classic consequences of:",
         "o": [
           "Infectious Bronchitis Virus infection in layers",
-          "Infectious Bursal Disease",
-          "Fowl Cholera",
-          "Pullorum Disease"
+          "Infectious Bursal Disease virus clinical attack",
+          "Avian Encephalomyelitis virus spread in pullets",
+          "Egg Drop Syndrome adenovirus 1976 flock impact"
         ],
         "a": 0,
         "e": "IBV damages the oviduct magnum and shell gland, leading to permanent loss of egg quality, watery albumin, and corrugated shells.",
@@ -13556,9 +13556,9 @@ var quizBank = {
         "q": "Nephropathogenic strains of Infectious Bronchitis Virus cause which gross kidney lesion?",
         "o": [
           "Swollen, pale kidneys with tubules and ureters distended with white urates ('painted kidney')",
-          "Renal cell carcinoma",
-          "Polycystic kidney degeneration",
-          "Hydronephrosis from stones"
+          "Enlarged multicystic renal parenchyma exhibiting severe cortical fibrous thickening and anuria",
+          "Diffuse bilateral renal enlargement with multifocal lymphoid tumors obliterating parenchyma",
+          "Severe hydronephrosis caused by nephrolithiasis with extensive suppurative pyelonephritis"
         ],
         "a": 0,
         "e": "Nephropathogenic IBV strains (e.g., Australian T, QX) produce interstitial nephritis with urate impaction in renal tubules and ureters.",
@@ -13569,10 +13569,10 @@ var quizBank = {
       {
         "q": "Avian Pox in the diphtheritic form predominantly affects:",
         "o": [
-          "Featherless skin of comb and wattle",
+          "Non-feathered cutaneous regions of the comb, wattles, and eyelids",
           "Mucous membranes of mouth, pharynx, larynx, and esophagus ('canker')",
-          "Bursa of Fabricius",
-          "Cecal mucosa"
+          "Follicular lymphoid tissue within the wall of the Bursa of Fabricius",
+          "Gastrointestinal mucosal lining of both the duodenum and cecal tonsils"
         ],
         "a": 1,
         "e": "The wet or diphtheritic form of Avian Pox produces yellowish pseudomembranous canker lesions on upper digestive and respiratory mucosa.",
@@ -13584,9 +13584,9 @@ var quizBank = {
         "q": "Bollinger bodies in cutaneous Fowl Pox are:",
         "o": [
           "Large intracytoplasmic eosinophilic inclusion bodies containing Borrel bodies",
-          "Intranuclear eosinophilic inclusion bodies",
-          "Intranuclear basophilic inclusions",
-          "Mitochondrial degeneration granules"
+          "Prominent intranuclear Cowdry type A eosinophilic inclusion bodies in syncytia",
+          "Dense basophilic intranuclear inclusion aggregates within hepatic parenchymal cells",
+          "Clustered intracytoplasmic glycogen storage droplets following cellular necrosis"
         ],
         "a": 0,
         "e": "Bollinger bodies are large intracytoplasmic eosinophilic inclusion bodies in epithelial cells packed with elementary viral particles (Borrel bodies).",
@@ -13598,9 +13598,9 @@ var quizBank = {
         "q": "Highly Pathogenic Avian Influenza (HPAI) is characterized grossly by cyanosis and edema of which tissues?",
         "o": [
           "Comb and wattles with petechial hemorrhages on shanks/feet",
-          "Solely feather follicle cystic dilation",
-          "Thickened gall bladder wall",
-          "Stricture of muscular gizzard"
+          "Feather follicles across the pectoral girdle and rump skin",
+          "Cranial musculature and dorsal cervical subcutaneous fascias",
+          "Interdigital webbings with diffuse ulcerative pododermatitis"
         ],
         "a": 0,
         "e": "HPAI causes severe systemic vascular endothelial damage producing cyanosis, edema, and petechiae on combs, wattles, and unfeathered shanks.",
@@ -13612,9 +13612,9 @@ var quizBank = {
         "q": "Cleavage of the hemagglutinin (HA) precursor molecule by ubiquitous intracellular proteases like furin is the molecular determinant of virulence for:",
         "o": [
           "Highly Pathogenic Avian Influenza virus",
-          "Fowl Pox virus",
-          "Infectious Bursal Disease virus",
-          "Avian Encephalomyelitis virus"
+          "Velogenic Newcastle Disease paramyxovirus",
+          "Infectious Laryngotracheitis herpesvirus",
+          "Very virulent Infectious Bursal Disease"
         ],
         "a": 0,
         "e": "HPAI viruses contain a multi-basic cleavage site in HA recognized by ubiquitous furin, enabling fatal systemic pantropic replication.",
@@ -13640,9 +13640,9 @@ var quizBank = {
         "q": "Which transmission vector is primarily responsible for transmitting the cutaneous form of Fowl Pox in flocks?",
         "o": [
           "Culex mosquitoes and biting diptera",
-          "Red mites only",
-          "Beetles exclusively",
-          "Aerosol droplets only"
+          "Dermanyssus gallinae poultry mites",
+          "Alphitobius diaperinus dark beetles",
+          "Argas persicus soft fowl tick larvae"
         ],
         "a": 0,
         "e": "Mosquitoes (Culex species) act as mechanical vectors carrying Fowl Pox virus to unfeathered head parts (comb, wattles, eyelids).",
@@ -13654,9 +13654,9 @@ var quizBank = {
         "q": "Torticolis, circling, head tremors, and backward stumbling in chickens are neurological signs of which form of ND?",
         "o": [
           "Neurotropic velogenic Newcastle Disease (Beach's form)",
-          "Mesogenic ND only",
-          "Lentogenic ND",
-          "Asymptomatic enteric ND"
+          "Viscerotropic velogenic Newcastle Disease (Doyle's form)",
+          "Mesogenic Newcastle Disease respiratory pathotype (Beaudette)",
+          "Lentogenic Newcastle Disease asymptomatic enteric strain"
         ],
         "a": 0,
         "e": "Neurotropic velogenic ND produces non-purulent encephalomyelitis with neuronal chromatolysis and perivascular cuffing.",
@@ -13668,9 +13668,9 @@ var quizBank = {
         "q": "In Avian Influenza, histopathological hallmark in multiple visceral organs is:",
         "o": [
           "Multifocal necrosis and microthrombosis secondary to endothelial destruction",
-          "Purulent abscess formation",
-          "Diffuse granuloma with caseation",
-          "Eosinophilic granuloma"
+          "Suppurative liquefactive necrosis with extensive heterophilic infiltration",
+          "Multifocal non-caseating granulomas surrounded by multinucleated giant cells",
+          "Diffuse lymphoid hyperplasia with blastogenesis throughout visceral reticula"
         ],
         "a": 0,
         "e": "Pan-endothelial tropism of HPAI leads to disseminated intravascular coagulation (DIC), microvascular thrombosis, and multifocal ischemic necrosis.",
@@ -13682,9 +13682,9 @@ var quizBank = {
         "q": "The standard diagnostic laboratory test to identify hemagglutinating avian viruses like NDV and AIV is:",
         "o": [
           "Hemagglutination (HA) and Hemagglutination Inhibition (HI) test",
-          "Complement fixation test",
-          "Rose Bengal plate test",
-          "Direct agglutination on slides"
+          "Agar gel immunodiffusion (AGID) and serum neutralization assay",
+          "Complement fixation test and indirect fluorescent antibody assay",
+          "Enzyme-linked immunosorbent assay (ELISA) plate binding method"
         ],
         "a": 0,
         "e": "Both NDV and AIV agglutinate chicken erythrocytes (HA positive), and specific antisera in HI test differentiate them definitively.",
@@ -13696,9 +13696,9 @@ var quizBank = {
         "q": "Infectious Bursal Disease (IBD / Gumboro) virus has a specific cytopathic tropism for:",
         "o": [
           "Actively dividing IgM+ B-lymphocytes in the Bursa of Fabricius",
-          "Mature T-lymphocytes in the thymus",
-          "Erythrocytes in bone marrow",
-          "Macrophage precursors in spleen"
+          "Differentiating CD4+ CD8+ thymocytes within the cortical thymus",
+          "Multipotent hematopoietic stem cells situated inside bone marrow",
+          "Resting splenic macrophages and interdigitating dendritic cells"
         ],
         "a": 0,
         "e": "IBDV targets actively replicating immature B-lymphocytes (surface IgM+) in the follicular medulla of the Bursa of Fabricius.",
@@ -13738,9 +13738,9 @@ var quizBank = {
         "q": "Which viral disease causes aplastic bone marrow (pale/yellow/fatty) and generalized lymphoid depletion in young broiler chicks?",
         "o": [
           "Chicken Infectious Anemia (Gyrovirus)",
-          "Marek's Disease",
-          "Avian Pox",
-          "Infectious Bronchitis"
+          "Infectious Bursal Disease (Birnavirus)",
+          "Avian Encephalomyelitis (Tremovirus)",
+          "Hydropericardium Syndrome (Adenovirus)"
         ],
         "a": 0,
         "e": "Chicken Infectious Anemia Virus (CIAV, Anelloviridae) destroys hemocytoblasts in bone marrow and T-lymphoblast precursors in the thymus.",
@@ -13766,9 +13766,9 @@ var quizBank = {
         "q": "A characteristic clinical posture in classic neural Marek's disease is:",
         "o": [
           "One leg stretched forward and the other backward ('split-leg paralysis')",
-          "Persistent stargazing and head retraction",
-          "Complete flaccid paralysis of the neck ('limberneck')",
-          "Spastic opisthotonos with lockjaw"
+          "Persistent stargazing posture with dorsal spastic retraction of the head",
+          "Complete flaccid paralysis of neck musculature and wings ('limberneck')",
+          "Bilateral inward curving of digits with hock-sitting ('curled-toe posture')"
         ],
         "a": 0,
         "e": "Unilateral or bilateral asymmetric sciatic nerve infiltration leads to paralysis where one leg is extended forward and the other backward.",
@@ -13780,9 +13780,9 @@ var quizBank = {
         "q": "In Marek's disease, the gross appearance of affected peripheral nerves (sciatic, brachial) shows:",
         "o": [
           "Enlargement (2-3x normal), loss of cross-striations, and gray translucent edematous appearance",
-          "Calcified hard nodules",
-          "Shrinkage with fibrous cord formation",
-          "Hemorrhagic liquefaction"
+          "Marked circumferential fibrous constriction with dense focal dystrophic calcification plaques",
+          "Severe atrophy with widespread replacement by yellow gelatinous fatty tissue and nerve fraying",
+          "Multifocal suppurative liquefaction with extensive perineural hemorrhagic necrosis throughout"
         ],
         "a": 0,
         "e": "Infiltration of pleomorphic neoplastic lymphocytes causes diffuse or localized nerve swelling and obliteration of normal glistening transverse striations.",
@@ -13794,9 +13794,9 @@ var quizBank = {
         "q": "Which ocular condition leading to irregular, constricted pupil and graying of the iris ('gray eye' / pearl eye) is caused by Marek's disease?",
         "o": [
           "Lymphoid infiltration of the iris (ocular lymphomatosis)",
-          "Cataract due to vitamin A deficiency",
-          "Chorioretinitis due to toxoplasmosis",
-          "Corneal ulceration from ammonia fumes"
+          "Keratoconjunctivitis and corneal clouding from ammonia fumes",
+          "Severe lenticular cataract triggered by avian encephalomyelitis",
+          "Fibrinopurulent anterior uveitis caused by Salmonella Gallinarum"
         ],
         "a": 0,
         "e": "Ocular form of MD involves lymphomatous infiltration of the iris, causing depigmentation (gray eye) and an irregular, pinpoint pupil.",
@@ -13808,9 +13808,9 @@ var quizBank = {
         "q": "What is the primary histological difference between lymphomas in Marek's Disease versus Avian Leukosis?",
         "o": [
           "MD tumors consist of pleomorphic lymphocytes (T-cells, lymphoblasts, plasma cells); Leukosis tumors are uniform/monomorphic B-lymphoblasts",
-          "MD tumors are monomorphic B-cells; Leukosis tumors are mixed T-cells",
-          "MD tumors contain giant cells; Leukosis lacks all lymphoid elements",
-          "Leukosis always produces intracytoplasmic inclusion bodies"
+          "MD tumors consist of uniform/monomorphic B-lymphoblasts; Leukosis tumors exhibit pleomorphic mature T-cells, lymphoblasts, and macrophages",
+          "MD tumors exhibit multinucleated Reed-Sternberg cells; Leukosis tumors show diffuse myelocytic granulocytes without lymphoid proliferation",
+          "MD tumors display prominent intracytoplasmic Bollinger bodies; Leukosis tumors are characterized by eosinophilic intranuclear inclusion bodies"
         ],
         "a": 0,
         "e": "Marek's is a T-cell lymphoma composed of heterogeneous/pleomorphic lymphoid cells; Avian Leukosis is a B-cell clonal malignancy composed of uniform large lymphoblasts.",
@@ -13822,9 +13822,9 @@ var quizBank = {
         "q": "In Avian Leukosis (Lymphoid Leukosis), bursal tumors characteristically develop as:",
         "o": [
           "Intrafollicular nodular tumors within the bursa",
-          "Diffuse non-follicular bursal atrophy without nodules",
-          "Bursal perforation with peritonitis",
-          "Fibrous bursal cysts"
+          "Diffuse interfollicular lymphoid sheets in bursa",
+          "Subserosal fibrous polyps protruding into cloaca",
+          "Extensive cystic follicular atrophy with necrosis"
         ],
         "a": 0,
         "e": "Lymphoid leukosis originates as nodular, intrafollicular transformed lymphoid centers in the bursa of Fabricius, which later enlarge into gross nodular tumors.",
@@ -13836,9 +13836,9 @@ var quizBank = {
         "q": "Hydropericardium Syndrome (HPS / Leechi Disease) in 3-5 week broilers is caused by:",
         "o": [
           "Fowl Aviadenovirus serotype 4 (FAdV-4)",
-          "Avian Reovirus",
-          "Avian Birnavirus",
-          "Circovirus"
+          "Avian Birnavirus serotype 1 (IBDV-1)",
+          "Avian Orthoreovirus serotype 2 (ARV-2)",
+          "Chicken Anemia Virus isolate (CAV-1)"
         ],
         "a": 0,
         "e": "HPS (Leechi disease) is caused by Group 1 Fowl Adenovirus serotype 4 (FAdV-4), often exacerbated by immunosuppressive agents like CIAV or IBDV.",
@@ -13850,9 +13850,9 @@ var quizBank = {
         "q": "The classic post-mortem finding in Hydropericardium Syndrome (HPS) is:",
         "o": [
           "Pericardial sac distended with 10-20 mL of clear straw-colored fluid ('leechi heart')",
-          "Fibrinous pericarditis with adhesion to sternum",
-          "Suppurative epicardial abscess",
-          "Myocardial ossification"
+          "Fibrinopurulent pericardial exudate with dense fibrous adhesions to the sternal crest",
+          "Severe myocardial petechiation accompanied by extensive white urate crystal encrustation",
+          "Extensive ventricular myocardial necrosis showing calcified chalky white Zenker bands"
         ],
         "a": 0,
         "e": "HPS exhibits massive clear or amber fluid accumulation in the pericardial sac, giving the heart a floating appearance inside a peeled litchi-like sac.",
@@ -13864,9 +13864,9 @@ var quizBank = {
         "q": "Egg Drop Syndrome 1976 (EDS-76) is caused by an adenovirus that causes which hallmark clinical presentation?",
         "o": [
           "Sudden drop in egg production with thin-shelled, soft-shelled, or shell-less eggs in healthy layers",
-          "Severe bloody diarrhea with high mortality",
-          "Facial subcutaneous edema with blindness",
-          "Paralysis of legs and wings"
+          "Catastrophic drop in egg lay accompanied by high mortality, facial subcutaneous edema, and cyanosis",
+          "Gradual reduction in egg mass with persistent chalky shell deposits, oviduct impaction, and tremors",
+          "Severe hemorrhagic diarrhea followed by dehydration, prominent comb atrophy, and flaccid paralysis"
         ],
         "a": 0,
         "e": "Atadenovirus (EDS-76 virus) replicates in the pouch shell gland, causing defective calcification leading to soft, rugose, or completely shell-less eggs.",
@@ -13878,9 +13878,9 @@ var quizBank = {
         "q": "Inclusion Body Hepatitis (IBH) in poultry is characterized histologically by:",
         "o": [
           "Large, round, basophilic or eosinophilic intranuclear inclusion bodies in hepatocytes",
-          "Intracytoplasmic Bollinger bodies in hepatocytes",
-          "Negri bodies in Kupffer cells",
-          "Extensive amyloid deposition in sinusoidal spaces"
+          "Prominent intracytoplasmic acidophilic inclusion bodies within sinusoidal Kupffer cells",
+          "Dense perinuclear chromatin marginalization with syncytial giant cell transformation",
+          "Multiple eosinophilic intracytoplasmic Bollinger bodies across biliary epithelial cells"
         ],
         "a": 0,
         "e": "IBH (caused by Fowl Adenoviruses) exhibits severe hepatic necrosis with large basophilic or eosinophilic intranuclear inclusions inside hepatocyte nuclei.",
@@ -13892,9 +13892,9 @@ var quizBank = {
         "q": "Enlarged, pale feather follicles producing the condition commonly called 'skin leukosis' is an expression of:",
         "o": [
           "Cutaneous form of Marek's Disease",
-          "Avian Pox dry form",
-          "Erysipelas in poultry",
-          "Scaly leg mite infestation"
+          "Dry cutaneous form of Avian Pox",
+          "Cutaneous lymphoid leukosis form",
+          "Subacute avian erysipelas lesions"
         ],
         "a": 0,
         "e": "Aggregates of pleomorphic neoplastic T-lymphocytes around feather follicles produce raised white nodules seen at processing, termed cutaneous Marek's disease.",
@@ -13920,9 +13920,9 @@ var quizBank = {
         "q": "Blue wing disease in young broiler chicks is an alternative clinical designation for:",
         "o": [
           "Chicken Infectious Anemia (with secondary gangrenous dermatitis)",
-          "Fowl Cholera",
-          "Avian Encephalomyelitis",
-          "Turkey Rhinotracheitis"
+          "Infectious Bursal Disease (with acute peribursal subcutaneous edema)",
+          "Avian Encephalomyelitis (with epidermal gangrene and polyarthritis)",
+          "Avian Reovirus infection (with bilateral gastrocnemius rupture)"
         ],
         "a": 0,
         "e": "Chicken Infectious Anemia combined with clostridial or staphylococcal infection produces necrotizing hemorrhages of the wings termed 'blue wing disease'.",
@@ -13934,9 +13934,9 @@ var quizBank = {
         "q": "Reticuloendotheliosis virus (REV) in turkeys and chickens causes:",
         "o": [
           "Runting-stunting syndrome, bursal/thymic atrophy, and chronic lymphoid/reticular cell tumors",
-          "Acute catastrophic catarrhal enteritis only",
-          "Myocardial infarction without neoplasia",
-          "Selective aplasia of thyroid glands"
+          "Acute hemorrhagic enteritis, focal cerebellar malacia, and diffuse bursal cystic hyperplasia",
+          "Generalized osteopetrosis with symmetrical bone thickening and selective bursal hyperplasia",
+          "Diffuse fibrinous pericarditis, severe purulent airsacculitis, and caseous perihepatitis"
         ],
         "a": 0,
         "e": "REV (Retroviridae) produces runting syndrome, peripheral nerve enlargement, and multi-organ lymphoreticular neoplasms.",
@@ -13948,9 +13948,9 @@ var quizBank = {
         "q": "The classical gross pathological triad of Avian Colisepticemia (E. coli infection) includes:",
         "o": [
           "Fibrinous pericarditis, perihepatitis, and air sacculitis",
-          "Ulcerative enteritis, orchitis, and keratitis",
-          "Pancreatitis, splenomegaly, and nephritis",
-          "Tracheitis, proventriculitis, and bursitis"
+          "Ulcerative enteritis, typhlitis, and focal proventriculitis",
+          "Hemorrhagic tracheitis, blepharitis, and infraorbital sinusitis",
+          "Caseous bursitis, splenomegaly, and interstitial nephritis"
         ],
         "a": 0,
         "e": "Colisepticemia in broilers is recognized by a thick layer of whitish-yellow fibrinous exudate over the heart (pericarditis), liver capsule (perihepatitis), and clouded air sacs.",
@@ -13976,9 +13976,9 @@ var quizBank = {
         "q": "Petechial hemorrhages on epicardium, congested liver with multifocal pinpoint necrotic foci, and cheesy exudate in wattles indicate:",
         "o": [
           "Fowl Cholera (Pasteurellosis)",
-          "Infectious Bronchitis",
-          "Ranikhet Disease",
-          "Coccidiosis"
+          "Fowl Typhoid (Salmonellosis)",
+          "Avian Colibacillosis (E. coli)",
+          "Avian Infectious Bronchitis"
         ],
         "a": 0,
         "e": "Acute fowl cholera produces epicardial petechiae and liver necrosis; chronic fowl cholera causes localized fibrino-caseous lesions in wattles and joints.",
@@ -13990,9 +13990,9 @@ var quizBank = {
         "q": "Pullorum Disease in young chicks is caused by which host-adapted Salmonella serotype?",
         "o": [
           "Salmonella enterica subsp. enterica serovar Gallinarum biovar Pullorum",
-          "Salmonella Typhimurium",
-          "Salmonella Enteritidis",
-          "Salmonella Heidelberg"
+          "Salmonella enterica subsp. enterica serovar Gallinarum biovar Gallinarum",
+          "Salmonella enterica subsp. enterica serovar Typhimurium definitive type",
+          "Salmonella enterica subsp. enterica serovar Enteritidis phage type 4"
         ],
         "a": 0,
         "e": "Pullorum disease ('bacillary white diarrhea') is caused by Salmonella enterica serovar Gallinarum biovar Pullorum.",
@@ -14004,9 +14004,9 @@ var quizBank = {
         "q": "A classic autopsy lesion of Pullorum Disease in young chicks surviving the acute septicemia is:",
         "o": [
           "Grayish-white necrotic nodules in myocardium, lungs, gizzard, and liver",
-          "Massive pericardial fluid with no nodules",
-          "Diffuse hemorrhagic tracheitis with casts",
-          "Bursal follicular cysts"
+          "Massive fibrinous pericardial effusion without any parenchymal nodulation",
+          "Severe hemorrhagic diphtheritic tracheitis with occluding blood casts",
+          "Extensive bursal follicular necrosis with peribursal gelatinous edema"
         ],
         "a": 0,
         "e": "Subacute/chronic Pullorum produces distinct focal granulomatous white nodules throughout heart muscle, lungs, gizzard wall, and liver.",
@@ -14018,9 +14018,9 @@ var quizBank = {
         "q": "In adult carrier hens, Pullorum disease and Fowl Typhoid characteristically produce which ovarian lesion?",
         "o": [
           "Pedunculated, misshapen, discolored (greenish-brown), cysts or ova with oily yolk exudate",
-          "Complete agenesis of left ovary",
-          "Ovarian fibroma with granulosa hyperplasia",
-          "Bilateral luteal cysts"
+          "Multiple smooth, thin-walled follicular cysts containing clear serous fluid without lysis",
+          "Diffuse fibrous atrophy of ovarian stroma accompanied by complete agenesis of left oviduct",
+          "Multicentric granulosa cell tumors exhibiting solid cauliflower-like cortical projections"
         ],
         "a": 0,
         "e": "Chronic carrier hens have shriveled, misshapen, cystic ova containing caseous or coagulated yolk material on elongated stalk-like pedicles.",
@@ -14032,9 +14032,9 @@ var quizBank = {
         "q": "A characteristic gross lesion of Fowl Typhoid (caused by Salmonella Gallinarum) in adult birds is:",
         "o": [
           "Enlarged, friable liver with a distinctive bronze/greenish sheen",
-          "Stove-pipe trachea filled with blood",
-          "Thickened rugose proventricular lining",
-          "Hard subcutaneous neoplastic masses"
+          "Shrunken, fibrotic liver with multiple diffuse regenerative nodules",
+          "Severely congested liver with deep-seated branching mycotic hyphae",
+          "Pale, fatty liver exhibiting widespread subcapsular petechiations"
         ],
         "a": 0,
         "e": "Salmonella Gallinarum causes bacteremia resulting in massive hepatomegaly with a pathognomonic greenish-bronze iridescent discoloration on exposure to air.",
@@ -14060,9 +14060,9 @@ var quizBank = {
         "q": "The defining clinical presentation of Infectious Coryza in a poultry flock is:",
         "o": [
           "Severe facial edema, swollen infraorbital sinuses, foul-smelling nasal discharge, and conjunctivitis",
-          "Bloody diarrhea with high mortality",
-          "Flaccid paralysis of wings and legs",
-          "Shedding of cloacal lining"
+          "Marked torticollis, backward stumbling, clonic wing spasms, and watery greenish proventricular regurgitation",
+          "Sudden respiratory suffocation with bloody tracheal plugs, severe cyanosis of wattles, and high mortality",
+          "Profuse sulfur-yellow watery diarrhea, severe emaciation, and ulcerated nodular lesions on non-feathered skin"
         ],
         "a": 0,
         "e": "Coryza causes acute catarrhal inflammation of upper nasal passages and infraorbital sinuses, creating swollen puffy eyes and foul nasal exudate.",
@@ -14074,9 +14074,9 @@ var quizBank = {
         "q": "Chronic Respiratory Disease (CRD) in chickens is primarily initiated by:",
         "o": [
           "Mycoplasma gallisepticum (MG)",
-          "Mycoplasma synoviae (MS)",
-          "Mycoplasma meleagridis",
-          "Mycoplasma iowae"
+          "Mycoplasma synoviae (MS strain)",
+          "Mycoplasma meleagridis isolates",
+          "Mycoplasma iowae serotype types"
         ],
         "a": 0,
         "e": "CRD is caused by Mycoplasma gallisepticum (MG), which destroys ciliated tracheal epithelium and synergizes with E. coli and NDV/IBV.",
@@ -14088,9 +14088,9 @@ var quizBank = {
         "q": "When Mycoplasma gallisepticum infection is complicated with E. coli, the resulting syndrome is termed:",
         "o": [
           "Complicated Chronic Respiratory Disease (CCRD)",
-          "Avian Spirochetosis",
-          "Turkey coryza",
-          "Swollen head syndrome"
+          "Infectious Coryza with secondary pasteurellosis",
+          "Avian Respiratory Mycoplasmosis complex (ARMC)",
+          "Swollen Head Syndrome with pneumovirus co-flux"
         ],
         "a": 0,
         "e": "CCRD represents severe synergistic respiratory disease with extensive fibrinous polyserositis, severe air sacculitis, and high mortality.",
@@ -14130,9 +14130,9 @@ var quizBank = {
         "q": "Necrotic Enteritis in broiler chickens produces a pathognomonic 'Turkish towel' appearance of intestinal mucosa caused by:",
         "o": [
           "Clostridium perfringens (types A and C)",
-          "Escherichia coli",
-          "Eimeria tenella",
-          "Campylobacter jejuni"
+          "Clostridium colinum (quail enteritis)",
+          "Enterotoxigenic Escherichia coli strains",
+          "Campylobacter jejuni enteric serovars"
         ],
         "a": 0,
         "e": "Alpha and NetB toxins of Clostridium perfringens induce widespread mucosal necrosis, creating a brown-yellow diphtheritic membrane resembling a Turkish towel.",
@@ -14144,9 +14144,9 @@ var quizBank = {
         "q": "Avian Spirochetosis is an acute tick-borne septicemia caused by Borrelia anserina and transmitted by:",
         "o": [
           "Argas persicus (fowl tick)",
-          "Dermanyssus gallinae",
-          "Ornithonyssus sylviarum",
-          "Menacanthus stramineus"
+          "Dermanyssus gallinae (mite)",
+          "Ornithonyssus sylviarum mite",
+          "Menacanthus stramineus louse"
         ],
         "a": 0,
         "e": "Borrelia anserina is transmitted through the bites of soft ticks (Argas persicus), causing green diarrhea, marked splenomegaly with mottled appearance, and anemia.",
@@ -14158,9 +14158,9 @@ var quizBank = {
         "q": "Omphalitis (yolk sac infection / mushy chick disease) is characterized post-mortem by:",
         "o": [
           "Unabsorbed, putrid, foul-smelling yolk with inflamed, edematous navel",
-          "Complete absence of yolk sac at hatch",
-          "Ossification of umbilical ring",
-          "Pericardial sac rupture"
+          "Complete physiologic absorption of the yolk sac with persistent patent urachus",
+          "Fibrous obliteration and dystrophic calcification of ventral umbilical ring",
+          "Massive acute hemopericardium accompanied by spontaneous rupture of aorta roots"
         ],
         "a": 0,
         "e": "Bacterial contamination (E. coli, Proteus, Staph) of the open navel prevents yolk absorption, leading to liquefaction, putrid odor, and friable belly wall.",
@@ -14172,9 +14172,9 @@ var quizBank = {
         "q": "Avian Tuberculosis is caused by Mycobacterium avium and is grossly distinguished by:",
         "o": [
           "Nodular granulomas in liver, spleen, and intestines without calcification",
-          "Extensive pulmonary caseation with calcification as seen in cattle",
-          "Granulomas restricted entirely to the brain",
-          "Purely suppurative liquefactive abscesses"
+          "Extensive pulmonary caseous necrosis accompanied by heavy dystrophic calcification",
+          "Granulomatous meningoencephalitis restricted strictly to cerebellar brainstem folia",
+          "Diffuse liquefactive suppurative abscessation involving the proventricular wall"
         ],
         "a": 0,
         "e": "Avian TB exhibits hard yellowish-white tubercles in abdominal viscera (liver, spleen, gut). Notably, avian granulomas rarely undergo calcification.",
@@ -14186,9 +14186,9 @@ var quizBank = {
         "q": "Infectious Stunting Syndrome (Runting Stunting Syndrome) in broilers is associated with enteritis, pale intestines, and characteristic atrophy of which abdominal organ?",
         "o": [
           "Pancreas",
-          "Spleen",
-          "Thyroid",
-          "Crop"
+          "Proventriculus",
+          "Thyroid gland",
+          "Bursal organ"
         ],
         "a": 0,
         "e": "Runting Stunting Syndrome (RSS) features marked pancreatic atrophy and vacuolation, causing severe maldigestion and stunted growth.",
@@ -14200,9 +14200,9 @@ var quizBank = {
         "q": "Aspergillosis in hatchery chicks is commonly referred to as:",
         "o": [
           "Brooder pneumonia",
-          "Thrush",
-          "Limberneck",
-          "Crop mycosis"
+          "Myotic candidiasis",
+          "Limberneck disease",
+          "Nutmeg lung lesion"
         ],
         "a": 0,
         "e": "Inhaled Aspergillus fumigatus spores in contaminated incubators produce acute nodular mycotic pneumonia in young chicks, termed brooder pneumonia.",
@@ -14214,9 +14214,9 @@ var quizBank = {
         "q": "Gross lesions of Aspergillosis in lungs and air sacs appear as:",
         "o": [
           "Yellowish-green/white button-like plaques or fuzzy fungal mycelial colonies lining air sacs",
-          "Bloody mucosal pseudomembrane strictly in trachea",
-          "Clear gelatinous cysts",
-          "Hyperplastic mucosal papillomas"
+          "Bloody diphtheritic pseudomembranous casts obstructing the tracheal bifurcation and lumen",
+          "Multiple clear thin-walled transudative cysts distributed along visceral peritoneal surfaces",
+          "Marked hyperplastic papillomatous projections studded along the proventricular mucosa"
         ],
         "a": 0,
         "e": "Aspergillus forms focal granulomatous yellow nodules in lung parenchyma and flat, circular disc-like plaques covered by green-gray aerial hyphae in air sacs.",
@@ -14256,9 +14256,9 @@ var quizBank = {
         "q": "The microscopic hallmark of subacute to chronic Aflatoxicosis in chicken liver is:",
         "o": [
           "Marked bile duct proliferation / hyperplasia and microvesicular hepatic lipidosis",
-          "Intranuclear viral inclusions",
-          "Suppurative portal abscesses",
-          "Diffuse amyloid fibril replacement"
+          "Large eosinophilic intranuclear inclusion bodies within degenerating hepatocytes in liver",
+          "Multifocal suppurative microabscesses accompanied by severe periportal fibrous bridging",
+          "Extensive extracellular amyloid fibril deposition obliterating functional Space of Disse"
         ],
         "a": 0,
         "e": "Bile duct hyperplasia (tubular proliferation of biliary epithelial cells in portal triads) accompanied by lipidosis is the definitive histologic sign of aflatoxicosis.",
@@ -14270,9 +14270,9 @@ var quizBank = {
         "q": "Ochratoxin A primarily causes pathology in which avian organ system?",
         "o": [
           "Kidneys (producing severe nephrosis and tubular degeneration)",
-          "Musculoskeletal system",
-          "Infundibulum of oviduct",
-          "Eyes and conjunctiva"
+          "Skeletal muscles (producing widespread Zenker's hyaline myonecrosis)",
+          "Oviduct infundibulum (inducing severe purulent salpingitis and edema)",
+          "Gastrointestinal tract (causing extensive ulcerative proventriculitis)"
         ],
         "a": 0,
         "e": "Ochratoxin A is a potent nephrotoxin in poultry, causing pale, markedly swollen kidneys, destruction of proximal convoluted tubules, and visceral gout.",
@@ -14284,9 +14284,9 @@ var quizBank = {
         "q": "Fusarium mycotoxin T-2 toxin induces which characteristic lesions in chickens?",
         "o": [
           "Severe oral crusts, necrotic stomatitis, and ulcers at edges of beak, tongue, and palate",
-          "Selective destruction of feather calamus",
-          "Biliary carcinoma",
-          "Hydropericardium exclusively"
+          "Selective degenerative necrosis and depigmentation of emerging feather calamus epidermal sheaths",
+          "Widespread cholangiocellular carcinoma with extensive intrahepatic metastases in adult layers",
+          "Massive acute hydropericardium accompanied by diffuse severe pulmonary transudative alveolar edema"
         ],
         "a": 0,
         "e": "T-2 toxin (a trichothecene) has direct caustic radiomimetic properties, causing contact necrotic ulcers on oral mucosa, tongue, and gizzard lining.",
@@ -14312,9 +14312,9 @@ var quizBank = {
         "q": "Transverse ladder-like white bands or streaks in the duodenal mucosa are characteristic of which coccidial species?",
         "o": [
           "Eimeria acervulina",
-          "Eimeria tenella",
-          "Eimeria brunetti",
-          "Eimeria mitis"
+          "Eimeria tenella types",
+          "Eimeria necatrix form",
+          "Eimeria maxima strain"
         ],
         "a": 0,
         "e": "Eimeria acervulina produces superficial mucosal colonies in the duodenum that appear grossly as white or grayish transverse ladder-like streaks.",
@@ -14340,9 +14340,9 @@ var quizBank = {
         "q": "Histomoniasis (Blackhead / Enterohepatitis) is caused by the protozoan:",
         "o": [
           "Histomonas meleagridis",
-          "Trichomonas gallinae",
-          "Hexamita meleagridis",
-          "Giardia lamblia"
+          "Trichomonas gallinae sp",
+          "Hexamita meleagridis f.",
+          "Giardia lamblia trophs"
         ],
         "a": 0,
         "e": "Histomonas meleagridis is a flagellated protozoan causing severe enterohepatitis, especially fatal in turkeys.",
@@ -14354,9 +14354,9 @@ var quizBank = {
         "q": "Which pair of pathognomonic autopsy lesions confirms Histomoniasis in turkeys?",
         "o": [
           "Depressed circular 'target-like' / saucer-shaped liver necrotic craters and cheesy cecal cores",
-          "Hemorrhagic tracheitis and cloudy air sacs",
-          "Bursal necrosis and pale bone marrow",
-          "Renal urate stasis and splenomegaly"
+          "Severe hemorrhagic tracheitis with blood clots accompanied by cloudy thickened air sac membranes",
+          "Marked bursal atrophy with gelatinous transudate and extensive aplastic pale white bone marrow",
+          "Bilateral renal urate distension with severe visceral urate deposition over pericardial serosa"
         ],
         "a": 0,
         "e": "Histomoniasis produces severe typhlitis with laminated fibrinonecrotic cecal plugs and round, sunken hepatic necrotic areas with raised yellowish borders.",
@@ -14368,9 +14368,9 @@ var quizBank = {
         "q": "The transmission of Histomonas meleagridis to susceptible poultry occurs via eggs of which nematode?",
         "o": [
           "Heterakis gallinarum",
-          "Ascaridia galli",
-          "Capillaria annulata",
-          "Syngamus trachea"
+          "Ascaridia galli eggs",
+          "Capillaria annulata f",
+          "Syngamus trachea ova"
         ],
         "a": 0,
         "e": "Histomonas survives within the resistant ova of the cecal worm Heterakis gallinarum, which acts as the primary transport host.",
@@ -14382,9 +14382,9 @@ var quizBank = {
         "q": "Trichomoniasis in pigeons (canker) and raptors (frounce) affects which anatomical location?",
         "o": [
           "Upper digestive tract: crop, pharynx, and esophagus",
-          "Lower small intestine",
-          "Ceca exclusively",
-          "Lungs and air sacs"
+          "Middle to distal segments of the small intestines tract",
+          "Bilateral blind pouches of the cecal luminal appendages",
+          "Pulmonary parenchyma and thoracic air sac membrane walls"
         ],
         "a": 0,
         "e": "Trichomonas gallinae colonizes the oral cavity, esophagus, and crop, forming large, caseous yellowish necrotic masses (canker).",
@@ -14396,9 +14396,9 @@ var quizBank = {
         "q": "Syngamus trachea ('gapeworm') infestation in gamebirds and domestic fowl results in:",
         "o": [
           "Permanent 'Y'-shaped copulating red worms in trachea causing head shaking and gasping ('gapes')",
-          "Worms in proventriculus causing vomiting",
-          "Blind cecal pouch perforation",
-          "Parasites in anterior chamber of eye"
+          "Multiple coiled thread-like nematodes embedded within proventricular glands causing persistent vomiting",
+          "Large roundworms causing acute mechanical perforation of the cecal wall and severe septic peritonitis",
+          "Adult filarial parasites swimming actively within the anterior chamber and vitreous humors of the eye"
         ],
         "a": 0,
         "e": "Adult Syngamus trachea worms remain joined in permanent copula (Y-shape) attached to tracheal mucosa, causing hemorrhagic tracheitis and gasping.",
@@ -14410,9 +14410,9 @@ var quizBank = {
         "q": "Heavy infestation with Ascaridia galli in young chickens leads to:",
         "o": [
           "Intestinal obstruction, impaction, and mucosal catarrhal inflammation",
-          "Biliary duct lithiasis",
-          "Tracheal suffocation",
-          "Peritoneal calcification"
+          "Severe biliary ductular obstruction accompanied by obstructive lithiasis",
+          "Acute upper airway suffocation due to complete mechanical tracheal block",
+          "Extensive chronic dystrophic mineralization across peritoneal surfaces"
         ],
         "a": 0,
         "e": "Ascaridia galli is the large avian roundworm; massive numbers mechanically plug the small intestinal lumen, stunting growth and causing anemia.",
@@ -14424,9 +14424,9 @@ var quizBank = {
         "q": "Dermanyssus gallinae (red mite) affects poultry flocks by:",
         "o": [
           "Nocturnal blood-feeding on birds causing severe anemia, restlessness, and drop in production",
-          "Living permanently inside feather shafts",
-          "Burrowing into deep subcutaneous muscle",
-          "Invading air sac cavities"
+          "Living permanently within feather shafts, causing intense pruritus and compulsive feather picking",
+          "Burrowing deeply beneath the leg scales, inducing prominent crusty hyperkeratotic skin lesions",
+          "Colonizing thoracic and abdominal air sacs, producing chronic pyogranulomatous airsacculitis"
         ],
         "a": 0,
         "e": "Dermanyssus gallinae hides in crevices of the poultry house during daylight and feeds on avian blood at night, leading to anemia and weakness.",
@@ -14438,9 +14438,9 @@ var quizBank = {
         "q": "Knemidocoptes mutans causes which condition in backyard chickens?",
         "o": [
           "Scaly leg disease (crusty hyperkeratotic lesions on non-feathered legs)",
-          "Depluming itch",
-          "Air sac mite disease",
-          "Cerebral coenurosis"
+          "Depluming itch (severe feather pulling due to burrowing feather quill mites)",
+          "Air sac mite infestation causing severe progressive dyspnea and clicking sounds",
+          "Subcutaneous emphysema resulting from traumatic rupture of clavicular air sacs"
         ],
         "a": 0,
         "e": "Knemidocoptes mutans burrows under epidermal scales of the shanks and feet, producing severe proliferative hyperkeratosis, crusting, and lameness.",
@@ -14480,9 +14480,9 @@ var quizBank = {
         "q": "Articular gout in poultry typically involves painful periarticular periosteal swelling of:",
         "o": [
           "Metatarsophalangeal and interphalangeal joints of feet",
-          "Humeroradial joint only",
-          "Costochondral junctions",
-          "Cervical vertebrae"
+          "Scapulohumeral and humeroradial joints of wings bilaterally",
+          "Costochondral junctions along both lateral thoracic rib cages",
+          "Intervertebral synovial joints within the cervical vertebrae"
         ],
         "a": 0,
         "e": "Articular gout produces tophi (white crystalline masses of urates surrounded by granulomatous reaction) in synovial joints and tendon sheaths of toes and hocks.",
@@ -14494,9 +14494,9 @@ var quizBank = {
         "q": "Ascites Syndrome (Water Belly / Pulmonary Hypertension Syndrome) in fast-growing broilers is primarily initiated by:",
         "o": [
           "Increased pulmonary arterial pressure driven by high oxygen demand and rapid growth, leading to right ventricular dilation and failure",
-          "Primary hepatic cirrhosis from plant toxins",
-          "Hypoproteinemia due to protein-losing nephropathy",
-          "Rupture of thoracic duct"
+          "Primary toxic hepatic necrosis and nodular regeneration caused by continuous dietary exposure to high levels of pyrrolizidine alkaloids",
+          "Severe protein-losing nephropathy driven by membranous glomerulonephritis, causing profound systemic hypoalbuminemia and fluid leakage",
+          "Spontaneous mechanical rupture of the thoracic lymphatic duct triggered by violent exertion, resulting in massive bilateral chylothorax"
         ],
         "a": 0,
         "e": "Modern broilers have high metabolic rates; insufficient lung vascular capacity leads to pulmonary hypertension, right ventricular hypertrophy, transudation, and ascites.",
@@ -14508,9 +14508,9 @@ var quizBank = {
         "q": "At necropsy, a broiler with Ascites Syndrome typically shows:",
         "o": [
           "Distended abdomen containing amber transudate, right ventricular hypertrophy, and congested 'nutmeg' liver with capsular gelatinous coat",
-          "Aplastic bone marrow and empty crop",
-          "Proventricular papillomas with stones",
-          "Severe cerebral softening with petechiae"
+          "Profound generalized bone marrow hypoplasia with aplastic fatty transformation, empty crop, and severe diffuse gastrointestinal atrophy",
+          "Multiple cauliflower-like squamous papillomas obstructing proventricular lumen, accompanied by extensive foreign body gizzard impaction",
+          "Massive bilateral liquefactive cerebrocortical encephalomalacia with extensive petechial hemorrhages in thalamic and brainstem nuclei"
         ],
         "a": 0,
         "e": "Right ventricular failure elevates venous hydrostatic pressure, causing passive liver congestion, transudate leakage across Glisson's capsule, and abdominal hydroperitoneum.",
@@ -14522,9 +14522,9 @@ var quizBank = {
         "q": "Perosis (Slipped Tendon) in growing poultry is primarily caused by deficiency of which trace mineral?",
         "o": [
           "Manganese (Mn)",
-          "Zinc (Zn)",
-          "Copper (Cu)",
-          "Selenium (Se)"
+          "Dietary Zinc (Zn)",
+          "Copper metal (Cu)",
+          "Selenium ion (Se)"
         ],
         "a": 0,
         "e": "Manganese deficiency (and/or choline/biotin deficiency) disrupts epiphyseal cartilage matrix synthesis, causing flattening of tibial condyles and gastrocnemius tendon displacement.",
@@ -14550,9 +14550,9 @@ var quizBank = {
         "q": "Nutritional encephalomalacia ('Crazy Chick Disease') in growing birds is caused by deficiency of:",
         "o": [
           "Vitamin E (alpha-tocopherol)",
-          "Vitamin A",
-          "Vitamin D3",
-          "Vitamin K"
+          "Vitamin A (retinol palmitate)",
+          "Vitamin D3 (cholecalciferol)",
+          "Vitamin K3 (menadione salt)"
         ],
         "a": 0,
         "e": "Deficiency of Vitamin E (especially when diets contain oxidized polyunsaturated fats) results in cerebellar lipid peroxidation, ischemic necrosis, ataxia, and retropulsion.",
@@ -14564,9 +14564,9 @@ var quizBank = {
         "q": "Which specific area of the brain undergoes hemorrhage, edema, and softening in Vitamin E deficiency in chicks?",
         "o": [
           "Cerebellar folia",
-          "Optic chiasma",
-          "Olfactory bulbs",
-          "Corpus striatum"
+          "Optic chiasm track",
+          "Olfactory bulbs zone",
+          "Corpus striatum bed"
         ],
         "a": 0,
         "e": "Cerebellar cortex folia swell with petechiae and greenish-brown discoloration due to ischemic necrosis of Purkinje cells and capillary thrombosis.",
@@ -14592,9 +14592,9 @@ var quizBank = {
         "q": "Nutritional Muscular Dystrophy ('white muscle disease' / Zenker's degeneration in chicks) primarily involves which muscle group?",
         "o": [
           "Pectoral (breast) and thigh muscles",
-          "Digital extensor muscles only",
-          "Diaphragm muscle",
-          "Esophageal muscularis"
+          "Digital flexor and extensor tendons group",
+          "Muscular portion of the diaphragm sheet",
+          "Circular layers of the crop muscularis"
         ],
         "a": 0,
         "e": "Vit E and sulfur amino acid deficiency causes prominent white longitudinal striations of coagulative necrosis in breast (pectoralis major) muscles.",
@@ -14634,9 +14634,9 @@ var quizBank = {
         "q": "'Star-gazing' posture with extreme head retraction (opisthotonos) in chicks is due to deficiency of:",
         "o": [
           "Vitamin B1 (Thiamine)",
-          "Riboflavin",
-          "Vitamin C",
-          "Folic acid"
+          "Vitamin B2 (Riboflavin)",
+          "Vitamin B6 (Pyridoxine)",
+          "Vitamin B12 (Cobalamin)"
         ],
         "a": 0,
         "e": "Thiamine deficiency halts carbohydrate metabolism in central neurons, causing polyneuritis characterized by retraction of the head over the back (star-gazing).",
@@ -14648,9 +14648,9 @@ var quizBank = {
         "q": "Cage Layer Fatigue (Osteoporosis in high-producing caged hens) is caused by depletion of calcium from which bone source?",
         "o": [
           "Medullary bone and cortical bone matrix",
-          "Purely cartilage plates",
-          "Mandibular condyles",
-          "Skull calvarium only"
+          "Hyaline cartilage of growth physes only",
+          "Articular surfaces of mandibular condyles",
+          "Cranial calvarium and orbital bone plates"
         ],
         "a": 0,
         "e": "Intense calcium draw for eggshell formation depletes structural medullary bone and cortical bone, causing soft, pliable bones, rib beading, and sternal indentation.",
@@ -14662,9 +14662,9 @@ var quizBank = {
         "q": "Rickets in young poultry is characterized pathologically by:",
         "o": [
           "Enlarged parathyroid glands, soft rubbery beak and bones, and widening of the epiphyseal growth plate",
-          "Brittle hard bones with excess calcification",
-          "Aplastic bone marrow without skeletal changes",
-          "Generalized articular amyloidosis"
+          "Dense sclerotic bone formation with excess periosteal mineralization and narrow cartilaginous plates",
+          "Severe generalized osteopetrosis with dense obliteration of marrow spaces and cortical bone fragility",
+          "Multiple osteochondromas arising from the costochondral junctions accompanied by articular amyloidosis"
         ],
         "a": 0,
         "e": "Deficiency of Vitamin D3, Ca, or P causes failure of osteoid calcification, resulting in flexible rubbery long bones, beaded ribs ('rachitic rosary'), and enlarged parathyroids.",
@@ -14676,9 +14676,9 @@ var quizBank = {
         "q": "Fatty Liver Hemorrhagic Syndrome (FLHS) in caged layers is triggered by:",
         "o": [
           "High-energy low-protein diet, cage confinement, and estrogen excess leading to massive hepatic lipidosis and fatal hematoma rupture",
-          "Excessive outdoor exercise and fasting",
-          "Acute bacterial septicemia",
-          "Infectious Bursal Disease"
+          "Prolonged severe fasting, excessive outdoor range exercise, and hypothermia producing acute hypoglycemia and skeletal muscle wasting",
+          "Peracute septicemic pasteurellosis producing severe diffuse multifocal necrotizing hepatitis and subcapsular hepatic hemorrhages",
+          "Severe immunosuppressive viral destruction of bone marrow hematopoietic precursors and lymphoid follicles by circovirus infection"
         ],
         "a": 0,
         "e": "FLHS affects overfed caged laying hens; fragile, pale-yellow fat-laden livers develop subcapsular hemorrhages and fatal massive exsanguination into the coelom.",
@@ -14690,9 +14690,9 @@ var quizBank = {
         "q": "Severe vent pecking and cannibalism in commercial poultry houses is exacerbated by:",
         "o": [
           "Overcrowding, high light intensity, salt deficiency, and prolapse of oviduct",
-          "Low dietary protein and dark housing",
-          "Excess calcium supplementation",
-          "Routine debeaking"
+          "Low dietary protein concentrations combined with excessively darkened housing",
+          "Excess dietary calcium carbonate supplementation combined with wet litter beds",
+          "Routine infra-red beak trimming and low stocking density in floor operations"
         ],
         "a": 0,
         "e": "Cannibalism is a serious vice driven by environmental stressors (excessive illumination, tight density) and visual stimulation from red, exposed prolapsed oviduct mucosa.",
@@ -14704,9 +14704,9 @@ var quizBank = {
         "q": "Inflammatory exudate in birds is usually caseous (solid, cheesy) rather than liquid pus because avian heterophils:",
         "o": [
           "Lack myeloperoxidase and strong proteolytic enzymes to liquefy the exudate",
-          "Are absent from avian blood",
-          "Produce excess fibrinogen",
-          "Contain more lysosomes than mammalian neutrophils"
+          "Are completely absent from circulating avian peripheral blood and bone marrow",
+          "Produce excessive concentrations of prothrombin and fibrinogen at injury sites",
+          "Contain significantly higher quantities of neutral proteases than neutrophils"
         ],
         "a": 0,
         "e": "This is why abscesses, airsacculitis and sinusitis in poultry contain firm yellow caseous plugs (e.g. CRD, aspergillosis, infectious coryza).",
@@ -14718,9 +14718,9 @@ var quizBank = {
         "q": "The primary lymphoid organ responsible for B-lymphocyte development in birds is the:",
         "o": [
           "Bursa of Fabricius",
-          "Thymus",
-          "Spleen",
-          "Caecal tonsil"
+          "Cervical Thymus lobes",
+          "Splenic red pulp beds",
+          "Cecal tonsil follicles"
         ],
         "a": 0,
         "e": "Destruction of the bursa (IBD) or its lymphocytes (CIA, MD) causes immunosuppression and vaccine failure.",
@@ -14732,9 +14732,9 @@ var quizBank = {
         "q": "Newcastle disease virus pathotypes (lentogenic, mesogenic, velogenic) are officially classified using the:",
         "o": [
           "Intracerebral pathogenicity index (ICPI) in day-old chicks",
-          "Haemagglutination inhibition titre",
-          "Agar gel immunodiffusion test",
-          "Egg production drop"
+          "Hemagglutination inhibition (HI) titer with specific sera",
+          "Agar gel immunodiffusion (AGID) precipitation line scores",
+          "Percentage drop in commercial broiler egg production curve"
         ],
         "a": 0,
         "e": "An ICPI of 0.7 or more (or a multibasic cleavage site in the F protein) defines virulent NDV, a notifiable disease.",
@@ -14746,9 +14746,9 @@ var quizBank = {
         "q": "In infectious bursal disease, the bursa of Fabricius by about 8 days after infection becomes:",
         "o": [
           "Atrophic, about one-third of its normal size",
-          "Permanently enlarged with tumour",
-          "Normal in size",
-          "Mineralised and hard"
+          "Permanently hypertrophied with bursal lymphoma",
+          "Densely calcified with prominent osteoma foci",
+          "Distended with sterile serosanguinous exudate"
         ],
         "a": 0,
         "e": "In the first 3–4 days the bursa is swollen, oedematous and yellow with gelatinous transudate; then lymphocytes are lost and it atrophies.",
@@ -14760,9 +14760,9 @@ var quizBank = {
         "q": "Haemorrhages in the thigh and breast muscles, a swollen haemorrhagic bursa and swollen kidneys with urates in 3–6-week-old chicks suggest:",
         "o": [
           "Infectious bursal disease (Gumboro)",
-          "Marek's disease",
-          "Fowl pox",
-          "Infectious coryza"
+          "Marek's disease (acute neural type)",
+          "Avian encephalomyelitis (tremor syn)",
+          "Infectious coryza with facial edema"
         ],
         "a": 0,
         "e": "IBD damages vessels and bursal lymphocytes; urates accumulate due to dehydration and kidney damage.",
@@ -14774,9 +14774,9 @@ var quizBank = {
         "q": "The HVT vaccine used against Marek's disease is derived from:",
         "o": [
           "Herpesvirus of turkeys, a non-pathogenic related virus",
-          "Killed Marek's tumour cells",
-          "Avian leukosis virus",
-          "Newcastle disease virus"
+          "Attenuated oncogenic Marek's lymphoblastoid tumor cells",
+          "Avian leukosis retrovirus subgroup A attenuated strains",
+          "Lentogenic Newcastle disease viral structural capsids"
         ],
         "a": 0,
         "e": "HVT (serotype 3) is given in ovo or at day old; it prevents tumour formation but not infection with field virus.",
@@ -14802,9 +14802,9 @@ var quizBank = {
         "q": "Avian encephalomyelitis ('epidemic tremor') in 1–3-week-old chicks is caused by a picornavirus and characterised by:",
         "o": [
           "Head and neck tremors, with gliosis and central chromatolysis of brainstem neurons, and lymphoid aggregates in the gizzard and proventricular muscle",
-          "Paralysis with enlarged sciatic nerves",
-          "Tracheal casts of blood",
-          "Caseous plugs in the air sacs"
+          "Progressive asymmetric limb paralysis with unilateral sciatic nerve swelling, loss of cross-striations, and diffuse iris discoloration (gray eye)",
+          "Severe acute hemorrhagic tracheitis with large intraluminal blood clots and diphtheritic syncytial casts blocking the primary bronchi bifurcation",
+          "Extensive fibrinous and caseous exudation filling the abdominal and thoracic air sacs, accompanied by severe pericarditis and perihepatitis sheets"
         ],
         "a": 0,
         "e": "It is transmitted vertically through eggs; the lymphoid follicles in the muscular wall of the gizzard/proventriculus are a useful diagnostic lesion.",
@@ -14816,9 +14816,9 @@ var quizBank = {
         "q": "Avian nephritis in young chicks is caused by an astrovirus and produces:",
         "o": [
           "Swollen, pale kidneys with urate deposits (visceral gout) and tubular necrosis",
-          "Tumours in the kidney",
-          "Haemorrhagic bursa",
-          "Enlarged liver with white foci"
+          "Multifocal lymphoblastoid tumors infiltrating both renal and ovarian tissues",
+          "Severe acute hemorrhagic bursitis with marked gelatinous peribursal transudate",
+          "Enlarged congested liver studded with multifocal white necrotic milia foci"
         ],
         "a": 0,
         "e": "Tubular epithelial damage impairs uric acid excretion, causing urate accumulation in kidneys and on viscera, and growth depression.",
@@ -14830,9 +14830,9 @@ var quizBank = {
         "q": "Viral arthritis/tenosynovitis in broilers is caused by avian reovirus and characteristically results in:",
         "o": [
           "Swelling of the hock and gastrocnemius tendon sheaths, sometimes with tendon rupture",
-          "Slipping of the gastrocnemius tendon due to manganese deficiency",
-          "Curled toes",
-          "Scaly legs due to mites"
+          "Lateral slipping of the gastrocnemius tendon caused by acute manganese deficiency",
+          "Curled toe paralysis and sciatic nerve demyelination caused by riboflavin shortage",
+          "Severe crusty hyperkeratotic lesions on non-feathered leg scales caused by mites"
         ],
         "a": 0,
         "e": "Ruptured gastrocnemius tendons show haemorrhage at the back of the shank, and birds cannot walk.",
@@ -14844,9 +14844,9 @@ var quizBank = {
         "q": "Egg drop syndrome (EDS-76) virus replicates mainly in the:",
         "o": [
           "Shell gland (uterus) of the oviduct, producing thin-shelled and shell-less eggs",
-          "Bursa of Fabricius",
-          "Trachea",
-          "Sciatic nerve"
+          "Bursa of Fabricius, causing profound lymphoid depletion and permanent immunosuppression",
+          "Tracheal ciliated mucosa, producing severe gasping, mucosal plugs, and hemorrhagic casts",
+          "Sciatic and vagus nerve trunks, causing asymmetric flaccid paresis and crop distension"
         ],
         "a": 0,
         "e": "Birds look healthy but egg production drops, and pale, thin-shelled or shell-less eggs are laid.",
@@ -14858,9 +14858,9 @@ var quizBank = {
         "q": "Coligranuloma (Hjarre's disease) in adult chickens is characterised by:",
         "o": [
           "Multiple granulomas in the intestine, caeca and liver caused by E. coli",
-          "Tumours of B lymphocytes in the bursa",
-          "Caseous nodules caused by Mycobacterium avium",
-          "Aspergillus plaques in air sacs"
+          "Malignant lymphoblastic lymphoma involving the bursa and visceral organs",
+          "Caseous tuberculous granulomas in the spleen with acid-fast bacilli rods",
+          "Fuzzy green-gray fungal mycelial plaques lining thoracic air sac walls"
         ],
         "a": 0,
         "e": "It resembles tuberculosis and lymphoid leukosis grossly, so histopathology and culture are needed.",
@@ -14872,9 +14872,9 @@ var quizBank = {
         "q": "Gangrenous dermatitis in broilers, with dark, moist, crepitant skin over the wings, breast and thighs, is caused mainly by:",
         "o": [
           "Clostridium septicum and Clostridium perfringens type A (sometimes with Staphylococcus aureus)",
-          "Clostridium botulinum",
-          "Avibacterium paragallinarum",
-          "Mycoplasma synoviae"
+          "Clostridium botulinum producing neurotoxins that inhibit acetylcholine exocytosis at synapses",
+          "Avibacterium paragallinarum causing acute catarrhal inflammation of the infraorbital sinuses",
+          "Mycoplasma synoviae causing chronic exudative synovitis and tenosynovitis in broiler flocks"
         ],
         "a": 0,
         "e": "It often follows immunosuppression by IBD or CIA; the subcutis contains gas and blood-tinged oedema.",
@@ -14886,9 +14886,9 @@ var quizBank = {
         "q": "Botulism ('limberneck') in poultry and ducks is diagnosed at necropsy by:",
         "o": [
           "The absence of specific gross lesions, with toxin demonstrated in serum or gut contents",
-          "Tracheal haemorrhages",
-          "Enlarged nerves",
-          "Caseous airsacculitis"
+          "Severe diffuse hemorrhagic tracheitis with large obstructing blood casts in the lumen",
+          "Marked unilateral enlargement and loss of striation in the sciatic and brachial nerves",
+          "Widespread caseous airsacculitis and pericarditis caused by secondary colibacillosis"
         ],
         "a": 0,
         "e": "Toxin from decaying carcasses or maggots blocks acetylcholine release, causing flaccid paralysis of the neck, wings and legs.",
@@ -14900,9 +14900,9 @@ var quizBank = {
         "q": "Paratyphoid infections in poultry are caused by:",
         "o": [
           "Motile, non-host-adapted Salmonellae such as S. Typhimurium and S. Enteritidis, which are important zoonoses",
-          "Salmonella Pullorum only",
-          "Salmonella Gallinarum only",
-          "Escherichia coli"
+          "Non-motile host-adapted Salmonella Pullorum producing white bacillary diarrhea and unabsorbed yolk sacs in chicks",
+          "Non-motile host-adapted Salmonella Gallinarum producing acute fowl typhoid with bronze sheen hepatomegaly",
+          "Avian pathogenic Escherichia coli (APEC) producing widespread polyserositis and septicemia in young broilers"
         ],
         "a": 0,
         "e": "Young chicks develop omphalitis and enteritis; adults are usually carriers and are a source of food-borne infection for humans.",
@@ -14914,9 +14914,9 @@ var quizBank = {
         "q": "In chronic fowl cholera, the localised lesion most commonly seen is:",
         "o": [
           "Swollen wattles filled with caseous exudate",
-          "Scaly legs",
-          "Enlarged sciatic nerves",
-          "Tracheal casts"
+          "Hyperkeratotic encrustations on the shanks",
+          "Asymmetrically enlarged sciatic nerve cords",
+          "Fibrinonecrotic casts within upper trachea"
         ],
         "a": 0,
         "e": "Chronic infection by Pasteurella multocida localises in the wattles, joints, sinuses, middle ear and oviduct.",
@@ -14928,9 +14928,9 @@ var quizBank = {
         "q": "Avian chlamydiosis (psittacosis/ornithosis) caused by Chlamydia psittaci produces:",
         "o": [
           "Fibrinous airsacculitis, pericarditis and perihepatitis with an enlarged spleen, and is zoonotic",
-          "Tumours in the liver",
-          "Cheesy plugs in the eyes only",
-          "Scaly leg lesions"
+          "Lymphoblastic tumor masses infiltrating liver and spleen without air sac involvement or zoonosis",
+          "Severe caseous conjunctivitis and infraorbital sinus swelling with no systemic organ pathology",
+          "Extensive proliferative crusty scabs on the unfeathered skin of comb and wattles without fever"
         ],
         "a": 0,
         "e": "Pigeons, parrots, turkeys and ducks are commonly affected; humans can develop severe pneumonia by inhaling infected dust.",
@@ -14942,9 +14942,9 @@ var quizBank = {
         "q": "Favus ('white comb') in chickens is caused by:",
         "o": [
           "Microsporum gallinae, a dermatophyte",
-          "Candida albicans",
-          "Aspergillus fumigatus",
-          "Knemidocoptes mutans"
+          "Candida albicans, a budding dimorphic yeast",
+          "Aspergillus fumigatus, a hyaline mold fungus",
+          "Knemidocoptes mutans, an itch mite parasite"
         ],
         "a": 0,
         "e": "White, powdery, crusty lesions develop on the comb and wattles and may spread to feathered skin.",
@@ -14956,9 +14956,9 @@ var quizBank = {
         "q": "'Nodular tapeworm disease' of poultry, with nodules in the intestinal wall resembling tuberculosis, is caused by:",
         "o": [
           "Raillietina echinobothrida",
-          "Ascaridia galli",
-          "Heterakis gallinarum",
-          "Syngamus trachea"
+          "Ascaridia galli roundworms",
+          "Heterakis gallinarum worms",
+          "Capillaria obsignata worm"
         ],
         "a": 0,
         "e": "The scolex embeds deeply in the mucosa, causing a caseous nodule; ants are intermediate hosts.",
@@ -14970,9 +14970,9 @@ var quizBank = {
         "q": "Prosthogonimus species are trematodes (flukes) of poultry found in the:",
         "o": [
           "Oviduct and bursa, causing soft-shelled eggs and egg peritonitis",
-          "Trachea",
-          "Caeca",
-          "Liver only"
+          "Upper trachea, causing parasitic asphyxiation and coughing rales",
+          "Blind cecal pouches, causing extensive mucosal ulcer and typhlitis",
+          "Biliary ducts of liver, causing pipestem fibrosis and jaundice"
         ],
         "a": 0,
         "e": "Birds are infected by eating dragonflies (second intermediate host); inflamed oviducts cause abnormal eggs.",
@@ -14984,9 +14984,9 @@ var quizBank = {
         "q": "Chewing lice of poultry such as Menopon gallinae (shaft louse) feed on:",
         "o": [
           "Feather debris and skin scales, causing irritation and feather damage",
-          "Blood, causing severe anaemia",
-          "Tracheal mucus",
-          "Egg yolk"
+          "Whole host blood, causing severe generalized hypochromic microcytic anemia",
+          "Tracheal mucosal exudates, causing chronic mechanical airway obstruction",
+          "Lipid yolk granules, inducing chronic peritonitis across the abdominal wall"
         ],
         "a": 0,
         "e": "Heavy infestations reduce weight gain and egg production. Blood-feeding ectoparasites include Dermanyssus mites and Argas ticks.",
@@ -15012,9 +15012,9 @@ var quizBank = {
         "q": "Vitamin K deficiency in chickens, often aggravated by sulphonamides or coccidiostats, causes:",
         "o": [
           "Prolonged clotting time with haemorrhages in muscles and viscera",
-          "Curled toe paralysis",
-          "Slipped tendon",
-          "Squamous metaplasia"
+          "Curled toe paralysis and sciatic nerve myelin degeneration in broilers",
+          "Slipped gastrocnemius tendon resulting from defective growth plate perosis",
+          "Squamous metaplasia and keratinization of esophageal mucous gland ducts"
         ],
         "a": 0,
         "e": "Vitamin K is required for clotting factors II, VII, IX and X; the drugs reduce gut synthesis or antagonise it.",
@@ -15026,9 +15026,9 @@ var quizBank = {
         "q": "'Internal layer' in hens refers to:",
         "o": [
           "Release of ova into the abdominal cavity instead of the oviduct, leading to egg peritonitis",
-          "Hens that lay eggs only at night",
-          "Eggs formed with two yolks",
-          "Eggs retained in the shell gland"
+          "Physiologic laying behavior where hens persistently deposit eggs only during nocturnal hours",
+          "Formation of abnormally large composite eggs containing two or more distinct vitelline yolks",
+          "Pathologic impaction of fully calcified eggs retained within the lumen of the shell gland"
         ],
         "a": 0,
         "e": "Yolk in the abdomen causes a yellow, fibrinous peritonitis, often with secondary E. coli infection.",
@@ -15040,9 +15040,9 @@ var quizBank = {
         "q": "Bumblefoot in poultry is a chronic abscess of the foot pad most commonly caused by:",
         "o": [
           "Staphylococcus aureus entering through foot injuries",
-          "Mycoplasma synoviae",
-          "Avian reovirus",
-          "Knemidocoptes mutans"
+          "Mycoplasma synoviae producing chronic tenosynovitis",
+          "Avian reovirus inducing acute viral digital arthritis",
+          "Knemidocoptes mutans burrowing under shank scales"
         ],
         "a": 0,
         "e": "Rough perches and litter cause wounds; the swollen foot pad contains caseous material.",
@@ -15054,9 +15054,9 @@ var quizBank = {
         "q": "Round heart disease in young turkeys is characterised by:",
         "o": [
           "Marked dilatation of the ventricles, giving a rounded heart shape (cardiomyopathy)",
-          "Heart tumours",
-          "Fibrinous pericarditis due to E. coli",
-          "Urate deposits on the pericardium"
+          "Multifocal malignant lymphoblastoid infiltrates expanding the ventricular myocardium",
+          "Severe fibrinous pericarditis and epicardial thickening caused by colibacillosis strains",
+          "Chalky white visceral urate crystal deposition covering the epicardial parietal serosa"
         ],
         "a": 0,
         "e": "Birds die suddenly or with heart failure; the apex of the heart becomes rounded rather than pointed.",
@@ -16285,9 +16285,9 @@ var quizBank = {
         "q": "The classic gross pathological triad of Tyzzer's disease in laboratory mice comprises:",
         "o": [
           "Necrotizing hepatitis, typhlocolitis, and myocarditis",
-          "Bronchopneumonia, pleuritis, and rhinitis",
-          "Glomerulonephritis, splenomegaly, and orchitis",
-          "Encephalomalacia, pancreatitis, and otitis"
+          "Suppurative pneumonia, otitis media, and rhinitis",
+          "Fibrinous pericarditis, splenomegaly, and pleuritis",
+          "Proliferative ileitis, glomerulonephritis, and pancreatitis"
         ],
         "a": 0,
         "e": "Tyzzer's disease characteristically produces focal necrotizing hepatitis (miliary pale foci), necrotizing typhlocolitis, and focal myocardial necrosis.",
@@ -16299,9 +16299,9 @@ var quizBank = {
         "q": "Ectromelia virus (Mousepox) in laboratory mice belongs to which virus family?",
         "o": [
           "Poxviridae (genus Orthopoxvirus)",
-          "Parvoviridae",
-          "Paramyxoviridae",
-          "Adenoviridae"
+          "Herpesviridae (genus Simplexvirus)",
+          "Paramyxoviridae (genus Respirovirus)",
+          "Picornaviridae (genus Cardiovirus)"
         ],
         "a": 0,
         "e": "Ectromelia virus is a member of the genus Orthopoxvirus, family Poxviridae, producing acute fatal systemic disease or chronic limb/tail amputation (ectromelia).",
@@ -16313,9 +16313,9 @@ var quizBank = {
         "q": "Marchal bodies found in epithelial cells of mice infected with Ectromelia virus are:",
         "o": [
           "Large, eosinophilic, round intracytoplasmic inclusion bodies (type A inclusions)",
-          "Basophilic intranuclear inclusions",
-          "Cowdry type A inclusions",
-          "Perivascular amyloid aggregates"
+          "Prominent, basophilic, spherical intranuclear inclusion bodies (Cowdry type B)",
+          "Large, eosinophilic, pleomorphic intranuclear inclusion bodies (Cowdry type A forms)",
+          "Small, amphophilic, granular intracytoplasmic aggregates (Guarnieri-like bodies)"
         ],
         "a": 0,
         "e": "Ectromelia infection produces pathognomonic acidophilic, proteinaceous intracytoplasmic type A inclusion bodies called Marchal bodies.",
@@ -16327,9 +16327,9 @@ var quizBank = {
         "q": "Sialodacryoadenitis virus (SDAV) in laboratory rats has a marked predilection for:",
         "o": [
           "Submandibular salivary glands, parotid salivary glands, and Harderian/lacrimal glands",
-          "Pancreatic islets and bile ducts",
-          "Thyroid and parathyroid glands",
-          "Adrenal cortex only"
+          "Exocrine pancreatic acini, hepatobiliary duct epithelium, and duodenal Brunner glands",
+          "Thyroid follicular epithelium, parathyroid glands, and cervical thymic cortical tissue",
+          "Sublingual salivary glands, mandibular lymph nodes, and periauricular sebaceous glands"
         ],
         "a": 0,
         "e": "SDAV (a rat coronavirus) causes acute necrotizing sialoadenitis and dacryoadenitis, resulting in swollen submandibular neck region and 'red tears' (chromodacryorrhea).",
@@ -16355,9 +16355,9 @@ var quizBank = {
         "q": "Sendai virus infection in laboratory mice causes which primary lesion?",
         "o": [
           "Bronchointerstitial pneumonia with syncytia formation",
-          "Focal necrotizing hepatitis",
-          "Acute necrotizing glomerulonephritis",
-          "Proliferative enteropathy"
+          "Suppurative bronchopneumonia with prominent abscessation",
+          "Fibrinous pleuropneumonia with severe pleural adhesions",
+          "Granulomatous interstitial pneumonia with Langhans cells"
         ],
         "a": 0,
         "e": "Sendai virus (Murine respirovirus, Paramyxoviridae) replicates in respiratory epithelium, causing necrotizing bronchiolitis and bronchointerstitial pneumonia with syncytial cells.",
@@ -16383,9 +16383,9 @@ var quizBank = {
         "q": "A classic autopsy lesion of advanced Mycoplasma pulmonis infection in aged rats is:",
         "o": [
           "Bronchiectasis with multiple yellowish nodules containing thick caseous pus on lung surface ('cobblestone' lung)",
-          "Diffuse pulmonary anthracosis",
-          "Cerebral infarction",
-          "Gastric adenoma"
+          "Extensive diffuse pulmonary anthracosis with multifocal fibrous pleural thickening and dark anthracotic tattooing",
+          "Fibrinous pleuropneumonia with extensive red hepatization and massive serosanguineous hydrothorax in pleural cavity",
+          "Multifocal pulmonary granulomas displaying central caseous cavitation and peripheral Langhans giant cell palisading"
         ],
         "a": 0,
         "e": "Chronic MRM results in severe airway dilation (bronchiectasis) filled with purulent exudate, creating a distinctive nodular cobblestone appearance.",
@@ -16397,9 +16397,9 @@ var quizBank = {
         "q": "Lymphocytic Choriomeningitis (LCM) in mice is caused by an Arenavirus and is clinically significant because:",
         "o": [
           "It is an important zoonosis causing aseptic meningitis in humans",
-          "It causes 100% mortality in adult pet dogs",
-          "It produces cutaneous horn growths",
-          "It is an obligate vector-borne malaria"
+          "It causes fatal hemorrhagic fever with massive hepatitis in wild canids",
+          "It produces transmissible spongiform neurodegeneration in lagomorphs",
+          "It is an oncogenic retrovirus inducing acute multicentric lymphoma"
         ],
         "a": 0,
         "e": "LCMV is carried asymptomatically by wild Mus musculus and transmits to humans via urine/feces aerosol, causing flu-like illness or lymphocytic meningitis.",
@@ -16425,9 +16425,9 @@ var quizBank = {
         "q": "Helicobacter hepaticus infection in susceptible strains of mice (e.g., A/JCr) is associated with:",
         "o": [
           "Chronic active hepatitis, hepatic necrosis, and hepatocellular carcinoma",
-          "Primary cardiomyopathy",
-          "Renal tubular agenesis",
-          "Corneal clouding"
+          "Chronic fibrosing cholangiohepatitis, biliary hyperplasia, and cholangioma",
+          "Acute necrotizing pancreatitis, extensive steatitis, and pancreatic adenoma",
+          "Suppurative cholecystitis, portal vein thrombosis, and nodular cirrhosis"
         ],
         "a": 0,
         "e": "Helicobacter hepaticus colonizes the cecum, colon, and liver canaliculi, causing chronic active hepatitis and progressing to liver cancer.",
@@ -16439,9 +16439,9 @@ var quizBank = {
         "q": "Mouse Hepatitis Virus (MHV), a murine coronavirus, occurs in two distinct organ-specific pathotypes:",
         "o": [
           "Respiratory (enterotropic) and polytropic (neurotropic/hepatotropic)",
-          "Cutaneous and ocular",
-          "Renal and genital",
-          "Endocrine and exocrine"
+          "Cardiotropic (myocardial) and urotropic (glomerulonephritic) strains",
+          "Dermatotropic (epidermal) and oculotropic (keratoconjunctival) forms",
+          "Hematotropic (erythrocytic) and osteotropic (chondroclastic) variants"
         ],
         "a": 0,
         "e": "MHV strains are classified into polytropic (which infect vascular endothelium causing hepatitis and encephalitis) and enterotropic (targeting intestinal enterocytes).",
@@ -16454,8 +16454,8 @@ var quizBank = {
         "o": [
           "Yersinia pseudotuberculosis",
           "Corynebacterium kutscheri",
-          "Mycobacterium tuberculosis",
-          "Listeria monocytogenes"
+          "Streptococcus zooepidemicus",
+          "Mycobacterium paratuberculosis"
         ],
         "a": 0,
         "e": "Yersinia pseudotuberculosis causes chronic mesenteric lymphadenitis and focal caseous/nodular abscesses in liver and spleen.",
@@ -16467,9 +16467,9 @@ var quizBank = {
         "q": "The murine pinworm Syphacia obvelata deposits eggs in which anatomical region of mice?",
         "o": [
           "Perianal skin (demonstrated via perianal tape test)",
-          "Deep mucosal crypts of cecum only",
-          "Biliary duct lumina",
-          "Bladder mucosa"
+          "Proximal colonic lumen embedded within fecal pellets",
+          "Deep mucosal crypts of the cecum and distal ileum",
+          "Submucosa of the gastric fundus and pyloric antrum"
         ],
         "a": 0,
         "e": "Gravid female Syphacia obvelata migrate to perianal skin to deposit banana-shaped asymmetrical ova, diagnosed by clear cellophane tape test.",
@@ -16481,9 +16481,9 @@ var quizBank = {
         "q": "Aspiculuris tetraptera differs from Syphacia obvelata in that Aspiculuris:",
         "o": [
           "Deposits symmetrical ova inside the fecal pellet in the proximal colon/cecum",
-          "Lays eggs only on the pinna",
-          "Invades hepatic parenchyma",
-          "Has an indirect life cycle requiring beetles"
+          "Produces asymmetrical eggs adhering specifically to perianal cutaneous hairs",
+          "Releases embryonated eggs directly into mesenteric venules to reach the liver",
+          "Deposits thick-walled operculated ova exclusively in the gastric submucosa"
         ],
         "a": 0,
         "e": "Unlike Syphacia, Aspiculuris tetraptera sheds symmetrical ellipsoidal eggs within the lumen of the large intestine, detectable by fecal flotation.",
@@ -16509,9 +16509,9 @@ var quizBank = {
         "q": "Corynebacterium kutscheri in mice and rats causes which pathology?",
         "o": [
           "Murine pseudotuberculosis (caseous embolopurulent abscesses in lungs, liver, and kidneys)",
-          "Cutaneous papillomatosis",
-          "Ulcerative stomatitis",
-          "Severe hemolytic anemia"
+          "Proliferative ileitis (extensive mucosal hyperplasia with intracellular Lawsonia bacilli)",
+          "Suppurative otitis media (chronic mucopurulent tympanitis and vestibular nerve neuritis)",
+          "Acute hemorrhagic typhlitis (severe cecal infarction with mucosal sloughing and necrosis)"
         ],
         "a": 0,
         "e": "C. kutscheri causes latent or opportunistic suppurative pneumonia and miliary cheese-like abscesses throughout thoracic and abdominal viscera.",
@@ -16523,9 +16523,9 @@ var quizBank = {
         "q": "Ringtail condition in suckling laboratory rats and mice is caused by:",
         "o": [
           "Low environmental relative humidity (<40%) combined with high ambient temperature",
-          "Genetic chromosomal translocation",
-          "Deficiency of Vitamin K",
-          "Ringworm fungal infection"
+          "Severe dietary deficiency of essential polyunsaturated fatty acids and Vitamin E",
+          "Arteriolar thrombosis caused by hyperhomocysteinemia and chronic protein-losing nephropathy",
+          "Infection of caudal vertebrae by dermatophytes such as Trichophyton mentagrophytes"
         ],
         "a": 0,
         "e": "Low relative humidity dries the stratum corneum of unfeathered/hairless tail skin, causing annular constrictions, ischemic necrosis, and dry gangrene of the tail.",
@@ -16537,9 +16537,9 @@ var quizBank = {
         "q": "Rat bite fever in humans is a zoonosis transmitted from the normal oral flora of healthy rats caused by:",
         "o": [
           "Streptobacillus moniliformis",
-          "Yersinia pestis",
-          "Francisella tularensis",
-          "Coxiella burnetii"
+          "Leptospira icterohaemorrhagiae",
+          "Erysipelothrix rhusiopathiae",
+          "Streptococcus zooepidemicus"
         ],
         "a": 0,
         "e": "Streptobacillus moniliformis is a commensal in the rodent nasopharynx; bites transmit rat-bite fever (Haverhill fever) with fever, polyarthritis, and rash in humans.",
@@ -16551,9 +16551,9 @@ var quizBank = {
         "q": "Spontaneous mammary fibroadenoma in Sprague-Dawley rats is distinguished by:",
         "o": [
           "Benign nature, encapsulated expansive growth, and extensive distribution due to wide anatomical distribution of mammary tissue",
-          "Rapid invasive metastatic spread to lungs",
-          "Pure sarcoma with osteoid formation",
-          "Hormonal independence from prolactin"
+          "High metastatic potential with early vascular invasion and widespread hematogenous dissemination to pulmonary parenchyma",
+          "Highly aggressive invasive adenocarcinoma with extensive local invasion into underlying thoracic and abdominal muscle",
+          "Malignant mixed mesenchymoma displaying extensive osteoid metaplasia, chondroid differentiation, and widespread distant metastasis"
         ],
         "a": 0,
         "e": "Mammary fibroadenomas are extremely common benign tumors in aged female rats; mammary tissue extends from neck to inguinal regions.",
@@ -16565,9 +16565,9 @@ var quizBank = {
         "q": "Chronic Progressive Nephropathy (CPN / glomerulosclerosis) in aged Sprague-Dawley rats is characterized histologically by:",
         "o": [
           "Basophilic regenerated tubules with hyaline proteinaceous casts, glomerulosclerosis, and interstitial fibrosis",
-          "Acute suppurative pyelonephritis with stones",
-          "Renal cortical amyloidosis without casts",
-          "Polycystic congenital aplasia"
+          "Acute suppurative ascending pyelonephritis with widespread papillary necrosis and dense neutrophilic cast plugs",
+          "Severe diffuse renal amyloidosis with Congo red-positive medullary deposits and absence of tubular regeneration",
+          "Multiple bilateral epithelial-lined congenital cortical retention cysts with intact glomerular tuft architecture"
         ],
         "a": 0,
         "e": "CPN is the leading non-neoplastic cause of death in aged laboratory rats, showing thickened basement membranes, eosinophilic casts, and tubular atrophy.",
@@ -16593,9 +16593,9 @@ var quizBank = {
         "q": "The cardinal post-mortem lesion of acute Rabbit Hemorrhagic Disease is:",
         "o": [
           "Massive acute hepatic necrosis, splenomegaly, and widespread pulmonary hemorrhage/infarctions with bloody epistaxis",
-          "Generalized cutaneous papillomas",
-          "Severe ulcerative keratitis",
-          "Atrophy of cerebellum"
+          "Extensive fibrinous pleuropneumonia with severe tracheal pseudomembranes and pericardial serosanguineous effusions",
+          "Severe necrotizing typhlocolitis with mucosal pseudomembrane formation, fluid cecal distension, and watery diarrhea",
+          "Generalized cutaneous papillomatosis with marked hyperkeratosis, focal epidermal ulcerations, and crust formation"
         ],
         "a": 0,
         "e": "RHDV targets hepatocytes, leading to severe disseminated intravascular coagulation (DIC), epistaxis, liver necrosis, and hemorrhagic lungs.",
@@ -16607,9 +16607,9 @@ var quizBank = {
         "q": "Myxomatosis in European rabbits (Oryctolagus cuniculus) is caused by a leporipoxvirus and characterized by:",
         "o": [
           "Gelatinous subcutaneous myxoid tumors, severe blepharoconjunctivitis, and 'lion-head' facial edema",
-          "Purely skeletal ossification",
-          "Acute paralytic myelitis without edema",
-          "Bloody diarrhea without skin signs"
+          "Disseminated cutaneous papillomas, hyperkeratotic horn formations, and severe alopecia of the ears",
+          "Acute hemorrhagic typhlitis with copious watery diarrhea, dehydration, and rapid hypovolemic collapse",
+          "Suppurative bronchointerstitial pneumonia, fibrinous pleuritis, and severe serous pericardial effusion"
         ],
         "a": 0,
         "e": "Myxoma virus induces mucinous mesenchymal proliferation (myxomas) around eyes, nose, ears, and genitalia, creating a classic swollen 'lion face'.",
@@ -16649,9 +16649,9 @@ var quizBank = {
         "q": "Gross examination of liver in Eimeria stiedae infection reveals:",
         "o": [
           "Linear yellowish-white branching cords and circumscribed nodules containing coccidial oocysts in creamy exudate",
-          "Miliary caseous tubercles in parenchyma only",
-          "Severe nutmeg liver without bile duct involvement",
-          "Large fluid hydatid cysts"
+          "Multifocal discrete caseous granulomas with fibrous capsules containing mineralized calcific debris throughout",
+          "Diffuse nutmeg pattern displaying severe centrilobular congestion, sinusoidal pooling, and peripheral steatosis",
+          "Large fluid-filled hydatid cysts with laminated cuticular membranes compressing adjacent hepatic parenchyma"
         ],
         "a": 0,
         "e": "E. stiedae causes marked biliary tree dilation and adenomatous papillary proliferation appearing as serpentine, branching yellow-white cords.",
@@ -16663,9 +16663,9 @@ var quizBank = {
         "q": "Encephalitozoon cuniculi in pet and laboratory rabbits causes which clinical syndrome?",
         "o": [
           "Head tilt (torticollis), ataxia, cataracts/uveitis, and chronic interstitial nephritis with cortical pitted depressions",
-          "Acute pulmonary hemorrhage with epistaxis",
-          "Proliferative enteritis only",
-          "Aplastic bone marrow anemia"
+          "Progressive flaccid ascending motor paralysis, bilateral facial nerve palsy, and severe neurogenic urinary bladder distension",
+          "Massive acute pulmonary hemorrhage, epistaxis, and peracute fatal hepatic necrosis with severe splenic congestion",
+          "Severe proliferative mucoid enteropathy with gelatinous cecal impaction, hypothermia, and rapid lethal dehydration"
         ],
         "a": 0,
         "e": "E. cuniculi (a microsporidium) infects brain and kidneys, causing non-purulent granulomatous meningoencephalitis (head tilt) and pitted renal scars.",
@@ -16677,9 +16677,9 @@ var quizBank = {
         "q": "Which histological stain demonstrates the polar spore and Gram-positive wall of Encephalitozoon cuniculi spores?",
         "o": [
           "Gram stain (Gram-positive) and modified Ziehl-Neelsen (carbolfuchsin)",
-          "Sudan IV",
-          "Alcian blue at pH 1.0",
-          "Prussian blue"
+          "Periodic acid-Schiff (PAS) stain and Masson's trichrome stain technique",
+          "Prussian blue iron reaction and Hall's stain for bilirubin pigment",
+          "Alcian blue at pH 2.5 and Toluidine blue for acidic mucosubstances"
         ],
         "a": 0,
         "e": "E. cuniculi microsporidian spores are 1.5-2.5 um, strongly Gram-positive and acid-fast positive on modified ZN staining.",
@@ -16691,9 +16691,9 @@ var quizBank = {
         "q": "Mucoid enteropathy in young commercial rabbits is characterized at necropsy by:",
         "o": [
           "Distension of the cecum and colon with copious, gelatinous, clear or translucent mucus and dry hard cecal impaction",
-          "Severe mucosal ulceration with fibrin casts",
-          "Diffuse villous atrophy with blood",
-          "Perforation of stomach wall"
+          "Extensive transmural mucosal necrosis with thick diphtheritic pseudomembranes and bloody luminal fluid in ileum",
+          "Severe diffuse villous blunting with watery foul-smelling hemorrhagic contents throughout the entire small intestine",
+          "Perforating gastric ulcerations with acute purulent fibrinous peritonitis and copious free gas in peritoneal space"
         ],
         "a": 0,
         "e": "Rabbit mucoid enteropathy involves cecal dysbiosis, hypersecretion of goblet cells, and accumulation of clear jelly-like mucus in colon and cecum.",
@@ -16705,9 +16705,9 @@ var quizBank = {
         "q": "Why are guinea pigs uniquely susceptible to Scurvy (Hypovitaminosis C)?",
         "o": [
           "They lack the functional enzyme L-gulonolactone oxidase required for ascorbic acid synthesis",
-          "They degrade dietary ascorbic acid in the rumen",
-          "Their intestinal mucosa cannot absorb water-soluble vitamins",
-          "Their kidneys rapidly excrete vitamin C via active pumps"
+          "Their gastrointestinal tract actively degrades ascorbic acid into inactive oxalic metabolites",
+          "Their renal proximal tubular epithelium completely lacks carrier transport proteins for Vitamin C",
+          "Their hepatic microsomes rapidly oxidize ascorbic acid via hyperactive dehydroascorbate reductase"
         ],
         "a": 0,
         "e": "Guinea pigs (like primates and bats) lack L-gulonolactone oxidase due to a gene mutation, making dietary vitamin C indispensable.",
@@ -16719,9 +16719,9 @@ var quizBank = {
         "q": "The classic pathological manifestations of Scurvy in guinea pigs include:",
         "o": [
           "Subperiosteal hemorrhages around stifle joints, loose incisors, bleeding gums, and costochondral junction disorganization",
-          "Severe epidermal hyperkeratosis only",
-          "Acute liver necrosis with jaundice",
-          "Calcification of aorta and coronary arteries"
+          "Widespread metastatic soft tissue calcification affecting the myocardial fibers, coronary arteries, and pulmonary parenchyma",
+          "Severe osteopetrosis with dense sclerotic medullary bone deposition, fragile cortical thinning, and spontaneous fractures",
+          "Diffuse epidermal orthokeratotic hyperkeratosis, prominent follicular plugging, severe alopecia, and chronic lichenification"
         ],
         "a": 0,
         "e": "Defective collagen cross-linking leads to capillary fragility, resulting in extensive periarticular and intramuscular hemorrhages, gingival bleeding, and joint swelling.",
@@ -16733,9 +16733,9 @@ var quizBank = {
         "q": "Bordetella bronchiseptica is a common commensal in rabbits but causes fatal epizootic bronchointerstitial pneumonia in which co-housed species?",
         "o": [
           "Guinea pigs (Cavia porcellus)",
-          "Mice",
-          "Hamsters",
-          "Gerbils"
+          "Golden hamsters (Mesocricetus)",
+          "Mongolian gerbils (Meriones)",
+          "Chinchillas (Chinchilla lanigera)"
         ],
         "a": 0,
         "e": "Rabbits are asymptomatic carriers of Bordetella bronchiseptica; when housed with guinea pigs, cross-infection causes fatal acute suppurative bronchopneumonia.",
@@ -16747,9 +16747,9 @@ var quizBank = {
         "q": "Cervical lymphadenitis ('Lumps') in guinea pigs is caused by which pyogenic pathogen?",
         "o": [
           "Streptococcus equi subsp. zooepidemicus",
-          "Pasteurella multocida",
-          "Staphylococcus aureus",
-          "Corynebacterium pseudotuberculosis"
+          "Streptococcus equi subsp. equi (strangles)",
+          "Corynebacterium pseudotuberculosis ovis",
+          "Pasteurella multocida subsp. multocida"
         ],
         "a": 0,
         "e": "Coarse roughage causes minor abrasions in the oral cavity, allowing Strep. zooepidemicus to invade and cause massive purulent abscessation of cervical lymph nodes.",
@@ -16775,9 +16775,9 @@ var quizBank = {
         "q": "Psoroptes cuniculi causes which prominent clinical disease in domestic rabbits?",
         "o": [
           "Rabbit ear canker (crusty, brown, painful exudate filling the external ear canal)",
-          "Severe mange of feet and legs",
-          "Nasal dermatitis",
-          "Alopecia of the tail"
+          "Sarcoptic foot mange (pruritic hyperkeratotic crusts on distal paws and digits)",
+          "Cheyletiellosis (dry, non-pruritic exfoliative scaling along dorsum, 'walking dandruff')",
+          "Notoedric facial mange (thickened lichenified crusts across nasal bridge and eyelids)"
         ],
         "a": 0,
         "e": "Psoroptes cuniculi non-burrowing ear mites pierce epidermal layers, producing massive layers of foul, brown, cornflake-like scabs inside the ear pinna.",
@@ -16789,9 +16789,9 @@ var quizBank = {
         "q": "Malocclusion ('Slobbers') in rabbits and guinea pigs results from:",
         "o": [
           "Overgrowth of open-rooted hypsodont elodont teeth due to inadequate abrasive fibrous forage",
-          "Primary dental enamel hypoplasia",
-          "Autoimmune destruction of periodontal ligament",
-          "Severe fluorosis"
+          "Congenital enamel hypoplasia resulting from intrauterine deficiency of Vitamin A and calcium",
+          "Severe fluorosis inducing osteofluorotic mandibular exostoses and premature dental attrition",
+          "Immune-mediated periodontal ligament destruction with extensive alveolar bone osteolysis"
         ],
         "a": 0,
         "e": "Rabbit and guinea pig incisors and cheek teeth continuously grow; lack of fibrous hay prevents dental wear, forming sharp spurs that lacerate tongue and cheeks ('slobbers').",
@@ -16803,9 +16803,9 @@ var quizBank = {
         "q": "Kurloff cells are unique mononuclear leukocytes containing large proteoglycan inclusions found specifically in:",
         "o": [
           "Guinea pigs (Cavia porcellus)",
-          "Laboratory mice",
-          "Chinchillas",
-          "Syrian hamsters"
+          "Golden hamsters (Mesocricetus)",
+          "Mongolian gerbils (Meriones)",
+          "Cotton rats (Sigmodon hispidus)"
         ],
         "a": 0,
         "e": "Kurloff cells are killer-cell-like mononuclear leukocytes with large intracytoplasmic mucopolysaccharide Kurloff bodies, elevated in pregnant female guinea pigs.",
@@ -16817,9 +16817,9 @@ var quizBank = {
         "q": "Why are penicillins, cephalosporins, and macrolides highly lethal in guinea pigs and rabbits?",
         "o": [
           "They eradicate Gram-positive beneficial microflora, triggering fatal overgrowth of Clostridium difficile / Clostridium spiroforme (enterotoxemia)",
-          "They cause acute idiosyncratic hepatic failure",
-          "They precipitate within renal tubules causing anuria",
-          "They trigger acute anaphylactic shock in all rodents"
+          "They induce idiosyncratic hepatic cytochrome P450 inactivation, causing massive centrilobular coagulative necrosis and sudden hypoglycemic death",
+          "They undergo extensive tubular precipitation in acidic rodent urine, precipitating acute obstructive intrarenal urolithiasis and anuric uremia",
+          "They cross the blood-brain barrier rapidly to irreversibly block central GABA receptors, producing refractory status epilepticus and hyperthermia"
         ],
         "a": 0,
         "e": "Antibiotics with Gram-positive spectrum disrupt the delicate cecal ecology, allowing toxin-producing Clostridium spiroforme/difficile to proliferate and cause fatal enterotoxemia.",
@@ -16831,9 +16831,9 @@ var quizBank = {
         "q": "Pregnancy toxemia in guinea pigs occurs in two forms: fasting ketosis and:",
         "o": [
           "Circulatory / pre-eclamptic form due to uterine compression of aorta and iliac vessels",
-          "Immune-mediated glomerulonephritis",
-          "Hypocalcemic tetany",
-          "Acute fatty liver syndrome only"
+          "Acute hypocalcemic puerperal tetany resulting from exhaustion of parathyroid reserves",
+          "Severe immune-mediated membranoproliferative glomerulonephritis with nephrotic edema",
+          "Septic metritis-mastitis syndrome caused by ascending coliform infection of the uterus"
         ],
         "a": 0,
         "e": "The toxic or circulatory form results from heavy uteroplacental mass compressing uterine blood flow, causing uteroplacental ischemia, DIC, and maternal death.",
@@ -16845,9 +16845,9 @@ var quizBank = {
         "q": "Treponema paraluiscuniculi causes which specific infection in rabbits?",
         "o": [
           "Rabbit syphilis (Vent disease / spirochetosis)",
-          "Ulcerative stomatitis",
-          "Tyzzer's disease",
-          "Infectious pododermatitis"
+          "Rabbit ear canker (Psoroptic ear otacariasis)",
+          "Infectious pododermatitis (Bacterial sore hocks)",
+          "Ulcerative stomatitis (Necrotizing canker pox)"
         ],
         "a": 0,
         "e": "Rabbit syphilis (vent disease) produces crusty, ulcerative, vesiculopustular lesions on the mucocutaneous junctions of the vulva, prepuce, nose, and lips.",
@@ -16859,9 +16859,9 @@ var quizBank = {
         "q": "Trichobezoars (hairballs) in rabbits are primarily caused by:",
         "o": [
           "Excess grooming, low dietary indigestible fiber, and reduced gastrointestinal motility (gut stasis)",
-          "Primary hyperchlorhydria",
-          "Gastric lymphoma",
-          "Helminthic stimulation of gastric mucosa"
+          "Congenital pyloric muscular hypertrophy producing persistent mechanical gastric outflow obstruction",
+          "Excessive gastric acid hypersecretion inducing chronic mucosal ulceration and chemical gastritis",
+          "Chronic gastric parasitism by Obeliscoides cuniculi triggering secondary pseudomembrane formation"
         ],
         "a": 0,
         "e": "Rabbits cannot vomit; inadequate dietary fiber causes cecal and gastric hypomotility, allowing ingested hair to aggregate into an obstructive mass.",
@@ -16873,9 +16873,9 @@ var quizBank = {
         "q": "Ulcerative Pododermatitis ('Sore hocks') in caged rabbits is characterized by:",
         "o": [
           "Chronic pressure necrosis, hyperkeratosis, and secondary Staph aureus ulceration of plantar metatarsal surfaces",
-          "Congenital absence of digital flexor tendons",
-          "Acute osteosarcoma of phalanges",
-          "Trench foot due to viral infection"
+          "Congenital aplasia of the deep digital flexor tendons leading to severe plantigrade stance and tenosynovitis",
+          "Acute bacterial osteomyelitis of phalangeal bones with extensive subperiosteal abscessation and chronic fistulous tracts",
+          "Primary cutaneous amyloidosis with dense Congo red-positive stromal aggregates beneath footpad hyperkeratosis"
         ],
         "a": 0,
         "e": "Wire-bottom cages without rest boards cause avascular necrosis of pressure-bearing plantar surfaces, secondarily colonized by Staphylococcus aureus.",
@@ -16887,9 +16887,9 @@ var quizBank = {
         "q": "Metastatic calcification in guinea pigs is characterized by widespread calcium mineralization of heart, aorta, and kidneys, often exacerbated by:",
         "o": [
           "High dietary phosphorus and calcium with deficient magnesium, or excess Vitamin D",
-          "Complete deficiency of dietary calcium",
-          "High dietary protein only",
-          "Inactivity"
+          "Severe chronic dietary calcium deficiency coupled with advanced hypovitaminosis D3",
+          "High dietary potassium with prolonged severe metabolic and respiratory alkalosis",
+          "Excessive dietary sodium chloride intake combined with severe toxic glomerulopathy"
         ],
         "a": 0,
         "e": "Imbalanced Ca:P ratio or excessive Vitamin D induces extensive soft-tissue mineral deposition in aorta, stomach, and renal tubules.",
@@ -16901,9 +16901,9 @@ var quizBank = {
         "q": "Canine Distemper Virus (CDV) infection in wild carnivores (lions, tigers, African wild dogs) produces:",
         "o": [
           "Fatal encephalomyelitis, bronchointerstitial pneumonia, and hyperkeratosis of footpads",
-          "Hemorrhagic enteritis strictly restricted to colon",
-          "Primary renal amyloidosis",
-          "Benign skin papillomas"
+          "Severe hemorrhagic gastroenteritis restricted to colonic mucosa without CNS involvement",
+          "Primary membranous glomerulonephritis with diffuse renal amyloidosis and splenic atrophy",
+          "Extensive cutaneous papillomatosis accompanied by severe multifocal hepatic lipidosis"
         ],
         "a": 0,
         "e": "CDV (Morbillivirus) crosses host boundaries to large felids and canids, causing fatal bronchointerstitial pneumonia, demyelinating encephalitis, and high mortality.",
@@ -16915,9 +16915,9 @@ var quizBank = {
         "q": "Anthrax in free-ranging wildlife (elephants, rhinos, deer) is characterized at post-mortem by:",
         "o": [
           "Failure of rigor mortis, dark unclotted blood oozing from natural orifices, and extreme splenomegaly",
-          "Firm pale rigor mortis with rapid organ calcification",
-          "Extensive pericardial exudate without splenomegaly",
-          "Caseous necrosis of cerebral hemispheres"
+          "Rapid intense rigor mortis, widespread fibrinous serositis, and severe concentric myocardial hypertrophy",
+          "Extensive fibrinous pericarditis, severe pulmonary anthracosis, and diffuse hepatic nodular regeneration",
+          "Severe caseous lymphadenitis, extensive thoracic cage osteomyelitis, and bilateral adrenal cortical atrophy"
         ],
         "a": 0,
         "e": "Bacillus anthracis toxins damage vascular endothelium and inhibit coagulation, causing unclotted tarry blood, absence of rigor, and pulpy enlarged spleen.",
@@ -16929,9 +16929,9 @@ var quizBank = {
         "q": "Why is post-mortem opening of a wild animal carcass suspected of Anthrax strictly prohibited?",
         "o": [
           "Vegetative bacilli sporulate on exposure to atmospheric oxygen, forming highly resistant spores that contaminate soil for decades",
-          "It causes immediate aerosol explosion of anthrax gas",
-          "The meat decomposes too fast for sampling",
-          "It attracts wild scavengers"
+          "Opening the carcass triggers immediate massive aerosolization of volatile vegetative bacilli that cause rapid fatal bacteremia",
+          "Putrefactive anaerobic bacteria are immediately neutralized by atmospheric air, causing rapid tissue liquefaction within minutes",
+          "Atmospheric oxygen catalyzes irreversible denaturation of capsular antigens, preventing diagnostic smear staining and PCR assays"
         ],
         "a": 0,
         "e": "Inside the unopened carcass, vegetative cells die due to putrefaction; atmospheric oxygen exposure triggers sporulation into long-surviving spores.",
@@ -16957,9 +16957,9 @@ var quizBank = {
         "q": "Kyasanur Forest Disease (KFD / Monkey disease) in India is a tick-borne flavivirus infection causing high mortality in:",
         "o": [
           "Black-faced langurs (Semnopithecus entellus) and bonnet macaques (Macaca radiata)",
-          "Wild tigers and leopards",
-          "Indian wild pigs",
-          "Nilgai antelopes"
+          "Royal Bengal tigers (Panthera tigris) and Asiatic leopards (Panthera pardus fusca)",
+          "Indian wild boars (Sus scrofa cristatus) and Indian muntjacs (Muntiacus muntjak)",
+          "Blue bulls or Nilgai (Boselaphus tragocamelus) and chital deer (Axis axis axis)"
         ],
         "a": 0,
         "e": "KFD is transmitted by Haemaphysalis spinigera ticks, causing severe hemorrhagic fever and fatal visceral hemorrhages in langurs and bonnet macaques.",
@@ -16971,9 +16971,9 @@ var quizBank = {
         "q": "Elephant Endotheliotropic Herpesvirus (EEHV) causes high mortality in young Asian elephants (Elephas maximus) primarily by:",
         "o": [
           "Widespread capillary endothelial destruction leading to lethal acute hemorrhagic diathesis and myocardial failure",
-          "Severe proliferative pulmonary neoplasia",
-          "Progressive cerebral demyelination over years",
-          "Stricture of the digestive tract"
+          "Severe proliferative tracheobronchitis causing mechanical airway obstruction and asphyxiation in juvenile calves",
+          "Progressive demyelination of the central nervous system resulting in ascending flaccid paralysis over several months",
+          "Extensive necrotizing osteomyelitis affecting the phalanges and carpal bones with chronic draining fistulous tracts"
         ],
         "a": 0,
         "e": "EEHV infects endothelial cells of microvessels, causing sudden extensive internal hemorrhage, cyanotic swollen tongue, and death within 24-48 hours.",
@@ -16985,9 +16985,9 @@ var quizBank = {
         "q": "Avian Botulism (Type C) causes massive mortality in wild aquatic birds ('limberneck') via which mechanism?",
         "o": [
           "Ingestion of Clostridium botulinum type C neurotoxin blocking acetylcholine release at neuromuscular junctions, causing flaccid paralysis",
-          "Endotoxin-induced septicemic shock",
-          "Direct enterocyte lysis in cecum",
-          "Primary fungal mycelial colonization of syrinx"
+          "Proliferation of vegetative bacilli in the intestinal crypts producing extensive enterotoxemic necrotizing typhlitis and septicemic shock",
+          "Production of powerful hemolysins inducing widespread intravascular hemolysis, hemoglobinuric nephrosis, and severe hypoxemic cyanosis",
+          "Irreversible inhibition of central postsynaptic glycine and GABA receptors, resulting in continuous violent tetanic extensor spasms"
         ],
         "a": 0,
         "e": "Botulinum toxin blocks presynaptic acetylcholine release, causing progressive flaccid paralysis of wings, legs, and neck ('limberneck'), leading to drowning.",
@@ -16999,9 +16999,9 @@ var quizBank = {
         "q": "Rabies virus in wildlife reservoir hosts (e.g., foxes, raccoons, skunks, bats) travels centripetally to the CNS via:",
         "o": [
           "Retrograde axoplasmic transport along peripheral motor and sensory nerves",
-          "Hematogenous spread in erythrocytes",
-          "Lymphatic drainage into thoracic duct",
-          "Direct migration through peritoneal cavity"
+          "Direct interstitial migration across loose connective tissue fascial planes",
+          "Anterograde drainage through deep visceral lymphatic channels and nodes",
+          "Hematogenous dissemination within circulating monocytes and lymphocytes"
         ],
         "a": 0,
         "e": "Rabies virus binds nicotinic acetylcholine receptors at neuromuscular junctions and is transported retrograde along axoplasm to the spinal cord and brain.",
@@ -17013,9 +17013,9 @@ var quizBank = {
         "q": "Pathognomonic histopathological lesions of Rabies in wildlife brain are:",
         "o": [
           "Negri bodies (eosinophilic intracytoplasmic inclusions) in Purkinje cells of cerebellum and pyramidal neurons of Ammon's horn",
-          "Cowdry type A intranuclear inclusions in astrocytes",
-          "Marchal bodies in ependymal lining",
-          "Bollinger bodies in choroid plexus"
+          "Cowdry type A bodies (eosinophilic intranuclear inclusions) in cerebral oligodendrocytes, accompanied by marked astrocytic gliosis",
+          "Bollinger bodies (large eosinophilic intracytoplasmic inclusions) in choroid plexus epithelium with perivascular cuffing",
+          "Lenticular inclusion bodies (basophilic intranuclear structures) within ependymal lining cells and microglial rod clusters"
         ],
         "a": 0,
         "e": "Negri bodies are sharp, eosinophilic, round-to-oval intracytoplasmic inclusions containing viral nucleocapsids, prominently found in Purkinje and hippocampal neurons.",
@@ -17027,9 +17027,9 @@ var quizBank = {
         "q": "Foot and Mouth Disease (FMD) in wild cervids (spotted deer, sambar) is characterized clinically and pathologically by:",
         "o": [
           "Vesicles and erosions on tongue, dental pad, interdigital cleft, and coronary bands, with 'tiger heart' in young fawns",
-          "Caseous nodules across liver",
-          "Nodular pulmonary adenocarcinoma",
-          "Severe purulent mastitis only"
+          "Severe caseous necrotizing granulomas throughout liver parenchyma, fibrinous peritonitis, and chronic purulent mastitis",
+          "Diffuse proliferation of horny fibropapillomas on velvet antlers, hyperkeratotic skin nodules, and severe alopecia",
+          "Extensive diphtheritic pseudomembranes in the trachea, catastrophic hemorrhagic typhlocolitis, and renal cortical infarcts"
         ],
         "a": 0,
         "e": "Aphthovirus produces epithelial vesicles in oral and hoof mucosa; in young wild ungulates, acute myocarditis produces yellow-striped myocardial necrosis ('tiger heart').",
@@ -17041,9 +17041,9 @@ var quizBank = {
         "q": "Duck Viral Enteritis (Duck Plague) in wild waterfowl is caused by an Anatid herpesvirus that produces:",
         "o": [
           "Hemorrhagic lesions throughout the digestive tract, annular bands in intestine, and cloacal diptheritic plaques",
-          "Aplastic anemia without digestive lesions",
-          "Encephalomyelitis without mucosal lesions",
-          "Cutaneous warts on beak"
+          "Generalized osteopetrosis with thickening of long bones, aplastic bone marrow, and complete absence of GI lesions",
+          "Severe non-suppurative encephalomyelitis with cerebellar hypoplasia, torticollis, and lack of mucosal involvement",
+          "Extensive cutaneous proliferative pox nodules on unfeathered skin of legs and beak without internal hemorrhages"
         ],
         "a": 0,
         "e": "Duck plague induces vascular endothelial injury, producing bloody intestine, annular necrotic rings, and cheese-like diphtheritic cloacal plaques.",
@@ -17055,9 +17055,9 @@ var quizBank = {
         "q": "White-Nose Syndrome in hibernating wild bats is caused by which cold-loving (psychrophilic) fungus?",
         "o": [
           "Pseudogymnoascus destructans",
-          "Aspergillus fumigatus",
-          "Histoplasma capsulatum",
-          "Cryptococcus neoformans"
+          "Batrachochytrium dendrobatidis",
+          "Cryptococcus gattii serotype",
+          "Histoplasma capsulatum yeast"
         ],
         "a": 0,
         "e": "Pseudogymnoascus destructans invades the skin and wing membranes of hibernating bats, causing wing damage, abnormal winter arousal, and starvation.",
@@ -17069,9 +17069,9 @@ var quizBank = {
         "q": "Chytridiomycosis, responsible for global amphibian population collapses, is caused by:",
         "o": [
           "Batrachochytrium dendrobatidis",
-          "Saprolegnia parasitica",
-          "Ichthyophthirius multifiliis",
-          "Ranavirus"
+          "Saprolegnia parasitica pathogen",
+          "Pseudogymnoascus destructans",
+          "Ichthyophthirius multifiliis"
         ],
         "a": 0,
         "e": "Batrachochytrium dendrobatidis infects keratinized epidermis of frogs and salamanders, impairing cutaneous osmoregulation and causing cardiac arrest.",
@@ -17083,9 +17083,9 @@ var quizBank = {
         "q": "Rinderpest and Peste des petits ruminants (PPR) in wild ungulates produce:",
         "o": [
           "Necrotic stomatitis, 'zebra striping' in colon/rectum, and severe lymphoid depletion",
-          "Severe muscular dystrophy only",
-          "Fibropapillomatosis of antler velvet",
-          "Aplastic bone marrow with jaundice"
+          "Severe muscular dystrophy, extensive Zenker's necrosis, and myoglobinuric nephrosis",
+          "Proliferative fibropapillomatosis of the muzzle, oral papillomas, and focal alopecia",
+          "Generalized bone marrow aplasia, severe thrombocytopenia, and diffuse icteric carcass"
         ],
         "a": 0,
         "e": "Morbilliviruses target mucosal epithelium and lymphoid tissue, causing linear hemorrhagic erosions in the colon ('zebra stripes') and lymphoid destruction.",
@@ -17097,9 +17097,9 @@ var quizBank = {
         "q": "Chronic Wasting Disease (CWD) in free-ranging cervids (mule deer, elk) is classified as a:",
         "o": [
           "Transmissible Spongiform Encephalopathy (prion disease)",
-          "Paramyxoviral infection",
-          "Chlamydial disease",
-          "Spirochetal infection"
+          "Chronic paramyxoviral demyelinating leukoencephalopathy",
+          "Slow progressive lentiviral subacute encephalopathy",
+          "Neurotropic flaviviral necrotizing polioencephalitis"
         ],
         "a": 0,
         "e": "CWD is a fatal prion disease producing spongiform encephalopathy, neuronal vacuolation, emaciation, and behavioral changes in cervids.",
@@ -17111,9 +17111,9 @@ var quizBank = {
         "q": "Which wild rodent species serves as the primary sylvatic reservoir for Yersinia pestis (Plague)?",
         "o": [
           "Prairie dogs, ground squirrels, and wild gerbils",
-          "Fruit bats only",
-          "Spotted deer",
-          "Tree shrews"
+          "Tree squirrels, red squirrels, and pocket gophers",
+          "Fruit bats, microchiropteran bats, and flying foxes",
+          "Wild lagomorphs, desert cottontails, and pikas only"
         ],
         "a": 0,
         "e": "Wild burrowing rodents (prairie dogs, ground squirrels) maintain sylvatic plague, transmitted by Xenopsylla fleas.",
@@ -17125,9 +17125,9 @@ var quizBank = {
         "q": "Avian Cholera (Pasteurella multocida serotype 1) causes catastrophic mass die-offs in wild waterfowl characterized post-mortem by:",
         "o": [
           "Acute septicemia with petechiae on epicardium, gizzard fat, and pinpoint white necrotic foci on congested liver",
-          "Marked hypertrophy of proventricular muscle",
-          "Aplastic bone marrow without hemorrhages",
-          "Ossification of lung parenchyma"
+          "Severe proventricular muscular hypertrophy with diffuse caseous air sacculitis and massive nodular proventriculitis",
+          "Extensive osteopetrotic thickening of tarsometatarsal bones accompanied by aplastic bone marrow and severe ascites",
+          "Multiple bilateral pulmonary cavernous granulomas containing concentric fungal hyphae and marked pleural adhesions"
         ],
         "a": 0,
         "e": "Avian cholera in wild wetlands causes sudden death with severe vascular damage, epicardial petechiae, and multifocal liver necrosis.",
@@ -17139,9 +17139,9 @@ var quizBank = {
         "q": "Ranavirus infection in wild amphibians and reptiles characteristically produces:",
         "o": [
           "Systemic hemorrhages, edema, and multifocal necrosis of liver, kidney, and spleen with intracytoplasmic viral inclusions",
-          "Purely localized cutaneous papillomas",
-          "Lens cataracts without organ lesions",
-          "Hypercalcemic nephrosis"
+          "Severe bilateral lens cataract formation, posterior synechiae, and chronic suppurative keratitis without systemic signs",
+          "Extensive fibrinous pleuropneumonia with severe pulmonary consolidation and diffuse caseous air sacculitis in the thorax",
+          "Localized hyperkeratotic cutaneous papillomas strictly confined to the digital webbing and absence of visceral lesions"
         ],
         "a": 0,
         "e": "Ranavirus (family Iridoviridae) causes acute systemic hemorrhagic disease and massive mortality events in larval amphibians.",
@@ -17153,9 +17153,9 @@ var quizBank = {
         "q": "Fibropapillomatosis in wild marine green turtles (Chelonia mydas) is associated with which pathogen?",
         "o": [
           "Chelonid alphaherpesvirus 5 (ChHV5)",
-          "Papillomavirus type 1",
-          "Poxvirus",
-          "Adenovirus"
+          "Chelonian papillomavirus type 1 (CPV1)",
+          "Sea turtle ranavirus isolate type 2",
+          "Testudinid alphaherpesvirus 1 (TeHV1)"
         ],
         "a": 0,
         "e": "ChHV5 is strongly associated with benign fibroepithelial tumors (fibropapillomas) on skin, eyes, and internal organs of marine turtles.",
@@ -17167,9 +17167,9 @@ var quizBank = {
         "q": "Malignant Catarrhal Fever (MCF) in wild and domestic ruminants is pathologically distinguished by:",
         "o": [
           "Generalized necrotizing lymphocytic vasculitis, perivascular lymphoid cuffing, and corneal opacity ('blue eye')",
-          "Severe suppurative bronchopneumonia without vasculitis",
-          "Spongiform encephalopathy without inflammation",
-          "Biliary carcinoma"
+          "Severe suppurative bronchopneumonia with extensive intraluminal fibrin plugs and absence of systemic vasculitis",
+          "Extensive spongiform encephalopathy characterized by vacuolation of neuronal perikarya without any inflammation",
+          "Multifocal cholangiocarcinoma with widespread intrahepatic metastasis, extensive biliary fibrosis, and ascites"
         ],
         "a": 0,
         "e": "Alcelaphine gammaherpesvirus 1 (wildebeest-associated) or Ovine herpesvirus 2 induces widespread T-lymphocyte proliferation and destructive necrotizing vasculitis.",
@@ -17181,9 +17181,9 @@ var quizBank = {
         "q": "Feline Panleukopenia / Parvovirus in wild felids (tigers, leopards) produces which hallmark autopsy lesions?",
         "o": [
           "Panleukopenia, aplastic bone marrow, and severe necrotizing enteritis with shortening and blunting of intestinal villi",
-          "Focal necrotizing hepatitis only",
-          "Purely pulmonary emphysema",
-          "Hard fibromas on footpads"
+          "Multifocal necrotizing hepatitis with prominent intranuclear Cowdry type A inclusions and marked gall bladder wall edema",
+          "Severe proliferative pulmonary adenomatosis with marked alveolar epithelial hyperplasia and chronic bullous emphysema",
+          "Multiple hard dermal fibromas on footpads accompanied by severe chronic hypertrophic cardiomyopathy and hydrothorax"
         ],
         "a": 0,
         "e": "Parvovirus infects rapidly dividing crypt enterocytes and bone marrow precursors, leading to villous collapse, hemorrhagic enteritis, and profound leukopenia.",
@@ -17195,9 +17195,9 @@ var quizBank = {
         "q": "Sylvatic rabies cycles in North American wildlife are primarily maintained by which major carnivore hosts?",
         "o": [
           "Raccoons, skunks, and red/gray foxes",
-          "White-tailed deer and moose",
-          "Beavers and muskrats",
-          "Bison and pronghorn"
+          "White-tailed deer, mule deer, and elk",
+          "Beavers, American badgers, and minks",
+          "Bobcats, mountain lions, and badgers"
         ],
         "a": 0,
         "e": "Raccoons, striped skunks, and red/gray foxes maintain geographic-specific terrestrial rabies virus variants.",
@@ -17209,9 +17209,9 @@ var quizBank = {
         "q": "Capture Myopathy (Exertional Rhabdomyolysis / Stress myopathy) in captured wild ungulates (antelopes, deer) is initiated by:",
         "o": [
           "Severe physical exertion and terror during chemical or physical restraint triggering massive lactic acidosis and muscle ischemia",
-          "High dietary protein toxicity",
-          "Organophosphate poison exposure",
-          "Primary genetic glycogen storage disease"
+          "Accidental ingestion of organophosphate insecticides producing irreversible synaptic acetylcholinesterase blockade and severe tetany",
+          "Severe dietary deficiency of selenium and Vitamin E triggering widespread oxidative myofibrillar lysis and lipid peroxidation",
+          "Primary inherited metabolic glycogen storage myopathy causing complete absence of muscular glycogen phosphorylase and tetany"
         ],
         "a": 0,
         "e": "Intense fear, panic, and chase lead to sympathetic hyperactivity, extreme muscular anaerobic glycolysis, severe lactic acidosis, and extensive muscle necrosis.",
@@ -17223,9 +17223,9 @@ var quizBank = {
         "q": "Grossly, skeletal muscles of a wild animal dying of acute Capture Myopathy appear:",
         "o": [
           "Pale, dry, friable, cooked/boiled in appearance with white streaks of Zenker's degeneration",
-          "Deep black, liquefied, and gaseous",
-          "Calcified into hard bony plates",
-          "Normal in color with no macroscopic lesions"
+          "Completely transformed into rigid bony plates through advanced heterotopic osteoid metaplasia",
+          "Deep black, crepitant, and intensely emphysematous with prominent gas bubble accumulation",
+          "Bright cherry-red, markedly edematous, and completely liquefied with a pungent rancid odor"
         ],
         "a": 0,
         "e": "Severe coagulative necrosis (Zenker's necrosis) of major thigh and back muscles produces a pale, parboiled fish-meat appearance.",
@@ -17237,9 +17237,9 @@ var quizBank = {
         "q": "The primary cause of renal failure in wildlife surviving acute capture myopathy is:",
         "o": [
           "Myoglobinuric nephrosis (myoglobin casts causing acute tubular necrosis)",
-          "Immune complex glomerulonephritis",
-          "Renal amyloidosis",
-          "Hydronephrosis due to stone formation"
+          "Extensive renal medullary amyloidosis leading to severe papillary necrosis",
+          "Ascending suppurative pyelonephritis with secondary hydronephrotic atrophy",
+          "Immune complex glomerulonephritis with subendothelial immune aggregates"
         ],
         "a": 0,
         "e": "Massive release of muscle myoglobin into circulation leads to myoglobinuria; myoglobin precipitates in distal tubules causing toxic acute tubular necrosis.",
@@ -17251,9 +17251,9 @@ var quizBank = {
         "q": "Trypanosoma evansi infection (Surra) in wild tigers and captive leopards causes:",
         "o": [
           "Severe progressive anemia, intermittent fever, facial edema, emaciation, and terminal nervous signs",
-          "Acute proliferative papillomatosis",
-          "Dry gangrene of the ear tip only",
-          "Selective bone marrow hyperplasia without anemia"
+          "Proliferative cutaneous papillomatosis, severe dry gangrene of ear tips, and hyperkeratotic crusts",
+          "Acute hemorrhagic typhlitis with copious dark melena, mucosal pseudomembranes, and fatal dehydration",
+          "Suppurative bronchointerstitial pneumonia, severe hydrothorax, and multifocal pulmonary abscessation"
         ],
         "a": 0,
         "e": "T. evansi causes recurrent parasitemia, erythrophagocytosis, progressive extravascular hemolytic anemia, and severe emaciation in wild carnivores.",
@@ -17265,9 +17265,9 @@ var quizBank = {
         "q": "Theileriosis in wild African buffalo (Syncerus caffer) is caused by Theileria parva and is distinguished by:",
         "o": [
           "Corridor disease: severe pulmonary edema, froth in airways, and widespread lymphoid hyperplasia without high parasitemia",
-          "Chronic cutaneous nodules",
-          "Severe encephalomalacia without lung changes",
-          "Hepatic cirrhosis"
+          "Acute necrotizing ruminitis with secondary mycotic vascular thrombosis, severe hemorrhagic abomasitis, and copious bloody ascites",
+          "Severe chronic granulomatous dermatophilosis with thick crusting scabs and complete absence of respiratory involvement",
+          "Progressive transmissible spongiform encephalopathy characterized by marked neuronal vacuolation within the brainstem"
         ],
         "a": 0,
         "e": "In African buffalo, T. parva causes asymptomatic carrier states, but transmits to domestic cattle or naive wildlife causing fatal lymphoproliferation and asphyxiating lung edema.",
@@ -17279,9 +17279,9 @@ var quizBank = {
         "q": "Hydatid disease in wild herbivores and carnivores involves which parasite combination?",
         "o": [
           "Intermediate metacestode cyst (Echinococcus granulosus) in wild herbivores, adult tapeworm in wild canids",
-          "Adult tapeworm in herbivores, cyst in wild felids",
-          "Free-living water cercariae",
-          "Direct fecal-oral nematode cycle"
+          "Adult taeniid tapeworms residing in wild herbivore bile ducts, metacestode cysticercoids in wild felid muscle",
+          "Infective free-swimming miracidia encysting in aquatic vegetation, adult digenetic trematodes in canid portal vein",
+          "Migratory third-stage nematode larvae in herbivore lungs, free-living adult reproductive stages within moist soil"
         ],
         "a": 0,
         "e": "Wild herbivores (deer, zebras) act as intermediate hosts carrying large fluid-filled hydatid cysts in lungs/liver; wild canids (wolves, jackals) harbor adult Echinococcus tapeworms.",
@@ -17307,9 +17307,9 @@ var quizBank = {
         "q": "The catastrophic decline of Gyps vultures in South Asia was caused by renal failure and visceral gout induced by:",
         "o": [
           "Diclofenac (non-steroidal anti-inflammatory drug residues in livestock carcasses)",
-          "Organophosphate insecticide spraying",
-          "Lead ammunition ingestion",
-          "Severe Vitamin A deficiency"
+          "Lead shot fragments ingested from hunter-discarded big game gut piles and carcasses",
+          "Organophosphate insecticide sprays accumulating in aquatic vegetation and prey",
+          "Severe dietary deficiency of Vitamin A and calcium in winter foraging habitats"
         ],
         "a": 0,
         "e": "Diclofenac residue in livestock carcasses selectively inhibits renal uric acid transport and prostaglandins in Gyps vultures, causing fatal visceral gout and acute renal failure.",
@@ -17321,9 +17321,9 @@ var quizBank = {
         "q": "Gross lesions in vultures dying of Diclofenac toxicity show:",
         "o": [
           "Extensive white chalk-like coating of uric acid crystals across visceral organs (pericardium, liver, spleen)",
-          "Massive pulmonary hemorrhages without urates",
-          "Severe osteosarcoma of wing bones",
-          "Aplastic bone marrow anemia"
+          "Massive diffuse pulmonary hemorrhage, tracheal suffusion, and complete absence of any urate crystal deposition",
+          "Severe osteopetrosis with dense sclerotic medullary bone deposition and multiple spontaneous bone fractures",
+          "Severe generalized aplastic bone marrow, extensive hemorrhagic enteritis, and multifocal cerebral infarction"
         ],
         "a": 0,
         "e": "Severe hyperuricemia causes monosodium urate precipitation on pericardial, hepatic, and serosal membranes, identical to visceral gout.",
@@ -17335,9 +17335,9 @@ var quizBank = {
         "q": "Lead poisoning in scavenging raptors (eagles, condors) and waterfowl results from:",
         "o": [
           "Ingestion of spent lead ammunition fragments in gut piles or lead shot in wetlands",
-          "Direct cutaneous absorption from soil",
-          "Genetic hyperabsorption of dietary metals",
-          "Metabolic bone calcium displacement only"
+          "Direct percutaneous absorption of organic tetraethyl lead from contaminated soils",
+          "Genetic hyperabsorption of environmental zinc and cadmium salts from alkaline waters",
+          "Metabolic displacement of bone calcium due to primary autonomous hyperparathyroidism"
         ],
         "a": 0,
         "e": "Lead shot/ammunition fragments dissolve in the acidic stomach/gizzard, leading to high blood lead, demyelination, proventricular impaction, and green bile staining.",
@@ -17363,9 +17363,9 @@ var quizBank = {
         "q": "Steatitis (Yellow Fat Disease / Pansteatitis) in wild captive crocodilians and felids is caused by:",
         "o": [
           "Feeding rancid fish or poultry diets high in polyunsaturated fatty acids deficient in Vitamin E",
-          "Severe chronic bacterial septicemia",
-          "Excess dietary Vitamin C",
-          "Biliary obstruction from flukes"
+          "Mechanical biliary obstruction by digenetic trematodes resulting in severe obstructive jaundice",
+          "Severe chronic dietary excess of Vitamin C causing massive systemic mobilization of fat stores",
+          "Chronic systemic bacteremia with intracellular lipid-producing Mycobacterium avium subspecies"
         ],
         "a": 0,
         "e": "Oxidation of polyunsaturated fats without sufficient antioxidant Vitamin E causes adipose tissue peroxidation, ceroid pigment accumulation, and firm yellow-brown necrotic fat.",
@@ -17377,9 +17377,9 @@ var quizBank = {
         "q": "Sarcoptic mange in free-ranging wild carnivores (e.g., red foxes, coyotes) is caused by Sarcoptes scabiei and manifests as:",
         "o": [
           "Severe pruritus, diffuse hyperkeratosis, thick grayish-white crusts, alopecia, and emaciation",
-          "Non-pruritic localized hair loss on tail only",
-          "Benign subcutaneous nodules without crusting",
-          "Severe hemorrhagic pneumonia"
+          "Non-pruritic well-demarcated circular scaling lesions localized strictly to the distal tail tip",
+          "Smooth subcutaneous fluctuant non-painful lipomatous nodules without any alopecia or crusting",
+          "Severe necrotizing bronchopneumonia with prominent secondary pulmonary abscesses and pleuritis"
         ],
         "a": 0,
         "e": "Mites burrow into the stratum corneum, producing intense hypersensitivity, massive proliferative hyperkeratosis, lichenification, and secondary bacterial pyoderma.",
@@ -17391,9 +17391,9 @@ var quizBank = {
         "q": "Snakebite by a Russell's viper (Daboia russelii) in rescued wild mammals induces death primarily through:",
         "o": [
           "Procoagulant venom enzymes triggering disseminated intravascular coagulation (DIC), severe consumptive coagulopathy, and renal failure",
-          "Pure presynaptic neuromuscular blockade without bleeding",
-          "Acute hyperthermia from hypothalamic necrosis",
-          "Cardiac arrest within 30 seconds"
+          "Selective presynaptic neurotoxins irreversibly blocking neuromuscular acetylcholine exocytosis, causing flaccid respiratory paralysis",
+          "Direct myocardial cardiotoxins causing immediate irreversible ventricular fibrillation and catastrophic electromechanical arrest",
+          "Severe thermoregulatory center necrosis in the hypothalamus producing lethal hyperthermia within thirty minutes of envenomation"
         ],
         "a": 0,
         "e": "Viper venom activates Factor X and prothrombin, producing widespread intravascular fibrin deposition, fatal microthrombosis, consumption coagulopathy, and acute cortical necrosis.",
@@ -17405,9 +17405,9 @@ var quizBank = {
         "q": "Elapid snake envenomation (e.g., Indian Cobra, Krait) primarily causes pathology through:",
         "o": [
           "Post-synaptic or pre-synaptic neurotoxins blocking neuromuscular transmission, causing flaccid paralysis and respiratory failure",
-          "Severe local tissue necrosis and gangrene only",
-          "Massive hemorrhagic ascites",
-          "Primary splenic rupture"
+          "Potent hemotoxins activating factor X and prothrombin, triggering massive systemic thrombosis and acute bilateral renal cortical necrosis",
+          "Massive necrotizing cytotoxins inducing catastrophic transmural gut necrosis, hemorrhagic ascites, and sudden hypovolemic vascular collapse",
+          "Powerful direct lytic enzymes causing immediate rupture of the splenic capsule with fatal intra-abdominal exsanguinating hemorrhage"
         ],
         "a": 0,
         "e": "Elapid venoms contain potent neurotoxins that bind acetylcholine receptors, causing progressive ascending paralysis of skeletal muscles and fatal asphyxia.",
@@ -17419,9 +17419,9 @@ var quizBank = {
         "q": "Organophosphate and carbamate pesticide poisoning in wild birds causes death through:",
         "o": [
           "Inhibition of acetylcholinesterase, leading to acetylcholine accumulation, muscarinic/nicotinic overstimulation, and respiratory failure",
-          "Inhibition of vitamin K epoxide reductase",
-          "Direct destruction of hepatic cytochrome P450",
-          "Coagulative necrosis of pancreas"
+          "Inhibition of cellular cytochrome c oxidase, blocking electron transport, causing rapid cytotoxic cellular hypoxia and sudden death",
+          "Irreversible blockage of post-synaptic glycine and GABA receptors, producing continuous spastic convulsions and tetanic paralysis",
+          "Direct uncoupling of oxidative phosphorylation, precipitating malignant hyperthermia, ATP depletion, and metabolic acidosis"
         ],
         "a": 0,
         "e": "Cholinesterase inhibition leads to excessive parasympathetic discharge: salivation, lacrimation, bronchial constriction, muscle fasciculations, and asphyxiation.",
@@ -17433,9 +17433,9 @@ var quizBank = {
         "q": "Anticoagulant rodenticide poisoning (e.g., Brodifacoum) in non-target predatory raptors and carnivores produces:",
         "o": [
           "Inhibition of Vitamin K epoxide reductase, leading to fatal systemic hemorrhage, hemothorax, and hematomas",
-          "Severe acute pancreatitis with fat necrosis",
-          "Generalized osteosclerosis",
-          "Primary brain demyelination"
+          "Competitive antagonism of gamma-aminobutyric acid (GABA), producing intractable tonic-clonic motor seizures",
+          "Chelation of essential systemic divalent cations, precipitating acute hypocalcaemic tetany and cardiac arrest",
+          "Extensive centrilobular hepatocellular necrosis and acute intravascular haemolysis from severe oxidative stress"
         ],
         "a": 0,
         "e": "Second-generation anticoagulant rodenticides block vitamin K recycling, depleting clotting factors II, VII, IX, and X, leading to fatal massive internal bleeding.",
@@ -17447,9 +17447,9 @@ var quizBank = {
         "q": "Metabolic Bone Disease (Nutritional Secondary Hyperparathyroidism) in captive wild reptiles is triggered by:",
         "o": [
           "Low dietary calcium, excessive phosphorus, or deficiency of UVB illumination required for Vitamin D3 synthesis",
-          "Excess dietary Vitamin D3 supplementation",
-          "Primary parathyroid adenoma",
-          "Severe hypernatremia"
+          "Excessive dietary calcium with chronic hypervitaminosis D3, leading to extensive metastatic soft tissue calcification",
+          "Primary autonomous hypersecretion of parathyroid hormone due to functional chief cell adenoma or nodular hyperplasia",
+          "Chronic dietary protein deficiency causing severe hypoproteinaemic ascites and impaired renal osteodystrophy clearance"
         ],
         "a": 0,
         "e": "Lack of UVB light (290-320 nm) prevents cutaneous cholecalciferol synthesis, resulting in hypocalcemia, secondary parathyroid hyperplasia, fibrous osteodystrophy ('rubber jaw').",
@@ -17461,9 +17461,9 @@ var quizBank = {
         "q": "Pneumonic linguatulosis in wild carnivores and reptiles is caused by pentastomes, which are:",
         "o": [
           "Worm-like blood-sucking crustacean-related arthropods (tongue worms) residing in respiratory air passages",
-          "True ciliated protozoa",
-          "Obligate fungal mycelia",
-          "Trematode flatworms of bile ducts"
+          "Segmented cyclophyllidean cestodes producing large hydatid cysts within pulmonary parenchyma and bronchial tree",
+          "Metazoan digenetic trematodes (lung flukes) producing cystic fibrous nodules containing operculated golden eggs",
+          "Microscopic astigmatid burrowing mites creating extensive subterranean epidermal tunnels and severe hyperkeratosis"
         ],
         "a": 0,
         "e": "Pentastomids (e.g., Linguatula serrata) are highly adapted parasitic arthropods that attach via hooks inside the nasal cavity, trachea, and lungs.",
@@ -17489,9 +17489,9 @@ var quizBank = {
         "q": "Elephant pox is caused by an Orthopoxvirus that causes which lesions in captive and wild Asian elephants?",
         "o": [
           "Cutaneous papules and ulcers on trunk, face, feet, and oral mucosa",
-          "Severe encephalomalacia",
-          "Purely pulmonary caseation",
-          "Loss of tusk enamel without skin changes"
+          "Diffuse non-suppurative encephalomalacia and cerebellar hypoplasia",
+          "Extensive caseous necrotizing granulomas throughout lung parenchyma",
+          "Generalized hemorrhagic enteritis with multifocal hepatic infarction"
         ],
         "a": 0,
         "e": "Cowpox-related orthopoxviruses produce painful cutaneous vesicles, pustules, and deep necrotizing ulcers on the trunk and feet of elephants.",
@@ -17503,9 +17503,9 @@ var quizBank = {
         "q": "Severe electrocution pathology in wild monkeys and elephants traversing power lines includes:",
         "o": [
           "Current entry and exit burn marks, deep tissue charring, vascular thrombosis, and catastrophic cardiac ventricular fibrillation",
-          "Generalized amyloidosis",
-          "Acute hepatic lipidosis",
-          "Diffuse pulmonary fibrosis without burns"
+          "Massive diffuse splenic amyloidosis accompanied by bilateral adrenal cortical hyperplasia and extensive renal fibrosis",
+          "Widespread hepatic lipidosis with centrilobular vacuolation and microvesicular steatosis in all abdominal visceral organs",
+          "Progressive chronic fibrosing alveolitis and severe non-inflammatory pulmonary hypertension without cutaneous lesions"
         ],
         "a": 0,
         "e": "High-voltage current passage generates Joule heat resulting in severe electrical entry/exit burns, arc burns, coagulation necrosis of muscles, and fatal arrhythmia.",
