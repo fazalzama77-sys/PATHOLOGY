@@ -1,34 +1,42 @@
 /* ============================================================
    service-worker.js  —  Offline support
    ------------------------------------------------------------
-   Strategy:
-     - App shell (HTML, CSS, JS, data files): cache first, then
-       update in the background. The site opens instantly and
-       works with no signal.
-     - Images: cache as they are used, up to a sensible limit.
-     - Navigations: always fall back to index.html when offline,
-       so every #/route still resolves.
+   Goal: after ONE visit with internet, the whole app opens and
+   works with no connection at all — every lesson, quiz, the
+   dashboard and revision sheets. Nothing in the app is loaded
+   from another site, so everything it needs is cached here.
 
-   IMPORTANT: bump CACHE_VERSION whenever you change any file in
-   PRECACHE, otherwise students keep seeing the old version.
+   Strategy:
+     - Install: download every app file. If any core file fails,
+       the install is abandoned and the previous version (with its
+       complete cache) stays in charge — a half-downloaded update
+       can never replace a working offline copy.
+     - Page loads: answered from the cache first, so the app opens
+       instantly offline and on weak signal. A fresh copy is
+       fetched in the background for the next launch.
+     - Files (CSS, JS, data, images): cache first, refreshed in
+       the background.
+
+   Why the redirect handling below matters:
+     Cloudflare answers every *.html address with a redirect
+     (/index.html -> /, /revision/unit-1.html -> /revision/unit-1).
+     Browsers refuse to use a cached *redirected* response to open
+     a page, so an offline launch of /index.html showed the
+     "you're offline" error. Every cached copy is therefore stored
+     as a plain 200 response, under both the old and new address.
+
+   IMPORTANT: bump CACHE_VERSION whenever you change any app file,
+   otherwise students keep seeing the old version.
    ============================================================ */
 
-var CACHE_VERSION = "vpath-v31";
-var SHELL_CACHE = CACHE_VERSION + "-shell";
-var IMG_CACHE = CACHE_VERSION + "-img";
+var CACHE_VERSION = "vpath-v32";
+var CACHE = CACHE_VERSION + "-app";
 
-var MAX_IMAGES = 300;
-
-var PRECACHE = [
+/* Everything the app needs to run. All must download for an
+   update to be accepted. */
+var CORE = [
   "./",
-  "index.html",
   "manifest.json",
-
-  "images/favicon-32.png",
-  "images/apple-touch-icon.png",
-  "images/icon-192.png",
-  "images/icon-512.png",
-  "images/icon-maskable-512.png",
 
   "assets/css/tokens.css",
   "assets/css/main.css",
@@ -50,15 +58,6 @@ var PRECACHE = [
   "data/data-quiz.JS",
   "data/data-revision.JS",
 
-  "revision/index.html",
-  "revision/assets/revision.css?v=2",
-  "revision/unit-1.html",
-  "revision/unit-2.html",
-  "revision/unit-3.html",
-  "revision/unit-4.html",
-  "revision/unit-5.html",
-  "revision/unit-6.html",
-
   "js/store.js",
   "js/revision.js",
   "js/quiz.js",
@@ -69,21 +68,85 @@ var PRECACHE = [
   "js/app.js"
 ];
 
-/* Files are requested with cache-busting query strings in places
-   (e.g. revision.css?v=15). Matching with ignoreSearch means those
-   still hit the precached copy instead of failing offline. */
+/* Nice to have offline, but a missing one must not block an update. */
+var EXTRA = [
+  "index.html",
+
+  "images/favicon-32.png",
+  "images/apple-touch-icon.png",
+  "images/icon-192.png",
+  "images/icon-512.png",
+  "images/icon-maskable-512.png",
+
+  "revision/index.html",
+  "revision/assets/revision.css",
+  "revision/unit-1.html",
+  "revision/unit-2.html",
+  "revision/unit-3.html",
+  "revision/unit-4.html",
+  "revision/unit-5.html",
+  "revision/unit-6.html"
+];
+
+/* Files are requested with cache-busting query strings (e.g.
+   quiz.js?v=21). Matching with ignoreSearch means those still hit
+   the cached copy instead of failing offline. */
 var MATCH_OPTS = { ignoreSearch: true };
+
+function absolute(url) {
+  return new URL(url, self.registration.scope).href;
+}
+
+function withoutHashOrQuery(url) {
+  var u = new URL(url);
+  u.hash = "";
+  u.search = "";
+  return u.href;
+}
+
+/* Store a response as a plain 200 so it can always answer a page
+   load, under the requested address and, if it was redirected,
+   under the final address too. */
+function put(cache, url, res) {
+  if (!res || !res.ok || res.type === "opaqueredirect" || res.type === "opaque") {
+    return Promise.resolve();
+  }
+  var finalUrl = res.url;
+  var redirected = res.redirected;
+  var headers = new Headers(res.headers);
+  return res.blob().then(function (body) {
+    var init = { status: 200, statusText: "OK", headers: headers };
+    var jobs = [cache.put(url, new Response(body, init))];
+    if (redirected && finalUrl && finalUrl !== url) {
+      jobs.push(cache.put(finalUrl, new Response(body, init)));
+    }
+    return Promise.all(jobs);
+  });
+}
+
+function download(cache, url) {
+  var abs = absolute(url);
+  return fetch(new Request(abs, { cache: "reload" })).then(function (res) {
+    if (!res.ok) throw new Error("Could not download " + url + " (" + res.status + ")");
+    return put(cache, abs, res);
+  });
+}
 
 self.addEventListener("install", function (e) {
   e.waitUntil(
-    caches.open(SHELL_CACHE)
-      .then(function (c) {
-        // addAll fails entirely if one file 404s, so add them one by one.
-        return Promise.all(PRECACHE.map(function (url) {
-          return c.add(url).catch(function () { /* skip missing file */ });
-        }));
-      })
-      .then(function () { return self.skipWaiting(); })
+    caches.open(CACHE).then(function (cache) {
+      return Promise.all(CORE.map(function (url) { return download(cache, url); }))
+        .then(function () {
+          return Promise.all(EXTRA.map(function (url) {
+            return download(cache, url).catch(function () { /* optional file */ });
+          }));
+        });
+    }).then(function () {
+      return self.skipWaiting();
+    }).catch(function (err) {
+      // Throw away the partial cache so the old, complete one keeps working.
+      return caches.delete(CACHE).then(function () { throw err; });
+    })
   );
 });
 
@@ -91,7 +154,7 @@ self.addEventListener("activate", function (e) {
   e.waitUntil(
     caches.keys().then(function (keys) {
       return Promise.all(keys.map(function (k) {
-        if (k.indexOf(CACHE_VERSION) !== 0) return caches.delete(k);
+        if (k !== CACHE) return caches.delete(k);
       }));
     }).then(function () { return self.clients.claim(); })
   );
@@ -102,12 +165,29 @@ self.addEventListener("message", function (e) {
   if (e.data && e.data.type === "SKIP_WAITING") self.skipWaiting();
 });
 
-/* Keep the image cache from growing without bound. */
-function trimImageCache(cache) {
-  cache.keys().then(function (keys) {
-    if (keys.length <= MAX_IMAGES) return;
-    for (var i = 0; i < keys.length - MAX_IMAGES; i++) cache.delete(keys[i]);
+/* The app is a single page with #/ routes, so any page load that is
+   not one of the standalone revision sheets is answered by the app
+   shell. */
+function cachedPage(req) {
+  return caches.match(withoutHashOrQuery(req.url), MATCH_OPTS).then(function (hit) {
+    if (hit) return hit;
+    var path = new URL(req.url).pathname;
+    if (path.indexOf("/revision/") !== -1) return null;
+    return caches.match(absolute("./")).then(function (shell) {
+      return shell || caches.match(absolute("index.html"), MATCH_OPTS);
+    });
   });
+}
+
+function offlineResponse() {
+  return new Response(
+    "<!doctype html><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'>" +
+    "<title>Offline</title><body style='font-family:system-ui;padding:32px;line-height:1.5'>" +
+    "<h2>This page is not saved yet</h2>" +
+    "<p>Open the app once with internet so it can finish saving itself for offline use.</p>" +
+    "<p><a href='./'>Go to the home page</a></p>",
+    { status: 503, headers: { "Content-Type": "text/html; charset=utf-8" } }
+  );
 }
 
 self.addEventListener("fetch", function (e) {
@@ -117,58 +197,50 @@ self.addEventListener("fetch", function (e) {
   var url = new URL(req.url);
   if (url.origin !== location.origin) return;   // never touch third-party requests
 
-  // ---- Navigations: network first, fall back to the cached shell ----
+  // ---- Page loads: cache first, refresh in the background ----
   if (req.mode === "navigate") {
     e.respondWith(
-      fetch(req).then(function (res) {
-        if (res && res.status === 200) {
-          var copy = res.clone();
-          caches.open(SHELL_CACHE).then(function (c) { c.put(req, copy); });
-        }
-        return res;
-      }).catch(function () {
-        return caches.match(req, MATCH_OPTS).then(function (hit) {
-          return hit || caches.match("index.html", MATCH_OPTS);
-        });
-      })
-    );
-    return;
-  }
-
-  // ---- Images: cache on first use ----
-  if (/\.(png|jpg|jpeg|webp|gif|svg|ico)$/i.test(url.pathname)) {
-    e.respondWith(
-      // Icons are precached into the shell, so look there too.
-      caches.match(req, MATCH_OPTS).then(function (hit) {
-        if (hit) return hit;
-        return fetch(req).then(function (res) {
-          if (res && res.status === 200) {
+      cachedPage(req).then(function (cached) {
+        var network = fetch(req).then(function (res) {
+          if (res && res.ok && res.type === "basic") {
             var copy = res.clone();
-            caches.open(IMG_CACHE).then(function (c) {
-              c.put(req, copy);
-              trimImageCache(c);
-            });
+            e.waitUntil(caches.open(CACHE).then(function (c) {
+              return put(c, withoutHashOrQuery(req.url), copy);
+            }));
           }
           return res;
-        }).catch(function () { return hit; });
+        });
+
+        if (cached) {
+          e.waitUntil(network.catch(function () {}));
+          return cached;
+        }
+        return network.catch(function () { return offlineResponse(); });
       })
     );
     return;
   }
 
-  // ---- Everything else: cache first, refresh in background ----
+  // ---- Everything else: cache first, refresh in the background ----
   e.respondWith(
     caches.match(req, MATCH_OPTS).then(function (hit) {
       var network = fetch(req).then(function (res) {
-        if (res && res.status === 200) {
+        if (res && res.ok && res.type === "basic") {
           var copy = res.clone();
-          caches.open(SHELL_CACHE).then(function (c) { c.put(req, copy); });
+          e.waitUntil(caches.open(CACHE).then(function (c) {
+            return put(c, withoutHashOrQuery(req.url), copy);
+          }));
         }
         return res;
-      }).catch(function () {
-        return hit;
       });
-      return hit || network;
+
+      if (hit) {
+        e.waitUntil(network.catch(function () {}));
+        return hit;
+      }
+      return network.catch(function () {
+        return new Response("", { status: 504, statusText: "Offline" });
+      });
     })
   );
 });
