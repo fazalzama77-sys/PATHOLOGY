@@ -410,7 +410,7 @@ var quizBank = {
       {
         "q": "Metastatic calcification in cattle is classically induced by grazing which toxic plant?",
         "o": [
-          "Solanum malacoxylon (Cestrum diurnum)",
+          "Solanum malacoxylon / Cestrum diurnum",
           "Lantana camara (causing cholestasis)",
           "Pteridium aquilinum (bracken poisoning)",
           "Crotalaria spectabilis (pyrrolizidine)"
@@ -920,7 +920,7 @@ var quizBank = {
           "Diffusely spreading suppurative exudation dissecting rapidly along fascial planes without localized ulceration"
         ],
         "a": 0,
-        "e": "Diphtheritic membranes (e.g. swine swine dysentery, necrotic enteritis) are firmly adherent; stripping tears the submucosa.",
+        "e": "Diphtheritic membranes (e.g. swine dysentery, necrotic enteritis) are firmly adherent; stripping tears the submucosa.",
         "topicId": "u1-t16",
         "subSection": "u1-s4",
         "diff": 2
@@ -2512,7 +2512,7 @@ var quizBank = {
       {
         "q": "Transudate is an inflammatory extravascular fluid with a high protein concentration (> 3.0 g/dL) and high specific gravity (> 1.020).",
         "a": false,
-        "e": "Transudate is non-inflammatory fluid caused by hydrostatic or oncotic pressure imbalances, with low protein (< 2.5 g/dL) and low specific gravity (< 1.018). Exudate has high protein.",
+        "e": "Transudate is non-inflammatory fluid caused by hydrostatic or oncotic pressure imbalances, with low protein (< 2.5 g/dL) and low specific gravity (< 1.015, or < 1.012 in Vegad). Exudate has high protein.",
         "topicId": "u1-t04",
         "subSection": "u1-s3",
         "diff": 1
@@ -3598,7 +3598,7 @@ var quizBank = {
       {
         "q": "Intussusception in the domestic animal intestine is defined as:",
         "o": [
-          "Telescoping of an invaginated intestinal segment (intussuscipiens) into an adjacent segment",
+          "Telescoping of an invaginated intestinal segment (intussusceptum) into an adjacent segment (intussuscipiens)",
           "Axial rotation of an intestinal segment along its mesenteric base causing vascular strangulation",
           "Twisting of an intestinal loop around its longitudinal axis resulting in luminal occlusion",
           "Displacement and incarceration of a bowel loop through an acquired opening or mesenteric tear"
@@ -4898,7 +4898,7 @@ var quizBank = {
         "diff": 2
       },
       {
-        "q": "Urolithiasis in feedlot steers and wethers is most frequently associated with urethral obstruction at which anatomical location?",
+        "q": "Urolithiasis in feedlot steers and bulls is most frequently associated with urethral obstruction at which anatomical location?",
         "o": [
           "Sigmoid flexure of the penis",
           "Ischial arch of pelvic tract",
@@ -6754,7 +6754,7 @@ var quizBank = {
         "a": [
           "intussusception"
         ],
-        "e": "Intussusception involves an invaginating intussuscipiens receiving the invaginated intussusceptum, often triggered by hypermotility, enteritis, or parasites.",
+        "e": "Intussusception involves a receiving intussuscipiens enveloping the invaginated intussusceptum, often triggered by hypermotility, enteritis, or parasites.",
         "topicId": "u2-t01",
         "subSection": "u2-s1",
         "diff": 1,
@@ -7250,7 +7250,7 @@ var quizBank = {
           "Thyrocalcitonin from parafollicular C-cells"
         ],
         "a": 0,
-        "e": "PTHrP binds to PTH receptors on osteoclasts, stimulating massive bone resorption and humoral hypercalcaemia.",
+        "e": "PTHrP binds to PTH receptors on osteoblasts, upregulating RANKL to stimulate massive osteoclastic bone resorption and humoral hypercalcaemia.",
         "topicId": "u3-t05",
         "subSection": "u3-s1",
         "diff": 2
@@ -7312,7 +7312,7 @@ var quizBank = {
         "diff": 2
       },
       {
-        "q": "Which retrovirus causes multicentric lymphosarcoma in young domestic cattle?",
+        "q": "Which retrovirus causes multicentric lymphosarcoma in adult domestic cattle?",
         "o": [
           "Bovine Leukemia Virus (BLV)",
           "Bovine Viral Diarrhea Virus",
@@ -10787,7 +10787,7 @@ var quizBank = {
         "diff": 1
       },
       {
-        "q": "Theileriosis (East Coast Fever / Bovine Theileriosis, Theileria annulata) produces pathognomonic lymphoid proliferative bodies called:",
+        "q": "Bovine Theileriosis (Tropical Theileriosis, Theileria annulata) produces pathognomonic lymphoid proliferative bodies called:",
         "o": [
           "Koch's blue bodies (schizonts in lymphocytes and lymph node impression smears)",
           "Negri inclusion bodies (intracytoplasmic viral aggregates in neuronal perikarya)",
@@ -10815,7 +10815,7 @@ var quizBank = {
         "diff": 2
       },
       {
-        "q": "Trypanosoma evansi is the causative agent of 'Surra' in horses, camels, and cattle, and is transmitted biologically/mechanically by:",
+        "q": "Trypanosoma evansi is the causative agent of 'Surra' in horses, camels, and cattle, and is transmitted mechanically by:",
         "o": [
           "Tabanid horse flies and Stomoxys biting flies",
           "Ixodid hard ticks (Rhipicephalus microplus)",
@@ -11167,7 +11167,7 @@ var quizBank = {
       {
         "q": "Organophosphate and carbamate insecticide poisoning in domestic animals causes death by:",
         "o": [
-          "Irreversibly inhibiting acetylcholinesterase, producing toxic accumulation of acetylcholine and SLUD signs",
+          "Inhibiting acetylcholinesterase (irreversibly by organophosphates, reversibly by carbamates), producing toxic accumulation of acetylcholine and SLUD signs",
           "Competitively blocking voltage-gated sodium channels in cardiac conduction fibers, inducing sudden cardiac arrest",
           "Uncoupling mitochondrial oxidative phosphorylation, causing profound severe hyperthermia and metabolic acidosis",
           "Directly lysing circulating erythrocyte membranes, triggering catastrophic acute intravascular hemolytic crisis"
