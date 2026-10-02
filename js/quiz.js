@@ -939,15 +939,53 @@ var quizApp = (function () {
     wireRun(q);
   }
 
+  function normaliseFib(s) {
+    if (!s) return "";
+    return String(s)
+      .toLowerCase()
+      .replace(/[()[\]{}"'.,\/\\+_-]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
   function isCorrect(q, given) {
     if (given === null || given === undefined || given === "") return false;
     if (q.format === "mcq") return given === q.a;
     if (q.format === "tf") return given === q.a;
-    // FIB checking: compare against all acceptable answers
-    var norm = String(given).trim().toLowerCase();
-    return (q.a || []).some(function (acc) {
-      return String(acc).trim().toLowerCase() === norm;
-    });
+
+    // FIB checking: compare against all acceptable answers and a_display variations
+    var rawGiven = String(given).trim().toLowerCase();
+    var cleanGiven = normaliseFib(given);
+
+    var pool = (q.a || []).slice();
+    if (q.a_display) {
+      pool.push(q.a_display);
+      var withoutParens = q.a_display.replace(/\(.*?\)/g, "").trim();
+      if (withoutParens) pool.push(withoutParens);
+      var insideParens = (q.a_display.match(/\((.*?)\)/g) || []).map(function (m) {
+        return m.replace(/[()]/g, "").trim();
+      });
+      insideParens.forEach(function (p) { if (p) pool.push(p); });
+      if (q.a_display.indexOf("/") !== -1) {
+        q.a_display.split("/").forEach(function (part) {
+          if (part.trim()) pool.push(part.trim());
+        });
+      }
+    }
+
+    for (var i = 0; i < pool.length; i++) {
+      var candidate = String(pool[i]).trim().toLowerCase();
+      if (rawGiven === candidate) return true;
+      if (cleanGiven && cleanGiven === normaliseFib(pool[i])) return true;
+    }
+
+    if (rawGiven.startsWith("type ") && pool.some(function (p) {
+      return String(p).trim().toLowerCase() === rawGiven.replace(/^type\s+/, "");
+    })) {
+      return true;
+    }
+
+    return false;
   }
 
   function wireRun(q) {

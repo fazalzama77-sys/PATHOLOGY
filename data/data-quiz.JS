@@ -16438,7 +16438,7 @@ var quizBank = {
       {
         "q": "Mouse Hepatitis Virus (MHV), a murine coronavirus, occurs in two distinct organ-specific pathotypes:",
         "o": [
-          "Respiratory (enterotropic) and polytropic (neurotropic/hepatotropic)",
+          "Enterotropic (intestinal) and polytropic (respiratory/disseminated)",
           "Cardiotropic (myocardial) and urotropic (glomerulonephritic) strains",
           "Dermatotropic (epidermal) and oculotropic (keratoconjunctival) forms",
           "Hematotropic (erythrocytic) and osteotropic (chondroclastic) variants"
