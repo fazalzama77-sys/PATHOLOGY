@@ -29,7 +29,7 @@
    otherwise students keep seeing the old version.
    ============================================================ */
 
-var CACHE_VERSION = "vpath-v32";
+var CACHE_VERSION = "vpath-v33";
 var CACHE = CACHE_VERSION + "-app";
 
 /* Everything the app needs to run. All must download for an
