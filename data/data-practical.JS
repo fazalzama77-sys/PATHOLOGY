@@ -109,7 +109,10 @@ practicalData["prac-unit-1"] = {
         ]
       }
     ],
-    "img": "",
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Wet-preserved_anatomical_or_embryological_specimen.jpg/960px-Wet-preserved_anatomical_or_embryological_specimen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imgCaption": "Specimen: It appears to be a preserved mammalian fetus or anatomical tissue specimen, complete with associated embryonic membranes or connective tissue resting at the base of the jar. Preservation Method: The biologic...",
+    "imgCredit": "Noukayami · CC BY-SA 4.0",
+    "imgPage": "https://commons.wikimedia.org/wiki/File:Wet-preserved_anatomical_or_embryological_specimen.jpg",
     "tags": [
       "gross specimens",
       "museum technique",
@@ -248,7 +251,10 @@ practicalData["prac-unit-1"] = {
         ]
       }
     ],
-    "img": "",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Renal_infarction.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "imgCaption": "renal infarction",
+    "imgCredit": "علاء · CC BY-SA 3.0",
+    "imgPage": "https://commons.wikimedia.org/wiki/File:Renal_infarction.jpg",
     "tags": [
       "recognition of lesions",
       "cloudy swelling",
@@ -390,7 +396,10 @@ practicalData["prac-unit-1"] = {
         ]
       }
     ],
-    "img": "",
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Tissue_processing_-_Paraffin_inclusion_of_a_histological_sample.jpg/960px-Tissue_processing_-_Paraffin_inclusion_of_a_histological_sample.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imgCaption": "Tissue processing - Paraffin inclusion of a histological sample",
+    "imgCredit": "Marcello Daricello · Public domain",
+    "imgPage": "https://commons.wikimedia.org/wiki/File:Tissue_processing_-_Paraffin_inclusion_of_a_histological_sample.jpg",
     "tags": [
       "tissue processing",
       "paraffin embedding",
@@ -497,7 +506,10 @@ practicalData["prac-unit-1"] = {
         ]
       }
     ],
-    "img": "",
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Tissue_processing_-_Microtome_is_used_to_cut_a_ribbon_of_5-micron-thick_sections_from_the_paraffin_block.jpg/960px-Tissue_processing_-_Microtome_is_used_to_cut_a_ribbon_of_5-micron-thick_sections_from_the_paraffin_block.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imgCaption": "The microtome is used to cut a ribbon of 5-micron-thick sections from the paraffin block. Five microns is 1/200 of a millimeter",
+    "imgCredit": "Ed Uthman · CC BY-SA 2.0",
+    "imgPage": "https://commons.wikimedia.org/wiki/File:Tissue_processing_-_Microtome_is_used_to_cut_a_ribbon_of_5-micron-thick_sections_from_the_paraffin_block.jpg",
     "tags": [
       "microtomy",
       "rotary microtome",
@@ -640,7 +652,10 @@ practicalData["prac-unit-1"] = {
         ]
       }
     ],
-    "img": "",
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Young_Pineal_Gland_Hematoxylin_and_Eosin_Staining_%2833496198538%29.jpg/960px-Young_Pineal_Gland_Hematoxylin_and_Eosin_Staining_%2833496198538%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imgCaption": "The pineal gland is about 8 mm in diameter, encased in a tightly adherent pia mater, divided into a number of connective tissues wrapped lobes. Small blood vessels may be visible in the septate spaces between the lobe...",
+    "imgCredit": "Berkshire Community College Bioscience Image Library · CC0",
+    "imgPage": "https://commons.wikimedia.org/wiki/File:Young_Pineal_Gland_Hematoxylin_and_Eosin_Staining_(33496198538).jpg",
     "tags": [
       "H&E staining",
       "haematoxylin",
@@ -785,7 +800,10 @@ practicalData["prac-unit-1"] = {
         ]
       }
     ],
-    "img": "",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/4/46/Fatty_change_liver_-_Lipid_steatosis_10X.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "imgCaption": "FATTY CHANGE LIVER: Hepatic parenchymal cell cytoplasm containing clear vacuoles containing fat of varying sizes, displacing the nucleus towards the periphery [H&amp;E stain10X]",
+    "imgCredit": "Department of Pathology, Calicut Medical College · CC BY-SA 4.0",
+    "imgPage": "https://commons.wikimedia.org/wiki/File:Fatty_change_liver_-_Lipid_steatosis_10X.jpg",
     "tags": [
       "slide examination",
       "fatty liver",
@@ -932,7 +950,10 @@ practicalData["prac-unit-2"] = {
         ]
       }
     ],
-    "img": "",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Aortic_valve_endocarditis_with_vegetation_E00121_%28CardioNetworks_ECHOpedia%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "imgCaption": "Title: Aortic valve endocarditis with vegetation Case Presentation: This patient had endocarditis with an aortic valve vegetation Description: Aortic valve regurgitation jet",
+    "imgCredit": "CardioNetworks: Secretariat · CC BY-SA 3.0",
+    "imgPage": "https://commons.wikimedia.org/wiki/File:Aortic_valve_endocarditis_with_vegetation_E00121_(CardioNetworks_ECHOpedia).jpg",
     "tags": [
       "systemic gross specimens",
       "TRP",
@@ -1052,7 +1073,10 @@ practicalData["prac-unit-2"] = {
         ]
       }
     ],
-    "img": "",
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Acute_pneumonia_-_i_--_low_mag.jpg/960px-Acute_pneumonia_-_i_--_low_mag.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imgCaption": "Micrograph showing acute pneumonia (bronchopneumonia). H&amp;E stain . Related images AP - low mag. AP - intermed. mag. AP - intermed. mag. AP - high mag. AP - low mag. AP - intermed. mag. AP - intermed. mag. AP - hig...",
+    "imgCredit": "Nephron · CC BY-SA 3.0",
+    "imgPage": "https://commons.wikimedia.org/wiki/File:Acute_pneumonia_-_i_--_low_mag.jpg",
     "tags": [
       "systemic histology",
       "cirrhosis",
@@ -1185,7 +1209,10 @@ practicalData["prac-unit-3"] = {
         ]
       }
     ],
-    "img": "",
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Invasive_cervical_squamous_cell_carcinoma_on_H%26E_histopathology_and_Ki-67_immunohistochemistry.jpg/960px-Invasive_cervical_squamous_cell_carcinoma_on_H%26E_histopathology_and_Ki-67_immunohistochemistry.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imgCaption": "Invasive cervical squamous cell carcinoma on H&amp;E histopathology and Ki-67 immunohistochemistry.",
+    "imgCredit": "Mikael Häggström , M.D. Author info - Reusing images - Conflic... · CC0",
+    "imgPage": "https://commons.wikimedia.org/wiki/File:Invasive_cervical_squamous_cell_carcinoma_on_H%26E_histopathology_and_Ki-67_immunohistochemistry.jpg",
     "tags": [
       "oncology",
       "tumours",
@@ -1321,7 +1348,10 @@ practicalData["prac-unit-3"] = {
         ]
       }
     ],
-    "img": "",
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Neubauer_improved_counting_chamber.jpg/960px-Neubauer_improved_counting_chamber.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imgCaption": "Photography of a Neubauer counting chamber (upper one) and Neubauer improved counting chamber (lower one)",
+    "imgCredit": "User:Alcibiades · Public domain",
+    "imgPage": "https://commons.wikimedia.org/wiki/File:Neubauer_improved_counting_chamber.jpg",
     "tags": [
       "haematology",
       "Sahli",
@@ -1440,7 +1470,10 @@ practicalData["prac-unit-3"] = {
         ]
       }
     ],
-    "img": "",
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Blood_smear_%28251_04%29_Bird.jpg/960px-Blood_smear_%28251_04%29_Bird.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imgCaption": "This image comes from the archive of Josef Reischig and is part of the 384 pictures kindly donated by the authorship heirs under CC BY SA 3.0 license as a part of Wikimedia Czech Republic 's GLAM initiative.",
+    "imgCredit": "Doc. RNDr. Josef Reischig, CSc. · CC BY-SA 3.0",
+    "imgPage": "https://commons.wikimedia.org/wiki/File:Blood_smear_(251_04)_Bird.jpg",
     "tags": [
       "avian haematology",
       "poultry blood",
@@ -1567,7 +1600,10 @@ practicalData["prac-unit-3"] = {
         ]
       }
     ],
-    "img": "",
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Urine_dipstick_reading_%2814834996677%29.jpg/960px-Urine_dipstick_reading_%2814834996677%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imgCaption": "Laboratory urine analysis",
+    "imgCredit": "Iqbal Osman1 from singapore · CC BY 2.0",
+    "imgPage": "https://commons.wikimedia.org/wiki/File:Urine_dipstick_reading_(14834996677).jpg",
     "tags": [
       "urinalysis",
       "Benedict test",
@@ -1677,7 +1713,10 @@ practicalData["prac-unit-3"] = {
         ]
       }
     ],
-    "img": "",
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Engraving%3B_Instruments_for_use_in_anatomical_dissection._Wellcome_L0001672.jpg/960px-Engraving%3B_Instruments_for_use_in_anatomical_dissection._Wellcome_L0001672.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imgCaption": "Instruments for use in anatomical dissection. Wellcome Images Keywords: instruments; Dissection",
+    "imgCredit": "Wikimedia Commons · CC BY 4.0",
+    "imgPage": "https://commons.wikimedia.org/wiki/File:Engraving;_Instruments_for_use_in_anatomical_dissection._Wellcome_L0001672.jpg",
     "tags": [
       "necropsy",
       "post-mortem",
@@ -1788,7 +1827,10 @@ practicalData["prac-unit-4"] = {
         ]
       }
     ],
-    "img": "",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/6/62/Esplenomegalia_i_hiperplasia_linfoide_folicular_reactiva._IMG_2865.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "imgCaption": "Esplenomegàlia i hiperplàsia linfoide folicular reactiva en un cas de malaltia immune.",
+    "imgCredit": "Amadalvarez · CC BY-SA 4.0",
+    "imgPage": "https://commons.wikimedia.org/wiki/File:Esplenomegalia_i_hiperplasia_linfoide_folicular_reactiva._IMG_2865.jpg",
     "tags": [
       "infectious necropsy",
       "septicaemia",
@@ -1942,7 +1984,10 @@ practicalData["prac-unit-4"] = {
         ]
       }
     ],
-    "img": "",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/9/93/Lung_-_Miliary_tuberculosis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "imgCaption": "Lung - Miliary tuberculosis Miliary tuberculosis can occur when tuberculous lung lesions erode pulmonary veins or when when extrapulmonary tuberculous lesions erode systemic veins.This results in hematogenous dissemin...",
+    "imgCredit": "Yale Rosen · CC BY-SA 2.0",
+    "imgPage": "https://commons.wikimedia.org/wiki/File:Lung_-_Miliary_tuberculosis.jpg",
     "tags": [
       "infectious specimens",
       "anthrax",
@@ -2068,7 +2113,10 @@ practicalData["prac-unit-4"] = {
         ]
       }
     ],
-    "img": "",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Histopathology_of_Negri_bodies_in_rabies_encephalitis.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "imgCaption": "Histopathology of Negri bodies in rabies encephalitis.",
+    "imgCredit": "Original by CDC/Dr. Daniel P. Perl. Annotation by Mikael Häggs... · CC0",
+    "imgPage": "https://commons.wikimedia.org/wiki/File:Histopathology_of_Negri_bodies_in_rabies_encephalitis.png",
     "tags": [
       "infectious slides",
       "Splendore-Hoeppli",
@@ -2186,7 +2234,10 @@ practicalData["prac-unit-4"] = {
         ]
       }
     ],
-    "img": "",
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Variety_of_Gram_positive_and_Negative_bacteria_in_Gram_stain_of_Sewage.jpg/960px-Variety_of_Gram_positive_and_Negative_bacteria_in_Gram_stain_of_Sewage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imgCaption": "Variety of Gram positive and Negative bacteria in Gram stain of Sewage",
+    "imgCredit": "Ajay Kumar Chaurasiya · CC BY-SA 4.0",
+    "imgPage": "https://commons.wikimedia.org/wiki/File:Variety_of_Gram_positive_and_Negative_bacteria_in_Gram_stain_of_Sewage.jpg",
     "tags": [
       "special stains",
       "Ziehl-Neelsen",
@@ -2294,7 +2345,10 @@ practicalData["prac-unit-4"] = {
         ]
       }
     ],
-    "img": "",
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/96-well_microplate.jpg/960px-96-well_microplate.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imgCaption": "A plastic 96-well microplate with an 8 × 12 well layout, commonly used for PCR, ELISA, and other high-throughput biological assays. Image taken from India.",
+    "imgCredit": "Gannu03 · CC BY-SA 4.0",
+    "imgPage": "https://commons.wikimedia.org/wiki/File:96-well_microplate.jpg",
     "tags": [
       "rapid diagnostic tests",
       "lateral flow",
@@ -2424,7 +2478,10 @@ practicalData["prac-unit-5"] = {
         ]
       }
     ],
-    "img": "",
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Didactic_model_of_a_chicken--FMVZ_USP-29.jpeg/960px-Didactic_model_of_a_chicken--FMVZ_USP-29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imgCaption": "Didactic model of a chicken. Gallus gallus domesticus Model for teaching anatomy, piece showing the syntopy of organs in the left side and on display at the Museum of Veterinary Anatomy, FMVZ USP. This file was publis...",
+    "imgCredit": "Wagner Souza e Silva · CC BY-SA 4.0",
+    "imgPage": "https://commons.wikimedia.org/wiki/File:Didactic_model_of_a_chicken--FMVZ_USP-29.jpeg",
     "tags": [
       "poultry necropsy",
       "avian post-mortem",
@@ -2536,7 +2593,10 @@ practicalData["prac-unit-5"] = {
         ]
       }
     ],
-    "img": "",
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Coccidi%C3%B4ze_sblarixhaedje_houf%C3%A8s_plomes.jpg/960px-Coccidi%C3%B4ze_sblarixhaedje_houf%C3%A8s_plomes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imgCaption": "Broiler with acute cecum coccidiosis : red feaces are visible in the background",
+    "imgCredit": "Lucyin · CC BY-SA 3.0",
+    "imgPage": "https://commons.wikimedia.org/wiki/File:Coccidi%C3%B4ze_sblarixhaedje_houf%C3%A8s_plomes.jpg",
     "tags": [
       "poultry PM report",
       "report writing",
@@ -2638,7 +2698,10 @@ practicalData["prac-unit-5"] = {
         ]
       }
     ],
-    "img": "",
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Viral_transport_medium.png/960px-Viral_transport_medium.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imgCaption": "Medium transmissionis materiae contagiosae",
+    "imgCredit": "Andreas Raether · CC BY-SA 4.0",
+    "imgPage": "https://commons.wikimedia.org/wiki/File:Viral_transport_medium.png",
     "tags": [
       "specimen collection",
       "poultry morbid material",
@@ -2762,7 +2825,10 @@ practicalData["prac-unit-5"] = {
         ]
       }
     ],
-    "img": "",
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Marek%27s_disease%2C_cutaneous%2C_broiler.jpg/960px-Marek%27s_disease%2C_cutaneous%2C_broiler.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imgCaption": "Marek's disease, cutaneous form, broiler (chicken)",
+    "imgCredit": "Roman Halouzka · CC BY-SA 3.0",
+    "imgPage": "https://commons.wikimedia.org/wiki/File:Marek%27s_disease,_cutaneous,_broiler.jpg",
     "tags": [
       "avian spotting",
       "Ranikhet",
@@ -2867,7 +2933,10 @@ practicalData["prac-unit-6"] = {
         ]
       }
     ],
-    "img": "",
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/SpragueDawleyRat.jpg/960px-SpragueDawleyRat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imgCaption": "Sprague Dawley rat",
+    "imgCredit": "Jean-Etienne Minh-Duy Poirrier · CC BY-SA 2.0",
+    "imgPage": "https://commons.wikimedia.org/wiki/File:SpragueDawleyRat.jpg",
     "tags": [
       "laboratory animals",
       "rodent necropsy",
@@ -2977,7 +3046,10 @@ practicalData["prac-unit-6"] = {
         ]
       }
     ],
-    "img": "",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Lead_poisoning_-_blood_film.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "imgCaption": "Image's description reads: \"Lead poisoning: Peripheral blood film from an anemic 53-year-old geophysicist who complained of fatigue and constipation. The blood film of his asymptomatic wife showed similar changes, but...",
+    "imgCredit": "Herbert L. Fred, MD and Hendrik A. van Dijk · CC BY 2.0",
+    "imgPage": "https://commons.wikimedia.org/wiki/File:Lead_poisoning_-_blood_film.jpg",
     "tags": [
       "wildlife pathology",
       "wildlife forensics",
@@ -3096,7 +3168,10 @@ practicalData["prac-unit-6"] = {
         ]
       }
     ],
-    "img": "",
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Itch_mite_%28247_32A%29.jpg/960px-Itch_mite_%28247_32A%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imgCaption": "This image comes from the archive of Josef Reischig and is part of the 384 pictures kindly donated by the authorship heirs under CC BY SA 3.0 license as a part of Wikimedia Czech Republic 's GLAM initiative.",
+    "imgCredit": "Doc. RNDr. Josef Reischig, CSc. · CC BY-SA 3.0",
+    "imgPage": "https://commons.wikimedia.org/wiki/File:Itch_mite_(247_32A).jpg",
     "tags": [
       "lab animal pathology",
       "wild animal pathology",

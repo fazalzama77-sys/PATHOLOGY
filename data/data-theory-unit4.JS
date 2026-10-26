@@ -138,7 +138,10 @@ theoryData["unit-4"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/e/e4/Foot_and_mouth_disease_in_mouth.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "Ruptured oral vesicle in a cow with Foot-and-mouth disease .",
+    imgCredit: "Unknown author Unknown author · Public domain",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Foot_and_mouth_disease_in_mouth.jpg",
     tags: ["FMD", "aphthovirus", "tiger heart", "rinderpest", "zebra striping", "morbillivirus", "malignant catarrhal fever", "OvHV-2", "vasculitis", "notifiable", "vesicular disease"]
   },
 
@@ -276,7 +279,10 @@ theoryData["unit-4"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/0/01/Bovine_Virus_Diarrhea_tongue_ulcers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "tongue lesions on confirmed BVD/MD case (mucosal disease form); case published by MAHIN, L., CHADLI, M., HAMIDI, M., WELLEMANS, G. in 1982 in Zentralblat für Veterinärmedizin B, 29 , 789-793 under title : \"Clinical Bo...",
+    imgCredit: "Lucien Mahin · CC BY-SA 3.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Bovine_Virus_Diarrhea_tongue_ulcers.jpg",
     tags: ["blue tongue", "orbivirus", "culicoides", "coronitis", "IBR", "BoHV-1", "latency", "Cowdry type A", "BVD", "pestivirus", "persistent infection", "mucosal disease", "PPR", "goat plague"]
   },
 
@@ -402,7 +408,10 @@ theoryData["unit-4"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/e/e2/Equine_infectious_anemia_virus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "Equine infectious anemia virus",
+    imgCredit: "Wikimedia Commons · Public domain",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Equine_infectious_anemia_virus.jpg",
     tags: ["EIA", "swamp fever", "Coggins test", "AGID", "lentivirus", "equine influenza", "H3N8", "antigenic drift", "EVA", "arteritis", "stallion carrier", "EHV-1", "abortion storm", "myeloencephalopathy"]
   },
 
@@ -529,7 +538,10 @@ theoryData["unit-4"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Influenza_A_-_late_passage.jpg/960px-Influenza_A_-_late_passage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Transmission electron micrograph of influenza A virus, late passage.",
+    imgCredit: "Photo Credit: Content Providers(s): CDC/ Dr. Erskine Palmer · Public domain",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Influenza_A_-_late_passage.jpg",
     tags: ["classical swine fever", "hog cholera", "pestivirus", "turkey-egg kidney", "splenic infarct", "button ulcer", "African swine fever", "swine influenza", "mixing vessel", "antigenic shift", "reassortment"]
   },
 
@@ -691,7 +703,10 @@ theoryData["unit-4"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/5/53/Rabies_negri_bodies_brain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "Histopathology of rabies, brain. Characteristic Negri bodies are present within a Purkinje cell of the cerebellum in this patient who died of rabies.",
+    imgCredit: "CDC/Dr. Makonnen Fekadu · Public domain",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Rabies_negri_bodies_brain.jpg",
     tags: ["rabies", "Negri body", "lyssavirus", "dFAT", "10-day rule", "distemper", "hard pad", "myoclonus", "demyelination", "infectious canine hepatitis", "blue eye", "CAV-1", "parvovirus", "crypt necrosis", "leukopenia"]
   },
 
@@ -824,7 +839,10 @@ theoryData["unit-4"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/3/36/FIPHisto1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "FIPHisto1",
+    imgCredit: "Wikimedia Commons · Attribution",
+    imgPage: "https://commons.wikimedia.org/wiki/File:FIPHisto1.jpg",
     tags: ["feline panleukopenia", "parvovirus", "crypt necrosis", "leukopenia", "cerebellar hypoplasia", "thymic atrophy", "ground-glass serosa", "bleach", "S phase", "barrier nursing"]
   },
 
@@ -956,7 +974,10 @@ theoryData["unit-4"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Jaagsiekte.jpg/960px-Jaagsiekte.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Mab staining of JSRV-infected sheep lung tumors from around the world. Sheep numbers and countries of origin are: A, 96238 from South Africa; B, 95234 from South Africa; C, 92K3 from Kenya; D, 81R16 from Peru; E and F...",
+    imgCredit: "see above · CC BY-SA 3.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Jaagsiekte.jpg",
     tags: ["maedi", "visna", "lentivirus", "interstitial pneumonia", "lymphoid follicles", "hard bag", "jaagziekte", "JSRV", "pulmonary adenocarcinoma", "wheelbarrow test", "type II pneumocyte", "slow virus"]
   },
 
@@ -1107,7 +1128,10 @@ theoryData["unit-4"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Lumpy_Skin_Disease_01.jpg/960px-Lumpy_Skin_Disease_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Cattle affected by lumpy skin disease",
+    imgCredit: "Pavanaja · CC BY-SA 4.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Lumpy_Skin_Disease_01.jpg",
     tags: ["poxvirus", "intracytoplasmic inclusion", "Bollinger body", "sheep pox", "goat pox", "capripoxvirus", "lumpy skin disease", "buffalo pox", "orf", "contagious ecthyma", "parapoxvirus", "pseudocow pox", "zoonosis"]
   },
 
@@ -1237,7 +1261,10 @@ theoryData["unit-4"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/1/1a/Vesicular_stomatitis_virus_%28VSV%29_EM_18_lores.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "ID#: 5611 Description: This electron micrograph depicts the vesiculovirus responsible for vesicular stomatitis (VS) in horses, cattle and pigs. As a member of the Rhabdoviridae family of viruses, you’ll note the morph...",
+    imgCredit: "Centers for Disease Control and Prevention · Public domain",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Vesicular_stomatitis_virus_(VSV)_EM_18_lores.jpg",
     tags: ["vesicular stomatitis", "vesiculovirus", "vesicular exanthema", "calicivirus", "swine vesicular disease", "equine encephalomyelitis", "alphavirus", "EEE", "WEE", "VEE", "dead-end host", "amplifying host", "Japanese encephalitis", "polioencephalomyelitis"]
   },
 
@@ -1387,7 +1414,10 @@ theoryData["unit-4"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Electron_micrograph_of_two_coronaviruses.jpg/960px-Electron_micrograph_of_two_coronaviruses.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Electron micrograph of two coronaviruses",
+    imgCredit: "Dr Graham Beards · CC BY-SA 4.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Electron_micrograph_of_two_coronaviruses.jpg",
     tags: ["rotavirus", "coronavirus", "calf scour", "villous atrophy", "NSP4", "oral rehydration", "SGLT1", "metabolic acidosis", "TGE", "winter dysentery", "FIP", "lactogenic immunity", "colostrum"]
   },
 
@@ -1544,7 +1574,10 @@ theoryData["unit-4"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/2/23/Histology_bse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "This micrograph of brain tissue reveals the cytoarchitectural histopathologic changes found in bovine spongiform encephalopathy . The presence of vacuoles, i.e. microscopic “holes” in the gray matter, gives the brain ...",
+    imgCredit: "Dr. Al Jenny · Public domain",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Histology_bse.jpg",
     tags: ["prion", "PrP", "spongiform", "scrapie", "nibble reflex", "BSE", "mad cow disease", "FSE", "PRNP", "obex", "specified risk material", "vCJD", "no inflammation"]
   },
 
@@ -1711,7 +1744,10 @@ theoryData["unit-4"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/3/3a/Ziehl_Neelsen_stain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "microscopic image of bacteria stained by Ziehl Neelsen staining. Magnification:1,000 Pink: acid-fast bacteria ( Mycobacterium bovis BCG) Blue: non-acid-fast bacteria ( Streptococcus mutans , for counter stained)",
+    imgCredit: "Y tambe · CC BY-SA 3.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Ziehl_Neelsen_stain.jpg",
     tags: ["tuberculosis", "Mycobacterium bovis", "Ziehl-Neelsen", "acid-fast", "tubercle", "Langhans giant cell", "caseous necrosis", "pearl disease", "tuberculin test", "type IV hypersensitivity", "anergy", "Johne's disease", "paratuberculosis", "corrugated ileum", "bottle jaw"]
   },
 
@@ -1841,7 +1877,10 @@ theoryData["unit-4"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Actinomycosis_-_Gram_stain_%285285453121%29.jpg/960px-Actinomycosis_-_Gram_stain_%285285453121%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Thin Gram positive filamentous organisms seen at the periphery of the colony",
+    imgCredit: "Yale Rosen from USA · CC BY-SA 2.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Actinomycosis_-_Gram_stain_(5285453121).jpg",
     tags: ["actinomycosis", "lumpy jaw", "Actinomyces bovis", "actinobacillosis", "wooden tongue", "Actinobacillus lignieresii", "sulphur granule", "Splendore-Hoeppli", "pyogranuloma", "osteomyelitis", "sodium iodide", "iodism", "botryomycosis", "nocardiosis"]
   },
 
@@ -2020,7 +2059,10 @@ theoryData["unit-4"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/7/79/Gram_Stain_Anthrax.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "Gram Stain Anthrax",
+    imgCredit: "Wikimedia Commons · Public domain",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Gram_Stain_Anthrax.jpg",
     tags: ["anthrax", "Bacillus anthracis", "spore", "splenic fever", "M'Fadyean reaction", "polychrome methylene blue", "protective antigen", "lethal factor", "oedema factor", "Sterne vaccine", "malignant pustule", "woolsorter's disease", "notifiable", "zoonosis"]
   },
 
@@ -2212,7 +2254,10 @@ theoryData["unit-4"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/2/27/Clostridium_difficile_colonies.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "This photograph depicts Clostridium difficile colonies after 48hrs growth on a blood agar plate; Magnified 4.8X. C. difficile , an anaerobic gram-positive rod, is the most frequently identified cause of antibiotic-ass...",
+    imgCredit: "Content Providers(s): CDC/Dr. Holdeman · Public domain",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Clostridium_difficile_colonies.png",
     tags: ["clostridium", "blackquarter", "C. chauvoei", "malignant oedema", "C. septicum", "black disease", "liver fluke", "bacillary haemoglobinuria", "enterotoxaemia", "pulpy kidney", "epsilon toxin", "braxy", "tetanus", "tetanospasmin", "botulism", "flaccid paralysis", "lamsiekte"]
   },
 
@@ -2387,7 +2432,10 @@ theoryData["unit-4"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Gram_positive_cocci_in_chains_of_Streptococcus_agalactiae.jpg/960px-Gram_positive_cocci_in_chains_of_Streptococcus_agalactiae.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Unlike Staphylococcus species that form clusters, Gemella morbillorum usually arranges itself in chains or pairs. This is due to the way the cocci divide and remain attached to each other in a line. The length of thes...",
+    imgCredit: "Ajay Kumar Chaurasiya · CC BY 4.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Gram_positive_cocci_in_chains_of_Streptococcus_agalactiae.jpg",
     tags: ["streptococcus", "strangles", "S. equi", "guttural pouch", "chondroid", "bastard strangles", "purpura haemorrhagica", "S. agalactiae", "S. suis", "staphylococcus", "coagulase", "alpha toxin", "gangrenous mastitis", "botryomycosis", "greasy pig disease", "enterotoxin"]
   },
 
@@ -2537,7 +2585,10 @@ theoryData["unit-4"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Leptospira_interrogans_strain_RGA_01.png/960px-Leptospira_interrogans_strain_RGA_01.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Electronic image of Leptospira interrogans",
+    imgCredit: "Obtained from the CDC Public Health Image Library . Image cred... · Public domain",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Leptospira_interrogans_strain_RGA_01.png",
     tags: ["glanders", "farcy", "Burkholderia mallei", "mallein test", "Strauss reaction", "notifiable", "pasteurellosis", "haemorrhagic septicaemia", "bipolar staining", "monsoon", "Mannheimia", "shipping fever", "leptospirosis", "maintenance host", "milk drop syndrome", "white-spotted kidney", "moon blindness", "zoonosis"]
   },
 
@@ -2718,7 +2769,10 @@ theoryData["unit-4"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/7/73/Brucella.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "Brucella abortus cola em rosa pela coloração de Gram.",
+    imgCredit: "Anna Carla Silva Cunha · CC BY-SA 4.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Brucella.jpg",
     tags: ["listeriosis", "circling disease", "silage", "trigeminal nerve", "microabscess", "cold enrichment", "swine erysipelas", "diamond skin", "Erysipelothrix", "vegetative endocarditis", "erysipeloid", "brucellosis", "Brucella abortus", "erythritol", "Rose Bengal test", "milk ring test", "Strain 19", "RB51", "undulant fever"]
   },
 
@@ -2870,7 +2924,10 @@ theoryData["unit-4"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/5/56/Corynebacterium.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "Phase contrast of \"Corynebacterium glutamicum\"",
+    imgCredit: "No machine-readable author provided. Biopolako assumed (based ... · Public domain",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Corynebacterium.jpg",
     tags: ["caseous lymphadenitis", "pseudotuberculosis", "Corynebacterium pseudotuberculosis", "phospholipase D", "onion ring", "pyogranuloma", "thin ewe syndrome", "intracellular", "shearing", "ulcerative lymphangitis", "not acid-fast"]
   },
 
@@ -3017,7 +3074,10 @@ theoryData["unit-4"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/SalmonellaNIAID.jpg/960px-SalmonellaNIAID.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Color-enhanced scanning electron micrograph showing Salmonella Typhimurium (red) invading cultured human cells Credit: Rocky Mountain Laboratories, NIAID, NIH All the images, except specified ones from the World Healt...",
+    imgCredit: "Wikimedia Commons · Public domain",
+    imgPage: "https://commons.wikimedia.org/wiki/File:SalmonellaNIAID.jpg",
     tags: ["campylobacteriosis", "vibriosis", "repeat breeder", "preputial crypt", "salmonellosis", "paratyphoid nodule", "button ulcer", "paint-brush haemorrhage", "endotoxin", "colibacillosis", "ETEC", "K99", "oedema disease", "Shiga toxin 2e", "necrobacillosis", "Fusobacterium necrophorum", "calf diphtheria", "foot rot", "liver abscess"]
   },
 
@@ -3153,7 +3213,10 @@ theoryData["unit-4"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Fibrinous_pleuritis_%283679908522%29.jpg/960px-Fibrinous_pleuritis_%283679908522%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Fibrinous pleuritis",
+    imgCredit: "Yale Rosen from USA · CC BY-SA 2.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Fibrinous_pleuritis_(3679908522).jpg",
     tags: ["mycoplasma", "no cell wall", "fried egg colony", "CBPP", "marbling", "sequestrum", "interlobular oedema", "CCPP", "MAKePS", "enzootic pneumonia", "Mycoplasma hyopneumoniae", "deciliation", "porcine respiratory disease complex", "cranioventral"]
   },
 
@@ -3303,7 +3366,10 @@ theoryData["unit-4"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/d/d7/Anaplasma-centrale-cattle-blood-Giemsa-stain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "Pathogen transmitted to domestic animals by insects",
+    imgCredit: "Alan R Walker · CC BY-SA 3.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Anaplasma-centrale-cattle-blood-Giemsa-stain.jpg",
     tags: ["chlamydia", "elementary body", "reticulate body", "enzootic abortion of ewes", "psittacosis", "Q fever", "Coxiella burnetii", "anaplasmosis", "Anaplasma marginale", "extravascular haemolysis", "endemic stability", "ehrlichiosis", "morula", "tropical canine pancytopenia", "thrombocytopenia", "Rhipicephalus sanguineus"]
   },
 
@@ -3462,7 +3528,10 @@ theoryData["unit-4"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Dieles_vea.jpg/960px-Dieles_vea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "dieles a on vea.",
+    imgCredit: "Lucyin · CC0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Dieles_vea.jpg",
     tags: ["ringworm", "dermatophytosis", "Trichophyton verrucosum", "Microsporum canis", "keratinase", "Adamson fringe", "kerion", "favus", "scutula", "KOH mount", "Wood lamp", "PAS", "GMS", "ectothrix", "zoonosis"]
   },
 
@@ -3611,7 +3680,10 @@ theoryData["unit-4"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/a/a3/Antonio_e_Biagio_e_Cesare_Arrigo_Aspergillus_fumigatus_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "Microscopy image of aspergillus fumigatus",
+    imgCredit: "Ufficio Comunicazione, Azienda Ospedaliera SS. Antonio e Biagi... · CC BY-SA 4.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Antonio_e_Biagio_e_Cesare_Arrigo_Aspergillus_fumigatus_01.jpg",
     tags: ["deep mycoses", "aspergillosis", "angioinvasive", "mycotic abortion", "guttural pouch mycosis", "zygomycosis", "non-septate", "histoplasmosis", "dimorphic", "epizootic lymphangitis", "cryptococcosis", "mucicarmine", "Roman nose", "rhinosporidiosis", "sporangia", "candidiasis", "pseudohyphae", "GMS", "PAS"]
   },
 
@@ -3776,7 +3848,10 @@ theoryData["unit-4"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Aspergillus_flavus.jpg/960px-Aspergillus_flavus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "OLYMPUS DIGITAL CAMERA",
+    imgCredit: "Medmyco · CC BY-SA 4.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Aspergillus_flavus.jpg",
     tags: ["mycotoxicosis", "aflatoxin", "Aspergillus flavus", "groundnut cake", "megalocytosis", "bile duct proliferation", "hepatocellular carcinoma", "aflatoxin M1", "ochratoxin", "porcine nephropathy", "trichothecene", "T-2 toxin", "vomitoxin", "Degnala disease", "paddy straw", "selenium", "ergotism", "Claviceps", "sclerotium", "dry gangrene", "agalactia"]
   },
 
@@ -3921,7 +3996,10 @@ theoryData["unit-4"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Parasite140104-fig2_Surra_%28Trypanosoma_evansi_infection%29_in_a_Tunisian_dog.png/960px-Parasite140104-fig2_Surra_%28Trypanosoma_evansi_infection%29_in_a_Tunisian_dog.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Trypanosoma evansi , dog, Giemsa-stained blood smear. Figure 2 from paper.",
+    imgCredit: "Mohamed Ridha Rjeibi, Taoufik Ben Hamida, Zara Dalgatova, Tare... · CC BY 4.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Parasite140104-fig2_Surra_(Trypanosoma_evansi_infection)_in_a_Tunisian_dog.png",
     tags: ["babesiosis", "red water", "Babesia bigemina", "Babesia bovis", "cerebral babesiosis", "transovarial", "theileriosis", "Theileria annulata", "Koch blue body", "Hyalomma", "transstadial", "abomasal ulcer", "pseudo-infarct", "trypanosomosis", "surra", "Trypanosoma evansi", "antigenic variation", "VSG", "buffy coat", "endemic stability"]
   },
 
@@ -4029,7 +4107,10 @@ theoryData["unit-4"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Fasciola-hepatica-adults.jpg/960px-Fasciola-hepatica-adults.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Liver flukes, trematode parasites of sheep, Fasciola hepatica, adults.",
+    imgCredit: "Alan R Walker · CC BY-SA 3.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Fasciola-hepatica-adults.jpg",
     tags: ["fasciolosis", "Fasciola gigantica", "Lymnaea", "metacercaria", "traumatic hepatitis", "pipe-stem liver", "cholangitis", "bottle jaw", "black disease", "Clostridium novyi", "amphistomiasis", "Paramphistomum", "immature fluke", "duodenum"]
   },
 
@@ -4165,7 +4246,10 @@ theoryData["unit-4"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Haemonchus_contortus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "Haemonchus contortus",
+    imgCredit: "Wikimedia Commons · Public domain",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Haemonchus_contortus.jpg",
     tags: ["haemonchosis", "barber pole worm", "bottle jaw", "FAMACHA", "refugia", "hypobiosis", "ostertagiosis", "morocco leather", "plasma pepsinogen", "Strongylus vulgaris", "verminous arteritis", "ascariasis", "milk spots", "Toxocara vitulorum", "hookworm", "larva migrans", "spirocercosis", "osteosarcoma", "Dirofilaria", "Setaria", "kumri"]
   },
 
@@ -4279,7 +4363,10 @@ theoryData["unit-4"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Vuitton_et_al_-_International_consensus_on_terminology_-_parasite200043-fig3.png/960px-Vuitton_et_al_-_International_consensus_on_terminology_-_parasite200043-fig3.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Figure 3 of the paper “AORC” nomenclature framework for CE surgery. (A) (top) – Vocabulary and acronyms. AORC: acronym for Approach, Opening, Resection and Completeness; CE: cystic echinococcosis; OC: opened cyst; NOC...",
+    imgCredit: "Dominique A. Vuitton, Donald P. McManus, Thomas Romig, Michael... · CC BY 4.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Vuitton_et_al_-_International_consensus_on_terminology_-_parasite200043-fig3.png",
     tags: ["cestode", "hydatid cyst", "Echinococcus granulosus", "hydatid sand", "brood capsule", "anaphylaxis", "Taenia saginata", "Cysticercus bovis", "beef measles", "Taenia solium", "neurocysticercosis", "coenurosis", "gid", "Coenurus cerebralis", "Cysticercus tenuicollis", "Moniezia", "Dipylidium"]
   },
 
@@ -4404,7 +4491,10 @@ theoryData["unit-4"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/3/39/Toxoplasma_gondii_tachy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "Toxoplasma gondii tachyzoites , from de:Bild:T gondii tachy.jpg , originally from the DPDx Parasite Image Library , image entry . Description: \"Toxoplasma gondii tachyzoites, stained with Giemsa, from a smear of perit...",
+    imgCredit: "DPDx Image Library · Public domain",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Toxoplasma_gondii_tachy.jpg",
     tags: ["coccidiosis", "Eimeria", "schizogony", "tenesmus", "rectal prolapse", "toxoplasmosis", "Toxoplasma gondii", "tachyzoite", "bradyzoite", "tissue cyst", "cotyledon", "zoonosis", "cryptosporidiosis", "brush border", "modified Ziehl-Neelsen", "chlorine resistant", "villous atrophy"]
   },
 
@@ -4536,7 +4626,10 @@ theoryData["unit-4"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/4/46/Fatty_change_liver_-_Lipid_steatosis_10X.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "FATTY CHANGE LIVER: Hepatic parenchymal cell cytoplasm containing clear vacuoles containing fat of varying sizes, displacing the nucleus towards the periphery [H&amp;E stain10X]",
+    imgCredit: "Department of Pathology, Calicut Medical College · CC BY-SA 4.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Fatty_change_liver_-_Lipid_steatosis_10X.jpg",
     tags: ["grain overload", "lactic acidosis", "Streptococcus bovis", "rumenitis", "liver abscess", "laminitis", "ketosis", "acetonaemia", "pregnancy toxaemia", "oxaloacetate", "ketone bodies", "fatty liver", "Sudan III", "protein deficiency", "bottle jaw", "ammonia toxicity", "steatitis", "fat necrosis"]
   },
 
@@ -4666,7 +4759,10 @@ theoryData["unit-4"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/1/1e/Agnea_blank%C3%A8s_tch%C3%A5s_djus_cost%C3%A9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "Maladeye des blankès tchårs a on ptit bedot",
+    imgCredit: "Lucyin · CC BY-SA 4.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Agnea_blank%C3%A8s_tch%C3%A5s_djus_cost%C3%A9.jpg",
     tags: ["rickets", "osteomalacia", "rachitic rosary", "fibrous osteodystrophy", "big head", "hypomagnesaemic tetany", "copper deficiency", "sway back", "steely wool", "molybdenum", "selenium", "white muscle disease", "glutathione peroxidase", "goitre", "cobalt", "parakeratosis", "vitamin A", "squamous metaplasia", "metastatic calcification", "polioencephalomalacia", "thiaminase"]
   },
 
@@ -4795,7 +4891,10 @@ theoryData["unit-4"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/3/36/Touma_bacalciomrece_berbis.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "hypocalcemia in a ewe",
+    imgCredit: "Lucyin · CC BY-SA 3.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Touma_bacalciomrece_berbis.JPG",
     tags: ["metabolic disease", "production disease", "pregnancy toxaemia", "twin lamb disease", "post-parturient haemoglobinuria", "hypophosphataemia", "hypomagnesaemic tetany", "grass tetany", "vitreous humour", "azoturia", "Monday morning disease", "myoglobinuria", "Zenker degeneration", "sway back", "enzootic ataxia", "pica", "osteophagia", "botulism"]
   },
 
@@ -4938,7 +5037,10 @@ theoryData["unit-4"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/8/87/Cabot_ring_and_basophilic_stippling.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "Cabot ring and basophilic stippling are seen in the image. Cabot rings are thin, threadlike, red to violet rings or \"figure of 8\" shaped inclusions in red blood cells. They are remnants of the mitotic spindle, and can...",
+    imgCredit: "Dr. Roshan Nasimudeen · CC BY-SA 4.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Cabot_ring_and_basophilic_stippling.jpg",
     tags: ["heavy metal", "sulphydryl", "arsenic", "haemorrhagic gastroenteritis", "copper poisoning", "gunmetal kidney", "haemolytic crisis", "lead poisoning", "basophilic stippling", "laminar cortical necrosis", "acid-fast inclusion", "mercury", "organomercurial", "cadmium", "metallothionein"]
   },
 
@@ -5071,7 +5173,10 @@ theoryData["unit-4"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Dental_Flurosis_%28teeth_with_brown_stains%29.jpg/960px-Dental_Flurosis_%28teeth_with_brown_stains%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Dental Flurosis (teeth with brown stains)",
+    imgCredit: "Nizil Shah · CC BY-SA 4.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Dental_Flurosis_(teeth_with_brown_stains).jpg",
     tags: ["strychnine", "glycine", "opisthotonus", "nitrate", "nitrite", "methaemoglobin", "chocolate-brown blood", "cyanide", "dhurrin", "cytochrome oxidase", "cherry-red blood", "histotoxic anoxia", "fluorosis", "mottled teeth", "exostoses", "selenosis", "alkali disease", "oxalate", "polarised light", "birefringent"]
   },
 
@@ -5191,7 +5296,10 @@ theoryData["unit-4"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/e/e7/Irreversible_Inhibition.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "ChemDraw dipiction of inhibition of acetylcholinesterase by a generic Organophosphate",
+    imgCredit: "Aparadys · CC BY-SA 3.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Irreversible_Inhibition.png",
     tags: ["organophosphate", "carbamate", "acetylcholinesterase", "SLUDGE", "miosis", "ageing", "OPIDN", "organochlorine", "DDT", "endosulfan", "bioaccumulation", "body fat", "pyrethroid", "permethrin", "glucuronyl transferase", "cat", "warfarin", "vitamin K", "zinc phosphide", "phosphine", "amitraz"]
   },
 
@@ -5344,7 +5452,10 @@ theoryData["unit-4"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/%D0%9F%D1%80%D0%BE%D0%B2%D0%BE%D0%B4%D1%8F%D1%89%D0%B8%D0%B9_%D0%BF%D1%83%D1%87%D0%BE%D0%BA_Pteridium_aquilinum.JPG/960px-%D0%9F%D1%80%D0%BE%D0%B2%D0%BE%D0%B4%D1%8F%D1%89%D0%B8%D0%B9_%D0%BF%D1%83%D1%87%D0%BE%D0%BA_Pteridium_aquilinum.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Amphycribral Vascular Bundle of a Fern Rhizome - Pterídium aquilínum Big cells with red cell wall are tracheids. They serve in the transport of water. Around the xylem there are xylem parenchyma and phloem cells. A si...",
+    imgCredit: "Anatoly Mikhaltsov · CC BY-SA 4.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:%D0%9F%D1%80%D0%BE%D0%B2%D0%BE%D0%B4%D1%8F%D1%89%D0%B8%D0%B9_%D0%BF%D1%83%D1%87%D0%BE%D0%BA_Pteridium_aquilinum.JPG",
     tags: ["bracken fern", "ptaquiloside", "radiomimetic", "enzootic haematuria", "bladder tumour", "bright blindness", "thiaminase", "gossypol", "cottonseed cake", "myocardial necrosis", "Abrus precatorius", "abrin", "ribosome-inactivating", "sui method", "medico-legal", "lantana", "lantadene", "phylloerythrin", "photosensitisation", "cholestasis"]
   }
 

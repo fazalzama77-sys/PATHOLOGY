@@ -161,7 +161,10 @@ theoryData["unit-1"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Bone_marrow_core_biopsy_microscopy_%28trephine%29_H%26E_panorama_by_gabriel_caponetti.jpg/960px-Bone_marrow_core_biopsy_microscopy_%28trephine%29_H%26E_panorama_by_gabriel_caponetti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Section of bone marrow core biopsy as seen under the microscope. Stained with H&amp;E. Author: Gabriel C. Caponetti, MD. http://en.wikipedia.org/wiki/Bone_marrow_examination",
+    imgCredit: "Gabriel Caponetti · CC BY 3.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Bone_marrow_core_biopsy_microscopy_(trephine)_H%26E_panorama_by_gabriel_caponetti.jpg",
     tags: ["introduction", "definition", "aetiology", "pathogenesis", "terminology", "nomenclature", "scope", "Koch's postulates"]
   },
 
@@ -312,7 +315,10 @@ theoryData["unit-1"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Direct_and_indirect_DNA_damage_by_ionizing_radiation.png/960px-Direct_and_indirect_DNA_damage_by_ionizing_radiation.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Direct and indirect DNA damage by ionizing radiation",
+    imgCredit: "Wonhee Hur 1 andSeung Kew Yoon · CC BY 4.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Direct_and_indirect_DNA_damage_by_ionizing_radiation.png",
     tags: ["aetiology", "intrinsic", "extrinsic", "genetic", "congenital", "hereditary", "stress", "BLAD", "freemartin", "multifactorial"]
   },
 
@@ -466,7 +472,10 @@ theoryData["unit-1"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Liver._chronic_passive_congestion.jpg/960px-Liver._chronic_passive_congestion.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "patient with tricuspid incompetence, died from cardiac failure.",
+    imgCredit: "Narraburra · CC0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Liver._chronic_passive_congestion.jpg",
     tags: ["hyperaemia", "congestion", "haemorrhage", "nutmeg liver", "heart failure cells", "petechiae", "haemosiderin", "diapedesis"]
   },
 
@@ -610,7 +619,10 @@ theoryData["unit-1"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/0/0a/Histopathology_of_pulmonary_edema.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "Histopathology of pulmonary edema",
+    imgCredit: "Kristine Jeffers, Brit Long · CC BY 4.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Histopathology_of_pulmonary_edema.jpg",
     tags: ["oedema", "ascites", "anasarca", "transudate", "exudate", "Starling forces", "bottle jaw", "pulmonary oedema", "hypoalbuminaemia"]
   },
 
@@ -785,7 +797,10 @@ theoryData["unit-1"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Renal_cortical_infarction_showing_coagulative_necrosis_40X.jpg/960px-Renal_cortical_infarction_showing_coagulative_necrosis_40X.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Section from infarcted area of kidney showing necrotic tubules and glomeruli having preserved cellular outlines with loss of nuclei. [H&amp;E stain, 40X]",
+    imgCredit: "Department of Pathology, Calicut Medical College · CC BY-SA 4.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Renal_cortical_infarction_showing_coagulative_necrosis_40X.jpg",
     tags: ["thrombosis", "Virchow triad", "lines of Zahn", "embolism", "infarction", "red infarct", "white infarct", "post-mortem clot"]
   },
 
@@ -920,7 +935,10 @@ theoryData["unit-1"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/4/46/Fatty_change_liver_-_Lipid_steatosis_10X.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "FATTY CHANGE LIVER: Hepatic parenchymal cell cytoplasm containing clear vacuoles containing fat of varying sizes, displacing the nucleus towards the periphery [H&amp;E stain10X]",
+    imgCredit: "Department of Pathology, Calicut Medical College · CC BY-SA 4.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Fatty_change_liver_-_Lipid_steatosis_10X.jpg",
     tags: ["fatty change", "steatosis", "ketosis", "hepatic lipidosis", "aflatoxin", "glycogen", "steroid hepatopathy", "Sudan", "PAS"]
   },
 
@@ -1034,7 +1052,10 @@ theoryData["unit-1"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/0/0a/Histopathology_of_lichen_amyloidosis_with_Congo_red.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "Histopathology of lichen amyloidosis , with subepithelial Congo red -positive deposits.",
+    imgCredit: "Georgi Tchernev, Anastasiya Atanasova Chokoeva, Uwe Wollina · CC BY 4.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Histopathology_of_lichen_amyloidosis_with_Congo_red.jpg",
     tags: ["amyloidosis", "Congo red", "apple-green birefringence", "serum amyloid A", "sago spleen", "lardaceous spleen", "nephrotic syndrome", "space of Disse"]
   },
 
@@ -1187,7 +1208,10 @@ theoryData["unit-1"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Ballooning_degeneration_high_mag_cropped_annotated.jpg/960px-Ballooning_degeneration_high_mag_cropped_annotated.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "High magnification micrograph of ballooning degeneration of hepatocytes in steatohepatitis . Liver biopsy . Trichrome stain . In later stages of cell death, cells (undergoing ballooning degeneration) contract/shrink a...",
+    imgCredit: "Nephron · CC BY-SA 3.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Ballooning_degeneration_high_mag_cropped_annotated.jpg",
     tags: ["cell injury", "cloudy swelling", "hydropic degeneration", "hyaline", "Zenker", "free radicals", "ATP depletion", "reperfusion injury", "degeneration"]
   },
 
@@ -1330,7 +1354,10 @@ theoryData["unit-1"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Caseating_granuloma_-_Tuberculous_lymph_node.jpg/960px-Caseating_granuloma_-_Tuberculous_lymph_node.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Central necrosis can e seen",
+    imgCredit: "Sameem Arif · CC BY-SA 4.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Caseating_granuloma_-_Tuberculous_lymph_node.jpg",
     tags: ["necrosis", "pyknosis", "karyorrhexis", "karyolysis", "coagulative", "liquefactive", "caseous", "fat necrosis", "saponification", "fibrinoid"]
   },
 
@@ -1470,7 +1497,10 @@ theoryData["unit-1"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Sarcoidosis_-_Apoptotic_bodies_%286200975751%29.jpg/960px-Sarcoidosis_-_Apoptotic_bodies_%286200975751%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Pyknotic nuclei of epithelioid cells and possibly lymphocytes , called apoptotic bodies, appear to be the earliest mainfestation of necrosis in sarcoid granulomas. They are often seen in association with granular necr...",
+    imgCredit: "Yale Rosen from USA · CC BY-SA 2.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Sarcoidosis_-_Apoptotic_bodies_(6200975751).jpg",
     tags: ["apoptosis", "caspases", "Bcl-2", "cytochrome c", "Fas", "DNA ladder", "Councilman body", "autolysis", "post-mortem change", "rigor mortis"]
   },
 
@@ -1592,7 +1622,10 @@ theoryData["unit-1"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Acral_gangrene_due_to_plague.jpg/960px-Acral_gangrene_due_to_plague.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Right hand of a plague patient displaying acral gangrene. Gangrene is one of the manifestations of plague.",
+    imgCredit: "Photo Credit: Content Providers(s): CDC Original uploaderL M12... · Public domain",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Acral_gangrene_due_to_plague.jpg",
     tags: ["gangrene", "dry gangrene", "moist gangrene", "gas gangrene", "blackleg", "malignant oedema", "ergot", "clostridia", "gangrenous mastitis"]
   },
 
@@ -1726,7 +1759,10 @@ theoryData["unit-1"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/EIPH_hemosiderin_content_in_alveolar_macrophages.jpg/960px-EIPH_hemosiderin_content_in_alveolar_macrophages.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "According to the scoring system by Doucet and Viel [ 1 ] macrophages have to be classified into 5 discrete grades. (a) Grade 0. (b) Borderline between Grades 0 and 1. (c) Grade 1. (d) Borderline between Grades 1 and 2...",
+    imgCredit: "Bertram, C. A., Marzahl, C., Bartel, A., Stayt, J., Bonsembian... · CC BY 4.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:EIPH_hemosiderin_content_in_alveolar_macrophages.jpg",
     tags: ["pigments", "haemosiderin", "Perls", "bilirubin", "jaundice", "icterus", "melanin", "lipofuscin", "anthracosis", "porphyria", "ceroid"]
   },
 
@@ -1848,7 +1884,10 @@ theoryData["unit-1"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Psammoma_bodies.jpg/960px-Psammoma_bodies.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Psammoma bodies .form of dystrophic calcification. It can be seen in papillary carcinoma thyroid, serous papillary cystadenoma, cystadenoca of ovary, endometrial adenoca,pleural mesothelioma,psammoma variant of mening...",
+    imgCredit: "Dr. Roshan Nasimudeen · CC BY-SA 3.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Psammoma_bodies.jpg",
     tags: ["calcification", "dystrophic", "metastatic", "hypercalcaemia", "von Kossa", "alizarin red", "enzootic calcinosis", "nephrocalcinosis", "gout"]
   },
 
@@ -1980,7 +2019,10 @@ theoryData["unit-1"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/LantanaFlowerLeaves.jpg/960px-LantanaFlowerLeaves.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Flower and leaves of Lantana camara",
+    imgCredit: "Alvesgaspar · CC BY-SA 3.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:LantanaFlowerLeaves.jpg",
     tags: ["photosensitization", "phylloerythrin", "lantana", "facial eczema", "sporidesmin", "hepatogenous", "porphyria", "pink tooth", "St John's wort"]
   },
 
@@ -2132,7 +2174,10 @@ theoryData["unit-1"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Immature_squamous_metaplasia_-_anus_--_high_mag.jpg/960px-Immature_squamous_metaplasia_-_anus_--_high_mag.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Micrograph showing immature squamous metaplasia of the anus . H&amp;E stain . Immature squamous metaplasia can closely mimic severe squamous dysplasia/ high grade squamous intraepithelial lesion (HSIL). Immunostains c...",
+    imgCredit: "Nephron · CC BY-SA 4.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Immature_squamous_metaplasia_-_anus_--_high_mag.jpg",
     tags: ["atrophy", "hypertrophy", "hyperplasia", "metaplasia", "dysplasia", "aplasia", "hypoplasia", "anaplasia", "vitamin A", "adaptation"]
   },
 
@@ -2310,7 +2355,10 @@ theoryData["unit-1"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/8/84/Margination_of_neutrophils_in_acute_inflammation.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "Margination of neutrophils is an early event in acute inflammation",
+    imgCredit: "Kparavindan · CC BY-SA 4.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Margination_of_neutrophils_in_acute_inflammation.png",
     tags: ["inflammation", "cardinal signs", "rubor", "calor", "tumor", "dolor", "functio laesa", "exudate", "chemotaxis", "diapedesis", "phagocytosis", "abscess"]
   },
 
@@ -2462,7 +2510,10 @@ theoryData["unit-1"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Langhans_Giant_Cell_%2810189844503%29.jpg/960px-Langhans_Giant_Cell_%2810189844503%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Presiding over a noncaseating granuloma. Pathological and histological images courtesy of Ed Uthman at flickr.",
+    imgCredit: "Ed Uthman from Houston, TX, USA · CC BY 2.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Langhans_Giant_Cell_(10189844503).jpg",
     tags: ["neutrophil", "heterophil", "macrophage", "epithelioid cell", "giant cell", "Langhans", "eosinophil", "mast cell", "plasma cell", "granuloma"]
   },
 
@@ -2632,7 +2683,10 @@ theoryData["unit-1"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Tuft_cell_%28TC%29_signaling._Illustration_of_TC_signaling_including_input%2C_output%2C_and_second_messengers.jpg/960px-Tuft_cell_%28TC%29_signaling._Illustration_of_TC_signaling_including_input%2C_output%2C_and_second_messengers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Figure 2 Tuft cell (TC) signaling. Illustration of TC signaling including input, output, and second messengers. Apical signaling involves luminal G-protein coupled receptors including succinate receptor 1 (SUCNR1), ta...",
+    imgCredit: "Hendel SK, Kellermann L, Hausmann A, Bindslev N, Jensen KB and... · CC BY 4.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Tuft_cell_(TC)_signaling._Illustration_of_TC_signaling_including_input,_output,_and_second_messengers.jpg",
     tags: ["mediators", "histamine", "prostaglandins", "leukotrienes", "arachidonic acid", "NSAIDs", "corticosteroids", "complement", "bradykinin", "cytokines", "TNF", "nitric oxide"]
   },
 
@@ -2789,7 +2843,10 @@ theoryData["unit-1"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/6/69/DIC_With_Microangiopathic_Hemolytic_Anemia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "DIC With Microangiopathic Hemolytic Anemia 34 y/o female, Hb 8.6 g/dL, MCV 104.5 fL, MCHC 32.8 g/dL, platelets 11,000/uL, WBC 59,000/uL. Patient had a history of disseminated non-small cell carcinoma of the lung. She ...",
+    imgCredit: "Ed Uthman, MD. · CC BY 2.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:DIC_With_Microangiopathic_Hemolytic_Anemia.jpg",
     tags: ["systemic effects", "fever", "pyrogen", "acute phase proteins", "leukogram", "left shift", "septicaemia", "toxaemia", "endotoxaemia", "septic shock", "DIC", "cachexia"]
   },
 
@@ -2985,7 +3042,10 @@ theoryData["unit-1"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Histopathology_of_edematous_granulation_tissue%2C_high_magnification.jpg/960px-Histopathology_of_edematous_granulation_tissue%2C_high_magnification.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Histopathology of edematous granulation tissue after previous excision of a squamous cell carcinoma . It shows sparse connective tissue with an inflammatory infiltrate, and blood vessels (at left).",
+    imgCredit: "Mikael Häggström , M.D. Author info - Reusing images - Conflic... · CC0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Histopathology_of_edematous_granulation_tissue,_high_magnification.jpg",
     tags: ["wound healing", "repair", "regeneration", "granulation tissue", "first intention", "second intention", "myofibroblast", "proud flesh", "collagen", "labile", "permanent cells"]
   },
 
@@ -3161,7 +3221,10 @@ theoryData["unit-1"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/e/ea/FisiologiaAllergia1.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "Grafica: Medicina: Fisiologia allergica di tipo 1 (anafilattica), corso studio assistito CSA, scuola superiore medico tecnica, Lugano, Ticino, Svizzera",
+    imgCredit: "Peter Forster, v. Varenna 75, CH-6600 Locarno User:Peter Forst... · CC BY 2.5",
+    imgPage: "https://commons.wikimedia.org/wiki/File:FisiologiaAllergia1.png",
     tags: ["immunopathology", "hypersensitivity", "anaphylaxis", "Coombs and Gell", "neonatal isoerythrolysis", "immune complex", "tuberculin", "autoimmunity", "immunodeficiency", "failure of passive transfer", "SCID"]
   }
 };

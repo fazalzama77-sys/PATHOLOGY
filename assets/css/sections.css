@@ -406,7 +406,192 @@
 .block--table { padding: var(--s5); }
 .block--table .block__body { max-width: none; }
 
-.lesson__fig { margin-top: var(--s8); }
+.lesson__fig {
+  margin-top: var(--s6);
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+.lesson__fig--why { margin-top: var(--s5); }
+.lesson__fig-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s2);
+  padding: var(--s3) var(--s4);
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--border);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+}
+.lesson__fig-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s2);
+  font-weight: 700;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.lesson__fig-zoomhint {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s1);
+  color: var(--text-muted);
+  font-size: var(--fs-xs);
+}
+.lesson__fig-stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface-2);
+  padding: var(--s4);
+  min-height: 180px;
+}
+.lesson__fig-img {
+  display: block;
+  max-width: 100%;
+  max-height: 440px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: var(--r-md);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  cursor: zoom-in;
+  transition: transform var(--dur-fast) var(--ease);
+}
+.lesson__fig-img:hover { transform: scale(1.01); }
+.lesson__fig-fallback {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s3);
+  padding: var(--s6) var(--s4);
+  text-align: center;
+}
+.lesson__fig-fallback-title {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+.lesson__fig.is-img-error .lesson__fig-img,
+.lesson__fig.is-img-error .lesson__fig-zoomhint { display: none; }
+.lesson__fig.is-img-error .lesson__fig-fallback { display: flex; }
+.lesson__fig-cap {
+  padding: var(--s3) var(--s4);
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+}
+.lesson__fig-desc {
+  font-size: var(--fs-sm);
+  color: var(--text);
+  line-height: var(--lh-snug);
+  margin-bottom: var(--s2);
+}
+.lesson__fig-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--s2);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+}
+.lesson__fig-credit,
+.lesson__fig-extlink {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+.lesson__fig-credit:hover,
+.lesson__fig-extlink:hover { text-decoration: underline; }
+
+.img-lightbox-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: var(--overlay);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--s4);
+}
+.img-lightbox-card {
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-lg);
+  max-width: min(980px, 95vw);
+  max-height: 92vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.img-lightbox-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s3);
+  padding: var(--s3) var(--s4);
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--border);
+}
+.img-lightbox-title {
+  font-weight: 700;
+  font-size: var(--fs-base);
+  color: var(--text);
+}
+.img-lightbox-close {
+  min-width: 44px;
+  min-height: 44px;
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  background: var(--surface);
+  color: var(--text);
+  font-size: var(--fs-xl);
+  line-height: 1;
+  cursor: pointer;
+}
+.img-lightbox-stage {
+  flex: 1;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface-2);
+  padding: var(--s4);
+}
+.img-lightbox-img {
+  max-width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+  border-radius: var(--r-sm);
+}
+.img-lightbox-foot {
+  padding: var(--s3) var(--s4);
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+  display: flex;
+  flex-direction: column;
+  gap: var(--s1);
+}
+.img-lightbox-cap {
+  font-size: var(--fs-sm);
+  color: var(--text);
+}
+.img-lightbox-cred {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--accent);
+  text-decoration: none;
+}
 .lesson__fig img { border-radius: var(--r-md); border: 1px solid var(--border); }
 
 /* ---------- legacy single-column topic page ---------- */

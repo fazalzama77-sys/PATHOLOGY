@@ -139,7 +139,10 @@ theoryData["unit-3"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/a/a3/Histopathology_of_immature_teratoma_of_the_ovary.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "Histopathology of immature teratoma of the ovary, with immature tissue of the bone (asterisk), cartilage (arrow), and islands of adipose tissue (arrowhead) (hematoxylin and eosin, 100x. magnification).",
+    imgCredit: "Shigemi, Daisuke; Kawai, Naoki; Takeshita, Toshiyuki · CC BY 4.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Histopathology_of_immature_teratoma_of_the_ovary.jpg",
     tags: ["neoplasia", "tumour", "Willis definition", "nomenclature", "carcinoma", "sarcoma", "teratoma", "hamartoma", "choristoma", "autonomy", "desmoplasia"]
   },
 
@@ -260,7 +263,10 @@ theoryData["unit-3"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Micrograph_of_invasive_squamous_cell_carcinoma_-_200x.jpg/960px-Micrograph_of_invasive_squamous_cell_carcinoma_-_200x.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Superficially invasive squamous cell carcinoma (SCCSI). High magnification demonstrates the pleomorphism of the invading keratinocytes (200x).",
+    imgCredit: "Valerie R. Yanofsky, Stephen E.Mercer, and Robert G. Phelps · CC BY 4.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Micrograph_of_invasive_squamous_cell_carcinoma_-_200x.jpg",
     tags: ["benign", "malignant", "anaplasia", "pleomorphism", "invasion", "metastasis", "differentiation", "mitotic figures", "capsule", "sarcoid", "TVT"]
   },
 
@@ -412,7 +418,10 @@ theoryData["unit-3"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/XBio_illustration_%E2%80%93_Tumor_Suppressor_Gene.png/960px-XBio_illustration_%E2%80%93_Tumor_Suppressor_Gene.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "A gene that normally functions as a “brake” on uncontrolled cell behavior such as division and invasion.",
+    imgCredit: "explorebiology · CC BY 4.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:XBio_illustration_%E2%80%93_Tumor_Suppressor_Gene.png",
     tags: ["carcinogenesis", "oncogene", "tumour suppressor", "p53", "c-kit", "initiation", "promotion", "aflatoxin", "bracken fern", "ultraviolet", "papillomavirus", "Marek's disease", "FeLV"]
   },
 
@@ -543,7 +552,10 @@ theoryData["unit-3"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Lymph_node_metastasis%2C_squamous_cell_carcinoma_bromchus.jpg/960px-Lymph_node_metastasis%2C_squamous_cell_carcinoma_bromchus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Bronchial carcinoma with metastasis to adjacent hilarity lymph node. Note the black carbon pigment also present in the node indicating that the patient was probably a smoker.",
+    imgCredit: "Narraburra · CC0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Lymph_node_metastasis,_squamous_cell_carcinoma_bromchus.jpg",
     tags: ["metastasis", "lymphatic spread", "haematogenous", "transcoelomic", "E-cadherin", "matrix metalloproteinase", "seed and soil", "tumour immunity", "immune surveillance", "TVT"]
   },
 
@@ -698,7 +710,10 @@ theoryData["unit-3"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Chromogenic_immunohistochemistry_of_TTF-1_of_squamous-cell_carcinoma_of_the_lung.jpg/960px-Chromogenic_immunohistochemistry_of_TTF-1_of_squamous-cell_carcinoma_of_the_lung.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Chromogenic immunohistochemistry of TTF-1 of squamous-cell carcinoma of the lung, showing negative staining in the tumor (left in picture), and positive staining in type II alveolar pneumocytes in the surrounding norm...",
+    imgCredit: "Mikael Häggström , M.D. Author info - Reusing images - Conflic... · CC0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Chromogenic_immunohistochemistry_of_TTF-1_of_squamous-cell_carcinoma_of_the_lung.jpg",
     tags: ["paraneoplastic", "cachexia", "hypercalcaemia", "grading", "staging", "TNM", "mitotic index", "biopsy", "cytology", "margins", "chemotherapy"]
   },
 
@@ -831,7 +846,10 @@ theoryData["unit-3"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Keratin_Pearls_in_Squamous_Cell_Carcinoma_of_the_Larynx_%2835398275972%29.jpg/960px-Keratin_Pearls_in_Squamous_Cell_Carcinoma_of_the_Larynx_%2835398275972%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Keratin Pearls in Squamous Cell Carcinoma of the Larynx",
+    imgCredit: "Ed Uthman from Houston, TX, USA · CC BY 2.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Keratin_Pearls_in_Squamous_Cell_Carcinoma_of_the_Larynx_(35398275972).jpg",
     tags: ["epithelial tumours", "papilloma", "adenoma", "squamous cell carcinoma", "keratin pearls", "cancer eye", "mammary tumour", "perianal gland", "anal sac adenocarcinoma", "transitional cell carcinoma"]
   },
 
@@ -957,7 +975,10 @@ theoryData["unit-3"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Malignant_peripheral_nerve_sheath_tumour_-_high_mag.jpg/960px-Malignant_peripheral_nerve_sheath_tumour_-_high_mag.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "High magnification micrograph of the herringbone pattern in a malignant peripheral nerve sheath tumour , abbreviated MPNST . MPNST is a diagnosis of exclusion . It has a histomorphologic appearance that is similar to ...",
+    imgCredit: "Nephron · CC BY-SA 3.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Malignant_peripheral_nerve_sheath_tumour_-_high_mag.jpg",
     tags: ["sarcoma", "fibrosarcoma", "equine sarcoid", "lipoma", "osteosarcoma", "Codman's triangle", "haemangiosarcoma", "mast cell tumour", "histiocytoma", "TVT", "round cell tumour"]
   },
 
@@ -1099,7 +1120,10 @@ theoryData["unit-3"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Canine_transmissible_venereal_tumor_cytology.JPG/960px-Canine_transmissible_venereal_tumor_cytology.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Cytology from a needle aspiration biopsy of a canine transmissible venereal tumor. Slide was stained with a modified Wright's stain.",
+    imgCredit: "Joel Mills · CC BY-SA 3.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Canine_transmissible_venereal_tumor_cytology.JPG",
     tags: ["lymphoma", "leukaemia", "bovine leukosis", "BLV", "Marek's disease", "lymphoid leukosis", "multiple myeloma", "Bence-Jones", "melanoma", "mesothelioma", "granulosa cell tumour"]
   },
 
@@ -1255,7 +1279,10 @@ theoryData["unit-3"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Vacutainer_with_blood_collection_tube.jpg/960px-Vacutainer_with_blood_collection_tube.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Vacutainer with blood collection tube",
+    imgCredit: "Whispyhistory · CC BY 3.0 us",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Vacutainer_with_blood_collection_tube.jpg",
     tags: ["clinical pathology", "anticoagulant", "EDTA", "heparin", "citrate", "sodium fluoride", "oxalate", "serum", "plasma", "haemolysis", "blood collection"]
   },
 
@@ -1392,7 +1419,10 @@ theoryData["unit-3"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Reading_Spun_Hematocrit.svg/960px-Reading_Spun_Hematocrit.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "The hematocrit capillary tube is aligned along the diagonal lines so that the top of the plasma in the tube is on the 100% line and the bottom of the packed red blood cells is on the 0% line.",
+    imgCredit: "RWhitwam · CC BY-SA 4.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Reading_Spun_Hematocrit.svg",
     tags: ["haemoglobin", "cyanmethaemoglobin", "Sahli", "PCV", "haematocrit", "TEC", "MCV", "MCH", "MCHC", "erythrocytic indices", "reticulocyte", "anaemia classification"]
   },
 
@@ -1525,7 +1555,10 @@ theoryData["unit-3"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Complete_blood_count_and_differential.jpg/960px-Complete_blood_count_and_differential.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Illustration of complete blood count and differential (hemogram, full blood exam, leukogram etc.) test results with blood specimen in EDTA tube. N.B. these are my own CBC and diff results so no patient confidentiality...",
+    imgCredit: "SpicyMilkBoy · CC BY-SA 4.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Complete_blood_count_and_differential.jpg",
     tags: ["ESR", "rouleaux", "Westergren", "TLC", "Turk's fluid", "Neubauer", "differential count", "absolute count", "left shift", "stress leukogram", "toxic change", "platelet count"]
   },
 
@@ -1677,7 +1710,10 @@ theoryData["unit-3"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Howell-Jolly_smear_2010-11-17.JPG/960px-Howell-Jolly_smear_2010-11-17.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Howell-Jolly bodies: small, round inclusions seen in erythrocytes, found in various anemias and after splenectomy.",
+    imgCredit: "Paulo Henrique Orlandi Mourao · CC BY-SA 3.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Howell-Jolly_smear_2010-11-17.JPG",
     tags: ["blood smear", "Romanowsky", "Leishman", "Giemsa", "monolayer", "polychromasia", "spherocyte", "Heinz body", "basophilic stippling", "agglutination", "Babesia", "Theileria", "Anaplasma"]
   },
 
@@ -1812,7 +1848,10 @@ theoryData["unit-3"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Struvite_crystals_%28urine%29_-_Str%C3%BCvit_kristalleri_%28idrar%29_-_01.png/960px-Struvite_crystals_%28urine%29_-_Str%C3%BCvit_kristalleri_%28idrar%29_-_01.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Struvite (magnesium ammonium phosphate / triple phosphate) crystals in a human urine sample with a pH of 9, as detected by an automated urinalysis system. Along with them; abundant amorphous phosphate crystals, severa...",
+    imgCredit: "Doruk Salancı · CC BY-SA 3.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Struvite_crystals_(urine)_-_Str%C3%BCvit_kristalleri_(idrar)_-_01.png",
     tags: ["urinalysis", "specific gravity", "isosthenuria", "azotaemia", "proteinuria", "glycosuria", "ketonuria", "haematuria", "haemoglobinuria", "myoglobinuria", "casts", "crystals", "ethylene glycol"]
   },
 
@@ -1963,7 +2002,10 @@ theoryData["unit-3"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Disposable_Biopsy_Punch-4_mm.jpg/960px-Disposable_Biopsy_Punch-4_mm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "A disposable biopsy punch is applied for punch biopsy which helps to check for certain types of cancer, including skin, vulvar, and cervical cancer. It is mostly commonly requested by the dermatologist and gynecologists.",
+    imgCredit: "Ajay Kumar Chaurasiya · CC BY-SA 4.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Disposable_Biopsy_Punch-4_mm.jpg",
     tags: ["biopsy", "cytology", "fine needle aspiration", "exfoliative cytology", "formalin", "fixation", "margins", "criteria of malignancy", "effusion", "transudate", "exudate", "chylous"]
   },
 
@@ -2096,7 +2138,10 @@ theoryData["unit-3"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Autopsy_dissection_kit.jpg/960px-Autopsy_dissection_kit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "An autopsy dissection kit from 1943. Museum of the History of Medicine, Warsaw , Poland.",
+    imgCredit: "User:Brandmeister (Togrul Safarov) · CC0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Autopsy_dissection_kit.jpg",
     tags: ["necropsy", "post-mortem", "objectives", "history", "anthrax", "McFadyean", "zoonoses", "safety", "autolysis", "morphological diagnosis", "sampling"]
   },
 
@@ -2234,7 +2279,10 @@ theoryData["unit-3"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/b/be/Dog_Necropsy_-_Retained_testicle_with_cancer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "Dog necropsy. Retained testicle with cancer.",
+    imgCredit: "Meagan Jean Wooley · CC BY 2.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Dog_Necropsy_-_Retained_testicle_with_cancer.jpg",
     tags: ["necropsy procedure", "positioning", "in situ", "left lateral recumbency", "avian necropsy", "air sacs", "bursa of Fabricius", "sciatic nerve", "float test", "reticulum", "brain fixation"]
   },
 
@@ -2373,7 +2421,10 @@ theoryData["unit-3"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Gross_pathology_of_a_postmortem_blood_clot.jpg/960px-Gross_pathology_of_a_postmortem_blood_clot.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Gross pathology of a postmortem blood clot from the aorta, having a shiny appearance, non-adherent to the vessel wall, and being dark-red and very soft (\"currant jelly\") to tan-pink and more solid (\"chicken-fat\").",
+    imgCredit: "Mikael Häggström , M.D. Author info - Reusing images - Conflic... · CC0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Gross_pathology_of_a_postmortem_blood_clot.jpg",
     tags: ["post-mortem changes", "algor mortis", "rigor mortis", "livor mortis", "hypostasis", "autolysis", "putrefaction", "pseudomelanosis", "imbibition", "chicken-fat clot", "vital reaction"]
   },
 
@@ -2519,7 +2570,10 @@ theoryData["unit-3"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Tissue_processing_-_Paraffin_inclusion_of_a_histological_sample.jpg/960px-Tissue_processing_-_Paraffin_inclusion_of_a_histological_sample.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Tissue processing - Paraffin inclusion of a histological sample",
+    imgCredit: "Marcello Daricello · Public domain",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Tissue_processing_-_Paraffin_inclusion_of_a_histological_sample.jpg",
     tags: ["sample collection", "formalin", "fixation", "morbid material", "bacteriology", "virology", "toxicology", "chain of custody", "triple packaging", "paired sera", "despatch"]
   },
 
@@ -2676,7 +2730,10 @@ theoryData["unit-3"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Head_of_femur_avascular_necrosis.jpg/960px-Head_of_femur_avascular_necrosis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "The head of the femur (Lat. caput femoris ) with some synovium attached at the bottom and the ligament of the head of the femur (Lat. ligamentum capitis femoris ) attached at the top. There is a loose flap of cartilag...",
+    imgCredit: "Steven Fruitsmaak · CC BY-SA 3.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Head_of_femur_avascular_necrosis.jpg",
     tags: ["post-mortem report", "morphological diagnosis", "aetiological diagnosis", "cause of death", "description", "documentation", "photography", "veterolegal"]
   },
 
@@ -2835,7 +2892,10 @@ theoryData["unit-3"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/e/e0/Experimental_gunshot_entrance_wound_-_dist_to_target_25_inch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "Experimental entrance wound - distance between target and firearm: 25\". Derivative work of based on chest plates commissioned by Frances Glessner Lee, about 1940. Ceramic plates that illustrate the typical wound patte...",
+    imgCredit: "National Institutes of Health, Health &amp; Human Services · Public domain",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Experimental_gunshot_entrance_wound_-_dist_to_target_25_inch.jpg",
     tags: ["veterolegal", "forensic", "chain of custody", "expert witness", "wounds", "incised", "lacerated", "tissue bridges", "ante-mortem", "vital reaction", "bruise dating", "hydrostatic test", "lightning"]
   }
 

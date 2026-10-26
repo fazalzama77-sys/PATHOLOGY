@@ -169,7 +169,10 @@ theoryData["unit-6"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/8/86/Yersinia_pseudotuberculosis_colonies_MAC.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "Yersinia pseudotuberculosis colonies on MacConkey-Agar (MAC) agar, showing a negative result for lactose fermentation.",
+    imgCredit: "CDC/ Dr. Todd Parker . Ph.D.; Assoc. Director for Lab. Science... · Public domain",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Yersinia_pseudotuberculosis_colonies_MAC.jpg",
     tags: ["Tyzzer's disease", "Clostridium piliforme", "pick-up sticks", "Warthin-Starry", "obligate intracellular", "megaloileitis", "myocardial necrosis", "pseudotuberculosis", "Yersinia pseudotuberculosis", "psychrotroph", "cold enrichment", "not acid-fast", "salmonellosis", "splenomegaly", "paratyphoid nodule", "carrier state", "zoonosis", "subclinical infection"]
   },
 
@@ -317,7 +320,10 @@ theoryData["unit-6"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/b/b9/Lymphocytic_choriomeningitis_virus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "Methylamine tungstate negative-stain electron micrograph of arenavirus isolated from mouse spleen homogenate cultures that tested positive by immunofluorescence assay for lymphocytic choriomeningitis virus infection. ...",
+    imgCredit: "Wikimedia Commons · Public domain",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Lymphocytic_choriomeningitis_virus.jpg",
     tags: ["ectromelia", "mousepox", "orthopoxvirus", "Marchal body", "hepatic necrosis", "EDIM", "mouse rotavirus", "milk scours", "villous atrophy", "crypt hyperplasia", "mouse hepatitis virus", "coronavirus", "syncytial giant cells", "nude mouse", "SCID", "lymphocytic choriomeningitis", "arenavirus", "immunological tolerance", "immunopathology", "immune-complex glomerulonephritis", "zoonosis"]
   },
 
@@ -475,7 +481,10 @@ theoryData["unit-6"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Cochon_d%27Inde_%28Cavia_porcellus%29_%282%29.jpg/960px-Cochon_d%27Inde_%28Cavia_porcellus%29_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Guinea pig ( Cavia porcellus ) in Wittelsheim (Haut-Rhin, France).",
+    imgCredit: "Gzen92 · CC BY-SA 4.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Cochon_d%27Inde_(Cavia_porcellus)_(2).jpg",
     tags: ["guinea pig", "vitamin C", "L-gulonolactone oxidase", "scurvy", "collagen", "hydroxyproline", "scorbutic rosary", "antibiotic enterotoxaemia", "Clostridium difficile", "Gram-positive flora", "cervical lymphadenitis", "lumps", "Streptococcus zooepidemicus", "Bordetella bronchiseptica", "pubic symphysis", "dystocia", "pregnancy toxaemia", "metastatic calcification", "malocclusion", "slobbers", "Trixacarus caviae", "ringworm"]
   },
 
@@ -632,7 +641,10 @@ theoryData["unit-6"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/0/0b/PMC4234262_mbo30003-0711-f1.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "fig01: Transmission electron micrograph of negatively stained Pm 43020 strain. (A) The release of outer membrane vesicles (OMVs) from Pm can be seen in the micrograph. (B) Pm OMVs negatively stained. Arrows indicate s...",
+    imgCredit: "Fernández-Rojas MA, Vaca S, Reyes-López M, de la Garza M, Agui... · CC BY 3.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:PMC4234262_mbo30003-0711-f1.png",
     tags: ["rabbit", "pasteurellosis", "snuffles", "Pasteurella multocida", "bipolar staining", "ammonia", "wry neck", "torticollis", "tympanic bulla", "inspissated pus", "abscess excision", "blue breasts", "staphylococcal mastitis", "gangrenous mastitis", "caked breast", "treponematosis", "vent disease", "Treponema paraluiscuniculi", "not zoonotic", "Warthin-Starry", "enterotoxaemia", "Clostridium spiroforme", "hindgut fermenter", "mucoid enteropathy", "fibre"]
   },
 
@@ -788,7 +800,10 @@ theoryData["unit-6"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Rabbit_with_Myxomatosis_on_Flat_Holm_island%2C_Wales._September_2013.jpg/960px-Rabbit_with_Myxomatosis_on_Flat_Holm_island%2C_Wales._September_2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Photograph of a young rabbit with Myxomatosis.",
+    imgCredit: "Fletch 2002 · CC BY-SA 3.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Rabbit_with_Myxomatosis_on_Flat_Holm_island,_Wales._September_2013.jpg",
     tags: ["rabbit pox", "orthopoxvirus", "myxomatosis", "myxoma virus", "Leporipoxvirus", "big head", "myxoma cell", "hyaluronic acid", "mechanical vector", "mosquito", "attenuation and host resistance", "Shope papilloma", "viral oncology", "squamous cell carcinoma", "oral papillomatosis", "intranuclear inclusion", "Eimeria stiedae", "hepatic coccidiosis", "bile duct hyperplasia", "intestinal coccidiosis", "Psoroptes cuniculi", "ear canker", "Cheyletiella", "walking dandruff"]
   },
 
@@ -953,7 +968,10 @@ theoryData["unit-6"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/West_Nile_Virus_Particle.jpg/960px-West_Nile_Virus_Particle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Colorized transmission electron micrograph of a West Nile virus particle (orange) found within the cytoplasm of a VERO E6 cell (magenta). Image captured at the Integrated Research Facility in Ft. Detrick, Maryland. Cr...",
+    imgCredit: "NIAID · CC BY 2.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:West_Nile_Virus_Particle.jpg",
     tags: ["wildlife disease", "spillover", "West Nile virus", "flavivirus", "dead-end host", "amplifying host", "Japanese encephalitis", "rabies", "stray dog", "Negri body", "loss of fear of man", "foot and mouth disease", "gaur", "tiger heart", "monkeypox", "Kyasanur Forest disease", "monkey fever", "Haemaphysalis spinigera", "langur", "bonnet macaque", "sentinel", "hot spot", "infectious canine hepatitis", "canine distemper", "Gir lion"]
   },
 
@@ -1125,7 +1143,10 @@ theoryData["unit-6"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/2/25/Mycobacterium_bovis_BCG_ZN.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "microscopic image of the bacille Calmette-Guérin (BCG, Japan strain). Ziehl Neelsen staining. Magnification: 1,000",
+    imgCredit: "Y tambe · CC BY-SA 3.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Mycobacterium_bovis_BCG_ZN.jpg",
     tags: ["anthrax", "Bacillus anthracis", "spore", "anthrax necropsy rule", "M'Fadyean reaction", "polychrome methylene blue", "capsule", "scavengers", "notifiable", "tuberculosis", "Mycobacterium bovis", "human tuberculosis", "elephant", "mahout screening", "Ziehl-Neelsen", "Langhans giant cell", "colibacillosis", "failure of passive transfer", "hand-rearing", "clostridial", "blackquarter", "malignant oedema", "tetanus", "botulism", "enterotoxaemia", "pulpy kidney"]
   },
 
@@ -1283,7 +1304,10 @@ theoryData["unit-6"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/2/23/Trypanosoma_sp._PHIL_613_lores.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "Trypanosoma forms in blood smear from patient with African trypanosomiasis. Parasite.",
+    imgCredit: "Photo Credit: Content Providers: CDC/Dr. Myron G. Schultz · Public domain",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Trypanosoma_sp._PHIL_613_lores.jpg",
     tags: ["wildlife haemoparasites", "tolerant reservoir", "endemic stability", "capture stress", "trypanosomosis", "surra", "Trypanosoma evansi", "mechanical transmission", "antigenic variation", "VSG", "buffy coat", "babesiosis", "red water", "intravascular haemolysis", "transovarial", "cerebral babesiosis", "theileriosis", "Theileria annulata", "Koch blue body", "transstadial", "abomasal ulcer", "pseudo-infarct", "lymph node aspirate"]
   },
 
@@ -1441,7 +1465,10 @@ theoryData["unit-6"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Rhabdo.jpg/960px-Rhabdo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "how you get rhabdomyolysis",
+    imgCredit: "AquapatMedia · CC BY-SA 3.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Rhabdo.jpg",
     tags: ["wildlife nutrition", "metabolic bone disease", "nutritional secondary hyperparathyroidism", "all-meat diet", "calcium phosphorus ratio", "rubber jaw", "fibrous osteodystrophy", "rickets", "UV-B light", "capture myopathy", "Zenker degeneration", "myoglobinuria", "plasma test", "vitamin E selenium", "thiaminase", "star-gazing", "Chastek paralysis", "polioencephalomalacia", "autofluorescence", "vitamin A", "scurvy", "iron storage disease", "serous atrophy of fat", "bone marrow fat", "starvation"]
   }
 

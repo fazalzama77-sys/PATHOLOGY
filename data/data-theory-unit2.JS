@@ -152,7 +152,10 @@ theoryData["unit-2"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/H_pylori_ulcer_diagram.png/960px-H_pylori_ulcer_diagram.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Diagram of gastric ulceration by H. pylori , with minimal annotation",
+    imgCredit: "Y_tambe · CC BY-SA 3.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:H_pylori_ulcer_diagram.png",
     tags: ["digestive", "stomatitis", "FMD", "wooden tongue", "lumpy jaw", "bloat", "grain overload", "Johne's disease", "parvovirus", "cirrhosis", "pancreatitis"]
   },
 
@@ -279,7 +282,10 @@ theoryData["unit-2"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Histopathology_of_bronchopneumonia.jpg/960px-Histopathology_of_bronchopneumonia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Histopathology of bronchopneumonia, showing neutrophils filling a bronchiole .",
+    imgCredit: "Mikael Häggström , M.D. Author info - Reusing images - Conflic... · CC0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Histopathology_of_bronchopneumonia.jpg",
     tags: ["respiratory", "bronchopneumonia", "interstitial pneumonia", "embolic pneumonia", "pasteurellosis", "atrophic rhinitis", "atelectasis", "emphysema", "float test", "lungworm"]
   },
 
@@ -398,7 +404,10 @@ theoryData["unit-2"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Rhabdo.jpg/960px-Rhabdo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "how you get rhabdomyolysis",
+    imgCredit: "AquapatMedia · CC BY-SA 3.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Rhabdo.jpg",
     tags: ["bone", "rickets", "osteomalacia", "osteoporosis", "fibrous osteodystrophy", "osteomyelitis", "sequestrum", "osteoarthritis", "white muscle disease", "azoturia", "blackleg"]
   },
 
@@ -519,7 +528,10 @@ theoryData["unit-2"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Histopathology_of_lymphocytic_myocarditis_with_myocyte_necrosis%2C_annotated.jpg/960px-Histopathology_of_lymphocytic_myocarditis_with_myocyte_necrosis%2C_annotated.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Histopathology of lymphocytic myocarditis (white arrow points to a lymphocyte), commonly showing myocyte necrosis (black arrow), seen as hypereosinophilic cytoplasm with loss of striations. H&amp;E stain.",
+    imgCredit: "Mikael Häggström , M.D. Author info - Reusing images - Conflic... · CC0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Histopathology_of_lymphocytic_myocarditis_with_myocyte_necrosis,_annotated.jpg",
     tags: ["heart", "pericarditis", "bread-and-butter heart", "tiger heart", "cardiomyopathy", "endocarditis", "endocardiosis", "hypertrophy", "heart failure", "heartworm", "mulberry heart"]
   },
 
@@ -651,7 +663,10 @@ theoryData["unit-2"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Warm_autoimmune_hemolytic_anemia.jpg/960px-Warm_autoimmune_hemolytic_anemia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Hemoglobin 6.7 g/dL, MCV 107.5 fL, positive direct Coombs test. This peripheral smear shows 4+ spherocytes. 78-year-old lady with history of chronic inflammatory bowel disease. Hemoglobin 6.7 g/dL, MCV 107.5 fL, posit...",
+    imgCredit: "E. Uthman, MD · CC BY-SA 2.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Warm_autoimmune_hemolytic_anemia.jpg",
     tags: ["anaemia", "haemolysis", "regenerative", "reticulocyte", "babesiosis", "anaplasmosis", "copper poisoning", "bracken fern", "iron deficiency", "DIC", "leukosis"]
   },
 
@@ -777,7 +792,10 @@ theoryData["unit-2"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Histopathology_of_reactive_follicular_hyperplasia.jpg/960px-Histopathology_of_reactive_follicular_hyperplasia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Nonspecific reactive follicular hyperplasia (arrow demonstrates secondary follicle with prominent germinal center). Hematoxylin and eosin stain of a resected lymph node, 2x magnification.",
+    imgCredit: "Smith, Benjamin; Carroll, Matthew B. · CC BY 3.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Histopathology_of_reactive_follicular_hyperplasia.jpg",
     tags: ["lymph node", "spleen", "splenomegaly", "anthrax", "caseous lymphadenitis", "strangles", "thymus", "bursa of Fabricius", "Marek's disease", "lymphoid leukosis", "lymphoma"]
   },
 
@@ -898,7 +916,10 @@ theoryData["unit-2"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Membranous_nephropathy_-_pas_-_very_high_mag.jpg/960px-Membranous_nephropathy_-_pas_-_very_high_mag.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Very high magnification micrograph of membranous nephropathy , abbreviated MN . MN may also be referred to as membranous glomerulonephritis , abbreviated MGN . Kidney biopsy . PAS stain . The characteristic feature on...",
+    imgCredit: "Nephron · CC BY-SA 3.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Membranous_nephropathy_-_pas_-_very_high_mag.jpg",
     tags: ["kidney", "glomerulonephritis", "nephrotic syndrome", "nephrosis", "ethylene glycol", "leptospirosis", "white-spotted kidney", "pyelonephritis", "hydronephrosis", "urolithiasis", "uraemia"]
   },
 
@@ -1037,7 +1058,10 @@ theoryData["unit-2"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Canine_pyometra_-_uterus_removed_at_ovariohysterectomy.jpg/960px-Canine_pyometra_-_uterus_removed_at_ovariohysterectomy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Uterus and ovaries of a dog with pyometra, removed by ovariohysterectomy and laid out on a surgical drape; both uterine horns are enlarged and filled with pus.",
+    imgCredit: "Corak80 · CC BY-SA 4.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Canine_pyometra_-_uterus_removed_at_ovariohysterectomy.jpg",
     tags: ["reproductive", "abortion", "brucellosis", "pyometra", "cystic endometrial hyperplasia", "mastitis", "gangrenous mastitis", "SMEDI", "cryptorchid", "Sertoli cell tumour", "TVT"]
   },
 
@@ -1168,7 +1192,10 @@ theoryData["unit-2"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/1/1c/Nonsuppurative_encephalitis_in_goat_affected_by_louping_ill.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "Figure 1. . . Nonsuppurative encephalitis in goat affected by louping ill. A) Cerebellum with necrosis of Purkinje cells. Hematoxylin and eosin (H&amp;E) stain; scale bar = 100 µm. Inset: necrosis of Purkinje cells. H...",
+    imgCredit: "Ana Balseiro, Luis J. Royo, Claudia Pérez Martínez, Isabel G. ... · Public domain",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Nonsuppurative_encephalitis_in_goat_affected_by_louping_ill.jpg",
     tags: ["nervous system", "gliosis", "perivascular cuffing", "Negri body", "rabies", "listeriosis", "polioencephalomalacia", "thiamine", "sway back", "prion", "cerebellar hypoplasia"]
   },
 
@@ -1282,7 +1309,10 @@ theoryData["unit-2"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Histopathology_of_diffuse_thyroid_hyperplasia_with_variably_sized_follicles.jpg/960px-Histopathology_of_diffuse_thyroid_hyperplasia_with_variably_sized_follicles.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Histopathology of diffuse thyroid hyperplasia with variably sized follicles. H&amp;E stain. The clinical diagnosis was toxic multinodular goiter.",
+    imgCredit: "Mikael Häggström , M.D. Author info - Reusing images - Conflic... · CC0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Histopathology_of_diffuse_thyroid_hyperplasia_with_variably_sized_follicles.jpg",
     tags: ["endocrine", "goitre", "iodine deficiency", "hypothyroidism", "hyperthyroidism", "Cushing", "Addison", "diabetes mellitus", "islet amyloid", "PPID", "milk fever"]
   },
 
@@ -1424,7 +1454,10 @@ theoryData["unit-2"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/3/3c/Pemphigus_immunofluorescence.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "Microscopic image of direct immunofluorescence using an anti- IgG antibody. The tissue is skin from a patient with Pemphigus vulgaris. Note the intercellular IgG deposits in the epidermis and the early intraepidermal ...",
+    imgCredit: "Emmanuelm ( talk ) · CC BY 3.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Pemphigus_immunofluorescence.jpg",
     tags: ["skin", "parakeratosis", "acantholysis", "dermatophilosis", "ringworm", "sarcoptic mange", "demodex", "pemphigus", "zinc deficiency", "squamous cell carcinoma", "sarcoid"]
   },
 
@@ -1555,7 +1588,10 @@ theoryData["unit-2"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/9/95/Dendritic_corneal_ulcer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "Dendritic pattern after fluorescein staining",
+    imgCredit: "Imrankabirhossain · CC BY-SA 4.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Dendritic_corneal_ulcer.jpg",
     tags: ["ear", "otitis", "Otodectes", "Malassezia", "aural haematoma", "eye", "keratitis", "pink eye", "blue eye", "equine recurrent uveitis", "cataract", "glaucoma", "cancer eye"]
   }
 

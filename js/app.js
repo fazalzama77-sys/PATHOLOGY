@@ -1419,7 +1419,34 @@ var app = (function () {
           return block(tb.title || "Diagnostic Comparison", renderTable(tb, true), "table", "clipboard");
         }).join("") +
         (c.img
-          ? '<figure class="lesson__fig"><img src="' + esc(c.img) + '" alt="' + esc(t.title) + '" loading="lazy"></figure>'
+          ? '<figure class="lesson__fig">' +
+              '<div class="lesson__fig-head">' +
+                '<span class="lesson__fig-badge">' + icon("microscope") + ' Reference Gross &amp; Histopathology Visual</span>' +
+                '<span class="lesson__fig-zoomhint">' + icon("search") + ' Tap image to zoom</span>' +
+              '</div>' +
+              '<div class="lesson__fig-stage">' +
+                '<img class="lesson__fig-img" src="' + esc(c.img) + '" alt="' + esc(c.imgCaption || t.title) + '" loading="lazy" ' +
+                  'data-zoom-src="' + esc(c.img) + '" ' +
+                  'data-zoom-title="' + esc(t.title) + '" ' +
+                  'data-zoom-cap="' + esc(c.imgCaption || t.title) + '" ' +
+                  'data-zoom-cred="' + esc(c.imgCredit || "Wikimedia Commons · Open Access") + '" ' +
+                  'data-zoom-page="' + esc(c.imgPage || "") + '" ' +
+                  'onerror="this.closest(\'.lesson__fig\').classList.add(\'is-img-error\')">' +
+                '<div class="lesson__fig-fallback">' +
+                  '<div class="lesson__fig-fallback-title">Offline or External Image Unavailable</div>' +
+                  '<a class="btn btn--sm btn--subtle" href="' + esc(c.imgPage || c.img) + '" target="_blank" rel="noopener noreferrer">Open Reference Image Directly &nearr;</a>' +
+                '</div>' +
+              '</div>' +
+              '<figcaption class="lesson__fig-cap">' +
+                '<div class="lesson__fig-desc">' + esc(c.imgCaption || t.title) + '</div>' +
+                '<div class="lesson__fig-meta">' +
+                  (c.imgPage
+                    ? '<a class="lesson__fig-credit" href="' + esc(c.imgPage) + '" target="_blank" rel="noopener noreferrer" title="View source and license on Wikimedia Commons">📷 ' + esc(c.imgCredit || "Wikimedia Commons · Open Access") + ' &nearr;</a>'
+                    : '<span class="lesson__fig-credit">📷 ' + esc(c.imgCredit || "Wikimedia Commons · Open Access") + '</span>') +
+                  '<a class="lesson__fig-extlink" href="https://www.google.com/search?tbm=isch&amp;q=' + encodeURIComponent(t.title + " veterinary pathology") + '" target="_blank" rel="noopener noreferrer">More on Google Images &nearr;</a>' +
+                '</div>' +
+              '</figcaption>' +
+            '</figure>'
           : '<div class="pathology-image-placeholder"><div class="pathology-placeholder-body">' +
               icon("search") +
               '<div class="pathology-placeholder-title">High-Quality Pathology Visuals in Development</div>' +
@@ -2719,6 +2746,34 @@ var app = (function () {
                     item.mechanism.map(function (step) { return '<li>' + esc(step) + '</li>'; }).join("") +
                   '</ol>' +
                 '</div>' : '') +
+              (item.img ?
+                '<figure class="lesson__fig lesson__fig--why">' +
+                  '<div class="lesson__fig-head">' +
+                    '<span class="lesson__fig-badge">' + icon("microscope") + ' Reference Visual</span>' +
+                    '<span class="lesson__fig-zoomhint">' + icon("search") + ' Tap image to zoom</span>' +
+                  '</div>' +
+                  '<div class="lesson__fig-stage">' +
+                    '<img class="lesson__fig-img" src="' + esc(item.img) + '" alt="' + esc(item.imgCaption || item.title) + '" loading="lazy" ' +
+                      'data-zoom-src="' + esc(item.img) + '" ' +
+                      'data-zoom-title="' + esc(item.title) + '" ' +
+                      'data-zoom-cap="' + esc(item.imgCaption || item.title) + '" ' +
+                      'data-zoom-cred="' + esc(item.imgCredit || "Wikimedia Commons · Open Access") + '" ' +
+                      'data-zoom-page="' + esc(item.imgPage || "") + '" ' +
+                      'onerror="this.closest(\'.lesson__fig\').classList.add(\'is-img-error\')">' +
+                    '<div class="lesson__fig-fallback">' +
+                      '<div class="lesson__fig-fallback-title">Offline or External Image Unavailable</div>' +
+                      '<a class="btn btn--sm btn--subtle" href="' + esc(item.imgPage || item.img) + '" target="_blank" rel="noopener noreferrer">Open Reference Image Directly &nearr;</a>' +
+                    '</div>' +
+                  '</div>' +
+                  '<figcaption class="lesson__fig-cap">' +
+                    '<div class="lesson__fig-desc">' + esc(item.imgCaption || item.title) + '</div>' +
+                    '<div class="lesson__fig-meta">' +
+                      (item.imgPage
+                        ? '<a class="lesson__fig-credit" href="' + esc(item.imgPage) + '" target="_blank" rel="noopener noreferrer">📷 ' + esc(item.imgCredit || "Wikimedia Commons · Open Access") + ' &nearr;</a>'
+                        : '<span class="lesson__fig-credit">📷 ' + esc(item.imgCredit || "Wikimedia Commons · Open Access") + '</span>') +
+                    '</div>' +
+                  '</figcaption>' +
+                '</figure>' : '') +
               (item.clinical ?
                 '<div class="why-modal-clinical">' +
                   '<div class="why-modal-clinical-title">' +
@@ -4388,9 +4443,49 @@ var app = (function () {
         if (!el("#searchmodal").hidden) closeSearch();
         closeAbout();
         closeOnboarding(true);
+        var lb = document.getElementById("img-lightbox-backdrop");
+        if (lb) lb.remove();
       }
       else if (e.key === "/" && document.activeElement.tagName !== "INPUT" &&
                document.activeElement.tagName !== "TEXTAREA") { e.preventDefault(); openSearch(); }
+    });
+
+    document.addEventListener("click", function (e) {
+      var imgEl = e.target.closest && e.target.closest("[data-zoom-src]");
+      if (!imgEl) return;
+      var src = imgEl.getAttribute("data-zoom-src");
+      var title = imgEl.getAttribute("data-zoom-title") || "";
+      var cap = imgEl.getAttribute("data-zoom-cap") || "";
+      var cred = imgEl.getAttribute("data-zoom-cred") || "";
+      var page = imgEl.getAttribute("data-zoom-page") || "";
+      if (!src) return;
+      var oldLb = document.getElementById("img-lightbox-backdrop");
+      if (oldLb) oldLb.remove();
+      var lb = document.createElement("div");
+      lb.id = "img-lightbox-backdrop";
+      lb.className = "img-lightbox-backdrop";
+      lb.innerHTML =
+        '<div class="img-lightbox-card" role="dialog" aria-modal="true">' +
+          '<div class="img-lightbox-head">' +
+            '<div class="img-lightbox-title">' + esc(title) + '</div>' +
+            '<button class="img-lightbox-close" aria-label="Close zoom">&times;</button>' +
+          '</div>' +
+          '<div class="img-lightbox-stage">' +
+            '<img class="img-lightbox-img" src="' + esc(src) + '" alt="' + esc(cap || title) + '">' +
+          '</div>' +
+          '<div class="img-lightbox-foot">' +
+            '<div class="img-lightbox-cap">' + esc(cap) + '</div>' +
+            (page
+              ? '<a class="img-lightbox-cred" href="' + esc(page) + '" target="_blank" rel="noopener noreferrer">📷 ' + esc(cred) + ' &nearr;</a>'
+              : '<span class="img-lightbox-cred">📷 ' + esc(cred) + '</span>') +
+          '</div>' +
+        '</div>';
+      lb.addEventListener("click", function (ev) {
+        if (ev.target === lb || ev.target.closest(".img-lightbox-close")) {
+          lb.remove();
+        }
+      });
+      document.body.appendChild(lb);
     });
 
     route();

@@ -153,7 +153,10 @@ theoryData["unit-5"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Boursite_3_bo%C3%BBsses_drovowes.JPG/960px-Boursite_3_bo%C3%BBsses_drovowes.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Gumboro disease : 3 bursa of Fabricius opened : left : chronic inflamation; middle : acute inflamation; right : normal",
+    imgCredit: "Lucien Mahin · CC BY-SA 3.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Boursite_3_bo%C3%BBsses_drovowes.JPG",
     tags: ["avian inflammation", "heterophil", "myeloperoxidase", "caseous exudate", "thrombocyte", "bursa of Fabricius", "thymus", "air sac", "airsacculitis", "no diaphragm", "perihepatitis", "granuloma", "uricotelic", "gout", "tophi", "absolute alcohol"]
   },
 
@@ -306,7 +309,10 @@ theoryData["unit-5"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/b/b4/Newcastle_disease_in_a_mallard.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "Torticollis (twisted neck) in a mallard with Newcastle disease .",
+    imgCredit: "Photo credit:Milton Friend · Public domain",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Newcastle_disease_in_a_mallard.JPG",
     tags: ["Ranikhet disease", "Newcastle disease", "APMV-1", "F protein cleavage", "velogenic", "lentogenic", "LaSota", "Mukteswar", "torticollis", "proventricular haemorrhage", "caecal tonsil", "button ulcer", "haemagglutination inhibition", "ICPI", "notifiable"]
   },
 
@@ -451,7 +457,10 @@ theoryData["unit-5"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Boursite_urate_cour.jpg/960px-Boursite_urate_cour.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Rashiaedje d' urate sol saetch do cour a des polets avou l' boursite å virûsse",
+    imgCredit: "Lucyin · CC BY-SA 4.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Boursite_urate_cour.jpg",
     tags: ["infectious bursal disease", "Gumboro", "birnavirus", "bursa of Fabricius", "blackberry bursa", "thigh muscle haemorrhage", "spiking mortality", "immunosuppression", "Deventer formula", "chicken infectious anaemia", "gyrovirus", "fatty bone marrow", "thymic atrophy", "blue wing disease", "vertical transmission", "non-enveloped"]
   },
 
@@ -600,7 +609,10 @@ theoryData["unit-5"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Human_coronavirus_229E.png/960px-Human_coronavirus_229E.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Virions of family Coronaviridae (electron microscope image). Human coronavirus 229E as stated by the CDC , not SARS",
+    imgCredit: "US government · Public domain",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Human_coronavirus_229E.png",
     tags: ["infectious bronchitis", "coronavirus", "spike protein", "antigenic variation", "false layer", "cystic oviduct", "wrinkled egg", "watery albumen", "nephropathogenic", "visceral gout", "infectious laryngotracheitis", "Gallid herpesvirus 1", "tracheal cast", "Cowdry type A", "syncytia", "latency", "ciliostasis"]
   },
 
@@ -735,7 +747,10 @@ theoryData["unit-5"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/d/d8/Fowlpox.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "Fowlpox",
+    imgCredit: "Wallace R. Hansen · Public domain",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Fowlpox.jpg",
     tags: ["fowl pox", "avipoxvirus", "Bollinger body", "Borrel body", "diphtheritic form", "mosquito", "wing-web vaccination", "avian influenza", "H5N1", "haemagglutinin cleavage site", "polybasic", "HPAI", "notifiable", "zoonosis", "wild waterfowl", "pancreatic necrosis"]
   },
 
@@ -889,7 +904,10 @@ theoryData["unit-5"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Marek%27s_disease%2C_cutaneous%2C_broiler.jpg/960px-Marek%27s_disease%2C_cutaneous%2C_broiler.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Marek's disease, cutaneous form, broiler (chicken)",
+    imgCredit: "Roman Halouzka · CC BY-SA 3.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Marek%27s_disease,_cutaneous,_broiler.jpg",
     tags: ["Marek disease", "Gallid herpesvirus 2", "alphaherpesvirus", "feather follicle", "dander", "T lymphocyte", "MEQ oncogene", "sciatic nerve", "splits posture", "grey eye", "pearl eye", "pleomorphic", "HVT", "Rispens CVI988", "in ovo vaccination", "immunosuppression"]
   },
 
@@ -1046,7 +1064,10 @@ theoryData["unit-5"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/f/fe/8254_lores.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "This highly magnified transmission electron micrographic (TEM) image revealed the presence of mature forms of the human immunodeficiency virus (HIV) in a tissue sample under investigation. HIV is a retrovirus, identif...",
+    imgCredit: "CDC · Public domain",
+    imgPage: "https://commons.wikimedia.org/wiki/File:8254_lores.jpg",
     tags: ["lymphoid leukosis", "avian leukosis virus", "alpharetrovirus", "insertional mutagenesis", "c-myc", "Rous sarcoma virus", "src", "tolerant shedder", "p27 antigen", "monomorphic", "big liver disease", "myelocytomatosis", "ALV-J", "osteopetrosis", "reticuloendotheliosis", "runting stunting syndrome", "vaccine contamination"]
   },
 
@@ -1193,7 +1214,10 @@ theoryData["unit-5"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Central_chromatolysis_-_intermed_mag_-_cropped.jpg/960px-Central_chromatolysis_-_intermed_mag_-_cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "High magnification micrograph of the anterior horn of the spinal cord showing motor neurons with central chromatolysis . Neurofilament immunostain . Related images Intermed. mag. High mag. (NF) Very high mag. (NF)",
+    imgCredit: "Nephron · CC BY-SA 3.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Central_chromatolysis_-_intermed_mag_-_cropped.jpg",
     tags: ["avian encephalomyelitis", "epidemic tremor", "picornavirus", "central chromatolysis", "gizzard lymphoid aggregates", "cataract", "breeder vaccination", "avian nephritis", "astrovirus", "proximal tubule", "visceral gout", "urates", "water deprivation", "runting stunting"]
   },
 
@@ -1340,7 +1364,10 @@ theoryData["unit-5"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Adenovirus_4.jpg/960px-Adenovirus_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Transmission electron micrograph of two Adenovirus particles",
+    imgCredit: "GrahamColm · CC BY 3.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Adenovirus_4.jpg",
     tags: ["inclusion body hepatitis", "fowl adenovirus", "basophilic intranuclear inclusion", "friable liver", "hydropericardium syndrome", "Angara disease", "litchi heart", "FAdV-4", "myocardial necrosis", "urates", "immunosuppression", "breeder vaccination", "non-enveloped"]
   },
 
@@ -1493,7 +1520,10 @@ theoryData["unit-5"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Aquareovirus_5ZVT.png/960px-Aquareovirus_5ZVT.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Cryo-EM of Grass carp reovirus (Aquareovirus C) outer capsid. Color coding for the viral capsid proteins: purple (VP5), dark green (VP7), light green (VP1), red (VP6), and orange (VP3).",
+    imgCredit: "Creator: Guest2625 Graphing tool: Mol* (D. Sehnal, A.S. Rose, ... · CC BY-SA 4.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Aquareovirus_5ZVT.png",
     tags: ["egg drop syndrome", "EDS-76", "atadenovirus", "shell gland", "shell-less egg", "depigmented egg", "haemagglutination inhibition", "vaccine contamination", "avian reovirus", "viral arthritis", "tenosynovitis", "gastrocnemius tendon rupture", "runting stunting syndrome", "helicopter wing", "proventriculus gizzard ratio"]
   },
 
@@ -1638,7 +1668,10 @@ theoryData["unit-5"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Escherichia_coli_Gram_Stain.jpg/960px-Escherichia_coli_Gram_Stain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Escherichia coli Gram Stain",
+    imgCredit: "Dr Graham Beards · CC BY-SA 4.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Escherichia_coli_Gram_Stain.jpg",
     tags: ["colibacillosis", "APEC", "perihepatitis", "pericarditis", "airsacculitis", "fibrinous triad", "no diaphragm", "omphalitis", "mushy chick", "yolk sac infection", "egg peritonitis", "coligranuloma", "ammonia", "infectious coryza", "Avibacterium paragallinarum", "satellite growth", "V factor", "carrier bird"]
   },
 
@@ -1793,7 +1826,10 @@ theoryData["unit-5"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Clostridium_perfringens_gas_gangrene.jpg/960px-Clostridium_perfringens_gas_gangrene.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Postoperative pathologic findings of the muscle tissue obtained during surgical removal. Gram-stain, Zoom 1000×. Identification of gram-positive, rod-shaped, anaerobic, spore-forming bacteria in the infected muscle ti...",
+    imgCredit: "Engelbert Schröpfer, Stephan Rauthe and Thomas Meyer. · CC BY 2.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Clostridium_perfringens_gas_gangrene.jpg",
     tags: ["necrotic enteritis", "Clostridium perfringens", "NetB toxin", "Turkish towel", "coccidiosis", "cholangiohepatitis", "gangrenous dermatitis", "blue wing disease", "ulcerative enteritis", "quail disease", "botulism", "limberneck", "pullorum disease", "pasted vent", "caecal cores", "fowl typhoid", "bronze liver", "pedunculated ovary", "Salmonella Enteritidis", "egg safety"]
   },
 
@@ -1959,7 +1995,10 @@ theoryData["unit-5"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/d/d3/Mycobacterium_avium-intracellulare_01.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "Mycobacterium avium-intracellulare 01",
+    imgCredit: "Wikimedia Commons · Public domain",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Mycobacterium_avium-intracellulare_01.png",
     tags: ["fowl cholera", "Pasteurella multocida", "bipolar staining", "pinpoint hepatic necrosis", "caseous wattle", "endotoxin", "avian tuberculosis", "Mycobacterium avium", "Ziehl-Neelsen", "Langhans giant cell", "no calcification", "knife-edge keel", "coligranuloma", "comparative tuberculin test", "spirochaetosis", "Borrelia anserina", "Argas persicus", "mottled spleen", "green diarrhoea"]
   },
 
@@ -2123,7 +2162,10 @@ theoryData["unit-5"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Chlamydophila_psittaci_FA_stain.jpg/960px-Chlamydophila_psittaci_FA_stain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "This direct FA stained mouse brain impression smear reveals the presence of the bacterium Chlamydia psittaci. 400X. Psittacosis is acquired by inhaling dried secretions from infected birds containing P. ureae bacteria...",
+    imgCredit: "Photo Credit: Content Providers(s): CDC/Dr. Vester Lewis · Public domain",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Chlamydophila_psittaci_FA_stain.jpg",
     tags: ["mycoplasma", "no cell wall", "Mycoplasma gallisepticum", "chronic respiratory disease", "airsacculitis", "ciliostasis", "ammonia", "lymphoid follicles", "Mycoplasma synoviae", "infectious synovitis", "breast blister", "sternal bursa", "chlamydiosis", "psittacosis", "ornithosis", "elementary body", "reticulate body", "LCL body", "splenomegaly", "zoonosis"]
   },
 
@@ -2282,7 +2324,10 @@ theoryData["unit-5"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/2/26/Aspergillus_fumigatus_%28photomicrograph_450X%29_%286500080065%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "Aspergillus fumigatus (photomicrograph 450X magnification). Slide culture after 36-48 hours of incubation.Isolated from chicken lungs.",
+    imgCredit: "Michael R Francisco from france · CC BY 2.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Aspergillus_fumigatus_(photomicrograph_450X)_(6500080065).jpg",
     tags: ["aspergillosis", "brooder pneumonia", "Aspergillus fumigatus", "air sac", "fruiting head", "conidiophore", "septate hyphae", "45 degree branching", "angioinvasive", "granuloma", "GMS", "PAS", "candidiasis", "thrush", "sour crop", "turkish towel", "pseudohyphae", "favus", "white comb", "Microsporum gallinae", "scutulum"]
   },
 
@@ -2459,7 +2504,10 @@ theoryData["unit-5"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/1/19/Liver_steatosis_fatty_change.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "Histological section of a murine liver showing severe steatosis. The clear vacuoles would have contained lipid in the living cells, however the histological fixation caused it to be dissolved and hence only empty spac...",
+    imgCredit: "Laboratory of Experimental Pathology, Division of Intramural R... · Public domain",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Liver_steatosis_fatty_change.jpg",
     tags: ["mycotoxicosis", "aflatoxin", "Aspergillus flavus", "groundnut cake", "megalocytosis", "bile duct proliferation", "immunosuppression", "vaccination failure", "aflatoxin M1", "ochratoxin", "nephrotoxin", "visceral gout", "uricotelic", "trichothecene", "T-2 toxin", "Fusarium", "beak lesions", "feed refusal", "bone marrow aplasia", "feed sampling", "toxin binder"]
   },
 
@@ -2577,7 +2625,10 @@ theoryData["unit-5"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Ascaridia_galli.jpg/960px-Ascaridia_galli.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "photo of Ascaridia galli worms from chicken",
+    imgCredit: "Chhandama · CC BY-SA 3.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Ascaridia_galli.jpg",
     tags: ["Ascaridia galli", "Heterakis gallinarum", "Histomonas vector", "Capillaria", "bipolar plugged eggs", "mucosal scraping", "Syngamus trachea", "gapeworm", "gaping", "Tetrameres", "Raillietina", "nodular tapeworm disease", "Davainea", "Prosthogonimus", "oviduct fluke", "intermediate host"]
   },
 
@@ -2694,7 +2745,10 @@ theoryData["unit-5"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Eimeria_tenella_%28Railliet_and_Lucet%2C_1891%29_Fantham%2C_1909_1570710830.png/960px-Eimeria_tenella_%28Railliet_and_Lucet%2C_1891%29_Fantham%2C_1909_1570710830.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Eimeria tenella (Railliet &amp; Lucet, 1891) Fantham, 1909 1570710830",
+    imgCredit: "Yale University Peabody Museum (Yale Peabody Museum of Natural... · CC0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Eimeria_tenella_(Railliet_and_Lucet,_1891)_Fantham,_1909_1570710830.png",
     tags: ["coccidiosis", "Eimeria", "site specificity", "schizogony", "Eimeria tenella", "caecal core", "Eimeria necatrix", "salt and pepper", "Eimeria maxima", "Eimeria acervulina", "ladder lesions", "wet litter", "lesion scoring", "necrotic enteritis", "histomoniasis", "blackhead", "Histomonas meleagridis", "Heterakis", "target liver lesion", "bull's-eye"]
   },
 
@@ -2827,7 +2881,10 @@ theoryData["unit-5"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/0/0f/Dermanyssus_gallinae_mite.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "Dermanyssus Gallinae poultry mite on a sheet of paper, taken using a Canon PowerShot A700. Mite is approximately 1mm in length, and was taken from my chicken house.",
+    imgCredit: "AW · CC BY-SA 2.5",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Dermanyssus_gallinae_mite.jpg",
     tags: ["red mite", "Dermanyssus gallinae", "nocturnal feeder", "treat the building", "northern fowl mite", "Ornithonyssus sylviarum", "blackened vent", "scaly leg mite", "Knemidocoptes", "depluming itch", "chewing lice", "Mallophaga", "nits", "no anaemia", "Argas persicus", "tick paralysis", "sticktight flea", "darkling beetle", "cannibalism", "occupational dermatitis"]
   },
 
@@ -2983,7 +3040,10 @@ theoryData["unit-5"] = {
       }
     ],
 
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Purkinje_C17orf75.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    imgCaption: "Immunohistochemistry staining of the mouse cerebellum for the protein NJMU-R1. Anti-NJMU-R1 antibody immunoreactivity is displayed in green. Blue denotes DAPI staining of cell nuclei. This section is 7.56 mm posterior...",
+    imgCredit: "Sjöstedt E, Zhong W, Fagerberg L, Karlsson M, Mitsios N, Adori... · CC BY-SA 3.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Purkinje_C17orf75.png",
     tags: ["vitamin A", "squamous metaplasia", "oesophageal pustules", "vitamin D3", "rickets", "rachitic rosary", "cage layer fatigue", "medullary bone", "vitamin E", "encephalomalacia", "crazy chick disease", "exudative diathesis", "riboflavin", "curled toe paralysis", "thiamine", "star-gazing", "manganese", "perosis", "slipped tendon", "biotin", "salt toxicity", "cannibalism"]
   },
 
@@ -3133,7 +3193,10 @@ theoryData["unit-5"] = {
       }
     ],
 
-    img: "",
+    img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Gout_-_monosodium_urate_crystals_%2820X%2C_polarized%2C_red_compensator%29.jpg/960px-Gout_-_monosodium_urate_crystals_%2820X%2C_polarized%2C_red_compensator%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    imgCaption: "Gout - monosodium urate crystals (20X, polarized, red compensator)",
+    imgCredit: "Gabriel Caponetti · CC BY-SA 3.0",
+    imgPage: "https://commons.wikimedia.org/wiki/File:Gout_-_monosodium_urate_crystals_(20X,_polarized,_red_compensator).jpg",
     tags: ["ascites syndrome", "pulmonary hypertension", "nutmeg liver", "sudden death syndrome", "flip-over disease", "round heart disease", "fatty liver haemorrhagic syndrome", "fatty liver and kidney syndrome", "biotin", "gout", "uricotelic", "heat stroke", "thin shells", "internal layer", "false layer", "egg bound", "oviduct impaction", "vent gleet", "prolapse", "breast blister", "bumble foot", "pendulous crop", "cage layer fatigue", "cannibalism", "feather pecking"]
   }
 
